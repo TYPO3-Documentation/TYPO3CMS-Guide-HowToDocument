@@ -1,9 +1,13 @@
 
 .. include:: Includes.txt
 
-===============
-How To Document
-===============
+=====================
+Writing Documentation
+=====================
+
+---------------
+How to document
+---------------
 
 :Writing here:    TYPO3 documentation team and TYPO3 community
 :Rendered:        |today|
