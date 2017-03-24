@@ -61,6 +61,18 @@ one of the following CSS classes immediately before the list:
 .horizbuttons-typo3-xxxl
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+Source
+""""""
+.. code-block:: rst
+
+   .. rst-class:: horizbuttons-typo3-xxxl
+
+   - Go to `ONE <#>`__
+   - Go to `TWO <#>`__
+   - Go to `THREE <#>`__
+
+Result
+""""""
 .. rst-class:: horizbuttons-typo3-xxxl
 
 - Go to `ONE <#>`__
