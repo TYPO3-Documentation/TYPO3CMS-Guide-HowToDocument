@@ -60,3 +60,34 @@ Know the 'highlight' directive
    ```
 
 Was ich damit zeigen will ist, dass man so auf `.. code-block:: LANG` verzichten kann. Liest sich netter.
+
+
+Example: Turn off highlighting (1)
+----------------------------------
+
+Example:
+
+.. code-block:: none
+
+   $ tree vendor/composer
+   ├── ClassLoader.php
+   ├── LICENSE
+   ├── autoload_classmap.php
+   ├── ...
+   └── installed.json
+
+
+Example: Turn off highlighting (2)
+----------------------------------
+
+.. highlight:: none
+
+Example::
+
+   $ tree vendor/composer
+   ├── ClassLoader.php
+   ├── LICENSE
+   ├── autoload_classmap.php
+   ├── ...
+   └── installed.json
+
