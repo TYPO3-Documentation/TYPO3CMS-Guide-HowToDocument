@@ -129,7 +129,7 @@ Result
 
 .. highlight:: none
 
-Example:
+Example::
 
    $ tree vendor/composer
    ├── ClassLoader.php
