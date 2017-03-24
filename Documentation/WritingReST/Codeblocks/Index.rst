@@ -15,13 +15,16 @@ On this page:
    :backlinks: top
 
 
-Highlighting in codeblocks
-==========================
+++++++++++++++++++++++++++
+Syntax highlighting
+++++++++++++++++++++++++++
 
 ((to be written))
 
+At the moment syntax highlight takes place only in *codeblocks*.
+
 Pygments
---------
+========
 
 ::
 
@@ -39,8 +42,8 @@ was es so gibt an Languages. Interessant sind vor allem auch `none` und `guess`.
 `guess` probiert er die paar tausend Varianten aus und nimmt die erste, die keinen Lexer-Fehler hat.
 
 
-Know the 'highlight' directive
-------------------------------
+The 'highlight' directive
+=========================
 
 ::
 
