@@ -8,6 +8,12 @@ Codeblocks
 
 ((to be written))
 
+On this page:
+
+.. contents::
+   :local:
+   :backlinks: top
+
 
 Highlighting in codeblocks
 ==========================
@@ -65,6 +71,25 @@ Was ich damit zeigen will ist, dass man so auf `.. code-block:: LANG` verzichten
 Example: Turn off highlighting (1)
 ----------------------------------
 
+Source:
+~~~~~~~
+
+.. code-block:: rst
+
+   Example:
+
+   .. code-block:: none
+
+      $ tree vendor/composer
+      ├── ClassLoader.php
+      ├── LICENSE
+      ├── autoload_classmap.php
+      ├── ...
+      └── installed.json
+
+Result
+~~~~~~
+
 Example:
 
 .. code-block:: none
@@ -80,9 +105,28 @@ Example:
 Example: Turn off highlighting (2)
 ----------------------------------
 
+Source:
+~~~~~~~
+
+.. code-block:: rst
+
+   .. highlight:: none
+   
+   Example::
+
+      $ tree vendor/composer
+      ├── ClassLoader.php
+      ├── LICENSE
+      ├── autoload_classmap.php
+      ├── ...
+      └── installed.json
+
+Result
+~~~~~~
+
 .. highlight:: none
 
-Example::
+Example:
 
    $ tree vendor/composer
    ├── ClassLoader.php
@@ -90,4 +134,3 @@ Example::
    ├── autoload_classmap.php
    ├── ...
    └── installed.json
-
