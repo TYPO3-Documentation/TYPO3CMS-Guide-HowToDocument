@@ -44,13 +44,12 @@ Lists as Buttons
 
 To have an unordered list appear as sequence of buttons you may specify
 one of the following CSS classes immediately before the list:
-
-- .horizbuttons-typo3-xxxl ("typo3" means TYPO3 color)
-- .horizbuttons-typo3-xxl
-- .horizbuttons-typo3-xl
-- .horizbuttons-green-xxxl 
-- .horizbuttons-green-xxl
-- .horizbuttons-green-xl
+`.horizbuttons-typo3-xxxl` ("typo3" means TYPO3 color),
+`.horizbuttons-typo3-xxl`,
+`.horizbuttons-typo3-xl`,
+`.horizbuttons-green-xxxl`, 
+`.horizbuttons-green-xxl`,
+`.horizbuttons-green-xl`,
 
 .. note::
 
@@ -66,7 +65,7 @@ one of the following CSS classes immediately before the list:
 
 - Go to `ONE <#>`__
 - Go to `TWO <#>`__
-- Go to `ONE <#>`__
+- Go to `THREE <#>`__
 
 .horizbuttons-typo3-xxl
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,7 +74,7 @@ one of the following CSS classes immediately before the list:
 
 - Go to `ONE <#>`__
 - Go to `TWO <#>`__
-- Go to `ONE <#>`__
+- Go to `THREE <#>`__
 
 .horizbuttons-typo3-xl
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +83,7 @@ one of the following CSS classes immediately before the list:
 
 - Go to `ONE <#>`__
 - Go to `TWO <#>`__
-- Go to `ONE <#>`__
+- Go to `THREE <#>`__
 
 .horizbuttons-green-xxxl
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,7 +92,7 @@ one of the following CSS classes immediately before the list:
 
 - Go to `ONE <#>`__
 - Go to `TWO <#>`__
-- Go to `ONE <#>`__
+- Go to `THREE <#>`__
 
 .horizbuttons-green-xxl
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,7 +101,7 @@ one of the following CSS classes immediately before the list:
 
 - Go to `ONE <#>`__
 - Go to `TWO <#>`__
-- Go to `ONE <#>`__
+- Go to `THREE <#>`__
 
 .horizbuttons-green-xl
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -111,6 +110,6 @@ one of the following CSS classes immediately before the list:
 
 - Go to `ONE <#>`__
 - Go to `TWO <#>`__
-- Go to `ONE <#>`__
+- Go to `THREE <#>`__
 
 
