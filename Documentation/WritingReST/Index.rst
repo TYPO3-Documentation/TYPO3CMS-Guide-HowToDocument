@@ -15,6 +15,7 @@ Formatting with reST
    :hidden:
 
    Codeblocks/Index
+   Comments/Index
    InlineCode/Index
    MenuHierarchy/Index
    SpecialStyles/Index
