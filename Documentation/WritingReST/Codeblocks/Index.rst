@@ -21,6 +21,13 @@ Syntax highlighting
 
 ((to be written))
 
+.. tip::
+
+   See all kinds of highlighting in the
+   
+   .. rst-class:: horizbuttons-green-xxl
+   - `DemoDocs <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Highlighting/>`__
+
 At the moment syntax highlight takes place only in *codeblocks*.
 
 Pygments
