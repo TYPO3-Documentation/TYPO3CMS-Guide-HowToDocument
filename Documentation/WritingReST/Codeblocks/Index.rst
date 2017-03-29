@@ -46,7 +46,9 @@ the command `pygmentize -L` will list all available lexers.
 Available lexers
 ----------------
 
-The **list of available lexers**, as shown by `pygmentize -L` is growing and contains at the moment. `| bash, sh, ksh, shell |` for example all mean the same lexer:
+The **list of available lexers**, as shown by `pygmentize -L` is growing and contains at the moment. 
+
+**Understand:** `| bash, sh, ksh, shell |` for example all mean the same lexer:
 
 abap \|
 abnf \|
