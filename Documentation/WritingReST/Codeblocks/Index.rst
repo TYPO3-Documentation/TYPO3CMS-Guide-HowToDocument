@@ -471,6 +471,34 @@ zephir \|
 
 **Tip:** Try the Pygments Demo at http://pygments.org/
 
+.. attention::
+
+   **Please: No syntax errors!**
+
+   Syntax highlighting only works if the lexer can parse the code without errors.
+   In other words: If there's a syntax error in the code the highlighting will not work.
+   
+   **Wrong:** ::
+   
+      .. code-block: php
+      
+         $a = array(
+            'one' => 1,
+            ...
+         );
+
+   **Correct:** ::
+   
+      .. code-block: php
+      
+         $a = array(
+            'one' => 1,
+            // ...
+         );
+   
+
+
+
 The 'highlight' directive
 =========================
 
