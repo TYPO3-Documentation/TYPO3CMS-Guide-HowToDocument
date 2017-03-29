@@ -22,7 +22,7 @@ Syntax highlighting
 ((to be written))
 
 Pygments
---------
+========
 
 `Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses
 `Pygments <http://pygments.org/>`__ for highlighting. On a machine that has Pygments installed
@@ -43,7 +43,10 @@ the command `pygmentize -L` will list all available lexers.
 
       .. code-block:: guess
 
-The list of available lexers is growing and contains at the moment:
+Available lexers
+----------------
+
+The **list of available lexers** is growing and contains at the moment:
 
 abap \|
 abnf \|
@@ -495,15 +498,15 @@ The 'highlight' directive
 Was ich damit zeigen will ist, dass man so auf `.. code-block:: LANG` verzichten kann. Liest sich netter.
 
 
-Example: Turn off highlighting (1)
-----------------------------------
+Example 1: Turn off highlighting method 1
+-----------------------------------------
 
 Source:
 ~~~~~~~
 
 .. code-block:: rst
 
-   Example:
+   A description:
 
    .. code-block:: none
 
@@ -517,7 +520,7 @@ Source:
 Result
 ~~~~~~
 
-Example:
+A description:
 
 .. code-block:: none
 
@@ -529,8 +532,8 @@ Example:
    └── installed.json
 
 
-Example: Turn off highlighting (2)
-----------------------------------
+Example 2: Turn off highlighting method 2
+-----------------------------------------
 
 Source:
 ~~~~~~~
@@ -539,7 +542,7 @@ Source:
 
    .. highlight:: none
 
-   Example::
+   A description::
 
       $ tree vendor/composer
       ├── ClassLoader.php
@@ -553,7 +556,7 @@ Result
 
 .. highlight:: none
 
-Example::
+A description::
 
    $ tree vendor/composer
    ├── ClassLoader.php
