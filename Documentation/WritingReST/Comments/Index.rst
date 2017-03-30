@@ -41,7 +41,7 @@ Example::
    - two
    
      .. this is another comment. Since it's within the list it is aligned
-        with 'two', which is the contents of the list item
+        with 'two', which is the contents of the second list item
         
    - three    
      
