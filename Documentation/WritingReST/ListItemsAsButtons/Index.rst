@@ -36,7 +36,7 @@ the list like so::
 
    - horizbuttons-attention-m
    - two
-   - three
+   - three `with link <#>`__
 
 
 Available styles
@@ -51,7 +51,7 @@ Like admonition *attention* (blue)
 
 - horizbuttons-attention-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-important-m
@@ -63,7 +63,7 @@ Like admonitions *error*, *important* (yellow)
 
 - horizbuttons-important-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-note-m
@@ -75,7 +75,7 @@ Like admonitions *generic*, *note*, *see also* (neutral, grey)
 
 - horizbuttons-note-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-primary-m
@@ -87,7 +87,7 @@ Use the primary = key color (TYPO3 orange)
 
 - horizbuttons-primary-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-striking-m
@@ -99,7 +99,7 @@ Very strinking an unusuable, cannot be overseen.
 
 - horizbuttons-striking-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-tip-m
@@ -111,7 +111,7 @@ Like admonitions *hint*, *tip* (green)
 
 - horizbuttons-tip-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-warning-m
@@ -123,7 +123,7 @@ Like admonitions *caution*, *danger*, *warning* (red)
 
 - horizbuttons-danger-m
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-attention-xxl
@@ -135,7 +135,7 @@ Like admonition *attention* (blue)
 
 - horizbuttons-attention-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-important-xxl
@@ -147,7 +147,7 @@ Like admonitions *error*, *important* (yellow)
 
 - horizbuttons-important-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-note-xxl
@@ -159,7 +159,7 @@ Like admonitions *generic*, *note*, *see also* (neutral, grey)
 
 - horizbuttons-note-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-primary-xxl
@@ -171,7 +171,7 @@ Use the primary = key color (TYPO3 orange)
 
 - horizbuttons-primary-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-striking-xxl
@@ -183,7 +183,7 @@ Very strinking an unusuable, cannot be overseen.
 
 - horizbuttons-striking-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-tip-xxl
@@ -195,7 +195,7 @@ Like admonitions *hint*, *tip* (green)
 
 - horizbuttons-tip-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-warning-xxl
@@ -207,7 +207,7 @@ Like admonitions *caution*, *danger*, *warning* (red)
 
 - horizbuttons-danger-xxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-attention-xxxl
@@ -219,7 +219,7 @@ Like admonition *attention* (blue)
 
 - horizbuttons-attention-xxxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-important-xxxl
@@ -231,7 +231,7 @@ Like admonitions *error*, *important* (yellow)
 
 - horizbuttons-important-xxxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-note-xxxl
@@ -243,7 +243,7 @@ Like admonitions *generic*, *note*, *see also* (neutral, grey)
 
 - horizbuttons-note-xxxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-primary-xxxl
@@ -255,7 +255,7 @@ Use the primary = key color (TYPO3 orange)
 
 - horizbuttons-primary-xxxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-striking-xxxl
@@ -267,7 +267,7 @@ Very strinking an unusuable, cannot be overseen.
 
 - horizbuttons-striking-xxxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-tip-xxxl
@@ -279,7 +279,7 @@ Like admonitions *hint*, *tip* (green)
 
 - horizbuttons-tip-xxxl
 - two
-- three
+- three `with link <#>`__
 
 
 horizbuttons-warning-xxxl
@@ -291,4 +291,4 @@ Like admonitions *caution*, *danger*, *warning* (red)
 
 - horizbuttons-danger-xxxl
 - two
-- three
+- three `with link <#>`__
