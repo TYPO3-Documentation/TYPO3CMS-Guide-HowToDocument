@@ -14,9 +14,9 @@ Formatting with reST
    See the t3SphinxThemeRtd demo docs to find out about the visual appearance of various
    kind of markup.
 
-   .. rst-class:: horizbuttons-green-xxl
+   .. rst-class:: horizbuttons-tip-xxl
 
-   - See the T3SphinxThemeRtd `DemoDocs 
+   - See the T3SphinxThemeRtd `DemoDocs
      <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Index.html>`__
 
 
@@ -26,5 +26,6 @@ Formatting with reST
    Codeblocks/Index
    Comments/Index
    InlineCode/Index
+   ListItemsAsButtons/Index
    MenuHierarchy/Index
    SpecialStyles/Index

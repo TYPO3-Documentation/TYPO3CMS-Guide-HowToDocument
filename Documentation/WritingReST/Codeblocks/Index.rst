@@ -46,7 +46,7 @@ the command `pygmentize -L` will list all available lexers.
 Available lexers
 ----------------
 
-The **list of available lexers**, as shown by `pygmentize -L` is growing and contains at the moment. 
+The **list of available lexers**, as shown by `pygmentize -L` is growing and contains at the moment.
 
 **Understand:** `| bash, sh, ksh, shell |` for example all mean the same lexer:
 
@@ -477,25 +477,25 @@ zephir \|
 
    Syntax highlighting only works if the lexer can parse the code without errors.
    In other words: If there's a syntax error in the code the highlighting will not work.
-   
+
    **Wrong:** ::
-   
+
       .. code-block: php
-      
+
          $a = array(
             'one' => 1,
             ...
          );
 
    **Correct:** ::
-   
+
       .. code-block: php
-      
+
          $a = array(
             'one' => 1,
             // ...
          );
-   
+
 
 
 

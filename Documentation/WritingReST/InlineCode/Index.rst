@@ -20,8 +20,8 @@ within sentences is *inline code*.
 - can be compared to `<span>...</span>` tags in html,
 - and is made up by self-defined names. For example, look at the :file:`../../Includes.txt`
   file to see how `:php:`, `:ts:` are defined.
-  
-In contrast, *code-blocks* 
+
+In contrast, *code-blocks*
 
 - appear "as a box",
 - can have syntax highlighting,
@@ -31,7 +31,7 @@ In contrast, *code-blocks*
   the syntax highlighter.
 
 
-  
+
 How to write inline code
 ========================
 
