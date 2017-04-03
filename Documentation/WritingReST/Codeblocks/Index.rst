@@ -10,6 +10,8 @@ Codeblocks
 
 On this page:
 
+.. rst-class:: compact-list
+
 .. contents::
    :local:
    :backlinks: top
