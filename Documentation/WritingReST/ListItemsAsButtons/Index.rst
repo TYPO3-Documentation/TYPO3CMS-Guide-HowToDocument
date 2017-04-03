@@ -8,7 +8,8 @@ List Items as Buttons
 
 On this page:
 
-.. rst-class:: compactlist
+.. rst-class:: compact-list
+
 .. contents::
    :local:
    :backlinks: top
