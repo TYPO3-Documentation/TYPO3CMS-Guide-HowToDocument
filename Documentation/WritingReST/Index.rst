@@ -25,6 +25,7 @@ Formatting with reST
 
    Codeblocks/Index
    Comments/Index
+   Hyperlinks/Index
    InlineCode/Index
    ListItemsAsButtons/Index
    MenuHierarchy/Index
