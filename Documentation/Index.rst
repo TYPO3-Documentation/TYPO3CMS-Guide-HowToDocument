@@ -22,7 +22,8 @@ How to document
 .. toctree::
    :hidden:
 
-   Incoming/Index
    WritingReST/Index
+   UsingSphinx/Index
+   Incoming/Index
 
 
