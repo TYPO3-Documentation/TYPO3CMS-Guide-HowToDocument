@@ -3,13 +3,13 @@
 
 .. _start:
 
-=====================
-Writing Documentation
-=====================
+==============================
+How To Document TYPO3 Projects
+==============================
 
----------------
-How to document
----------------
+---------------------
+Writing Documentation
+---------------------
 
 :Writing here:    TYPO3 documentation team and TYPO3 community
 :Rendered:        |today|
