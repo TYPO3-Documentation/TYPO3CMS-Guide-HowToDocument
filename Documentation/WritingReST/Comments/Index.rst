@@ -14,7 +14,7 @@ Parts of the text in reST source can be "commented out":
 
 See http://docutils.sourceforge.net/docs/user/rst/quickref.html#comments
 
-This means: write `.. `, that is dot-dot-blank at the beginning of the
+This means: write `..␠`, that is dot-dot-blank at the beginning of the
 line, taking the indentation level into account.
 
 Examples
