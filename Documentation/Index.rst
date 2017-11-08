@@ -24,8 +24,10 @@ Writing Documentation
 .. toctree::
    :hidden:
 
+   Sitemap/Index
+   Incoming/Index
    WritingReST/Index
    UsingSphinx/Index
-   Incoming/Index
+   Targets
 
 
