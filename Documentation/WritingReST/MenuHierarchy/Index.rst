@@ -12,12 +12,13 @@ General rules for using `..toctree::`
 The first headline of an rstfile is its "doctitle". That is the document's title property. It is used
 for references and appears in menus for example. 
 
-1. **Each rstfile should have a doctitle.**
+.. rst-class:: bignums
 
-2. **Do not use any additional headlines (sections) if the rstfile contains a** 
-   `.. toctree::` **directive.**
+1. Each rstfile should have a doctitle.
 
-*Note:* What we call "headlines" here are "sections" in reST-jargon.
+2. Do not use any additional headlines (sections) if the rstfile contains a `.. toctree::` directive.
+
+*Note:* What we call "headlines" here is called "sections" in reST-jargon.
 
 
 
