@@ -6,6 +6,18 @@
 The Menu Hiearchy
 =================
 
+General rules for using `..toctree::`
+=====================================
+
+The first headline of an rstfile is its "doctitle", the "document title" property. It is used
+for references and appears in menus for example. **(1) Each rstfile should have a doctitle.**
+
+**(2) Do not use any additional headlines (sections) if the rstfile contains a** 
+`.. toctree::` **directive.**
+
+*Note:* In reST-jargon it is "sections" what we call "headlines" here.
+
+
 
 'toctree' and the hierarchical structure of a manual
 ====================================================
