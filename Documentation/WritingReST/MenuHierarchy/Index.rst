@@ -16,7 +16,7 @@ for references and appears in menus for example.
 
 1. Each rstfile should have a doctitle.
 
-2. Do not use any additional headlines (sections) if the rstfile contains a `.. toctree::` directive.
+2. Do not use any additional headlines in the file **if** it contains a `.. toctree::` directive.
 
 *Note:* What we call "headlines" here is called "sections" in reST-jargon.
 
