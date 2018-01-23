@@ -95,7 +95,7 @@ Use the primary = key color (TYPO3 orange)
 horizbuttons-striking-m
 -----------------------
 
-Shall be very striking and unusuable, something to not be be overseen.
+Shall be very striking and unusual, something to not be be overseen.
 
 .. rst-class:: horizbuttons-striking-m
 
@@ -179,7 +179,7 @@ Use the primary = key color (TYPO3 orange)
 horizbuttons-striking-xxl
 -------------------------
 
-Shall be very striking and unusuable, something to not be be overseen.
+Shall be very striking and unusual, something to not be be overseen.
 
 .. rst-class:: horizbuttons-striking-xxl
 
@@ -263,7 +263,7 @@ Use the primary = key color (TYPO3 orange)
 horizbuttons-striking-xxxl
 --------------------------
 
-Shall be very striking and unusuable, something to not be be overseen.
+Shall be very striking and unusual, something to not be be overseen.
 
 .. rst-class:: horizbuttons-striking-xxxl
 
