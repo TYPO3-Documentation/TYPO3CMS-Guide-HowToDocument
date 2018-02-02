@@ -45,7 +45,7 @@ character would do. As usual the nested list is preceded by (at least) one empty
 line and it is indented. The empty lines 6 and 11 are optional.
 
 .. code-block:: rst
-   :lineos:
+   :linenos:
    :emphasize-lines: 6,11
 
    Message
