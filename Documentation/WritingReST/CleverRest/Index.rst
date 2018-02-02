@@ -8,8 +8,8 @@
 Clever reST
 ====================
 
-Place LIST in EMPTY LIST ITEM in DEFINITION DESCRIPTION
-=======================================================
+Place 'list' in 'empty list item' in 'definition description'
+=============================================================
 
 **Goal:**
 
