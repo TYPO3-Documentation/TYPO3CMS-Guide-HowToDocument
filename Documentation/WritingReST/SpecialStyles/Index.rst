@@ -23,7 +23,7 @@ classes::
 
    .. rst-class:: with-border
    .. rst-class:: with-shadow
-   .. rst-class:: compactlist
+   .. rst-class:: compact-list
 
 
 Demo docs
