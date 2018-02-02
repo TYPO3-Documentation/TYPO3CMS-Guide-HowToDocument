@@ -11,6 +11,8 @@ Clever reST
 Place LIST in EMPTY LIST ITEM in DEFINITION DESCRIPTION
 =======================================================
 
+**Goal:**
+
 This is what we want to achieve:
 
 .. code-block:: html
@@ -32,6 +34,8 @@ This is what we want to achieve:
       </dd>
    </dl>   
    
+**reST source:**
+
 This is the reST code we write. `Message` is going to be the definition term DT
 because (1) the next line is NOT empty (2) and it is indented. That creates a
 definition list DL. Then we use the star `*` to open a list item LI of an
@@ -61,6 +65,7 @@ are optional.
         + World!
 
 
+**Result:**
 
 And this is how it looks like:
 
@@ -79,4 +84,3 @@ And this is how it looks like:
         + World!
 
      
-
