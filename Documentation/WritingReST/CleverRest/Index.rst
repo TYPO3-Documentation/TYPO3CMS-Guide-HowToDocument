@@ -22,7 +22,7 @@ This is what we want to achieve:
       <dd>
          <ul>
             <li>
-               <!-- WE DON'T WANT OTHER TEXT HERE -->
+               <!-- WE DON'T WANT ANY OTHER TEXT HERE -->
                <ul>
                   <li>Hello</li>
                   <li>World!</li>
