@@ -42,7 +42,8 @@ definition list DL. Then we use the star `*` to open a list item LI of an
 unordered list UL. The list item consists of nothing but a nested list for
 which we are using the plus sign `+` - just because it looks nice. Any allowed
 character would do. As usual the nested list is preceded by (at least) one empty 
-line and it is indented. The empty lines 6 and 11 are optional.
+line and it is indented. The empty lines 6 and 11 are optional and could be
+multiple empty lines:
 
 .. code-block:: rst
    :linenos:
