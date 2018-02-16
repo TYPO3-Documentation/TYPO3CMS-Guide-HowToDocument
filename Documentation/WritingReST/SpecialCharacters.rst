@@ -14,6 +14,7 @@ of a file is utf-8.
 Keep in mind that while you CAN use any Unicode character not all of them will be displayed.
 In general fonts contain glyphs for common characters only.
 
-Characters that will mostly work:
+Some lists of characters:
 
-➊ ➋ ➌ ➍ ➎ 
+"circled"
+   ➊ ➋ ➌ ➍ ➎ U+2460:① U+24B6:Ⓐ U+24EB:⓫ U+24F5:⓵ U+2776:❶ U+278A:➊
