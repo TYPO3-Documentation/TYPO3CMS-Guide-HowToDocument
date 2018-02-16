@@ -22,7 +22,9 @@ Formatting with reST
 
 .. toctree::
    :hidden:
-
+   :glob:
+   
+   *
    CleverRest/Index
    Codeblocks/Index
    Comments/Index
