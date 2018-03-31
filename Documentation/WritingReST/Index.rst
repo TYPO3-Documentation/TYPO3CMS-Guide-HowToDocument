@@ -28,6 +28,7 @@ Formatting with reST
    CleverRest/Index
    Codeblocks/Index
    Comments/Index
+   DefinitionLists/Index
    Hyperlinks/Index
    InlineCode/Index
    ListItemsAsButtons/Index
