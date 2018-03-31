@@ -102,4 +102,10 @@ we are using the vertical bar. And we are using a special textrole
 `<span class="sep">|</span>`. Our css uses the classes to give the
 whole construct a nice styling.
 
+Attention:
+
+The textrole `sep` (for separator) needs to be defined. The usual way
+to do that is in :file:`Documentation/Includes.txt`. Add this line::
+
+   .. role:: sep (strong)
 
