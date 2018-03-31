@@ -110,6 +110,8 @@ to do that is in :file:`Documentation/Includes.txt`. Add this line::
 
    .. role:: sep (strong)
 
+This defines a textrole 'sep' which further specialized the already
+existing textrole 'strong'.
 
 Example 3: Nicely styled though labels interfere
 ------------------------------------------------
