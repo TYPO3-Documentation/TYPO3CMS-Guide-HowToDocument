@@ -15,8 +15,8 @@ List style "dl-parameters"
 This list style is used in TYPO3 documentation to style the explanation
 and description of parameters. The general markup we use is that of a "definition list". 
 
-Example with standard styling
------------------------------
+Example 1: No extra styling
+---------------------------
 
 An example with a standard styling would look like this:
 
@@ -46,8 +46,9 @@ parameterBcd
 
 This markup works but isn't very readable due to the lack of styling.
 
-The improved and styled example
--------------------------------
+
+Example 2: Nicely styled
+------------------------
 
 Source::
 
@@ -108,4 +109,78 @@ The textrole `sep` (for separator) needs to be defined. The usual way
 to do that is in :file:`Documentation/Includes.txt`. Add this line::
 
    .. role:: sep (strong)
+
+
+Example 3: Nicely styled though labels interfere
+------------------------------------------------
+
+Let's say you want to place labels in front of each definition list
+item. This creates anchors you can link to symbolically with the
+Sphinx "instersphinx" procedure. A downside is that this will
+intercept the list. Instead, many lists are created. This isn't
+a problem, if you repeat the 'rst-class' line.
+
+
+Source::
+
+   .. _label-parameterAbc:
+   .. rst-class:: dl-parameters
+   
+   parameterAbc
+      :sep:`|` Condition: required
+      :sep:`|` Type: string
+      :sep:`|` Default: ''
+      :sep:`|` 
+      
+      Text describing parameterAbc ...
+    
+   .. _label-parameterBcd:
+   .. rst-class:: dl-parameters
+   
+   parameterBcd
+      :sep:`|` Condition: optional
+      :sep:`|` Type: boolean
+      :sep:`|` Default: false
+      :sep:`|` 
+      
+      Text describing parameterBcd ...
+
+
+Rendering result:
+
+   .. _label-parameterAbc:
+   .. rst-class:: dl-parameters
+   
+   parameterAbc
+      :sep:`|` Condition: required
+      :sep:`|` Type: string
+      :sep:`|` Default: ''
+      :sep:`|` 
+      
+      Text describing parameterAbc ...
+    
+   .. _label-parameterBcd:
+   .. rst-class:: dl-parameters
+   
+   parameterBcd
+      :sep:`|` Condition: optional
+      :sep:`|` Type: boolean
+      :sep:`|` Default: false
+      :sep:`|` 
+      
+      Text describing parameterBcd ...
+
+Link example:
+
+Source::
+
+   Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
+
+   Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
+   
+Result:
+
+   Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
+
+   Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
 
