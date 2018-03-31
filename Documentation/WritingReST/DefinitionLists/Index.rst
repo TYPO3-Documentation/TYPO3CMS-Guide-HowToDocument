@@ -1,6 +1,8 @@
 
-
+.. include:: ../../Includes.txt
 .. highlight:: rst
+
+.. _Styled-Definition-Lists:
 
 =======================
 Styled Definition Lists
