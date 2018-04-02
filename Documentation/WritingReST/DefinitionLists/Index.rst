@@ -13,7 +13,7 @@ List style "dl-parameters"
 ==========================
 
 This list style is used in TYPO3 documentation to style the explanation
-and description of parameters. The general markup we use is that of a "definition list". 
+and description of parameters. The general markup we use is that of a "definition list".
 
 Example 1: No extra styling
 ---------------------------
@@ -24,24 +24,24 @@ Source::
 
    parameterAbc
       Condition: required, Type: string, Default: ''
-      
+
       Text describing parameterAbc ...
-    
+
    parameterBcd
       Condition: optional, Type: boolean, Default: false
-      
+
       Text describing parameterBcd ...
-      
+
 Rendering result:
 
 parameterAbc
    Condition: required, Type: string, Default: ''
-      
+
    Text describing parameterAbc ...
-    
+
 parameterBcd
    Condition: optional, Type: boolean, Default: false
-      
+
    Text describing parameterBcd ...
 
 This markup works but isn't very readable due to the lack of styling.
@@ -55,19 +55,19 @@ Source::
    .. rst-class:: dl-parameters
 
    parameterAbc
-      :sep:`|` Condition: required
-      :sep:`|` Type: string
-      :sep:`|` Default: ''
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` required
+      :sep:`|` :aspect:`Type:` string
+      :sep:`|` :aspect:`Default:` ''
+      :sep:`|`
+
       Text describing parameterAbc ...
-    
+
    parameterBcd
-      :sep:`|` Condition: optional
-      :sep:`|` Type: boolean
-      :sep:`|` Default: false
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` optional
+      :sep:`|` :aspect:`Type:` boolean
+      :sep:`|` :aspect:`Default:` false
+      :sep:`|`
+
       Text describing parameterBcd ...
 
 
@@ -79,39 +79,42 @@ Rendering result:
       :sep:`|` :aspect:`Condition:` required
       :sep:`|` :aspect:`Type:` string
       :sep:`|` :aspect:`Default:` ''
-      :sep:`|` 
-      
+      :sep:`|`
+
       Text describing parameterAbc ...
-    
+
    parameterBcd
-      :sep:`|` Condition: optional
-      :sep:`|` Type: boolean
-      :sep:`|` Default: false
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` optional
+      :sep:`|` :aspect:`Type:` boolean
+      :sep:`|` :aspect:`Default:` false
+      :sep:`|`
+
       Text describing parameterBcd ...
 
 Explanation:
 
 Right in front of the definition list we place an 'rst-class' directive
 with 'dl-parameters', meaning a definition list style for parameters.
-As a result the rendered html construct will look like 
+As a result the rendered html construct will look like
 `<dl class="dl-parameters">...</dl>`. The first line of the description
 is used for multiple "keyword: value" explanations. As a separator
 we are using the vertical bar. And we are using a special textrole
 "sep" (for separator) for it. As a result it will be rendered as
-`<span class="sep">|</span>`. Our css uses the classes to give the
-whole construct a nice styling.
+`<span class="sep">|</span>`. The "keyword:" part is marked up specially
+as well just to give it the ":aspect:" textrole Our css uses the classes to
+give the whole construct a nice styling.
 
 Attention:
 
-The textrole `sep` (for separator) needs to be defined. The usual way
-to do that is in :file:`Documentation/Includes.txt`. Add this line::
+The textroles `ascpect` and `sep` (for separator) need to be defined. The usual
+way of defining them is by having these lines in the
+:file:`Documentation/Includes.txt` file. Add these lines::
 
+   .. role:: aspect (emphasis)
    .. role:: sep (strong)
 
-This defines a textrole 'sep' which further specialized the already
-existing textrole 'strong'.
+Sphinx already comes with standard textroles 'emphasis' and 'strong'. 'aspect'
+and 'sep' inherit their properties and are further specialized.
 
 Example 3: Nicely styled though labels interfere
 ------------------------------------------------
@@ -127,24 +130,24 @@ Source::
 
    .. _label-parameterAbc:
    .. rst-class:: dl-parameters
-   
+
    parameterAbc
-      :sep:`|` Condition: required
-      :sep:`|` Type: string
-      :sep:`|` Default: ''
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` required
+      :sep:`|` :aspect:`Type:` string
+      :sep:`|` :aspect:`Default:` ''
+      :sep:`|`
+
       Text describing parameterAbc ...
-    
+
    .. _label-parameterBcd:
    .. rst-class:: dl-parameters
-   
+
    parameterBcd
-      :sep:`|` Condition: optional
-      :sep:`|` Type: boolean
-      :sep:`|` Default: false
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` optional
+      :sep:`|` :aspect:`Type:` boolean
+      :sep:`|` :aspect:`Default:` false
+      :sep:`|`
+
       Text describing parameterBcd ...
 
 
@@ -152,24 +155,24 @@ Rendering result:
 
    .. _label-parameterAbc:
    .. rst-class:: dl-parameters
-   
+
    parameterAbc
-      :sep:`|` Condition: required
-      :sep:`|` Type: string
-      :sep:`|` Default: ''
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` required
+      :sep:`|` :aspect:`Type:` string
+      :sep:`|` :aspect:`Default:` ''
+      :sep:`|`
+
       Text describing parameterAbc ...
-    
+
    .. _label-parameterBcd:
    .. rst-class:: dl-parameters
-   
+
    parameterBcd
-      :sep:`|` Condition: optional
-      :sep:`|` Type: boolean
-      :sep:`|` Default: false
-      :sep:`|` 
-      
+      :sep:`|` :aspect:`Condition:` optional
+      :sep:`|` :aspect:`Type:` boolean
+      :sep:`|` :aspect:`Default:` false
+      :sep:`|`
+
       Text describing parameterBcd ...
 
 Link example:
@@ -179,7 +182,7 @@ Source::
    Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
 
    Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
-   
+
 Result:
 
    Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
