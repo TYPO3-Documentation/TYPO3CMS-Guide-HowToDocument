@@ -76,9 +76,9 @@ Rendering result:
    .. rst-class:: dl-parameters
 
    parameterAbc
-      :sep:`|` Condition: required
-      :sep:`|` Type: string
-      :sep:`|` Default: ''
+      :sep:`|` :aspect:`Condition:` required
+      :sep:`|` :aspect:`Type:` string
+      :sep:`|` :aspect:`Default:` ''
       :sep:`|` 
       
       Text describing parameterAbc ...
