@@ -53,6 +53,8 @@ manuals that are maintained by more than just one person.
 Example
 =======
 
+::
+
    ====================
    This is the DocTitle
    ====================
