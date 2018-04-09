@@ -23,15 +23,5 @@ Formatting with reST
 .. toctree::
    :hidden:
    :glob:
-   
+
    *
-   CleverRest/Index
-   Codeblocks/Index
-   Comments/Index
-   DefinitionLists/Index
-   Hyperlinks/Index
-   InlineCode/Index
-   ListItemsAsButtons/Index
-   MenuHierarchy/Index
-   SpecialStyles/Index
-   BignumLists/Index
