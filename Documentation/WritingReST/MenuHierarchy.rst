@@ -1,5 +1,5 @@
 
-.. include:: ../../Includes.txt
+.. include:: ../Includes.txt
 .. highlight:: rst
 
 =================
@@ -10,7 +10,7 @@ General rules for using `..toctree::`
 =====================================
 
 The first headline of an rstfile is its "doctitle". That is the document's title property. It is used
-for references and appears in menus for example. 
+for references and appears in menus for example.
 
 .. rst-class:: bignums
 

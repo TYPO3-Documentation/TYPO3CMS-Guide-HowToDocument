@@ -1,5 +1,5 @@
 
-.. include:: ../../Includes.txt
+.. include:: ../Includes.txt
 .. highlight:: rst
 
 =====================
