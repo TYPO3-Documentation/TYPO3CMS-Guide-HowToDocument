@@ -14,7 +14,7 @@ is split into "sections" instead. Those sections are identified by titles which
 
 **Docutils:** Read about `sections
 <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections>`__
-in the Docutils documentation for a most fundamental description.
+in the Docutils documentation for the most fundamental description.
 
 **Sphinx** is explaining `sections
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
