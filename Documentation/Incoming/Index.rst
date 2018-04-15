@@ -216,15 +216,26 @@ Some documentation projects have the same snippet of text appear in several plac
 In this case it may make sense to *include* text snippets. The `.. include::`
 directive does this. What you need to know about *including* files:
 
-1. Includes are performed on a textual basis. 
-2. Includes are processed in a very fast manner when the parent file is parsed.
-3. Includes do not lead to intermediate results that need to be resolved during build.
-4. Since includes are treated as if the text had been written exactly
+Advantages
+~~~~~~~~~~
+#. Includes are performed on a textual basis and therefore
+   processed in a very fast manner when the parent file is parsed.
+
+#. Includes do not lead to intermediate results that need to be resolved during build.
+
+Disadvantages
+~~~~~~~~~~~~~
+#. Since includes are treated as if the text had been written exactly
    where the include is done the text needs to fit with respect to
    indentation ((verify this)) and section levels.
-5. You cannot see the source of included text when clicking on "Show source of the page".
-6. The "Edit me on Github" button cannot take you directly to the editing of included files.
+
+#. You cannot see the source of included text when clicking on "Show source of the page".
+
+#. The "Edit me on Github" button cannot take you directly to the editing of included files.
    It still can be done but needs much more knowledge about the Github interface.
+   
+#. When Sphinx reports warnings and errors the exact text location can be much harder to spot.
+
 
 .. attention::
 
