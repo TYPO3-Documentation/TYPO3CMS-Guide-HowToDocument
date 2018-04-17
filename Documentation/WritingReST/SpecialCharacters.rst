@@ -20,4 +20,6 @@ Some lists of characters:
 "circled"
    ➊ ➋ ➌ ➍ ➎ U+2460:① U+24B6:Ⓐ U+24EB:⓫ U+24F5:⓵ U+2776:❶ U+278A:➊
 
+"heavy check mark": ✔
+
 ((to be written))
