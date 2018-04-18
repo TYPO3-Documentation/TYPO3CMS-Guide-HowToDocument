@@ -1,4 +1,5 @@
 .. include:: ../Includes.txt
+.. highlight:: none
 
 ============================
 Formatting reST Source Files
