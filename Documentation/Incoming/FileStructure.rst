@@ -77,7 +77,9 @@ Disadvantages
    Do not use the file endings :file:`.rst` or :file:`.md` for include files
    to prevent Sphinx from treating them as individual source files! In case
    you have many include files this would lead to many warnings and slow down
-   the build process considerably.
+   the build process considerably. Think of using :file:`*.rst.txt`.
+   The ending :file:`.rst.txt` can be used in PhpStorm and :file:`.editorconfig`
+   to define a reST file type.
 
 .. warning::
 
