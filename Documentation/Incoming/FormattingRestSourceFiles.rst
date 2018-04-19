@@ -17,6 +17,8 @@ For "official" manuals this holds::
    - use utf-8
 
    - the only way to include "special" characters is to use them directly
+   
+   - remove white space from the end of lines (= no trailing tabs or spaces)
 
    - don't use tabs
 
