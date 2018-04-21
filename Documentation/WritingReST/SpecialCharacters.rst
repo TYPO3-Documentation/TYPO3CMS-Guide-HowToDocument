@@ -42,6 +42,35 @@ NEGATIVE CIRCLED NUMBER
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+number&.submit=Suchen>`__
    :sep:`|`
 
+ARROW
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=arrow&.submit=Suchen>`__
+   :sep:`|` ⃪ ⃮ ⃯ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ 
+   ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨ 
+   ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷
+   ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆ 
+   ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛ 
+   ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥ 
+   ⇦ ⇧ ⇨ ⇩ ⇪ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰ 
+   ⇱ ⇲ ⇳ ⇴ ⇵ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⌁ 
+   ⍇ ⍈ ⍐ ⍗ ⍼ ⎋ 
+   ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➥ ➦ ➧ ➨ 
+   ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ 
+   ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾ 
+   ⟰ ⟱ ⟲ ⟳ ⟴ 
+   ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾ 
+   ⟿ ⤀ ⤁ ⤂ ⤃ ⤄ ⤅ ⤆ ⤇ ⤈ ⤉ ⤊ ⤋ 
+   ⤌ ⤍ ⤎ ⤏ ⤐ ⤑ ⤒ ⤓ ⤔ ⤕ ⤖ ⤗ ⤘ ⤙ ⤚ ⤛ ⤜ ⤝ ⤞ ⤟ ⤠ 
+   ⤡ ⤢ ⤣ ⤤ ⤥ ⤦ ⤧ ⤨ ⤩ ⤪ ⤭ ⤮ ⤯ ⤰ ⤱ ⤲ 
+   ⤳ ⤴ ⤵ ⤶ ⤷ ⤸ ⤹ ⤺ ⤻ ⤼ ⤽ ⤾ ⤿ 
+   ⥀ ⥁ ⥂ ⥃ ⥄ ⥅ ⥆ ⥇ ⥈ ⥉ ⥰ ⥱ ⥲ ⥳ ⥴ ⥵ 
+   ⥶ ⥷ ⥸ ⥹ ⥺ ⥻ ⦨ ⦩ ⦪ ⦫ ⦬ ⦭ ⦮ ⦯ ⦳ ⦴ ⦽ ⧪ ⧬ ⧭ ⨗ 
+   ⬀ ⬁ ⬂ ⬃ ⬄ 
+   ⬅ ⬆ ⬇ ⬈ ⬉ ⬊ ⬋ ⬌ ⬍ 
+   ⬎ ⬏ ⬐ ⬑ ⬰ ⬲ ⬳ ⬴ ⬵ ⬶ ⬷ ⬸ 
+   ⬹ ⬺ ⬻ ⬼ ⬽ ⬾ ⬿ ⭀ ⭁ ⭂ ⭃ ⭄ 
+   ⭅ ⭆ ⭇ ⭈ ⭉ ⭊ ⭋ ⭌ ⽮ ꜛ ꜜ ￩ ￪ ￫ ￬
+   :sep:`|`
+   
 CHECK
    :sep:`|` ☑ ✅ ✓ ✔
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=check&.submit=Suchen>`__
