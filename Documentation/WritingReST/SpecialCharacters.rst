@@ -17,8 +17,18 @@ be displayed. In general fonts contain glyphs for common characters only.
 
 Some lists of characters:
 
-"circled"
-   ➊ ➋ ➌ ➍ ➎ U+2460:① U+24B6:Ⓐ U+24EB:⓫ U+24F5:⓵ U+2776:❶ U+278A:➊
+CIRCLED DIGIT
+ 	:sep:`|` ⓪
+ 	:sep:`|` ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ 
+ 	:sep:`|` ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+digit&.submit=Suchen>`__
+ 	:sep:`|` 
+
+NEGATIVE CIRCLED DIGIT
+ 	:sep:`|` ⓿
+ 	:sep:`|` ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+digit&.submit=Suchen>`__
+ 	:sep:`|` 
 
 "heavy check mark": ✔
 
