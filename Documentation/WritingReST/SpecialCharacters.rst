@@ -52,14 +52,20 @@ BULLET
    :sep:`|`
 
 CHECK
-   :sep:`|` ☑ ✅ ✓ ✔
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=check&.submit=Suchen>`__
+   :sep:`|` ☑ ✅ ✓ ✔
    :sep:`|`
 
 CIRCLED DIGIT
    :sep:`|` ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ 
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+digit&.submit=Suchen>`__
    :sep:`|` 
+
+CIRCLED LATIN
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=latin&.submit=Suchen>`__
+   :sep:`|` ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ
+   :sep:`|` ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ
+   :sep:`|`
 
 CIRCLED NUMBER
    :sep:`|` ⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲ ⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙ ㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴ ㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾ ㊿
@@ -87,5 +93,10 @@ QUOTATION
    :sep:`|` " « » ― ‘ ’ ‚ ‛ “ ” „ ‟ ‹ › ❛ ❜ ❝ ❞ ❟ ❠ ❮ ❯ 〝 〞 〟 ＂
    :sep:`|`
    
+PARENTHESIZED LATIN
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=PARENTHESIZED+latin&.submit=Suchen>`__
+   :sep:`|` ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵
+   :sep:`|`
+
    
 ((to be written))
