@@ -57,8 +57,8 @@ CHECK
    :sep:`|`
 
 CIRCLED DIGIT
-   :sep:`|` ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ 
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+digit&.submit=Suchen>`__
+   :sep:`|` ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ 
    :sep:`|` 
 
 CIRCLED LATIN
@@ -68,23 +68,23 @@ CIRCLED LATIN
    :sep:`|`
 
 CIRCLED NUMBER
-   :sep:`|` ⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲ ⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙ ㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴ ㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾ ㊿
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+number&.submit=Suchen>`__
+   :sep:`|` ⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲ ⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙ ㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴ ㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾ ㊿
    :sep:`|`
 
 DOUBLE CIRCLED DIGIT
-   :sep:`|` ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=double+circled+digit&.submit=Suchen>`__
+   :sep:`|` ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽
    :sep:`|` 
 
 NEGATIVE CIRCLED DIGIT
-   :sep:`|` ⓿ ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+digit&.submit=Suchen>`__
+   :sep:`|` ⓿ ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾
    :sep:`|` 
 
 NEGATIVE CIRCLED NUMBER
-   :sep:`|` ❿⓫⓬⓭⓮⓯⓰⓱⓲⓳ ⓴
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+number&.submit=Suchen>`__
+   :sep:`|` ❿⓫⓬⓭⓮⓯⓰⓱⓲⓳ ⓴
    :sep:`|`
 
 QUOTATION
