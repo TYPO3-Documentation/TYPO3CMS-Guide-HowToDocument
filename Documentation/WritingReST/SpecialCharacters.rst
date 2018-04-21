@@ -22,6 +22,11 @@ CIRCLED DIGIT
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+digit&.submit=Suchen>`__
    :sep:`|` 
 
+CIRCLED NUMBER
+   :sep:`|` ⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲ ⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙ ㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴ ㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾ ㊿
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+number&.submit=Suchen>`__
+   :sep:`|`
+
 DOUBLE CIRCLED DIGIT
    :sep:`|` ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=double+circled+digit&.submit=Suchen>`__
@@ -32,16 +37,16 @@ NEGATIVE CIRCLED DIGIT
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+digit&.submit=Suchen>`__
    :sep:`|` 
 
-CIRCLED NUMBER
-   :sep:`|` ⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲ ⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙ ㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴ ㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾ ㊿
-   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+number&.submit=Suchen>`__
-   :sep:`|`
-
 NEGATIVE CIRCLED NUMBER
    :sep:`|` ❿⓫⓬⓭⓮⓯⓰⓱⓲⓳ ⓴
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+number&.submit=Suchen>`__
    :sep:`|`
 
-"heavy check mark": ✔
-
+CHECK
+   :sep:`|` ☑ ✅ ✓ ✔
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=check&.submit=Suchen>`__
+   :sep:`|`
+   
+   
+   
 ((to be written))
