@@ -70,7 +70,12 @@ ARROW
    ⬹ ⬺ ⬻ ⬼ ⬽ ⬾ ⬿ ⭀ ⭁ ⭂ ⭃ ⭄ 
    ⭅ ⭆ ⭇ ⭈ ⭉ ⭊ ⭋ ⭌ ⽮ ꜛ ꜜ ￩ ￪ ￫ ￬
    :sep:`|`
-   
+
+BULLET
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=bullet&.submit=Suchen>`__
+   :sep:`|` • ‣ ⁃ ⁌ ⁍ ∙ ◘ ◦ ☙ ❥ ❧ ⦾ ⦿ 🚅
+   :sep:`|`
+
 CHECK
    :sep:`|` ☑ ✅ ✓ ✔
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=check&.submit=Suchen>`__
