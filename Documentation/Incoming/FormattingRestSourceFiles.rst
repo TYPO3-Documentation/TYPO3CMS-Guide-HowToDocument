@@ -43,3 +43,28 @@ For "official" manuals this holds::
      these can be set in sublime for example.
      add screen shots (Jetbrains, Sublime, ...)
 
+
+Sample contents of :file:`.editorconfig`::
+
+   # EditorConfig is awesome: http://EditorConfig.org
+
+   # top-most EditorConfig file
+   root = false
+
+   [{*.rst,*.rst.txt}]
+   charset = utf-8
+   end_of_line = lf
+   insert_final_newline = true
+   trim_trailing_whitespace = true
+   indent_style = space
+   indent_size = 3
+
+   # MD-Files
+   [*.md]
+   charset = utf-8
+   end_of_line = lf
+   insert_final_newline = true
+   trim_trailing_whitespace = true
+   indent_style = space
+   indent_size = 4
+
