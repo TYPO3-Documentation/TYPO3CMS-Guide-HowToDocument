@@ -42,6 +42,8 @@ For "official" manuals this holds::
 
      these can be set in sublime for example.
      add screen shots (Jetbrains, Sublime, ...)
+     
+   - do not use textroles like in headlines ``A :ts:`page` value``  
 
 
 Sample contents of :file:`.editorconfig`::
