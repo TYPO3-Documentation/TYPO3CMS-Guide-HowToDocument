@@ -98,5 +98,8 @@ PARENTHESIZED LATIN
    :sep:`|` ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵
    :sep:`|`
 
-   
-((to be written))
+STAR
+   :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=star&.submit=Suchen>`__
+   :sep:`|` ≛ ⋆ ⍟ ⍣ ★ ☆ ☪ ⚝ ✡ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ✴ ✵ ✶ ✷ ✸ ✹ ❂ ⭐ ⭑ ⭒ 🌟 🌠 🔯 ٭
+   :sep:`|`
+
