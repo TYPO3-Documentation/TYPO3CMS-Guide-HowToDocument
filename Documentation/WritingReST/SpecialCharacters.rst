@@ -15,7 +15,8 @@ utf-8.
 Keep in mind that while you CAN use any Unicode character not all of them will
 be displayed. In general fonts contain glyphs for common characters only.
 
-Some lists of characters:
+Some lists of characters
+========================
 
 ARROW
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=arrow&.submit=Suchen>`__
@@ -103,3 +104,21 @@ STAR
    :sep:`|` ≛ ⋆ ⍟ ⍣ ★ ☆ ☪ ⚝ ✡ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ✴ ✵ ✶ ✷ ✸ ✹ ❂ ⭐ ⭑ ⭒ 🌟 🌠 🔯 ٭
    :sep:`|`
 
+Using U+2420 SYMBOL FOR SPACE
+=============================
+
+.. hightlight:: rst
+
+Code
+----
+::
+
+   - ``:literal:`␠abc``` → :literal:`␠abc`
+   - ```␠abc``` → `␠abc`
+   - \`\`␠abc\`\` → ``␠abc``
+
+Result
+------
+- ``:literal:`␠abc``` → :literal:`␠abc`
+- ```␠abc``` → `␠abc`
+- \`\`␠abc\`\` → ``␠abc``
