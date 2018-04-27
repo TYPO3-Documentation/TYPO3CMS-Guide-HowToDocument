@@ -57,11 +57,13 @@ Preferred: Use single backticks ` ... `
    aspect           ``:aspect:`Description:```                        :aspect:`Description:`                       For better optics
    code             ``:code:`result = (1 + x) * 32```                 :code:`result = (1 + x) * 32`
    file             ``:file:`/etc/passwd```                           :file:`/etc/passwd`
-   js               ``:js:`var f = function () {return 1;}```         :js:`var f = function () {return 1;}`
    html             ``:html:`<a href="#">```                          :html:`<a href="#">`
+   js               ``:js:`var f = function () {return 1;}```         :js:`var f = function () {return 1;}`
+   kbd              ``Press :kbd:`ctrl` + :kbd:`s```                  Press :kbd:`ctrl` + :kbd:`s`
+   php              ``:php:`$result = $a + 23;```                     :php:`$result = $a + 23;`
+   sep              ``:sep:`|```                                      :sep:`|`                                     To style the separator '\|'
    ts               ``:ts:`lib.hello.value = Hello World!```          :ts:`lib.hello.value = Hello World!`
    typoscript       ``:typoscript:`lib.hello.value = Hello World!```  :typoscript:`lib.hello.value = Hello World!`
-   php              ``:php:`$result = $a + 23;```                     :php:`$result = $a + 23;`
    ================ ================================================= ============================================ ===
 
 
