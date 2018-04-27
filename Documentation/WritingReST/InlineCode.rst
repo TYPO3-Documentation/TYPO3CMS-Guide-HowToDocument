@@ -61,7 +61,7 @@ Preferred: Use single backticks ` ... `
    js               ``:js:`var f = function () {return 1;}```         :js:`var f = function () {return 1;}`
    kbd              ``Press :kbd:`ctrl` + :kbd:`s```                  Press :kbd:`ctrl` + :kbd:`s`
    php              ``:php:`$result = $a + 23;```                     :php:`$result = $a + 23;`
-   sep              ``:sep:`|```                                      :sep:`|`                                     To give the separator '\|' in some contexts a special style
+   sep              ``:sep:`|```                                      :sep:`|`                                     To give the separator '\|' a special style in some contexts like :ref:`Styled-Definition-Lists`
    ts               ``:ts:`lib.hello.value = Hello World!```          :ts:`lib.hello.value = Hello World!`
    typoscript       ``:typoscript:`lib.hello.value = Hello World!```  :typoscript:`lib.hello.value = Hello World!`
    ================ ================================================= ============================================ ===
