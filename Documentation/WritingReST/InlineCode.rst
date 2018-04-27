@@ -60,21 +60,19 @@ Preferred: Use single backticks ` ... `
    `Standard Docutils interpreted text roles
    <http://docutils.sourceforge.net/docs/ref/rst/roles.html#standard-roles>`__:
 
-   ================ ================================================= ============================================ ===
-   Role             Source                                            Output                                       Note
-   ================ ================================================= ============================================ ===
-   emphasis         ``:emphasis:`text`, *text*``                      :emphasis:`text`, *text*
-   literal          ``:literal:`\ \ abc```                            :literal:`\ \ abc`
-   literal          ``:literal:`text`, ''text''`` (backticks!)        :literal:`text`, ``text``
-   math             ``:math:`A_\text{c} = (\pi/4) d^2```              :math:`A_\text{c} = (\pi/4) d^2`             The math role marks its content as mathematical notation (inline formula). The input format is LaTeX math syntax without the “math delimiters“ ($ $).
-   rfc-reference,   ``:RFC:`2822```                                   :RFC:`2822`
-   \ rfc
-   strong           ``:strong:`text`, **text**``                      :strong:`text`, **text**                     Implements strong emphasis.
-   subscript        ``:subscript:`subscripted```                      :subscript:`subscripted`
-   superscript      ``:superscript:`superscripted```                  :superscript:`superscripted`
-   title-reference, ``:t:`Design Patterns```                          :t:`Design Patterns`                         The :title-reference: role is used to describe the titles of books, periodicals, and other materials.
-   \ t
-   ================ ================================================= ============================================ ===
+   ================== ================================================= ============================================ ===
+   Role               Source                                            Output                                       Note
+   ================== ================================================= ============================================ ===
+   emphasis           ``:emphasis:`text`, *text*``                      :emphasis:`text`, *text*
+   literal            ``:literal:`\ \ abc```                            :literal:`\ \ abc`
+   literal            ``:literal:`text`, ''text''`` (backticks!)        :literal:`text`, ``text``
+   math               ``:math:`A_\text{c} = (\pi/4) d^2```              :math:`A_\text{c} = (\pi/4) d^2`             The math role marks its content as mathematical notation (inline formula). The input format is LaTeX math syntax without the “math delimiters“ ($ $).
+   rfc, rfc-reference ``:RFC:`2822```                                   :RFC:`2822`
+   strong             ``:strong:`text`, **text**``                      :strong:`text`, **text**                     Implements strong emphasis.
+   subscript          ``:subscript:`subscripted```                      :subscript:`subscripted`
+   superscript        ``:superscript:`superscripted```                  :superscript:`superscripted`
+   t, title-reference ``:t:`Design Patterns```                          :t:`Design Patterns`                         The :title-reference: role is used to describe the titles of books, periodicals, and other materials.
+   ================== ================================================= ============================================ ===
 
 
 When to use literal code \`\`...``
