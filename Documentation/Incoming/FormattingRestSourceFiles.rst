@@ -50,7 +50,7 @@ Sample contents of :file:`.editorconfig`::
 
    # EditorConfig is awesome: http://EditorConfig.org
 
-   # top-most EditorConfig file
+   # top-most EditorConfig file? false = no!
    root = false
 
    [{*.rst,*.rst.txt}]
