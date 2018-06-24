@@ -4,12 +4,12 @@
 .. _start:
 
 ====================================
-(WIP) How To Document TYPO3 Projects
+Writing Documentation (WIP)
 ====================================
 
----------------------
-Writing Documentation
----------------------
+------------------------------
+How To Document TYPO3 Projects
+------------------------------
 
 :Writing here:    TYPO3 documentation team and TYPO3 community
 :Rendered:        |today|
@@ -17,7 +17,6 @@ Writing Documentation
 :Status:          early state - just beginning
 
 
-((to be written))
 
 
 
