@@ -34,6 +34,7 @@ somewhere. Sphinx will issue a warning if this isn't the case.
 *Hint:* If really needed an input file may be tagged as `:orphan:` right at the beginning.
 This will suppress the warning.
 
+.. _how-to-document-including-files:
 
 Including files
 ---------------
@@ -47,12 +48,16 @@ Some documentation projects have the same snippet of text appear in several plac
 In this case it may make sense to *include* text snippets. The `.. include::`
 directive does this. What you need to know about *including* files:
 
+.. _how-to-document-including-files-advantages:
+
 Advantages
 ~~~~~~~~~~
 #. Includes are performed on a textual basis and therefore
    processed in a very fast manner when the parent file is parsed.
 
 #. Includes do not lead to intermediate results that need to be resolved during build.
+
+.. _how-to-document-including-files-disadvantages:
 
 Disadvantages
 ~~~~~~~~~~~~~
@@ -67,6 +72,10 @@ Disadvantages
 
 #. When Sphinx reports warnings and errors the exact text location can be much harder to spot.
 
+.. _how-to-document-including-files-recommendations:
+
+Recommendations
+~~~~~~~~~~~~~~~
 
 .. attention::
 
