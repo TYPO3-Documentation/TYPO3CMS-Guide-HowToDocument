@@ -11,5 +11,7 @@
 .. role:: ts(typoscript)
    :class: typoscript
 
+.. role:: yaml(code)
+
 .. default-role:: code
 .. highlight:: php

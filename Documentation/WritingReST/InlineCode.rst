@@ -37,6 +37,7 @@ Preferred: Use single backticks ` ... `
    sep              ``:sep:`|```                                      :sep:`|`                                     To give the separator '\|' a special style in some contexts like :ref:`Styled-Definition-Lists`
    ts               ``:ts:`lib.hello.value = Hello World!```          :ts:`lib.hello.value = Hello World!`
    typoscript       ``:typoscript:`lib.hello.value = Hello World!```  :typoscript:`lib.hello.value = Hello World!`
+   yaml             ``:yaml:`- {name: John Smith, age: 33}```         :yaml:`- {name: John Smith, age: 33}`
    ================ ================================================= ============================================ ===
 
 
