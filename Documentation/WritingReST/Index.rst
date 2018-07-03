@@ -5,11 +5,6 @@
 Formatting with reST
 ====================
 
-((to be written))
-
-- ((documentation is plain text just as code is))
-- ((The rules of reStructuredText are used for formatting, are used as markup))
-
 .. tip::
    See the t3SphinxThemeRtd demo docs to find out about the visual appearance of various
    kind of markup.
