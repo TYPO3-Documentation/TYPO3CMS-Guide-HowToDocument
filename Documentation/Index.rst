@@ -3,9 +3,9 @@
 
 .. _start:
 
-====================================
-Writing Documentation (WIP)
-====================================
+=====================
+Writing Documentation
+=====================
 
 ------------------------------
 How To Document TYPO3 Projects
