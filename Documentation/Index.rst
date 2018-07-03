@@ -21,7 +21,7 @@ documenation (on `docs.typo3.org <https://docs.typo3.org>`__), documentation
 for extensions and documenation for the TYPO3 core. 
 
 You will find information about how to format the documenation 
-in ReST and some best practices in this guide. 
+in reST and some best practices in this guide. 
 
 For additional information, look here:
 
