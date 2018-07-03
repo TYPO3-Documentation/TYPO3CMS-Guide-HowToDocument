@@ -3,6 +3,8 @@
 .. highlight:: shell
 
 
+.. _how-to-start-docs-extension:
+
 ===================================================
 How to start Documentation for Your TYPO3 Extension
 ===================================================
