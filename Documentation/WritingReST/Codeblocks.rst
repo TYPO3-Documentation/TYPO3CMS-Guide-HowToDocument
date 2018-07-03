@@ -67,8 +67,8 @@ the command `pygmentize -L` will list all available lexers.
 Highlight directive
 ===================
 
-You can set the default language with the *highlight* directive. All following codeblocks
-will use the language as spedified for syntax highlighting.
+You can set the default language with the `highlight` directive. All following codeblocks
+will use the language as specified in the `highlight` directive for syntax highlighting.
 
 If all of your codeblocks have the same language, it is easier to just set this once at the
 beginning of the file.
@@ -92,43 +92,162 @@ Use PHP::
 Codeblock directive
 ===================
 
-To set the language for one code-block at a time, use the `code-block` directive::
+To insert a snippet as code with syntax highlighting, use the `code-block` directive or the shorthand `::`
+You can explicitly set the language in the codeblock or not. If you do not, the default language (as set
+with the `highlight` directive) is used.
 
 
-      .. code-block:: sql
-
-   or::
-
-      .. code-block:: php
-
-   or::
-
-      .. code-block:: guess
+The following examples, all do the same thing:
 
 
-To set a simple codeblock without specifying the language (because it is
-for example already correctly set by the `highlight` directive as described
-above), you can either use the `code-block` directive or just the shorthand (`::`).
+.. rst-class:: bignums
+
+   1. Set the language (PHP) in the `code-block`:
+
+      ::
+
+         .. code-block:: php
+
+            $a = 'b';
 
 
-Sample code block (use `::` as shorthand for `.. code-block::`):
+   2. Use `code-block` without setting the language:
+
+      You can use this, if you already set the language PHP with the highlight directive.
+
+      ::
+
+         .. code-block::
+
+            $a = 'b';
 
 
-.. code-block:: php
+   3. Use the shorthand `::`:
 
-   some text::
+      You can use this, if you already set the language PHP with the highlight directive.
 
-      $this->a = 'some string';
+      ::
+
+         ::
+
+            $a='b';
 
 
-*How it looks:*
-
-some text::
-
-   some code
 
 
 .. _writing-rest-codeblocks-available-lexers:
+
+
+
+.. _writing-rest-codeblocks-some-more-examples:
+
+Some more examples
+==================
+
+Add line numbers to code snippet
+--------------------------------
+
+
+Source
+~~~~~~
+
+::
+
+   .. code-block:: php
+      :linenos:
+
+          $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment';
+
+          // Adjust to your needs
+          $domain = 'www.example.com';
+          $rootPageUid = 123;
+          $rssFeedPageType = 9818; // pageType of your RSS feed page
+
+
+
+Result
+~~~~~~
+
+.. code-block:: php
+   :linenos:
+
+       <?php
+
+       $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment';
+
+       // Adjust to your needs
+       $domain = 'www.example.com';
+       $rootPageUid = 123;
+       $rssFeedPageType = 9818; // pageType of your RSS feed page
+
+
+Turn off highlighting method 1
+------------------------------
+
+Source:
+~~~~~~~
+
+.. code-block:: rst
+
+   A description:
+
+   .. code-block:: none
+
+      $ tree vendor/composer
+      ├── ClassLoader.php
+      ├── LICENSE
+      ├── autoload_classmap.php
+      ├── ...
+      └── installed.json
+
+Result
+~~~~~~
+
+A description:
+
+.. code-block:: none
+
+   $ tree vendor/composer
+   ├── ClassLoader.php
+   ├── LICENSE
+   ├── autoload_classmap.php
+   ├── ...
+   └── installed.json
+
+
+Turn off highlighting method 2
+------------------------------
+
+Source:
+~~~~~~~
+
+.. code-block:: rst
+
+   .. highlight:: none
+
+   A description::
+
+      $ tree vendor/composer
+      ├── ClassLoader.php
+      ├── LICENSE
+      ├── autoload_classmap.php
+      ├── ...
+      └── installed.json
+
+Result
+~~~~~~
+
+.. highlight:: none
+
+A description::
+
+   $ tree vendor/composer
+   ├── ClassLoader.php
+   ├── LICENSE
+   ├── autoload_classmap.php
+   ├── ...
+   └── installed.json
+
 
 Available Lexers
 ================
@@ -559,77 +678,3 @@ yaml \|
 zephir \|
 
 **Tip:** Try the Pygments Demo at http://pygments.org/
-
-
-.. _writing-rest-codeblocks-some-more-examples:
-
-Some more examples
-==================
-
-
-Example 1: Turn off highlighting method 1
------------------------------------------
-
-Source:
-~~~~~~~
-
-.. code-block:: rst
-
-   A description:
-
-   .. code-block:: none
-
-      $ tree vendor/composer
-      ├── ClassLoader.php
-      ├── LICENSE
-      ├── autoload_classmap.php
-      ├── ...
-      └── installed.json
-
-Result
-~~~~~~
-
-A description:
-
-.. code-block:: none
-
-   $ tree vendor/composer
-   ├── ClassLoader.php
-   ├── LICENSE
-   ├── autoload_classmap.php
-   ├── ...
-   └── installed.json
-
-
-Example 2: Turn off highlighting method 2
------------------------------------------
-
-Source:
-~~~~~~~
-
-.. code-block:: rst
-
-   .. highlight:: none
-
-   A description::
-
-      $ tree vendor/composer
-      ├── ClassLoader.php
-      ├── LICENSE
-      ├── autoload_classmap.php
-      ├── ...
-      └── installed.json
-
-Result
-~~~~~~
-
-.. highlight:: none
-
-A description::
-
-   $ tree vendor/composer
-   ├── ClassLoader.php
-   ├── LICENSE
-   ├── autoload_classmap.php
-   ├── ...
-   └── installed.json
