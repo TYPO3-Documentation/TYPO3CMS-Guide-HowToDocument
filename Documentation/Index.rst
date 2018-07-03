@@ -28,7 +28,7 @@ For additional information, look here:
 * See the `t3SphinxThemeRtd demo docs 
   <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Index.html>`__ 
   to find out about the visual appearance of various kind of markup.
-* **For extension developers:** Look at ref:`how-to-start-docs-extension` for information 
+* **For extension developers:** Look at :ref:`how-to-start-docs-extension` for information 
   about how to write documentation for your extension.
 * **For TYPO3 core developers:** Read :ref:`t3contribute:Bugfixing-Adding-documentation` to learn about how to add 
   documentation for deprecations, breaking changes, features and 
