@@ -1,6 +1,8 @@
 
 .. include:: ../Includes.txt
 
+.. _Formatting-with-reST:
+
 ====================
 Formatting with reST
 ====================
