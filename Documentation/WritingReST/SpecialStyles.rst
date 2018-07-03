@@ -6,8 +6,6 @@
 Special Styles
 ==============
 
-((to be written))
-
 On this page:
 
 .. rst-class:: compact-list

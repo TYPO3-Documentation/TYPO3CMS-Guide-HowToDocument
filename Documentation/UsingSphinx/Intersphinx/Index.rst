@@ -8,9 +8,6 @@
 Intersphinx: How to link to topics of other manuals
 ===================================================
 
-((to be written))
-
-Copied here from  https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-FileAbstractionLayer/issues/23
 
 Cross-referencing
 =================
@@ -24,7 +21,19 @@ In the same manual
 
 Using `:ref:` is the recommended way to create links in a manual because it works across files.
 
-...
+
+A section label of the name `columns-inline` has been set somewhere::
+
+   .. _columns-inline:
+
+   Inline Columns
+   ==============
+
+You can then link to it like this **from the same manual**::
+
+  :ref:`columns-inline`
+
+
 
 From one manual to another
 --------------------------

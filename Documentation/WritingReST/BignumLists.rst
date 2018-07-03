@@ -1,12 +1,14 @@
 
 .. include:: ../Includes.txt
 
+
+.. highlight:: rst
+
+.. _styled-numbered-lists:
+
 =====================
 Styled Numbered Lists
 =====================
-
-Jargon: This is all about "bignums"!
-
 
 **On this page:**
 
@@ -17,28 +19,48 @@ Jargon: This is all about "bignums"!
    :backlinks: top
 
 
+.. _styled_numbered-lists-normal:
 
-ol
-==========
+Normally styled
+===============
 
-A normally styled numbered list:
+*Source:* ::
+
+   #. abc
+   #. bcd
+   #. cde
+
+
+*How it looks*
 
 #. abc
 #. bcd
 #. cde
 
 
-ol.bignums-xxl
-==============
+
+With XXL big numbers
+====================
+
+*Source:* ::
+
+   rst-class:: bignums-xxl
+
+   1. One one one bignums-xxl
+
+      Lots of stories here ...
+
+      ...
+
+
+*How it looks:*
+
 
 .. rst-class:: bignums-xxl
 
 1. ONE One one bignums-xxl
 
-   #. Well, here we are again, old lovely...
-   #. You may now serve the fish.
-   #. Fish. Very good, Miss Sophie. Did you enjoy the soup?
-
+   Lots of stories here ...
 
 2. TWO Two two
 
@@ -47,21 +69,37 @@ ol.bignums-xxl
 
 3. THREE Three three
 
-   Lots of stories here
+   * Well, here we are again, old lovely...
+   * You may now serve the fish.
+   * Fish. Very good, Miss Sophie. Did you enjoy the soup?
 
 
 
-ol.bignums
-==========
+
+With big numbers
+================
+
+*Source:* ::
+
+   .. rst-class:: bignums
+
+   1. ONE One one
+
+      Delicious, James
+
+
+*How it looks:*
 
 .. rst-class:: bignums
 
 1. ONE One one
 
-   #. Delicious, James.
-   #. Thank you, Miss Sophie, glad you enjoyed it.
-      Little bit of North Sea haddock, Miss Sophie.
-   #. I think we'll have white wine with the fish.
+   Delicious, James.
+
+   Thank you, Miss Sophie, glad you enjoyed it.
+   Little bit of North Sea haddock, Miss Sophie.
+
+   I think we'll have white wine with the fish.
 
 2. TWO Two two
 
@@ -73,8 +111,21 @@ ol.bignums
 
 
 
-ol.bignums-tip
-==============
+With big numbers - tip
+======================
+
+Uses the same color as background, that is used in a tip textblock.
+
+*Source:* ::
+
+   .. rst-class:: bignums-tip
+
+   1. ONE One one bignums-tip
+
+      More ...
+
+
+*How it looks:*
 
 .. rst-class:: bignums-tip
 
@@ -91,10 +142,21 @@ ol.bignums-tip
    More ...
 
 
+With big numbers - attention
+=============================
 
 
-ol.bignums-attention
-====================
+*Source:* ::
+
+   .. rst-class:: bignums-attention
+
+   1. ONE One one bignums-attention
+
+      More ...
+
+
+*How it looks:*
+
 
 .. rst-class:: bignums-attention
 
@@ -112,8 +174,20 @@ ol.bignums-attention
 
 
 
-ol.bignums-important
-====================
+With big numbers - important
+============================
+
+
+*Source:* ::
+
+   .. rst-class:: bignums-important
+
+   1. ONE One one bignums-important
+
+      More ...
+
+
+*How it looks:*
 
 .. rst-class:: bignums-important
 
@@ -131,8 +205,20 @@ ol.bignums-important
 
 
 
-ol.bignums-warning
-====================
+With big numbers - warning
+==========================
+
+*Source:* ::
+
+   .. rst-class:: bignums-warning
+
+   1. ONE One one bignums-warning
+
+      More ...
+
+
+*How it looks:*
+
 
 .. rst-class:: bignums-warning
 
@@ -150,8 +236,28 @@ ol.bignums-warning
 
 
 
-Nested ol.bignums-xxl > ol.bignums > ol
-=======================================
+Nested bignums-xxl > bignums > normally styled
+==============================================
+
+
+*Source:* ::
+
+.. rst-class:: bignums-xxl
+
+   1. ONE One one bignums-xxl
+
+      This is the story of my life ...
+
+      .. rst-class:: bignums
+
+      1. When I was young
+
+         #. this
+         #. and that
+         #. and this
+
+
+*How it looks:*
 
 .. rst-class:: bignums-xxl
 
@@ -178,8 +284,8 @@ Nested ol.bignums-xxl > ol.bignums > ol
 
 
 
-Examples of nesting
-===================
+More examples of nesting
+========================
 
 .. highlight:: shell
 

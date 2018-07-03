@@ -1,17 +1,38 @@
+.. include:: ../Includes.txt
+.. highlight:: rst
 
 
+.. _hyperlinks:
 
 ==========
 Hyperlinks
 ==========
 
-((to be written))
+How to link to sections of other manuals
+========================================
+
+.. important::
+
+   Do not use absolute URLs for links to the official documentation.
+   Use the Intersphinx mechanism as described in
+   :ref:`Intersphinx-How-to-link-to-topics-of-other-manuals`.
 
 
+External links
+==============
 
-Intersphinx
-===========
+Source
+------
 
-- An explanation: `How does it work? <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-FileAbstractionLayer/issues/23>`__
+::
 
+   `Sphinx hyperlinks <http://www.sphinx-doc.org/en/stable/rest.html#hyperlinks>`__
+
+
+Result
+------
+
+`Sphinx hyperlinks <http://www.sphinx-doc.org/en/stable/rest.html#hyperlinks>`__
+
+.. _intersphinx:
 

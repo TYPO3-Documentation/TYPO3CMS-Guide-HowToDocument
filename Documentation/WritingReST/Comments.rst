@@ -3,6 +3,8 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
+.. _writing-rest-comments:
+
 ========
 Comments
 ========
@@ -18,7 +20,7 @@ This means: write `..␠`, that is dot-dot-blank at the beginning of the
 line, taking the indentation level into account.
 
 Examples
-========
+--------
 
 Example::
 

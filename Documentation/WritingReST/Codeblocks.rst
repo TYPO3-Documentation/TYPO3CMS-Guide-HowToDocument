@@ -2,11 +2,11 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-========================
-Codeblocks
-========================
+.. _writing-rest-codeblocks-with-syntax-highlighting:
 
-((to be written))
+===================================
+Codeblocks with Syntax Highlighting
+===================================
 
 On this page:
 
@@ -17,40 +17,127 @@ On this page:
    :backlinks: top
 
 
-++++++++++++++++++++++++++
-Syntax highlighting
-++++++++++++++++++++++++++
+.. _writing-rest-codeblocks-syntactically-correct:
 
-((to be written))
+Use syntactically correct code
+==============================
 
-Pygments
-========
+.. attention::
+
+   **Please: No syntax errors!**
+
+   Syntax highlighting only works if the lexer can parse the code without errors.
+   In other words: If there's a syntax error in the code the highlighting will not work.
+
+
+   **Wrong:** ::
+
+      .. highlight: php
+
+      ::
+
+         $a = array(
+            'one' => 1,
+            ...
+         );
+
+   **Correct:** ::
+
+      highlight: php
+
+      ::
+
+         $a = array(
+            'one' => 1,
+            // ...
+         );
+
+
+
+
 
 `Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses
 `Pygments <http://pygments.org/>`__ for highlighting. On a machine that has Pygments installed
 the command `pygmentize -L` will list all available lexers.
 
-.. tip::
 
-   You can use any of the following names of lexers, for example,
-   in a codeblock directive like so::
+.. _writing-rest-codeblocks-highlight-directive:
+
+
+Highlight directive
+===================
+
+You can set the default language with the *highlight* directive. All following codeblocks
+will use the language as spedified for syntax highlighting.
+
+If all of your codeblocks have the same language, it is easier to just set this once at the
+beginning of the file.
+
+This way, you don't need to set the language for each code-block (`.. code-block:: LANG`).
+
+Use reST::
+
+
+   .. highlight:: rest
+
+
+Use PHP::
+
+   .. highlight:: php
+
+
+
+.. _writing-rest-codeblocks-codeblock-directive:
+
+Codeblock directive
+===================
+
+To set the language for one code-block at a time, use the `code-block` directive::
+
 
       .. code-block:: sql
 
    or::
 
-      .. code-block:: none
+      .. code-block:: php
 
    or::
 
       .. code-block:: guess
 
-Available lexers
-----------------
 
-The **list of available lexers**, as shown by `pygmentize -L` is growing and contains at the moment.
+To set a simple codeblock without specifying the language (because it is
+for example already correctly set by the `highlight` directive as described
+above), you can either use the `code-block` directive or just the shorthand (`::`).
 
-**Understand:** `| bash, sh, ksh, shell |` for example all mean the same lexer:
+
+Sample code block (use `::` as shorthand for `.. code-block::`):
+
+
+.. code-block:: php
+
+   some text::
+
+      $this->a = 'some string';
+
+
+*How it looks:*
+
+some text::
+
+   some code
+
+
+.. _writing-rest-codeblocks-available-lexers:
+
+Available Lexers
+================
+
+You can use any of the following names of lexers:
+
+
+
+`| bash, sh, ksh, shell |` for example all mean the same lexer:
 
 abap \|
 abnf \|
@@ -473,61 +560,11 @@ zephir \|
 
 **Tip:** Try the Pygments Demo at http://pygments.org/
 
-.. attention::
 
-   **Please: No syntax errors!**
+.. _writing-rest-codeblocks-some-more-examples:
 
-   Syntax highlighting only works if the lexer can parse the code without errors.
-   In other words: If there's a syntax error in the code the highlighting will not work.
-
-   **Wrong:** ::
-
-      .. code-block: php
-
-         $a = array(
-            'one' => 1,
-            ...
-         );
-
-   **Correct:** ::
-
-      .. code-block: php
-
-         $a = array(
-            'one' => 1,
-            // ...
-         );
-
-
-
-
-The 'highlight' directive
-=========================
-
-::
-
-   Du hast auch die Möglichkeit, innerhalb eines *.rst Files den Standard umzustellen:
-   ```
-   .. nimm ab jetzt Yaml
-   .. highlight:: yaml
-
-   Hier ist der Yaml-Code::
-
-      type: form
-      identifier: example-form-gridcontainer
-
-   .. nimm ab jetzt PHP
-   .. highlight:: php
-
-   In PHP schreibt man::
-
-      <?php
-      phpinfo();
-      ?>
-
-   ```
-
-Was ich damit zeigen will ist, dass man so auf `.. code-block:: LANG` verzichten kann. Liest sich netter.
+Some more examples
+==================
 
 
 Example 1: Turn off highlighting method 1
