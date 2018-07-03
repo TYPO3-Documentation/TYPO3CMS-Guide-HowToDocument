@@ -17,7 +17,7 @@ How To Document TYPO3 Projects
 :Status:          in progess (some things may still be restructured and added)
 
 This manual contains information that is relevant for writing official TYPO3 
-documenation (on `docs.typo3.org <https://docs.typo3.org>`), documentation
+documenation (on `docs.typo3.org <https://docs.typo3.org>`__), documentation
 for extensions and documenation for the TYPO3 core. 
 
 You will find information about how to format the documenation 
