@@ -1,7 +1,7 @@
 .. include:: ../Includes.txt
 
 =======================
-Incoming Text Fragments
+Incoming
 =======================
 
 .. toctree::
