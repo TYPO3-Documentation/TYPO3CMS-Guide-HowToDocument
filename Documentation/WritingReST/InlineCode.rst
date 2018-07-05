@@ -133,3 +133,28 @@ In contrast, *code-blocks*
 - can be compared to `<pre>...</pre>` blocks in html,
 - use predefined names for the different languages that come with Pygments,
   the syntax highlighter.
+
+
+File Includes.txt
+=================
+
+This is the typical content of file :file:`./Documentation/Includes.txt`:
+
+.. code-block:: rst
+
+   .. This is 'Includes.txt'. It is included at the very top of each and
+      every ReST source file in THIS documentation project (= manual).
+
+   .. role:: aspect (emphasis)
+   .. role:: html(code)
+   .. role:: js(code)
+   .. role:: php(code)
+   .. role:: sep (strong)
+   .. role:: yaml(code)
+   .. role:: typoscript(code)
+
+   .. role:: ts(typoscript)
+      :class: typoscript
+
+   .. default-role:: code
+   .. highlight:: php
