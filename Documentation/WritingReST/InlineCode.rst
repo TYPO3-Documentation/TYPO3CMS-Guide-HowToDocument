@@ -150,9 +150,8 @@ This is the typical content of file :file:`./Documentation/Includes.txt`:
    .. role:: js(code)
    .. role:: php(code)
    .. role:: sep (strong)
-   .. role:: yaml(code)
    .. role:: typoscript(code)
-
+   .. role:: yaml(code)
    .. role:: ts(typoscript)
       :class: typoscript
 
