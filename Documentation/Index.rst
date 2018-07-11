@@ -25,7 +25,7 @@ How To Document TYPO3 Projects
 
    * writing official TYPO3 documenation (on `docs.typo3.org <https://docs.typo3.org>`__)
    * writing documentation for extensions
-   * writing documenation for the TYPO3 core.
+   * writing documentation for the TYPO3 core.
 
    You will find information about how to format the documenation
    in reST and some best practices in this guide.
