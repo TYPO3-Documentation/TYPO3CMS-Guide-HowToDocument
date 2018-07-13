@@ -25,7 +25,7 @@ How To Document TYPO3 Projects
    * writing documentation for extensions
    * writing documentation for the TYPO3 core.
 
-   You will find information about how to format the documenation
+   You will find information about how to format the documentation
    in reST and some best practices in this guide.
 
 **Additional information**
@@ -38,9 +38,8 @@ How To Document TYPO3 Projects
      to find out about the visual appearance of various kind of markup.
    * *For extension developers:* Look at :ref:`how-to-start-docs-extension`
    * *For TYPO3 core developers:* Read :ref:`t3contribute:Bugfixing-Adding-documentation` to learn about how to add
-     documentation for deprecations, breaking changes, features and
-     important information.
-   * See `docker-render-documentation Readme on Github
+     documentation to the Changelog.
+   * See `docker-render-documentation
      <https://github.com/t3docs/docker-render-documentation>`__ to
      find out how to use docker to render the TYPO3 documentation locally.
 
