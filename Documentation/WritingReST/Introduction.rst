@@ -3,17 +3,9 @@
 
 .. _writing-rest-introdction:
 
-====================
-Introduction to reST
-====================
-
-**On this page:**
-
-.. rst-class:: compact-list
-
-.. contents::
-   :local:
-   :backlinks: top
+============
+Introduction
+============
 
 reST
 ====
@@ -62,11 +54,26 @@ The levels determine how the headers will be styled and also how they will be st
 in the menu in the sidepanel.
 
 
-ReSt rendering
-==============
+Sphinx
+======
 
-The reST source files will later be rendered into the output format (HTML) on our
-documentation server. The rendering is done automatically: As soon as the
+While reST is the markdown language, Sphinx is a suite of tools used to render the documentation.
+Rendering in this context means that an output format such as PDF or HTML is created from the source .rst files.
+
+We will not go into the exact definition here. For now, all you need to know
+is that some of the markup you will be using is added on by Sphinx.
+This is the case for some additional directives such as the `:ref:` directives
+used for cross-referencing or the `toctree`.
+
+
+Additional information: `Sphinx Markup Constructs <http://www.sphinx-doc.org/en/stable/markup/index.html>`__
+
+
+Rendering
+=========
+
+The documentation source files will later be rendered into the output format (HTML) on our
+documentation server. The rendering is done automatically: If the
 source files change, they are rerendered.
 
 Our headline example from above will look like this:
@@ -79,7 +86,7 @@ Looking at the source
 =====================
 
 Whenever you come across a documentation page on docs.typo3.org, you can look
-at the reST source code by clicking on the "View page Source" link in the footer.
+at the source code by clicking on the "View page Source" link in the footer.
 
 That way, you can see how it is done and compare the reST source with the
 rendered version.
@@ -92,3 +99,5 @@ rendered version.
 .. hint::
 
    Look at the source code of this page now.
+
+

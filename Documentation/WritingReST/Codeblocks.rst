@@ -8,15 +8,6 @@
 Codeblocks with Syntax Highlighting
 ===================================
 
-On this page:
-
-.. rst-class:: compact-list
-
-.. contents::
-   :local:
-   :backlinks: top
-
-
 .. _writing-rest-codeblocks-syntactically-correct:
 
 Use syntactically correct code
@@ -32,9 +23,7 @@ Use syntactically correct code
 
    **Wrong:** ::
 
-      .. highlight: php
-
-      ::
+      .. code-block:: php
 
          $a = array(
             'one' => 1,
@@ -43,9 +32,7 @@ Use syntactically correct code
 
    **Correct:** ::
 
-      highlight: php
-
-      ::
+      .. code-block:: php
 
          $a = array(
             'one' => 1,

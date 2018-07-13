@@ -6,13 +6,6 @@
 List Items as Buttons
 =====================
 
-On this page:
-
-.. rst-class:: compact-list
-
-.. contents::
-   :local:
-   :backlinks: top
 
 
 .. attention::

@@ -7,14 +7,6 @@
 Styled Numbered Lists
 =====================
 
-**On this page:**
-
-.. rst-class:: compact-list
-
-.. contents::
-   :local:
-   :backlinks: top
-
 
 .. _styled_numbered-lists-normal:
 

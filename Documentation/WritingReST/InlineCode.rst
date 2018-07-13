@@ -8,6 +8,12 @@
 Inline Code
 ===========
 
+.. hint::
+
+   Too much inline code can make the information on a page highly
+   unreadable. If this is the case, consider using
+   :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
+
 How to write inline code
 ========================
 

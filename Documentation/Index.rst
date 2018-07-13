@@ -1,4 +1,3 @@
-
 .. include:: Includes.txt
 
 .. _start:
@@ -12,9 +11,7 @@ How To Document TYPO3 Projects
 ------------------------------
 
 :Writing here:    TYPO3 documentation team and TYPO3 community
-:Rendered:        |today|
-:Buildinfo:       `buildinfo <_buildinfo>`_
-:Status:          in progess (some things may still be restructured and added)
+:Status:          Fully revised (July, 2018)
 
 
 **About this manual**
@@ -25,34 +22,22 @@ How To Document TYPO3 Projects
    * writing documentation for extensions
    * writing documentation for the TYPO3 core.
 
-   You will find information about how to format the documenation
+   You will find information about how to format the documentation
    in reST and some best practices in this guide.
-
-**Additional information**
-
-
-   For additional information, look here:
-
-   * See the `t3SphinxThemeRtd demo docs
-     <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Index.html>`__
-     to find out about the visual appearance of various kind of markup.
-   * *For extension developers:* Look at :ref:`how-to-start-docs-extension`
-   * *For TYPO3 core developers:* Read :ref:`t3contribute:Bugfixing-Adding-documentation` to learn about how to add
-     documentation for deprecations, breaking changes, features and
-     important information.
-   * See `docker-render-documentation Readme on Github
-     <https://github.com/t3docs/docker-render-documentation>`__ to
-     find out how to use docker to render the TYPO3 documentation locally.
-
 
 
 .. toctree::
    :hidden:
 
-   Sitemap/Index
-   Incoming/Index
+   HowToGetHelp
+   BasicPrinciples
+   GeneralConventions/Index
    WritingReST/Index
-   UsingSphinx/Index
+   RenderingDocs/Index
+   WritingDocForExtension/Index
+   WritingDocsOfficial/Index
+   Appendix/Index
+   Sitemap/Index
    Targets
 
 
