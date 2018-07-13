@@ -17,9 +17,7 @@ How To Document TYPO3 Projects
 :Status:          in progess (some things may still be restructured and added)
 
 
-.. rst-class:: bignums
-
-1. About this manual
+**About this manual**
 
    This manual contains information that is relevant for
 
@@ -30,7 +28,7 @@ How To Document TYPO3 Projects
    You will find information about how to format the documenation
    in reST and some best practices in this guide.
 
-2. Additional information
+**Additional information**
 
 
    For additional information, look here:

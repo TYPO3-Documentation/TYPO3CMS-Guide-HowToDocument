@@ -1,7 +1,4 @@
-
 .. include:: ../Includes.txt
-
-
 .. highlight:: rst
 
 .. _styled-numbered-lists:

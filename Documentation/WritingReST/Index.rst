@@ -1,5 +1,5 @@
-
 .. include:: ../Includes.txt
+.. highlight:: rst
 
 .. _Formatting-with-reST:
 
@@ -17,15 +17,13 @@ Formatting with reST
      <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Index.html>`__
 
 
-.. Note for Editors: the menu is now ordered in a way where things that are similar are grouped together, e.g.
-..   InlineCode and Codeblock. Also, HeadlinesAndSection and MenuHierarchy
-..
-..   The order was chosen by what seems most important. If you feel, this should be improved, please do so.
-..     (2018-07-03 Sybille)
+
 
 .. toctree::
    :hidden:
 
+   Introduction
+   GeneralConventions
    HeadlinesAndSection
    MenuHierarchy
    Hyperlinks
