@@ -28,6 +28,7 @@ Formatting with reST
    InlineCode
    Codeblocks
    Images
+   Admonitions
    Comments
    HeadlinesAndSection
    MenuHierarchy

@@ -1,6 +1,7 @@
 .. include:: ../Includes.txt
 .. highlight:: none
 
+.. _editorconfig::
 
 =============
 .editorconfig
