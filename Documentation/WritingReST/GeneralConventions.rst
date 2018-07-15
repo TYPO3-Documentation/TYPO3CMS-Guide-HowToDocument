@@ -25,6 +25,58 @@ Every reST file must include the file Includes.txt. Use the correct path!
 
    .. include:: ../Includes.txt
 
+
+.. _editorconfig::
+
+.editorconfig
+=============
+
+
+Most of our documentation projects contain an .editorconfig file. For a sample,
+see `.editorconfig <https://docs.typo3.org/typo3cms/HowToDocument/.editorconfig>`__
+in this manual.
+
+Use this file to setup your editor / IDE correctly. With some, everything will
+just work automatically. With others, you will need to download a plugin. This
+is explained on the `Editorconfig <http://EditorConfig.org>`__ page.
+
+Sample contents of :file:`.editorconfig`
+
+.. code-block:: bash
+   :linenos:
+
+   # EditorConfig is awesome: http://EditorConfig.org
+
+   # top-most EditorConfig file? false = no!
+   root = false
+
+   [{*.rst,*.rst.txt}]
+   charset = utf-8
+   end_of_line = lf
+   insert_final_newline = true
+   trim_trailing_whitespace = true
+   indent_style = space
+   indent_size = 3
+
+   # MD-Files
+   [*.md]
+   charset = utf-8
+   end_of_line = lf
+   insert_final_newline = true
+   trim_trailing_whitespace = true
+   indent_style = space
+   indent_size = 4
+
+
+This sample .editorconfig will instruct your editor / IDE to:
+
+* use utf8 as encoding (line 7)
+* use spaces instead of tabs (line 11)
+* use 3 spaces for indenting (line 12)
+* remove trailing whitespace (line 10)
+* ...
+
+
 Encoding
 ========
 
