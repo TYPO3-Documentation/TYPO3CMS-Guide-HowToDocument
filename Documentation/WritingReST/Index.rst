@@ -24,12 +24,13 @@ Formatting with reST
 
    Introduction
    GeneralConventions
-   HeadlinesAndSection
-   MenuHierarchy
    Hyperlinks
    InlineCode
    Codeblocks
+   Images
    Comments
+   HeadlinesAndSection
+   MenuHierarchy
    ListItemsAsButtons
    BignumLists
    DefinitionLists

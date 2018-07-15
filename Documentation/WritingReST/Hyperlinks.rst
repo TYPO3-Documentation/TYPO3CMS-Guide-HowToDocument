@@ -2,7 +2,7 @@
 .. highlight:: rst
 
 
-.. _hyperlinks:
+.. _how-to-document-hyperlinks:
 
 ==========
 Hyperlinks
