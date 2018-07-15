@@ -7,15 +7,6 @@
 General Conventions for reST files
 ==================================
 
-**On this page:**
-
-.. rst-class:: compact-list
-
-.. contents::
-   :local:
-   :backlinks: top
-
-
 Includes.txt
 ============
 
