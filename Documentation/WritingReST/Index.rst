@@ -3,9 +3,9 @@
 
 .. _Formatting-with-reST:
 
-====================
-Formatting with reST
-====================
+=============================
+Formatting with reST & Sphinx
+=============================
 
 .. tip::
    See the t3SphinxThemeRtd demo docs to find out about the visual appearance of various

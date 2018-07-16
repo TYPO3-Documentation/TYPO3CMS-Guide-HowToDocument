@@ -113,5 +113,4 @@ Line length
 Miscellaneous
 =============
 
-* do not use in headlines ``A :ts:`page` value``
 * the only way to include "special" characters is to use them directly
