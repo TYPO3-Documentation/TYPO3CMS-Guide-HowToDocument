@@ -20,9 +20,8 @@ We won't be covering every reST and sphinx markup that is
 available. For more information, see `Restructured Text (reST) and Sphinx CheatSheet
 <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html>`__
 
-
 .. tip::
-   See the t3SphinxThemeRtd demo docs to see more examples.
+   See the t3SphinxThemeRtd demo docs for more examples.
 
    .. rst-class:: horizbuttons-striking-m
 
@@ -44,10 +43,13 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
    HeadlinesAndSection
    MenuHierarchy
    IncludingFiles
+   Lists
    Images
    Admonitions
    Comments
-   Lists
+   HeadlinesAndSection
+   MenuHierarchy
+   ListItemsAsButtons
    BignumLists
    ListItemsAsButtons
    DefinitionLists
