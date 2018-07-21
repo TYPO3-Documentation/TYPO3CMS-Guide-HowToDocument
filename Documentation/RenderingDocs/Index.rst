@@ -46,7 +46,7 @@ Here, we will briefly also explain the other methods for rendering.
 
       Please be aware that the preview supports reST, but not the
       additional sphinx markup, such as the *toctree* or the
-      :ref:`intersphinx <intersphinx>`__ linking. Because of this, the
+      :ref:`intersphinx <intersphinx>` linking. Because of this, the
       preview is not to be recommended for major changes that involve
       markup beyond basic reST markup.
 
