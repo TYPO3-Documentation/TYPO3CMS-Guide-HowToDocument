@@ -91,7 +91,7 @@ Rendering documentation with docker
 7. Check .gitignore / .gitignore_global
 
    As a precaution, add the generated directory :file:`Documentation-GENERATED-temp`
-   to your ~/.gitignore_global if it is not already in the .gitignore file
+   to your :file:`~/.gitignore_global` if it is not already in the :file:`.gitignore` file
    in the project.
 
 

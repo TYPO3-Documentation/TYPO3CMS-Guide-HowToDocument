@@ -44,7 +44,7 @@ Here, we will briefly also explain the other methods for rendering.
       This method is useful if you are editing documentation directly on
       Github
 
-      Please be aware that the preview supports reST, but not the
+      Please be aware that the preview on Github supports reST, but not the
       additional sphinx markup, such as the *toctree* or the
       :ref:`intersphinx <intersphinx>` linking. Because of this, the
       preview is not to be recommended for major changes that involve
@@ -58,7 +58,7 @@ Here, we will briefly also explain the other methods for rendering.
 
    5. Various online or local tools for reST rendering
 
-      These have the same drawbacks as already noted on "Preview on Github".
+      These have the same drawbacks as already noted for *Preview on Github*.
 
 
 

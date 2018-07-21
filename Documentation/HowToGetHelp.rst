@@ -10,7 +10,7 @@ If you wish to contribute to the docs, have questions or run into
 problems, the `TYPO3 slack workspace <https://typo3.slack.com>`__
 is the place to be.
 
-Slack is currently the main communication medium for TYPO3. In order
+In order
 to join the slack workspace, you must `Register for TYPO3's Slack
 Platform <hhttps://my.typo3.org/index.php?id=35>`__. On that page,
 you will also find information about the most important channels.
