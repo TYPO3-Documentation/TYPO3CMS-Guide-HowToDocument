@@ -62,3 +62,19 @@ With the method just mentioned, you can also find the rendered documentation:
          :target: https://docs.typo3.org/typo3cms/extensions/news/
          :class: with-shadow
          :width: 600px
+
+Follow contribution guide
+=========================
+
+Hopefully, the extension has a contribution guide. You can look at the Github
+help pages to check for `conventions for contribution guides
+<https://help.github.com/articles/setting-guidelines-for-repository-contributors/>`__.
+
+In the Github repository, you should find a file like:
+
+* CONTRIBUTING.md
+* .github/CONTRIBUTING.md
+* etc.
+
+If no contribution guide exists, follow the general conventions for TYPO3 documentation
+and conventions for creating Pull Requests on Github or contact the author.
