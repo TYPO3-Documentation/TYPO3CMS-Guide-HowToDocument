@@ -42,6 +42,8 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    Before you want to publish your changes, make sure the documentation is rendered
    correctly.
 
+   Look at :ref:`rendering-docs-quickstart` for a quick start.
+
 4. When you are done, publish your changes
 
    If you are working on your own 3rdparty extension, make it publicly available.
