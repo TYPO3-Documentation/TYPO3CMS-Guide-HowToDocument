@@ -1,6 +1,7 @@
 .. include:: Includes.txt
 
 .. _how-to-get-help:
+.. _slack:
 
 ===============
 How to get help

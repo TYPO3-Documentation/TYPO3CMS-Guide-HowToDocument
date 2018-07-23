@@ -30,6 +30,7 @@ How To Document TYPO3 Projects
    :hidden:
 
    HowToGetHelp
+   HowToContribute
    BasicPrinciples
    GeneralConventions/Index
    WritingReST/Index

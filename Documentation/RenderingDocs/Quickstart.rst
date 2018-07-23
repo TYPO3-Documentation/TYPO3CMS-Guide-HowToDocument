@@ -8,9 +8,8 @@
 Rendering documentation with docker
 ===================================
 
-.. seealso::
 
-  `Docker rendering Readme on Github <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
+If you run into problems, see :ref:`how-to-get-help`.
 
 .. rst-class:: bignums-xxl
 
