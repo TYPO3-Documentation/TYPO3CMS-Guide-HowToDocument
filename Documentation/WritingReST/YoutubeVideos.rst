@@ -21,7 +21,7 @@ Embed YouTube videos
 2. Embed the Video using the id
 
 
-   .. code-block: rest
+   .. code-block:: rest
 
       2018-01-19 by Mathias Schreiber
 

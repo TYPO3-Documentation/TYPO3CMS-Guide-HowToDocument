@@ -40,7 +40,7 @@ Pick a manual and review it. Either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
 To find the issues for a manual click on "Related links" (usually on the
-bottom left). 
+bottom left).
 
 .. image:: images/related-links-issues.png
    :class: with-shadow

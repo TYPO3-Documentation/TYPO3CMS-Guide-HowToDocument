@@ -8,7 +8,7 @@
 Troubleshooting
 ===============
 
-Hopefully, everything works. If you run into problems, here are some
+If you run into problems, here are some
 helpful hints on how to solve them.
 
 Remember, you can always ask questions in the **#typo3-documentation**

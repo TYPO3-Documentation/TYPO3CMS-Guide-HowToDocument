@@ -45,6 +45,7 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
    IncludingFiles
    Lists
    Images
+   YoutubeVideos
    Admonitions
    Comments
    HeadlinesAndSection
