@@ -12,16 +12,7 @@ reStructuredText (reST) does not exactly have the notion of "headlines". Text
 is split into "sections" instead. Those sections are identified by titles which
 - in the end - appear as headlines as we know them.
 
-**Docutils:** Read about `sections
-<http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections>`__
-in the Docutils documentation for the most fundamental description.
-
-**Sphinx** is explaining `sections
-<http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
-as well.
-
-**TYPO3** uses these conventions. It is a strong recommendation for all
-manuals that are maintained by more than just one person.
+**TYPO3** uses these conventions.
 
 1. Use underlining plus overlining with `===` for the first section title of a
    file. The first section title is the "document title" (doctitle) of that
@@ -76,3 +67,15 @@ Example
    Main Topic 2
    ============
    ...
+
+
+Additional information
+======================
+
+* **Docutils:** Read about `sections
+  <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections>`__
+  in the Docutils documentation for the most fundamental description.
+
+* **Sphinx** is explaining `sections
+  <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
+  as well.

@@ -73,7 +73,7 @@ Rendering
 =========
 
 The documentation source files will later be rendered into the output format (HTML) on our
-documentation server. The rendering is done automatically: As soon as the
+documentation server. The rendering is done automatically: If the
 source files change, they are rerendered.
 
 Our headline example from above will look like this:

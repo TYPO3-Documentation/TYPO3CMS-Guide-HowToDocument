@@ -17,7 +17,7 @@ External links
 
    Do not use this mechanism (absolute URLs) for links to sections of
    the official documentation. Use the Intersphinx mechanism as described
-   :ref:`intersphinx`.
+   in :ref:`intersphinx`.
 
 
 Source

@@ -1,11 +1,11 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-.. _Formatting-reST-Source-Files:
+.. _format-rest-cgl:
 
-==================================
-General Conventions for reST files
-==================================
+================================
+Coding Guidelines for reST files
+================================
 
 Includes.txt
 ============
@@ -65,7 +65,6 @@ This sample .editorconfig will instruct your editor / IDE to:
 * use spaces instead of tabs (line 11)
 * use 3 spaces for indenting (line 12)
 * remove trailing whitespace (line 10)
-* ...
 
 
 Encoding
@@ -79,7 +78,7 @@ Whitespace and indenting
 .. important::
 
    Always use indentation levels correctly (3 spaces). Your code may not
-   be rendered correctly if you do not.
+   be rendered as expected if you do not.
 
 * remove white space from the end of lines (= no trailing tabs or spaces)
 * don't use tabs

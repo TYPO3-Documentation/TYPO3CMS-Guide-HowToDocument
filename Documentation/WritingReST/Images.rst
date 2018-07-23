@@ -108,6 +108,6 @@ Some text ... (will be displayed on the right of the image).
 
 .. hint::
 
-   When using float-left, make sure the your is suitable for
+   When using float-left, make sure the text is suitable for
    wrapping around images. Here, we use `.. rst-class:: clear-both`
    to reset the floating and start on the left again.

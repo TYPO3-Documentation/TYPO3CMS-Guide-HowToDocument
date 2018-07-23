@@ -6,16 +6,6 @@
 Special Styles
 ==============
 
-On this page:
-
-.. rst-class:: compact-list
-
-.. contents::
-   :local:
-   :backlinks: top
-
-
-With theme **t3SphinxThemeRtd**:
 
 classes::
 

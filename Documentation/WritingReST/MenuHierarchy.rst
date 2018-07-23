@@ -1,10 +1,11 @@
-
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-=================
-The Menu Hiearchy
-=================
+.. _rest-menu-hierachy:
+
+==================
+The Menu Hierarchy
+==================
 
 General rules for using `..toctree::`
 =====================================
@@ -27,7 +28,7 @@ for references and appears in menus for example.
 
 2017-02-13 by Martin Bless
 
-TYPO3 documentation usually starts with a textfile :file:`PROJECT/Documentation/Index.rst`.
+TYPO3 documentation usually starts with the file :file:`PROJECT/Documentation/Index.rst`.
 The text may go into more than one textfile and these can be "pulled in" and
 referenced by the
 `.. toctree:: <http://www.sphinx-doc.org/en/stable/markup/toctree.html>`__
