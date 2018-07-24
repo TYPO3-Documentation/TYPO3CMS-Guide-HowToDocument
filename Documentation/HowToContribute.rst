@@ -8,7 +8,16 @@ How to contribute
 
 Look at :ref:`docs-contribute` for information about how to get started.
 
+The community is welcome to make changes and improve the documentation.
+Even small changes are a big help and very much appreciated!
+
 Here are some examples how you can help.
+
+.. important::
+
+   If you plan to make extensive changes, please let us know in the
+   **#typo3-documentation** channel on :ref:`Slack <slack>` about it.
+   Someone may already be working on the same thing.
 
 Fix Issues
 ==========
@@ -36,7 +45,8 @@ See :ref:`youtube-videos` for information how to do this.
 Review manuals
 ==============
 
-Pick a manual and review it. Either fix it or write an
+Pick a manual and review it. If you find something that needs fixing
+or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
 To find the issues for a manual click on "Related links" (usually on the
