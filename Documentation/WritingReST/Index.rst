@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _Formatting-with-reST:
+.. _format-sphinx:
 
 =============================
 Formatting with reST & Sphinx

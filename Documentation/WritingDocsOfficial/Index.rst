@@ -33,7 +33,9 @@ the other method briefly.
    2. Github method
 
       Additionally to the workflow described here, you can make the
-      changes directly on Github. This workflow can be used for minor
+      :ref:`changes directly on Github <docs-contribute-github-method>`.
+
+      This workflow can be used for minor
       changes that do not involve much markup.
 
       Watch the official YouTube video `Tutorial - Contribute to
@@ -56,3 +58,4 @@ the other method briefly.
    :glob:
 
    Quickstart
+   GithubMethod

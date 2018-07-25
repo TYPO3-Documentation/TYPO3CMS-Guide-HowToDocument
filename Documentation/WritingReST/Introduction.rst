@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _writing-rest-introdction:
+.. _writing-rest-introduction:
 
 ============
 Introduction
