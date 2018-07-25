@@ -4,6 +4,7 @@
 
 
 .. _docs-contribute-quickstart:
+.. _docs-contribute-git-docker:
 
 ===============================
 Quick start with git and docker

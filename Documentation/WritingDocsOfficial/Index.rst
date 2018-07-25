@@ -8,7 +8,12 @@
 Writing official documentation
 ==============================
 
-As usual, there are several ways to do make changes to the
+The community is welcome to make changes to the documentation.
+
+Your help is very much appreciated - even small changes are a big
+help.
+
+There is more than one way to do make changes to the
 documentation. Using *git* in combination with *docker* is the
 **recommended and fully supported** way. We will also list
 the other method briefly.
@@ -18,7 +23,12 @@ the other method briefly.
 
    1. (recommended) *git* / *docker* method
 
-      Go right to :ref:`docs-contribute-quickstart` to get started.
+      If you are familiar with git, docker and the command line,
+      you can go straight to :ref:`docs-contribute-quickstart` to
+      get started.
+
+      If not, you can either use the Github method or get in touch
+      with us for help: :ref:`how-to-get-help`.
 
    2. Github method
 
