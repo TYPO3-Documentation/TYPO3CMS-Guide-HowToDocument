@@ -3,7 +3,6 @@
 
 .. _rendering-docs-troubleshooting:
 
-
 ===============
 Troubleshooting
 ===============
@@ -33,6 +32,8 @@ everything works correctly, the final output should look like this:
 
 Relevant is the exitcode 0. It indicates that everything executed
 smoothly.
+
+.. _render-troubleshooting-errors:
 
 Errors that break the rendering
 ===============================
@@ -93,9 +94,10 @@ latest changes.
 Correct the path, so it will point to the existing Includes.txt (which
 should be located in the directory :file:`Documentation`.
 
+.. _render-troubleshooting-warnings:
 
-_buildinfo/warnings.txt
-=======================
+Warnings
+========
 
 There may be problems which will not break the rendering but which
 should be taken care of. Warnings are listed in the file
@@ -121,3 +123,26 @@ You can also view the file in the terminal (or in your IDE / editor):
    Create aliases for the commands that work best for you now!
 
 
+.. _render-troubleshooting-incremental:
+
+Incremental rendering
+=====================
+
+After you make changes, you can initiate rendering again, for example:
+
+.. code-block:: bash
+
+   dockrun_t3rdf makehtml
+
+This will cause .rst files, that have been changed, to be rendered again.
+
+If the menu (toctree) has been changed, the menu may not be correctly
+displayed for unchanged files because they will not be rendered again.
+
+If you need a complete rendering, delete the file:`Documentation-GENERATED-temp`
+folder and render again, for example:
+
+.. code-block:: bash
+
+  rm -rf Documentation-GENERATED-temp
+  dockrun_t3rdf makehtml
