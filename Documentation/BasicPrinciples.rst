@@ -32,6 +32,7 @@ TYPO3 documentation may be one of the following:
 
 * It can be one of the `official manuals <https://docs.typo3.org/>`__
   like :ref:`t3coreapi:start`.
+* It can be the documentation of a 
   `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 * It can be the documentation of a
   `3rdparty extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
