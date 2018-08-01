@@ -81,7 +81,7 @@ may be longer, not shorter.
 Example 1: this works
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. code-bock::
+.. code-block:: rest
 
    =========
    Example 1
@@ -90,7 +90,7 @@ Example 1: this works
 Example 2: this works too
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-bock::
+.. code-block:: rest
 
    ==============
    Example 1
@@ -99,7 +99,7 @@ Example 2: this works too
 Example 3: this does not work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-bock::
+.. code-block:: rest
 
    =======
    Example 1
