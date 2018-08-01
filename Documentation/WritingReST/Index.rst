@@ -49,11 +49,8 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
    YoutubeVideos
    Admonitions
    Comments
-   HeadlinesAndSection
-   MenuHierarchy
    ListItemsAsButtons
    BignumLists
-   ListItemsAsButtons
    DefinitionLists
    SpecialCharacters
    Orphans
