@@ -44,7 +44,7 @@ is split into "sections" instead. Those sections are identified by titles which
 Example
 =======
 
-::
+.. code-block:: rest
 
    ====================
    This is the DocTitle
@@ -68,6 +68,44 @@ Example
    ============
    ...
 
+
+Syntax
+======
+
+Length of underlines
+--------------------
+
+The length of the underlines must at least have the length of the text. It 
+may be longer, not shorter. 
+
+Example 1: this works
+~~~~~~~~~~~~~~~~~~~~~
+
+.. code-bock::
+
+   =========
+   Example 1
+   =========
+   
+Example 2: this works too
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-bock::
+
+   ==============
+   Example 1
+   ==============
+
+Example 3: this does not work
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-bock::
+
+   =======
+   Example 1
+   =======
+
+   
 
 Additional information
 ======================
