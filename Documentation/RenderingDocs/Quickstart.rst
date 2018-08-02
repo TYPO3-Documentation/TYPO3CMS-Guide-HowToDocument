@@ -50,6 +50,12 @@ If you run into problems, see :ref:`how-to-get-help`.
 
    If you run into problems, check the :ref:`rendering-docs-troubleshooting`
    page!
+   
+   For more commands, see help:
+   
+   .. code-block:: bash
+   
+      dockrun_t3rdf --help
 
 5. View the documentation
 
