@@ -48,8 +48,8 @@ of the content.
        |-> Header 1.1.1
    |-> Header 1.2
 
-On the page you are looking at now, "Introduction to reST" is a level 1 header and "reST",
-"ReST rendering" etc. are level 2 headers.
+On the page you are looking at now, "Introduction" is a level 1 header and "reST",
+"Sphinx" etc. are level 2 headers.
 
 The levels determine how the headers will be styled and also how they will be structured
 in the menu in the sidepanel.
