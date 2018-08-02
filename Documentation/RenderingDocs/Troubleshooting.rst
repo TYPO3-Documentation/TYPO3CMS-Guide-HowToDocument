@@ -139,7 +139,7 @@ This will cause .rst files, that have been changed, to be rendered again.
 If the menu (toctree) has been changed, the menu may not be correctly
 displayed for unchanged files because they will not be rendered again.
 
-If you need a complete rendering, delete the file:`Documentation-GENERATED-temp`
+If you need a complete rendering, delete the :file:`Documentation-GENERATED-temp`
 folder and render again, for example:
 
 .. code-block:: bash
