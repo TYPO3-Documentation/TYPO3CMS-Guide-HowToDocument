@@ -22,8 +22,8 @@ Here are some examples how you can help.
 Fix Issues
 ==========
 
-Look at the list of `open issues on Github
-<https://github.com/search?o=desc&q=org%3ATYPO3-Documentation+type%3Aissue&s=updated&state=open&type=Issues>`__,
+Look at the list of `open and unassigned issues on Github
+<https://github.com/search?q=org%3ATYPO3-Documentation+type%3Aissue+state%3Aopen+no%3Aassignee&type=Issues>`__,
 pick one and fix it.
 
 Replace outdated images
