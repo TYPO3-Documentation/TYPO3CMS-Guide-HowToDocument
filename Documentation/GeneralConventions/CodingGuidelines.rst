@@ -24,7 +24,7 @@ Every reST file must include the file Includes.txt. Use the correct path!
 
 
 Most of our documentation projects contain an .editorconfig file. For a sample,
-see `.editorconfig <https://docs.typo3.org/typo3cms/HowToDocument/.editorconfig>`__
+see `.editorconfig <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
 in this manual.
 
 Use this file to setup your editor / IDE correctly. With some, everything will
