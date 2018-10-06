@@ -45,13 +45,14 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
    MenuHierarchy
    IncludingFiles
    Lists
+   NumberedLists   
+   DefinitionLists
+   ListItemsAsButtons
+   BignumLists   
    Images
    YoutubeVideos
    Admonitions
    Comments
-   ListItemsAsButtons
-   BignumLists
-   DefinitionLists
    SpecialCharacters
    Orphans
    CleverRest
