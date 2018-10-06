@@ -24,6 +24,10 @@ Do:
 ::
 
    This is normal text. **This is bold text.**
+   
+**How it looks:**
+
+This is normal text. **This is bold text.**
 
 Don't:
 ------
@@ -32,13 +36,18 @@ Don't:
 
    This is normal text. ** This is bold text.**
 
+**How it looks:**
+
+This is normal text. ** This is bold text.**
 
 Problems with lists
 ===================
 
 If you use lists, make sure there is an empty line before and after the
 list. If you use lists with sublevels, make sure there is an empty line
-between the levels
+between the levels.
+
+See also: `Docutils cheat-sheet for reStructuredText: Bullet list <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
 
 Do
 --
