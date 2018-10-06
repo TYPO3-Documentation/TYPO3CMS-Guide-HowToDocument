@@ -4,9 +4,9 @@
 
 .. _Styled-Definition-Lists:
 
-=======================
-Styled Definition Lists
-=======================
+================
+Definition Lists
+================
 
 
 List style "dl-parameters"
