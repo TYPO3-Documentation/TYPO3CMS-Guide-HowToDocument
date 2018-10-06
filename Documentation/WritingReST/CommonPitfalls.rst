@@ -15,7 +15,7 @@ in order to avoid common errors.
 Problem with inline style
 =========================
 
-If you use bold or italic, make sure there is no space between the markup
+If you use **bold** or *italic*, make sure there is no space between the markup
 and the text:
 
 Do:
