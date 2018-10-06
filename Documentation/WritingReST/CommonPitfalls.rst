@@ -16,7 +16,9 @@ Problem with inline style
 =========================
 
 If you use **bold** or *italic*, make sure there is no space between the markup
-and the text:
+and the text.
+
+See also: `Docutils cheat-sheet for reStructuredText: Inline markup <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__
 
 Do:
 ---
