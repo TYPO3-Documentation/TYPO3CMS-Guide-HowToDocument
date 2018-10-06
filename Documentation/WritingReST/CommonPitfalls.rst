@@ -9,8 +9,8 @@
 Common pitfalls
 ===============
 
-Here we describe some things that may go wrong. You may run into one or
-more of these problems. If you do, come back here.
+Here we describe some common mistakes. Read this page before you start
+in order to avoid common errors.
 
 Problem with inline style
 =========================
