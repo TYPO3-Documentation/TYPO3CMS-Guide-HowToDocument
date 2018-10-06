@@ -18,7 +18,9 @@ Problem with inline style
 If you use **bold** or *italic*, make sure there is no space between the markup
 and the text.
 
-See also: `Docutils cheat-sheet for reStructuredText: Inline markup <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__
+**See also:**
+
+* `Docutils cheat-sheet for reStructuredText: Inline markup <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__
 
 Do:
 ---
@@ -49,13 +51,19 @@ If you use lists, make sure there is an empty line before and after the
 list. If you use lists with sublevels, make sure there is an empty line
 between the levels.
 
-See also: `Docutils cheat-sheet for reStructuredText: Bullet list <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
+The same applies for bullet lists and enumerated lists
+
+**See also:** 
+
+* `Docutils cheat-sheet for reStructuredText: Bullet list <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
+* :ref:`Section on lists in this guide <rest-lists>`
+* `Docutils cheat-sheet for reStructuredText: Enumerated lists <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
 
 Do
 --
 
-Example 1
-~~~~~~~~~
+Example 1: Bullet list
+~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -75,8 +83,30 @@ this is some text
 
 more text
 
-Example 2
-~~~~~~~~~
+Example 2: Enumerated list
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+   this is some text
+   
+   #. This is a list item
+   #. Another item
+   
+   more text
+   
+**How it looks:**
+
+this is some text
+
+#. This is a list item
+#. Another item
+
+more text
+
+
+Example 3: List with sublist
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
