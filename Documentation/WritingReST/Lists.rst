@@ -3,9 +3,9 @@
 
 .. _rest-lists:
 
-=====
-Lists
-=====
+============
+Bullet lists
+============
 
 This section contains information on bullet lists and numbered lists. 
 
