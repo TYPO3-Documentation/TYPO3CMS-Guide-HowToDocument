@@ -7,10 +7,27 @@
 Lists
 =====
 
+This section contains information on bullet lists and numbered lists. 
+
 * Each item of a list should start with a `*` or `-` and a space after it
 * Lists should have an empty line before and after
 * Sublists should also precede with an extra newline
 * Indent sublists with 3 spaces
+
+bullet lists:
+
+* Each item of a list should start with a `*` or `-` and a space after it
+
+numbered lists:
+
+* Start each item with a `#.` and a space after it for automatic numbering
+
+
+**See also:** 
+
+* `Docutils cheat-sheet for reStructuredText: Bullet list <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
+* `Docutils cheat-sheet for reStructuredText: Enumerated lists <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
+
 
 Example 1: List with sublist items
 ==================================
@@ -69,3 +86,20 @@ Example 2: List with sublist and error
    * subitem 3.1
    * subitem 3.1
 * item 4
+
+For more information on common errors, see :ref:`rest-common-pitfalls`.
+
+Example 3: Numbered list
+========================
+
+.. code-block:: rest
+
+   #. item no 1
+   #. item no 2
+   
+** How it looks:**
+
+#. item no 1
+#. item no 2
+
+For more information on numbered lists, see :ref:`styled-numbered-lists`.
