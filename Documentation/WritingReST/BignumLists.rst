@@ -3,29 +3,9 @@
 
 .. _styled-numbered-lists:
 
-=====================
-Styled Numbered Lists
-=====================
-
-
-.. _styled_numbered-lists-normal:
-
-Normally styled
-===============
-
-*Source:* ::
-
-   #. abc
-   #. bcd
-   #. cde
-
-
-*How it looks*
-
-#. abc
-#. bcd
-#. cde
-
+========================
+Styled numbered sections
+========================
 
 
 With XXL big numbers
