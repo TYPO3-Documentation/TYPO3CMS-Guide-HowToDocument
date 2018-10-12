@@ -71,6 +71,28 @@ Use reStructuredText::
 Use PHP::
 
    .. highlight:: php
+   
+For TYPO3 we have adopted the convention that each reStructuredText source file imports
+the :file:`Documentation/Includes.txt` file at the top. And in the included file - in general -
+we set PHP as default language for highlighting. Exception: In the TypoScript manuals 
+`typoscript` is set as default language.
+
+You can use the `..highlight:: LANG` directive as often as you want. I remains valid to
+the end of the *single file* it is used in.
+
+
+Highlight language 'guess'
+--------------------------
+
+Note that there is a - pseudo - language 'guess' as well. This should use the highlighting 
+of the first language that Pygments finds to have no syntax error.
+
+
+Highlight language 'none'
+-------------------------
+
+The pseudo language 'none' is recognized as well. In this case no highlighting 
+will occur.
 
 
 
