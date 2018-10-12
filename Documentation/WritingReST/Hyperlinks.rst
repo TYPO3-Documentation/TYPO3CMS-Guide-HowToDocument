@@ -8,6 +8,38 @@
 Hyperlinks & Cross-referencing
 ==============================
 
+
+Quick reference
+===============
+
+In Sphinx you can use several types of links:
+
+:ref:`external-links`
+   for linking to other sources outside of the reST docs on docs.typo3.org.
+
+   .. code-block:: rest
+
+      `anchor text <url>`__
+
+   (with one or two underscores at the end)
+
+:ref:`Cross-Referencing <intersphinx>`
+   for linking to other sections of current or other manual on docs.typo3.org with Intersphinx mechanism
+
+   .. code-block:: rest
+
+      :ref:`anchor text <link target>`
+
+   (using *:ref:* and without an underscore)
+
+   To create a :ref:`link target <explicit-link-targets>` for a section chapter,
+   put this in a line before the section header::
+
+      .. _link-target:
+
+
+How to create links is described in more detail in the next sections.
+
 .. _external-links:
 
 External links
@@ -15,26 +47,114 @@ External links
 
 .. important::
 
-   Do not use this mechanism (absolute URLs) for links to sections of
+   Do not use this mechanism (external links) for links to sections of
    the official documentation. Use the Intersphinx mechanism as described
-   in :ref:`intersphinx`.
+   in :ref:`intersphinx`. See :ref:`intersphinx-benefits` for an explanation
+   of why you should do this.
 
 
-Source
-------
+You can use one or more underscores (`_`) for the link. The difference is as follows:
+
+* One underscore creates a :ref:`named reference <external-links-named-reference>`
+* Two underscores create an :ref:`anonymous URL <external-links-anonymous>`
+
+For further explanation of the difference between these 2, please see
+`Stackoverflow <https://stackoverflow.com/questions/27420317/restructured-text-rst-http-links-underscore-vs-use>`__.
+
+
+If in doubt, just use 2 underscores as explained in the next section :ref:`external-links-anonymous`.
+
+.. _external-links-anonymous:
+
+External link as anonymous url
+-------------------------------
+
+Syntax
+~~~~~~
+
+::
+
+   `Anchor text <URL>`__
+
+* There must always be a space between the anchor text and the URL
+
+Example
+~~~~~~~
 
 ::
 
    `Sphinx hyperlinks <http://www.sphinx-doc.org/en/stable/rest.html#hyperlinks>`__
 
 
-Result
-------
+**How it looks:**
 
 `Sphinx hyperlinks <http://www.sphinx-doc.org/en/stable/rest.html#hyperlinks>`__
 
 
+.. _external-links-named-reference:
 
+External link as named reference
+--------------------------------
+
+Syntax
+~~~~~~
+
+Same as :ref:`anonymous URL <external-links-anonymous>`, but with one
+underscore instead of 2.
+
+::
+
+   `Anchor text <URL>`_
+
+* There must always be a space between the anchor text and the URL
+
+
+.. _link-targets:
+
+Link targets
+============
+
+When using the :ref:`intersphinx` mechanism (as described in the next section), you
+will link to link targets.
+
+.. _explicit-link-targets:
+
+Explicit link targets (labels)
+------------------------------
+
+You can define an explicit link target with a label for a section (or chapter):
+
+A section label of the name `columns-inline` is set::
+
+   .. _columns-inline:
+
+
+Here, the link target *columns-inline* will be defined.
+
+* Place the link target definition directly before the section header:
+
+.. code-block:: rest
+
+   .. _columns-inline:
+
+   Inline columns
+   ==============
+
+* You can define more than one link target definition (for example if
+  you want to keep some for historical reasons to not break links but
+  the name has changed considerably)
+
+
+.. _implicit-link-targets:
+
+Implicit link targets
+---------------------
+
+For every section (or chapter), an implicit link target is created from the
+header.
+
+However, there are some disadvantages in using these, so we will not go into
+that further.
 
 
 .. _intersphinx:
@@ -54,27 +174,30 @@ Additional information: See the `Sphinx documentation
 In the same manual
 ------------------
 
-Using `:ref:` is the recommended way to create links in a manual because it works across files.
-
-
-A section label of the name `columns-inline` has been set somewhere::
+A :ref:`section label <explicit-link-targets>` of the name `columns-inline` has been set somewhere::
 
    .. _columns-inline:
 
    Inline Columns
    ==============
 
+
 You can then link to it like this **from the same manual**::
 
   :ref:`columns-inline`
 
+This will use the header of the section as anchor text.
+
+You can also explicitly set an anchor text::
+
+   :ref:`Inline columns <columns-inline>`
 
 
 From one manual to another
 --------------------------
 
-Example 1: Use text of headline as linktext
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 1: Use text of headline as anchor text
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Again, we want to link to the label `columns-inline`.
 
@@ -101,16 +224,18 @@ of the headline is that follows the label *in the manual we link to*, in this ca
 the TCA manual.
 
 
-Example 2: Specify linktext
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 2: Specify anchor text
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-If we want to control the linktext ourselves, we can do so by
+If we want to control the anchor text ourselves, we can do so by
 writing:
 
 .. code-block:: rest
 
    :ref:`this is our linktext <t3tca:columns-inline>`
+
+.. _intersphinx-benefits:
 
 Understanding the benefits
 --------------------------
