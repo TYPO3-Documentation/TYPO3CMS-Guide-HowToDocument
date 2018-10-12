@@ -83,6 +83,10 @@ To insert a snippet as code with syntax highlighting, use the `code-block` direc
 You can explicitly set the language in the codeblock or not. If you do not, the default language (as set
 with the `highlight` directive) is used.
 
+If the correct language has already been defined, it is recommended to use the short form (`::`), as
+explained in a
+`Github pull request comment <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/pull/307#issuecomment-410630200>`__.
+
 
 The following examples, all do the same thing:
 
@@ -92,6 +96,8 @@ The following examples, all do the same thing:
    1. Set the language (PHP) in the `code-block`:
 
       ::
+
+         See following example:
 
          .. code-block:: php
 
@@ -104,6 +110,8 @@ The following examples, all do the same thing:
 
       ::
 
+         See following example:
+
          .. code-block::
 
             $a = 'b';
@@ -115,7 +123,8 @@ The following examples, all do the same thing:
 
       ::
 
-         ::
+         See following example::
+
 
             $a='b';
 
