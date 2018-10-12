@@ -26,9 +26,10 @@ With the Github Preview, you will not see how the menu is rendered,
 you will not see some specific markup in action and it will not show
 all errors correctly.
 
-That being said, we recommend to try out the method, because it is
+That being said, we recommend to try out this method, because it is
 a way to quickly make changes, but use the :ref:`git/docker
-<docs-contribute-git-docker>` method in the long run.
+<docs-contribute-git-docker>` method in the long run for larger
+changes.
 
 
 Getting started

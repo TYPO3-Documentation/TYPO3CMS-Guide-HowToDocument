@@ -36,7 +36,7 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
    :hidden:
 
    Introduction
-   CommonPitfalls
+   CommonPitfalls/Index
    BoldItalic
    Hyperlinks
    Codeblocks

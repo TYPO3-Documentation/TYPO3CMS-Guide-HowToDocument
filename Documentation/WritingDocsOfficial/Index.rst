@@ -16,7 +16,7 @@ help.
 There is more than one way to do make changes to the
 documentation. Using *git* in combination with *docker* is the
 **recommended and fully supported** way. We will also list
-the other method briefly.
+the other methods briefly.
 
 
 .. rst-class:: bignums
@@ -32,15 +32,10 @@ the other method briefly.
 
    2. Github method
 
-      Additionally to the workflow described here, you can make the
+      Additionally to the workflow *git* / *docker* method, you can make the
       :ref:`changes directly on Github <docs-contribute-github-method>`.
 
-      This workflow can be used for minor
-      changes that do not involve much markup.
-
-      Watch the official YouTube video `Tutorial - Contribute to
-      docs.typo3.org <https://www.youtube.com/watch?v=wNxO-aXY5Yw>`__
-      to get started.
+      This workflow can be used for minor changes that do not involve much markup.
 
       .. important::
 
