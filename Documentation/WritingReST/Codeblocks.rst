@@ -58,14 +58,14 @@ You can set the default language with the `highlight` directive. All following c
 will use the language as specified in the `highlight` directive for syntax highlighting.
 
 If all of your codeblocks have the same language, it is easier to just set this once at the
-beginning of the file.
+beginning of the file. 
 
 This way, you don't need to set the language for each code-block (`.. code-block:: LANG`).
 
-Use reST::
+Use reStructuredText::
 
 
-   .. highlight:: rest
+   .. highlight:: rst
 
 
 Use PHP::
