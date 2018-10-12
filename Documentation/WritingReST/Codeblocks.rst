@@ -64,7 +64,6 @@ This way, you don't need to set the language for each code-block (`.. code-block
 
 Use reStructuredText::
 
-
    .. highlight:: rst
 
 
@@ -110,14 +109,12 @@ explained in a
 `Github pull request comment <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/pull/307#issuecomment-410630200>`__.
 
 
-The following examples, all do the same thing:
+The following examples all do the same thing:
 
 
 .. rst-class:: bignums
 
-   1. Set the language (PHP) in the `code-block`:
-
-      ::
+   1. Set the language (PHP) in the `code-block`::
 
          See following example:
 
@@ -128,10 +125,10 @@ The following examples, all do the same thing:
 
    2. Use `code-block` without setting the language:
 
-      You can use this, if you already set the language PHP with the highlight directive.
+      You can use this, if you already set the language PHP with the highlight directive::
 
-      ::
-
+         .. highlight:: php
+         
          See following example:
 
          .. code-block::
@@ -139,21 +136,16 @@ The following examples, all do the same thing:
             $a = 'b';
 
 
-   3. Use the shorthand `::`:
+   3. Use the shorthand `::`.
 
-      You can use this, if you already set the language PHP with the highlight directive.
+      You can use this, if you already set the language PHP with the highlight directive::
 
-      ::
+         .. highlight:: php
 
          See following example::
 
-
             $a='b';
 
-
-
-
-.. _writing-rest-codeblocks-available-lexers:
 
 
 
@@ -267,11 +259,12 @@ A description::
    └── installed.json
 
 
+.. _writing-rest-codeblocks-available-lexers:
+
 Available Lexers
 ================
 
 You can use any of the following names of lexers:
-
 
 
 `| bash, sh, ksh, shell |` for example all mean the same lexer:
