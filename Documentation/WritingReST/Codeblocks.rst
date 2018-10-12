@@ -1,4 +1,3 @@
-
 .. include:: ../Includes.txt
 .. highlight:: rst
 
@@ -7,6 +6,7 @@
 ===================================
 Codeblocks with Syntax Highlighting
 ===================================
+
 
 .. _writing-rest-codeblocks-syntactically-correct:
 
@@ -17,8 +17,9 @@ Use syntactically correct code
 
    **Please: No syntax errors!**
 
-   Syntax highlighting only works if the lexer can parse the code without errors.
-   In other words: If there's a syntax error in the code the highlighting will not work.
+   Syntax highlighting only works if the lexer can parse the code without
+   errors. In other words: If there's a syntax error in the code the
+   highlighting will not work.
 
 
    **Wrong:** ::
@@ -43,9 +44,9 @@ Use syntactically correct code
 
 
 
-`Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses
-`Pygments <http://pygments.org/>`__ for highlighting. On a machine that has Pygments installed
-the command `pygmentize -L` will list all available lexers.
+`Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses `Pygments
+<http://pygments.org/>`__ for highlighting. On a machine that has Pygments
+installed the command `pygmentize -L` will list all available lexers.
 
 
 .. _writing-rest-codeblocks-highlight-directive:
@@ -54,43 +55,46 @@ the command `pygmentize -L` will list all available lexers.
 Highlight directive
 ===================
 
-You can set the default language with the `highlight` directive. All following codeblocks
-will use the language as specified in the `highlight` directive for syntax highlighting.
+You can set the default language with the `highlight` directive. All following
+codeblocks will use the language as specified in the `highlight` directive for
+syntax highlighting.
 
-If all of your codeblocks have the same language, it is easier to just set this once at the
-beginning of the file. 
+If all of your codeblocks have the same language, it is easier to just set this
+once at the beginning of the file.
 
-This way, you don't need to set the language for each code-block (`.. code-block:: LANG`).
+This way, you don't need to set the language for each code-block (`..
+code-block:: LANG`).
 
-Use reStructuredText::
+Use reStructuredText highlighting::
 
    .. highlight:: rst
 
 
-Use PHP::
+Use PHP highlighting::
 
    .. highlight:: php
-   
-For TYPO3 we have adopted the convention that each reStructuredText source file imports
-the :file:`Documentation/Includes.txt` file at the top. And in the included file - in general -
-we set PHP as default language for highlighting. Exception: In the TypoScript manuals 
-`typoscript` is set as default language.
 
-You can use the `..highlight:: LANG` directive as often as you want. I remains valid to
-the end of the *single file* it is used in.
+For TYPO3 we have adopted the convention that each reStructuredText source file
+imports the :file:`Documentation/Includes.txt` file at the top. And in the
+included file - in general - we set PHP as default language for highlighting.
+Exception: In the TypoScript manuals we are using `typoscript` as default.
+
+You can use the `..highlight:: LANG` directive as often as you want. Each one
+remains valid up to the next or up to the end of the *single file* it is used
+in.
 
 
 Highlight language 'guess'
 --------------------------
 
-Note that there is a - pseudo - language 'guess' as well. This should use the highlighting 
-of the first language that Pygments finds to have no syntax error.
+Note that there is a - pseudo - language 'guess' as well. This should use the
+highlighter for the first language that Pygments finds to have no syntax error.
 
 
 Highlight language 'none'
 -------------------------
 
-The pseudo language 'none' is recognized as well. In this case no highlighting 
+The pseudo language 'none' is recognized as well. In this case no highlighting
 will occur.
 
 
@@ -100,16 +104,13 @@ will occur.
 Codeblock directive
 ===================
 
-To insert a snippet as code with syntax highlighting, use the `code-block` directive or the shorthand `::`
-You can explicitly set the language in the codeblock or not. If you do not, the default language (as set
-with the `highlight` directive) is used.
+To insert a snippet as code with syntax highlighting, use the `code-block`
+directive or the shorthand `::` You can explicitly set the language in the
+codeblock or not. If you do not, the default language (as set with the
+`highlight` directive) is used.
 
-If the correct language has already been defined, it is recommended to use the short form (`::`), as
-explained in a
-`Github pull request comment <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/pull/307#issuecomment-410630200>`__.
-
-
-The following examples all do the same thing:
+If the correct language has already been defined, it is recommended to use the
+short form (`::`). The following examples all do the same thing:
 
 
 .. rst-class:: bignums
@@ -125,10 +126,11 @@ The following examples all do the same thing:
 
    2. Use `code-block` without setting the language:
 
-      You can use this, if you already set the language PHP with the highlight directive::
+      You can use this, if you already set the language PHP with the highlight
+      directive::
 
          .. highlight:: php
-         
+
          See following example:
 
          .. code-block::
@@ -138,13 +140,110 @@ The following examples all do the same thing:
 
    3. Use the shorthand `::`.
 
-      You can use this, if you already set the language PHP with the highlight directive::
+      You can use this, if you already set the language PHP with the highlight
+      directive::
 
          .. highlight:: php
 
          See following example::
 
             $a='b';
+
+
+
+
+
+Using the '::' notation (recommended)
+=====================================
+
+It's nice to use this notation and the preferred way to create a code block in
+case the highlighting is preset as desired and you don't need the special
+options of the code-block directive.
+
+However, the behavior of the '::' notation is "sort of intelligent". So let's
+explain it here. *Background:* "Sphinx" is based on "Docutils". Docutils
+handles the basic *parse*, *transform* and *create output* process for single
+files. Sphinx builds an this and adds the ability to handle multi file
+documentation projects. The '::' notation is already part of Docutil's `reST
+specification for creating "literal blocks"
+<http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks>`__.
+
+Quoting the important part of the specification:
+
+   The paragraph containing only "::" will be completely removed from the
+   output; no empty paragraph will remain.
+
+   As a convenience, the "::" is recognized at the end of any paragraph. If
+   immediately preceded by whitespace, both colons will be removed from the
+   output (this is the "partially minimized" form). When text immediately
+   precedes the "::", one colon will be removed from the output, leaving only
+   one colon visible (i.e., "::" will be replaced by ":"; this is the "fully
+   minimized" form).
+
+
+Example of form 1: Expanded
+---------------------------
+
+Source::
+
+   Paragraph ...
+
+   ::
+
+      Literal Block
+
+Result:
+
+   Paragraph ...
+
+   ::
+
+      Literal Block
+
+In words: The paragraph will appear as written. The code block just follows.
+*Both colons* and one empty line will be removed and not lead to any special
+output.
+
+
+Example of form 2: Partially minimized
+--------------------------------------
+
+Source::
+
+   Paragraph ... ::
+
+      Literal Block
+
+Result:
+
+   Paragraph ... ::
+
+      Literal Block
+
+In words: The paragraph will appear as written after *both colons* together
+with the preceding whitespace (!) have been removed from the end of the line.
+The code block then just follows.
+
+
+Example of form 3: Fully minimized
+----------------------------------
+
+Source::
+
+   Paragraph::
+
+      Literal Block
+
+Result:
+
+   Paragraph::
+
+      Literal Block
+
+In words: The source of the paragraph has TWO colons at the end which are NOT
+preceded by whitespace. In the output just one of the colons will be removed.
+The code block then follows normally.
+
 
 
 
