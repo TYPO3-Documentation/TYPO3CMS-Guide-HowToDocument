@@ -57,10 +57,10 @@ as:
 Manuals, not maintained in the TYPO3-Documentation workspace on Github
 must be edited elsewhere, see :ref:`overview-of-types`.
 
-**Table of contents of this chapter:**
+
 
 .. toctree::
-   :glob:
+   :hidden:
 
    WorkflowMethods
    GithubMethod
