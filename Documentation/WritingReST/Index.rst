@@ -10,9 +10,12 @@ Formatting with reST & Sphinx
 
 This chapter is a reference for various kinds of markup.
 
-It is recommended to read the :ref:`writing-rest-introdction`
-and the general :ref:`format-rest-cgl` first.
+It is recommended to read (or at least browse through)
+the :ref:`writing-rest-introdction` and the general
+:ref:`format-rest-cgl` first.
 
+Also read :ref:`rest-common-pitfalls` in order to avoid common
+mistakes with the syntax.
 
 You don't need to read the entire chapter, just lookup
 the section that is relevant for what you plan to do.

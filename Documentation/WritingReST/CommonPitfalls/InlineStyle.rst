@@ -1,14 +1,15 @@
 .. include:: ../../Includes.txt
 .. highlight:: rst
 
+.. _common-pitfalls-inline-style:
 
 ==========================
 Problems with inline style
 ==========================
 
 
-If you use **bold** or *italic*, make sure there is no space between the markup
-and the text.
+If you use **bold** or *italic*, make sure there is no space between
+the markup and the styled text.
 
 
 Correct syntax

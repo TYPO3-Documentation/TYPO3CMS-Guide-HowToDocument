@@ -57,8 +57,11 @@ All of these examples have a few things in common:
 * Due to the conventions, the rendering of documentation can be automated and
   every documentation project only requires a minimum of setup.
 
-Specific characteristics
-========================
+
+.. _overview-of-types:
+
+Different kinds of TYPO3 documentation
+======================================
 
 
 The things that are different for various kinds of documentation are:
@@ -67,8 +70,7 @@ The things that are different for various kinds of documentation are:
 * The workflow for making changes to the documentation
 
 
-Overview
---------
+
 
 .. t3-field-list-table::
  :header-rows: 1
@@ -81,7 +83,7 @@ Overview
                   `references <https://docs.typo3.org/typo3cms/References/Index.html>`__,
                   etc.
    :Source:       Github: `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__
-   :Workflow:     Create Github Pull Request
+   :Workflow:     Create Github Pull Request, see :ref:`docs-official-index`.
 
  - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
    :Source:       Inside TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
@@ -99,15 +101,15 @@ Overview
 
 
 Official TYPO3 manuals
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 The official TYPO3 manuals are hosted on Github. Editing the documentation
 requires a Github account and involves creating a Pull Request on Github.
 
-Find out more about how to contribute: :ref:`docs-contribute`.
+Find out more about how to contribute: :ref:`docs-official-index`.
 
 Documentation for the core
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The documentation for the core (Changelog and system extensions) is added
 to the TYPO3 source code. For this reason, the workflow of changing
@@ -115,10 +117,11 @@ something in the core documentation is very similar to adding a patch
 to the core.
 
 Find out more about the :ref:`Core contribution workflow <t3contribute:Start>`
-in general.
+in general or about :ref:`t3contribute:Adding-documentation` in the Contribution
+Guide.
 
 Documentation for 3rdparty extensions
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The documentation for a 3rdparty extension is maintained within the
 source-code of this extensions. If and where it is edited depends
@@ -127,4 +130,12 @@ on where the extension is hosted and maintained.
 To find out how to contribute documentation for a specific extension:
 :ref:`contribute-to-3rdparty-extension`
 
+What about the Wiki?
+~~~~~~~~~~~~~~~~~~~~
 
+In this manual, we are focusing on TYPO3 documentation in reST / sphinx
+that can be found on docs.typo3.org.
+
+The TYPO3 Wiki on https://wiki.typo3.org does contain documentation as well,
+but that is not the scope of this manual. In any case, most of the information
+from the Wiki is being moved from the Wiki to some manual on docs.typo3.org.

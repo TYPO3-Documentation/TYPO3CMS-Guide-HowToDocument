@@ -20,8 +20,6 @@ How it looks:
 This is normal text. **This is bold text**
 
 
-
-
 italic
 ======
 
@@ -39,16 +37,8 @@ Possible errors
 
 .. important::
 
-   This does not work: Note the extra space between `**` and the beginning of the text.
-
-
-::
-
-   This is normal text. ** This is bold text**
-
-How it looks:
-
-This is normal text. ** This is bold text**
+   Make sure there is no space between the markup and the styled text,
+   see :ref:`common-pitfalls-inline-style`.
 
 
 Additional information
