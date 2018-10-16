@@ -84,7 +84,7 @@ this html to understand the technical background:
    </code>
 
 A default styling for :html:`class="code"` exists and is in effect until
-overriden by a special styling :html:`class="code.haskell"` that needs to
+overridden by a special styling :html:`class="code.haskell"` that needs to
 be defined.
 
 
