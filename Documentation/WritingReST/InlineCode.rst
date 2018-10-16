@@ -31,7 +31,7 @@ Don't overuse
 Use this 'Includes.txt' file
 ----------------------------
 
-You may treat the :file:`Includes.txt` file `of this guide
+You may treat the :file:`Includes.txt` `file of this guide
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
 as reference for copying. The following lines are the actual content of the
 file, shown via the `literalinclude directive
