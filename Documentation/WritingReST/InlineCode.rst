@@ -8,11 +8,85 @@
 Inline Code
 ===========
 
-.. hint::
+This page:
 
-   Too much inline code can make the information on a page highly
-   unreadable. If this is the case, consider using
-   :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
+.. contents::
+   :local:
+   :depth: 2
+   :backlinks: top
+
+
+Takeaways from this page
+========================
+
+Don't overuse
+-------------
+
+   .. hint::
+
+      Too much inline code can make the information on a page highly
+      unreadable. If this is the case, consider using
+      :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
+
+Use this 'Includes.txt' file
+----------------------------
+
+You may treat the :file:`Includes.txt` file `of this guide
+<https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
+as reference for copying. The following lines are the actual content of the
+file, shown via the `literalinclude directive
+<http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__:
+
+   .. literalinclude:: ../Includes.txt
+
+It is called 'reference version' …
+
+*  because it's used (or should be used) in all official TYPO3 manuals
+
+*  and because it defines the textroles that have a special styling in our
+   `t3SphinxThemeRtd theme
+   <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd>`__. See the
+   examples below.
+
+*Note:* For all officials TYPO3 manuals `php` is set as default highlight
+language with the exception of the TypoScript manuals, where `typoscript` is
+the default.
+
+
+You need another textroles for code markup?
+-------------------------------------------
+
+You need another 'language' to mark up inline?
+
+You are free to define additional textroles *in your project* or even
+*on an individual page* as you like. Make use of the `role directive
+<http://docutils.sourceforge.net/docs/ref/rst/directives.html#role>`__.
+Example: You want 'haskell'? Define that role as derivative of 'code'::
+
+  .. role:: haskell(code)
+
+You may then write::
+
+   Here is some :haskell:`haskell inline code` in the sentence.
+
+The immediate advantage will be that you can explicitely markup your source
+code semantically and declare snippets to be 'Haskell'. The visual appearance
+will be that of 'code' until a special css class has been defined. Feel free to
+open a request `here
+<https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues>`__. Look at
+this html to understand the technical background:
+
+
+.. code-block:: html
+
+   <code class="code haskell docutils literal">
+      <span class="pre">haskell inline code</span>
+   </code>
+
+A default styling for :html:`class="code"` exists and is in effect until
+overriden by a special styling :html:`class="code.haskell"` that needs to
+be defined.
+
 
 How to write inline code
 ========================
@@ -140,26 +214,3 @@ In contrast, *code-blocks*
 - use predefined names for the different languages that come with Pygments,
   the syntax highlighter.
 
-
-File Includes.txt
-=================
-
-This is the typical content of file :file:`./Documentation/Includes.txt`:
-
-.. code-block:: rst
-
-   .. This is 'Includes.txt'. It is included at the very top of each and
-      every ReST source file in THIS documentation project (= manual).
-
-   .. role:: aspect (emphasis)
-   .. role:: html(code)
-   .. role:: js(code)
-   .. role:: php(code)
-   .. role:: sep (strong)
-   .. role:: typoscript(code)
-   .. role:: yaml(code)
-   .. role:: ts(typoscript)
-      :class: typoscript
-
-   .. default-role:: code
-   .. highlight:: php
