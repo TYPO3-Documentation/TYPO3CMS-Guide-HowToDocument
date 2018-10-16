@@ -53,8 +53,8 @@ language with the exception of the TypoScript manuals, where `typoscript` is
 the default.
 
 
-You need another textroles for code markup?
--------------------------------------------
+You need another textrole for code markup?
+------------------------------------------
 
 You need another 'language' to mark up inline?
 
