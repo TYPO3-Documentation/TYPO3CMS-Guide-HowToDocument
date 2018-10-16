@@ -7,95 +7,12 @@
 Codeblocks with Syntax Highlighting
 ===================================
 
+This page:
 
-.. _writing-rest-codeblocks-syntactically-correct:
-
-Use syntactically correct code
-==============================
-
-.. attention::
-
-   **Please: No syntax errors!**
-
-   Syntax highlighting only works if the lexer can parse the code without
-   errors. In other words: If there's a syntax error in the code the
-   highlighting will not work.
-
-
-   **Wrong:** ::
-
-      .. code-block:: php
-
-         $a = array(
-            'one' => 1,
-            ...
-         );
-
-   **Correct:** ::
-
-      .. code-block:: php
-
-         $a = array(
-            'one' => 1,
-            // ...
-         );
-
-
-
-
-
-`Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses `Pygments
-<http://pygments.org/>`__ for highlighting. On a machine that has Pygments
-installed the command `pygmentize -L` will list all available lexers.
-
-
-.. _writing-rest-codeblocks-highlight-directive:
-
-
-Highlight directive
-===================
-
-You can set the default language with the `highlight` directive. All following
-codeblocks will use the language as specified in the `highlight` directive for
-syntax highlighting.
-
-If all of your codeblocks have the same language, it is easier to just set this
-once at the beginning of the file.
-
-This way, you don't need to set the language for each code-block (`..
-code-block:: LANG`).
-
-Use reStructuredText highlighting::
-
-   .. highlight:: rst
-
-
-Use PHP highlighting::
-
-   .. highlight:: php
-
-For TYPO3 we have adopted the convention that each reStructuredText source file
-imports the :file:`Documentation/Includes.txt` file at the top. And in the
-included file - in general - we set PHP as default language for highlighting.
-Exception: In the TypoScript manuals we are using `typoscript` as default.
-
-You can use the `..highlight:: LANG` directive as often as you want. Each one
-remains valid up to the next or up to the end of the *single file* it is used
-in.
-
-
-Highlight language 'guess'
---------------------------
-
-Note that there is a - pseudo - language 'guess' as well. This should use the
-highlighter for the first language that Pygments finds to have no syntax error.
-
-
-Highlight language 'none'
--------------------------
-
-The pseudo language 'none' is recognized as well. In this case no highlighting
-will occur.
+.. contents::
+   :local:
+   :depth: 2
+   :backlinks: top
 
 
 
@@ -148,8 +65,6 @@ short form (`::`). The following examples all do the same thing:
          See following example::
 
             $a='b';
-
-
 
 
 
@@ -245,7 +160,90 @@ preceded by whitespace. In the output just one of the colons will be removed.
 The code block then follows normally.
 
 
+.. _writing-rest-codeblocks-syntactically-correct:
 
+Use syntactically correct code
+==============================
+
+.. attention::
+
+   **Please: No syntax errors!**
+
+   Syntax highlighting only works if the lexer can parse the code without
+   errors. In other words: If there's a syntax error in the code the
+   highlighting will not work.
+
+
+   **Wrong:** ::
+
+      .. code-block:: php
+
+         $a = array(
+            'one' => 1,
+            ...
+         );
+
+   **Correct:** ::
+
+      .. code-block:: php
+
+         $a = array(
+            'one' => 1,
+            // ...
+         );
+
+
+`Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses `Pygments
+<http://pygments.org/>`__ for highlighting. On a machine that has Pygments
+installed the command `pygmentize -L` will list all available lexers.
+
+
+.. _writing-rest-codeblocks-highlight-directive:
+
+Highlight directive
+===================
+
+You can set the default language with the `highlight` directive. All following
+codeblocks will use the language as specified in the `highlight` directive for
+syntax highlighting.
+
+If all of your codeblocks have the same language, it is easier to just set this
+once at the beginning of the file.
+
+This way, you don't need to set the language for each code-block (`..
+code-block:: LANG`).
+
+Use reStructuredText highlighting::
+
+   .. highlight:: rst
+
+
+Use PHP highlighting::
+
+   .. highlight:: php
+
+For TYPO3 we have adopted the convention that each reStructuredText source file
+imports the :file:`Documentation/Includes.txt` file at the top. And in the
+included file - in general - we set PHP as default language for highlighting.
+Exception: In the TypoScript manuals we are using `typoscript` as default.
+
+You can use the `..highlight:: LANG` directive as often as you want. Each one
+remains valid up to the next or up to the end of the *single file* it is used
+in.
+
+
+Highlight language 'guess'
+--------------------------
+
+Note that there is a - pseudo - language 'guess' as well. This should use the
+highlighter for the first language that Pygments finds to have no syntax error.
+
+
+Highlight language 'none'
+-------------------------
+
+The pseudo language 'none' is recognized as well. In this case no highlighting
+will occur.
 
 
 .. _writing-rest-codeblocks-some-more-examples:
@@ -788,3 +786,10 @@ yaml \|
 zephir \|
 
 **Tip:** Try the Pygments Demo at http://pygments.org/
+
+
+Literalinclude
+==============
+
+There also is a `literalinclude directive
+<http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
