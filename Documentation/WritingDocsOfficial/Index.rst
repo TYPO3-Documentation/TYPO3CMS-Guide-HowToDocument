@@ -4,6 +4,7 @@
 
 .. _docs-official-index:
 .. _docs-contribute:
+.. _how-to-contribute:
 
 ======================================
 Contributing to official documentation
