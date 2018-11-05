@@ -37,8 +37,8 @@ Rendering formats
 
 Using reST is strongly recommended.
 
-reST
-----
+reST (recommended)
+------------------
 
 TYPO3 documentation uses reStructuredText for markup. The rendering
 chain and tools are built and optimized to process reST markup. Please
