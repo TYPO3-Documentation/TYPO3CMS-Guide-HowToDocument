@@ -24,7 +24,7 @@ Method 1: Find the source with "Related links"
 ----------------------------------------------
 
 In the page of the rendered docs for the extension, click on "Related links", and
-   then "Repository"
+then "Repository"
 
 Method 2: Find the source on https://extensions.typo3.org
 ---------------------------------------------------------
