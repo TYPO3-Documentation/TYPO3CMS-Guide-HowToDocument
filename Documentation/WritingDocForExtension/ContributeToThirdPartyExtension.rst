@@ -7,13 +7,31 @@
 Contribute to 3rdparty extension
 ================================
 
+This chapter adresses contributing to 3rdparty extension documenation. The
+extension can also be your own extension.
+
+For system extensions, see :ref:`contribute-to-system-extension`.
+
+You can contribute to the documentation of any publicly available extension,
+if the repository is public (e.g. hosted on Github). This does not mean, the
+extension author will be willing or is obligated to merge your change. In
+practice however, useful contributions are welcome.
+
+You can add issues or make changes via patches (e.g. pull requests on Github).
+
+If you can make the change yourself, try to submit it as a patch instead of
+just writing an issue. It depends on the policy of the extension author
+(see contribution guide for specific repository, if available), but
+it is usually not required to write an issue. You can just submit a pull request
+(PR) directly.
+
 
 .. _contribute-to-3rdparty-extension-find-the-source:
 
 Find the source (repository)
 ============================
 
-First, you need to find out, where the source is maintained. Usually, this will
+First, you need to find out where the source is maintained. Usually, this will
 be a repository on Github. There, you can also check if documentation is already
 available. It should be a `Documentation` folder or one of the alternatives
 mentioned in :ref:`supported-filenames-and-formats`.
@@ -24,7 +42,14 @@ Method 1: Find the source with "Related links"
 ----------------------------------------------
 
 In the page of the rendered docs for the extension, click on "Related links", and
-then "Repository"
+then "Repository".
+
+.. image:: ../images/related_repository.png
+   :class: with-shadow
+
+
+Sometimes the metadata in Settings.cfg in a Documentation
+project is not filled out and this link is missing. Then, you can use Method 2.
 
 Method 2: Find the source on https://extensions.typo3.org
 ---------------------------------------------------------
@@ -51,11 +76,9 @@ Method 2: Find the source on https://extensions.typo3.org
          :target: https://github.com/georgringer/news
          :class: with-shadow
 
-.. note::
-
-   You cannot find system extensions (extensions that are maintained in 
-   the core) on https://extensions.typo3.org. System extensions are for
-   example indexed_search, form, impexp, etc. 
+You cannot find system extensions (extensions that are maintained in
+the core) on https://extensions.typo3.org. System extensions are for
+example indexed_search, form, impexp, etc.
 
 
 Find the rendered manual
@@ -66,10 +89,7 @@ You can also find the rendered documentation:
 Method 1: Find rendered manual on docs.typo3.org
 ------------------------------------------------
 
-Is it a system extension? Go to 
-`Core extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
-
-Is it a 3rdparty extension? Go to 
+Go to:
 `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
 
 Method 2: Find rendered manual on https://extensions.typo3.org

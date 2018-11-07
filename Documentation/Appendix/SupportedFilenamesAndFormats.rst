@@ -12,7 +12,8 @@ Additionally supported filenames and formats
 
    This information is included for the sake of completeness. It is however
    not recommended to do it this way. For best results, follow the guidelines
-   in :ref:`general-conventions`.
+   in :ref:`general-conventions`, specifically
+   :ref:`general-conventions-dir-and-filenames`.
 
 Name of start page
 ==================
@@ -31,11 +32,13 @@ is also supported (in this order):
 
 If none of these files exist, no documentation will be rendered.
 
+The files ending in .md contain Markdown, the files ending in .rst
+contain reStructuredText (reST).
 
 Rendering formats
 =================
 
-Using reST is strongly recommended.
+Using reStructuredText (reST) is strongly recommended.
 
 reST (recommended)
 ------------------
@@ -64,3 +67,25 @@ This means that our rendering tools detect markdown files as well. They have .md
 
 If you’re encountering problems with the rendering of your markdown files, consider switching to reST.
 
+
+Drawbacks of other formats / filenames
+======================================
+
+Drawbacks of Markdown
+---------------------
+
+Not everything is currently rendered correctly with the existing toolchain in Markdown.
+
+Drawbacks of using a single file
+--------------------------------
+
+If you just use a single file as documentation, such as README.rst, you cannot
+add additional settings, that may be useful. For example:
+
+* You can't add a link to the issues or repository that will be displayed under
+  "Related Links" and are defined in Documenation/Settings.cfg
+* You cannot use the intersphinx linking mechanism to link to other manuals.
+  This is also configured in Settings.cfg
+* You are missing out on some cool features such as embedding YouTube videos
+  (this requires the sphinxcontrib.youtube extension, also defined in
+  Settings.cfg).

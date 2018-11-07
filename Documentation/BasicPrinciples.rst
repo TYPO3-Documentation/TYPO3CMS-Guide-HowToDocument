@@ -50,7 +50,8 @@ All of these examples have a few things in common:
 * Most of the documentation can be directly **edited by the community**. For third party
   extensions, this depends on where and how the source-code is hosted and maintained.
 * The source of the documentation is written (mostly) in reStructuredText (**reST**)
-* All documentation is rendered using the **same rendering toolchain**.
+* All documentation is rendered using the **same rendering toolchain**. All documenation
+  can be rendered locally, with the officially supported docker image.
 * The documentation source files adhere to :ref:`general-conventions` and
   share a **common structure** (e.g. all documentation files in a
   :file:`Documentation` subdirectory).
@@ -66,38 +67,50 @@ Different kinds of TYPO3 documentation
 
 The things that are different for various kinds of documentation are:
 
-* Where the source code is kept
+* Where the issues are maintained (e.g. on Forge or Github)
+* Where the source code (git repository) is kept
 * The workflow for making changes to the documentation
-
-
 
 
 .. t3-field-list-table::
  :header-rows: 1
 
  - :Type:         Type of documentation
+   :Issues:       Issues
    :Source:       Source Code (git repository)
    :Workflow:     Workflow for making changes
 
  - :Type:         Official `guides, tutorials <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
-                  `references <https://docs.typo3.org/typo3cms/References/Index.html>`__,
+                  `core docs <https://docs.typo3.org/typo3cms/References/Index.html>`__,
                   etc.
-   :Source:       Github: `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__
+   :Issues:       On page of rendered docs, click on "Related links": "Issues"
+   :Source:       On page of rendered docs, click on "Related Links": "Repository", or click on "Edit me on Github"
    :Workflow:     Create Github Pull Request, see :ref:`docs-official-index`.
 
  - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-   :Source:       Inside TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
-                  `Github <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
-   :Workflow:     Same as for Core development, see :ref:`Contribution Guide <t3contribute:Bugfixing-Adding-documentation>`
+   :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
+   :Source:       TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__, mirror:
+                  `Github <https://github.com/TYPO3/TYPO3.CMS>`__
+   :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `System extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
+   :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
    :Source:       Same as for Changelog, inside TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
                   `Github <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
-   :Workflow:     Same as for Core development, see :ref:`Contribution Guide <t3contribute:start>`
+   :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `3rdparty extensions <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
-   :Source:       it depends, see :ref:`contribute-to-3rdparty-extension`
+   :Issues:       click on "Related Links" (bottom left), "Issues"
+   :Source:       click on "Related Links", "Repository", see :ref:`contribute-to-3rdparty-extension`
    :Workflow:     it depends, see :ref:`contribute-to-3rdparty-extension`
+
+
+To get to the issues or repository of the documentation: On the page of the rendered
+manual, click on "Related Links" and then click on "Issues" or "Repository".
+
+
+.. image:: images/related2.png
+   :class: with-shadow
 
 
 Official TYPO3 manuals

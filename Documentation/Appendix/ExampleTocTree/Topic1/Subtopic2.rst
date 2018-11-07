@@ -1,7 +1,7 @@
 .. include:: ../../../Includes.txt
 .. highlight:: rst
 
-.. _exapmle-toctree:
+.. _example-toctree-subtopic2:
 
 ==========
 Subtopic 2

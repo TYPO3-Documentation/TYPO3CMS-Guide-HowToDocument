@@ -3,10 +3,11 @@
 
 .. _writing-doc-for-ext-from-scratch:
 
+.. _how-to-start-documentation-for-ext:
 
-=================================
-Create documentation from scratch
-=================================
+===================================================
+How to start documentation for your TYPO3 extension
+===================================================
 
 If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
@@ -37,9 +38,11 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    :ref:`reST <Formatting-with-reST>` to see how to format headlines,
    code-blocks, images etc.
 
+   Be sure to fill out Settings.cfg correctly as described in :ref:`settings-cfg`.
+
 3. Render the documentation (locally)
 
-   Before you want to publish your changes, make sure the documentation is rendered
+   Before you publish your changes, make sure the documentation is rendered
    correctly.
 
    Look at :ref:`rendering-docs-quickstart` for a quick start.
@@ -49,8 +52,5 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    If you are working on your own 3rdparty extension, make it publicly available.
    The documentation will then automatically be rendered on docs.typo3.org.
 
-   If you are working on the documentation for a 3rdparty extension, create
-   a patch or pull request depending on where it is hosted. Creating a Pull
-   Requests for projects hosted on Github is very well documented. Also, take
-   a look at the contribution guidelines of the extension, if available.
+
 

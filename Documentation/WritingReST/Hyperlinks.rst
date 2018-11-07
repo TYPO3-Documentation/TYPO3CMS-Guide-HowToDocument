@@ -216,6 +216,13 @@ The name `t3tca` is the name we have given it in the :ref:`Settings.cfg` file:
    t3tca = https://docs.typo3.org/typo3cms/TCAReference/
 
 
+.. important::
+
+   Check the Settings.cfg file for the manual you are working on to
+   make sure the manual shortcuts for intersphinx linking are available
+   in the section `[intersphinx_mapping]`.
+   You may need to remove the comment marker `#` at the beginning of the line.
+
 
 This is called cross-referencing with the *intersphinx* mechanism.
 

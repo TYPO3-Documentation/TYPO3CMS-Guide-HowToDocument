@@ -6,7 +6,7 @@ Appendix
 
 .. toctree::
    :hidden:
-   :glob:
 
-   *
+   SupportedFilenamesAndFormats
    ExampleTocTree/Index
+   ResourcesForEditors

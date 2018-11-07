@@ -36,8 +36,9 @@ How To Document TYPO3 Projects
    RenderingDocs/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
+   WhatsNew
    Appendix/Index
    Sitemap/Index
-   Targets
+
 
 

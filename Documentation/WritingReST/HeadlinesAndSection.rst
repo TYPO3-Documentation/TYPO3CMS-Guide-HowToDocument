@@ -15,8 +15,8 @@ is split into "sections" instead. Those sections are identified by titles which
 **TYPO3** uses these conventions.
 
 1. Use underlining plus overlining with `===` for the first section title of a
-   file. The first section title is the "document title" (doctitle) of that
-   file and will appear in the menu::
+   file. The first section title is the "document title" (**doctitle**) of that
+   file and will appear in the menu. Every .rst file should have a doctitle::
 
       ========
       DocTitle
