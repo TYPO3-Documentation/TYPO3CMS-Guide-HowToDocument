@@ -10,16 +10,24 @@ Contribute to 3rdparty extension
 
 .. _contribute-to-3rdparty-extension-find-the-source:
 
-Find the source
-===============
+Find the source (repository)
+============================
 
 First, you need to find out, where the source is maintained. Usually, this will
 be a repository on Github. There, you can also check if documentation is already
 available. It should be a `Documentation` folder or one of the alternatives
 mentioned in :ref:`supported-filenames-and-formats`.
 
+To find the repository, use one of these methods:
 
-To find the source for a specific extension:
+Method 1: Find the source with "Related links"
+----------------------------------------------
+
+In the page of the rendered docs for the extension, click on "Related links", and
+   then "Repository"
+
+Method 2: Find the source on https://extensions.typo3.org
+---------------------------------------------------------
 
 .. rst-class:: bignums
 
@@ -43,11 +51,29 @@ To find the source for a specific extension:
          :target: https://github.com/georgringer/news
          :class: with-shadow
 
+.. note::
+
+   You cannot find system extensions (extensions that are maintained in 
+   the core) on https://extensions.typo3.org. System extensions are for
+   example indexed_search, form, impexp, etc. 
+
 
 Find the rendered manual
 ========================
 
-With the method just mentioned, you can also find the rendered documentation:
+You can also find the rendered documentation:
+
+Method 1: Find rendered manual on docs.typo3.org
+------------------------------------------------
+
+Is it a system extension? Go to 
+`Core extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
+
+Is it a 3rdparty extension? Go to 
+`Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
+
+Method 2: Find rendered manual on https://extensions.typo3.org
+--------------------------------------------------------------
 
 .. rst-class:: bignums
 
@@ -62,6 +88,11 @@ With the method just mentioned, you can also find the rendered documentation:
          :target: https://docs.typo3.org/typo3cms/extensions/news/
          :class: with-shadow
          :width: 600px
+
+.. note::
+
+   You cannot find system extensions (extensions that are maintained in 
+   the core) on https://extensions.typo3.org. 
 
 Follow contribution guide
 =========================
