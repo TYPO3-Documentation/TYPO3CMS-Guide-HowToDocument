@@ -19,15 +19,27 @@ see :ref:`slack` for more information.
 This chapter explains how to make changes to the official
 documentation on `docs.typo3.org <https://docs.typo3.org>`__.
 
-We will not repeat information in this chapter, that is already
-explained elsewhere in this manual.
+**Getting started**
+
+.. tipp::
+
+   You can start with very minimal knowlege and learn as
+   you go along. If you find a page that needs fixing, do not
+   hesitate to click on the "Edit me on Github" button and 
+   proceed. 
+   
+Remember, your changes will not be visible right away, someone
+must merge them. So don't worry about breaking something!
+
+Just go ahead and start editing away. 
 
 **Suggested reading order:**
 
 Here is a suggestion how to
 proceed (but depending on your experience and how you prefer to
-work, you may want to jump to a specific section, read in a
+work, you may want to just start right away, read in a
 different order or skip some sections and come back here later).
+That is all ok and up to you!
 
 #. Get an introduction by looking a the :ref:`github-method-youtube`
 #. Choose which workflow to use: :ref:`docs-official-workflow-methods`.
@@ -46,7 +58,7 @@ different order or skip some sections and come back here later).
 **Note about other documentation:**
 
 Please note that some of the rendered documentation is
-maintained elsewhere (e.g. Core Changelog). This chapter focuses on
+maintained elsewhere (e.g. Core Changelog, 3rdparty extension). This chapter focuses on
 making changes to the major manuals, maintained on `Github: TYPO3
 Documentation <https://github.com/TYPO3-Documentation>`__, such
 as:
