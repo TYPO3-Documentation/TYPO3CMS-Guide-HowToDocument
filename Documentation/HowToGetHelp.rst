@@ -7,6 +7,11 @@
 How to get help
 ===============
 
+.. _get-help-on-writing-docs:
+
+Get help on writing documentation
+=================================
+
 If you wish to contribute to the docs, have questions about the
 documentaton or run into problems, the
 `TYPO3 slack workspace <https://typo3.slack.com>`__
@@ -29,5 +34,22 @@ channel.
 
 .. hint::
    Do not ask if you can ask a question. Ask your question directly.
+
+Get help on using documentation
+===============================
+
+The same method as in :ref:`get-help-on-writing-docs` applies: Post
+your question in the **#typo3-cms-documentation** channel.
+
+Don't worry, you will not be frowned upon if you don't know something.
+Engagement and curiosity is a good thing! You may even have stumbled
+upon something that is not documented well or is not user friendly.
+In that case, let us know about it!
+
+General support for TYPO3
+=========================
+
+Got to https://typo3.org/help/. There you will also be directed to the
+Slack channel **#typo3-cms**. 
 
 
