@@ -21,17 +21,17 @@ documentation on `docs.typo3.org <https://docs.typo3.org>`__.
 
 **Getting started**
 
-.. tipp::
+.. tip::
 
    You can start with very minimal knowlege and learn as
-   you go along. If you find a page that needs fixing, do not
+   you go along. If you find a page that needs changing on
+   https://docs.typo3.org, do not
    hesitate to click on the "Edit me on Github" button and 
    proceed. 
    
 Remember, your changes will not be visible right away, someone
 must merge them. So don't worry about breaking something!
 
-Just go ahead and start editing away. 
 
 **Suggested reading order:**
 
@@ -58,7 +58,7 @@ That is all ok and up to you!
 **Note about other documentation:**
 
 Please note that some of the rendered documentation is
-maintained elsewhere (e.g. Core Changelog, 3rdparty extension). This chapter focuses on
+maintained elsewhere (e.g. Core Changelog, 3rdparty extensions). This chapter focuses on
 making changes to the major manuals, maintained on `Github: TYPO3
 Documentation <https://github.com/TYPO3-Documentation>`__, such
 as:
@@ -68,7 +68,7 @@ as:
   (except for Changelog)_
 
 Manuals, not maintained in the TYPO3-Documentation workspace on Github
-must be edited elsewhere, see :ref:`overview-of-types`.
+must and usually can be edited elsewhere, see :ref:`overview-of-types`.
 
 
 
