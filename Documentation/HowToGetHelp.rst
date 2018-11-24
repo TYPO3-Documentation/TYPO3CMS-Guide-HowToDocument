@@ -22,7 +22,7 @@ to join the slack workspace, you must `Register for TYPO3's Slack
 Platform <hhttps://my.typo3.org/index.php?id=35>`__. On that page,
 you will also find information about the most important channels.
 
-The channel **#typo3-cms-documentation** is your channel of choice
+The channel **#typo3-documentation** is your channel of choice
 for everything concerning TYPO3 documentation.
 
 If you have some general TYPO3 support issues, please use **#typo3-cms**
@@ -39,7 +39,7 @@ Get help on using documentation
 ===============================
 
 The same method as in :ref:`get-help-on-writing-docs` applies: Post
-your question in the **#typo3-cms-documentation** channel.
+your question in the **#typo3-documentation** channel.
 
 Don't worry, you will not be frowned upon if you don't know something.
 Engagement and curiosity is a good thing! You may even have stumbled
@@ -50,6 +50,7 @@ General support for TYPO3
 =========================
 
 Got to https://typo3.org/help/. There you will also be directed to the
-Slack channel **#typo3-cms**. 
+Slack channel **#typo3-cms**, but some other methods for getting help
+and support are listed as well. 
 
 
