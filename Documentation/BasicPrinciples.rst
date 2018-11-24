@@ -26,6 +26,8 @@ Schwemer's blog TYPO3 Worx:
    <rendering-docs>` is the recommended approach. If you edit on Github directly,
    Github preview should be sufficient for making small changes.
 
+.. _whats-typo3-documentation:
+
 What's TYPO3 documentation?
 ==========================================
 
@@ -40,6 +42,8 @@ TYPO3 documentation may be one of the following:
 * TYPO3 documentation can also be a
   `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
   entry for the core, for example a documented breaking change or new feature.
+
+.. _common-characteristics-typo3-docs:
 
 Common characteristics of TYPO3 documentation
 =============================================
@@ -59,7 +63,12 @@ All of these examples have a few things in common:
 * Due to the conventions, the rendering of documentation can be automated and
   every documentation project only requires a minimum of setup.
 
-So, **what's rendering?** Rendering means (in this specific case) converting the reST
+.. _whats-rendering:
+
+So, what's rendering?
+=====================
+
+Rendering means (in this specific case) converting the reST
 format (.rst files) into its final, readable form, which you can than view in your
 browser (like this page, which you are probably reading online. If not, load 
 https://docs.typo3.org/typo3cms/HowToDocument/BasicPrinciples.html in your browser).
