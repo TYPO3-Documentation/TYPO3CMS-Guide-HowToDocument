@@ -48,9 +48,12 @@ That is all ok and up to you!
 #. To get a better understanding of the documentation and the conventions
    used, it can't hurt to look at :ref:`basic-principles`
 #. Familiarize yourself with the language (reST and sphinx) by looking
-   at the source of existing docs, reading
-   :ref:`general-conventions` and the beginning of
-   :ref:`Formatting-with-reST`.
+   at the source of existing docs (click on "View page source" at the 
+   bottom of any documenation page) and reading:
+   
+   * :ref:`general-conventions`
+   * and the beginning of :ref:`Formatting-with-reST`
+   
 #. Make your changes. Start small.
 
 
