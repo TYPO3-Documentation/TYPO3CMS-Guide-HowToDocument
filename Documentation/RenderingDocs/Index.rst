@@ -22,24 +22,17 @@ Here, we will briefly also explain the other methods for rendering.
 .. important::
 
    Please note that the **docker** method is currently the **recommended and
-   fully supported** method.
+   fully supported** method. If you edit on Github directly, Github preview
+   should also be sufficient for making small changes.
 
 
 .. rst-class:: bignums
 
-   1. (recommended) docker method
+   1. docker method
 
       See :ref:`rendering-docs-quickstart`
-
-   2. Extension *sphinx*
-
-      If you install the extension
-      `sphinx <https://extensions.typo3.org/extension/sphinx/>`__,
-      you can render the extension
-      documentation of the extensions that are currently installed in the
-      Backend of your TYPO3 installation.
-
-   3. Preview on Github
+      
+   2. Preview on Github
 
       This method is useful if you are editing documentation directly on
       Github
@@ -48,7 +41,15 @@ Here, we will briefly also explain the other methods for rendering.
       additional sphinx markup, such as the *toctree* or the
       :ref:`intersphinx <intersphinx>` linking. Because of this, the
       preview is not to be recommended for major changes that involve
-      markup beyond basic reST markup.
+      markup beyond basic reST markup.   
+
+   3. Extension *sphinx*
+
+      If you install the extension
+      `sphinx <https://extensions.typo3.org/extension/sphinx/>`__,
+      you can render the extension
+      documentation of the extensions that are currently installed in the
+      Backend of your TYPO3 installation.
 
    4. Using a Starter project (Sandbox)
 
