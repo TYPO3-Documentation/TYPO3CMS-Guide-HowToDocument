@@ -66,7 +66,7 @@ making changes to the major manuals, maintained on `Github: TYPO3
 Documentation <https://github.com/TYPO3-Documentation>`__, such
 as:
 
-* The `Tutorials and Guides <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
+* The `Tutorials and Guides <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`_,
 * The `Core documenation <https://docs.typo3.org/typo3cms/References/Index.html>`_
   (except for Changelog)_
 
