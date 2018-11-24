@@ -59,6 +59,15 @@ All of these examples have a few things in common:
 * Due to the conventions, the rendering of documentation can be automated and
   every documentation project only requires a minimum of setup.
 
+So, **what's rendering?** Rendering means (in this specific case) converting the reST
+format (.rst files) into its final, readable form, which you can than view in your
+browser (like this page, which you are probably reading online. If not, load 
+https://docs.typo3.org/typo3cms/HowToDocument/BasicPrinciples.html in your browser).
+
+In comparison, this is what the original source file looks like: https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
+
+Technically, this means converting the reST (.rst files) into HTML, automatically
+creating the menu, using the current theme to add additional styles and images, etc.
 
 .. _overview-of-types:
 
