@@ -19,7 +19,7 @@ is the place to be.
 
 In order
 to join the slack workspace, you must `Register for TYPO3's Slack
-Platform <hhttps://my.typo3.org/index.php?id=35>`__. On that page,
+Platform <https://my.typo3.org/index.php?id=35>`__. On that page,
 you will also find information about the most important channels.
 
 The channel **#typo3-documentation** is your channel of choice
