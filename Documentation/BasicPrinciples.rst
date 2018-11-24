@@ -16,14 +16,15 @@ Schwemer's blog TYPO3 Worx:
 
 * `GUIDE TO TYPO3 DOCUMENTATION – PART 1: THE USER-INTERFACE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-part-1-the-ui/>`__
 * `GUIDE TO TYPO3 DOCUMENTATION – PART 2: CONTENT STRUCTURE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-content-structure/>`__
-.. * `GUIDE TO TYPO3 DOCUMENTATION – PART 3: CONTRIBUTION AND REST HELPERS! <https://typo3worx.eu/2017/02/guide-to-typo3-documentation-part-3-contribute/>`__
+* `GUIDE TO TYPO3 DOCUMENTATION – PART 3: CONTRIBUTION AND REST HELPERS! <https://typo3worx.eu/2017/02/guide-to-typo3-documentation-part-3-contribute/>`__
 
 
 .. important::
 
    Please note that the section "CONVERT REST TO “READABLE” FORMATS" in part 3 is
    slightly outdated. Currently, using the docker container for :ref:`rendering
-   <rendering-docs>` is the recommended approach.
+   <rendering-docs>` is the recommended approach. If you edit on Github directly,
+   Github preview should be sufficient for making small changes.
 
 What's TYPO3 documentation?
 ==========================================
