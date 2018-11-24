@@ -13,7 +13,7 @@ Basic considerations
 ====================
 
 In any case, you will need a Github account, go to
-https://github.com/join.
+https://github.com/.
 
 You can contribute to the documentation by editing directly on Github
 by clicking on "Edit me on Github" in the top right corner of any page.
