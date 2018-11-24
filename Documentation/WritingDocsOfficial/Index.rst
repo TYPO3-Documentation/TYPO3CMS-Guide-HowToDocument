@@ -66,9 +66,9 @@ making changes to the major manuals, maintained on `Github: TYPO3
 Documentation <https://github.com/TYPO3-Documentation>`__, such
 as:
 
-* The `Tutorials and Guides <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`_,
+* The `Tutorials and Guides <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
 * The `Core documenation <https://docs.typo3.org/typo3cms/References/Index.html>`_
-  (except for Changelog)_
+  (except for Changelog).
 
 Manuals, not maintained in the TYPO3-Documentation workspace on Github
 must and usually can be edited elsewhere, see :ref:`overview-of-types`.
