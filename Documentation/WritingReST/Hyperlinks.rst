@@ -83,12 +83,12 @@ Example
 
 ::
 
-   `Sphinx hyperlinks <http://www.sphinx-doc.org/en/stable/rest.html#hyperlinks>`__
+   `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
 **How it looks:**
 
-`Sphinx hyperlinks <http://www.sphinx-doc.org/en/stable/rest.html#hyperlinks>`__
+`Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
 .. _external-links-named-reference:
