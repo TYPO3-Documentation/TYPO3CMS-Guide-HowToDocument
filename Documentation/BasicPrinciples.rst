@@ -104,7 +104,7 @@ The things that are different for various kinds of documentation are:
                   etc.
    :Issues:       On page of rendered docs, click on "Related links": "Issues"
    :Source:       On page of rendered docs, click on "Related Links": "Repository", or click on "Edit me on Github"
-   :Workflow:     Create Github Pull Request, see :ref:`docs-official-index`.
+   :Workflow:     Create Github Pull Request, see :ref:`docs-contribute`.
 
  - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
    :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
@@ -138,7 +138,7 @@ Official TYPO3 manuals
 The official TYPO3 manuals are hosted on Github. Editing the documentation
 requires a Github account and involves creating a Pull Request on Github.
 
-Find out more about how to contribute: :ref:`docs-official-index`.
+Find out more about how to contribute: :ref:`docs-contribute`.
 
 Documentation for the core
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
