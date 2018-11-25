@@ -13,7 +13,7 @@ How to use images
 =================
 
 Use the `.. image::` directive with additional parameters. The
-additional parameters must be indented one level.
+additional parameters must be indented one level (add 3 spaces to indent).
 
 Some parameters for images:
 
