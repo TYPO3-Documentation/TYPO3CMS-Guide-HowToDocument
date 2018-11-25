@@ -8,7 +8,7 @@ Menu (toctree)
 ==============
 
 You can define what should be included in the menu with the
-`.. toctree:: <http://www.sphinx-doc.org/en/stable/markup/toctree.html>`__ directive.
+`.. toctree:: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`__ directive.
 Only `.rst` files that are included in a toctree, are included in the menu.
 
 The first headline of an .rst file is its "doctitle". That is the document's
@@ -100,7 +100,7 @@ Example: https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/Appendix/Inde
 TYPO3 documentation usually starts with the file :file:`PROJECT/Documentation/Index.rst`.
 The text may go into more than one textfile and these can be "pulled in" and
 referenced by the
-`.. toctree:: <http://www.sphinx-doc.org/en/stable/markup/toctree.html>`__
+`.. toctree:: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`__
 directive. Note:
 
 #. Each `.. toctree::` directive creates a *sublevel* of headlines in the menu.
