@@ -2,76 +2,137 @@
 .. highlight:: rst
 
 
-.. _docs-official-index:
 .. _docs-contribute:
-.. _how-to-contribute:
+.. _docs-contribute-github-method:
 
-======================================
-Contributing to official documentation
-======================================
+============================
+Contribute to docs.typo3.org
+============================
 
-The community is welcome to make changes to the documentation.
+The community is welcome to make changes to the documentation. Any
+help is appreciated!
 
-If you need help, contact us in the **Slack** channel
-**#typo3-documentation**. If you do not yet have a Slack account,
-see :ref:`slack` for more information.
+You can start with very minimal knowledge and learn as
+you go along.
 
-This chapter explains how to make changes to the official
-documentation on `docs.typo3.org <https://docs.typo3.org>`__.
-
-**Getting started**
+Your changes will not be visible right away, someone
+must merge them. So, don't worry about breaking something!
 
 .. tip::
 
-   You can start with very minimal knowlege and learn as
-   you go along. If you find a page that needs changing on
-   https://docs.typo3.org, do not
-   hesitate to click on the "Edit me on Github" button and 
-   proceed. 
-   
-Remember, your changes will not be visible right away, someone
-must merge them. So don't worry about breaking something!
+   If you are familiar with Git and Docker, you may want to skip
+   straight to :ref:`docs-contribute-git-docker`, which describes
+   the local workflow.
+
+.. youtube:: wNxO-aXY5Yw
 
 
-**Suggested reading order:**
+If you're stuck at any point, don't hesitate
+to :ref:`ask for help <how-to-get-help>`.
 
-Here is a suggestion how to
-proceed (but depending on your experience and how you prefer to
-work, you may want to just start right away, read in a
-different order or skip some sections and come back here later).
-That is all ok and up to you!
+.. rst-class:: bignums-xxl
 
-#. Get an introduction by looking a the :ref:`github-method-youtube`
-#. Choose which workflow to use: :ref:`docs-official-workflow-methods`.
-#. Do you already know what you want to do? If not, get inspiration:
-   :ref:`docs-official-how-you-can-help`
-#. To get a better understanding of the documentation and the conventions
-   used, it can't hurt to look at :ref:`basic-principles`
-#. Familiarize yourself with the language (reST and sphinx) by looking
-   at the source of existing docs (click on "View page source" at the 
-   bottom of any documenation page) and reading:
-   
-   * :ref:`general-conventions`
-   * and the beginning of :ref:`Formatting-with-reST`
-   
-#. Make your changes. Start small.
+1. Get a GitHub account:
+
+   `Join Github <https://github.com/join>`__
+
+2. Find a page that needs fixing:
+
+   Pick a manual, for example :ref:`t3start:start` or :ref:`t3install:start`
+   and find a page there, that you want to change.
+
+3. Click on "Edit me on Github":
+
+   You should find the button on the top right of any page!
+
+   .. image:: ../images/edit_me_on_github.png
+      :class: with-shadow
+
+4. Fork the repository:
+
+   Click on the green button to fork the repository.
+
+   .. image:: ../images/github-edit-fork.png
+      :class: with-shadow
+
+5. Make your changes:
+
+   You should now see an edit window where you can make your changes
+   directly. The settings *"Indent mode: Spaces"* and *"Indent size: 3"*
+   should already be correct, by default. Don't change that.
+
+   .. image:: ../images/github-edit-window.png
+      :class: with-shadow
+
+6. Handling reST:
+
+   The files are written in reST format. You can :ref:`learn more about reST
+   <rest-quick-start>` when you need it. For fixing simple typos and editing
+   unformatted text, you should be ok without knowledge about reST.
+
+7. Check Preview:
+
+   Click on "Preview changes" to see what you changed and how the final result
+   might look like.
+
+   Go back to the edit window and make more changes any time.
+
+   .. image:: ../images/github-edit-preview.png
+      :class: with-shadow
+
+8. Finalize your changes:
+
+   When you are ready, scroll down to the bottom of the page. Add
+   a short (!) text describing your changes and click on "Propose
+   file change"
+
+   .. image:: ../images/github-propose-file-changes.png
+      :class: with-shadow
+
+9. Create pull request:
+
+   Github will now show you an overview of your changes. If this is
+   ok, click on "Create pull request".
+
+   .. image:: ../images/github-comparing-changes.png
+      :class: with-shadow
+
+   And finally, create your pull request:
+
+   .. image:: ../images/github-create-pull-request2.png
+      :class: with-shadow
+
+10. You're done!
+
+   Well, almost. Your change will now be reviewed. A reviewer might
+   suggest changes. Monitor your notifications (email) from Github. If at any
+   point, you are not sure what to do, don't hesitate to
+   :ref:`ask for help <how-to-get-help>`. When your pull request is accepted,
+   it will be merged. You will get a notification (email).
 
 
+**Congratulations! You are now a contributor. Welcome and thank you!**
 
-**Note about other documentation:**
+Wait a few minutes for the changes to be automatically rendered, and then
+reload the page (which you fixed) in your browser.
 
-Please note that some of the rendered documentation is
-maintained elsewhere (e.g. Core Changelog, 3rdparty extensions). This chapter focuses on
-making changes to the major manuals, maintained on `Github: TYPO3
-Documentation <https://github.com/TYPO3-Documentation>`__, such
-as:
+Next month, you can find your name on the "Developer Appreciation Day"
+(DAD) page on the `TYPO3 Blog <https://typo3.com/blog/tag/contribution/>`__.
 
-* The `Tutorials and Guides <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
-* The `Core documenation <https://docs.typo3.org/typo3cms/References/Index.html>`_
-  (except for Changelog).
+See `June 2018: Developer Appreciation Day
+<https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29>`__
+for an example.
 
-Manuals, not maintained in the TYPO3-Documentation workspace on Github
-must and usually can be edited elsewhere, see :ref:`overview-of-types`.
+
+.. image:: ../images/dad-with-image.png
+   :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
+   :class: with-shadow
+
+Scroll down to "Improving documentation":
+
+.. image:: ../images/dad-improve-docs.png
+   :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
+   :class: with-shadow
 
 
 
@@ -79,6 +140,5 @@ must and usually can be edited elsewhere, see :ref:`overview-of-types`.
    :hidden:
 
    WorkflowMethods
-   GithubMethod
-   Quickstart
+   LocalEditing
    HowYouCanHelp

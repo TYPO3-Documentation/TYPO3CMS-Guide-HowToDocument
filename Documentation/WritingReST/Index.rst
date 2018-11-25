@@ -3,6 +3,7 @@
 
 .. _Formatting-with-reST:
 .. _format-sphinx:
+.. _rest-quick-start:
 
 =============================
 Formatting with reST & Sphinx
