@@ -168,7 +168,7 @@ manuals correctly.
 
 
 Additional information: See the `Sphinx documentation
-<http://www.sphinx-doc.org/en/stable/markup/inline.html#cross-referencing-arbitrary-locations>`__.
+<https://www.sphinx-doc.org/en/1.6/markup/inline.html#cross-referencing-arbitrary-locations>`__.
 
 
 In the same manual
