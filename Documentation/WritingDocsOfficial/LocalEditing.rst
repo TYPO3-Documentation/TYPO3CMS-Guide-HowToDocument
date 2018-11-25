@@ -7,16 +7,14 @@
 Local Editing and Rendering with Docker
 =======================================
 
-
-.. important::
-
-   Read the :ref:`general-conventions` first!
-
-
-The quickstart walks you through contributing to the documenation
-with git and docker.
+This section walks you through contributing to the documentation
+with Git and Docker.
 
 If necessary, ask for help as explained in :ref:`how-to-get-help`.
+
+
+Quick Start
+===========
 
 .. rst-class:: bignums-xxl
 
@@ -76,17 +74,29 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    sure you adhere to :ref:`format-rest-cgl`, e.g.
    use 3 spaces to indent (not tabs).
 
-   Look up reST format if necessary: :ref:`Formatting-with-reST`.
+   If you are not familier with reST, you might want to check out
+   :ref:`reST Introduction <writing-rest-introduction>` first!
 
 
 6. Render the documentation
 
-   Render with docker in order to test the changes (see :ref:`rendering-docs`).
+   Render with Docker in order to test the changes (see :ref:`rendering-docs-quickstart`).
 
    .. code-block:: bash
 
+      # this does a docker run and makes the
+      # command dockrun_t3rdf available in your current terminal
       source <(docker run --rm t3docs/render-documentation show-shell-commands)
+
+      # build documentation, will create directory Documentation-GENERATED-temp
       dockrun_t3rdf makehtml
+
+      # open result in Browser
+      # on MacOS:
+      open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+      # on Linux:
+      xdg-open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
 
 7. Commit
 
@@ -94,8 +104,10 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
       git commit -a
 
-   See :ref:`general-conventions-commit-messages`.
-
+   Write a short commit message, describing what was changed, for example
+   "Fix link". See :ref:`general-conventions-commit-messages`, but keep in
+   mind that the conventions for commit messages for the documentation are
+   not strict.
 
 8. Push changes
 
@@ -103,20 +115,25 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
       git push origin changes-in-cgl
 
+   This will push the change to your forked repository.
+
 9. Create Pull request
 
-   Now, in your browser, visit the forked repository in your Github
-   workspace. Github will already make some suggestions for a Pull
-   Request and will display your pushed branch as "Your recently
-   pushed branches".
+   Now, in your browser, visit the forked repository in your `Github
+   <https://github.com/>`__ workspace. Github will already make
+   some suggestions for a pull request and will display your pushed
+   branch as "Your recently pushed branches".
 
-   Now, click on the green button "Compare & pull request" and then
+   Click on the green button "Compare & pull request" and then
    "Create pull request".
 
-10. You must now wait for someone to review and merge your Pull Request
+10. Wait for someone to review and merge your pull request
 
-   You will receive notifications about this to the email adress you
-   used when registering for Github.
+
+You will receive notifications (email) about this. Once your change is
+merged, you can reload the page (which you fixed) in your browser.
+
+**Congratulations! You are now a contributor. Welcome and thank you!**
 
 
 More information
@@ -125,7 +142,7 @@ More information
 For more information in this guide:
 
 * :ref:`Formatting-with-reST`
-* :ref:`rendering-docs`
+* :ref:`rendering-docs-quickstart`
 
 
 For more information about Github see the help pages on Github or other

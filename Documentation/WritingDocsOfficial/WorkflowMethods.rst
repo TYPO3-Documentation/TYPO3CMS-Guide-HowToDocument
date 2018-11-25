@@ -14,7 +14,8 @@ Use what you are most comfortable with!
 
 .. rst-class:: bignums
 
-   1. "Edit me on Github" workflow
+   1. "Edit me on Github" workflow (which was used in the introduction
+      of this chapter)
 
       You can edit documentation directly online in your browser.
 
@@ -38,4 +39,3 @@ a way to quickly make changes, but use :ref:`"Local Editing and Rendering
 with Docker" <docs-contribute-git-docker>` in the long run for larger
 changes.
 
-Get in touch with us, if you need it: :ref:`how-to-get-help`.

@@ -139,6 +139,7 @@ Scroll down to "Improving documentation":
 .. toctree::
    :hidden:
 
+   HowYouCanHelp
    WorkflowMethods
    LocalEditing
-   HowYouCanHelp
+
