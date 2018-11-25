@@ -67,7 +67,7 @@ This is the case for some additional directives such as the `:ref:` directives
 used for cross-referencing or the `toctree`.
 
 
-Additional information: `Sphinx Markup Constructs <http://www.sphinx-doc.org/en/stable/markup/index.html>`__
+Additional information: `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__
 
 
 Rendering
