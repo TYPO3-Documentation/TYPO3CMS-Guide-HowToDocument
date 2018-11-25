@@ -1,4 +1,6 @@
-# TYPO3CMD-Guide-HowToDocument
+=====================
+Writing Documentation
+=====================
 
 Guide to writing TYPO3 documentation.
 
