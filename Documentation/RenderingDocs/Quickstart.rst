@@ -15,7 +15,7 @@ If you run into problems, see :ref:`how-to-get-help`.
 
 1. Install docker
 
-   See `Get docker <https://www.docker.com/get-docker>`__
+   See `Get docker <https://www.docker.com/get-started>`__
 
 2. docker run
 
