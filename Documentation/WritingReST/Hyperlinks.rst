@@ -21,7 +21,7 @@ In Sphinx you can use several types of links:
 
       `anchor text <url>`__
 
-   (with one or two underscores at the end)
+   (with one or two underscores at the end, if in doubt, use two)
 
 :ref:`Cross-Referencing <intersphinx>`
    for linking to other sections of current or other manual on docs.typo3.org with Intersphinx mechanism
