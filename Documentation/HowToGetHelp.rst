@@ -4,12 +4,12 @@
 .. _slack:
 
 ===============
-How to get help
+How to Get Help
 ===============
 
 .. _get-help-on-writing-docs:
 
-Get help on writing documentation
+Get Help on Writing Documentation
 =================================
 
 If you wish to contribute to the docs, have questions about the
@@ -35,7 +35,7 @@ channel.
 .. hint::
    Do not ask if you can ask a question. Ask your question directly.
 
-Get help on using documentation
+Get Help on Using Documentation
 ===============================
 
 The same method as in :ref:`get-help-on-writing-docs` applies: Post
@@ -46,7 +46,7 @@ Engagement and curiosity is a good thing! You may even have stumbled
 upon something that is not documented well or is not user friendly.
 In that case, let us know about it!
 
-General support for TYPO3
+General Support for TYPO3
 =========================
 
 Got to https://typo3.org/help/. There you will also be directed to the
