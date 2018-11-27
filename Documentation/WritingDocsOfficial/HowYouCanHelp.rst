@@ -68,8 +68,9 @@ For advanced contributors:
 Review manuals
 ==============
 
-Pick a manual or a page and review it. If you find something that needs
-fixing or something is missing, either fix it or write an
+Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start reviewing it.
+
+If you find something that needs fixing or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
 You can also give general feedback as issues, but if possible try to
@@ -90,8 +91,6 @@ Is spelling of proper nouns correct?
 
 See: :ref:`content-styleguide`
 
-
-.. _how-you-can-help-check-spelling:
 
 Replace outdated images
 =======================
@@ -114,8 +113,9 @@ Teach and motivate others
 =========================
 
 If you are already familiar with the workflow, you can help others
-to get started. Whenever you are at a TYPO3 event (Sprint, Barcamp,
-etc.), on StackOverflow or in a Slack channel and someone finds
+to get started. Whenever you are at a `TYPO3 event <https://typo3.org/community/events/>`__
+(Sprint, Barcamp, etc.), on `StackOverflow <https://stackoverflow.com/questions/tagged/typo3>`__ 
+or in a `Slack <https://my.typo3.org/index.php?id=35>`__ channel and someone finds
 something missing in the documentation, help them make the
 necessary changes themselves.
 
