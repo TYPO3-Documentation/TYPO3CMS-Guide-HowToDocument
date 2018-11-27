@@ -57,7 +57,7 @@ bottom left of the page).
    :class: with-shadow
 
 
-For advanced users:
+For advanced contributors:
 
 * `all open issues in TYPO3-Documentation
   <https://github.com/search?o=desc&q=org%3ATYPO3-Documentation+type%3Aissue&s=updated&state=open&type=Issues>`__
