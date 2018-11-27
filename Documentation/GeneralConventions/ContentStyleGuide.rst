@@ -67,7 +67,7 @@ The same rules as in the title apply to buttons: `Style Guide: Buttons
 <https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
 
 
-Spelling of proper nouns
+Spelling of Proper Nouns
 ========================
 
 If `proper nouns <https://en.wikipedia.org/wiki/Proper_noun>`__ are used in
@@ -102,7 +102,7 @@ TYPO3
 This may be the opposite of what some spellcheckers say, because they do not know
 these proper nouns, e.g. try to use TYPO3 or reST on  https://capitalizemytitle.com/.
 
-Tools with executables
+Tools with Executables
 ----------------------
 
 Some tools have a program, which you can run. For example, **Git** has the command line
