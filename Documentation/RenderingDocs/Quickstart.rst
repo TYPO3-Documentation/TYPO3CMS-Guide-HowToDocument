@@ -5,7 +5,7 @@
 
 
 ===================================
-Rendering documentation with docker
+Rendering Documentation with Docker
 ===================================
 
 
@@ -13,9 +13,9 @@ If you run into problems, see :ref:`how-to-get-help`.
 
 .. rst-class:: bignums-xxl
 
-1. Install docker
+1. Install Docker
 
-   See `Get docker <https://www.docker.com/get-started>`__
+   See `Get Docker <https://www.docker.com/get-started>`__
 
 2. docker run
 
