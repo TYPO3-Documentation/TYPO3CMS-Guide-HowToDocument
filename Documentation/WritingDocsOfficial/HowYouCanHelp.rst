@@ -5,7 +5,7 @@
 .. _docs-official-how-you-can-help:
 
 ================
-How you can help
+How You Can Help
 ================
 
 Everyone can contribute to the TYPO3 documentation and contributions are
@@ -19,7 +19,7 @@ There are a number of things you can do to help.
 
 
 
-Make minor changes
+Make Minor Changes
 ==================
 
 If you see a typo, a broken link or can make some improvements in
@@ -65,7 +65,7 @@ For advanced contributors:
 
 .. _how-you-can-help-review-manuals:
 
-Review manuals
+Review Manuals
 ==============
 
 Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start reviewing it.
@@ -80,7 +80,7 @@ If you can, please try to fix the issue yourself.
 
 .. _how-you-can-help-check-spelling:
 
-Check spelling
+Check Spelling
 ==============
 
 Check spelling for consistency. Specifically, compare spelling of title
@@ -92,7 +92,7 @@ Is spelling of proper nouns correct?
 See: :ref:`content-styleguide`
 
 
-Replace outdated images
+Replace Outdated Images
 =======================
 
 Replace outdated images, for example in the :ref:`t3tsconfig:start`
@@ -101,7 +101,7 @@ reference.
 Look at :ref:`how-to-document-images` for information about how to
 use images.
 
-Add YouTube videos
+Add YouTube Videos
 ==================
 
 Add some new YouTube videos from the  `TYPO3 YouTube channel
@@ -109,7 +109,7 @@ Add some new YouTube videos from the  `TYPO3 YouTube channel
 
 See :ref:`youtube-videos` for information on how to do this.
 
-Teach and motivate others
+Teach and Motivate Others
 =========================
 
 If you are already familiar with the workflow, you can help others
@@ -121,7 +121,7 @@ necessary changes themselves.
 
 Thank others for their contributions (e.g. on Slack or personally).
 
-Spread the word
+Spread the Word
 ===============
 
 Tweet about things in the documentation, that are new and that you
