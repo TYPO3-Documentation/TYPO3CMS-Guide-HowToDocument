@@ -6,7 +6,7 @@
 .. _how-to-start-docs-extension:
 
 ======================================
-Writing documentation for an extension
+Writing Documentation for an Extension
 ======================================
 
 This chapters explains how to write documentation for an extension or make
