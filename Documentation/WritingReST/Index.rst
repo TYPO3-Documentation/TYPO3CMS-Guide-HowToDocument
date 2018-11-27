@@ -12,7 +12,7 @@ Formatting with reST & Sphinx
 This chapter is a reference for various kinds of markup.
 
 It is recommended to read (or at least browse through)
-the :ref:`writing-rest-introdction` and the general
+the :ref:`writing-rest-introduction` and the general
 :ref:`format-rest-cgl` first.
 
 Also read :ref:`rest-common-pitfalls` in order to avoid common
