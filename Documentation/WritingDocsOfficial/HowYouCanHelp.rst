@@ -13,6 +13,11 @@ very much appreciated.
 
 There are a number of things you can do to help.
 
+.. important::
+   These are just examples to get you started. You are not restricted to this,
+   as a contributor. If you can make useful improvements, do it!
+
+
 
 Make minor changes
 ==================
@@ -26,6 +31,12 @@ a walkthrough.
 
 Fix Issues
 ==========
+
+If you are a new contributor, you can look for issues with the label "good first issue":
+
+* `open issues with label "good first issue" in TYPO3-Documentation
+  <https://github.com/issues?q=is%3Aopen+is%3Aissue+author%3Asypets+archived%3Afalse+label%3A%22good+first+issue%22+user%3ATYPO3-Documentation>`__
+
 
 You can look at the open issues of a manual you are familiar with, pick one
 and fix the problem.
@@ -46,6 +57,12 @@ bottom left of the page).
    :class: with-shadow
 
 
+For advanced users:
+
+* `all open issues in TYPO3-Documentation
+  <https://github.com/search?o=desc&q=org%3ATYPO3-Documentation+type%3Aissue&s=updated&state=open&type=Issues>`__
+
+
 .. _how-you-can-help-review-manuals:
 
 Review manuals
@@ -59,6 +76,22 @@ You can also give general feedback as issues, but if possible try to
 outline some way in which the manual can be improved.
 
 If you can, please try to fix the issue yourself.
+
+.. _how-you-can-help-check-spelling:
+
+Check spelling
+==============
+
+Check spelling for consistency. Specifically, compare spelling of title
+and headlines to `The TYPO3 Writing Style Guide
+<https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
+
+Is spelling of proper nouns correct?
+
+See: :ref:`content-styleguide`
+
+
+.. _how-you-can-help-check-spelling:
 
 Replace outdated images
 =======================
