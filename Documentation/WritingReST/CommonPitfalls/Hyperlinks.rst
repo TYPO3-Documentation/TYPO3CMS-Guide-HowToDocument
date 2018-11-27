@@ -33,7 +33,7 @@ How this looks:
 Common mistake #1: Missing space
 ================================
 
-Make sure there is an extra space between the anchor text and the
+Make sure there is a space between the anchor text and the
 opening `<`.
 
 .. tip::
