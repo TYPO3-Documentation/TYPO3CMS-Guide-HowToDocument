@@ -18,6 +18,7 @@ following sections.
 .. toctree::
    :hidden:
 
+   ContentStyleGuide
    DirectoryFilenames
    MenuHierarchy
    CodingGuidelines
