@@ -3,18 +3,18 @@
 
 .. _rendering-docs:
 
-==============
-Rendering docs
-==============
+=======================
+Rendering Documentation
+=======================
 
-This chapter explains how to render the docs locally on your machine
-with docker.
+This chapter explains how to render a manual locally on your machine
+with Docker.
 
 It is recommended to do this before you publish your changes, because
 that way you will get a preview of how it is later rendered on the
 server.
 
-Using docker, you will use the same set of tools that are being used
+Using Docker, you will use the same set of tools locally in Docker that are being used
 on the documentation server docs.typo3.org to render the documentation.
 
 Here, we will briefly also explain the other methods for rendering.
@@ -28,7 +28,7 @@ Here, we will briefly also explain the other methods for rendering.
 
 .. rst-class:: bignums
 
-   1. docker method
+   1. Render documentation locally using Docker
 
       See :ref:`rendering-docs-quickstart`
       
@@ -47,7 +47,7 @@ Here, we will briefly also explain the other methods for rendering.
 
       If you install the extension
       `sphinx <https://extensions.typo3.org/extension/sphinx/>`__,
-      you can render the extension
+      you can render extension
       documentation of the extensions that are currently installed in the
       Backend of your TYPO3 installation.
 
