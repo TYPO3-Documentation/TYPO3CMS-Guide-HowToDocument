@@ -23,7 +23,7 @@ Make minor changes
 ==================
 
 If you see a typo, a broken link or can make some improvements in
-the style, do not hesitate to click on "Edit me on Github" and make
+the spelling, do not hesitate to click on "Edit me on Github" and make
 the change yourself. See :ref:`docs-contribute-github-method` for
 a walkthrough.
 
