@@ -82,10 +82,6 @@ If you run into problems, see :ref:`how-to-get-help`.
 
    Try `xdg-open` (for Linux) or `start` (for Windows) instead of `open` if this does not work for you.
 
-   .. tip::
-
-      Create aliases for these command now. You can reuse them.
-
 6. Repeat
 
    Verify if the documentation has been rendered correctly by viewing the results
@@ -105,6 +101,6 @@ If you run into problems, see :ref:`how-to-get-help`.
    Create aliases for the commands that works best for you now!
 
 
-.. seealso::
+More information:
 
-  `Docker rendering Readme on Github <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
+   * `Docker rendering Readme on Github <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
