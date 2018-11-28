@@ -6,9 +6,15 @@
 Writing Documentation
 =====================
 
-------------------------------
-How To Document TYPO3 Projects
-------------------------------
+**Quick links**
+
+
+.. rst-class:: horizbuttons-primary-m
+
+- :ref:`docs-contribute`
+- :ref:`Formatting-with-reST`
+- :ref:`Writing Extension Documentation <how-to-start-documentation-for-ext>`
+
 
 :Writing here:    TYPO3 documentation team and TYPO3 community
 :Status:          Fully revised (July, 2018)
@@ -16,15 +22,14 @@ How To Document TYPO3 Projects
 
 **About this manual**
 
-   This manual contains information that is relevant for
-
-   * writing official TYPO3 documenation (on `docs.typo3.org <https://docs.typo3.org>`__)
-   * writing documentation for extensions
-   * writing documentation for the TYPO3 core.
-
-   You will find information about how to format the documentation
-   in reST and some best practices in this guide.
-
+   This manual is about writing TYPO3 documenation
+   (`docs.typo3.org <https://docs.typo3.org>`__). It contains information for
+   how to format in :ref:`reST and sphinx <Formatting-with-reST>`. You can find out, 
+   how to :ref:`contribute to the documentation <docs-contribute>` and 
+   :ref:`write extension documentation from scratch <how-to-start-documentation-for-ext>`. 
+   
+   It also includes some general conventions, :ref:`coding guidelines <format-rest-cgl>`
+   and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`. 
 
 .. toctree::
    :hidden:
