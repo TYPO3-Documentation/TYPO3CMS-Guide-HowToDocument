@@ -27,6 +27,20 @@ the spelling, do not hesitate to click on "Edit me on Github" and make
 the change yourself. See :ref:`docs-contribute-github-method` for
 a walkthrough.
 
+.. _how-you-can-help-check-spelling:
+
+Check Spelling
+==============
+
+Check spelling for consistency. Specifically, compare spelling of title
+and headlines to `The TYPO3 Writing Style Guide
+<https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
+
+Is spelling of proper nouns correct?
+
+See: :ref:`content-styleguide`
+
+
 .. _how-you-can-help-fix-issues:
 
 Fix Issues
@@ -61,36 +75,6 @@ For advanced contributors:
 
 * `all open issues in TYPO3-Documentation
   <https://github.com/search?o=desc&q=org%3ATYPO3-Documentation+type%3Aissue&s=updated&state=open&type=Issues>`__
-
-
-.. _how-you-can-help-review-manuals:
-
-Review Manuals
-==============
-
-Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start reviewing it.
-
-If you find something that needs fixing or something is missing, either fix it or write an
-issue for it, if you cannot make the changes yourself.
-
-You can also give general feedback as issues, but if possible try to
-outline some way in which the manual can be improved.
-
-If you can, please try to fix the issue yourself.
-
-.. _how-you-can-help-check-spelling:
-
-Check Spelling
-==============
-
-Check spelling for consistency. Specifically, compare spelling of title
-and headlines to `The TYPO3 Writing Style Guide
-<https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
-
-Is spelling of proper nouns correct?
-
-See: :ref:`content-styleguide`
-
 
 Replace Outdated Images
 =======================
@@ -128,3 +112,41 @@ Spread the Word
 (hashtag: #typo3) about things in the documentation, that are 
 `new <https://docs.typo3.org/News/Index.html>`__
 and that you find interesting. Remind people, that everyone can contribute!
+
+
+.. _how-you-can-help-review-manuals:
+
+Review Manuals
+==============
+
+Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start reviewing it.
+If you find something that needs fixing or something is missing, either fix it or write an
+issue for it, if you cannot make the changes yourself.
+
+You can also give general feedback as issues, but if possible try to
+outline some way in which the manual can be improved.
+
+If you can, please try to fix the issue yourself.
+
+Some general things to look out for:
+
+* Does the manual contain spelling mistakes or language errors?
+* Is the language clear and easy to follow?
+
+Here are some things to look out for, while reviewing Tutorials:
+
+* Does the manual contain clear, easy to follow steps with screenshots or code examples,
+  where necessary?
+* Is the information correct and up to date? 
+* Is someone, who is new to the topic, capable of following the Tutorial?
+
+More information: :ref:`t3docteam:whats-a-tutorial`
+
+Here are some things to look out for, while reviewing Guides:
+
+* Does it have a clear structure?
+* Did you easily find the information you needed?
+* For longer sections: Is there a summary available, as a "Quick Start" or "Quick Reference"
+  (Example: :ref:`Logging Quick Start <t3coreapi:logging-quickstart>`)?
+
+
