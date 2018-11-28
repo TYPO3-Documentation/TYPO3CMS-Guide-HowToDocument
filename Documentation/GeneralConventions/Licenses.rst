@@ -1,7 +1,7 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-.. _general-conventions-licenses
+.. _general-conventions-licenses:
 
 ========
 Licenses
