@@ -107,7 +107,7 @@ STAR
 Using U+2420 SYMBOL FOR SPACE
 =============================
 
-.. hightlight:: rst
+.. highlight:: rst
 
 Code
 ----
