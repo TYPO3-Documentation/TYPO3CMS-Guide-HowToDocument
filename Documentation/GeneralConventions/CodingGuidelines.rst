@@ -50,7 +50,7 @@ Line length
   * Files can be compared in a diff view
 
 
-.. _editorconfig::
+.. _editorconfig:
 
 .editorconfig
 =============
