@@ -46,10 +46,11 @@ See: :ref:`content-styleguide`
 Fix Issues
 ==========
 
-If you are a new contributor, you can look for issues with the label "good first issue":
+If you are a new contributor, you can look for issues in TYPO3-Documentation  with the label "good first issue":
 
 * `open issues with label "good first issue" in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+author%3Asypets+archived%3Afalse+label%3A%22good+first+issue%22+user%3ATYPO3-Documentation>`__
+  <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__
+* ... or go to the `Issues tab in Github <https://github.com/issues>` and enter `is:open is:issue archived:false label:"good first issue" user:TYPO3-Documentation` in the search field (this should get you the same result) 
 
 
 You can look at the open issues of a manual you are familiar with, pick one
