@@ -16,8 +16,8 @@ If the style guide does not define something specifically, use correct spelling 
 or rather American (US) language (see `Style Guide: Spelling
 <https://typo3.org/community/teams/content/writing-style-guide/#c8483>`__).
 
-Refer to the resources, which the style guide suggests, or Merriam Webster as last resort:
-`https://m-w.com <https://www.merriam-webster.com/>`__
+Refer to the resources, which the style guide suggests, or use
+`Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
 
 
 .. _title-case:
@@ -53,8 +53,7 @@ as described in :ref:`Headlines-and-sections`::
 
 Tools:
 
-* https://titlecaseconverter.com/
-* https://capitalizemytitle.com/
+* https://capitalizemytitle.com/ (choose AP and "Title Case" for correct spelling in title)
 
 
 .. _buttons:
@@ -75,7 +74,7 @@ normal text (not headlines), they are capitalized.
 
 Sometimes, it is not so easy to determine, how to spell something, e.g. is it
 a style guide, or **the** Style Guide? Is it an extension or *the* TYPO3
-bootstrap_package Extension? Is the backend? Or the Backend? Or a Backend user
+Bootstrap Package Extension? Is the backend? Or the Backend? Or a Backend user
 or a backend user?
 
 If in doubt, ask in Slack channel #typo3-documentation (see
