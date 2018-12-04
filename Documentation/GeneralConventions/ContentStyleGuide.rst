@@ -53,7 +53,7 @@ as described in :ref:`Headlines-and-sections`::
 
 Tools:
 
-* https://capitalizemytitle.com/ (choose AP and "Title Case" for correct spelling in title)
+* https://capitalizemytitle.com/ (choose "Chicago" and "Title Case" for correct spelling in title)
 
 
 .. _buttons:
