@@ -4,7 +4,7 @@
 .. _including-files:
 
 ===============
-Including files
+Including Files
 ===============
 
 

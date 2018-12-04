@@ -9,7 +9,7 @@ Hyperlinks & Cross-referencing
 ==============================
 
 
-Quick reference
+Quick Reference
 ===============
 
 In Sphinx you can use several types of links:
@@ -42,7 +42,7 @@ How to create links is described in more detail in the next sections.
 
 .. _external-links:
 
-External links
+External Links
 ==============
 
 .. important::
@@ -66,8 +66,8 @@ If in doubt, just use 2 underscores as explained in the next section :ref:`exter
 
 .. _external-links-anonymous:
 
-External link as anonymous url
--------------------------------
+External Link as Anonymous URL
+------------------------------
 
 Syntax
 ~~~~~~
@@ -93,7 +93,7 @@ Example
 
 .. _external-links-named-reference:
 
-External link as named reference
+External Link as Named Reference
 --------------------------------
 
 Syntax
@@ -111,7 +111,7 @@ underscore instead of 2.
 
 .. _link-targets:
 
-Link targets
+Link Targets
 ============
 
 When using the :ref:`intersphinx` mechanism (as described in the next section), you
@@ -119,7 +119,7 @@ will link to link targets.
 
 .. _explicit-link-targets:
 
-Explicit link targets (labels)
+Explicit Link Targets (Labels)
 ------------------------------
 
 You can define an explicit link target with a label for a section (or chapter):
@@ -147,7 +147,7 @@ Here, the link target *columns-inline* will be defined.
 
 .. _implicit-link-targets:
 
-Implicit link targets
+Implicit Link Targets
 ---------------------
 
 For every section (or chapter), an implicit link target is created from the
@@ -171,7 +171,7 @@ Additional information: See the `Sphinx documentation
 <https://www.sphinx-doc.org/en/1.6/markup/inline.html#cross-referencing-arbitrary-locations>`__.
 
 
-In the same manual
+In the Same Manual
 ------------------
 
 A :ref:`section label <explicit-link-targets>` of the name `columns-inline` has been set somewhere::
@@ -193,10 +193,10 @@ You can also explicitly set an anchor text::
    :ref:`Inline columns <columns-inline>`
 
 
-From one manual to another
+From One Manual to Another
 --------------------------
 
-Example 1: Use text of headline as anchor text
+Example 1: Use Text of Headline as Anchor Text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Again, we want to link to the label `columns-inline`.
@@ -231,7 +231,7 @@ of the headline is that follows the label *in the manual we link to*, in this ca
 the TCA manual.
 
 
-Example 2: Specify anchor text
+Example 2: Specify Anchor Text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -244,8 +244,9 @@ writing:
 
 .. _intersphinx-benefits:
 
-Understanding the benefits
+Understanding the Benefits
 --------------------------
+
 Imagine that the TCA manual has been restructured. Text and maybe urls changed, but the - purely -
 symbolic label has been kept. As a result the links (= intersphinx references) in foreign
 manuals will work again as soon they are rebuilt.

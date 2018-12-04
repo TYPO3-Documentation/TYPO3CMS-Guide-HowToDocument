@@ -4,7 +4,7 @@
 .. _general-conventions-commit-messages:
 
 ===============
-Commit messages
+Commit Messages
 ===============
 
 

@@ -72,13 +72,13 @@ Example
 Syntax
 ======
 
-Length of underlines
+Length of Underlines
 --------------------
 
 The length of the underlines must at least have the length of the text. It 
 may be longer, not shorter. 
 
-Example 1: this works
+Example 1: This Works
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rest
@@ -87,7 +87,7 @@ Example 1: this works
    Example 1
    =========
    
-Example 2: this works too
+Example 2: This Works Too
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rest
@@ -96,7 +96,7 @@ Example 2: this works too
    Example 1
    ==============
 
-Example 3: this does not work
+Example 3: This Does not Work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rest
@@ -107,7 +107,7 @@ Example 3: this does not work
 
    
 
-Additional information
+Additional Information
 ======================
 
 * **Docutils:** Read about `sections

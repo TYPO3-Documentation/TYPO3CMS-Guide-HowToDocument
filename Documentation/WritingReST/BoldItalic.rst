@@ -4,11 +4,11 @@
 .. _rest-bold-italic:
 
 =================
-Bold, italic etc.
+Bold, Italic etc.
 =================
 
 
-bold
+Bold
 ====
 
 ::
@@ -20,7 +20,7 @@ How it looks:
 This is normal text. **This is bold text**
 
 
-italic
+Italic
 ======
 
 ::
@@ -32,7 +32,7 @@ How it looks:
 This is normal text. *This is italic text.*
 
 
-Possible errors
+Possible Errors
 ===============
 
 .. important::
@@ -41,7 +41,7 @@ Possible errors
    see :ref:`common-pitfalls-inline-style`.
 
 
-Additional information
+Additional Information
 ======================
 
 * `Text syntax: bold, italic, verbatim and special characters

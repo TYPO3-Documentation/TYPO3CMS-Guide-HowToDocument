@@ -4,7 +4,7 @@
 .. _general-conventions-menu-hierarchy:
 
 ==============
-Menu hierarchy
+Menu Hierarchy
 ==============
 
 The file hiearchy on disc does not affect the menu hierarchy in any way. But, as a general

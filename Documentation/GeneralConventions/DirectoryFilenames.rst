@@ -4,7 +4,7 @@
 .. _general-conventions-dir-and-filenames:
 
 ========================
-Directory and file names
+Directory and File Names
 ========================
 
 * All documentation resides in a :file:`Documentation` subfolder
@@ -38,7 +38,7 @@ It is **strongly recommended** to do it the way it is described here.
 For alternatives, please look at :ref:`supported-filenames-and-formats`.
 
 
-Information about basic files
+Information about Basic Files
 =============================
 
 .. _settings-cfg:

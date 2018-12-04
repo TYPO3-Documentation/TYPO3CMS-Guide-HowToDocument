@@ -7,18 +7,11 @@
 Codeblocks with Syntax Highlighting
 ===================================
 
-This page:
-
-.. contents::
-   :local:
-   :depth: 2
-   :backlinks: top
-
 
 
 .. _writing-rest-codeblocks-codeblock-directive:
 
-Codeblock directive
+Codeblock Directive
 ===================
 
 To insert a snippet as code with syntax highlighting, use the `code-block`
@@ -68,7 +61,7 @@ short form (`::`). The following examples all do the same thing:
 
 
 
-Using the '::' notation (recommended)
+Using the '::' Notation (Recommended)
 =====================================
 
 It's nice to use this notation and the preferred way to create a code block in
@@ -96,7 +89,7 @@ Quoting the important part of the specification:
    minimized" form).
 
 
-Example of form 1: Expanded
+Example of Form 1: Expanded
 ---------------------------
 
 Source::
@@ -120,7 +113,7 @@ In words: The paragraph will appear as written. The code block just follows.
 output.
 
 
-Example of form 2: Partially minimized
+Example of Form 2: Partially Minimized
 --------------------------------------
 
 Source::
@@ -140,7 +133,7 @@ with the preceding whitespace (!) have been removed from the end of the line.
 The code block then just follows.
 
 
-Example of form 3: Fully minimized
+Example of Form 3: Fully Minimized
 ----------------------------------
 
 Source::
@@ -162,7 +155,7 @@ The code block then follows normally.
 
 .. _writing-rest-codeblocks-syntactically-correct:
 
-Use syntactically correct code
+Use Syntactically Correct Code
 ==============================
 
 .. attention::
@@ -200,7 +193,7 @@ installed the command `pygmentize -L` will list all available lexers.
 
 .. _writing-rest-codeblocks-highlight-directive:
 
-Highlight directive
+Highlight Directive
 ===================
 
 You can set the default language with the `highlight` directive. All following
@@ -232,14 +225,14 @@ remains valid up to the next or up to the end of the *single file* it is used
 in.
 
 
-Highlight language 'guess'
+Highlight Language 'guess'
 --------------------------
 
 Note that there is a - pseudo - language 'guess' as well. This should use the
 highlighter for the first language that Pygments finds to have no syntax error.
 
 
-Highlight language 'none'
+Highlight Language 'none'
 -------------------------
 
 The pseudo language 'none' is recognized as well. In this case no highlighting
@@ -248,10 +241,10 @@ will occur.
 
 .. _writing-rest-codeblocks-some-more-examples:
 
-Some more examples
+Some More Examples
 ==================
 
-Add line numbers to code snippet
+Add Line Numbers to Code Snippet
 --------------------------------
 
 
@@ -288,8 +281,8 @@ Result
        $rssFeedPageType = 9818; // pageType of your RSS feed page
 
 
-Turn off highlighting method 1
-------------------------------
+Turn off Highlighting: Method 1
+-------------------------------
 
 Source:
 ~~~~~~~
@@ -322,8 +315,8 @@ A description:
    └── installed.json
 
 
-Turn off highlighting method 2
-------------------------------
+Turn off Highlighting: Method 2
+-------------------------------
 
 Source:
 ~~~~~~~

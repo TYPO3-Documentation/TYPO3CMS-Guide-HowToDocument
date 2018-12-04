@@ -4,7 +4,7 @@
 .. _rest-lists:
 
 ============
-Bullet lists
+Bullet Lists
 ============
 
 This section contains information on bullet lists and numbered lists. 
@@ -29,7 +29,7 @@ numbered lists:
 * `Docutils cheat-sheet for reStructuredText: Enumerated lists <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
 
 
-Example 1: List with sublist items
+Example 1: List with Sublist Items
 ==================================
 
 .. code-block:: rest
@@ -59,7 +59,7 @@ Example 1: List with sublist items
 * item 4
 
 
-Example 2: List with sublist and error
+Example 2: List with Sublist and Error
 ======================================
 
 .. important::
@@ -89,7 +89,7 @@ Example 2: List with sublist and error
 
 For more information on common errors, see :ref:`rest-common-pitfalls`.
 
-Example 3: Numbered list
+Example 3: Numbered List
 ========================
 
 .. code-block:: rest

@@ -17,7 +17,7 @@ List Items as Buttons
    is already used in the Sphinx-Python-domain.
 
 
-How does it work?
+How Does It Work?
 =================
 
 The *t3SphinxThemeRtd* theme for TYPO3 comes along with style that make
@@ -34,7 +34,7 @@ the list like so::
    - three `with link <#>`__
 
 
-Available styles
+Available Styles
 ================
 
 horizbuttons-attention-m

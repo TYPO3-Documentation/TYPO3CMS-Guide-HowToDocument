@@ -9,13 +9,13 @@ Definition Lists
 ================
 
 
-List style "dl-parameters"
+List Style "dl-parameters"
 ==========================
 
 This list style is used in TYPO3 documentation to style the explanation
 and description of parameters. The general markup we use is that of a "definition list".
 
-Example 1: No extra styling
+Example 1: No Extra Styling
 ---------------------------
 
 An example with a standard styling would look like this:
@@ -47,7 +47,7 @@ parameterBcd
 This markup works but isn't very readable due to the lack of styling.
 
 
-Example 2: Nicely styled
+Example 2: Nicely Styled
 ------------------------
 
 Source::
@@ -116,7 +116,7 @@ way of defining them is by having these lines in the
 Sphinx already comes with standard textroles 'emphasis' and 'strong'. 'aspect'
 and 'sep' inherit their properties and are further specialized.
 
-Example 3: Nicely styled though labels interfere
+Example 3: Nicely Styled Though Labels Interfere
 ------------------------------------------------
 
 Let's say you want to place labels in front of each definition list

@@ -4,7 +4,7 @@
 .. _youtube-videos:
 
 ====================
-Embed YouTube videos
+Embed YouTube Videos
 ====================
 
 .. rst-class:: bignums

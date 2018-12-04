@@ -4,11 +4,11 @@
 .. _styled-numbered-lists:
 
 ========================
-Styled numbered sections
+Styled Numbered Sections
 ========================
 
 
-With XXL big numbers
+With XXL Big Numbers
 ====================
 
 *Source:* ::
@@ -45,7 +45,7 @@ With XXL big numbers
 
 
 
-With big numbers
+With Big Numbers
 ================
 
 *Source:* ::
@@ -80,7 +80,7 @@ With big numbers
 
 
 
-With big numbers - tip
+With Big Numbers - Tip
 ======================
 
 Uses the same color as background, that is used in a tip textblock.
@@ -111,7 +111,7 @@ Uses the same color as background, that is used in a tip textblock.
    More ...
 
 
-With big numbers - attention
+With Big Numbers - Attention
 =============================
 
 
@@ -143,7 +143,7 @@ With big numbers - attention
 
 
 
-With big numbers - important
+With Big Numbers - Important
 ============================
 
 
@@ -174,7 +174,7 @@ With big numbers - important
 
 
 
-With big numbers - warning
+With Big Numbers - Warning
 ==========================
 
 *Source:* ::
@@ -253,7 +253,7 @@ Nested bignums-xxl > bignums > normally styled
 
 
 
-More examples of nesting
+More Examples of Nesting
 ========================
 
 .. highlight:: shell

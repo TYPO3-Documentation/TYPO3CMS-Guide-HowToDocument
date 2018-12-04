@@ -9,7 +9,7 @@ Images
 ======
 
 
-How to use images
+How to Use Images
 =================
 
 Use the `.. image::` directive with additional parameters. The
@@ -26,7 +26,7 @@ Examples
 ========
 
 
-Example 1: Image with shadow and link target
+Example 1: Image with Shadow and Link Target
 --------------------------------------------
 
 .. image:: ../images/a4.jpg
@@ -56,7 +56,7 @@ Example 1: Image with shadow and link target
    use a shadow on the image
 
 
-Example 2: Image with fixed width
+Example 2: Image with Fixed Width
 ---------------------------------
 
 .. image:: ../images/a4.jpg

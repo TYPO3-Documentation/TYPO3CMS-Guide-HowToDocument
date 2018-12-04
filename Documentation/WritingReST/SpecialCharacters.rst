@@ -15,7 +15,7 @@ utf-8.
 Keep in mind that while you CAN use any Unicode character not all of them will
 be displayed. In general fonts contain glyphs for common characters only.
 
-Some lists of characters
+Some Lists of Characters
 ========================
 
 ARROW
@@ -104,7 +104,7 @@ STAR
    :sep:`|` ≛ ⋆ ⍟ ⍣ ★ ☆ ☪ ⚝ ✡ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ✴ ✵ ✶ ✷ ✸ ✹ ❂ ⭐ ⭑ ⭒ 🌟 🌠 🔯 ٭
    :sep:`|`
 
-Using U+2420 SYMBOL FOR SPACE
+Using U+2420 Symbol for Space
 =============================
 
 .. highlight:: rst

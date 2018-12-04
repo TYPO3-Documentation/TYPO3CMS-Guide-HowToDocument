@@ -4,7 +4,7 @@
 .. _format-rest-cgl:
 
 ================================
-Coding Guidelines for reST files
+Coding Guidelines for reST Files
 ================================
 
 Encoding
@@ -12,7 +12,7 @@ Encoding
 
 * use utf-8
 
-Whitespace and indenting
+Whitespace and Indenting
 ========================
 
 .. important::
@@ -39,7 +39,7 @@ Example:
 * lines 2-4 must be indented one level (3 spaces)
 
 
-Line length
+Line Length
 ===========
 
 * Keep lines shorter than 80 characters.

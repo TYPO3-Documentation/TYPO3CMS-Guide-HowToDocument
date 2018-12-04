@@ -16,10 +16,10 @@ This page:
    :backlinks: top
 
 
-Takeaways from this page
+Takeaways from this Page
 ========================
 
-Don't overuse
+Don't Overuse
 -------------
 
    .. hint::
@@ -28,7 +28,7 @@ Don't overuse
       unreadable. If this is the case, consider using
       :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
 
-Use this 'Includes.txt' file
+Use this 'Includes.txt' File
 ----------------------------
 
 You may treat the :file:`Includes.txt` `file of this guide
@@ -53,7 +53,7 @@ language with the exception of the TypoScript manuals, where `typoscript` is
 the default.
 
 
-You need another textrole for code markup?
+You Need Another Textrole for Code Markup?
 ------------------------------------------
 
 You need another 'language' to mark up inline?
@@ -88,10 +88,10 @@ overridden by a special styling :html:`class="code.haskell"` that needs to
 be defined.
 
 
-How to write inline code
+How to Write Inline Code
 ========================
 
-Preferred: Use single backticks ` ... `
+Preferred: Use Single Backticks ` ... `
 ---------------------------------------
 
 1. In general we are using `interpreted text roles`_ for small inline
@@ -156,7 +156,7 @@ Preferred: Use single backticks ` ... `
    ================== ================================================= ============================================ ===
 
 
-When to use literal code \`\`...``
+When to Use Literal Code \`\`...``
 ----------------------------------
 
 Things get tricky if your inline code already contains single backquotes (backticks).
@@ -190,8 +190,8 @@ Things get tricky if your inline code already contains single backquotes (backti
 .. _interpreted text roles: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#interpreted-text
 .. _inline literals: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#inline-literals
 
-'inline code' versus 'code-blocks'
-==================================
+Inline Code versus Code-Blocks
+==============================
 
 The name for - very - small code snippets that occur within normal text flow
 within sentences is *inline code*.

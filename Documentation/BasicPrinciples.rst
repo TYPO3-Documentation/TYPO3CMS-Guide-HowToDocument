@@ -4,11 +4,11 @@
 .. _basic-principles:
 
 =======================================
-Basic principles of TYPO3 documentation
+Basic Principles of TYPO3 Documentation
 =======================================
 
 
-Introduction to TYPO3 documentation
+Introduction to TYPO3 Documentation
 ===================================
 
 For an excellent introduction, please see the 3 part series on Marcus
@@ -28,7 +28,7 @@ Schwemer's blog TYPO3 Worx:
 
 .. _whats-typo3-documentation:
 
-What's TYPO3 documentation?
+What's TYPO3 Documentation?
 ==========================================
 
 TYPO3 documentation may be one of the following:
@@ -45,7 +45,7 @@ TYPO3 documentation may be one of the following:
 
 .. _common-characteristics-typo3-docs:
 
-Common characteristics of TYPO3 documentation
+Common Characteristics of TYPO3 documentation
 =============================================
 
 All of these examples have a few things in common:
@@ -65,7 +65,7 @@ All of these examples have a few things in common:
 
 .. _whats-rendering:
 
-So, what's rendering?
+So, What's Rendering?
 =====================
 
 Rendering means (in this specific case) converting the reST
@@ -80,7 +80,7 @@ creating the menu, using the current theme to add additional styles and images, 
 
 .. _overview-of-types:
 
-Different kinds of TYPO3 documentation
+Different Kinds of TYPO3 Documentation
 ======================================
 
 
@@ -132,7 +132,7 @@ manual, click on "Related Links" and then click on "Issues" or "Repository".
    :class: with-shadow
 
 
-Official TYPO3 manuals
+Official TYPO3 Manuals
 ~~~~~~~~~~~~~~~~~~~~~~
 
 The official TYPO3 manuals are hosted on Github. Editing the documentation
@@ -140,7 +140,7 @@ requires a Github account and involves creating a Pull Request on Github.
 
 Find out more about how to contribute: :ref:`docs-contribute`.
 
-Documentation for the core
+Documentation for the Core
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The documentation for the core (Changelog and system extensions) is added
@@ -152,7 +152,7 @@ Find out more about the :ref:`Core contribution workflow <t3contribute:Start>`
 in general or about :ref:`t3contribute:Adding-documentation` in the Contribution
 Guide.
 
-Documentation for 3rdparty extensions
+Documentation for 3rdparty Extensions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The documentation for a 3rdparty extension is maintained within the

@@ -14,7 +14,7 @@ Only `.rst` files that are included in a toctree, are included in the menu.
 The first headline of an .rst file is its "doctitle". That is the document's
 title property. It is used for references and appears in menus.
 
-General rules for using `..toctree::`
+General Rules for Using `..toctree::`
 =====================================
 
 .. rst-class:: bignums
@@ -25,7 +25,7 @@ General rules for using `..toctree::`
 
 *Note:* What we call "headlines" here is called "sections" in reST-jargon, see :ref:`Headlines-and-sections`.
 
-File structure and menu structure
+File Structure and Menu Structure
 =================================
 
 Typically, toctree is used in the following way, where each toplevel file `Index.rst`
@@ -51,7 +51,7 @@ You are not restricted to doing this file, your file structure can also look lik
 * `Documentation/Topic2.rst` : no toctree
 
 
-toctree examples
+Toctree Examples
 ================
 
 Example: hidden
@@ -92,8 +92,8 @@ file) will be displayed (titlesonly).
 Example: https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/Appendix/Index.html
 
 
-'toctree' and the hierarchical structure of a manual
-====================================================
+Toctree and the Hierarchical Structure of a Manual
+==================================================
 
 2017-02-13 by Martin Bless
 
