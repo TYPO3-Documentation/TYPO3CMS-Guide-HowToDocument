@@ -11,8 +11,10 @@ reST and sphinx.
 :Repository:  https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument
 :Read online: https://docs.typo3.org/typo3cms/HowToDocument/Index.html
 
-For more information about contributing to TYPO3 documentation, see: https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/Index.html
+Additional information
+======================
 
-For more information about contributing to the TYPO3 core, see: 
-https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
+* `Contribute to TYPO3 documentation <https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/Index.html>`__
+* `Contribute to TYPO3 core <https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/>`__
+* `Help & Support for TYPO3 <https://typo3.org/help>`__
 
