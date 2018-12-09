@@ -64,6 +64,8 @@ For example:
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 * `Issues for "Installation and Upgrade Guide"
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues>`__
+* `Issues for "TYPO3 Explained"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues>`__
 
 To find the issues for a specific manual click on "Related links" (on the
 bottom left of the page).
@@ -71,11 +73,13 @@ bottom left of the page).
 .. image:: ../images/related-links-issues.png
    :class: with-shadow
 
+* `All open issues in TYPO3-Documentation (without team issues) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+>`__
 
-For advanced contributors:
+For advanced contributors / team members:
 
 * `all open issues in TYPO3-Documentation
-  <https://github.com/search?o=desc&q=org%3ATYPO3-Documentation+type%3Aissue&s=updated&state=open&type=Issues>`__
+  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation>`__ (including team issues)
+* `all open team issues <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+repo%3ATYPO3-Documentation%2FT3DocTeam>`__ 
 
 Replace Outdated Images
 =======================
