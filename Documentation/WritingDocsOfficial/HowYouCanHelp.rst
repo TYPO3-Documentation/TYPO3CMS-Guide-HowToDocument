@@ -73,13 +73,13 @@ bottom left of the page).
 .. image:: ../images/related-links-issues.png
    :class: with-shadow
 
-* `All open issues in TYPO3-Documentation (without team issues) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+>`__
+* `All open issues in TYPO3-Documentation (without team issues, without t3SphinxThemeRtd) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd>`__
 
 For advanced contributors / team members:
 
-* `all open issues in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation>`__ (including team issues)
-* `all open team issues <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+repo%3ATYPO3-Documentation%2FT3DocTeam>`__ 
+* `All open issues in TYPO3-Documentation
+  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation>`__ 
+
 
 Replace Outdated Images
 =======================
