@@ -114,7 +114,7 @@ Spread the Word
 ===============
 
 `Tweet <https://twitter.com/search?f=tweets&vertical=default&q=%23typo3>`__
-(hashtag: #typo3) about things in the documentation, that are 
+(hashtag: #typo3) or blog about things in the documentation, that are 
 `new <https://docs.typo3.org/News/Index.html>`__
 and that you find interesting. Remind people, that everyone can contribute!
 
