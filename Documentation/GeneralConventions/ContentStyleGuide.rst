@@ -127,12 +127,8 @@ extension
 Git
    The same applies as for docker. Use Git unless you explicitly mean the command
    line command git.
-Introduction Package
-   Example: "The *Introduction Package* is a complete, fully operational"
 reST
    This is the official abbreviation for reStructuredText
-Site Package
-   see :ref:`t3sitepackage:start`
 TYPO3
    TYPO3 is always spelled TYPO3.
 
