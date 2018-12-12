@@ -16,7 +16,7 @@ This page:
    :backlinks: top
 
 
-Takeaways from this Page
+Takeaways from This Page
 ========================
 
 Don't Overuse
@@ -28,7 +28,7 @@ Don't Overuse
       unreadable. If this is the case, consider using
       :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
 
-Use this 'Includes.txt' File
+Use This 'Includes.txt' File
 ----------------------------
 
 You may treat the :file:`Includes.txt` `file of this guide

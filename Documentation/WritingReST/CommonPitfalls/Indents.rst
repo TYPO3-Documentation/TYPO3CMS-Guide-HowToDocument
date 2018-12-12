@@ -4,7 +4,7 @@
 
 
 =====================
-Problems with indents
+Problems with Indents
 =====================
 
 
@@ -13,7 +13,7 @@ Common mistake #1: Incorrect indents
 
 Always indent correctly (3 spaces per level)
 
-Correct syntax
+Correct Syntax
 --------------
 
 ::
@@ -28,7 +28,7 @@ How it looks:
       :width: 100px
       :class: with-shadow
 
-Incorrect syntax
+Incorrect Syntax
 ----------------
 
 Here, `:width:` is indented with only 2 spaces. The image will not be

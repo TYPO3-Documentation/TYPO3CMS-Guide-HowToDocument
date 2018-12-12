@@ -4,7 +4,7 @@
 .. _supported-filenames-and-formats:
 
 ============================================
-Additionally supported filenames and formats
+Additionally Supported Filenames and Formats
 ============================================
 
 
@@ -15,7 +15,7 @@ Additionally supported filenames and formats
    in :ref:`general-conventions`, specifically
    :ref:`general-conventions-dir-and-filenames`.
 
-Name of start page
+Name of Start Page
 ==================
 
 
@@ -35,13 +35,13 @@ If none of these files exist, no documentation will be rendered.
 The files ending in .md contain Markdown, the files ending in .rst
 contain reStructuredText (reST).
 
-Rendering formats
+Rendering Rormats
 =================
 
 Using reStructuredText (reST) is strongly recommended.
 
-reST (recommended)
-------------------
+reST
+----
 
 TYPO3 documentation uses reStructuredText for markup. The rendering
 chain and tools are built and optimized to process reST markup. Please
@@ -68,15 +68,15 @@ This means that our rendering tools detect markdown files as well. They have .md
 If you’re encountering problems with the rendering of your markdown files, consider switching to reST.
 
 
-Drawbacks of other formats / filenames
-======================================
+Drawbacks of Other Formats and Filenames
+========================================
 
 Drawbacks of Markdown
 ---------------------
 
 Not everything is currently rendered correctly with the existing toolchain in Markdown.
 
-Drawbacks of using a single file
+Drawbacks of Using a Single File
 --------------------------------
 
 If you just use a single file as documentation, such as README.rst, you cannot

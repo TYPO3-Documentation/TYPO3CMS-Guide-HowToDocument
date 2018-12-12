@@ -100,7 +100,7 @@ Add some new YouTube videos from the  `TYPO3 YouTube channel
 
 See :ref:`youtube-videos` for information on how to do this.
 
-Add information from the ChangeLog
+Add Information from the ChangeLog
 ==================================
 
 Find information in the `TYPO3 ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__

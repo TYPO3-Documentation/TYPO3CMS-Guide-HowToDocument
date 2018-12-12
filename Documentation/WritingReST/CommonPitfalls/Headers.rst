@@ -3,7 +3,7 @@
 
 
 =====================
-Problems with headers
+Problems with Headers
 =====================
 
 
@@ -13,24 +13,24 @@ Though you can make the underlines longer than the text, common practice
 througout the docs is to to keep it the same length.
 
 
-Correct syntax
+Correct Syntax
 ==============
 
 ::
 
    ================
-   This is a header
+   This is a Header
    ================
 
-   Another header
+   Another Header
    ==============
 
 
-   This is also correct but not recommended
+   This Is Also Correct but Not Recommended
    ======================================================
 
 
-Wrong syntax
+Wrong Syntax
 ============
 
 
@@ -42,7 +42,7 @@ Wrong syntax
 
 
 
-More information
-================
+Additional Information
+======================
 
 * :ref:`Headlines-and-sections`

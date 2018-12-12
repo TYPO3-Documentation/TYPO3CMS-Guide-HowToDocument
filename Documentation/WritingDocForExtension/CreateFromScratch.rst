@@ -6,14 +6,14 @@
 .. _how-to-start-documentation-for-ext:
 
 ===================================================
-How to start documentation for your TYPO3 extension
+How to Start Documentation for Your TYPO3 Extension
 ===================================================
 
 If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
 .. rst-class:: bignums-xxl
 
-1. Clone sample extension manual
+1. Clone Sample Extension Manual
 
    In a temporary directory, clone the Github project
    `sample extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
@@ -31,7 +31,7 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
       # cp .gitignore (make sure you don't accidentally overwrite existing one though!)
       cp -n TYPO3CMS-Example-ExtensionManual/.gitignore <extension-directory>/.gitignore
 
-2. Edit the documentation
+2. Edit the Documentation
 
    Start editing away. Use the existing text to guide you, look at other
    extension manuals for inspiration. Checkout the section on
@@ -40,14 +40,14 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
    Be sure to fill out Settings.cfg correctly as described in :ref:`settings-cfg`.
 
-3. Render the documentation (locally)
+3. Render the Documentation
 
    Before you publish your changes, make sure the documentation is rendered
    correctly.
 
    Look at :ref:`rendering-docs-quickstart` for a quick start.
 
-4. When you are done, publish your changes
+4. When You Are Done, Publish Your Changes
 
    If you are working on your own 3rdparty extension, make it publicly available.
    The documentation will then automatically be rendered on docs.typo3.org.

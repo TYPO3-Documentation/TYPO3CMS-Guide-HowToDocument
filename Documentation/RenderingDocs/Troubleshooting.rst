@@ -35,7 +35,7 @@ smoothly.
 
 .. _render-troubleshooting-errors:
 
-Errors that break the rendering
+Errors That Break the Rendering
 ===============================
 
 If there are errors which break the rendering, you may see something like:
@@ -125,7 +125,7 @@ You can also view the file in the terminal (or in your IDE / editor):
 
 .. _render-troubleshooting-incremental:
 
-Incremental rendering
+Incremental Rendering
 =====================
 
 After you make changes, you can initiate rendering again, for example:

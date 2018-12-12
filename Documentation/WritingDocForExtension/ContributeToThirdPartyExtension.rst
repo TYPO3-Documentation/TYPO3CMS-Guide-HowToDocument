@@ -4,7 +4,7 @@
 .. _contribute-to-3rdparty-extension:
 
 ================================
-Contribute to 3rdparty extension
+Contribute to 3rdparty Extension
 ================================
 
 This chapter adresses contributing to 3rdparty extension documenation. The
@@ -28,8 +28,8 @@ it is usually not required to write an issue. You can just submit a pull request
 
 .. _contribute-to-3rdparty-extension-find-the-source:
 
-Find the source (repository)
-============================
+Find the Source
+===============
 
 First, you need to find out where the source is maintained. Usually, this will
 be a repository on Github. There, you can also check if documentation is already
@@ -38,7 +38,7 @@ mentioned in :ref:`supported-filenames-and-formats`.
 
 To find the repository, use one of these methods:
 
-Method 1: Find the source with "Related links"
+Method 1: Find the Source with "Related Links"
 ----------------------------------------------
 
 In the page of the rendered docs for the extension, click on "Related links", and
@@ -51,12 +51,12 @@ then "Repository".
 Sometimes the metadata in Settings.cfg in a Documentation
 project is not filled out and this link is missing. Then, you can use Method 2.
 
-Method 2: Find the source on https://extensions.typo3.org
+Method 2: Find the Source on https://extensions.typo3.org
 ---------------------------------------------------------
 
 .. rst-class:: bignums
 
-   1. Go to the `Extension repository <https://extensions.typo3.org/>`__
+   1. Go to the `extension repository <https://extensions.typo3.org/>`__
 
    2. In the search box, enter the name or extension key
 
@@ -81,18 +81,18 @@ the core) on https://extensions.typo3.org. System extensions are for
 example indexed_search, form, impexp, etc.
 
 
-Find the rendered manual
+Find the Rendered Manual
 ========================
 
 You can also find the rendered documentation:
 
-Method 1: Find rendered manual on docs.typo3.org
+Method 1: Find Rendered Manual on docs.typo3.org
 ------------------------------------------------
 
 Go to:
 `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
 
-Method 2: Find rendered manual on https://extensions.typo3.org
+Method 2: Find Rendered Manual on https://extensions.typo3.org
 --------------------------------------------------------------
 
 .. rst-class:: bignums
@@ -114,7 +114,7 @@ Method 2: Find rendered manual on https://extensions.typo3.org
    You cannot find system extensions (extensions that are maintained in 
    the core) on https://extensions.typo3.org. 
 
-Follow contribution guide
+Follow Contribution Guide
 =========================
 
 Hopefully, the extension has a contribution guide. You can look at the Github

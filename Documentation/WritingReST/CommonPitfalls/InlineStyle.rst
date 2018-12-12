@@ -4,7 +4,7 @@
 .. _common-pitfalls-inline-style:
 
 ==========================
-Problems with inline style
+Problems with Inline Style
 ==========================
 
 
@@ -12,7 +12,7 @@ If you use **bold** or *italic*, make sure there is no space between
 the markup and the styled text.
 
 
-Correct syntax
+Correct Syntax
 --------------
 
 ::
@@ -24,7 +24,7 @@ How it looks:
 
    This is normal text. **This is bold text.**
 
-Wrong syntax
+Wrong Syntax
 ------------
 
 ::
@@ -37,7 +37,8 @@ How it looks:
    This is normal text. ** This is bold text.**
 
 
-More information
-================
+Additional Information
+======================
 
-* `Docutils cheat-sheet for reStructuredText: Inline markup <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__
+* `Docutils cheat-sheet for reStructuredText: Inline markup
+  <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__

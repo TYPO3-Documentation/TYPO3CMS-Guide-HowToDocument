@@ -3,7 +3,7 @@
 .. whats-new:
 
 =======================
-Whats new in this guide
+Whats New in This Guide
 =======================
 
 * Nov 27, 2018 :ref:`content-styleguide`

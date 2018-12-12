@@ -45,7 +45,7 @@ TYPO3 documentation may be one of the following:
 
 .. _common-characteristics-typo3-docs:
 
-Common Characteristics of TYPO3 documentation
+Common Characteristics of TYPO3 Documentation
 =============================================
 
 All of these examples have a few things in common:

@@ -4,7 +4,7 @@
 .. _contribute-to-system-extension:
 
 ==============================
-Contribute to system extension
+Contribute to System Extension
 ==============================
 
 For system extensions please also refer to the :ref:`t3contribute:start`

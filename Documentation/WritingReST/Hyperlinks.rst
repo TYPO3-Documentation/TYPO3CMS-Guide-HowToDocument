@@ -86,7 +86,8 @@ Example
    `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
-**How it looks:**
+How it Looks
+~~~~~~~~~~~~
 
 `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 

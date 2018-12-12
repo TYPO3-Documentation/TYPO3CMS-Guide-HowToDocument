@@ -29,7 +29,7 @@ Here, we will briefly also explain the other methods for rendering.
 
 .. rst-class:: bignums
 
-   1. Render documentation locally using Docker
+   1. Render Documentation Locally Using Docker
 
       See :ref:`rendering-docs-quickstart`
       
@@ -51,13 +51,13 @@ Here, we will briefly also explain the other methods for rendering.
       you can render extension documentation of the extensions that are currently
       installed in the backend of your TYPO3 installation.
 
-   4. Using a starter project (Sandbox)
+   4. Using a Starter Project (Sandbox)
 
       With this method, you will get a starter project, where you can
       make your changes directly on GitHub. The changes will automatically
       be rendered.
 
-   5. Various online or local tools for reST rendering
+   5. Various Online or Local Tools for reST Rendering
 
       These have the same drawbacks as already noted for *Preview on GitHub*.
 

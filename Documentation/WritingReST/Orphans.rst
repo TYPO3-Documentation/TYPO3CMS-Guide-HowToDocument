@@ -4,7 +4,7 @@
 .. _rest-orphans:
 
 ==============
-Orphaned pages
+Orphaned Pages
 ==============
 
 

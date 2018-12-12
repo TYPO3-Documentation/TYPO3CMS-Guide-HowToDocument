@@ -82,7 +82,7 @@ Our headline example from above will look like this:
    :class: with-shadow
 
 
-Looking at the source
+Looking at the Source
 =====================
 
 Whenever you come across a documentation page on docs.typo3.org, you can look

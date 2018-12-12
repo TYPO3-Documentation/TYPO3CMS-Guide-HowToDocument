@@ -3,7 +3,7 @@
 
 
 ===================
-Problems with lists
+Problems with Lists
 ===================
 
 If you use lists, make sure there is an empty line before and after the
@@ -13,10 +13,10 @@ between the levels.
 The same applies for bullet lists and enumerated lists.
 
 
-Correct syntax
+Correct Syntax
 ==============
 
-Example 1: Bullet list
+Example 1: Bullet List
 ~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -38,7 +38,7 @@ Example 1: Bullet list
    more text
 
 
-Example 2: List with sublist
+Example 2: List with Sublist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -65,7 +65,7 @@ How it looks:
    this is more text
 
 
-Wrong syntax
+Wrong Syntax
 ------------
 
 ::
@@ -83,9 +83,11 @@ How it looks:
    more text
 
 
-More information
-================
+Additional Information
+======================
 
-* `Docutils cheat-sheet for reStructuredText: Bullet list <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
+* `Docutils cheat-sheet for reStructuredText: Bullet list
+  <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
 * :ref:`Section on lists in this guide <rest-lists>`
-* `Docutils cheat-sheet for reStructuredText: Enumerated lists <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
+* `Docutils cheat-sheet for reStructuredText: Enumerated lists
+  <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
