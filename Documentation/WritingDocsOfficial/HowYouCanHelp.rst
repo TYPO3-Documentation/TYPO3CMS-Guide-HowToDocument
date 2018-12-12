@@ -32,13 +32,14 @@ a walkthrough.
 Check Spelling
 ==============
 
-Check spelling for consistency. Specifically, compare spelling of title
+Check spelling for consistency. For example, compare spelling of title
 and headlines to `The TYPO3 Writing Style Guide
 <https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
 
 Is spelling of proper nouns correct?
 
-See: :ref:`content-styleguide`
+See :ref:`content-styleguide` for more information, use the online tool
+https://capitalizemytitle.com/ to check title spelling.
 
 
 .. _how-you-can-help-fix-issues:
@@ -53,7 +54,7 @@ If you are a new contributor, you can look for issues in TYPO3-Documentation  wi
 * ... or go to the `Issues tab in Github <https://github.com/issues>`__ and enter `is:open is:issue archived:false label:"good first issue" user:TYPO3-Documentation` in the search field (this should get you the same result) 
 
 
-You can look at the open issues of a manual you are familiar with, pick one
+Or, you can look at the open issues of a manual you are familiar with, pick one
 and fix the problem.
 
 For example:
@@ -73,7 +74,8 @@ bottom left of the page).
 .. image:: ../images/related-links-issues.png
    :class: with-shadow
 
-* `All open issues in TYPO3-Documentation (without team issues, without t3SphinxThemeRtd) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd>`__
+* `All open issues in TYPO3-Documentation (without team issues, without t3SphinxThemeRtd)
+  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd>`__
 
 For advanced contributors / team members:
 
@@ -88,7 +90,7 @@ Replace outdated images, for example in the :ref:`t3tsconfig:start`
 reference.
 
 Look at :ref:`how-to-document-images` for information about how to
-use images.
+embed images with reST.
 
 Add YouTube Videos
 ==================
@@ -97,6 +99,19 @@ Add some new YouTube videos from the  `TYPO3 YouTube channel
 <https://www.youtube.com/channel/UCwpl8LY9Tr3PB26Kk2FYW_w>`__.
 
 See :ref:`youtube-videos` for information on how to do this.
+
+Add information from the ChangeLog
+==================================
+
+Find information in the `TYPO3 ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+that is not yet documented and add it to a manual where the information
+is best documented, e.g.:
+
+* :ref:`t3coreapi:start`
+* :ref:`t3tsconfig:start`
+* :ref:`t3tca:start`
+* :ref:`t3tsref:start`
+
 
 Teach and Motivate Others
 =========================

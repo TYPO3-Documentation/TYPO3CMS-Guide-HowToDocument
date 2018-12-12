@@ -67,7 +67,6 @@ Examples:
 Additional Information:
    * `Capitalize My Title <https://capitalizemytitle.com/>`__
    * `Style Guide: Title Case <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__
-   *
 
 
 .. _buttons:
