@@ -14,15 +14,16 @@ It is recommended to do this before you publish your changes, because
 that way you will get a preview of how it is later rendered on the
 server.
 
-Using Docker, you will use the same set of tools locally in Docker that are being used
+If you use Docker, you will use the same set of tools locally in Docker that are being used
 on the documentation server docs.typo3.org to render the documentation.
 
 Here, we will briefly also explain the other methods for rendering.
 
 .. important::
 
-   Please note that the **docker** method is currently the **recommended and
-   fully supported** method. If you edit on Github directly, Github preview
+   Please note that the **Local Editing and Rendering with Docker**
+   is currently the **recommended and  fully supported** workflow.
+   If you edit on GitHub directly, GitHub preview
    should also be sufficient for making small changes.
 
 
@@ -32,12 +33,12 @@ Here, we will briefly also explain the other methods for rendering.
 
       See :ref:`rendering-docs-quickstart`
       
-   2. Preview on Github
+   2. Preview on GitHub
 
       This method is useful if you are editing documentation directly on
-      Github
+      GitHub
 
-      Please be aware that the preview on Github supports reST, but not the
+      Please be aware that the preview on GitHub supports reST, but not the
       additional sphinx markup, such as the *toctree* or the
       :ref:`intersphinx <intersphinx>` linking. Because of this, the
       preview is not to be recommended for major changes that involve
@@ -47,19 +48,18 @@ Here, we will briefly also explain the other methods for rendering.
 
       If you install the extension
       `sphinx <https://extensions.typo3.org/extension/sphinx/>`__,
-      you can render extension
-      documentation of the extensions that are currently installed in the
-      Backend of your TYPO3 installation.
+      you can render extension documentation of the extensions that are currently
+      installed in the backend of your TYPO3 installation.
 
-   4. Using a Starter project (Sandbox)
+   4. Using a starter project (Sandbox)
 
       With this method, you will get a starter project, where you can
-      make your changes directly on Github. The changes will automatically
+      make your changes directly on GitHub. The changes will automatically
       be rendered.
 
    5. Various online or local tools for reST rendering
 
-      These have the same drawbacks as already noted for *Preview on Github*.
+      These have the same drawbacks as already noted for *Preview on GitHub*.
 
 
 

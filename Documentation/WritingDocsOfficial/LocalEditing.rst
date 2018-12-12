@@ -18,7 +18,9 @@ Quick Start
 
 .. rst-class:: bignums-xxl
 
-1. Get a `Github <https://github.com>`__ account
+1. Get a `Github <https://github.com>`__ account:
+
+   Fill out the form on `Join Github <https://github.com/join>`__.
 
    The general convention in the TYPO3 community is to use your full
    real name as name (*not* username), but it is not a requirement.
@@ -62,7 +64,7 @@ Quick Start
 
 4. Create a branch
 
-   for example, use the branch `feature/changes-in-cgl`:
+   For example, use the branch `feature/changes-in-cgl`:
 
    .. code-block:: bash
 
@@ -119,7 +121,7 @@ Quick Start
 
 9. Create Pull request
 
-   Now, in your browser, visit the forked repository in your `Github
+   Now, in your browser, visit the forked repository in your `GitHub
    <https://github.com/>`__ workspace. Github will already make
    some suggestions for a pull request and will display your pushed
    branch as "Your recently pushed branches".
@@ -145,7 +147,7 @@ For more information in this guide:
 * :ref:`rendering-docs-quickstart`
 
 
-For more information about Github see the help pages on Github or other
+For more information about GitHub see the help pages on Github or other
 resources, for example:
 
 * `Creating a pull request from a fork

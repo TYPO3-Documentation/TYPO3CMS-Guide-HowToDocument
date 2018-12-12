@@ -25,13 +25,13 @@ If you run into problems, see :ref:`how-to-get-help`.
 
       source <(docker run --rm t3docs/render-documentation show-shell-commands)
 
-   This will not only pull the image and run the docker container, it
+   This will not only pull the image and run the Docker container, it
    will make the commands available in your current terminal.
 
    You must do this again for every new terminal you open.
 
    This command may take a while. The next run will be faster because
-   it won't have to pull the docker image again!
+   it won't have to pull the Docker image again!
 
 3. Change directory (if necessary)
 
@@ -67,7 +67,7 @@ If you run into problems, see :ref:`how-to-get-help`.
    beginning with `file:///` to access the files in the rendered directory:
    `file:///` ... `Documentation-GENERATED-temp/Result/project/0.0.0/Index.html`.
 
-   If you structured the documentation correctly, an :file:`Index.rst` is
+   If you structured the documentation correctly, :file:`Index.rst` is
    always on the top level directory under the directory :file:`Documentation`.
 
    The renderer will create the file :file:`Index.html` from that. The path
@@ -98,7 +98,7 @@ If you run into problems, see :ref:`how-to-get-help`.
 
 .. tip::
 
-   Create aliases for the commands that works best for you now!
+   Create aliases for the commands that work best for you now!
 
 
 More information:
