@@ -35,7 +35,7 @@ If none of these files exist, no documentation will be rendered.
 The files ending in .md contain Markdown, the files ending in .rst
 contain reStructuredText (reST).
 
-Rendering Rormats
+Rendering Formats
 =================
 
 Using reStructuredText (reST) is strongly recommended.
