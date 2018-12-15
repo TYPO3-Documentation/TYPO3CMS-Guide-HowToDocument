@@ -9,7 +9,7 @@ Codeblocks with Syntax Highlighting
 
 
 
-.. _writing-rest-codeblocks-codeblock-directive:
+.. _codeblock-directive:
 
 Codeblock Directive
 ===================
@@ -17,7 +17,7 @@ Codeblock Directive
 To insert a snippet as code with syntax highlighting, use the `code-block`
 directive or the shorthand `::` You can explicitly set the language in the
 codeblock or not. If you do not, the default language (as set with the
-`highlight` directive) is used.
+:ref:`codeblocks-highlight-directive`) is used.
 
 If the correct language has already been defined, it is recommended to use the
 short form (`::`). The following examples all do the same thing:
@@ -59,19 +59,19 @@ short form (`::`). The following examples all do the same thing:
 
             $a='b';
 
-
+.. _codeblock-shorthand:
 
 Using the '::' Notation (Recommended)
 =====================================
 
 It's nice to use this notation and the preferred way to create a code block in
-case the highlighting is preset as desired and you don't need the special
-options of the code-block directive.
+case the highlighting is preset as desired (with the :ref:`codeblocks-highlight-directive`)
+and you don't need the special options of the :ref:`codeblock-directive`.
 
 However, the behavior of the '::' notation is "sort of intelligent". So let's
 explain it here. *Background:* "Sphinx" is based on "Docutils". Docutils
 handles the basic *parse*, *transform* and *create output* process for single
-files. Sphinx builds an this and adds the ability to handle multi file
+files. Sphinx builds on this and adds the ability to handle multi file
 documentation projects. The '::' notation is already part of Docutil's `reST
 specification for creating "literal blocks"
 <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks>`__.
@@ -154,6 +154,7 @@ The code block then follows normally.
 
 
 .. _writing-rest-codeblocks-syntactically-correct:
+.. _codeblocks-syntactically-correct:
 
 Use Syntactically Correct Code
 ==============================
@@ -192,6 +193,7 @@ installed the command `pygmentize -L` will list all available lexers.
 
 
 .. _writing-rest-codeblocks-highlight-directive:
+.. _codeblocks-highlight-directive:
 
 Highlight Directive
 ===================
@@ -200,11 +202,12 @@ You can set the default language with the `highlight` directive. All following
 codeblocks will use the language as specified in the `highlight` directive for
 syntax highlighting.
 
-If all of your codeblocks have the same language, it is easier to just set this
+If all of your codeblocks in one file have the same language, it is easier to just set this
 once at the beginning of the file.
 
 This way, you don't need to set the language for each code-block (`..
-code-block:: LANG`).
+code-block:: LANG`) explicitly and can use the :ref:`shorthand notation
+<codeblock-shorthand>`. 
 
 Use reStructuredText highlighting::
 
