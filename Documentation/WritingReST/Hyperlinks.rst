@@ -30,8 +30,6 @@ In Sphinx you can use several types of links:
 
       :ref:`anchor text <link target>`
 
-   (using *:ref:* and without an underscore)
-
    To create a :ref:`link target <explicit-link-targets>` for a section chapter,
    put this in a line before the section header::
 
