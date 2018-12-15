@@ -192,4 +192,15 @@ Example:
 * line 3-5: the header
 * line 10-14: the toctree, which specifically includes the files Introduction/Index.rst, Configuration/Index.rst
 
+.. _editorconfig-in-filenames:
+
+.editorconfig
+=============
+
+
+For more information, see :ref:`editorconfig`.
+
+Use the file in `T3DocTeam: .editorconfig 
+<https://github.com/TYPO3-Documentation/T3DocTeam/blob/master/.editorconfig>`__
+as an example.
 
