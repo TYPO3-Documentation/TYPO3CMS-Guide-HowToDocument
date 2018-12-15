@@ -9,23 +9,35 @@ Codeblocks with Syntax Highlighting
 
 
 
-.. _codeblock-directive:
+.. _codeblock-quick-reference:
 
-Codeblock Directive
-===================
+Quick Reference
+===============
 
-To insert a snippet as code with syntax highlighting, use the `code-block`
-directive or the shorthand `::` You can explicitly set the language in the
-codeblock or not. If you do not, the default language (as set with the
-:ref:`codeblocks-highlight-directive`) is used.
+* To insert a snippet as code with syntax highlighting, use the `code-block`
+  directive or the shorthand `::`.
+* You can explicitly set the language in the `code-block` or not. 
+* If you do not explicitly set the language, the default language (as set with
+  the :ref:`codeblocks-highlight-directive`) is used.
+* It is recommended to use the short form (`::`). 
+* Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
+  in a code block.
 
-If the correct language has already been defined, it is recommended to use the
-short form (`::`). The following examples all do the same thing:
-
+The following examples all do the same thing:
 
 .. rst-class:: bignums
 
-   1. Set the language (PHP) in the `code-block`::
+   1. Use the shorthand `::` (recommended)::
+
+         See following example::
+
+            $a='b';
+            
+      You can use this, if you already set the language PHP with the :ref:`highlight
+      directive <codeblocks-highlight-directive>` in the current file (or in Includes.txt).
+
+
+   2. Set the language (PHP) in the `code-block`::
 
          See following example:
 
@@ -34,10 +46,8 @@ short form (`::`). The following examples all do the same thing:
             $a = 'b';
 
 
-   2. Use `code-block` without setting the language:
-
-      You can use this, if you already set the language PHP with the highlight
-      directive::
+   3. Use `code-block` without setting the language::
+    
 
          .. highlight:: php
 
@@ -46,19 +56,12 @@ short form (`::`). The following examples all do the same thing:
          .. code-block::
 
             $a = 'b';
+            
+      You can use this, if you already set the language PHP with the :ref:`highlight
+      directive <codeblocks-highlight-directive>`.      
 
 
-   3. Use the shorthand `::`.
-
-      You can use this, if you already set the language PHP with the highlight
-      directive::
-
-         .. highlight:: php
-
-         See following example::
-
-            $a='b';
-
+   
 .. _codeblock-shorthand:
 
 Using the '::' Notation (Recommended)
@@ -152,6 +155,25 @@ In words: The source of the paragraph has TWO colons at the end which are NOT
 preceded by whitespace. In the output just one of the colons will be removed.
 The code block then follows normally.
 
+
+.. _codeblock-directive:
+
+Codeblock Directive
+===================
+
+Use codeblock with language PHP::
+
+   .. code-block:: php
+
+      $a = 'b';
+
+Use codeblock without specifying language::
+
+   .. code-block::
+   
+      $a = 'b';
+
+This uses whatever language has last been set with the :ref:`hightlight-directive` in the current file or in Includes.txt.
 
 .. _writing-rest-codeblocks-syntactically-correct:
 .. _codeblocks-syntactically-correct:
