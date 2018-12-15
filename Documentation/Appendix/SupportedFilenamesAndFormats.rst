@@ -10,8 +10,7 @@ Additionally Supported Filenames and Formats
 
 .. important::
 
-   This information is included for the sake of completeness. It is however
-   not recommended to do it this way. For best results, follow the guidelines
+   For best results, follow the guidelines
    in :ref:`general-conventions`, specifically
    :ref:`general-conventions-dir-and-filenames`.
 
