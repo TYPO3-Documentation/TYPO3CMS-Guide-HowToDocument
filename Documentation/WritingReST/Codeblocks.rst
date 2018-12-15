@@ -32,7 +32,12 @@ The following examples all do the same thing:
          See following example::
 
             $a='b';
-            
+         
+      How this looks:
+         See following example::
+      
+            $a='b';
+         
       You can use this, if you already set the language PHP with the :ref:`highlight
       directive <codeblocks-highlight-directive>` in the current file (or in Includes.txt).
 
@@ -48,9 +53,6 @@ The following examples all do the same thing:
 
    3. Use `code-block` without setting the language::
     
-
-         .. highlight:: php
-
          See following example:
 
          .. code-block::
@@ -173,7 +175,8 @@ Use codeblock without specifying language::
    
       $a = 'b';
 
-This uses whatever language has last been set with the :ref:`hightlight-directive` in the current file or in Includes.txt.
+This uses whatever language has last been set with the :ref:`codeblocks-highlight-directive`
+in the current file or in Includes.txt.
 
 .. _writing-rest-codeblocks-syntactically-correct:
 .. _codeblocks-syntactically-correct:
