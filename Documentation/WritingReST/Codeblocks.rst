@@ -31,15 +31,20 @@ The following examples all do the same thing:
 
          See following example::
 
-            $a='b';
-         
+            $a = 'b';
+
+
       How this looks:
-         See following example::
-      
-            $a='b';
+         See following example:
+
+         .. code-block:: php
+
+            $a = 'b';
          
-      You can use this, if you already set the language PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file (or in Includes.txt).
+      You can use this, if the default language is already set to PHP with the :ref:`highlight
+      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.txt
+      <includes-txt>`).
+
 
 
    2. Set the language (PHP) in the `code-block`::

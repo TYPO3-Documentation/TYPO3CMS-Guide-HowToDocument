@@ -195,7 +195,7 @@ Example:
 .. _editorconfig-in-filenames:
 
 .editorconfig
-=============
+-------------
 
 
 For more information, see :ref:`editorconfig`.
