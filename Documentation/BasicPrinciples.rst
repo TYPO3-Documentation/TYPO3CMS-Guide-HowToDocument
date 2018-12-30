@@ -22,7 +22,7 @@ Schwemer's blog TYPO3 Worx:
 .. important::
 
    Please note that the section "CONVERT REST TO “READABLE” FORMATS" in part 3 is
-   slightly outdated. Currently, using the docker container for :ref:`rendering
+   slightly outdated. Currently, using the Docker container for :ref:`rendering
    <rendering-docs>` is the recommended approach. If you edit on Github directly,
    Github preview should be sufficient for making small changes.
 
@@ -55,8 +55,8 @@ All of these examples have a few things in common:
 * Most of the documentation can be directly **edited by the community**. For third party
   extensions, this depends on where and how the source-code is hosted and maintained.
 * The source of the documentation is written (mostly) in reStructuredText (**reST**)
-* All documentation is rendered using the **same rendering toolchain**. All documenation
-  can be rendered locally, with the officially supported docker image.
+* All documentation is rendered using the **same rendering toolchain**. All documentation
+  can be rendered locally, with the officially supported Docker image.
 * The documentation source files adhere to :ref:`general-conventions` and
   share a **common structure** (e.g. all documentation files in a
   :file:`Documentation` subdirectory).
@@ -69,14 +69,14 @@ So, What's Rendering?
 =====================
 
 Rendering means (in this specific case) converting the reST
-format (.rst files) into its final, readable form, which you can than view in your
-browser (like this page, which you are probably reading online. If not, load 
-https://docs.typo3.org/typo3cms/HowToDocument/BasicPrinciples.html in your browser).
+format (.rst files) into its final, readable form, which you can view in your
+browser, like this page, which you are probably reading online. If not, load 
+https://docs.typo3.org/typo3cms/HowToDocument/BasicPrinciples.html in your browser.
 
 In comparison, this is what the original source file looks like: https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
 
 Technically, this means converting the reST (.rst files) into HTML, automatically
-creating the menu, using the current theme to add additional styles and images, etc.
+creating the menu, using the current theme to add additional styles and images.
 
 .. _overview-of-types:
 
@@ -86,8 +86,8 @@ Different Kinds of TYPO3 Documentation
 
 The things that are different for various kinds of documentation are:
 
-* Where the issues are maintained (e.g. on Forge or Github)
-* Where the source code (git repository) is kept
+* Where the issues are maintained (e.g. on Forge or GitHub)
+* Where the source code (Git repository) is kept
 * The workflow for making changes to the documentation
 
 
@@ -96,26 +96,26 @@ The things that are different for various kinds of documentation are:
 
  - :Type:         Type of documentation
    :Issues:       Issues
-   :Source:       Source Code (git repository)
+   :Source:       Source Code (Git repository)
    :Workflow:     Workflow for making changes
 
  - :Type:         Official `guides, tutorials <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
                   `core docs <https://docs.typo3.org/typo3cms/References/Index.html>`__,
                   etc.
    :Issues:       On page of rendered docs, click on "Related links": "Issues"
-   :Source:       On page of rendered docs, click on "Related Links": "Repository", or click on "Edit me on Github"
-   :Workflow:     Create Github Pull Request, see :ref:`docs-contribute`.
+   :Source:       On page of rendered docs, click on "Related Links": "Repository", or click on "Edit me on GitHub"
+   :Workflow:     Create GitHub pull request, see :ref:`docs-contribute`.
 
  - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
    :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
    :Source:       TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__, mirror:
-                  `Github <https://github.com/TYPO3/TYPO3.CMS>`__
+                  `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__
    :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `System extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
    :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
    :Source:       Same as for Changelog, inside TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
-                  `Github <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
+                  `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
    :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `3rdparty extensions <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
@@ -135,20 +135,20 @@ manual, click on "Related Links" and then click on "Issues" or "Repository".
 Official TYPO3 Manuals
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The official TYPO3 manuals are hosted on Github. Editing the documentation
-requires a Github account and involves creating a Pull Request on Github.
+The official TYPO3 manuals are hosted on GitHub. Editing the documentation
+requires a GitHub account and involves creating a pull request on GitHub.
 
 Find out more about how to contribute: :ref:`docs-contribute`.
 
 Documentation for the Core
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The documentation for the core (Changelog and system extensions) is added
+The documentation for the core (changelog and system extensions) is added
 to the TYPO3 source code. For this reason, the workflow of changing
 something in the core documentation is very similar to adding a patch
 to the core.
 
-Find out more about the :ref:`Core contribution workflow <t3contribute:Start>`
+Find out more about the :ref:`core contribution workflow <t3contribute:Start>`
 in general or about :ref:`t3contribute:Adding-documentation` in the Contribution
 Guide.
 
