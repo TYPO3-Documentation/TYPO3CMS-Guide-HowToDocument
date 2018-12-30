@@ -79,29 +79,73 @@ The same rules as in the title apply to buttons: `Style Guide: Buttons
 <https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
 
 
-Spelling of Proper Nouns
-========================
+Spelling in plain text
+======================
 
-If `proper nouns <https://en.wikipedia.org/wiki/Proper_noun>`__ are used in
-normal text (not headlines), they are capitalized.
 
+
+Proper Names, Brand Names
+-------------------------
+
+General rules of the English language apply here:
+
+* If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__  or brand names are used in
+  normal text (not headlines), they are capitalized.
+
+Proper Noun:
+   *"A proper noun is a noun directly associated with an entity and primarily used to refer to
+   that entity, such as London, Jupiter, Sharon, or Microsoft, as distinguished from a common
+   noun, which is a noun directly associated with a class of entities (city, planet, person, 
+   corporation) and primarily used to refer to instances of a specific class (a city, another 
+   planet, these persons, our corporation)"* (quote from `Wikipedia: Proper Noun 
+   <https://en.wikipedia.org/wiki/Proper_noun>`__)
+Proper Name:
+   *"...  proper nouns are limited to single words only (possibly with the), while proper names
+   include all proper nouns (in their primary applications) as well as noun phrases such as the
+   United Kingdom, North Carolina"* (quote from `Wikipedia: Proper Names 
+   <https://en.wikipedia.org/wiki/Proper_noun#Proper_names>`__)
+Brand Name:
+   This is the name of a brand, e.g. the car model Corvette.
+
+
+Examples: 
+
+* "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
+  previous knowledge of **Git**.": because it is a brand name (quote from `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
+* Wikipedia: brand name
+* English: because it is derived from the proper name England (a country)
+
+Additional information:
+
+* `Wikipedia: English capitalization of proper nouns <https://en.wikipedia.org/wiki/Proper_noun#English_capitalization_of_proper_nouns>`__
 
 Tools with Executables
-======================
+----------------------
 
 Some tools have a program, which you can run. For example, **Git** has the command line
 tool git. In this case, we use the correct spelling of the command (lowercase), when
 we are explicitly referring to the command git. In all other cases, we use capital
-spelling Git. The same goes for **Docker**, **Composer**, etc.
+spelling Git, because it is a proper noun. 
 
-Abbreviations
-=============
+The same goes for **Docker**, **Composer**, etc.
+
+Additional Information:
+
+* `StackOverflow: Spelling for Git <https://stackoverflow.com/a/37418911/2444812>`__
+
+Acronyms
+--------
 
 Often, acronyms are written with capital letters only. If terms are commonly spelled that
-way, this is how we spell them as well, for example HTML, CMS or LTS.
+way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
-Common Terms
-============
+Additional information:
+
+* `Stackexchange: Proper capitalization of commonly used acronyms 
+  <https://english.stackexchange.com/questions/51924/proper-capitalization-of-commonly-used-acronyms>__
+
+Spelling Reference
+------------------
 
 Here we list some terms that are often used in the documentation and might easily
 be misspelled.
