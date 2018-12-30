@@ -27,11 +27,13 @@ If you found something missing here and you have researched the answer, please
 add that information yourself. See "Edit me on Github", see :ref:`docs-contribute`
 for more information about how to make changes to the documentation.
 
+Spelling Rules
+==============
 
 .. _title-case:
 
-Title Case
-==========
+Rules for Title Case
+--------------------
 
 *"We capitalize all principal words of a title, including the first and
 the last words. We do not capitalize articles, prepositions or conjunctions
@@ -71,21 +73,21 @@ Additional Information:
 
 .. _buttons:
 
-Buttons
-=======
+Rules for Buttons
+-----------------
 
 
 The same rules as in the title apply to buttons: `Style Guide: Buttons
 <https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
 
 
-Spelling in plain text
-======================
+Rules for plain text
+--------------------
 
 
 
 Proper Names, Brand Names
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 General rules of the English language apply here:
 
@@ -105,22 +107,23 @@ Proper Name:
    United Kingdom, North Carolina"* (quote from `Wikipedia: Proper Names 
    <https://en.wikipedia.org/wiki/Proper_noun#Proper_names>`__)
 Brand Name:
-   This is the name of a brand, e.g. the car model Corvette.
+   This is the name of a brand, e.g. the car model **Corvette**, VW **Volkswagen**, Renault **Clio** or 
+   Toyota **Prius**.
 
 
 Examples: 
 
 * "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
   previous knowledge of **Git**.": because it is a brand name (quote from `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
-* Wikipedia: brand name
-* English: because it is derived from the proper name England (a country)
+* **Wikipedia**: brand name
+* **English**: because it is derived from the proper name England (a country)
 
 Additional information:
 
 * `Wikipedia: English capitalization of proper nouns <https://en.wikipedia.org/wiki/Proper_noun#English_capitalization_of_proper_nouns>`__
 
 Tools with Executables
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Some tools have a program, which you can run. For example, **Git** has the command line
 tool git. In this case, we use the correct spelling of the command (lowercase), when
@@ -134,7 +137,7 @@ Additional Information:
 * `StackOverflow: Spelling for Git <https://stackoverflow.com/a/37418911/2444812>`__
 
 Acronyms
---------
+~~~~~~~~
 
 Often, acronyms are written with capital letters only. If terms are commonly spelled that
 way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
@@ -144,8 +147,12 @@ Additional information:
 * `Stackexchange: Proper capitalization of commonly used acronyms 
   <https://english.stackexchange.com/questions/51924/proper-capitalization-of-commonly-used-acronyms>__
 
+
+
+.. _styleguide-spelling-ref:
+
 Spelling Reference
-------------------
+==================
 
 Here we list some terms that are often used in the documentation and might easily
 be misspelled.
