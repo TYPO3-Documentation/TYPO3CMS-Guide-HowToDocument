@@ -102,8 +102,8 @@ The things that are different for various kinds of documentation are:
  - :Type:         Official `guides, tutorials <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
                   `core docs <https://docs.typo3.org/typo3cms/References/Index.html>`__,
                   etc.
-   :Issues:       On page of rendered docs, click on "Related links": "Issues"
-   :Source:       On page of rendered docs, click on "Related Links": "Repository", or click on "Edit me on GitHub"
+   :Issues:       On page of rendered docs, click on *Related links > Issues*
+   :Source:       On page of rendered docs, click on *Related Links > Repository*, or click on *Edit me on GitHub*
    :Workflow:     Create GitHub pull request, see :ref:`docs-contribute`.
 
  - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
@@ -119,9 +119,9 @@ The things that are different for various kinds of documentation are:
    :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `3rdparty extensions <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
-   :Issues:       click on "Related Links" (bottom left), "Issues"
-   :Source:       click on "Related Links", "Repository", see :ref:`contribute-to-3rdparty-extension`
-   :Workflow:     it depends, see :ref:`contribute-to-3rdparty-extension`
+   :Issues:       On page of rendered docs, click on *Related Links > Issues*
+   :Source:       On page of rendered docs, click on *Related Links > Repository*, see :ref:`contribute-to-3rdparty-extension`
+   :Workflow:     It depends, see :ref:`contribute-to-3rdparty-extension`
 
 
 To get to the issues or repository of the documentation: On the page of the rendered
