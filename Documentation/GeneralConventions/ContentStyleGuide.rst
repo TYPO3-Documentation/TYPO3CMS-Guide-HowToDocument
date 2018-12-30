@@ -45,7 +45,7 @@ Rules for Title Case
 
 *"We capitalize all principal words of a title, including the first and
 the last words. We do not capitalize articles, prepositions or conjunctions
-that have* **fewer than four letters**, such as a, an, and ..."*
+that have* **fewer than four letters**, *such as a, an, and ..."*
 (`Style Guide: Title Case <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__)
 
 Capitalize
