@@ -3,9 +3,9 @@
 .. _how-to-get-help:
 .. _slack:
 
-===============
-How to Get Help
-===============
+==============
+Help & Support
+==============
 
 .. _get-help-on-writing-docs:
 
