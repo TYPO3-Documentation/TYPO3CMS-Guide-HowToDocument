@@ -153,7 +153,7 @@ way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 Additional information:
 
 * `Stackexchange: Proper capitalization of commonly used acronyms 
-  <https://english.stackexchange.com/questions/51924/proper-capitalization-of-commonly-used-acronyms>__
+  <https://english.stackexchange.com/questions/51924/proper-capitalization-of-commonly-used-acronyms>`__
 
 
 
