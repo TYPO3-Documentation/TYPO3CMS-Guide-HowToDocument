@@ -46,3 +46,4 @@ Additional Information
 ======================
 
 * :ref:`Headlines-and-sections`
+* `reStructuredText Primer: Sections <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
