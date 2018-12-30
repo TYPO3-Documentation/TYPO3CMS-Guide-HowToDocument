@@ -21,7 +21,7 @@ Refer to the resources, which the style guide suggests, or use
 
 If in doubt, ask in Slack channel #typo3-documentation (see
 :ref:`how-to-get-help` or contact
-`The Content Group <https://typo3.org/community/teams/content/>`__).
+`the Content Group <https://typo3.org/community/teams/content/>`__).
 
 If you found something missing here and you have researched the answer, please
 add that information yourself. See "Edit me on Github", see :ref:`docs-contribute`
