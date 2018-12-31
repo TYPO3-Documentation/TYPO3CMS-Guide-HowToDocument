@@ -57,7 +57,7 @@ in the menu in the sidepanel.
 Sphinx
 ======
 
-While reST is the markdown language, Sphinx is a suite of tools used to render the documentation.
+While reST is the markup language, Sphinx is a suite of tools used to render the documentation.
 Rendering in this context means that an output format such as PDF or HTML is created from the source .rst files.
 
 We will not go into the exact definition here. For now, all you need to know
