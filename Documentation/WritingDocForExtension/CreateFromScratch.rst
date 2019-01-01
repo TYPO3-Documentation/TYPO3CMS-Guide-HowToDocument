@@ -33,21 +33,26 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
 2. Edit the Documentation
 
-   Start editing away. Use the existing text to guide you, look at other
-   extension manuals for inspiration. Checkout the section on
-   :ref:`reST <Formatting-with-reST>` to see how to format headlines,
+   Start editing away. Use the existing text to guide you. Look at other
+   extension manuals (for example `sphinx <https://docs.typo3.org/typo3cms/extensions/sphinx/>`__)
+   for inspiration. Click on "Related Links" to jump to the repository or scroll to 
+   bottom of rendered page and click on "View page source" to see reST source.
+   
+   Check out the section on :ref:`reST <Formatting-with-reST>` to see how to format headlines,
    code-blocks, images etc.
 
-   Be sure to fill out Settings.cfg correctly as described in :ref:`settings-cfg`.
+3. Fill out Settings.cfg
 
-3. Render the Documentation
+   Be sure to fill out :file:`Settings.cfg` correctly as described in :ref:`settings-cfg`.
+
+4. Render the Documentation
 
    Before you publish your changes, make sure the documentation is rendered
    correctly.
 
    Look at :ref:`rendering-docs-quickstart` for a quick start.
 
-4. Replace README.rst and CONTRIBUTING.rst
+5. Replace README.rst and CONTRIBUTING.rst
 
    README.rst should contain only basic information on your extension for people visiting
    your repository on GitHub.
@@ -55,10 +60,8 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    CONTRIBUTING.rst can contain information about contributing to your extension or it can
    just link to the rendered version of Documentation/Contribute.rst of your extension.
 
-5. When You Are Done, Publish Your Changes
+6. When You Are Done, Publish Your Changes
 
    If you are working on your own 3rdparty extension, make it publicly available.
    The documentation will then automatically be rendered on docs.typo3.org.
-
-
 
