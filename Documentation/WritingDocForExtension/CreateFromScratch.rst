@@ -47,6 +47,14 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
    Look at :ref:`rendering-docs-quickstart` for a quick start.
 
+4. Replace README.rst and CONTRIBUTING.rst
+
+   README.rst should contain only basic information on your extension for people visiting
+   your repository on GitHub.
+   
+   CONTRIBUTING.rst can contain information about contributing to your extension or it can
+   just link to the rendered version of Documentation/Contribute.rst of your extension.
+
 4. When You Are Done, Publish Your Changes
 
    If you are working on your own 3rdparty extension, make it publicly available.
