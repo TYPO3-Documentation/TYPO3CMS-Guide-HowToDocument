@@ -51,8 +51,12 @@ file: `Documentation/Settings.cfg`
 This file must be adapted for the manual. It contains some meta information. It also
 contains start urls for the intersphinx linking mechanism.
 
-Use the file in `T3DocTeam: Settings.cfg <https://github.com/TYPO3-Documentation/T3DocTeam/blob/master/Documentation/Settings.cfg>`__
-as an up-to-date example!
+* Use the file in `T3DocTeam: Settings.cfg 
+  <https://github.com/TYPO3-   Documentation/T3DocTeam/blob/master/Documentation/Settings.cfg>`__
+  as an up-to-date example for an official manual!
+* Use the file in `TYPO3CMS-Example-ExtensionManual
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/latest/Documentation/Settings.cfg>
+  as an up-to-date example for an extension manual!
 
 The file consists of sections, which start with a keyword in brackets, such as `[general]`.
 Make sure that all directives exist in the correct section.
