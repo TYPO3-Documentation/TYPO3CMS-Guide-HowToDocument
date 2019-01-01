@@ -43,17 +43,57 @@ Spelling Rules
 Rules for Title Case
 --------------------
 
+Summary of basic rules:
+
+#. First and last word of title is always capitalized.
+#. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__, 
+   adjectives, verbs, adverbs, and subordinate conjunctions).
+#. Lowercase `articles <https://en.wikipedia.org/wiki/Article_(grammar)>`__ (e.g. a, an, the)
+  `prepositions <https://en.wikipedia.org/wiki/Preposition_and_postposition>`__
+  (e.g. in, from, with) and `conjunctions <https://en.wikipedia.org/wiki/Conjunction_(grammar)>`__
+  (e.g. and, or) **with fewer than 4 letters**. These types of words with 4 or more letters are capitalized.
+#. Exceptions: Words with special spelling like TYPO3, PHP, stdWrap etc. are written the
+  way they are commonly written.
+
+Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized, 
+**the** is not.
+
+The rules for title case are based on the TYPO3 Style guide. The title capitalization rules
+in the TYPO3 Style Guide are based on common other style guides like Chicago Manual of Style. 
+
+You can use the tool https://capitalizemytitle.com/ to check the title. Choose "Default" and
+"Title Case" for correct spelling in title. The result may slightly deviate from our rules
+only for the above mentioned articles, prepositions or conjunctions with 4 letters and more
+and for the exceptions (e.g. TYPO3).
+
+Examples:
+* *Is* is a verb. Though it is short, do capitalize it (rule 2), as in "This Is the End"
+* *With* is a preposition with 4 letters, so it must be capitalized (rule 3): "Install With Composer"
+* The first word is always capitalized (see rule 1), so *in* is capitalized here: "In the End"
+* *In* is a preposition with fewer than 4 letters, so it is usually lowercased (rule 3): "Rules in the Style Guide"
+* TYPO3 is always spelled TYPO3 (rule 4): "TYPO3 is always spelled TYPO3", "stdWrap", "Programming with PHP"
+
+Words capitalized in title (most words are capitalized, these are only some examples):
+* With (rule 3, 4 characters or more)
+* Throughout
+* Is (verb, rule 2)
+* It (pronoun, rule 2)
+* He
+* She
+
+Words lowercased in title (except if it is the first or last word):
+* a (article with less than 4 characters, rule 3)
+* an
+* the
+* in (preposition with less than 4 characters, rule 3)
+* and
+* or
+
 *"We capitalize all principal words of a title, including the first and
 the last words. We do not capitalize articles, prepositions or conjunctions
 that have* **fewer than four letters**, *such as a, an, and ..."*
 (`Style Guide: Title Case <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__)
 
-Capitalize
-   This means: The first letter of a word  is a capital letter. Example: "**Not** **A**".
-
-Principal word
-   This means: Words with meaning, important words, words that don't just glue other
-   words together (e.g. "a" is not a principal word, "walk" is)
 
 This applies to **all headers** on a page, not just the top level header (title).
 
@@ -67,15 +107,7 @@ as described in :ref:`Headlines-and-sections`::
    This Is the Subheader
    =====================
 
-Tools:
-   * https://capitalizemytitle.com/ (choose "Chicago" and "Title Case" for correct spelling in title)
-
-
-Examples:
-   * "Is" is a verb. Though it is short, do capitalize it, as in "This Is the End"
-
 Additional Information:
-   * `Capitalize My Title <https://capitalizemytitle.com/>`__
    * `Style Guide: Title Case <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__
 
 
@@ -144,6 +176,9 @@ Additional Information:
 
 * `StackOverflow: Spelling for Git <https://stackoverflow.com/a/37418911/2444812>`__
 
+
+.. _spelling-acronyms:
+
 Acronyms
 ~~~~~~~~
 
@@ -191,7 +226,7 @@ TYPO3
    TYPO3 is always spelled TYPO3.
 
 
-This may be the opposite of what some spellcheckers say, because they do not know
+This may be different from what some spellcheckers say, because they do not know
 these terms (e.g. TYPO3).
 
 
