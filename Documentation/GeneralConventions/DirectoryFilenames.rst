@@ -197,6 +197,7 @@ Example:
 .editorconfig
 -------------
 
+File: :file:`.editorconfig`
 
 For more information, see :ref:`editorconfig`.
 
@@ -204,3 +205,23 @@ Use the file in `T3DocTeam: .editorconfig
 <https://github.com/TYPO3-Documentation/T3DocTeam/blob/master/.editorconfig>`__
 as an example.
 
+.. _gitignore-in-filenames:
+
+.gitignore
+----------
+
+File: :file:`.gitignore`
+
+Use the file in `T3DocTeam: .gitignore
+<https://github.com/TYPO3-Documentation/T3DocTeam/blob/master/.gitignore>`__ as a template
+
+Sample file (minimal):
+
+.. code-block:: none
+
+   # Git global ignore file
+   # for local exclude patterns please edit .git/info/exclude
+   # Example file see https://github.com/TYPO3-Documentation/T3DocTeam/blob/master/.gitignore
+
+   # ignore generated documentation
+   *GENERATED*
