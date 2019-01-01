@@ -49,11 +49,11 @@ Summary of basic rules:
 #. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__, 
    adjectives, verbs, adverbs, and subordinate conjunctions).
 #. Lowercase `articles <https://en.wikipedia.org/wiki/Article_(grammar)>`__ (e.g. a, an, the)
-  `prepositions <https://en.wikipedia.org/wiki/Preposition_and_postposition>`__
-  (e.g. in, from, with) and `conjunctions <https://en.wikipedia.org/wiki/Conjunction_(grammar)>`__
-  (e.g. and, or) **with fewer than 4 letters**. These types of words with 4 or more letters are capitalized.
+   `prepositions <https://en.wikipedia.org/wiki/Preposition_and_postposition>`__
+   (e.g. in, from, with) and `conjunctions <https://en.wikipedia.org/wiki/Conjunction_(grammar)>`__
+   (e.g. and, or) **with fewer than 4 letters**. These types of words with 4 or more letters are capitalized.
 #. Exceptions: Words with special spelling like TYPO3, PHP, stdWrap etc. are written the
-  way they are commonly written.
+   way they are commonly written.
 
 Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized, 
 **the** is not.
@@ -67,6 +67,7 @@ only for the above mentioned articles, prepositions or conjunctions with 4 lette
 and for the exceptions (e.g. TYPO3).
 
 Examples:
+
 * *Is* is a verb. Though it is short, do capitalize it (rule 2), as in "This Is the End"
 * *With* is a preposition with 4 letters, so it must be capitalized (rule 3): "Install With Composer"
 * The first word is always capitalized (see rule 1), so *in* is capitalized here: "In the End"
@@ -74,6 +75,7 @@ Examples:
 * TYPO3 is always spelled TYPO3 (rule 4): "TYPO3 is always spelled TYPO3", "stdWrap", "Programming with PHP"
 
 Words capitalized in title (most words are capitalized, these are only some examples):
+
 * With (rule 3, 4 characters or more)
 * Throughout
 * Is (verb, rule 2)
@@ -82,6 +84,7 @@ Words capitalized in title (most words are capitalized, these are only some exam
 * She
 
 Words lowercased in title (except if it is the first or last word):
+
 * a (article with less than 4 characters, rule 3)
 * an
 * the
