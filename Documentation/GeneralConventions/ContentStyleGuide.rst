@@ -74,10 +74,10 @@ that have* **fewer than four letters**, *such as a, an, and ..."*
 
 Examples:
 
-* *Is* is a verb. Though it is short, do capitalize it (rule #3), as in "This Is the End"
+* *Is* is a verb. Though it is short, do capitalize it (rule #4), as in "This Is the End"
 * *With* is a preposition with 4 letters, so it must be capitalized (rule #4): "Install With Composer"
 * The first word is always capitalized (see rule #2), so *in* is capitalized here: "In the End"
-* *In* is a preposition with fewer than 4 letters, so it is usually lowercased (rule #4): "Rules in the Style Guide"
+* *In* is a preposition with fewer than 4 letters, so it is lowercased (rule #5): "Rules in the Style Guide"
 * TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
 
 
@@ -264,49 +264,49 @@ more examples for lowercase spelling, see `TYPO3 Content Style Guide
 if used as first or last word in title!**
 
 a
-   Rule #4: Article with less than 4 letters (lowercase)
+   Rule #5: Article with less than 4 letters (lowercase)
 Always
-   Rule #3: Adverb
+   Rule #3 and #4: 4 letters or more and adverb
 an
-   Rule #4: Article with less than 4 letters (lowercase)
+   Rule #5: Article with less than 4 letters (lowercase)
 and
-   Rule #4: Conjunction with less than 4 letters (lowercase)
+   Rule #5: Conjunction with less than 4 letters (lowercase)
 but
-   Rule #4: Conjunction with less than 4 letters (lowercase)
+   Rule #5: Conjunction with less than 4 letters (lowercase)
 for
-   Rule #4: Preposition with less than 4 letters (lowercase)
+   Rule #5: Preposition with less than 4 letters (lowercase)
 He
-   Rule #3: Pronoun
+   Rule #4: Pronoun
 in
-   Rule #4: Preposition with less than 4 letters (lowercase)
+   Rule #5: Preposition with less than 4 letters (lowercase)
 Is
-   Rule #3: Verb
+   Rule #4: Verb
 It
-   Rule #3: Pronoun
+   Rule #4: Pronoun
 Me
-   Rule #3: Pronoun
+   Rule #4: Pronoun
 or
-   Rule #4: Conjunction with less than 4 letters (lowercase)
+   Rule #5: Conjunction with less than 4 letters (lowercase)
 PHP
    Rule #1: Exception
 She
-   Rule #3: Pronoun
+   Rule #4: Pronoun
 stdWrap
-   Exception
+   Rule #1: Exception
 the
-   Rule #4: Article with less than 4 letters (lowercase)
+   Rule #5: Article with less than 4 letters (lowercase)
 Throughout
-   Rule #4: 4 letters or more
+   Rule #3: 4 letters or more
 TYPO3
    Rule #1: Exception: TYPO3 is always spelled TYPO3
 TypoScript
    Rule #1: Exception
 With
-   Rule #4: Preposition, 4 letters or more
+   Rule #3: 4 letters or more. Capitalized even though preposition.
 Within
-   Rule #4: Preposition, 4 letters or more
+   Rule #3: 4 letters or more. Capitalized even though preposition.
 Without
-   Rule #4: Preposition, 4 letters or more
+   Rule #3: 4 letters or more. Capitalized even though preposition.
 
 
 Additionally Used Resources
