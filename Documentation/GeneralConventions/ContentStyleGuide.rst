@@ -220,6 +220,7 @@ Docker
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
 extension
    Examples:
+
    *  "When you create documentation for your extension, make sure ..."
    * "... includes all TYPO3 extensions that are uploaded to TER"
      (see TYPO3 Explained: Extension Architecture: Extension Management)
@@ -233,6 +234,7 @@ reST
 site package extension
     Not sitepackage. Not Site Package (except in title). Source: :ref:`t3sitepackage:start`.
     Example:
+
     * "It is recommended to create a site package extension, in order to ..."
 TYPO3
    Exception: TYPO3 is always spelled TYPO3.
