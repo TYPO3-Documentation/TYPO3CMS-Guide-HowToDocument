@@ -38,13 +38,15 @@ Example: Select *File > Open*
 Spelling Rules
 ==============
 
-.. _title-case:
+.. _spelling-title-case:
 
 Rules for Title Case
 --------------------
 
-Summary of basic rules:
+Summary of basic rules (read in this order, use the first rule that applies):
 
+#. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
+   way they are commonly written.
 #. First and last word of title is always capitalized.
 #. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__, 
    adjectives, verbs, adverbs, and subordinate conjunctions).
@@ -52,50 +54,30 @@ Summary of basic rules:
    `prepositions <https://en.wikipedia.org/wiki/Preposition_and_postposition>`__
    (e.g. in, from, with) and `conjunctions <https://en.wikipedia.org/wiki/Conjunction_(grammar)>`__
    (e.g. and, or) **with fewer than 4 letters**. These types of words with 4 or more letters are capitalized.
-#. Exceptions: Words with special spelling like TYPO3, PHP, stdWrap etc. are written the
-   way they are commonly written.
+
 
 Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized, 
 **the** is not.
-
-The rules for title case are based on the TYPO3 Style guide. The title capitalization rules
-in the TYPO3 Style Guide are based on common other style guides like Chicago Manual of Style. 
 
 You can use the tool https://capitalizemytitle.com/ to check the title. Choose "Default" and
 "Title Case" for correct spelling in title. The result may slightly deviate from our rules
 only for the above mentioned articles, prepositions or conjunctions with 4 letters and more
 and for the exceptions (e.g. TYPO3).
 
-Examples:
-
-* *Is* is a verb. Though it is short, do capitalize it (rule 2), as in "This Is the End"
-* *With* is a preposition with 4 letters, so it must be capitalized (rule 3): "Install With Composer"
-* The first word is always capitalized (see rule 1), so *in* is capitalized here: "In the End"
-* *In* is a preposition with fewer than 4 letters, so it is usually lowercased (rule 3): "Rules in the Style Guide"
-* TYPO3 is always spelled TYPO3 (rule 4): "TYPO3 is always spelled TYPO3", "stdWrap", "Programming with PHP"
-
-Words capitalized in title (most words are capitalized, these are only some examples):
-
-* With (rule 3, 4 characters or more)
-* Throughout
-* Is (verb, rule 2)
-* It (pronoun, rule 2)
-* He
-* She
-
-Words lowercased in title (except if it is the first or last word):
-
-* a (article with less than 4 characters, rule 3)
-* an
-* the
-* in (preposition with less than 4 characters, rule 3)
-* and
-* or
+The rules for title case are based on the `TYPO3 Content Style Guide
+<https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__.
 
 *"We capitalize all principal words of a title, including the first and
 the last words. We do not capitalize articles, prepositions or conjunctions
 that have* **fewer than four letters**, *such as a, an, and ..."*
-(`Style Guide: Title Case <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__)
+
+Examples:
+
+* *Is* is a verb. Though it is short, do capitalize it (rule 3), as in "This Is the End"
+* *With* is a preposition with 4 letters, so it must be capitalized (rule #4): "Install With Composer"
+* The first word is always capitalized (see rule 1), so *in* is capitalized here: "In the End"
+* *In* is a preposition with fewer than 4 letters, so it is usually lowercased (rule #4): "Rules in the Style Guide"
+* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is always spelled TYPO3", "stdWrap", "Programming with PHP"
 
 
 This applies to **all headers** on a page, not just the top level header (title).
@@ -110,8 +92,6 @@ as described in :ref:`Headlines-and-sections`::
    This Is the Subheader
    =====================
 
-Additional Information:
-   * `Style Guide: Title Case <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__
 
 
 .. _buttons:
@@ -127,6 +107,27 @@ The same rules as in the title apply to buttons: `Style Guide: Buttons
 Rules for plain text
 --------------------
 
+Some exceptions to rules:
+
+#. If the text refers to terms used in the GUI (e.g. a clickpath for selecting
+   something from the menu is described, the spelling used in the GUI can be
+   used, e.g. *File* -> *Open*
+
+Common rules of the English language are applied:
+
+#. If a word has special spelling, e.g. an acronym like PHP, this spelling is applied.
+#. Special words like proper nouns and brand names are capitalized, e.g. Docker
+#. Most other words are lowercased.
+
+There are some edge cases and some terms are not spelled consistently in the same way
+everywhere. Sometimes it also depends on the context. Capitalization may change over
+the course of time, for example see `The Associated Press style guide will no longer capitalize 'internet'
+<https://www.theverge.com/2016/4/2/11352744/ap-style-guide-will-no-longer-capitalize-internet>`__
+In other texts, "internet" is still capitalized.
+
+For this reason, we have put together a :ref:`spelling reference <styleguide-spelling-ref-plaintext>`
+to mention some common
+terms that may be difficult to spell or that are spelled differently in the TYPO3 context.
 
 
 Proper Names, Brand Names
@@ -134,36 +135,19 @@ Proper Names, Brand Names
 
 General rules of the English language apply here:
 
-* If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__  or brand names are used in
-  normal text (not headlines), they are capitalized.
+If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__  or brand names are used in
+normal text (not headlines), they are capitalized. These can be countries, names of people,
+corporations or brand names.
 
-Proper Noun:
-   *"A proper noun is a noun directly associated with an entity and primarily used to refer to
-   that entity, such as London, Jupiter, Sharon, or Microsoft, as distinguished from a common
-   noun, which is a noun directly associated with a class of entities (city, planet, person, 
-   corporation) and primarily used to refer to instances of a specific class (a city, another 
-   planet, these persons, our corporation)"* (quote from `Wikipedia: Proper Noun 
-   <https://en.wikipedia.org/wiki/Proper_noun>`__)
-Proper Name:
-   *"...  proper nouns are limited to single words only (possibly with the), while proper names
-   include all proper nouns (in their primary applications) as well as noun phrases such as the
-   United Kingdom, North Carolina"* (quote from `Wikipedia: Proper Names 
-   <https://en.wikipedia.org/wiki/Proper_noun#Proper_names>`__)
-Brand Name:
-   This is the name of a brand, e.g. the car model **Corvette**, VW **Volkswagen**, Renault **Clio** or 
-   Toyota **Prius**.
-
-
-Examples: 
+Examples:
 
 * "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
-  previous knowledge of **Git**.": because it is a brand name (quote from `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
-* **Wikipedia**: brand name
-* **English**: because it is derived from the proper name England (a country)
+  previous knowledge of **Git**.": because it is a brand name (quote from
+  `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
+* **Wikipedia**
+* **Europe**
 
-Additional information:
 
-* `Wikipedia: English capitalization of proper nouns <https://en.wikipedia.org/wiki/Proper_noun#English_capitalization_of_proper_nouns>`__
 
 Tools with Executables
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -175,10 +159,6 @@ spelling Git, because it is a proper noun.
 
 The same goes for **Docker**, **Composer**, etc.
 
-Additional Information:
-
-* `StackOverflow: Spelling for Git <https://stackoverflow.com/a/37418911/2444812>`__
-
 
 .. _spelling-acronyms:
 
@@ -188,11 +168,19 @@ Acronyms
 Often, acronyms are written with capital letters only. If terms are commonly spelled that
 way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
-Additional information:
 
-* `Stackexchange: Proper capitalization of commonly used acronyms 
-  <https://english.stackexchange.com/questions/51924/proper-capitalization-of-commonly-used-acronyms>`__
+.. _styleguide-preferred-terms:
 
+Reference of Preferred Terms
+============================
+
+Here we list some common terms that are specifically used in TYPO3, almost like brand names.
+We add it to this list if a specific term is to be preferred as opposed to one with very
+similar, but not the same meaning.
+
+
+* "third party extension" or "community extension"
+* "system extension" or "core extension"
 
 
 .. _styleguide-spelling-ref:
@@ -203,35 +191,150 @@ Spelling Reference
 Here we list some terms that are often used in the documentation and might easily
 be misspelled.
 
-The spelling here is how they will be used in normal text (not headlines).
+.. _styleguide-spelling-ref-plaintext:
+
+Plain Text Spelling Reference
+-----------------------------
+
+The spelling here is how the terms will be used in normal text (not headlines).
+
+Some spelling may be context specific. For example, when we are referring to
+GUI elements, we usually spell them in the way, they are used in the GUI.
+
+Additionally, there may be more than one term with the same meaning. Here, we list
+the preferred term.
+
 
 backend
    Example: "when you log in to the backend ..."
 Composer
    The product Composer is a proper noun and is capitalized, so use that unless you
-   explicitly mean the command composer.
+   explicitly mean the command `composer`.
 (the) Core Team
    Should be capitalized.
 (the) Documentation Team
    Should be capitalized, unless it means *any* documentation team.
 Docker
    The product Docker is a proper noun and is capitalized, so use that
-   unless you explicitly mean the command docker (see `Use the Docker command line
+   unless you explicitly mean the command `docker` (see `Use the Docker command line
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
 extension
-   Example: "When you create documentation for your extension, make sure ..."
+   Examples:
+   *  "When you create documentation for your extension, make sure ..."
+   * "... includes all TYPO3 extensions that are uploaded to TER"
+     (see TYPO3 Explained: Extension Architecture: Extension Management)
 Git
-   The same applies as for docker. Use Git unless you explicitly mean the command
-   line command git.
+   The same applies as for Docker. Use Git unless you explicitly mean the command
+   line command `git`.
+GitHub
+   Exception: This is the official spelling.
 reST
-   This is the official abbreviation for reStructuredText
+   Exception: This is an official spelling for reStructuredText
+site package extension
+    Not sitepackage. Not Site Package (except in title). Source: :ref:`t3sitepackage:start`.
+    Example:
+    * "It is recommended to create a site package extension, in order to ..."
 TYPO3
-   TYPO3 is always spelled TYPO3.
+   Exception: TYPO3 is always spelled TYPO3.
 
 
-This may be different from what some spellcheckers say, because they do not know
-these terms (e.g. TYPO3).
+.. _styleguide-spelling-ref-title:
+
+Title Spelling Reference
+------------------------
+
+This is a list of words and how they should be used in the title.
+
+Most words are capitalized in the title. Exceptions are **articles,
+prepositions** and **conjunctions** with less than 4 letters and a few
+exceptions like acronyms (all caps) or words that use capital
+letters within a word (e.g. stdWrap, TypoScript).
 
 
+See :ref:`rules for title case <spelling-title-case>`.
+
+These are only some examples,
+more examples for lowercase spelling, see `TYPO3 Content Style Guide
+<https://typo3.org/community/teams/content/writing-style-guide/#c8483>`__.
+
+**Even if a word is lowercased in this list, it is always capitalized
+if used as first or last word in title!**
+
+a
+   Rule #4: Article with less than 4 letters (lowercase)
+an
+   Rule #4: Article with less than 4 letters (lowercase)
+and
+   Rule #4: Conjunction with less than 4 letters (lowercase)
+but
+   Rule #4: Conjunction with less than 4 letters (lowercase)
+for
+   Rule #4: Preposition with less than 4 letters (lowercase)
+He
+   Rule #3: Pronoun
+in
+   Rule #4: Preposition with less than 4 letters (lowercase)
+Is
+   Rule #3: Verb
+It
+   Rule #3: Pronoun
+Me
+   Rule #3: Pronoun
+or
+   Rule #4: Conjunction with less than 4 letters (lowercase)
+PHP
+   Rule #1: Exception
+She
+   Rule #3: Pronoun
+stdWrap
+   Exception
+the
+   Rule #4: Article with less than 4 letters (lowercase)
+Throughout
+   Rule #4: 4 letters or more
+TYPO3
+   Rule #1: Exception: TYPO3 is always spelled TYPO3
+TypoScript
+   Rule #1: Exception
+With
+   Rule #4: Preposition, 4 letters or more
+Within
+   Rule #4: Preposition, 4 letters or more
+Without
+   Rule #4: Preposition, 4 letters or more
 
 
+Additionally Used Resources
+===========================
+
+In addition to the TYPO3 Content Style Guide, some other resources have been used:
+
+* "Don't use same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
+  Use consistent terminology
+  <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__
+
+capitalization
+
+* *"The tendency towards lowercase, which in part reflects a less formal, less deferential society, has
+  been accelerated by the explosion of the internet"*
+  `Guardian and Observer Styleguide <https://www.theguardian.com/guardian-observer-style-guide-c>`__,
+  look under capital.
+  Note that these are British publications and we use American spelling.
+* "When referring to GUI elements, match the capitalization used in the interface.", see
+  `IBM developerWorks editorial style guide
+  <https://www.ibm.com/developerworks/library/styleguidelines/index.html>`__
+* `Stackexchange: Proper capitalization of commonly used acronyms
+  <https://english.stackexchange.com/questions/51924/proper-capitalization-of-commonly-used-acronyms>`__
+* `The Associated Press style guide will no longer capitalize 'internet'
+  <https://www.theverge.com/2016/4/2/11352744/ap-style-guide-will-no-longer-capitalize-internet>`__
+* `Wikipedia: English capitalization of proper nouns <https://en.wikipedia.org/wiki/Proper_noun#English_capitalization_of_proper_nouns>`__
+* *"A proper noun is a noun directly associated with an entity and primarily used to refer to
+  that entity, such as London, Jupiter, Sharon, or Microsoft, as distinguished from a common
+  noun, which is a noun directly associated with a class of entities (city, planet, person,
+  corporation) and primarily used to refer to instances of a specific class (a city, another
+  planet, these persons, our corporation)"* (quote from `Wikipedia: Proper Noun
+  <https://en.wikipedia.org/wiki/Proper_noun>`__)
+* *"...  proper nouns are limited to single words only (possibly with the), while proper names
+  include all proper nouns (in their primary applications) as well as noun phrases such as the
+  United Kingdom, North Carolina"* (quote from `Wikipedia: Proper Names
+  <https://en.wikipedia.org/wiki/Proper_noun#Proper_names>`__)
