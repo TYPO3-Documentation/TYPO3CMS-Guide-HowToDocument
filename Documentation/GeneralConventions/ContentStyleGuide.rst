@@ -50,19 +50,20 @@ Summary of basic rules (read in this order, use the first rule that applies):
 #. First and last word of title is always capitalized.
 #. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__, 
    adjectives, verbs, adverbs, and subordinate conjunctions).
-#. Lowercase `articles <https://en.wikipedia.org/wiki/Article_(grammar)>`__ (e.g. a, an, the)
-   `prepositions <https://en.wikipedia.org/wiki/Preposition_and_postposition>`__
-   (e.g. in, from, with) and `conjunctions <https://en.wikipedia.org/wiki/Conjunction_(grammar)>`__
+#. Lowercase `articles <https://www.merriam-webster.com/dictionary/article>`__ (e.g. a, an, the)
+   `prepositions <https://www.merriam-webster.com/dictionary/preposition>`__
+   (e.g. in, from, with) and `conjunctions <https://www.merriam-webster.com/dictionary/conjunction>`__
    (e.g. and, or) **with fewer than 4 letters**. These types of words with 4 or more letters are capitalized.
 
 
 Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized, 
 **the** is not.
 
-You can use the tool https://capitalizemytitle.com/ to check the title. Choose "Default" and
-"Title Case" for correct spelling in title. The result may slightly deviate from our rules
-only for the above mentioned articles, prepositions or conjunctions with 4 letters and more
-and for the exceptions (e.g. TYPO3).
+.. tip::
+
+   You can use the tool https://capitalizemytitle.com/ to check the title. Choose "Default" and
+   "Title Case" for correct spelling in title. The result may slightly deviate from our rules
+   for the exceptions (e.g. TYPO3).
 
 The rules for title case are based on the `TYPO3 Content Style Guide
 <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__:
