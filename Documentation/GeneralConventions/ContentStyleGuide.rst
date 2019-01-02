@@ -77,7 +77,7 @@ Examples:
 * *With* is a preposition with 4 letters, so it must be capitalized (rule #4): "Install With Composer"
 * The first word is always capitalized (see rule 1), so *in* is capitalized here: "In the End"
 * *In* is a preposition with fewer than 4 letters, so it is usually lowercased (rule #4): "Rules in the Style Guide"
-* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is always spelled TYPO3", "stdWrap", "Programming with PHP"
+* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
 
 
 This applies to **all headers** on a page, not just the top level header (title).
@@ -264,6 +264,8 @@ if used as first or last word in title!**
 
 a
    Rule #4: Article with less than 4 letters (lowercase)
+Always
+   Rule #3: Adverb
 an
    Rule #4: Article with less than 4 letters (lowercase)
 and
