@@ -61,7 +61,7 @@ Capitalize means: The first letter of a word  is a capital letter. Example: **En
 
 .. tip::
 
-   You can use the tool https://capitalizemytitle.com/ to check the title. Choose "Default" and
+   You can use the tool https://capitalizemytitle.com/ to check the title. Choose "AP" and
    "Title Case" for correct spelling in title. The result may slightly deviate from our rules
    for the exceptions (e.g. TYPO3).
 
