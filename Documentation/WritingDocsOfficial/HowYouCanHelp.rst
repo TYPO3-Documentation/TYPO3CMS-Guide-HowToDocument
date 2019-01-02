@@ -63,10 +63,6 @@ For example:
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
 * `Issues for "Getting Started"
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
-* `Issues for "Installation and Upgrade Guide"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues>`__
-* `Issues for "TYPO3 Explained"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues>`__
 
 To find the issues for a specific manual click on "Related links" (on the
 bottom left of the page).
@@ -74,13 +70,19 @@ bottom left of the page).
 .. image:: ../images/related-links-issues.png
    :class: with-shadow
 
-* `All open issues in TYPO3-Documentation (without team issues, without t3SphinxThemeRtd)
+Open issues in TYPO3-Documentation (without team issues, without t3SphinxThemeRtd):
+
+* `All open issues
   <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd>`__
+* `All open and unassigned issues
+  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+no%3Aassignee>`__
 
 For advanced contributors / team members:
 
 * `All open issues in TYPO3-Documentation
   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation>`__ 
+* `All open and unassigned issues in TYPO3-Documentation
+  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation+no%3Aassignee>`__ 
 
 
 Replace Outdated Images
