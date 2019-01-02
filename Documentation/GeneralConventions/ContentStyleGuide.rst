@@ -65,7 +65,7 @@ only for the above mentioned articles, prepositions or conjunctions with 4 lette
 and for the exceptions (e.g. TYPO3).
 
 The rules for title case are based on the `TYPO3 Content Style Guide
-<https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__.
+<https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__:
 
 *"We capitalize all principal words of a title, including the first and
 the last words. We do not capitalize articles, prepositions or conjunctions
@@ -73,9 +73,9 @@ that have* **fewer than four letters**, *such as a, an, and ..."*
 
 Examples:
 
-* *Is* is a verb. Though it is short, do capitalize it (rule 3), as in "This Is the End"
+* *Is* is a verb. Though it is short, do capitalize it (rule #3), as in "This Is the End"
 * *With* is a preposition with 4 letters, so it must be capitalized (rule #4): "Install With Composer"
-* The first word is always capitalized (see rule 1), so *in* is capitalized here: "In the End"
+* The first word is always capitalized (see rule #2), so *in* is capitalized here: "In the End"
 * *In* is a preposition with fewer than 4 letters, so it is usually lowercased (rule #4): "Rules in the Style Guide"
 * TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
 
