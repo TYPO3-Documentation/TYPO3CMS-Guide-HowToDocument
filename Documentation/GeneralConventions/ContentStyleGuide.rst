@@ -43,18 +43,18 @@ Spelling Rules
 Rules for Title Case
 --------------------
 
-Summary of basic rules (read in this order, use the first rule that applies):
+Basic rules (read in this order, use the first rule that applies):
 
 #. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
    way they are commonly written.
 #. First and last word of title is always capitalized.
+#. Capitalize all words with 4 or more letters.
 #. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__, 
-   adjectives, verbs, adverbs, and subordinate conjunctions).
+   adjectives, verbs, adverbs), for example "Is", "Are", "Has".
 #. Lowercase `articles <https://www.merriam-webster.com/dictionary/article>`__ (e.g. a, an, the)
    `prepositions <https://www.merriam-webster.com/dictionary/preposition>`__
-   (e.g. in, from, with) and `conjunctions <https://www.merriam-webster.com/dictionary/conjunction>`__
-   (e.g. and, or) **with fewer than 4 letters**. These types of words with 4 or more letters are capitalized.
-
+   (e.g. in) and `conjunctions <https://www.merriam-webster.com/dictionary/conjunction>`__
+   (e.g. and, or) **with fewer than 4 letters**. 
 
 Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized, 
 **the** is not.
