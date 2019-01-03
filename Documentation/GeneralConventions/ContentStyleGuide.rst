@@ -105,7 +105,7 @@ The same rules as in the title apply to buttons: `Style Guide: Buttons
 <https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
 
 
-Rules for plain text
+Rules for Plain Text
 --------------------
 
 Some exceptions to rules:
@@ -150,7 +150,7 @@ Examples:
 
 
 
-Tools with Executables
+Tools With Executables
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Some tools have a program, which you can run. For example, **Git** has the command line
@@ -328,7 +328,7 @@ capitalization
   `Guardian and Observer Styleguide <https://www.theguardian.com/guardian-observer-style-guide-c>`__,
   look under capital.
   Note that these are British publications and we use American spelling.
-* "When referring to GUI elements, match the capitalization used in the interface.", see
+* *"When referring to GUI elements, match the capitalization used in the interface."*, see
   `IBM developerWorks editorial style guide
   <https://www.ibm.com/developerworks/library/styleguidelines/index.html>`__
 * `Stackexchange: Proper capitalization of commonly used acronyms
