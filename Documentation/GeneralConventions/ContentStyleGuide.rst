@@ -154,8 +154,8 @@ Tools with Executables
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Some tools have a program, which you can run. For example, **Git** has the command line
-tool git. In this case, we use the correct spelling of the command (lowercase), when
-we are explicitly referring to the command git. In all other cases, we use capital
+tool `git`. In this case, we use the correct spelling of the command (lowercase), when
+we are explicitly referring to the command `git`. In all other cases, we use capital
 spelling Git, because it is a proper noun. 
 
 The same goes for **Docker**, **Composer**, etc.
@@ -180,8 +180,14 @@ We add it to this list if a specific term is to be preferred as opposed to one w
 similar, but not the same meaning.
 
 
-* "third party extension" or "community extension"
-* "system extension" or "core extension"
+system extension
+    "System extension" is commonly used in core as opposed to "core extension"
+    (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
+
+Pending decision:
+
+* `"third party extension" or "community extension"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
 
 
 .. _styleguide-spelling-ref:
@@ -224,7 +230,6 @@ extension
 
    *  "When you create documentation for your extension, make sure ..."
    * "... includes all TYPO3 extensions that are uploaded to TER"
-     (see TYPO3 Explained: Extension Architecture: Extension Management)
 Git
    The same applies as for Docker. Use Git unless you explicitly mean the command
    line command `git`.
@@ -232,14 +237,12 @@ GitHub
    Exception: This is the official spelling.
 reST
    Exception: This is an official spelling for reStructuredText
-site package extension
-    Not sitepackage. Not Site Package (except in title). Source: :ref:`t3sitepackage:start`.
-    Example:
-
-    * "It is recommended to create a site package extension, in order to ..."
 TYPO3
    Exception: TYPO3 is always spelled TYPO3.
 
+
+See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
+for terms pending a decision.
 
 .. _styleguide-spelling-ref-title:
 
