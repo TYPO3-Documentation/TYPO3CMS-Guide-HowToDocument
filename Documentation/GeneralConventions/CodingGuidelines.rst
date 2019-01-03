@@ -7,13 +7,16 @@
 Coding Guidelines for reST Files
 ================================
 
+Basic Formatting Rules
+======================
+
 Encoding
-========
+--------
 
 * use utf-8
 
 Whitespace and Indenting
-========================
+------------------------
 
 .. important::
 
@@ -40,7 +43,7 @@ Example:
 
 
 Line Length
-===========
+-----------
 
 * Keep lines shorter than 80 characters.
 * if in doubt about the length: use short lines!
@@ -53,7 +56,7 @@ Line Length
 .. _editorconfig:
 
 .editorconfig
-=============
+-------------
 
 
 Most of our documentation projects contain an .editorconfig file. 
@@ -103,7 +106,55 @@ This sample .editorconfig will instruct your editor / IDE to:
 * remove trailing whitespace (line 10)
 
 
-Miscellaneous
-=============
+Special Characters
+------------------
 
-* the only way to include "special" characters is to use them directly
+The only way to include "special" characters is to use them directly
+
+.. _rest-formatting-conventions:
+
+Basic Conventions for Formatting Specific Text
+==============================================
+
+Description of GUI Elements
+---------------------------
+
+If you describe something that needs to be selected from a menu or other GUI
+element or clicked one after the other, use *>* as separator and style the
+text in italics.
+
+Use the spelling of the word as used in the GUI!
+
+Examples:
+
+.. code-block:: rest
+
+   Select *File > Open*
+
+How it looks:
+   Select *File > Open*
+
+.. code-block:: rest
+
+   Click on *ADMIN TOOLS* > *Extensions* in the backend.
+
+How it looks:
+   Click on *ADMIN TOOLS* > *Extensions* in the backend.
+
+
+Keystroke Style
+---------------
+
+When pointing out keyboard shortcuts or keystroke sequences, use textrole kbd.
+
+Example:
+
+.. code-block:: rest
+
+   Press :kbd:`ctrl` + :kbd:`s`
+
+Result:
+
+   Press :kbd:`ctrl` + :kbd:`s`
+
+See :ref:`Inline-Code`.

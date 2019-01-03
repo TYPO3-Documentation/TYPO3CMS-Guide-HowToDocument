@@ -27,13 +27,13 @@ If you found something missing here and you have researched the answer, please
 add that information yourself. See "Edit me on Github", see :ref:`docs-contribute`
 for more information about how to make changes to the documentation.
 
-Menu and Clickpath Style
-========================
+Formatting of Specific Text
+===========================
 
-If you describe something that needs to be selected from a menu or clicked one
-after the other, use *>* as separator and style the text in italics:
+Please see :ref:`rest-formatting-conventions` for information about how to format
+descriptions of keyboard strokes, selections from a menu (or other GUI elememts)
+and other things in reST.
 
-Example: Select *File > Open*
 
 Spelling Rules
 ==============

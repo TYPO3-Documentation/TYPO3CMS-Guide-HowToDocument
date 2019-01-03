@@ -4,88 +4,16 @@
 
 .. _Inline-Code:
 
-===========
-Inline Code
-===========
-
-This page:
-
-.. contents::
-   :local:
-   :depth: 2
-   :backlinks: top
+==============================
+Inline Code & Other Text Roles
+==============================
 
 
-Takeaways from This Page
-========================
+.. hint::
 
-Don't Overuse
--------------
-
-   .. hint::
-
-      Too much inline code can make the information on a page highly
-      unreadable. If this is the case, consider using
-      :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
-
-Use This 'Includes.txt' File
-----------------------------
-
-You may treat the :file:`Includes.txt` `file of this guide
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
-as reference for copying. The following lines are the actual content of the
-file, shown via the `literalinclude directive
-<http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__:
-
-   .. literalinclude:: ../Includes.txt
-
-It is called 'reference version' …
-
-*  because it's used (or should be used) in all official TYPO3 manuals
-
-*  and because it defines the textroles that have a special styling in our
-   `t3SphinxThemeRtd theme
-   <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd>`__. See the
-   examples below.
-
-*Note:* For all officials TYPO3 manuals `php` is set as default highlight
-language with the exception of the TypoScript manuals, where `typoscript` is
-the default.
-
-
-You Need Another Textrole for Code Markup?
-------------------------------------------
-
-You need another 'language' to mark up inline?
-
-You are free to define additional textroles *in your project* or even
-*on an individual page* as you like. Make use of the `role directive
-<http://docutils.sourceforge.net/docs/ref/rst/directives.html#role>`__.
-Example: You want 'haskell'? Define that role as derivative of 'code'::
-
-  .. role:: haskell(code)
-
-You may then write::
-
-   Here is some :haskell:`haskell inline code` in the sentence.
-
-The immediate advantage will be that you can explicitely markup your source
-code semantically and declare snippets to be 'Haskell'. The visual appearance
-will be that of 'code' until a special css class has been defined. Feel free to
-open a request `here
-<https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues>`__. Look at
-this html to understand the technical background:
-
-
-.. code-block:: html
-
-   <code class="code haskell docutils literal">
-      <span class="pre">haskell inline code</span>
-   </code>
-
-A default styling for :html:`class="code"` exists and is in effect until
-overridden by a special styling :html:`class="code.haskell"` that needs to
-be defined.
+  Too much inline code can make the information on a page highly
+  unreadable. If this is the case, consider using
+  :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
 
 
 How to Write Inline Code
@@ -133,7 +61,7 @@ Preferred: Use Single Backticks ` ... `
    dfn              ``:dfn:`something```                              :dfn:`something`                             Mark the defining instance of a term in the text. (No index entries are generated.)
    file             ``:file:`/etc/passwd```                           :file:`/etc/passwd`
    guilabel         ``:guilabel:`&Cancel```                           :guilabel:`&Cancel`                          Labels presented as part of an interactive user interface should be marked using guilabel. This includes labels from text-based interfaces such as those created using curses or other text-based libraries. Any label used in the interface should be marked with this role, including button labels, window titles, field names, menu and menu selection names, and even values in selection lists.
-   kbd              ``Press :kbd:`ctrl` + :kbd:`s```                  Press :kbd:`ctrl` + :kbd:`s`                 Mark a sequence of keystrokes. What form the key sequence takes may depend on platform- or application-specific conventions. When there are no relevant conventions, the names of modifier keys should be spelled out, to improve accessibility for new users and non-native speakers. For example, an xemacs key sequence may be marked like :kbd:`C-x C-f`, but without reference to a specific application or platform, the same sequence should be marked as :kbd:`Control-x Control-f`.
+   kbd              ``Press :kbd:`ctrl` + :kbd:`s```                  Press :kbd:`ctrl` + :kbd:`s`                 Mark a sequence of keystrokes. What form the key sequence takes may depend on platform- or application-specific conventions. When there are no relevant conventions, the names of modifier keys should be spelled out, to improve accessibility for new users and non-native speakers. For example, an xemacs key sequence may be marked like :kbd:`C` + :kbd:`x`, :kbd:`C` + :kbd:`f`, but without reference to a specific application or platform, the same sequence should be marked as :kbd:`ctrl` + :kbd:`x`, :kbd:`ctrl` + :kbd:`f`.
    mailheader       ``:mailheader:`Content-Type```                    :mailheader:`Content-Type`                   The name of an RFC 822-style mail header. This markup does not imply that the header is being used in an email message, but can be used to refer to any header of the same “style.” This is also used for headers defined by the various MIME specifications. The header name should be entered in the same way it would normally be found in practice, with the camel-casing conventions being preferred where there is more than one common usage.
    ref              ``:ref:`Inline-Code```                            :ref:`Inline-Code`                           Sphinx cross-referencing
    ================ ================================================= ============================================ ===
@@ -214,3 +142,51 @@ In contrast, *code-blocks*
 - use predefined names for the different languages that come with Pygments,
   the syntax highlighter.
 
+Definition of Textroles
+========================
+
+For all officials TYPO3 manuals `php` is set as default highlight
+language with the exception of the TypoScript manuals, where `typoscript` is
+the default.
+
+
+Use 'Includes.txt' File
+-----------------------
+
+In general, the manual you are working on will already contain an
+:ref:`Includes.txt <includes-txt>` file. In that file, the textroles
+are defined.
+
+You Need Another Textrole for Code Markup?
+------------------------------------------
+
+You need another 'language' to mark up inline?
+
+You are free to define additional textroles *in your project* or even
+*on an individual page* as you like. Make use of the `role directive
+<http://docutils.sourceforge.net/docs/ref/rst/directives.html#role>`__.
+Example: You want 'haskell'? Define that role as derivative of 'code'::
+
+  .. role:: haskell(code)
+
+You may then write::
+
+   Here is some :haskell:`haskell inline code` in the sentence.
+
+The immediate advantage will be that you can explicitly markup your source
+code semantically and declare snippets to be 'Haskell'. The visual appearance
+will be that of 'code' until a special css class has been defined. Feel free to
+open a request `here
+<https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues>`__. Look at
+this html to understand the technical background:
+
+
+.. code-block:: html
+
+   <code class="code haskell docutils literal">
+      <span class="pre">haskell inline code</span>
+   </code>
+
+A default styling for :html:`class="code"` exists and is in effect until
+overridden by a special styling :html:`class="code.haskell"` that needs to
+be defined.
