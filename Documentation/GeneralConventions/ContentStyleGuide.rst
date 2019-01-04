@@ -80,8 +80,9 @@ Examples:
 * *In* is a preposition with fewer than 4 letters, so it is lowercased (rule #5): "Rules in the Style Guide"
 * TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
 
+.. important::
 
-This applies to **all headers** on a page, not just the top level header (title).
+   This applies to **all headers** on a page, not just the top level header (title).
 
 In reST, headers are created by underlined / overlining with (`====`, `----`, etc.)
 as described in :ref:`Headlines-and-sections`::
@@ -103,6 +104,44 @@ Rules for Buttons
 
 The same rules as in the title apply to buttons: `Style Guide: Buttons
 <https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
+
+Rules for Anchor Text
+---------------------
+
+If you refer to another document, chapter or section of another manual in the docs
+and use the title of that, use capitalization for the anchor text.
+
+This has and additional advantage: If you omit the anchor text using
+the `:ref:` directive, the title from the referred to page will automatically be
+used as anchor text (which will hopefully already be spelled correctly using
+title capitalization).
+
+Example:
+
+.. code-block:: rest
+
+   Please see :ref:`t3coreapi:start` to get a good understanding of ...
+
+How this looks:
+   Please see :ref:`t3coreapi:start` to get a good understanding of ...
+
+
+If you refer to another page outside of the docs, you may use the title
+capitalization and spelling that is used on that external page (preferred),
+but using our title capitalization will also be correct.
+
+Example:
+
+.. code-block:: rest
+
+   See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
+
+In our spelling, this would be "Test Docker Installation"
+
+
+How this looks:
+   See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
+
 
 
 Rules for Plain Text
