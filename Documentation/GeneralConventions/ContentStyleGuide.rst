@@ -2,48 +2,46 @@
 .. highlight:: rst
 
 .. _content-styleguide:
+.. _spelling:
 
-==============================
-Content Style Guide & Spelling
-==============================
+========
+Spelling
+========
+
+
+
+The same applies to TYPO3 documentation!
+
+General Information
+===================
 
 The authoritative style guide for writing official text for TYPO3 is `The TYPO3 Writing Style Guide
 <https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
 
-Please use the conventions defined in the style guide.
+This section aims to add some additional explanations and more examples for rules
+already defined in the style guide. It also explains how to apply the rules in
+the documentation (e.g. format with reST).
 
-If the style guide does not define something specifically, use correct spelling in English language,
-or rather American (US) language (see `Style Guide: Spelling
-<https://typo3.org/community/teams/content/writing-style-guide/#c8483>`__).
-
-Refer to the resources, which the style guide suggests, or use
+Since English language is not always specific and there may be several correct spellings
+for some words, we have added a :ref:`styleguide-spelling-ref`. If somethings is not
+mentioned here specifically, use correct spelling in English language,
+or rather American (US) language. Refer to the resources, which the style guide suggests, or use
 `Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
-
 If in doubt, ask in Slack channel #typo3-documentation (see
-:ref:`how-to-get-help` or contact
-`the Content Group <https://typo3.org/community/teams/content/>`__).
+:ref:`how-to-get-help`) or contact
+`the Content Group <https://typo3.org/community/teams/content/>`__.
 
 If you found something missing here and you have researched the answer, please
 add that information yourself. See "Edit me on Github", see :ref:`docs-contribute`
 for more information about how to make changes to the documentation.
 
-Formatting of Specific Text
-===========================
-
-Please see :ref:`rest-formatting-conventions` for information about how to format
-descriptions of keyboard strokes, selections from a menu (or other GUI elememts)
-and other things in reST.
-
-
-Spelling Rules
-==============
 
 .. _spelling-title-case:
 
-Rules for Title Case
---------------------
+Rules for Titles & Section Headers
+==================================
 
-Basic rules (read in this order, use the first rule that applies):
+Basic rules (read in this order, use the first rule that applies and skip the rest):
 
 #. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
    way they are commonly written.
@@ -63,22 +61,19 @@ Capitalize means: The first letter of a word  is a capital letter. Example: **En
 
    You can use the tool https://capitalizemytitle.com/ to check the title. Choose "AP" and
    "Title Case" for correct spelling in title. The result may slightly deviate from our rules
-   for the exceptions (e.g. TYPO3).
+   for the exceptions (e.g. TYPO3). For a spelling reference, see :ref:`styleguide-spelling-ref-title`
+   on this page.
 
 The rules for title case are based on the `TYPO3 Content Style Guide
 <https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__:
 
-*"We capitalize all principal words of a title, including the first and
-the last words. We do not capitalize articles, prepositions or conjunctions
-that have* **fewer than four letters**, *such as a, an, and ..."*
-
 Examples:
 
-* *Is* is a verb. Though it is short, do capitalize it (rule #4), as in "This Is the End"
-* *With* is a preposition with 4 letters, so it must be capitalized (rule #4): "Install With Composer"
-* The first word is always capitalized (see rule #2), so *in* is capitalized here: "In the End"
-* *In* is a preposition with fewer than 4 letters, so it is lowercased (rule #5): "Rules in the Style Guide"
 * TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
+* The first word is always capitalized (see rule #2), so *in* is capitalized here: "**In** the End"
+* *With* is a preposition with 4 letters, so it must be capitalized (rule #3): "Install **With** Composer"
+* *Is* is a verb. Though it is short, do capitalize it (rule #4), as in "This **Is** the End"
+* *In* is a preposition with fewer than 4 letters, so first letter is lowercase (rule #5): "Rules **in** the Style Guide"
 
 .. important::
 
@@ -96,20 +91,22 @@ as described in :ref:`Headlines-and-sections`::
 
 
 
-.. _buttons:
+.. _spelling-buttons:
 
 Rules for Buttons
------------------
+=================
 
 
 The same rules as in the title apply to buttons: `Style Guide: Buttons
 <https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
 
-Rules for Anchor Text
----------------------
+.. _spelling-anchor-text:
+
+Rules for Links
+===============
 
 If you refer to another document, chapter or section of another manual in the docs
-and use the title of that, use title capitalization for the anchor text.
+and use the title of that as anchor text, use title capitalization.
 
 This has an additional advantage: If you do not specifically supply an anchor text with
 the `:ref:` directive, the title from the referred to page will automatically be
@@ -142,22 +139,70 @@ In our spelling, this would be "Test Docker Installation".
 How this looks:
    See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
 
+.. _spelling-refer-to-gui-elements:
 
+Rules for Referring to GUI Elements
+===================================
+
+If the text refers to terms used in the GUI (e.g. a clickpath for selecting
+something from the menu is described), the spelling used in the GUI should be
+used, e.g. "*File > Open*" or "click on "*ADMIN TOOLS > Extensions*".
+
+See :ref:`rest-refer-to-gui-elements` for information about how to use reST
+markup for this.
+
+.. _spelling-plain-text:
 
 Rules for Plain Text
---------------------
+====================
 
-Some exceptions to rules:
+As already mentioned: If the text is used in :ref:`titles, subheaders <spelling-title-case>`,
+:ref:`anchor text <spelling-anchor-text>` or a text is :ref:`referring to
+GUI elements <spelling-refer-to-gui-elements>`, use the correct spelling for that.
 
-#. If the text refers to terms used in the GUI (e.g. a clickpath for selecting
-   something from the menu is described), the spelling used in the GUI can be
-   used, e.g. *File* > *Open*
+For all else (plain text), common rules of the English language are applied.
 
-Common rules of the English language are applied:
+.. _spelling-compound-words:
+
+Rules for Compound Words
+------------------------
+
+Compound words (or compounds) are words that have been glued together from one or more separate
+words to create a new term with a new meaning as in backyard (back and yard) or
+New Age (new and age).
+
+But, how will they be spelled? Backend, back-end or back end? Site package or sitepackage?
+
+All these spellings for backend are currently correct spellings (at least according to
+`some sources <https://ell.stackexchange.com/questions/117383/what-is-the-correct-term-back-end-back-end-or-backend>`__.
+
+.. important::
+
+   **In the TYPO3 context** we have defined **backend** to be the preferred spelling,
+   as well as **sitepackage**.
+
+   If a spelling has been explicitly defined in the :ref:`styleguide-spelling-ref`, please
+   use that spelling.
+
+How can you decide for other edge cases yourself?
+
+
+.. tip::
+
+   If in doubt, use what is commonly used in the documentation. If you see inconsistencies between
+   documentation and English dictionaries or within the documentation, raise
+   the issue in Slack.
+
+
+
+.. _spelling-plain-text-capitalization:
+
+Capitalization Rules (plain text)
+---------------------------------
 
 #. If a word has special spelling, e.g. an acronym like PHP, this spelling is applied.
 #. Special words like proper nouns and brand names are capitalized, e.g. Docker
-#. Most other words are lowercased.
+#. Most other words begin with a lowercase letter.
 
 There are some edge cases and some terms are not spelled consistently in the same way
 everywhere. Sometimes it also depends on the context. Capitalization may change over
@@ -169,20 +214,22 @@ For this reason, we have put together a :ref:`spelling reference <styleguide-spe
 to mention some common
 terms that may be difficult to spell or that are spelled differently in the TYPO3 context.
 
+.. _spelling-proper-names:
 
 Proper Names, Brand Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 General rules of the English language apply here:
 
-If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__  or brand names are used in
-normal text (not headlines), they are capitalized. These can be countries, names of people,
-corporations or brand names.
+If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__ or brand names (e.g. Coca-Cola)
+are used in normal text (not headlines), they are capitalized.
+
+These can be countries, names of people, corporations or brand names.
 
 Examples:
 
 * "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
-  previous knowledge of **Git**.": because it is a brand name (quote from
+  previous knowledge of **Git**.": Git is capitalized because it is a brand name (quote from
   `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
 * **Wikipedia**
 * **Europe**
@@ -195,7 +242,7 @@ Tools With Executables
 Some tools have a program, which you can run. For example, **Git** has the command line
 tool `git`. In this case, we use the correct spelling of the command (lowercase), when
 we are explicitly referring to the command `git`. In all other cases, we use capital
-spelling Git, because it is a proper noun. 
+spelling Git, because it applies to the rules for :ref:`spelling-proper-names`.
 
 The same goes for **Docker**, **Composer**, etc.
 
@@ -210,37 +257,10 @@ way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
 
 .. _styleguide-preferred-terms:
-
-Reference of Preferred Terms
-============================
-
-Here we list some common terms that are specifically used in TYPO3, almost like brand names.
-We add it to this list if a specific term is to be preferred as opposed to one with very
-similar, but not the same meaning.
-
-
-system extension
-    "System extension" is commonly used in core as opposed to "core extension"
-    (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
-
-Pending decision:
-
-* `"third party extension" or "community extension"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
-
-
 .. _styleguide-spelling-ref:
 
-Spelling Reference
-==================
-
-Here we list some terms that are often used in the documentation and might easily
-be misspelled.
-
-.. _styleguide-spelling-ref-plaintext:
-
-Plain Text Spelling Reference
------------------------------
+Spelling & Preferred Terms Reference
+====================================
 
 The spelling here is how the terms will be used in normal text (not headlines).
 
@@ -251,42 +271,82 @@ Additionally, there may be more than one term with the same meaning. Here, we li
 the preferred term.
 
 
-backend
+
+
+backend (noun)
+   We usually do not capitalize this. This is not a specific TYPO3 thing.
+   Fluid is capitalized, like Docker (see :ref:`spelling-proper-names`). Backend
+   is a general thing, like any backend, any extension, any plugin or any car and not a 1953
+   Chevy Corvette.
+
    Example: "when you log in to the backend ..."
+
+   Note: You will commonly also see spelling back-end or back end. These are not wrong,
+   but in the TYPO3 context, we try to use consistent spelling, so stick to backend.
+code sprint
+   is commonly written in lowercase, see `Wikipedia: Hackathon
+   <https://en.wikipedia.org/wiki/Hackathon#Code_sprints>`__
+(the TYPO3) Core
+   Example: "The TYPO3 Core comes with a number of icons that may be used in your extension."
 Composer
-   The product Composer is a proper noun and is capitalized, so use that unless you
+   The same applies as for Docker. Use Composer unless you
    explicitly mean the command `composer`.
 (the) Core Team
    Should be capitalized.
 (the) Documentation Team
    Should be capitalized, unless it means *any* documentation team.
 Docker
-   The product Docker is a proper noun and is capitalized, so use that
+   The product Docker is a brand name and is capitalized, so use that
    unless you explicitly mean the command `docker` (see `Use the Docker command line
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
 extension
+   See description for backend for explanation of why we use lowercase.
+
    Examples:
 
    *  "When you create documentation for your extension, make sure ..."
    * "... includes all TYPO3 extensions that are uploaded to TER"
+Extension Manager
+   Example: "Use the Extension Manager to activate an extension."
+frontend
+   See backend for explanation.
 Git
    The same applies as for Docker. Use Git unless you explicitly mean the command
    line command `git`.
 GitHub
    Exception: This is the official spelling.
+Introduction Package
+   Example: “The official TYPO3 Introduction Package is a great place to start”
 reST
    Exception: This is an official spelling for reStructuredText
+system extension
+    "system extension" is commonly used to describe an extension shipped with the
+    core and located in the directory sysext in the file system. Alternate term
+    "core extension" is discouraged
+    (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
+third party extension
+   meaning: not a system extension maintained in the core, an extension publicly
+   available. It is preferred to
+   use "third party extension" and not "3rd party extension".
+
+   See `Issue on GitHub
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
+  for discussion.
 TYPO3
    Exception: TYPO3 is always spelled TYPO3.
+ViewHelper
+   The spelling ViewHelper is commonly used in the TYPO3 context.
 
 
 See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
 for terms pending a decision.
 
+
+
 .. _styleguide-spelling-ref-title:
 
 Title Spelling Reference
-------------------------
+========================
 
 This is a list of words and how they should be used in the title.
 
@@ -351,14 +411,19 @@ Without
    Rule #3: 4 letters or more. Capitalized even though preposition.
 
 
-Additionally Used Resources
-===========================
+Used Resources
+==============
 
 In addition to the TYPO3 Content Style Guide, some other resources have been used:
 
 * "Don't use same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
   Use consistent terminology
   <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__
+* *"That said, please don't get too hung up on using correct style. We'd rather have you
+  submit good information that doesn't conform to the guide than no information at all.
+  Docker's tech writers are always happy to help you with the prose, and we promise not
+  to judge or use a red pen!"* (quote from `Docker Style Guide
+<https://github.com/docker/docker.github.io/blob/v17.06/opensource/doc-style.md>`__)
 
 capitalization
 
@@ -385,3 +450,7 @@ capitalization
   include all proper nouns (in their primary applications) as well as noun phrases such as the
   United Kingdom, North Carolina"* (quote from `Wikipedia: Proper Names
   <https://en.wikipedia.org/wiki/Proper_noun#Proper_names>`__)
+
+compound words
+
+* `Wikipedia: English compound <https://en.wikipedia.org/wiki/English_compound>`__

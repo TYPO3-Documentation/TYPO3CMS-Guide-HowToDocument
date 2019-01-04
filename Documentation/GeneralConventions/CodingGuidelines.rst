@@ -111,41 +111,42 @@ Special Characters
 
 The only way to include "special" characters is to use them directly
 
-.. _rest-formatting-conventions:
+.. _rest-refer-to-gui-elements:
 
-Basic Conventions for Formatting Specific Text
-==============================================
 
-Description of GUI Elements
----------------------------
+Referring to GUI Elements
+=========================
 
 If you describe something that needs to be selected from a menu or other GUI
-element or clicked one after the other, use *>* as separator and style the
-text in italics.
+element or clicked one after the other, use *>* as separator and use
+:ref:`textrole guilabel <textroles>`.
 
-Use the spelling of the word as used in the GUI!
+.. important::
+
+   Use the spelling of the word as used in the GUI!
 
 Examples:
 
 .. code-block:: rest
 
-   Select *File > Open*
+   Select :guilabel:`File > Open`
 
 How it looks:
-   Select *File > Open*
+   Select :guilabel:`File > Open`
 
 .. code-block:: rest
 
-   Click on *ADMIN TOOLS* > *Extensions* in the backend.
+   Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
 
 How it looks:
-   Click on *ADMIN TOOLS* > *Extensions* in the backend.
+   Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
 
 
-Keystroke Style
----------------
+Refer to Keystrokes
+===================
 
-When pointing out keyboard shortcuts or keystroke sequences, use textrole kbd.
+When pointing out keyboard shortcuts or keystroke sequences, use
+:ref:`textrole <textroles>` kbd.
 
 Example:
 
@@ -157,4 +158,3 @@ Result:
 
    Press :kbd:`ctrl` + :kbd:`s`
 
-See :ref:`Inline-Code`.
