@@ -283,22 +283,29 @@ backend (noun)
 
    Note: You will commonly also see spelling back-end or back end. These are not wrong,
    but in the TYPO3 context, we try to use consistent spelling, so stick to backend.
+
 code sprint
    is commonly written in lowercase, see `Wikipedia: Hackathon
    <https://en.wikipedia.org/wiki/Hackathon#Code_sprints>`__
+
 (the TYPO3) Core
    Example: "The TYPO3 Core comes with a number of icons that may be used in your extension."
+
 Composer
    The same applies as for Docker. Use Composer unless you
    explicitly mean the command `composer`.
+
 (the) Core Team
    Should be capitalized.
+
 (the) Documentation Team
    Should be capitalized, unless it means *any* documentation team.
+
 Docker
    The product Docker is a brand name and is capitalized, so use that
    unless you explicitly mean the command `docker` (see `Use the Docker command line
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
+
 extension
    See description for backend for explanation of why we use lowercase.
 
@@ -306,34 +313,41 @@ extension
 
    *  "When you create documentation for your extension, make sure ..."
    * "... includes all TYPO3 extensions that are uploaded to TER"
+
 Extension Manager
    Example: "Use the Extension Manager to activate an extension."
+
 frontend
    See backend for explanation.
+
 Git
    The same applies as for Docker. Use Git unless you explicitly mean the command
    line command `git`.
+
 GitHub
    Exception: This is the official spelling.
+
 Introduction Package
    Example: “The official TYPO3 Introduction Package is a great place to start”
+
 reST
    Exception: This is an official spelling for reStructuredText
-system extension
-    "system extension" is commonly used to describe an extension shipped with the
-    core and located in the directory sysext in the file system. Alternate term
-    "core extension" is discouraged
-    (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
-third party extension
-   meaning: not a system extension maintained in the core, an extension publicly
-   available. It is preferred to
-   use "third party extension" and not "3rd party extension".
 
-   See `Issue on GitHub
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
-  for discussion.
+system extension
+   "system extension" is commonly used to describe an extension shipped with the
+   core and located in the directory sysext in the file system. Alternate term
+   "core extension" is discouraged
+   (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
+
+third party extension
+   Not a system extension maintained in the core, an extension publicly
+   available. It is preferred to use "third party extension" and not "3rd party extension" (see
+   `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
+   for discussion).
+
 TYPO3
    Exception: TYPO3 is always spelled TYPO3.
+
 ViewHelper
    The spelling ViewHelper is commonly used in the TYPO3 context.
 
@@ -419,11 +433,6 @@ In addition to the TYPO3 Content Style Guide, some other resources have been use
 * "Don't use same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
   Use consistent terminology
   <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__
-* *"That said, please don't get too hung up on using correct style. We'd rather have you
-  submit good information that doesn't conform to the guide than no information at all.
-  Docker's tech writers are always happy to help you with the prose, and we promise not
-  to judge or use a red pen!"* (quote from `Docker Style Guide
-<https://github.com/docker/docker.github.io/blob/v17.06/opensource/doc-style.md>`__)
 
 capitalization
 
