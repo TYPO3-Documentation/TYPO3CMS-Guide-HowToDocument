@@ -136,7 +136,7 @@ Example:
 
    See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
 
-In our spelling, this would be "Test Docker Installation"
+In our spelling, this would be "Test Docker Installation".
 
 
 How this looks:
@@ -150,8 +150,8 @@ Rules for Plain Text
 Some exceptions to rules:
 
 #. If the text refers to terms used in the GUI (e.g. a clickpath for selecting
-   something from the menu is described, the spelling used in the GUI can be
-   used, e.g. *File* -> *Open*
+   something from the menu is described), the spelling used in the GUI can be
+   used, e.g. *File* > *Open*
 
 Common rules of the English language are applied:
 
