@@ -8,7 +8,6 @@ Writing Documentation
 
 **Quick links**
 
-
 .. rst-class:: horizbuttons-primary-m
 
 - :ref:`docs-contribute`
@@ -22,7 +21,7 @@ Writing Documentation
 
 **About this manual**
 
-   This manual is about writing TYPO3 documenation
+   This manual is about writing TYPO3 documentation
    (`docs.typo3.org <https://docs.typo3.org>`__). It contains information for
    how to format in :ref:`reST and sphinx <Formatting-with-reST>`. You can find out, 
    how to :ref:`contribute to the documentation <docs-contribute>` and 
@@ -38,9 +37,10 @@ Writing Documentation
    BasicPrinciples
    GeneralConventions/Index
    WritingReST/Index
-   RenderingDocs/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
+   Tools/Index
+   RenderingDocs/Index
    WhatsNew
    Appendix/Index
    Sitemap/Index
