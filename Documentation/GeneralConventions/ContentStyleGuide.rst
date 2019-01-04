@@ -109,9 +109,9 @@ Rules for Anchor Text
 ---------------------
 
 If you refer to another document, chapter or section of another manual in the docs
-and use the title of that, use capitalization for the anchor text.
+and use the title of that, use title capitalization for the anchor text.
 
-This has and additional advantage: If you omit the anchor text using
+This has an additional advantage: If you do not specifically supply an anchor text with
 the `:ref:` directive, the title from the referred to page will automatically be
 used as anchor text (which will hopefully already be spelled correctly using
 title capitalization).
