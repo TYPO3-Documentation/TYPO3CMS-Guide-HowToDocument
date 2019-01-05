@@ -61,11 +61,6 @@ Line Length
 
 Most of our documentation projects contain an .editorconfig file. 
 
-Use the file in `T3DocTeam: .editorconfig 
-<https://github.com/TYPO3-Documentation/T3DocTeam/blob/master/.editorconfig>`__
-as an example.
-
-
 Use this file to setup your editor / IDE correctly. With some, everything will
 just work automatically. With others, you will need to download a plugin. This
 is explained on the `Editorconfig <http://EditorConfig.org>`__ page.
