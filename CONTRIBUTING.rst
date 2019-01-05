@@ -13,7 +13,7 @@ Make changes (create pull requests)
 ===================================
 
 * In order to make changes on a
-  `rendered page https://docs.typo3.org/typo3cms/HowToDocument/Index.html`__,
+  `rendered page <https://docs.typo3.org/typo3cms/HowToDocument/Index.html>`__,
   just click on "Edit me on GitHub".
 * For a step-by-step walkthrough for making a change,
   see `Contribute to docs.typo3.org <https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/Index.html>`__
