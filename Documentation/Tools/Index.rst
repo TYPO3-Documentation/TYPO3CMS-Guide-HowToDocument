@@ -7,8 +7,10 @@
 Tools
 =====
 
-Tools for Editing reST
-======================
+.. _tools-for-editing-rest:
+
+Tools for Editing reStructuredText
+==================================
 
 When editing reST files locally, you should use an editor or IDE with
 good support for syntax highlighting and marking errors in reST.
