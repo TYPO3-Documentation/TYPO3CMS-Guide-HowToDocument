@@ -23,7 +23,7 @@ already defined in the style guide. It also explains how to apply the rules in
 the documentation (e.g. format with reST).
 
 Since English language is not always specific and there may be several correct spellings
-for some words, we have added a :ref:`styleguide-spelling-ref`. If somethings is not
+for some words, we have added a :ref:`spelling-ref`. If somethings is not
 mentioned here specifically, use correct spelling in English language,
 or rather American (US) language. Refer to the resources, which the style guide suggests, or use
 `Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
@@ -44,24 +44,24 @@ Rules for Titles & Section Headers
 Basic rules (read in this order, use the first rule that applies and skip the rest):
 
 #. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
-   way they are commonly written.
+   way they are commonly written (see :ref:`spelling-typo3`, :ref:`spelling-acronyms`).
 #. First and last word of title is always capitalized.
 #. Capitalize all words with 4 or more letters.
-#. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__, 
+#. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__,
    adjectives, verbs, adverbs), for example "Is", "Are", "Has".
 #. Lowercase `articles <https://www.merriam-webster.com/dictionary/article>`__ (e.g. a, an, the)
    `prepositions <https://www.merriam-webster.com/dictionary/preposition>`__
    (e.g. in) and `conjunctions <https://www.merriam-webster.com/dictionary/conjunction>`__
-   (e.g. and, or) **with fewer than 4 letters**. 
+   (e.g. and, or) **with fewer than 4 letters**.
 
-Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized, 
+Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized,
 **the** is not.
 
 .. tip::
 
    You can use the tool https://capitalizemytitle.com/ to check the title. Choose "AP" and
    "Title Case" for correct spelling in title. The result may slightly deviate from our rules
-   for the exceptions (e.g. TYPO3). For a spelling reference, see :ref:`styleguide-spelling-ref-title`
+   for the exceptions (e.g. TYPO3). For a spelling reference, see :ref:`spelling-ref-title`
    on this page.
 
 The rules for title case are based on the `TYPO3 Content Style Guide
@@ -162,6 +162,7 @@ GUI elements <spelling-refer-to-gui-elements>`, use the correct spelling for tha
 
 For all else (plain text), common rules of the English language are applied.
 
+
 .. _spelling-compound-words:
 
 Rules for Compound Words
@@ -181,7 +182,7 @@ All these spellings for backend are currently correct spellings (at least accord
    **In the TYPO3 context** we have defined **backend** to be the preferred spelling,
    as well as **sitepackage**.
 
-   If a spelling has been explicitly defined in the :ref:`styleguide-spelling-ref`, please
+   If a spelling has been explicitly defined in the :ref:`spelling-ref`, please
    use that spelling.
 
 How can you decide for other edge cases yourself?
@@ -200,8 +201,11 @@ How can you decide for other edge cases yourself?
 Capitalization Rules (plain text)
 ---------------------------------
 
-#. If a word has special spelling, e.g. an acronym like PHP, this spelling is applied.
-#. Special words like proper nouns and brand names are capitalized, e.g. Docker
+#. If a word has special spelling, e.g. a :ref:`special TYPO3 word <spelling-typo3>`
+   like TypoScript or an :ref:`acronym <spelling-acronyms>` like PHP,
+   this spelling is applied.
+#. :ref:`Proper nouns and brand names <spelling-proper-names>` are
+   capitalized, e.g. Docker
 #. Most other words begin with a lowercase letter.
 
 There are some edge cases and some terms are not spelled consistently in the same way
@@ -210,9 +214,26 @@ the course of time, for example see `The Associated Press style guide will no lo
 <https://www.theverge.com/2016/4/2/11352744/ap-style-guide-will-no-longer-capitalize-internet>`__
 In other texts, "internet" is still capitalized.
 
-For this reason, we have put together a :ref:`spelling reference <styleguide-spelling-ref-plaintext>`
-to mention some common
+For this reason, we have put together a :ref:`spelling reference <spelling-ref>`
+to list some common
 terms that may be difficult to spell or that are spelled differently in the TYPO3 context.
+
+.. _spelling-typo3:
+
+Exceptions: Specific TYPO3 spellings
+------------------------------------
+
+There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
+TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
+
+.. _spelling-acronyms:
+
+Acronyms
+~~~~~~~~
+
+Often, acronyms are written with capital letters only. If terms are commonly spelled that
+way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
+
 
 .. _spelling-proper-names:
 
@@ -234,7 +255,7 @@ Examples:
 * **Wikipedia**
 * **Europe**
 
-
+.. _spelling-executables:
 
 Tools With Executables
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -247,17 +268,10 @@ spelling Git, because it applies to the rules for :ref:`spelling-proper-names`.
 The same goes for **Docker**, **Composer**, etc.
 
 
-.. _spelling-acronyms:
-
-Acronyms
-~~~~~~~~
-
-Often, acronyms are written with capital letters only. If terms are commonly spelled that
-way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
 
-.. _styleguide-preferred-terms:
-.. _styleguide-spelling-ref:
+.. _preferred-terms:
+.. _spelling-ref:
 
 Spelling & Preferred Terms Reference
 ====================================
@@ -270,9 +284,6 @@ GUI elements, we usually spell them in the way, they are used in the GUI.
 Additionally, there may be more than one term with the same meaning. Here, we list
 the preferred term.
 
-
-
-
 backend (noun)
    We usually do not capitalize this. This is not a specific TYPO3 thing.
    Fluid is capitalized, like Docker (see :ref:`spelling-proper-names`). Backend
@@ -281,7 +292,8 @@ backend (noun)
 
    Example: "when you log in to the backend ..."
 
-   Note: You will commonly also see spelling back-end or back end. These are not wrong,
+   Note: Outside of the TYPO3 context, you will commonly also see spelling back-end
+   or back end. These are not wrong,
    but in the TYPO3 context, we try to use consistent spelling, so stick to backend.
 
 code sprint
@@ -295,10 +307,10 @@ Composer
    The same applies as for Docker. Use Composer unless you
    explicitly mean the command `composer`.
 
-(the) Core Team
+(the TYPO3) Core Team
    Should be capitalized.
 
-(the) Documentation Team
+(the TYPO3) Documentation Team
    Should be capitalized, unless it means *any* documentation team.
 
 Docker
@@ -330,8 +342,12 @@ GitHub
 Introduction Package
    Example: “The official TYPO3 Introduction Package is a great place to start”
 
-reST
-   Exception: This is an official spelling for reStructuredText
+reStructuredText
+   This is an official spelling. Alternate word: **reST**, but this may be confused
+   with REST. We commonly use reST within this document, because it is shorter and
+   we assume you
+   know we are not talking about REST here, but elsewhere, reStructuredText should
+   be preferred.
 
 system extension
    "system extension" is commonly used to describe an extension shipped with the
@@ -339,17 +355,26 @@ system extension
    "core extension" is discouraged
    (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
 
+TCA
+   is an :ref:`acronym <spelling-acronyms>`.
+
 third party extension
    Not a system extension maintained in the core, an extension publicly
    available. It is preferred to use "third party extension" and not "3rd party extension" (see
    `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
    for discussion).
 
+TSconfig
+   :ref:`TYPO3 exception <spelling-typo3>`
+
 TYPO3
-   Exception: TYPO3 is always spelled TYPO3.
+   :ref:`TYPO3 exception <spelling-typo3>`: TYPO3 is always spelled TYPO3.
+
+TypoScript
+   :ref:`TYPO3 exception <spelling-typo3>`
 
 ViewHelper
-   The spelling ViewHelper is commonly used in the TYPO3 context.
+   :ref:`TYPO3 exception <spelling-typo3>`
 
 
 See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
@@ -357,7 +382,7 @@ for terms pending a decision.
 
 
 
-.. _styleguide-spelling-ref-title:
+.. _spelling-ref-title:
 
 Title Spelling Reference
 ========================
