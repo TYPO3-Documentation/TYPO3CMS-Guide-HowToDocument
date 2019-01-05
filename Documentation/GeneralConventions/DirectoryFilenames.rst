@@ -176,6 +176,15 @@ as an example.
 
 :file:`.gitignore`
 
+All files listed in .gitignore will be ignored by Git. This is useful for generated files,
+that should not be added to your repository or for temporary files (e.g. backup files of
+your editor).
+
+You can ignore additional files by adding them to your .git/info/exclude file.
+
+.gitignore will apply to anyone using the repository, .git/info/exclude is for yourself
+only and will not be included in the repository on GitHub when you push.
+
 Use the file in `this manual: .gitignore
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.gitignore>`__ as a template.
 
@@ -191,6 +200,8 @@ Minimal Example
    # ignore generated documentation
    *GENERATED*
 
+.. _readme-rst:
+
 README.rst
 ----------
 
@@ -199,6 +210,8 @@ repositories. Use `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-G
 from this project as an example! (see `source <https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/master/README.rst>`__).
 
 The link "Read online" will help people to jump directly to the rendered version.
+
+.. _contributing-rst:
 
 CONTRIBUTING.rst
 ----------------

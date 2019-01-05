@@ -45,6 +45,7 @@ for example wrong title underline length.
 .. image:: ../images/phpstorm-rest-warning.png
    :class: with-shadow
 
+.. _phpstorm-editorconfig:
 
 EditorConfig Plugin
 ~~~~~~~~~~~~~~~~~~~
