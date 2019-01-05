@@ -30,14 +30,16 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
       cp -r TYPO3CMS-Example-ExtensionManual/Documentation <extension-directory>/
       # cp .gitignore (make sure you don't accidentally overwrite existing one though!)
       cp -n TYPO3CMS-Example-ExtensionManual/.gitignore <extension-directory>/.gitignore
+      # cp .gitignore (make sure you don't accidentally overwrite existing one though!)
+      cp -n TYPO3CMS-Example-ExtensionManual/.gitignore <extension-directory>/.gitignore
 
 2. Edit the Documentation
 
    Start editing away. Use the existing text to guide you. Look at other
    extension manuals (for example `sphinx <https://docs.typo3.org/typo3cms/extensions/sphinx/>`__)
-   for inspiration. Click on "Related Links" to jump to the repository or scroll to 
+   for inspiration. Click on "Related Links" to jump to the repository or scroll to
    bottom of rendered page and click on "View page source" to see reST source.
-   
+
    Check out the section on :ref:`reST <Formatting-with-reST>` to see how to format headlines,
    code-blocks, images etc.
 
@@ -56,7 +58,7 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
    README.rst should contain only basic information on your extension for people visiting
    your repository on GitHub.
-   
+
    CONTRIBUTING.rst can contain information about contributing to your extension or it can
    just link to the rendered version of Documentation/Contribute.rst of your extension.
 
