@@ -7,8 +7,8 @@
 Introduction
 ============
 
-reST
-====
+reStructuredText
+================
 
 The official documentation for TYPO3 uses reStructuredText (reST). The
 file ending of reST files is :file:`.rst`.
@@ -57,13 +57,21 @@ in the menu in the sidepanel.
 Sphinx
 ======
 
-While reST is the markup language, Sphinx is a suite of tools used to render the documentation.
-Rendering in this context means that an output format such as PDF or HTML is created from the source .rst files.
+While reStructuredText is the markup language, Sphinx is a suite of tools used to render
+the documentation. Rendering in this context means that an output format such
+as PDF or HTML is created from the source .rst files.
 
 We will not go into the exact definition here. For now, all you need to know
 is that some of the markup you will be using is added on by Sphinx.
-This is the case for some additional directives such as the `:ref:` directives
-used for cross-referencing or the `toctree`.
+This is the case for some additional directives such as:
+
+* the :ref:`:ref: <intersphinx>` directive for cross-referencing and
+  other :ref:`textroles <textroles>`
+* the :ref:`toctree <rest-menu-hierachy>` directive for creating menus
+* the :ref:`code-block <codeblock-directive>` directive for creating code blocks with syntax
+  highlighting. `code-block` is a Sphinx directive, while `code`
+  is a reStructuredText directive. We commonly use `code-block`,
+  not `code`.
 
 
 Additional information: `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__

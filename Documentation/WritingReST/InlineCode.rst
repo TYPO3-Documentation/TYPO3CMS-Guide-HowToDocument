@@ -70,6 +70,10 @@ Use Textroles
    `Standard Docutils interpreted text roles
    <http://docutils.sourceforge.net/docs/ref/rst/roles.html#standard-roles>`__:
 
+   .. tip::
+
+      For more information about the `ref` directive, see :ref:`how-to-document-hyperlinks`.
+
    ================== ================================================= ============================================ ===
    Role               Source                                            Output                                       Note
    ================== ================================================= ============================================ ===

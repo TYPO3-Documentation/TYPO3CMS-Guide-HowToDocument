@@ -16,10 +16,11 @@ Quick Reference
 
 * To insert a snippet as code with syntax highlighting, use the `code-block`
   directive or the shorthand `::`.
-* You can explicitly set the language in the `code-block` or not. 
+* You can explicitly set the language in the `code-block`, you cannot in the shorthand.
 * If you do not explicitly set the language, the default language (as set with
-  the :ref:`codeblocks-highlight-directive`) is used.
-* It is recommended to use the short form (`::`). 
+  the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
+  was used, the default set in :ref:`Includes.txt <includes-txt>` is used.
+* It is recommended to use the short form (`::`), and not code-block explicitly.
 * Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
   in a code block.
 
@@ -40,7 +41,7 @@ The following examples all do the same thing:
          .. code-block:: php
 
             $a = 'b';
-         
+
       You can use this, if the default language is already set to PHP with the :ref:`highlight
       directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.txt
       <includes-txt>`).
@@ -57,18 +58,19 @@ The following examples all do the same thing:
 
 
    3. Use `code-block` without setting the language::
-    
+
          See following example:
 
          .. code-block::
 
             $a = 'b';
-            
+
       You can use this, if you already set the language PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>`.      
+      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.txt
+      <includes-txt>`).
 
 
-   
+
 .. _codeblock-shorthand:
 
 Using the '::' Notation (Recommended)
@@ -177,7 +179,7 @@ Use codeblock with language PHP::
 Use codeblock without specifying language::
 
    .. code-block::
-   
+
       $a = 'b';
 
 This uses whatever language has last been set with the :ref:`codeblocks-highlight-directive`
@@ -237,7 +239,7 @@ once at the beginning of the file.
 
 This way, you don't need to set the language for each code-block (`..
 code-block:: LANG`) explicitly and can use the :ref:`shorthand notation
-<codeblock-shorthand>`. 
+<codeblock-shorthand>`.
 
 Use reStructuredText highlighting::
 

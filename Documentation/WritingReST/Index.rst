@@ -5,18 +5,21 @@
 .. _format-sphinx:
 .. _rest-quick-start:
 
-=============================
-Formatting with reST & Sphinx
-=============================
+=========================
+reStructuredText & Sphinx
+=========================
 
-This chapter is a reference for various kinds of markup.
+This chapter is a reference for writing documentation using reStructuredText
+(also referred to as reST) and Sphinx.
 
 It is recommended to read (or at least browse through)
 the :ref:`writing-rest-introduction` and the general
 :ref:`format-rest-cgl` first.
 
 Also read :ref:`rest-common-pitfalls` in order to avoid common
-mistakes with the syntax.
+mistakes with the syntax or make sure to
+:ref:`setup your editor or IDE <tools-for-editing-rest>` correctly
+to detect and show errors in the syntax.
 
 You don't need to read the entire chapter, just lookup
 the section that is relevant for what you plan to do.
@@ -49,10 +52,10 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
    MenuHierarchy
    IncludingFiles
    Lists
-   NumberedLists   
+   NumberedLists
    DefinitionLists
    ListItemsAsButtons
-   BignumLists   
+   BignumLists
    Images
    YoutubeVideos
    Admonitions
