@@ -272,6 +272,7 @@ The same goes for **Docker**, **Composer**, etc.
 
 .. _preferred-terms:
 .. _spelling-ref:
+.. _spelling-ref-this-guide:
 
 Spelling & Preferred Terms Reference
 ====================================
@@ -318,6 +319,10 @@ Docker
    unless you explicitly mean the command `docker` (see `Use the Docker command line
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
 
+Edit me on GitHub workflow
+   Use this to describe the workflow which involves editing on GitHub as
+   opposed to "local editing and rendering with Docker".
+
 extension
    See description for backend for explanation of why we use lowercase.
 
@@ -341,6 +346,9 @@ GitHub
 
 Introduction Package
    Example: “The official TYPO3 Introduction Package is a great place to start”
+
+Local editing and rendering with Docker
+   is used to describe the workflow of editing locally.
 
 reStructuredText
    This is an official spelling. Alternate word: **reST**, but this may be confused
@@ -379,18 +387,6 @@ ViewHelper
 
 See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
 for terms pending a decision.
-
-.. _spelling-ref-this-guide:
-
-Specific Terms Used in this Guide
----------------------------------
-
-Edit me on GitHub workflow
-   Use this to describe the workflow which involves editing on GitHub as
-   opposed to "local editing and rendering with Docker".
-Local editing and rendering with Docker
-   is used to describe the workflow of editing locally.
-
 
 
 
