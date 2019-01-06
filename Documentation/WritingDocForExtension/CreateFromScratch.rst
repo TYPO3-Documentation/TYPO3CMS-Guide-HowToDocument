@@ -9,6 +9,16 @@
 How to Start Documentation for Your TYPO3 Extension
 ===================================================
 
+This chapter describes how to create documentation for your extension
+using *local editing and rendering with Docker*. It
+requires Docker for running the rendering toolchain locally on
+your computer to check if the documentation is rendered correctly.
+
+This is the preferred workflow, but if you have problems with
+Docker or would like to edit directly on GitHub, see the older
+Tip of the Day `How to start Documentation for your TYPO3 Extension
+<https://docs.typo3.org/Tips/TipOfTheDay/Index.html#how-to-start-documentation-for-your-typo3-extensiontip-of-the-day-2016-12-29>`__.
+
 If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
 .. rst-class:: bignums-xxl
