@@ -2,6 +2,7 @@
 
 .. _how-to-get-help:
 .. _slack:
+.. _help:
 
 ==============
 Help & Support
@@ -51,6 +52,6 @@ General Support for TYPO3
 
 Got to https://typo3.org/help/. There you will also be directed to the
 Slack channel **#typo3-cms**, but some other methods for getting help
-and support are listed as well. 
+and support are listed as well.
 
 

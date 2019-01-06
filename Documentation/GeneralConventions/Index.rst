@@ -26,5 +26,6 @@ if something is not ok, but it is not a huge problem!
    DirectoryFilenames
    MenuHierarchy
    CodingGuidelines
+   GuidelinesForImages
    CommitMessages
    Licenses

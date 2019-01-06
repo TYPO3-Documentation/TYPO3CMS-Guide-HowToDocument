@@ -12,27 +12,41 @@ Images
 How to Use Images
 =================
 
-Use the `.. image::` directive with additional parameters. The
+Use the `.. image::` directive with additional parameters.
+
+Use `.. figure::` if you want to add a caption to your image.
+You can use the same parameters in figure that are defined for image.
+
+The
 additional parameters must be indented one level (add 3 spaces to indent).
 
-Some parameters for images:
+Recommended parameters for images:
+
+* `:class:` css class, e.g. `with-shadow`
+
+
+Optional parameters for images:
 
 * `:alt:` : alt text
 * `:target:` link target
-* `:class:` css class, e.g. `with-shadow`, `with-border`
+* `:width:` : width of image, use for example px (e.g. :rest:`:width: 100px`
+* `:scale:` : scale images, e.g. :rest:`:scale: 65`
 
+Additional parameters can be found on the docutils page `reStructuredText Directives
+<http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__
 
 Examples
 ========
 
 
-Example 1: Image with Shadow and Link Target
---------------------------------------------
+Example 1: Scaled Image With Shadow and Link Target
+---------------------------------------------------
 
 .. image:: ../images/a4.jpg
    :alt: Left floating image
    :target: https://typo3.org
    :class: with-shadow
+   :scale: 50
 
 .. code-block:: rest
    :linenos:
@@ -41,6 +55,7 @@ Example 1: Image with Shadow and Link Target
       :alt: some image
       :target: https://typo3.org
       :class: with-shadow
+      :scale: 50
 
 
 **line 1:**
@@ -55,8 +70,33 @@ Example 1: Image with Shadow and Link Target
 **line 4:**
    use a shadow on the image
 
+Example 2: Image With Caption
+-----------------------------
 
-Example 2: Image with Fixed Width
+.. figure:: ../images/a4.jpg
+   :alt: Left floating image
+   :target: https://typo3.org
+   :class: with-shadow
+   :width: 100px
+
+   This is the image caption
+
+.. code-block:: rest
+   :linenos:
+
+      .. figure:: ../images/a4.jpg
+         :alt: some image
+         :target: https://typo3.org
+         :class: with-shadow
+         :width: 100px
+
+         This is the image caption
+
+**line 5:**
+   width of image
+
+
+Example 3: Image With Fixed Width
 ---------------------------------
 
 .. image:: ../images/a4.jpg
@@ -81,7 +121,7 @@ Example 2: Image with Fixed Width
 
 
 
-Example 3: Image with float-left
+Example 4: Image with float-left
 --------------------------------
 
 .. image:: ../images/a4.jpg
