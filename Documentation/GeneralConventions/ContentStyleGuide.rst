@@ -380,6 +380,18 @@ ViewHelper
 See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
 for terms pending a decision.
 
+.. _spelling-ref-this-guide:
+
+Specific Terms Used in this Guide
+---------------------------------
+
+Edit me on GitHub workflow
+   Use this to describe the workflow which involves editing on GitHub as
+   opposed to "local editing and rendering with Docker".
+Local editing and rendering with Docker
+   is used to describe the workflow of editing locally.
+
+
 
 
 .. _spelling-ref-title:
