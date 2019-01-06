@@ -12,7 +12,8 @@ Guidelines for Creating Images
    This page is still a work in progress!
 
 When embedding images with reST, it is good practices to add a shadow,
-as described in :ref:`how-to-document-images`
+or border as described in :ref:`how-to-document-images` **if**
+this improves readability of the page. 
 
 There are various kinds of images used in the documentation. The most
 common are:
@@ -50,8 +51,12 @@ Texts & Fonts
 Image Formats
 -------------
 
-In general, it is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
-and SVG for vector graphics images. In any case, you can use .png.
+* It is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
+  and SVG for vector graphics images. In any case, you can use .png. 
+
+* If you use png but have combined a screenshot with some graphics elements,
+  be sure to additionally upload the file in a format in
+  which it can be easily extended (e.g. svg)
 
 Guidelines for Screenshots
 ==========================
