@@ -7,7 +7,7 @@
 Contribute to System Extension
 ==============================
 
-For system extensions please also refer to the :ref:`t3contribute:start`
+For system extensions please refer to the :ref:`t3contribute:start`
 for more information.
 
 The documentation for system extensions is maintained inside the TYPO3

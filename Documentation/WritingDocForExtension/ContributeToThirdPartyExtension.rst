@@ -3,21 +3,20 @@
 
 .. _contribute-to-3rdparty-extension:
 
-================================
-Contribute to 3rdparty Extension
-================================
+===================================
+Contribute to Third Party Extension
+===================================
 
-This chapter adresses contributing to 3rdparty extension documenation. The
-extension can also be your own extension.
+This chapter addresses contributing to third party extension documentation.
 
 For system extensions, see :ref:`contribute-to-system-extension`.
 
 You can contribute to the documentation of any publicly available extension,
-if the repository is public (e.g. hosted on Github). This does not mean, the
-extension author will be willing or is obligated to merge your change. In
-practice however, useful contributions are welcome.
+if the repository is public (e.g. hosted on GitHub). This does not mean, the
+extension author will be willing or is obligated to merge your change. But, most
+of the time, useful contributions are welcome.
 
-You can add issues or make changes via patches (e.g. pull requests on Github).
+You can add issues or make changes via patches (e.g. pull requests on GitHub).
 
 If you can make the change yourself, try to submit it as a patch instead of
 just writing an issue. It depends on the policy of the extension author
@@ -32,7 +31,7 @@ Find the Source
 ===============
 
 First, you need to find out where the source is maintained. Usually, this will
-be a repository on Github. There, you can also check if documentation is already
+be a repository on GitHub. There, you can also check if documentation is already
 available. It should be a `Documentation` folder or one of the alternatives
 mentioned in :ref:`supported-filenames-and-formats`.
 
@@ -111,8 +110,8 @@ Method 2: Find Rendered Manual on https://extensions.typo3.org
 
 .. note::
 
-   You cannot find system extensions (extensions that are maintained in 
-   the core) on https://extensions.typo3.org. 
+   You cannot find system extensions (extensions that are maintained in
+   the core) on https://extensions.typo3.org.
 
 Follow Contribution Guide
 =========================
