@@ -1,6 +1,7 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
+.. _toctree:
 .. _rest-menu-hierachy:
 
 ==============
