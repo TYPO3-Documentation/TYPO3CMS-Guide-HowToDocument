@@ -9,8 +9,8 @@ Tools
 
 .. _tools-for-editing-rest:
 
-Tools for Editing reStructuredText
-==================================
+Tools & Setup for Editing reST
+==============================
 
 When editing reST files locally, you should use an editor or IDE with
 good support for syntax highlighting and marking errors in reST.
@@ -20,6 +20,20 @@ developers in the TYPO3 community. It does however cost money.
 
 Good alternatives can be found in the "Free Editors" section of
 `StackOverflow: reStructuredText tool support <https://stackoverflow.com/a/2747041/2444812>`__.
+
+General Advice
+--------------
+
+EditorConfig
+~~~~~~~~~~~~
+
+Setup your editor / IDE to use the .editorconfig file, which already
+exists in most documentation repositories. This will set up your
+editor / IDE to comply with our :ref:`basic coding guidelines
+<format-rest-cgl>`.
+
+You may have to install
+an additional plugin, see `EditorConfig <https://editorconfig.org/#download>`__.
 
 PhpStorm
 --------
