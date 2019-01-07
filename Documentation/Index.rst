@@ -10,7 +10,7 @@ Writing Documentation
 
 .. rst-class:: horizbuttons-primary-m
 
-- :ref:`docs-contribute`
+- :ref:`Contribute <docs-contribute>`
 - :ref:`Formatting-with-reST`
 - :ref:`Writing Extension Documentation <how-to-start-documentation-for-ext>`
 
@@ -43,6 +43,7 @@ and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
    RenderingDocs/Index
    WhatsNew
    Appendix/Index
+   Links
    Sitemap/Index
 
 

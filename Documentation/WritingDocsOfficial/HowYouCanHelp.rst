@@ -47,14 +47,27 @@ https://capitalizemytitle.com/ to check title spelling.
 Fix Issues
 ==========
 
-If you are a new contributor, you can look for issues in TYPO3-Documentation  with the label "good first issue":
+If you are a new contributor, you can look for issues in TYPO3-Documentation
+with the label "good first issue":
 
-* `open issues with label "good first issue" in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__
+* `Open, unassigned issues with label "good first issue" in TYPO3-Documentation
+  <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation+no%3Aassignee>`__
 * ... or go to the `Issues tab in Github <https://github.com/issues>`__ and enter `is:open is:issue archived:false label:"good first issue" user:TYPO3-Documentation` in the search field (this should get you the same result) 
 
 
-Or, you can look at the open issues of a manual you are familiar with, pick one
+Using this link, you can get a list of all open, unassigned issues:
+
+* `Open, unassigned issues (without Documentation Team issues, without t3SphinxThemeRtd, without t3SphinxThemeRtdDemoDocs)
+  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+no%3Aassignee>`__
+
+Pick an issue for a topic you are familiar with and try to fix it. Some of the
+issues address a problem, some are enhancements where new text needs to be
+written.
+
+For more links to GitHub issues, see :ref:`links-github-issues`.
+
+
+You can also look at the open issues of a manual you are familiar with, pick one
 and fix the problem.
 
 For example:
@@ -70,19 +83,7 @@ bottom left of the page).
 .. image:: ../images/related-links-issues.png
    :class: with-shadow
 
-Open issues in TYPO3-Documentation (without team issues, without t3SphinxThemeRtd):
 
-* `All open issues
-  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd>`__
-* `All open and unassigned issues
-  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+no%3Aassignee>`__
-
-For advanced contributors / team members:
-
-* `All open issues in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation>`__ 
-* `All open and unassigned issues in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation+no%3Aassignee>`__ 
 
 
 Replace Outdated Images
