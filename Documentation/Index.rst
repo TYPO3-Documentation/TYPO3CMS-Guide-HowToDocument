@@ -43,7 +43,7 @@ and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
    RenderingDocs/Index
    WhatsNew
    Appendix/Index
-   Links
+   UsefulLinks
    Sitemap/Index
 
 
