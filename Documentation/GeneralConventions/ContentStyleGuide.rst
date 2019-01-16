@@ -357,6 +357,10 @@ reStructuredText
    know we are not talking about REST here, but elsewhere, reStructuredText should
    be preferred.
 
+sitepackage
+   In the context of a TYPO3 sitepackage, a TYPO3 sitepackage extension or the sitepackage
+   builder, we use the spelling sitepackage and not site package. 
+
 system extension
    "system extension" is commonly used to describe an extension shipped with the
    core and located in the directory sysext in the file system. Alternate term
