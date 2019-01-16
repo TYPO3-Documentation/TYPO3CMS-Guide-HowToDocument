@@ -18,7 +18,7 @@ extension contains a directory `Documentation` with at least the following files
 * `Includes.txt` : some basic sphinx directives
 * `Settings.cfg` : settings
 
-These are the same files and general principles that apply to any documenation
+These are the same files and general principles that apply to any documentation
 project. See :ref:`general-conventions-dir-and-filenames` for more information.
 
 See https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual for an
