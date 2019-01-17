@@ -22,15 +22,19 @@ additional parameters must be indented one level (add 3 spaces to indent).
 
 Recommended parameters for images:
 
-* `:class:` css class, e.g. `with-shadow`
+* `:class: with-shadow`
+
+Alternatively, a border can be defined:
+
+* `:class: with-border`
 
 
 Optional parameters for images:
 
 * `:alt:` : alt text
 * `:target:` link target
-* `:width:` : width of image, use for example px (e.g. :rest:`:width: 100px`
-* `:scale:` : scale images, e.g. :rest:`:scale: 65`
+* `:width:` : width of image, use for example px (e.g. `:width: 100px`
+* `:scale:` : scale images, e.g. `:scale: 65`
 
 Additional parameters can be found on the docutils page `reStructuredText Directives
 <http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__
@@ -151,3 +155,9 @@ Some text ... (will be displayed on the right of the image).
    When using float-left, make sure the text is suitable for
    wrapping around images. Here, we use `.. rst-class:: clear-both`
    to reset the floating and start on the left again.
+
+Example 5: Image with border
+--------------------------------
+
+.. image:: ../images/a4.jpg   
+   :class: with-border
