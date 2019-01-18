@@ -19,7 +19,7 @@ Commit Message Recommendations
   Fix typo!
 * As in the TYPO3 core commit message rules, try to keep first line below 52 characters
   if possible, but below 80 in any case.
-* A commit message for the docs should consists of a subject line (first lines).
+* A commit message for the docs should consists of a subject line (first line).
   More lines (seperated by first line with an empty new line) are optional.
 * If an issue exists, link to it, by using "Resolves: #issue number", e.g. "Resolves: #4".
 
@@ -56,11 +56,11 @@ If you are editing online with GitHub, this may look like this:
 
 
 Using "Resolves", will automatically close the issue. You can use "Related" instead of
-"Resolves" if you do not want this.
+"Resolves" if you do not want the issue to be closed.
 
 You can refer to more than one issue:
 
-. code-block:: none
+.. code-block:: none
 
    <subject>
 
