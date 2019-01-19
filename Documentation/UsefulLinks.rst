@@ -43,9 +43,13 @@ For Documentation Team members, members of task forces, advanced contributors
 -----------------------------------------------------------------------------
 
 * `All open issues in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation>`__
+  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__
 * `All open, unassigned issues in TYPO3-Documentation
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ATYPO3-Documentation+no%3Aassignee>`__
+  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__
+
+The Docker image for rendering is in the organization **t3docs**:
+
+* `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__
 
 
 GitHub Pull Requests
