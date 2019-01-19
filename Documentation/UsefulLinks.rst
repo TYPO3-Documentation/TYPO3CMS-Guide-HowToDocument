@@ -39,15 +39,17 @@ For Contributors
 This includes all issues for official manuals. We excluded the repos that should
 typically be handled by a Documentation Team member.
 
-For Documentation Team members, members of task forces, advanced contributors
------------------------------------------------------------------------------
+Advanced
+--------
+
+For Documentation Team members, members of task forces, advanced contributors:
 
 * `All open issues in TYPO3-Documentation
   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__
 * `All open, unassigned issues in TYPO3-Documentation
   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__
 
-The Docker image for rendering is in the organization **t3docs**:
+The Docker image for rendering is in the organization **t3docs** (instead of TYPO3-Documentation):
 
 * `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__
 
