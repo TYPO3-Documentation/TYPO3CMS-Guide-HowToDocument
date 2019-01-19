@@ -23,12 +23,12 @@ Writing Documentation
 
 This manual is about writing TYPO3 documentation
 (`docs.typo3.org <https://docs.typo3.org>`__). It contains information for
-how to format in :ref:`reST and sphinx <Formatting-with-reST>`. You can find out, 
-how to :ref:`contribute to the documentation <docs-contribute>` and 
-:ref:`write extension documentation from scratch <how-to-start-documentation-for-ext>`. 
+how to format in :ref:`reST and sphinx <Formatting-with-reST>`. You can find out,
+how to :ref:`contribute to the documentation <docs-contribute>` and
+:ref:`write extension documentation from scratch <how-to-start-documentation-for-ext>`.
 
 It also includes some general conventions, :ref:`coding guidelines <format-rest-cgl>`
-and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`. 
+and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
 
 .. toctree::
    :hidden:
@@ -39,8 +39,8 @@ and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
    WritingReST/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
-   Tools/Index
    RenderingDocs/Index
+   Tools/Index
    WhatsNew
    Appendix/Index
    UsefulLinks

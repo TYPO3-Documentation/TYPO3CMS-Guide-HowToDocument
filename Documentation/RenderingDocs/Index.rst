@@ -3,9 +3,9 @@
 
 .. _rendering-docs:
 
-=======================
-Rendering Documentation
-=======================
+===========================
+Howto: Render Documentation
+===========================
 
 This chapter explains how to render a manual locally on your machine
 with Docker.
@@ -32,7 +32,7 @@ Here, we will briefly also explain the other methods for rendering.
    1. Render Documentation Locally Using Docker
 
       See :ref:`rendering-docs-quickstart`
-      
+
    2. Preview on GitHub
 
       This method is useful if you are editing documentation directly on
@@ -42,7 +42,7 @@ Here, we will briefly also explain the other methods for rendering.
       additional sphinx markup, such as the *toctree* or the
       :ref:`intersphinx <intersphinx>` linking. Because of this, the
       preview is not to be recommended for major changes that involve
-      markup beyond basic reST markup.   
+      markup beyond basic reST markup.
 
    3. Extension *sphinx*
 

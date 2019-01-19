@@ -44,23 +44,4 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
 
    Introduction
    CommonPitfalls/Index
-   BoldItalic
-   Hyperlinks
-   Codeblocks
-   InlineCode
-   HeadlinesAndSection
-   MenuHierarchy
-   IncludingFiles
-   Lists
-   NumberedLists
-   DefinitionLists
-   ListItemsAsButtons
-   BignumLists
-   Images
-   YoutubeVideos
-   Admonitions
-   Comments
-   SpecialCharacters
-   Orphans
-   CleverRest
-   SpecialStyles
+   Reference
