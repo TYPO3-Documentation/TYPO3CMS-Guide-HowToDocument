@@ -18,7 +18,9 @@ just click on :guilabel:`Related Links` on the bottom and then :guilabel:`Issues
 
 But, you may want to get an overview for all open issues for TYPO3 documentation.
 The repositories of the official manuals are all included in the organization
-TYPO3-Documentation. Here are some links you can use to get a list of all issues:
+`TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__. 
+
+Here are some links you can use to get a list of all issues:
 
 For New Contributors
 --------------------
@@ -26,7 +28,7 @@ For New Contributors
 * `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__
 
 We added a label "Good first issue" which is used to tag issues that outline
-a small task that may be good to good started. But, you are not restricted to
+a small task that may be good to get started. But, you are not restricted to
 this! Start with any issue that seems to be a good fit for you!
 
 .. _useful-links-for-contributors:
@@ -59,4 +61,10 @@ GitHub Pull Requests
 
 Anyone is welcome to review open pull requests! 
 
+In **TYPO3-Documentation**:
+
 * `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-asc>`__
+
+In **t3docs**:
+
+* `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__
