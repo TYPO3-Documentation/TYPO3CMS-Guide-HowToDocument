@@ -3,7 +3,7 @@
 
 
 ===================
-Problems with Lists
+Problems With Lists
 ===================
 
 If you use lists, make sure there is an empty line before and after the
@@ -38,7 +38,7 @@ Example 1: Bullet List
    more text
 
 
-Example 2: List with Sublist
+Example 2: List With Sublist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::

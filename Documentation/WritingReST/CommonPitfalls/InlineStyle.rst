@@ -4,7 +4,7 @@
 .. _common-pitfalls-inline-style:
 
 ==========================
-Problems with Inline Style
+Problems With Inline Style
 ==========================
 
 

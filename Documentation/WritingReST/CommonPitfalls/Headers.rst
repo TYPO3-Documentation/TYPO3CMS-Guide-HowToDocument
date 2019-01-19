@@ -3,7 +3,7 @@
 
 
 =====================
-Problems with Headers
+Problems With Headers
 =====================
 
 
@@ -26,7 +26,7 @@ Correct Syntax
 ::
 
    ================
-   This is a Header
+   This Is a Header
    ================
 
    Another Header
@@ -43,7 +43,7 @@ Wrong Syntax
 
 ::
 
-   Another header
+   Another Header
    ------------
 
 

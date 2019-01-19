@@ -205,7 +205,7 @@ With Big Numbers - Warning
 
 
 
-Nested bignums-xxl > bignums > normally styled
+Nested bignums-xxl > bignums > Normally Styled
 ==============================================
 
 

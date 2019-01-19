@@ -12,7 +12,7 @@ can use them to point out additional or important
 information.
 
 
-See also
+See Also
 ========
 
 .. code-block:: rest

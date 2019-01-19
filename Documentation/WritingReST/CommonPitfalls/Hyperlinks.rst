@@ -3,7 +3,7 @@
 
 
 ===================
-Problems with Links
+Problems With Links
 ===================
 
 There are several ways to write links, here we assume you are
