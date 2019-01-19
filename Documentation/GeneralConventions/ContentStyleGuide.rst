@@ -221,7 +221,7 @@ terms that may be difficult to spell or that are spelled differently in the TYPO
 .. _spelling-typo3:
 
 Exceptions: Specific TYPO3 spellings
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
 TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
