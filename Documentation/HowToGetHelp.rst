@@ -14,7 +14,7 @@ Get Help on Writing Documentation
 =================================
 
 If you wish to contribute to the docs, have questions about the
-documentaton or run into problems, the
+documentation or run into problems, the
 `TYPO3 slack workspace <https://typo3.slack.com>`__
 is the place to be.
 
@@ -46,6 +46,14 @@ Don't worry, you will not be frowned upon if you don't know something.
 Engagement and curiosity is a good thing! You may even have stumbled
 upon something that is not documented well or is not user friendly.
 In that case, let us know about it!
+
+Contact Us
+==========
+
+If you wish to contact the Documentation Team, you can also use the
+**#typo3-documentation** channel on Slack.
+
+Additionally, you can contact us via `email <documentation@typo3.org>`__.
 
 General Support for TYPO3
 =========================
