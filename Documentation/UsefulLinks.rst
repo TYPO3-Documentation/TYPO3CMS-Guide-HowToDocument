@@ -36,7 +36,7 @@ this! Start with any issue that seems to be a good fit for you!
 For Contributors
 ----------------
 
-* `Open, unassigned issues (without team issues, without t3SphinxThemeRtd, without "Writing Documentation") <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__
+* `Open, unassigned issues  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (without team issues, without t3SphinxThemeRtd, without "Writing Documentation")
 
 This includes all issues for official manuals. We excluded the repos that should
 typically be handled by a Documentation Team member.
