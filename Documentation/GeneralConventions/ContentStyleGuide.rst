@@ -323,6 +323,9 @@ Edit me on GitHub workflow
    Use this to describe the workflow which involves editing on GitHub as
    opposed to "local editing and rendering with Docker".
 
+Extbase
+   should be capitalized, same rule as for :ref:`spelling-proper-names`.
+
 extension
    See description for backend for explanation of why we use lowercase.
 
@@ -333,6 +336,9 @@ extension
 
 Extension Manager
    Example: "Use the Extension Manager to activate an extension."
+
+Fluid
+   should be capitalized, same rule as for :ref:`spelling-proper-names`.
 
 frontend
    See backend for explanation.
