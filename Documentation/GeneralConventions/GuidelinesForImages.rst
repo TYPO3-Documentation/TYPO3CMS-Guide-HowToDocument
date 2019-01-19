@@ -12,8 +12,7 @@ Guidelines for Creating Images
    This page is still a work in progress!
 
 When embedding images with reST, it is good practices to add a shadow,
-or border as described in :ref:`how-to-document-images` **if**
-this improves readability of the page. 
+as described in :ref:`how-to-document-images`. 
 
 There are various kinds of images used in the documentation. The most
 common are:
@@ -54,10 +53,6 @@ Image Formats
 * It is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
   and SVG for vector graphics images. In any case, you can use .png. 
 
-* If you use png but have combined a screenshot with some graphics elements,
-  be sure to additionally upload the file in a format in
-  which it can be easily extended (e.g. svg)
-
 Guidelines for Screenshots
 ==========================
 
@@ -96,23 +91,5 @@ screenshots. That is what we do by creating images as described in the next sect
 Guidelines for Screenshots with Graphics Elements
 =================================================
 
-Currently, we are working on defining a general color scheme and creating sample
-shapes, you can use: https://github.com/TYPO3-Documentation/images
-
-We provide a preliminary version of this, but it is still work in progress and
-may change soon.
-
-Here are some example images using the sample shapes:
-
-
-
-.. figure:: images/github-getting-started-with-box+arrow.svg
-   :class: with-shadow
-   :scale: 70
-
-   This is the text we want to change!
-
-.. image:: images/backend.svg
-   :class: with-shadow
-
+This section is a work in progress. Coming up soon ...
 
