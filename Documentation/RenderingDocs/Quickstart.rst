@@ -92,14 +92,7 @@ alternative workflow.
 Render on Windows
 =================
 
-On Windows, it depends what kind of a shell (terminal) you are using.
 
-* With Cygwin, the Linux workflow should work. Just replace xdg-open with start
-* With Powershell, you might want to replace `source` with `.`::
-
-      docker run --rm t3docs/render-documentation show-shell-commands > start.bat
-      . .\start.bat
-      
 
 As an alternative, try :ref:`render-with-docker-compose`.
 
