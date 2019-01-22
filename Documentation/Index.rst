@@ -30,6 +30,15 @@ how to :ref:`contribute to the documentation <docs-contribute>` and
 It also includes some general conventions, :ref:`coding guidelines <format-rest-cgl>`
 and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
 
+
+**What's new in this guide**
+
+* 2019-01-22 :ref:`news-2019-guidelines-for-images`
+* 2019-01-04 :ref:`news-2019-tools-for-editing-rest`
+* 2018-11-27 :ref:`news-2018-content-styleguide`
+* :ref:`news-2018-more`
+
+
 .. toctree::
    :hidden:
 
@@ -41,7 +50,6 @@ and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
    WritingDocsOfficial/Index
    RenderingDocs/Index
    Tools/Index
-   WhatsNew
    Appendix/Index
    UsefulLinks
    Sitemap/Index
