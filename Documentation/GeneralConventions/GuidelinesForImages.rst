@@ -7,11 +7,7 @@
 Guidelines for Creating Images
 ==============================
 
-.. important::
-
-   This page is still a work in progress!
-
-When embedding images with reST, it is good practices to add a shadow,
+When embedding images with reST, please add a shadow,
 as described in :ref:`how-to-document-images`. 
 
 There are various kinds of images used in the documentation. The most
@@ -45,7 +41,7 @@ Texts & Fonts
   better.
 * In any case, you should be safe with using a commonly supported font
   like Helvetica or Arial. Remember, the Web Style Guide proposes
-  Source Sans Pro, Helvetica, Arial.
+  *Source Sans Pro, Helvetica, Arial*.
 
 Image Formats
 -------------
@@ -91,5 +87,44 @@ screenshots. That is what we do by creating images as described in the next sect
 Guidelines for Screenshots with Graphics Elements
 =================================================
 
-This section is a work in progress. Coming up soon ...
+You will often see a screenshot where additional graphic elements have been added in the
+documentation. These additional graphic elements may be boxes, numbers or arrows. Up until,
+we did not have guidelines for this, so you may see various shapes in different colors.
+
+As of now (January, 2019), please adhere to the conventions defined here and use the
+supplied icons.
+
+To get the icons
+----------------
+
+Either download the zipfile and extract it. You can find the download link on https://github.com/TYPO3-Documentation/images,
+
+Or clone the repository:
+
+.. code-block:: bash
+
+   git clone https://github.com/TYPO3-Documentation/images
+
+
+The icons will be in images/design-team/icons.
+
+
+Follow These Guidelines
+-----------------------
+
+* Icons are used for numbers and arrows. The size of the icons should not be changed.
+* Simple frames are TYPO3 Orange (#F49700) and have a line thickness of 2 px and a
+  corner radius of 2 px.
+* Text fields are TYPO3 Orange (#F49700) and have a corner radius of 2 px.
+* Dividing surfaces have a 2px frame in TYPO3 Orange (#F49700) with a corner radius
+  of 2 px
+
+
+Examples
+--------
+
+.. image:: images/backend-with-boxes.png
+   :class: with-shadow
+   :scale: 70
+
 
