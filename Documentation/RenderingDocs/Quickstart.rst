@@ -80,6 +80,9 @@ Render on MacOS
 
 Run the same commands as for Linux but replace xdg-open with open::
 
+   docker pull t3docs/render-documentation
+   source <(docker run --rm t3docs/render-documentation show-shell-commands)
+   dockrun_t3rdf makehtml
    open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
    
 If open does not work for you, create a URL you can open::
@@ -92,9 +95,14 @@ alternative workflow.
 Render on Windows
 =================
 
+We recommend, that you try :ref:`render-with-docker-compose`.
 
+Depending on your environment, the starndard workflow may work for you, as well::
 
-As an alternative, try :ref:`render-with-docker-compose`.
+   docker pull t3docs/render-documentation
+   source <(docker run --rm t3docs/render-documentation show-shell-commands)
+   dockrun_t3rdf makehtml
+   start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 
 .. _render-with-docker-compose:
@@ -122,7 +130,7 @@ Prerequisites:
    documentation projects. 
    
    .. code-block:: yaml
-      :lineno:
+      :linenos:
    
       version: '2'
       services:

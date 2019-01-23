@@ -55,7 +55,9 @@ Here, we will briefly also explain the other methods for rendering.
 
       With this method, you will get a starter project, where you can
       make your changes directly on GitHub. The changes will automatically
-      be rendered.
+      be rendered. To get access to a sarter project, you must contact the
+      documentation team. Use the Slack channel **#typo3-documentation**
+      as described in :ref:`slack`.
 
    5. Various Online or Local Tools for reST Rendering
 
