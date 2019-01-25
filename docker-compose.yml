@@ -6,4 +6,3 @@ services:
     - ./:/PROJECT:ro
     - ./Documentation-GENERATED-temp:/RESULT
     command: makehtml
-    user: 1000:1000
