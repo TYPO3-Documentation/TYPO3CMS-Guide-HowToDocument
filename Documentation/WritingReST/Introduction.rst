@@ -65,9 +65,9 @@ We will not go into the exact definition here. For now, all you need to know
 is that some of the markup you will be using is added on by Sphinx.
 This is the case for some additional directives such as:
 
-* the :ref:`:ref: <intersphinx>` directive for cross-referencing and
-  other :ref:`textroles <textroles>`
-* the :ref:`toctree <rest-menu-hierachy>` directive for creating menus
+* the :ref:`:ref: <intersphinx>` directive for cross-referencing
+* the :ref:`toctree <rest-menu-hierachy>` directive for creating table of contents (=toc)
+  and menus
 * the :ref:`code-block <codeblock-directive>` directive for creating code blocks with syntax
   highlighting. `code-block` is a Sphinx directive, while `code`
   is a reStructuredText directive. We commonly use `code-block`,
