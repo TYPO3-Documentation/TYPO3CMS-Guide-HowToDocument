@@ -75,16 +75,4 @@ Drawbacks of Markdown
 
 Not everything is currently rendered correctly with the existing toolchain in Markdown.
 
-Drawbacks of Using a Single File
---------------------------------
-
-If you just use a single file as documentation, such as README.rst, you cannot
-add additional settings, that may be useful. For example:
-
-* You can't add a link to the issues or repository that will be displayed under
-  "Related Links" and are defined in Documenation/Settings.cfg
-* You cannot use the intersphinx linking mechanism to link to other manuals.
-  This is also configured in Settings.cfg
-* You are missing out on some cool features such as embedding YouTube videos
-  (this requires the sphinxcontrib.youtube extension, also defined in
-  Settings.cfg).
+See this open `issue <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues/39>`__
