@@ -33,6 +33,7 @@ and references to the :ref:`TYPO3 Content Style Guide <content-styleguide>`.
 
 **What's new in this guide**
 
+* 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
 * 2019-01-22 :ref:`news-2019-guidelines-for-images`
 * 2019-01-04 :ref:`news-2019-tools-for-editing-rest`
 * 2018-11-27 :ref:`news-2018-content-styleguide`

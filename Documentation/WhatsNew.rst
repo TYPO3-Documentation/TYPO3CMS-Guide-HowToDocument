@@ -10,9 +10,22 @@ Whats New in This Guide
 2019
 ====
 
-.. _news-2019-guidelines-for-images:
+.. _news-2019-rest-cheat-sheet:
 .. rst-class:: panel panel-default
 
+NEW: Cheat Sheet for reST and Sphinx
+------------------------------------
+
+2019-02-03 by Sybille Peters
+
+See the new :ref:`rest-cheat-sheet` for commonly
+used markup on one page.
+
+
+
+
+.. _news-2019-guidelines-for-images:
+.. rst-class:: panel panel-default
 
 NEW: Guidelines for Images
 --------------------------
@@ -32,6 +45,8 @@ have been supplied by the Design Team, which can be used.
 As always, please look at the existing documentation, report problems as `issues
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__, make
 suggestions or give feedback in the Slack channel (see :ref:`slack`).
+
+
 
 
 .. _news-2019-tools-for-editing-rest:

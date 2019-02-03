@@ -44,4 +44,5 @@ available. For more information, see `Restructured Text (reST) and Sphinx CheatS
 
    Introduction
    CommonPitfalls/Index
+   CheatSheet
    Reference
