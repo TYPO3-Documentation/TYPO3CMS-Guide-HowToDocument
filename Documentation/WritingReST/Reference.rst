@@ -26,6 +26,7 @@ reST & Sphinx Reference
    YoutubeVideos
    Admonitions
    Comments
+   Tables
    SpecialCharacters
    Orphans
    CleverRest

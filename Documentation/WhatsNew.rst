@@ -10,6 +10,19 @@ Whats New in This Guide
 2019
 ====
 
+.. _news-2019-rest-tables:
+.. rst-class:: panel panel-default
+
+NEW: Tables (reST and Sphinx Reference)
+---------------------------------------
+
+2019-02-05 by Sybille Peters
+
+See the new page :ref:`rest-tables` describing how to use tables
+in reST.
+
+
+
 .. _news-2019-rest-cheat-sheet:
 .. rst-class:: panel panel-default
 
