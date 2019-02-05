@@ -4,52 +4,37 @@
 .. _toctree:
 .. _rest-menu-hierachy:
 
-==============
-Menu (toctree)
-==============
+==================================================
+Toctree and the Hierarchical Structure of a Manual
+==================================================
 
 You can define what should be included in the menu with the
 `.. toctree:: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`__ directive.
 Only `.rst` files that are included in a toctree, are included in the menu.
 
+The toctree directive can also be used to display a table of contents
+on current page (if :hidden: is not added in toctree).
+
 The first headline of an .rst file is its "doctitle". That is the document's
-title property. It is used for references and appears in menus.
+title property. The title and the following headlines are used for
+cross-references and appear in menus and table of contents.
 
 General Rules for Using `..toctree::`
 =====================================
 
 .. rst-class:: bignums
 
-1. Each .rst file should have a doctitle.
+1. Each .rst file should have a doctitle, for example:
+
+   .. code-block:: rest
+
+      ==========
+      Some Title
+      ==========
 
 2. Do not use any additional headlines in the file **if** it contains a `.. toctree::` directive.
 
 *Note:* What we call "headlines" here is called "sections" in reST-jargon, see :ref:`Headlines-and-sections`.
-
-File Structure and Menu Structure
-=================================
-
-Typically, toctree is used in the following way, where each toplevel file `Index.rst`
-includes the files on the immediate sublevel in its toctree:
-
-.. code-block:: none
-
-  Documentation/Index.rst
-  |
-  >>>  Documentation/Subdir/Index.rst
-       |
-       >>> Documentation/Subdir/Moreinfo.rst
-
-
-* `Documentation/Index.rst` : toctree includes all files `Documentation/*/Index.rst`
-* `Documentation/Subdir1/Index.rst` : toctree includes all `.rst` files in `Subdir1` except `Index.rst`
-* `Documentation/Subdir1/MoreInfo.rst` : no toctree
-
-You are not restricted to doing this file, your file structure can also look like this:
-
-* `Documentation/Index.rst`  : toctree includes all files `Documentation/*.rst`
-* `Documentation/Topic1.rst` : no toctree
-* `Documentation/Topic2.rst` : no toctree
 
 
 Toctree Examples
@@ -59,7 +44,7 @@ Example: hidden
 ---------------
 
 This will create a menu, using the header of Introduction/Index.rst and Configuration/Index.rst.
-The menu structure is not displayed on the current page as well ("hidden").
+The menu structure is not displayed as a table of contents on the current page ("hidden").
 
 .. code-block:: rest
    :linenos:
@@ -93,8 +78,8 @@ file) will be displayed (titlesonly).
 Example: https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/Appendix/Index.html
 
 
-Toctree and the Hierarchical Structure of a Manual
-==================================================
+How it works
+============
 
 2017-02-13 by Martin Bless
 
@@ -129,7 +114,7 @@ Problem
          Chapter-3
 
    The example feels very natural. We are thinking of the introduction
-   follwed by the single chapters. Unfortunately we get something different.
+   followed by the single chapters. Unfortunately we get something different.
    The chapters will all be a *subpart* of *Introduction* and not at the same level.
    It is exactly what the Sphinx documentation states and there is no easy way to
    "tweak" this behavior.
