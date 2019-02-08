@@ -34,14 +34,14 @@ to :ref:`ask for help <how-to-get-help>`.
 
 1. Get a GitHub account:
 
-   `Join Github <https://github.com/join>`__
+   `Join GitHub <https://github.com/join>`__
 
 2. Find a page that needs fixing:
 
    Pick a manual, for example :ref:`t3start:start` or :ref:`t3install:start`
    and find a page there, that you want to change.
 
-3. Click on "Edit me on Github":
+3. Click on "Edit me on GitHub":
 
    You should find the button on the top right of any page!
 
@@ -91,7 +91,7 @@ to :ref:`ask for help <how-to-get-help>`.
 
 9. Create pull request:
 
-   Github will now show you an overview of your changes. If this is
+   GitHub will now show you an overview of your changes. If this is
    ok, click on "Create pull request".
 
    .. image:: ../images/github-comparing-changes.png
@@ -105,7 +105,7 @@ to :ref:`ask for help <how-to-get-help>`.
 10. You're done!
 
    Well, almost. Your change will now be reviewed. A reviewer might
-   suggest changes. Monitor your notifications (email) from Github. If at any
+   suggest changes. Monitor your notifications (email) from GitHub. If at any
    point, you are not sure what to do, don't hesitate to
    :ref:`ask for help <how-to-get-help>`. When your pull request is accepted,
    it will be merged. You will get a notification (email).
