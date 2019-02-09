@@ -3,6 +3,7 @@
 
 
 .. _docs-official-how-you-can-help:
+.. _how-to-contribute:
 
 ================
 How You Can Help
