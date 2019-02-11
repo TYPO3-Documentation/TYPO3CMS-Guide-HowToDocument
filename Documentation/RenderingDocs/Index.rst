@@ -69,5 +69,5 @@ Here, we will briefly also explain the other methods for rendering.
    :hidden:
    :glob:
 
-   Quickstart
+   Rendering Documentation with Docker  ➜  <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>
    Troubleshooting
