@@ -82,7 +82,8 @@ Quick Start
 
 6. Render the documentation
 
-   Render with Docker in order to test the changes (see :ref:`rendering-docs-quickstart`).
+   Render with Docker in order to test the changes
+   (see `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__).
 
    .. code-block:: bash
 
@@ -144,7 +145,7 @@ More information
 For more information in this guide:
 
 * :ref:`Formatting-with-reST`
-* :ref:`rendering-docs-quickstart`
+* `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
 
 
 For more information about GitHub see the help pages on Github or other

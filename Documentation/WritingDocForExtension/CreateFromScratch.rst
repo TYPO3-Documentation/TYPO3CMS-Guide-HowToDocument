@@ -80,7 +80,7 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    Before you publish your changes, make sure the documentation is rendered
    correctly.
 
-   Look at :ref:`rendering-docs-quickstart` for a quick start.
+   Look at `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__ for a quick start.
 
 6. When You Are Done, Publish Your Changes
 

@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _rendering-docs:
+.. _rendering-docs-quickstart:
 
 ===========================
 Howto: Render Documentation
@@ -31,7 +32,7 @@ Here, we will briefly also explain the other methods for rendering.
 
    1. Render Documentation Locally Using Docker
 
-      See :ref:`rendering-docs-quickstart`
+      See `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
 
    2. Preview on GitHub
 
