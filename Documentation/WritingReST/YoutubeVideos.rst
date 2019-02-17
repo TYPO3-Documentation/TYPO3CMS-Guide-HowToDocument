@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _youtube-videos:
+.. _youtube:
 
 ====================
 Embed YouTube Videos
@@ -26,11 +27,11 @@ Embed YouTube Videos
       2018-01-19 by Mathias Schreiber
 
       .. youtube:: wNxO-aXY5Yw
-      
+
    How it looks:
 
 
    2018-01-19 by Mathias Schreiber
 
    .. youtube:: wNxO-aXY5Yw
-   
+
