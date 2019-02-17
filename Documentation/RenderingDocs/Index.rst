@@ -4,9 +4,9 @@
 .. _rendering-docs:
 .. _rendering-docs-quickstart:
 
-===========================
-Howto: Render Documentation
-===========================
+====================
+Render Documentation
+====================
 
 This chapter explains how to render a manual locally on your machine
 with Docker.

@@ -3,9 +3,9 @@
 
 .. _basic-principles:
 
-=======================================
-Basic Principles of TYPO3 Documentation
-=======================================
+================
+Basic Principles
+================
 
 
 Introduction to TYPO3 Documentation
@@ -35,7 +35,7 @@ TYPO3 documentation may be one of the following:
 
 * It can be one of the `official manuals <https://docs.typo3.org/>`__
   like :ref:`t3coreapi:start`.
-* It can be the documentation of a 
+* It can be the documentation of a
   `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 * It can be the documentation of a
   `3rdparty extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
@@ -70,7 +70,7 @@ So, What's Rendering?
 
 Rendering means (in this specific case) converting the reST
 format (.rst files) into its final, readable form, which you can view in your
-browser, like this page, which you are probably reading online. If not, load 
+browser, like this page, which you are probably reading online. If not, load
 https://docs.typo3.org/typo3cms/HowToDocument/BasicPrinciples.html in your browser.
 
 In comparison, this is what the original source file looks like: https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
