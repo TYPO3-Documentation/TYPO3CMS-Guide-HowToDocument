@@ -16,7 +16,7 @@ and learn as you go along. In that case, pick a task in the list below.
    Before you start, we recommend that you read :ref:`basic-principles` to
    familiarize yourself with the structure and
    :ref:`reStructuredText & Sphinx Introduction <writing-rest-introduction>`.
-   Additionally, keep the :ref:`cheat-sheet` handy to look up the syntax.
+   Additionally, keep the :ref:`rest-cheat-sheet` handy to look up the syntax.
 
 
 Find your task here and start reading:
