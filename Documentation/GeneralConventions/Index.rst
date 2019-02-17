@@ -3,9 +3,9 @@
 
 .. _general-conventions:
 
-============================================
-Style Guide, Coding Guidelines & Conventions
-============================================
+===========
+Conventions
+===========
 
 In general, the documentation follows the conventions as described in the
 following sections.

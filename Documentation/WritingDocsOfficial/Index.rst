@@ -5,9 +5,9 @@
 .. _docs-contribute:
 .. _docs-contribute-github-method:
 
-===================================
-Howto: Contribute to docs.typo3.org
-===================================
+==========
+Contribute
+==========
 
 The community is welcome to make changes to the documentation. Any
 help is appreciated!
