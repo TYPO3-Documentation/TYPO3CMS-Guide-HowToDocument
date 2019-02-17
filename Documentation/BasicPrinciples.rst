@@ -23,19 +23,19 @@ Schwemer's blog TYPO3 Worx:
 
    Please note that the section "CONVERT REST TO “READABLE” FORMATS" in part 3 is
    slightly outdated. Currently, using the Docker container for :ref:`rendering
-   <rendering-docs>` is the recommended approach. If you edit on Github directly,
-   Github preview should be sufficient for making small changes.
+   <rendering-docs>` is the recommended approach. If you edit on GitHub directly,
+   GitHub preview should be sufficient for making small changes.
 
 .. _whats-typo3-documentation:
 
 What's TYPO3 Documentation?
-==========================================
+===========================
 
 TYPO3 documentation may be one of the following:
 
 * It can be one of the `official manuals <https://docs.typo3.org/>`__
   like :ref:`t3coreapi:start`.
-* It can be the documentation of a 
+* It can be the documentation of a
   `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 * It can be the documentation of a
   `3rdparty extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
@@ -65,26 +65,61 @@ All of these examples have a few things in common:
 
 .. _whats-rendering:
 
-So, What's Rendering?
-=====================
+What's "Rendering"?
+===================
 
 Rendering means (in this specific case) converting the reST
 format (.rst files) into its final, readable form, which you can view in your
-browser, like this page, which you are probably reading online. If not, load 
+browser, like this page, which you are probably reading online. If not, load
 https://docs.typo3.org/typo3cms/HowToDocument/BasicPrinciples.html in your browser.
 
-In comparison, this is what the original source file looks like: https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
+In comparison, this is what the original source file looks like:
+https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
 
 Technically, this means converting the reST (.rst files) into HTML, automatically
 creating the menu, using the current theme to add additional styles and images.
 
+
+
+Documentation Types
+===================
+
+Manual
+------
+
+A "manual" in the context of TYPO3 documentation is being used to talk about
+one unit of documentation, which usually has it's own git repository (or is
+included in the git repository of an extension) and consists of one :file:`Documentation`
+folder. A "manual" can be a tutorial, such as the :ref:`t3start:start`, a guide,
+an extension manual or something else.
+
+Tutorial
+--------
+
+Tutorials are designed to be step-by-step instructions specifically created to walk a
+beginner through a particular task from beginning to end. To facilitate effective
+learning, tutorials provide examples to illustrate the subjects they cover.
+
+In addition, tutorials provide guidance on how to avoid common pitfalls and highlight
+key concepts that should be remembered for future reference.
+
+Guide
+-----
+
+Guides are designed to familiarize a reader with a specific topic in order to provide a
+working knowledge of that particular process. Readers should peruse the guide from cover
+to cover in order to gain a practical overview of the process. Once completed, the Guide
+becomes a practical reference tool to which a reader can refer as needed. Guides offer
+advice on how best to achieve a given task.
+
 .. _overview-of-types:
 
-Different Kinds of TYPO3 Documentation
-======================================
+Documentation Contribution Matrix
+=================================
 
 
-The things that are different for various kinds of documentation are:
+Considering how to contribute, the things that differ for various kinds of documentation
+are:
 
 * Where the issues are maintained (e.g. on Forge or GitHub)
 * Where the source code (Git repository) is kept
@@ -133,7 +168,7 @@ manual, click on "Related Links" and then click on "Issues" or "Repository".
 
 
 Official TYPO3 Manuals
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 The official TYPO3 manuals are hosted on GitHub. Editing the documentation
 requires a GitHub account and involves creating a pull request on GitHub.
@@ -141,7 +176,7 @@ requires a GitHub account and involves creating a pull request on GitHub.
 Find out more about how to contribute: :ref:`docs-contribute`.
 
 Documentation for the Core
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 The documentation for the core (changelog and system extensions) is added
 to the TYPO3 source code. For this reason, the workflow of changing
@@ -153,7 +188,7 @@ in general or about :ref:`t3contribute:Adding-documentation` in the Contribution
 Guide.
 
 Documentation for 3rdparty Extensions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 The documentation for a 3rdparty extension is maintained within the
 source-code of this extensions. If and where it is edited depends
@@ -163,7 +198,7 @@ To find out how to contribute documentation for a specific extension:
 :ref:`contribute-to-3rdparty-extension`
 
 What about the Wiki?
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 In this manual, we are focusing on TYPO3 documentation in reST / sphinx
 that can be found on docs.typo3.org.
