@@ -7,6 +7,7 @@
 Styled Numbered Sections
 ========================
 
+.. _big-nums-xxl:
 
 With XXL Big Numbers
 ====================
@@ -43,7 +44,7 @@ With XXL Big Numbers
    * Fish. Very good, Miss Sophie. Did you enjoy the soup?
 
 
-
+.. _big-nums:
 
 With Big Numbers
 ================

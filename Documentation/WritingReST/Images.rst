@@ -3,6 +3,7 @@
 
 
 .. _how-to-document-images:
+.. _rest-images:
 
 ======
 Images
@@ -159,5 +160,5 @@ Some text ... (will be displayed on the right of the image).
 Example 5: Image with border
 --------------------------------
 
-.. image:: ../images/a4.jpg   
+.. image:: ../images/a4.jpg
    :class: with-border

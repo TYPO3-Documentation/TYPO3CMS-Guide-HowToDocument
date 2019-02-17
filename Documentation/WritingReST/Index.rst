@@ -24,6 +24,9 @@ to detect and show errors in the syntax.
 You don't need to read the entire chapter, just lookup
 the section that is relevant for what you plan to do.
 
+Or, use the :ref:`cheat-sheet, which contains the most commonly used
+markup on one page.
+
 We won't be covering every reST and sphinx markup that is
 available. For more information, see `Restructured Text (reST) and Sphinx CheatSheet
 <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html>`__

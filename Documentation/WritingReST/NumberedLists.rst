@@ -20,3 +20,6 @@ Numbered Lists
 #. abc
 #. bcd
 #. cde
+
+
+See also :ref:`styled-numbered-lists`.
