@@ -55,7 +55,7 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
       # cp .gitignore (make sure you don't accidentally overwrite existing one though!)
       cp -n TYPO3CMS-Example-ExtensionManual/.gitignore <extension-directory>/.gitignore
       # cp .editorconfig (make sure you don't accidentally overwrite existing one though!)
-      cp -n TYPO3CMS-Example-ExtensionManual/.editorconfi <extension-directory>/.editorconfig
+      cp -n TYPO3CMS-Example-ExtensionManual/.editorconfig <extension-directory>/.editorconfig
 
    You may also want to consider adding :ref:`CONTRIBUTING.rst <contributing-rst>`
    and :ref:`README.rst <readme-rst>` to your extension,
