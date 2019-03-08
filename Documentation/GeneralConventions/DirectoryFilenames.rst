@@ -41,9 +41,6 @@ It is **strongly recommended** to do it the way it is described here.
 For alternatives, please look at :ref:`supported-filenames-and-formats`.
 
 
-Required  Files
-===============
-
 At least the files :file:`Settings.cfg`, :file:`Includes.txt` and
 :file:`Index.rst` are required in the :file:`Documentation` folder (at least
 if you are creating an entire sphinx project and not a single-file solution).
@@ -53,7 +50,7 @@ The rest of the files listed here are optional, but strongly recommended.
 .. _settings-cfg:
 
 Settings.cfg
-------------
+============
 
 :file:`Documentation/Settings.cfg`
 
@@ -84,7 +81,7 @@ We are showing the contents of this manual's Settings.cfg by using the
 .. _includes-txt:
 
 Includes.txt
-------------
+============
 
 :file:`Documentation/Includes.txt`
 
@@ -105,7 +102,7 @@ We are showing the contents of this manual's Includes.txt by using the
 .. _index-rst:
 
 Index.rst
----------
+=========
 
 :file:`Documenation/Index.rst`
 
@@ -120,7 +117,7 @@ Use `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocum
 in this manual as an example.
 
 Minimal Example
-~~~~~~~~~~~~~~~
+---------------
 
 .. code-block:: rest
    :linenos:
@@ -147,7 +144,7 @@ Minimal Example
   :file:`Introduction/Index.rst`, :file:`Configuration/Index.rst`
 
 Complete Example
-~~~~~~~~~~~~~~~~
+----------------
 
 We are showing the contents of this manual's Index.rst by using the
 `literalincludes` directive.
@@ -159,7 +156,7 @@ We are showing the contents of this manual's Index.rst by using the
 .. _editorconfig-in-filenames:
 
 .editorconfig
--------------
+=============
 
 :file:`.editorconfig`
 
@@ -172,7 +169,7 @@ as an example.
 .. _gitignore-in-filenames:
 
 .gitignore
-----------
+==========
 
 :file:`.gitignore`
 
@@ -189,7 +186,7 @@ Use the file in `this manual: .gitignore
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.gitignore>`__ as a template.
 
 Minimal Example
-~~~~~~~~~~~~~~~
+---------------
 
 .. code-block:: none
 
@@ -203,7 +200,7 @@ Minimal Example
 .. _readme-rst:
 
 README.rst
-----------
+==========
 
 This file will be displayed on GitHub when someone browses through the
 repositories. Use `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/README.rst>`__
@@ -214,7 +211,7 @@ The link "Read online" will help people to jump directly to the rendered version
 .. _contributing-rst:
 
 CONTRIBUTING.rst
-----------------
+================
 
 This file should contain some information about contributing to the documentation.
 
