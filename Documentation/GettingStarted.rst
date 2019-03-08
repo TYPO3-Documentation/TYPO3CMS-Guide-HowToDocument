@@ -29,8 +29,5 @@ Find your task here and start reading:
   tools, you just need a browser and a GitHub account.
 * :ref:`docs-contribute-git-docker` if you would like to contribute to
   the official documentation and are already familiar with Git and Docker
-*  gives an introduction to the syntax
-  of reStructuredText and Sphinx, which is used to write documentation
-  files
 * :ref:`rendering-docs` if you would like to start with rendering the
   documentation locally with docker.
