@@ -149,7 +149,7 @@ Minimal Example
 Complete Example
 ~~~~~~~~~~~~~~~~
 
-We are showing the contents of this manual's Includes.txt by using the
+We are showing the contents of this manual's Index.rst by using the
 `literalincludes` directive.
 
 .. literalinclude:: ../Index.rst
