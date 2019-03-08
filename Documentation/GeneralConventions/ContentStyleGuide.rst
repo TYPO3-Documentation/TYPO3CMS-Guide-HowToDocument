@@ -10,8 +10,6 @@ Spelling
 
 
 
-The same applies to TYPO3 documentation!
-
 General Information
 ===================
 
