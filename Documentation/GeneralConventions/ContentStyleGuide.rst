@@ -273,12 +273,6 @@ Spelling & Preferred Terms Reference
 
 The spelling here is how the terms will be used in normal text (not headlines).
 
-Some spelling may be context specific. For example, when we are referring to
-GUI elements, we usually spell them in the way, they are used in the GUI.
-
-Additionally, there may be more than one term with the same meaning. Here, we list
-the preferred term.
-
 backend (noun)
    We usually do not capitalize this. This is not a specific TYPO3 thing.
    Fluid is capitalized, like Docker (see :ref:`spelling-proper-names`). Backend
