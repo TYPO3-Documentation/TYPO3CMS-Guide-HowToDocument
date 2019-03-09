@@ -3,9 +3,9 @@
 
 .. _styled-numbered-lists:
 
-========================
-Styled Numbered Sections
-========================
+===================================
+Styled Numbered Sections (big-nums)
+===================================
 
 .. _big-nums-xxl:
 
