@@ -2,6 +2,8 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
+.. _list-items-as-buttons:
+
 =====================
 List Items as Buttons
 =====================
