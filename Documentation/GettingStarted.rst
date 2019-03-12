@@ -30,4 +30,4 @@ Find your task here and start reading:
 * :ref:`docs-contribute-git-docker` if you would like to contribute to
   the official documentation and are already familiar with Git and Docker
 * :ref:`rendering-docs` if you would like to start with rendering the
-  documentation locally with docker.
+  documentation locally with Docker.
