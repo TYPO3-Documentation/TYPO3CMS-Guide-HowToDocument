@@ -16,8 +16,6 @@ Schwemer's blog TYPO3 Worx:
 
 * `GUIDE TO TYPO3 DOCUMENTATION – PART 1: THE USER-INTERFACE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-part-1-the-ui/>`__
 * `GUIDE TO TYPO3 DOCUMENTATION – PART 2: CONTENT STRUCTURE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-content-structure/>`__
-* `GUIDE TO TYPO3 DOCUMENTATION – PART 3: CONTRIBUTION AND REST HELPERS! <https://typo3worx.eu/2017/02/guide-to-typo3-documentation-part-3-contribute/>`__
-
 
 .. important::
 
@@ -38,7 +36,7 @@ TYPO3 documentation may be one of the following:
 * It can be the documentation of a
   `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 * It can be the documentation of a
-  `3rdparty extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
+  `third party extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
 * TYPO3 documentation can also be a
   `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
   entry for the core, for example a documented breaking change or new feature.
