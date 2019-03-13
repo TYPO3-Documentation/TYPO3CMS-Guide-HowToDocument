@@ -47,7 +47,8 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
      the generated documentation in :file:`Documentation-GENERATED-temp` to your Git
      repository.
    * :ref:`editorconfig-in-filenames` is useful, so you will use the
-     recommended Coding Guidelines in your editor or IDE. You may need to set this
+     recommended :ref:`Coding Guidelines <format-rest-cgl>`
+     in your editor or IDE. You may need to set this
      up first (see :ref:`phpstorm-editorconfig` for PhpStorm).
 
    .. code-block:: bash
@@ -69,7 +70,7 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
    bottom of rendered page and click on "View page source" to see reST source.)
 
    Check out the section on :ref:`reST <Formatting-with-reST>` to see how to format headlines,
-   code-blocks, images etc.
+   code-blocks, images etc. and use the :ref:`rest-cheat-sheet` as a handy reference.
 
 4. Fill out Settings.cfg
 
@@ -84,12 +85,13 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
 6. When You Are Done, Publish Your Changes
 
-   If you are working on your own extension, make it publicly available.
+   If you are working on your own extension, `make it publicly available
+   <https://extensions.typo3.org/faq/publish-an-extension/>`__.
    The documentation will then automatically be rendered on docs.typo3.org.
 
 .. tip::
 
    Think about hosting your extension repository on GitHub.
-   That way others can report issues and assist you by pushing change requests
-   for the documentation and code as pull requests!
+   That way others can report issues and assist you by creating change requests
+   for the documentation and code!
 
