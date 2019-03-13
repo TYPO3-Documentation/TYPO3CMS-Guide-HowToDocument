@@ -10,28 +10,31 @@ Writing Documentation
 :Status:          Fully revised (July, 2018)
 
 
-**About this manual**
+**About this manual:**
 
    This manual is about writing TYPO3 documentation
-   (`docs.typo3.org <https://docs.typo3.org>`__). It contains information for
-   how to format in :ref:`reST and sphinx <Formatting-with-reST>`. You can find out,
+   (`docs.typo3.org <https://docs.typo3.org>`__). You can find out about
    how to :ref:`contribute to the documentation <docs-contribute>` and
    :ref:`write extension documentation from scratch <how-to-start-documentation-for-ext>`.
 
+**Find out more in:**
 
-**Find out more**
+   .. rst-class:: horizbuttons-primary-m
 
-.. rst-class:: horizbuttons-primary-m
-
-:ref:`getting-started`
+   - :ref:`getting-started`
 
 
-**What's new in this guide**
+**Tips about writing documentation - did you know?**
 
-   * 2019-02-05 :ref:`news-2019-rest-tables`
+   -  :ref:`tip-of-the-day-2017-02-13`
+   -  :ref:`tip-of-the-day-2016-10-08`
+   -  :ref:`tip-of-the-day-2016-09-11`
+   -  :ref:`All the tips<Tip-of-the-day>`
+
+**What's new in this guide:**
+
    * 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
    * 2019-01-22 :ref:`news-2019-guidelines-for-images`
-   * 2019-01-04 :ref:`news-2019-tools-for-editing-rest`
    * 2018-11-27 :ref:`news-2018-content-styleguide`
    * :ref:`news-2018-more`
 
