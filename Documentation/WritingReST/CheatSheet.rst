@@ -38,7 +38,7 @@ reST & Sphinx Cheat Sheet
 Source (header with header label):
    .. code-block:: rest
 
-      .. _rest-cheat sheet:
+      .. _rest-cheat-sheet:
       =========================
       reST & Sphinx Cheat Sheet
       =========================
