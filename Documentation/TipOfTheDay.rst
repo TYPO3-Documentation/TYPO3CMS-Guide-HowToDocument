@@ -3,11 +3,44 @@
 .. include:: Includes.txt
 
 
-==============
-Tip Of The Day
-==============
+=============
+Did you know?
+=============
 
 .. _Tip-of-the-day:
+
+
+
+.. _tip-of-the-day-2019-03-13:
+.. rst-class:: panel panel-default
+
+Extension Authors: How to Link to Your Issues
+=============================================
+
+2019-03-13 by Sybille Peters
+
+
+Do you want people to find the issues for your extension easily when
+reading your extension documentation on docs.typo3.org?
+
+Add `project_issues` to your :ref:`settings-cfg`:
+
+.. code-block:: none
+
+   [html_theme_options]
+
+   project_issues = https://github.com/<user>/<extension-key>/issues
+
+Replace `<user>` and `<extension-key>` with your username and extension key
+or replace entire URL with URL to your issues.
+
+A link to the Issues will then be available in the "Related Links" section.
+
+.. image:: images/related-links.svg
+   :class: with-shadow
+
+Example extension: `news <https://docs.typo3.org/typo3cms/extensions/news/>`__
+
 
 
 .. _tip-of-the-day-2017-02-13:

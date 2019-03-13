@@ -24,19 +24,26 @@ Writing Documentation
    - :ref:`getting-started`
 
 
-**Tips about writing documentation - did you know?**
+**Did you know?**
 
+   -  :ref:`tip-of-the-day-2019-03-13`
    -  :ref:`tip-of-the-day-2017-02-13`
    -  :ref:`tip-of-the-day-2016-10-08`
    -  :ref:`tip-of-the-day-2016-09-11`
-   -  :ref:`All the tips<Tip-of-the-day>`
 
-**What's new in this guide:**
+   .. rst-class:: horizbuttons-primary-m
+
+   -  :ref:`All tips <Tip-of-the-day>`
+
+**What's new in this guide?**
 
    * 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
    * 2019-01-22 :ref:`news-2019-guidelines-for-images`
    * 2018-11-27 :ref:`news-2018-content-styleguide`
-   * :ref:`news-2018-more`
+
+   .. rst-class:: horizbuttons-primary-m
+
+   * :ref:`All news <whats-new>`
 
 
 .. toctree::
