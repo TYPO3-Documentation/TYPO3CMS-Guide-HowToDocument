@@ -6,7 +6,7 @@
 Writing Documentation
 =====================
 
-:Writing here:    TYPO3 Documentation Team & community
+:Writing here:    :ref:`TYPO3 Documentation Team & community <contact-us>`
 :Status:          Fully revised (July, 2018)
 :License:         `Creative Commons License <https://en.wikipedia.org/wiki/Creative_Commons_license>`__ (CC BY 4.0)
 
@@ -31,7 +31,6 @@ Writing Documentation
    -  :ref:`tip-of-the-day-2019-03-13`
    -  :ref:`tip-of-the-day-2017-02-13`
    -  :ref:`tip-of-the-day-2016-10-08`
-   -  :ref:`tip-of-the-day-2016-09-11`
 
    .. rst-class:: horizbuttons-primary-m
 

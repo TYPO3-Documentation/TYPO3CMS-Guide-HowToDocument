@@ -3,6 +3,7 @@
 .. _how-to-get-help:
 .. _slack:
 .. _help:
+.. _contact-us:
 
 ==============
 Help & Support
