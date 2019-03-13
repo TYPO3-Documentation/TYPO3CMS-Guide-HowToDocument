@@ -7,9 +7,12 @@
 Menu Hierarchy
 ==============
 
-The file hiearchy on disc does not affect the menu hierarchy in any way. But, as a general
+Technically, the file hiearchy on disc must not affect the menu hierarchy in any way. But, as a general
 convention, we use the common practice that the file hierarchy reflects the menu
 hierarchy.
+
+Multi-File Solution
+===================
 
 So, the menu structure  for the files described under
 :ref:`general-conventions-dir-and-filenames`
@@ -55,3 +58,35 @@ See :ref:`example-toctree` to see how this is rendered.
 .. image:: ../images/toctree.png
    :class: with-shadow
 
+Single-File Solution
+====================
+
+What you can also do, is put everything into one file, e.g. Index.rst contains:
+
+.. code-block:: rest
+
+   =======
+   Chapter
+   =======
+   
+   Topic 1
+   =======
+   
+   Subtopic 1
+   ----------
+   
+   some text
+   
+   Subtopic 2
+   ----------
+   
+   some text
+   
+   
+The rendered result will look the same as the multi-file example above, meaning the menu hierarchy
+and the rendered headings on the page.
+
+.. tip::
+
+   Whatever variant you choose, it depends what is already common practice in the manual you are
+   working on and what is easiest to manage. 
