@@ -20,7 +20,7 @@ Extension Authors: How to Link to Your Issues
 2019-03-13 by Sybille Peters
 
 
-Do you want people to find the issues for your extension easily when
+Do you want contributors to find the issues for your extension easily when
 reading your extension documentation on docs.typo3.org?
 
 Add `project_issues` to your :ref:`settings-cfg`:
@@ -266,12 +266,12 @@ having a border because they are not separated enough from the background. Examp
 1. Here is the markup to include an image as a 'figure'. Figures always are of css type 'block' and can have
    a caption:
 
-   .. figure:: files/2016-09-11-1.png
+   .. figure:: images/2016-09-11-1.png
       :class: with-border
 
 2. And this is what we see. The image is not clearly distinguished:
 
-   .. figure:: files/2016-09-11-2.png
+   .. figure:: images/2016-09-11-2.png
 
 3. Now the same markup plus the extra class:
 
@@ -280,7 +280,7 @@ having a border because they are not separated enough from the background. Examp
 
 4. This screenshot benefits from having a border:
 
-   .. figure:: files/2016-09-11-4.png
+   .. figure:: images/2016-09-11-4.png
 
 Now: To border or not to border, that's your decision.
 
