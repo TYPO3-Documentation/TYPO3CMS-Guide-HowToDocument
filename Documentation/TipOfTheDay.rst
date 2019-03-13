@@ -42,6 +42,25 @@ A link to the Issues will then be available in the "Related Links" section.
 Example extension: `news <https://docs.typo3.org/typo3cms/extensions/news/>`__
 
 
+.. _tip-of-the-day-trigger-rebuild:
+.. rst-class:: panel panel-default
+
+Trigger documentation rendering
+===============================
+
+To trigger a rebuild of a manual, click the "request_rebuild.php" file
+in the respective .../\*.git.make folder.
+
+Here are the links:
+
+- Request rebuild for `the official TYPO3 CMS manuals <https://docs.typo3.org/~mbless/github.com/TYPO3-Documentation/TYPO3/>`_
+- Request rebuild for `TYPO3 system extension manuals <https://docs.typo3.org/~mbless/git.typo3.org/TYPO3CMS/Extensions>`_
+- Request rebuild for `manuals of extensions hosted on GitHub <https://docs.typo3.org/~mbless/github.com>`_
+
+
+**Note:** After the rebuild, the \*.git.make folder also contains some
+informative log files:
+
 
 .. _tip-of-the-day-2017-02-13:
 .. rst-class:: panel panel-default
