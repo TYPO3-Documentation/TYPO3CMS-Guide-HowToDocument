@@ -28,13 +28,15 @@ Writing Documentation
 
 **Did you know?**
 
-   -  :ref:`tip-of-the-day-2019-03-13`
+   -  Extension Authors: :ref:`tip-edit-me-on-github`
+   -  Extension Authors: :ref:`tip-link-to-issues`
    -  :ref:`tip-of-the-day-2017-02-13`
    -  :ref:`tip-of-the-day-2016-10-08`
 
    .. rst-class:: horizbuttons-primary-m
 
    -  :ref:`All tips <Tip-of-the-day>`
+   -  :ref:`Tips for extension authors <tips-extension-authors>`
 
 **What's new in this guide?**
 
