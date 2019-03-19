@@ -2,15 +2,13 @@
 
 .. include:: Includes.txt
 
+.. _Tip-of-the-day:
 
 =============
 Did you know?
 =============
 
-.. _Tip-of-the-day:
-
-
-
+See also: :ref:`tips-extension-authors`
 
 
 .. _tip-of-the-day-trigger-rebuild:
