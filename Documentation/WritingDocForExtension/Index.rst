@@ -24,3 +24,4 @@ be a system extension in the core.
    CreateFromScratch
    ContributeToThirdPartyExtension
    ContributeToSystemExtension
+   ExtensionAuthorTips
