@@ -104,7 +104,7 @@ We are showing the contents of this manual's Includes.txt by using the
 Index.rst
 =========
 
-:file:`Documenation/Index.rst`
+:file:`Documentation/Index.rst`
 
 .. important::
 

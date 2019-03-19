@@ -15,7 +15,7 @@ The documentation for all extensions is structured in the same way: The
 extension contains a directory `Documentation` with at least the following files:
 
 * `Index.rst` : contains text to be rendered on the startpage and the toctree
-* `Includes.txt` : some basic sphinx directives
+* `Includes.txt` : some basic definitions for sphinx
 * `Settings.cfg` : settings
 
 These are the same files and general principles that apply to any documentation
@@ -33,21 +33,21 @@ About TYPO3 Extensions
 ======================
 
 In TYPO3, basically everything is an extension. There are system extensions
-and 3rdparty extentsions:
+and third party extensions:
 
 System Extensions
 -----------------
 
 System extensions (or core extensions) are extensions that are maintained
 in the TYPO3 source. For a list of system extensions, look in the Extension
-Manager or in the TYPO3 source, e.g. `Github: TYPO3.CMS: /typo3/sysext
+Manager or in the TYPO3 source, e.g. `GitHub: TYPO3.CMS: /typo3/sysext
 <https://github.com/TYPO3/TYPO3.CMS/tree/master/typo3/sysext>`__.
 
 Examples for system extensions are:
 
 * `ext:form <https://docs.typo3.org/typo3cms/extensions/form/>`__
 * `ext:fluid_styled_content <https://docs.typo3.org/typo3cms/extensions/fluid_styled_content/>`__
-* ext:rte_ckeditor
+* `ext:rte_ckeditor <https://docs.typo3.org/typo3cms/extensions/rte_ckeditor/>`__
 
 Note, that if your system has been installed with composer, not all system extensions may exist
 in the system, if each system extension has been required separately as "subtree splitted packages"
@@ -70,26 +70,26 @@ For more information about contributing to system extensions, see :ref:`contribu
 in this guide.
 
 See also :ref:`overview-of-types` for an overview of the issues, source and workflow for various
-kinds of documenation, including system extensions.
+kinds of documentation, including system extensions.
 
-3rdparty Extensions
--------------------
+Third Party Extensions
+----------------------
 
-3rdparty extensions are extension that can be created by anyone. They are not included in the TYPO3 core
+third party extensions are extension that can be created by anyone. They are not included in the TYPO3 core
 codebase and are not officially supported by the TYPO3 core team.
 
-Often, but not necessarily, these extensions are hosted on Github.
+Often, but not necessarily, these extensions are hosted on GitHub.
 
-The can be installed by the TYPO3 extension manager or via composer.
+The can be installed by the TYPO3 extension manager or via Composer.
 
-3rdparty Extension Documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Third Party Extension Documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Find the documenation on `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
+Find the documentation on `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
 
-For more information about contributing to 3rdparty extension documenation or for your own extension, see
+For more information about contributing to third party extension documentation or for your own extension, see
 :ref:`contribute-to-3rdparty-extension`. See :ref:`how-to-start-documentation-for-ext` for
 information about starting extension documentation from scratch.
 
 See also :ref:`overview-of-types` for an overview of the issues, source and workflow for various
-kinds of documenation, including 3rdparty extensions.
+kinds of documentation, including third party extensions.

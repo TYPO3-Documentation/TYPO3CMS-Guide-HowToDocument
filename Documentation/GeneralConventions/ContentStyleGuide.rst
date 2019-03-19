@@ -344,6 +344,9 @@ Introduction Package
 Local editing and rendering with Docker
    is used to describe the workflow of editing locally.
 
+quick start
+   Of course, if used as title, it will be spelled **Quick Start!**
+
 reStructuredText
    This is an official spelling. Alternate word: **reST**, but this may be confused
    with REST. We commonly use reST within this document, because it is shorter and
@@ -353,7 +356,7 @@ reStructuredText
 
 sitepackage
    In the context of a TYPO3 sitepackage, a TYPO3 sitepackage extension or the sitepackage
-   builder, we use the spelling sitepackage and not site package. 
+   builder, we use the spelling sitepackage and not site package.
 
 system extension
    "system extension" is commonly used to describe an extension shipped with the
@@ -371,7 +374,8 @@ third party extension
    for discussion).
 
 TSconfig
-   :ref:`TYPO3 exception <spelling-typo3>`
+   :ref:`TYPO3 exception <spelling-typo3>`. Note the lowercase "c" after TS! Spelling TSConfig is sometimes
+   used, but it should be **TSconfig!**
 
 TYPO3
    :ref:`TYPO3 exception <spelling-typo3>`: TYPO3 is always spelled TYPO3.
