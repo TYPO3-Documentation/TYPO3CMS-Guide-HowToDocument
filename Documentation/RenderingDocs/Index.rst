@@ -70,5 +70,5 @@ Here, we will briefly also explain the other methods for rendering.
    :hidden:
    :glob:
 
-   Rendering Documentation with Docker  ➜  <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>
+   Rendering Documentation with Docker  ➜  <https://github.com/t3docs/docker-render-documentation#quickstart-on-linux-or-macos>
    Troubleshooting

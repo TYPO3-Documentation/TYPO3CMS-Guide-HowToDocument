@@ -5,7 +5,7 @@
 
 .. rst-class:: horizbuttons-primary-m
 
-- `Docker Render Documentation <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
+- `Docker Render Documentation <https://github.com/t3docs/docker-render-documentation#quickstart-on-linux-or-macos>`__
 
 
 ===================================
