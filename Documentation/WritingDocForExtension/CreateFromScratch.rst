@@ -76,7 +76,7 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
    Be sure to fill out :file:`Settings.cfg` correctly as described in :ref:`settings-cfg`.
 
-5. Render the Documentation
+5. Render the Documentation Locally
 
    Before you publish your changes, make sure the documentation is rendered
    correctly.

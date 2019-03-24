@@ -14,7 +14,7 @@ See also: :ref:`tips-extension-authors`
 .. _tip-of-the-day-trigger-rebuild:
 .. rst-class:: panel panel-default
 
-Trigger documentation rendering
+Trigger Documentation Rendering
 ===============================
 
 To trigger a rebuild of a manual, click the "request_rebuild.php" file
@@ -34,7 +34,7 @@ informative log files:
 .. _tip-of-the-day-2017-02-13:
 .. rst-class:: panel panel-default
 
-'toctree' and the hierarchical structure of a manual
+'toctree' and the Hierarchical Structure of a Manual
 ====================================================
 
 **Update:** Part of this description has been migrated to
@@ -120,7 +120,7 @@ Solution
 .. _tip-of-the-day-2016-12-29:
 .. rst-class:: panel panel-default
 
-How to start Documentation for your TYPO3 Extension
+How to start Documentation for Your TYPO3 Extension
 ===================================================
 
 **Update:** Please see :ref:`how-to-start-documentation-for-ext`
@@ -159,7 +159,7 @@ Come to the sunny side of documentation - have fun!
 .. _tip-of-the-day-2016-10-08:
 .. rst-class:: panel panel-default
 
-How to write inline code
+How to Write Inline Code
 ========================
 
 **Update:** This information has been migrated to :ref:`Inline-Code`
@@ -168,7 +168,7 @@ and extended (2019-01-06).
 
 2016-10-08 by Martin Bless
 
-Preferred: Use single backticks ` ... `
+Preferred: Use Single Backticks ` ... `
 ---------------------------------------
 
 1. In general we are using `interpreted text roles`_ for small inline
@@ -178,7 +178,7 @@ Preferred: Use single backticks ` ... `
 
 2. Just write the code as it is - don't escape or double anything.
 
-3. Even better: Explicitely specify what kind of code (= textrole) it is. This better shows
+3. Even better: Explicitly specify what kind of code (= textrole) it is. This better shows
    the semantics and in the output there may be a a special coloring or highlighting (on the way):
 
    ================ ================================================= ============================================ ===
@@ -196,7 +196,7 @@ Preferred: Use single backticks ` ... `
    ================ ================================================= ============================================ ===
 
 
-When to use literal code \`\`...``
+When to Use Literal Code \`\`...``
 ----------------------------------
 
 Things get tricky if your inline code already contains single backquotes (backticks).
@@ -235,7 +235,7 @@ Things get tricky if your inline code already contains single backquotes (backti
 .. _tip-of-the-day-2016-09-11:
 .. rst-class:: panel panel-default
 
-Optional: Add borders to your images
+Optional: Add borders to Your Images
 ====================================
 
 **Update:** It is now also possible to add a drop shadow (`:class: with-shadow`)
