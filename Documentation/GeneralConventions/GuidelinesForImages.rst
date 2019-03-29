@@ -91,13 +91,16 @@ You will often see a screenshot where additional graphic elements have been adde
 documentation. These additional graphic elements may be boxes, numbers or arrows. Up until,
 we did not have guidelines for this, so you may see various shapes in different colors.
 
-As of now (January, 2019), please adhere to the conventions defined here and use the
-supplied icons.
+.. important:: 
+   This still needs some work. If you plan on adding images to a manual, contact
+   us in the #typo3-documentation channel. Help with optimizing this section is also
+   appreciated.
 
 To get the icons
 ----------------
 
-Either download the zipfile and extract it. You can find the download link on https://github.com/TYPO3-Documentation/images,
+Either download the zipfile and extract it. 
+You can find the download link on https://github.com/TYPO3-Documentation/images,
 
 Or clone the repository:
 
