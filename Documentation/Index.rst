@@ -21,8 +21,6 @@ Writing Documentation
 
 **Find out more in:**
 
-   .. rst-class:: horizbuttons-primary-m
-
    - :ref:`getting-started`
 
 
@@ -33,20 +31,15 @@ Writing Documentation
    -  :ref:`tip-of-the-day-2017-02-13`
    -  :ref:`tip-of-the-day-2016-10-08`
 
-   .. rst-class:: horizbuttons-primary-m
-
-   -  :ref:`All tips <Tip-of-the-day>`
-   -  :ref:`Tips for extension authors <tips-extension-authors>`
+   :ref:`All Tips ... <Tip-of-the-day>` | :ref:`Tips for extension authors ... <tips-extension-authors>`
 
 **What's new in this guide?**
 
-   * 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
-   * 2019-01-22 :ref:`news-2019-guidelines-for-images`
-   * 2018-11-27 :ref:`news-2018-content-styleguide`
+   - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+   - 2019-01-22 :ref:`news-2019-guidelines-for-images`
+   - 2018-11-27 :ref:`news-2018-content-styleguide`
 
-   .. rst-class:: horizbuttons-primary-m
-
-   * :ref:`All news <whats-new>`
+   :ref:`All News ... <whats-new>`
 
 
 .. toctree::
