@@ -8,7 +8,7 @@ Guidelines for Creating Images
 ==============================
 
 When embedding images with reST, please add a shadow,
-as described in :ref:`how-to-document-images`. 
+as described in :ref:`how-to-document-images`.
 
 There are various kinds of images used in the documentation. The most
 common are:
@@ -47,7 +47,7 @@ Image Formats
 -------------
 
 * It is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
-  and SVG for vector graphics images. In any case, you can use .png. 
+  and SVG for vector graphics images. In any case, you can use .png.
 
 Guidelines for Screenshots
 ==========================
@@ -126,8 +126,21 @@ Follow These Guidelines
 Examples
 --------
 
-.. image:: images/backend-with-boxes.png
+
+.. figure:: images/backend-with-boxes.png
    :class: with-shadow
    :scale: 70
 
+   Image with rectangles and numbers
 
+.. figure:: images/backend-boxes2+shadow.svg
+   :class: with-shadow
+   :scale: 70
+
+   Another alternative with rectangles and numbers
+
+.. figure:: ../images/edit_me_on_github+shadow.svg
+   :class: with-shadow
+   :alt: Arrow with drop shadow
+
+   Arrow with drop shadow

@@ -20,7 +20,7 @@ How to Get an "Edit me on GitHub" Button
 Why might you want an "Edit me on GitHub" button on the rendered pages
 of your extension documentation?
 
-.. figure:: ../images/edit_me_on_github.svg
+.. figure:: ../images/edit_me_on_github+shadow.svg
    :class: with-shadow
    :alt: "Edit me on GitHub" button
 

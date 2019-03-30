@@ -252,25 +252,22 @@ having a border because they are not separated enough from the background. Examp
 .. _t3SphinxThemeRtd: https://github.com/TYPO3-Documentation/t3SphinxThemeRtd
 
 1. Here is the markup to include an image as a 'figure'. Figures always are of css type 'block' and can have
-   a caption:
+   a caption::
 
-   .. figure:: images/2016-09-11-1.png
-      :class: with-border
+      .. figure:: images/2016-09-11-2.png
+        
 
 2. And this is what we see. The image is not clearly distinguished:
 
    .. figure:: images/2016-09-11-2.png
 
-3. Now the same markup plus the extra class:
+3. Now the same markup plus the extra class::
 
-   .. figure:: files/2016-09-11-3.png
-      :class: with-border with-shadow
+      .. figure:: images/2016-09-11-2.png
+         :class: with-shadow
 
-4. This screenshot benefits from having a border:
-
-   .. figure:: images/2016-09-11-4.png
-
-Now: To border or not to border, that's your decision.
+   .. figure:: images/2016-09-11-2.png
+      :class: with-shadow
 
 
 
