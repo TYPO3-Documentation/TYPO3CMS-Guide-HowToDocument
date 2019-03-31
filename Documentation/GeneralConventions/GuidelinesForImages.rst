@@ -109,7 +109,7 @@ Or clone the repository:
    git clone https://github.com/TYPO3-Documentation/images
 
 
-The icons will be in images/design-team/icons.
+The icons will be in images/final/icons.
 
 
 Follow These Guidelines
