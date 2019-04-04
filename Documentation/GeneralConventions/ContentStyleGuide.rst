@@ -20,9 +20,9 @@ This section aims to add some additional explanations and more examples for rule
 already defined in the style guide. It also explains how to apply the rules in
 the documentation (e.g. format with reST).
 
-Since English language is not always specific and there may be several correct spellings
-for some words, we have added a :ref:`spelling-ref`. If somethings is not
-mentioned here specifically, use correct spelling in English language,
+Since the English language is not always specific and there may be more than one correct spelling
+for some words, we have added a :ref:`spelling-ref`. If something is not
+mentioned here specifically, use correct spelling in English language
 or rather American (US) language. Refer to the resources, which the style guide suggests, or use
 `Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
 If in doubt, ask in Slack channel #typo3-documentation (see
@@ -39,7 +39,7 @@ Basic rules (read in this order, use the first rule that applies and skip the re
 
 #. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
    way they are commonly written (see :ref:`spelling-typo3`, :ref:`spelling-acronyms`).
-#. First and last word of title is always capitalized.
+#. The first and the last word of a title is always capitalized.
 #. Capitalize all words with 4 or more letters.
 #. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__,
    adjectives, verbs, adverbs), for example "Is", "Are", "Has".
@@ -63,7 +63,7 @@ The rules for title case are based on the `TYPO3 Content Style Guide
 
 Examples:
 
-* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
+* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 Is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
 * The first word is always capitalized (see rule #2), so *in* is capitalized here: "**In** the End"
 * *With* is a preposition with 4 letters, so it must be capitalized (rule #3): "Install **With** Composer"
 * *Is* is a verb. Though it is short, do capitalize it (rule #4), as in "This **Is** the End"
@@ -73,7 +73,7 @@ Examples:
 
    This applies to **all headers** on a page, not just the top level header (title).
 
-In reST, headers are created by underlined / overlining with (`====`, `----`, etc.)
+In reST, headers are created by underlining / overlining with (`====`, `----`, etc.)
 as described in :ref:`Headlines-and-sections`::
 
    =================
@@ -100,10 +100,10 @@ Rules for Links
 ===============
 
 If you refer to another document, chapter or section of another manual in the docs
-and use the title of that as anchor text, use title capitalization.
+and use its title as anchor text, use title capitalization.
 
 This has an additional advantage: If you do not specifically supply an anchor text with
-the `:ref:` directive, the title from the referred to page will automatically be
+the `:ref:` directive, the title of the page referred to will automatically be
 used as anchor text (which will hopefully already be spelled correctly using
 title capitalization).
 
@@ -113,7 +113,7 @@ Example:
 
    Please see :ref:`t3coreapi:start` to get a good understanding of ...
 
-How this looks:
+Generated readable representation:
    Please see :ref:`t3coreapi:start` to get a good understanding of ...
 
 
@@ -154,7 +154,7 @@ As already mentioned: If the text is used in :ref:`titles, subheaders <spelling-
 :ref:`anchor text <spelling-anchor-text>` or a text is :ref:`referring to
 GUI elements <spelling-refer-to-gui-elements>`, use the correct spelling for that.
 
-For all else (plain text), common rules of the English language are applied.
+For anything else (plain text) common rules of the English language are applied.
 
 
 .. _spelling-compound-words:
@@ -166,7 +166,7 @@ Compound words (or compounds) are words that have been glued together from one o
 words to create a new term with a new meaning as in backyard (back and yard) or
 New Age (new and age).
 
-But, how will they be spelled? Backend, back-end or back end? Site package or sitepackage?
+But how should they be spelled? Backend, back-end or back end? Site package or sitepackage?
 
 All these spellings for backend are currently correct spellings (at least according to
 `some sources <https://ell.stackexchange.com/questions/117383/what-is-the-correct-term-back-end-back-end-or-backend>`__.
@@ -179,8 +179,7 @@ All these spellings for backend are currently correct spellings (at least accord
    If a spelling has been explicitly defined in the :ref:`spelling-ref`, please
    use that spelling.
 
-How can you decide for other edge cases yourself?
-
+How can you decide for yourself in other edge cases?
 
 .. tip::
 
@@ -199,22 +198,21 @@ Capitalization Rules (plain text)
    like TypoScript or an :ref:`acronym <spelling-acronyms>` like PHP,
    this spelling is applied.
 #. :ref:`Proper nouns and brand names <spelling-proper-names>` are
-   capitalized, e.g. Docker
+   capitalized, e.g. Docker.
 #. Most other words begin with a lowercase letter.
 
-There are some edge cases and some terms are not spelled consistently in the same way
-everywhere. Sometimes it also depends on the context. Capitalization may change over
-the course of time, for example see `The Associated Press style guide will no longer capitalize 'internet'
-<https://www.theverge.com/2016/4/2/11352744/ap-style-guide-will-no-longer-capitalize-internet>`__
+There are some edge cases and some terms are not spelled consistently throughout various 
+resources. Often it also depends on the context. Capitalization may change over the course of 
+time, for example see `The Associated Press style guide will no longer capitalize 'internet'
+<https://www.theverge.com/2016/4/2/11352744/ap-style-guide-will-no-longer-capitalize-internet>`__.
 In other texts, "internet" is still capitalized.
 
-For this reason, we have put together a :ref:`spelling reference <spelling-ref>`
-to list some common
-terms that may be difficult to spell or that are spelled differently in the TYPO3 context.
+For this reason we have put together a :ref:`spelling reference <spelling-ref>`
+to list some common terms that may be difficult to spell or that are spelled differently in the TYPO3 context.
 
 .. _spelling-typo3:
 
-Exceptions: Specific TYPO3 spellings
+Exceptions: Specific TYPO3 Spellings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
@@ -225,7 +223,7 @@ TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
 Acronyms
 ~~~~~~~~
 
-Often, acronyms are written with capital letters only. If terms are commonly spelled that
+Often acronyms are written with capital letters only. If terms are commonly spelled that
 way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
 
@@ -244,7 +242,7 @@ These can be countries, names of people, corporations or brand names.
 Examples:
 
 * "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
-  previous knowledge of **Git**.": Git is capitalized because it is a brand name (quote from
+  previous knowledge of **Git**.": Git is capitalized, because it is a brand name (quote from
   `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
 * **Wikipedia**
 * **Europe**
@@ -255,9 +253,9 @@ Tools With Executables
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Some tools have a program, which you can run. For example, **Git** has the command line
-tool `git`. In this case, we use the correct spelling of the command (lowercase), when
-we are explicitly referring to the command `git`. In all other cases, we use capital
-spelling Git, because it applies to the rules for :ref:`spelling-proper-names`.
+tool `git`. When the documentation explicitly refers to the command `git`, its appropriate 
+spelling is used, which is lowercase. In all other cases, we use capital
+spelling for Git, because it applies to the rules for :ref:`spelling-proper-names`.
 
 The same goes for **Docker**, **Composer**, etc.
 
@@ -274,36 +272,34 @@ Spelling & Preferred Terms Reference
 The spelling here is how the terms will be used in normal text (not headlines).
 
 backend (noun)
-   We usually do not capitalize this. This is not a specific TYPO3 thing.
-   Fluid is capitalized, like Docker (see :ref:`spelling-proper-names`). Backend
-   is a general thing, like any backend, any extension, any plugin or any car and not a 1953
-   Chevy Corvette.
+   Usually not capitalized. This is not specific to TYPO3. Fluid is capitalized, like 
+   Docker (see :ref:`spelling-proper-names`). Backend is a general thing, like any backend,
+   any extension, any plugin or any car and not a 1953 Chevy Corvette.
 
    Example: "when you log in to the backend ..."
 
-   Note: Outside of the TYPO3 context, you will commonly also see spelling back-end
-   or back end. These are not wrong,
-   but in the TYPO3 context, we try to use consistent spelling, so stick to backend.
+   Note: Outside of the TYPO3 context, you will also encounter spellings like back-end
+   or back end. These are not wrong, but in the context of TYPO3, we try to use consistent
+   spelling, so stick to backend.
 
 code sprint
-   is commonly written in lowercase, see `Wikipedia: Hackathon
+   Commonly written in lowercase. See `Wikipedia: Hackathon
    <https://en.wikipedia.org/wiki/Hackathon#Code_sprints>`__
 
 (the TYPO3) Core
    Example: "The TYPO3 Core comes with a number of icons that may be used in your extension."
 
 Composer
-   The same applies as for Docker. Use Composer unless you
-   explicitly mean the command `composer`.
+   Adhering to Docker rule set. Use Composer unless you explicitly mean the command `composer`.
 
 (the TYPO3) Core Team
-   Should be capitalized.
+   Capitalized.
 
 (the TYPO3) Documentation Team
-   Should be capitalized, unless it means *any* documentation team.
+   Capitalized, unless it means *any* documentation team.
 
 Docker
-   The product Docker is a brand name and is capitalized, so use that
+   The product Docker is a brand name and therefore capitalized, so use that
    unless you explicitly mean the command `docker` (see `Use the Docker command line
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
 
@@ -312,24 +308,24 @@ Edit me on GitHub workflow
    opposed to "local editing and rendering with Docker".
 
 Extbase
-   should be capitalized, same rule as for :ref:`spelling-proper-names`.
+   Capitalized. Adhering to the rule set of :ref:`spelling-proper-names`.
 
 extension
-   See description for backend for explanation of why we use lowercase.
+   See description for backend for an explanation of why we use lowercase.
 
    Examples:
 
-   *  "When you create documentation for your extension, make sure ..."
+   *  "When you create the documentation for your extension, make sure ..."
    * "... includes all TYPO3 extensions that are uploaded to TER"
 
 Extension Manager
-   Example: "Use the Extension Manager to activate an extension."
+   Capitalized. Example: "Use the Extension Manager to activate an extension."
 
 Fluid
-   should be capitalized, same rule as for :ref:`spelling-proper-names`.
+   Capitalized. The rule set of :ref:`spelling-proper-names`.
 
 frontend
-   See backend for explanation.
+   Usually not capitalized. See backend for an explanation.
 
 Git
    The same applies as for Docker. Use Git unless you explicitly mean the command
@@ -345,14 +341,13 @@ Local editing and rendering with Docker
    is used to describe the workflow of editing locally.
 
 quick start
-   Of course, if used as title, it will be spelled **Quick Start!**
+   Of course, if used as a title, it will be spelled **Quick Start!**
 
 reStructuredText
-   This is an official spelling. Alternate word: **reST**, but this may be confused
-   with REST. We commonly use reST within this document, because it is shorter and
-   we assume you
-   know we are not talking about REST here, but elsewhere, reStructuredText should
-   be preferred.
+   This is the official spelling. Alternate word: **reST**, but this may be confused
+   with REST(ful). We commonly use reST within this document, because it is shorter and
+   we assume you know we are not talking about REST here, but elsewhere, reStructuredText
+   should be preferred.
 
 sitepackage
    In the context of a TYPO3 sitepackage, a TYPO3 sitepackage extension or the sitepackage
@@ -360,7 +355,7 @@ sitepackage
 
 system extension
    "system extension" is commonly used to describe an extension shipped with the
-   core and located in the directory sysext in the file system. Alternate term
+   core and located in the directory sysext in the file system. The alternate term
    "core extension" is discouraged
    (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
 
@@ -397,9 +392,9 @@ for terms pending a decision.
 Title Spelling Reference
 ========================
 
-This is a list of words and how they should be used in the title.
+This is a list of words and how they should be used in a title.
 
-Most words are capitalized in the title. Exceptions are **articles,
+Most words in a title are capitalized. Exceptions are **articles,
 prepositions** and **conjunctions** with less than 4 letters and a few
 exceptions like acronyms (all caps) or words that use capital
 letters within a word (e.g. stdWrap, TypoScript).
@@ -407,8 +402,8 @@ letters within a word (e.g. stdWrap, TypoScript).
 
 See :ref:`rules for title case <spelling-title-case>`.
 
-These are only some examples,
-more examples for lowercase spelling, see `TYPO3 Content Style Guide
+These are only some examples, more examples for lowercase spelling, see 
+`TYPO3 Content Style Guide
 <https://typo3.org/community/teams/content/writing-style-guide/#c8483>`__.
 
 **Even if a word is lowercased in this list, it is always capitalized
@@ -465,16 +460,16 @@ Used Resources
 
 In addition to the TYPO3 Content Style Guide, some other resources have been used:
 
-* "Don't use same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
+* "Don't use the same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
   Use consistent terminology
   <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__
 
-capitalization
+Capitalization:
 
 * *"The tendency towards lowercase, which in part reflects a less formal, less deferential society, has
-  been accelerated by the explosion of the internet"*
+  been accelerated by the explosion of the internet."*,
   `Guardian and Observer Styleguide <https://www.theguardian.com/guardian-observer-style-guide-c>`__,
-  look under capital.
+  look under "capital".
   Note that these are British publications and we use American spelling.
 * *"When referring to GUI elements, match the capitalization used in the interface."*, see
   `IBM developerWorks editorial style guide
@@ -490,11 +485,11 @@ capitalization
   corporation) and primarily used to refer to instances of a specific class (a city, another
   planet, these persons, our corporation)"* (quote from `Wikipedia: Proper Noun
   <https://en.wikipedia.org/wiki/Proper_noun>`__)
-* *"...  proper nouns are limited to single words only (possibly with the), while proper names
+* *"[...]  proper nouns are limited to single words only (possibly with the), while proper names
   include all proper nouns (in their primary applications) as well as noun phrases such as the
   United Kingdom, North Carolina"* (quote from `Wikipedia: Proper Names
   <https://en.wikipedia.org/wiki/Proper_noun#Proper_names>`__)
 
-compound words
+Compound words:
 
 * `Wikipedia: English compound <https://en.wikipedia.org/wiki/English_compound>`__
