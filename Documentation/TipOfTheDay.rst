@@ -116,46 +116,6 @@ Solution
    sublevel of `My Documentation` in the menu.
 
 
-
-.. _tip-of-the-day-2016-12-29:
-.. rst-class:: panel panel-default
-
-How to start Documentation for Your TYPO3 Extension
-===================================================
-
-**Update:** Please see :ref:`how-to-start-documentation-for-ext`
-for an up-to-date description of starting extension documentation from scratch
-using the example extension manual (2019-01-06).
-
-
-2016-12-29 by Martin Bless
-
-
-**Quickstart:**
-
--  Get yourself one of the T3DocumentationStarter projects that look like
-   https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/
-
--  Read the frontpage of the starter to learn how it works.
-
--  You may edit directly at Github. Just do a little update and save (=push),
-   and some very few minutes later you can reload the page and see what the
-   server has rendered for you. You don't have to install or render anything yourself.
-   The server will do that for you.
-
--  Or work with Github as you usually do.
-
--  To become the owner of a starter project send a mail with your **Github username**
-   to the docteam to documentation@typo3.org and ask for a T3DocumentationStarter project.
-
--  Later: Copy the :file:`./Documentation` folder of the starter project to your extension.
-   Write your documentation. Edit the metadata in :file:`./Documentation/Settings.cfg` and
-   you are done.
-
-Come to the sunny side of documentation - have fun!
-
-
-
 .. _tip-of-the-day-2016-10-08:
 .. rst-class:: panel panel-default
 
@@ -255,7 +215,7 @@ having a border because they are not separated enough from the background. Examp
    a caption::
 
       .. figure:: images/2016-09-11-2.png
-        
+
 
 2. And this is what we see. The image is not clearly distinguished:
 

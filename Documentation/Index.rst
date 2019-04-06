@@ -11,7 +11,6 @@ Writing Documentation
 :License:         `Creative Commons License <https://en.wikipedia.org/wiki/Creative_Commons_license>`__ (CC BY 4.0)
 
 
-
 **About this manual:**
 
    This manual is about writing TYPO3 documentation
@@ -28,10 +27,8 @@ Writing Documentation
 
    -  Extension Authors: :ref:`tip-edit-me-on-github`
    -  Extension Authors: :ref:`tip-link-to-issues`
-   -  :ref:`tip-of-the-day-2017-02-13`
-   -  :ref:`tip-of-the-day-2016-10-08`
 
-   :ref:`All Tips ... <Tip-of-the-day>` | :ref:`Tips for extension authors ... <tips-extension-authors>`
+   :ref:`General Tips ... <Tip-of-the-day>` | :ref:`Tips for extension authors ... <tips-extension-authors>`
 
 **What's new in this guide?**
 
