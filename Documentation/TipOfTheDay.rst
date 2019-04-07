@@ -27,9 +27,6 @@ Here are the links:
 - Request rebuild for `manuals of extensions hosted on GitHub <https://docs.typo3.org/~mbless/github.com>`_
 
 
-**Note:** After the rebuild, the \*.git.make folder also contains some
-informative log files:
-
 
 .. _tip-of-the-day-2017-02-13:
 .. rst-class:: panel panel-default
