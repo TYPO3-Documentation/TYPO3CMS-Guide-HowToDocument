@@ -27,6 +27,8 @@ Writing Documentation
 
    -  Extension Authors: :ref:`tip-edit-me-on-github`
    -  Extension Authors: :ref:`tip-link-to-issues`
+   -  :ref:`tip-of-the-day-trigger-rebuild`
+   -  Extension Authors: :ref:`tip-extension-rendered-old-layout`
 
    :ref:`General Tips ... <Tip-of-the-day>` | :ref:`Tips for extension authors ... <tips-extension-authors>`
 
