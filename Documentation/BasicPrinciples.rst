@@ -92,7 +92,9 @@ folder. A "manual" can be a tutorial, such as the :ref:`t3start:start`, a guide,
 an extension manual or something else.
 
 Tutorial
---------
+~~~~~~~~
+
+A tutorial is a manual. 
 
 Tutorials are designed to be step-by-step instructions specifically created to walk a
 beginner through a particular task from beginning to end. To facilitate effective
@@ -102,13 +104,21 @@ In addition, tutorials provide guidance on how to avoid common pitfalls and high
 key concepts that should be remembered for future reference.
 
 Guide
------
+~~~~~
+
+A guide is a manual.
 
 Guides are designed to familiarize a reader with a specific topic in order to provide a
 working knowledge of that particular process. Readers should peruse the guide from cover
 to cover in order to gain a practical overview of the process. Once completed, the Guide
 becomes a practical reference tool to which a reader can refer as needed. Guides offer
 advice on how best to achieve a given task.
+
+Extension Manual
+~~~~~~~~~~~~~~~~
+
+An extension manual covers only the extension. This documentation is (usually) included
+in the source code of an extension in a :file:`Documentation` subdirectory.
 
 .. _overview-of-types:
 
