@@ -91,7 +91,7 @@ Source (external link)::
 
    This is an external link: `t3o <https://typo3.org>`__.
 
-:ref:`cheat-sheet-intersphinx`
+.. _cheat-sheet-intersphinx:
 
 Cross-References
 ----------------
