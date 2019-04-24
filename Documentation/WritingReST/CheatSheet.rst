@@ -80,6 +80,8 @@ Source (header level 3)::
 :ref:`Links <how-to-document-hyperlinks>`
 =========================================
 
+.. _cheat-sheet-external-links:
+
 External Links
 --------------
 
@@ -89,6 +91,7 @@ Source (external link)::
 
    This is an external link: `t3o <https://typo3.org>`__.
 
+:ref:`cheat-sheet-intersphinx`
 
 Cross-References
 ----------------
