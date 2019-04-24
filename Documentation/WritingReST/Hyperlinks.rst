@@ -169,6 +169,8 @@ manuals correctly.
 Additional information: See the `Sphinx documentation
 <https://www.sphinx-doc.org/en/1.6/markup/inline.html#cross-referencing-arbitrary-locations>`__.
 
+For an overview of the link types, see :ref:`cheat-sheet-intersphinx` in 
+the "ReST & Sphinx Cheat Sheet".
 
 In the Same Manual
 ------------------
