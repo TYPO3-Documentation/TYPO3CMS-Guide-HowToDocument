@@ -14,13 +14,7 @@ Writing Documentation
 **About this manual:**
 
    This manual is about writing TYPO3 documentation
-   (`docs.typo3.org <https://docs.typo3.org>`__). You can find out about
-   how to :ref:`contribute to the documentation <docs-contribute>` and
-   :ref:`write extension documentation from scratch <how-to-start-documentation-for-ext>`.
-
-**Find out more in:**
-
-   - :ref:`getting-started`
+   (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in: :ref:`getting-started`
 
 
 **Did you know?**
