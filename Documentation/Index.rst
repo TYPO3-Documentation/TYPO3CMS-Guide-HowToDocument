@@ -8,7 +8,7 @@ Writing Documentation
 
 :Writing here:    :ref:`TYPO3 Documentation Team & community <contact-us>`
 :Status:          Fully revised (July, 2018)
-:License:         `Creative Commons License <https://en.wikipedia.org/wiki/Creative_Commons_license>`__ (CC BY 4.0)
+:License:         Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0),                                   https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 **About this manual:**
