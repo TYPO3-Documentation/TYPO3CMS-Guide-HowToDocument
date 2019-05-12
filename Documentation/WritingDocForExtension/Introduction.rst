@@ -49,7 +49,7 @@ Examples for system extensions are:
 * `ext:fluid_styled_content <https://docs.typo3.org/typo3cms/extensions/fluid_styled_content/>`__
 * `ext:rte_ckeditor <https://docs.typo3.org/typo3cms/extensions/rte_ckeditor/>`__
 
-Note, that if your system has been installed with composer, not all system extensions may exist
+Note, that if your system has been installed with Composer, not all system extensions may exist
 in the system, if each system extension has been required separately as "subtree splitted packages"
 (not as `typo3/cms`). Since TYPO3 9, installation of "subtree splitted packages" is mandatory.
 
@@ -62,9 +62,9 @@ System Extension Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Find the documentation for a system extension on
-`Core extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
+`System extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 
-Not all core extensions have documentation at the moment.
+Not all system extensions have documentation at the moment.
 
 For more information about contributing to system extensions, see :ref:`contribute-to-system-extension`
 in this guide.
@@ -75,12 +75,12 @@ kinds of documentation, including system extensions.
 Third Party Extensions
 ----------------------
 
-third party extensions are extension that can be created by anyone. They are not included in the TYPO3 core
+Third party extensions are extension that can be created by anyone. They are not included in the TYPO3 core
 codebase and are not officially supported by the TYPO3 core team.
 
 Often, but not necessarily, these extensions are hosted on GitHub.
 
-The can be installed by the TYPO3 extension manager or via Composer.
+They can be installed by the TYPO3 Extension Manager or via Composer.
 
 Third Party Extension Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
