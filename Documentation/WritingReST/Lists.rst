@@ -88,18 +88,3 @@ Example 2: List with Sublist and Error
 * item 4
 
 For more information on common errors, see :ref:`rest-common-pitfalls`.
-
-Example 3: Numbered List
-========================
-
-.. code-block:: rest
-
-   #. item no 1
-   #. item no 2
-   
-** How it looks:**
-
-#. item no 1
-#. item no 2
-
-For more information on numbered lists, see :ref:`styled-numbered-lists`.
