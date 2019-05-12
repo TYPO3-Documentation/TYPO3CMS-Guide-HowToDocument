@@ -232,8 +232,8 @@ options etc, use the spelling that is used in the source code.
 
 Examples:
 
-* function names in :ref:`t3api:database-connection`
-* configuration options in :ref:`t3api:soft-references-default-parsers-substitute`
+* function names in :ref:`t3coreapi:database-connection`
+* configuration options in :ref:`t3coreapi:soft-references-default-parsers-substitute`
 
 
 .. _spelling-acronyms:
