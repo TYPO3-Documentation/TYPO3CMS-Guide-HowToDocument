@@ -106,8 +106,56 @@ Special Characters
 
 The only way to include "special" characters is to use them directly
 
-.. _rest-refer-to-gui-elements:
+.. _rest-cgl-headline-underlines:
 
+Headline Underlining
+====================
+
+In reStructuredText it is possible to use any type of underlining. The first
+used will be recognized as level 1 etc. 
+
+However, adhering to the standard for TYPO3 documentation makes it easier for
+other contributors to find their way around a file and pick the correct underlining
+for the header level.
+
+Use the conventions as defined in :ref:`Headlines-and-sections`.
+
+This underlining is used **per (.rst) file**. It does not matter where in the toctree
+the file is. You always start with underlining for level 1 (title) in each
+file::
+
+
+
+   ========
+   1. Title
+   ========
+
+   2. Header Level 1
+   =================
+   
+   3. Header Level 2
+   -----------------
+   
+   4. Header Level 3
+   ~~~~~~~~~~~~~~~~~
+   
+   5. Header Level 4
+   """""""""""""""""
+   
+   6. Header Level 5
+   '''''''''''''''''
+   
+   7. Header Level 6
+   ^^^^^^^^^^^^^^^^^
+   
+   8. Header Level 7
+   #################
+   
+   etc.
+
+
+
+.. _rest-refer-to-gui-elements:
 
 Referring to GUI Elements
 =========================
