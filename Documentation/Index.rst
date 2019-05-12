@@ -6,15 +6,15 @@
 Writing Documentation
 =====================
 
-:Writing here:    :ref:`TYPO3 Documentation Team & community <contact-us>`
-:Status:          Fully revised (July, 2018)
-:License:         Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0),                                   https://creativecommons.org/licenses/by-nc-sa/4.0/
+:Authors:   TYPO3 Documentation Team & community (see :ref:`credits`)
+:Status:    Fully revised (July, 2018)
+:License:   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__)
 
 
 **About this manual:**
 
    This manual is about writing TYPO3 documentation
-   (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in: :ref:`getting-started`
+   (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in: :ref:`how-to-read-this-guide`
 
 
 **Did you know?**
@@ -38,7 +38,7 @@ Writing Documentation
 .. toctree::
    :hidden:
 
-   GettingStarted
+   Preface/Index
    HowToGetHelp
    BasicPrinciples
    GeneralConventions/Index
