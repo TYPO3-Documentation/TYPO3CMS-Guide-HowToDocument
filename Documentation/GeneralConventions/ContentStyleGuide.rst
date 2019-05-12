@@ -38,7 +38,10 @@ Rules for Titles & Section Headers
 Basic rules (read in this order, use the first rule that applies and skip the rest):
 
 #. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
-   way they are commonly written (see :ref:`spelling-typo3`, :ref:`spelling-acronyms`).
+   way they are commonly written (see :ref:`spelling-typo3`, :ref:`spelling-acronyms`). The same
+   goes for class names, functions, database tables, database fields, configuration options etc.
+   that are taken from the
+   source code: They are written the way they are written in the source (see :ref:`spelling-source-code`).
 #. The first and the last word of a title is always capitalized.
 #. Capitalize all words with 4 or more letters.
 #. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__,
@@ -63,7 +66,8 @@ The rules for title case are based on the `TYPO3 Content Style Guide
 
 Examples:
 
-* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 Is Always Spelled TYPO3", "stdWrap", "Programming With PHP"
+* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 Is Always Spelled TYPO3", "stdWrap", "TypoScript", 
+  "Programming With PHP", "insert()"
 * The first word is always capitalized (see rule #2), so *in* is capitalized here: "**In** the End"
 * *With* is a preposition with 4 letters, so it must be capitalized (rule #3): "Install **With** Composer"
 * *Is* is a verb. Though it is short, do capitalize it (rule #4), as in "This **Is** the End"
@@ -217,6 +221,20 @@ Exceptions: Specific TYPO3 Spellings
 
 There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
 TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
+
+.. _spelling-source-code:
+
+Exceptions: Words Taken From Source Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are using class names, function names, databases tables or fields, configuration
+options etc, use the spelling that is used in the source code.
+
+Examples:
+
+* function names in :ref:`t3api:database-connection`
+* configuration options in :ref:`t3api:soft-references-default-parsers-substitute`
+
 
 .. _spelling-acronyms:
 
