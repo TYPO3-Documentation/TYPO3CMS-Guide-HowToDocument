@@ -17,6 +17,24 @@ See also: :ref:`tips-extension-authors`
 Trigger Documentation Rendering
 ===============================
 
+Usually, extension documentation should automatically be rerendered.
+
+If you made a change that has been merged, but it is not yet visible,
+do the following:
+
+#. Wait a few minutes
+#. Reload your browser
+
+You may also render the repository locally, to make sure there are 
+no build errors breaking the rendering. See :ref:`render-troubleshooting-errors`.
+
+You can also look in the files in :file:`_buildinfo` online to see the
+exitcodes and warnings. For example, for this manual:
+
+https://docs.typo3.org/typo3cms/HowToDocument/stable/_buildinfo/
+
+If this yields not results, you can iniated a rebuild:
+
 To trigger a rebuild of a manual, click the "request_rebuild.php" file
 in the respective .../\*.git.make folder.
 
