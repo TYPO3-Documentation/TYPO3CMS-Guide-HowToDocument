@@ -29,7 +29,7 @@ Use what you are most comfortable with!
 
    2. "Local Editing and Rendering with Docker"
 
-      If you are familiar with git, docker and the command line,
+      If you are familiar with Git, Docker and the command line,
       you can use this workflow.
 
       **Get started:** :ref:`docs-contribute-git-docker`
