@@ -146,3 +146,16 @@ folder and render again, for example:
 
   rm -rf Documentation-GENERATED-temp
   dockrun_t3rdf makehtml
+
+
+
+Get Detailed Information
+========================
+
+If you create a directory tmp-GENERATED-temp before you start the rendering,
+the toolchain will not remove this directory when it is done. Usually
+it cleans up after itself and this directory will be created and then removed.
+
+The directory contains some additional information for the individual scripts
+that have been run. In case of cryptic error messages which you have trouble
+interpreting, you may check these files for more information.  
