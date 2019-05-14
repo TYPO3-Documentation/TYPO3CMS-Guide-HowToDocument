@@ -5,12 +5,12 @@
 .. _docs-contribute:
 .. _docs-contribute-github-method:
 
-==========
-Contribute
-==========
+===========================================
+How to Contribute to Official Documentation
+===========================================
 
-The community is welcome to make changes to the documentation. Any
-help is appreciated!
+The community is welcome to make changes to the official documentation
+on https://docs.typo3.org. Any help is appreciated!
 
 You can start with very minimal knowledge and learn as
 you go along.

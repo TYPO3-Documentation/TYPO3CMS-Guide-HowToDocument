@@ -5,9 +5,9 @@
 
 .. _how-to-start-docs-extension:
 
-=====================
-Document an Extension
-=====================
+============================
+How to Document an Extension
+============================
 
 This chapters explains how to write documentation for an extension or make
 changes to existing documentation of extensions. The extension may be a

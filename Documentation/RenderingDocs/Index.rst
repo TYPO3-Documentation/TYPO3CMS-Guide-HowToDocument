@@ -4,14 +4,14 @@
 .. _rendering-docs:
 .. _rendering-docs-quickstart:
 
-====================
-Render Documentation
-====================
+===========================
+How to Render Documentation
+===========================
 
 This chapter explains how to render a manual locally on your machine
 with Docker.
 
-It is recommended to do this before you publish your changes, because
+It is recommended to do this if you edit locally before you publish your changes, because
 that way you will get a preview of how it is later rendered on the
 server.
 
@@ -32,7 +32,7 @@ Here, we will briefly also explain the other methods for rendering.
 
    1. Render Documentation Locally Using Docker
 
-      See `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
+      See :ref:`render-documenation-with-docker`
 
    2. Preview on GitHub
 
@@ -70,5 +70,5 @@ Here, we will briefly also explain the other methods for rendering.
    :hidden:
    :glob:
 
-   Rendering Documentation with Docker  ➜  <https://github.com/t3docs/docker-render-documentation#quickstart-on-linux-or-macos>
+   Quickstart
    Troubleshooting
