@@ -103,24 +103,12 @@ There may be problems which will not break the rendering but which
 should be taken care of. Warnings are listed in the file
 :file:`Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt`
 
-You can look at them in the browser (or whatever application has been
-setup on your system for this file type):
-
-.. code-block:: bash
-
-   open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt"
-
-Try `xdg-open` (for Linux) or `start` (for Windows) instead of `open` if this does not work for you.
-
-You can also view the file in the terminal (or in your IDE / editor):
-
-.. code-block:: bash
-
-      less Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt
 
 .. tip::
 
-   Create aliases for the commands that work best for you now!
+   You can also find :file:`warnings.txt` for online rendered documentation, by
+   opening the links in :guilabel:`"Related Links"` (on bottom of menu) and then
+   clicking on :guilabel:`"BUILDINFO"` and then :guilabel:`warnings.txt`
 
 
 .. _render-troubleshooting-incremental:
