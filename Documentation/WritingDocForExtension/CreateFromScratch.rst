@@ -1,9 +1,8 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-.. _writing-doc-for-ext-from-scratch:
-
 .. _how-to-start-documentation-for-ext:
+.. _writing-doc-for-ext-from-scratch:
 
 ===================================================
 How to Start Documentation for Your TYPO3 Extension
@@ -15,10 +14,39 @@ requires Docker for running the rendering toolchain locally on
 your computer to check if the documentation is rendered correctly.
 
 This is the preferred workflow, but if you have problems with
-Docker or would like to edit directly on GitHub, see the older
-Tip of the Day :ref:`tip-of-the-day-2016-12-29`.
+Docker see the alternative for rendering described under :ref:`rendering-docs`.
 
-If necessary, ask for help as explained in :ref:`how-to-get-help`.
+.. tip::
+   If necessary, ask for help as explained in :ref:`how-to-get-help`.
+
+There are basically 2 ways to start, depending on whether
+you used the extension_builder to start your extension:
+
+#. :ref:`doc-for-ext-with-extension-builder`
+#. :ref:`doc-for-ext-from-example`
+
+.. _doc-for-ext-with-extension-builder:
+
+Method 1: Start Documentation With Extension Builder
+====================================================
+
+If you used the `extension_builder <https://github.com/FriendsOfTYPO3/extension_builder>`
+to generate your extension, it will already have created a :file:`Documentation.tmpl`
+directory in your extension folder. Rename this directory to :file:`Documentation`.
+
+.. code:block:: shell
+
+   mv Documentation.tmpl Documentation
+
+Than continue with step 3 of the next section.
+
+
+.. _doc-for-ext-from-example:
+
+Method 2: Start Documentation from Example Manual
+=================================================
+
+
 
 .. rst-class:: bignums-xxl
 
