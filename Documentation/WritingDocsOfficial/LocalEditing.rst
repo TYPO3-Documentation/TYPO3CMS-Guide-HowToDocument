@@ -203,7 +203,7 @@ For example,
 So, running the following will not get the latest changes:
 
 
-.. code-block::
+.. code-block:: bash
 
    git pull origin master
 
