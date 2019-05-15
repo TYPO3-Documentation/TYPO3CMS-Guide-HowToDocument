@@ -35,10 +35,6 @@ Quick Start
    the link "Related Links". Then click on the link "Repository".
 
 
-   .. image:: ../images/related-links.png
-      :class: with-shadow
-
-
    This will direct you to the repository on Github.
 
    There, click on the "Fork" button in the upper right.
