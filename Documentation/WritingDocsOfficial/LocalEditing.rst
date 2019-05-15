@@ -13,8 +13,18 @@ with Git and Docker.
 If necessary, ask for help as explained in :ref:`how-to-get-help`.
 
 
+.. _edit-locally-quickstart:
+
 Quick Start
 ===========
+
+
+This describes how to create a pull request for the TYPO3 documentation. All
+steps described are steps you would usually do for any GitHub pull
+request. Only the part about editing (step 6) and rendering (step 7)
+are specific to TYPO3 documentation.
+
+
 
 .. rst-class:: bignums-xxl
 
@@ -46,9 +56,10 @@ Quick Start
       The repository will be forked to your workspace on Github. You can
       delete it later or reuse it for further changes.
 
+
 3. Clone the forked repository
 
-   Clone the forked repository **from your workspace** (click *Clone or
+   Clone the **forked repository from your workspace** (click *Clone or
    download* to copy the URL).
 
    In your terminal:
@@ -58,15 +69,41 @@ Quick Start
       git clone https://github.com/<USERNAME>/<NAME OF REPOSITORY>.git
 
 
-4. Create a branch
+4. Setup Git Settings and SSH Key
 
-   For example, use the branch `feature/changes-in-cgl`:
+   For this, we refer to general help on Git or GitHub:
+
+   Setup `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
+   and `email <https://help.github.com/en/articles/setting-your-commit-email-address-in-git>`__
+   (if not already setup in your global :file:`~/.gitconfig`).
+
+
+   `Setup your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
+
+5. Create a branch
+
+
+   .. important::
+
+      Make sure the repository is up-to-date by pulling from upstream as described
+      in :ref:`contribute-edit-locally-more-changes`. Your fork and local
+
+
+   For the URL for upstream, you must use the URL of the original repository (this
+   should include `TYPO3-Documentation` in the URL), not the URL of your fork.
+
+   .. code-block:: bash
+
+      git remote add upstream git@github.com:TYPO3-Documentation/<NAME OF REPOSITORY>.git
+      git pull upstream master
+
+   For example, create the branch `feature/changes-in-cgl`:
 
    .. code-block:: bash
 
       git checkout -b feature/changes-in-cgl
 
-5. Make changes
+6. Make changes
 
    Using your preferred IDE or editor, make changes to the files. Make
    sure you adhere to :ref:`format-rest-cgl`, e.g.
@@ -75,8 +112,10 @@ Quick Start
    If you are not familier with reST, you might want to check out
    :ref:`reST Introduction <writing-rest-introduction>` first!
 
+   Also, see our :ref:`rest-cheat-sheet` in this guide.
 
-6. Render the documentation
+
+7. Render the documentation
 
    Render with Docker in order to test the changes
    (see `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__).
@@ -97,7 +136,7 @@ Quick Start
       xdg-open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 
-7. Commit
+8. Commit
 
    .. code-block:: bash
 
@@ -108,7 +147,7 @@ Quick Start
    mind that the conventions for commit messages for the documentation are
    not strict.
 
-8. Push changes
+9. Push changes
 
    .. code-block:: bash
 
@@ -116,7 +155,7 @@ Quick Start
 
    This will push the change to your forked repository.
 
-9. Create Pull request
+10. Create Pull request
 
    Now, in your browser, visit the forked repository in your `GitHub
    <https://github.com/>`__ workspace. Github will already make
@@ -126,13 +165,79 @@ Quick Start
    Click on the green button "Compare & pull request" and then
    "Create pull request".
 
-10. Wait for someone to review and merge your pull request
+
+
+Now, wait for someone to review and merge your pull request
 
 
 You will receive notifications (email) about this. Once your change is
 merged, you can reload the page (which you fixed) in your browser.
 
 **Congratulations! You are now a contributor. Welcome and thank you!**
+
+
+.. _contribute-edit-locally-more-changes:
+
+Keep Your Local Fork Up-to-date
+===============================
+
+Explanation
+-----------
+
+This section describes how to keep your local repository up-to-date. This is
+identical to the online resource `Keeping a fork up-to-date <https://gist.github.com/CristinaSolana/1885435>`__.
+
+If you have already created a patch for a repository, you can reuse your
+local repository. This means you do not have to fork and clone for every new patch.
+
+However, if you reuse your local clone, you should make sure it is up-to-date
+before you create the another branch for a new patch.
+
+You local repository is based on the forked repository in your workspace.
+
+For example,
+
+* URL of fork:  `git@github.com:<your username>/TYPO3CMS-Guide-HowToDocument.git`
+* original URL: `git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
+
+So, running the following will not get the latest changes:
+
+
+.. code-block::
+
+   git pull origin master
+
+because origin points to your fork.
+
+
+
+Do it Now
+---------
+
+You must now do the following:
+
+.. code-block:: bash
+
+   git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
+   git pull upstream master
+
+.. important::
+
+   Some repositories use main branch "latest", not "master". In that case use "latest" instead
+   of master.
+
+
+Replace the URI with the correct URI for the original repository, not your fork!
+
+The URL for upstream has now been written to :file:`.git/config` in your local repository,
+so next time it is enough to do:
+
+.. code-block:: bash
+
+   git pull upstream master
+
+
+Now, continue with step 5 (create branch) in :ref:`edit-locally-quickstart`.
 
 
 More information
