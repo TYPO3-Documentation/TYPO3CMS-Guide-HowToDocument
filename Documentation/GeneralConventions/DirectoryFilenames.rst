@@ -72,11 +72,13 @@ Intersphinx mapping
 
 Settings.cfg contains start urls for the intersphinx linking mechanism.
 
-Leave manuals you do not link to with the intersphinx linking in your manual, commented out.
+You must uncomment all manuals you use in your cross-references
 
 This is an up-to-date list of mappings commonly used:
 
 .. code-block:: none
+
+   [intersphinx_mapping]
 
    # h2document     = https://docs.typo3.org/typo3cms/HowToDocument/
    # t3contribute   = https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
