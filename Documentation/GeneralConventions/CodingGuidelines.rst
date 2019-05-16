@@ -15,6 +15,8 @@ Encoding
 
 * use utf-8
 
+.. _cgl-indenting:
+
 Whitespace and Indenting
 ------------------------
 

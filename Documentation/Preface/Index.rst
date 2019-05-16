@@ -46,10 +46,15 @@ Credits
 
 This document was originally written by Martin Bless.
 
+Special thanks goes to Xavier Perseguers for writing some of the original
+texts on the TYPO3 Wiki and elsewhere. Part of the texts have been moved
+to this document or at least used as a basis.
+
 Further chapters like
 :ref:`rest-common-pitfalls`, :ref:`rest-cheat-sheet`, :ref:`docs-contribute`,
 :ref:`basic-principles`, :ref:`writing-doc-for-ext-start` and :ref:`docs-official-how-you-can-help`
 were added by Sybille Peters.
+
 
 A number of other people have helped by reviewing and refining the text
 and pointing out missing information. For more contributors, see the

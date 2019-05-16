@@ -46,6 +46,7 @@ http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_
    :hidden:
 
    Introduction
+   BasicRestSyntax
    CommonPitfalls/Index
    CheatSheet
    Reference
