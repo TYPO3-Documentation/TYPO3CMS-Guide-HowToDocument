@@ -47,6 +47,7 @@ Writing Documentation
    WritingDocsOfficial/Index
    RenderingDocs/Index
    Tools/Index
+   ReviewInformation
    Appendix/Index
    UsefulLinks
    Sitemap/Index
