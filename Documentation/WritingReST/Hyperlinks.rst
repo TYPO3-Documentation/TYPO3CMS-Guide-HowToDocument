@@ -23,20 +23,39 @@ In Sphinx you can use several types of links:
 
    (with one or two underscores at the end, if in doubt, use two)
 
-:ref:`Cross-Referencing <intersphinx>`
-   for linking to other sections of current or other manual on docs.typo3.org with Intersphinx mechanism
+:ref:`Cross-Referencing <cross-referencing>` (`:ref:`)
+   for linking to other sections of the same manual on docs.typo3.org with Intersphinx mechanism
 
    .. code-block:: rest
 
-      :ref:`anchor text <link target>`
+      :ref:`anchor text <link-target>`
 
-   To create a :ref:`link target <explicit-link-targets>` for a section chapter,
-   put this in a line before the section header::
+
+:ref:`Cross-Referencing <cross-referencing>` with intersphinx (`:ref:`)
+   for linking to other sections of a different manual on docs.typo3.org
+
+   If your link target is in another manual (e.g. "Getting Started Tutorial", you must
+   add the shortcut (here: `t3start`) for the other manual:
+
+   .. code-block:: rest
+
+      :ref:`anchor text <t3start:link-target>`
+
+   The shortcut must be defined in :ref:`settings-cfg`
+
+
+Whenever you use the cross-referencing mechanism, you should create a
+:ref:`link target <explicit-link-targets>` for a section chapter,
+by adding a label before the section header::
 
       .. _link-target:
 
+      Headline
+      ========
+
 
 How to create links is described in more detail in the next sections.
+
 
 .. _external-links:
 
@@ -108,7 +127,9 @@ underscore instead of 2.
 * There must always be a space between the anchor text and the URL
 
 
-.. _link-targets:
+
+
+.. _link-targets-explanation:
 
 Link Targets
 ============
@@ -118,8 +139,8 @@ will link to link targets.
 
 .. _explicit-link-targets:
 
-Explicit Link Targets (Labels)
-------------------------------
+Explicit Link Targets (Labels for Cross-Referencing)
+----------------------------------------------------
 
 You can define an explicit link target with a label for a section (or chapter):
 
@@ -157,10 +178,10 @@ that further.
 
 
 .. _intersphinx:
+.. _cross-referencing:
 
-
-Cross-Referencing
-=================
+Cross-Referencing (`:ref:`)
+===========================
 
 This section describes how to link to sections of the current or other
 manuals correctly.

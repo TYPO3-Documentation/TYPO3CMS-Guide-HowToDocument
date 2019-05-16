@@ -57,9 +57,6 @@ Settings.cfg
 .. important::
    This file must be adapted for the manual.
 
-It contains some meta information. It also
-contains start urls for the intersphinx linking mechanism.
-
 * Use  `Settings.cfg
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Settings.cfg>`__
   in this project as an up-to-date example for an official manual!
@@ -69,6 +66,39 @@ contains start urls for the intersphinx linking mechanism.
 
 The file consists of sections, which start with a keyword in brackets, such as `[general]`.
 Make sure that all directives exist in the correct section.
+
+Intersphinx mapping
+-------------------
+
+Settings.cfg contains start urls for the intersphinx linking mechanism.
+
+Leave manuals you do not link to with the intersphinx linking in your manual, commented out.
+
+This is an up-to-date list of mappings commonly used:
+
+.. code-block:: none
+
+   # h2document     = https://docs.typo3.org/typo3cms/HowToDocument/
+   # t3contribute   = https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
+   # t3coreapi      = https://docs.typo3.org/typo3cms/CoreApiReference/
+   # t3docteam      = https://docs.typo3.org/typo3cms/Teams/T3DocTeam/
+   # t3editors      = https://docs.typo3.org/typo3cms/EditorsTutorial/
+   # t3extbase      = https://docs.typo3.org/typo3cms/ExtbaseGuide/
+   # t3extbasebook  = https://docs.typo3.org/typo3cms/ExtbaseFluidBook/
+   # t3install      = https://docs.typo3.org/typo3cms/InstallationGuide/
+   # t3l10n         = https://docs.typo3.org/typo3cms/FrontendLocalizationGuide/
+   # t3start        = https://docs.typo3.org/typo3cms/GettingStartedTutorial/
+   # t3sitepackage  = https://docs.typo3.org/typo3cms/SitePackageTutorial/
+   # t3tca          = https://docs.typo3.org/typo3cms/TCAReference/
+   # t3templating   = https://docs.typo3.org/typo3cms/TemplatingTutorial/
+   # t3ts45         = https://docs.typo3.org/typo3cms/TyposcriptIn45MinutesTutorial/
+   # t3tsconfig     = https://docs.typo3.org/typo3cms/TSconfigReference/
+   # t3tsref        = https://docs.typo3.org/typo3cms/TyposcriptReference/
+
+
+
+Example Settings.cfg
+--------------------
 
 We are showing the contents of this manual's Settings.cfg by using the
 `literalincludes` directive.
