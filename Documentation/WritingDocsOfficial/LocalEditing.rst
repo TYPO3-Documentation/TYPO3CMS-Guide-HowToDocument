@@ -185,7 +185,8 @@ Explanation
 -----------
 
 This section describes how to keep your local repository up-to-date. This is
-identical to the online resource `Keeping a fork up-to-date <https://gist.github.com/CristinaSolana/1885435>`__.
+similar to the section "Keep your fork synced" on the online resource 
+`Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__.
 
 If you have already created a patch for a repository, you can reuse your
 local repository. This means you do not have to fork and clone for every new patch.
@@ -256,5 +257,6 @@ resources, for example:
   <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
 * `How to Create a Pull Request on GitHub
   <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
+* `For a repo <https://help.github.com/en/articles/fork-a-repo>`__  
 
 
