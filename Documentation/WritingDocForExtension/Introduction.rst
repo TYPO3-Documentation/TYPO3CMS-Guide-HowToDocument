@@ -18,6 +18,10 @@ extension contains a directory `Documentation` with at least the following files
 * `Includes.txt` : some basic definitions for sphinx
 * `Settings.cfg` : settings
 
+In addition, the `composer.json` of your extension should require the relevant version(s) of `typo3/cms-core`.
+
+Finally, to trigger documentation rendering you should add `https://docs-hook.typo3.org/` as a webhook to your public repository.
+
 These are the same files and general principles that apply to any documentation
 project. See :ref:`general-conventions-dir-and-filenames` for more information.
 

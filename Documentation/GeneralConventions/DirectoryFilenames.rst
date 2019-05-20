@@ -15,10 +15,13 @@ Directory and File Names
 * Use **CamelCase** for file and directory names.
 * reSt files have ending **.rst**
 * Included files have ending **.rst.txt**
+* The `composer.json` file is valid and contains `typo3/cms-core` in the `required` section.
 
 
 .. code-block:: none
 
+  composer.json
+  |
   Documentation/
   |
    --> Settings.cfg
