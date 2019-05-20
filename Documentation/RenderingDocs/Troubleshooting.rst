@@ -3,9 +3,9 @@
 
 .. _rendering-docs-troubleshooting:
 
-===============
-Troubleshooting
-===============
+===========================================
+Troubleshooting Local Rendering With Docker
+===========================================
 
 If you run into problems, here are some
 helpful hints on how to solve them.
@@ -13,7 +13,6 @@ helpful hints on how to solve them.
 Remember, you can always ask questions in the **#typo3-documentation**
 channel on Slack! `Register for slack <https://my.typo3.org/index.php?id=35>`__
 and join the channel, if you have not done so already.
-
 
 When you run `dockrun_t3rdf makehtml`, you should see some output. If
 everything works correctly, the final output should look like this:
@@ -32,6 +31,7 @@ everything works correctly, the final output should look like this:
 
 Relevant is the exitcode 0. It indicates that everything executed
 smoothly.
+
 
 .. _render-troubleshooting-errors:
 
@@ -140,10 +140,32 @@ folder and render again, for example:
 Get Detailed Information
 ========================
 
-If you create a directory tmp-GENERATED-temp before you start the rendering,
+If you create a directory :file:`tmp-GENERATED-temp` before you start the rendering,
 the toolchain will not remove this directory when it is done. Usually
 it cleans up after itself and this directory will be created and then removed.
 
 The directory contains some additional information for the individual scripts
 that have been run. In case of cryptic error messages which you have trouble
-interpreting, you may check these files for more information.  
+interpreting, you may check these files for more information.
+
+Look for files with ending :file:`err.txt` that are not empty.
+
+Example output:
+
+:file:`tmp-GENERATED-temp/RenderDocumentation/2019-05-19_06-37-50_072139/18-Make-and-build/40-Html/xeq-40-Make-html-1-err.txt`
+
+.. code-block:: bash
+
+   Traceback (most recent call last):
+     File "/usr/local/lib/python2.7/site-packages/sphinx/cmdline.py", line 303, in main
+       args.warningiserror, args.tags, args.verbosity, args.jobs)
+     File "/usr/local/lib/python2.7/site-packages/sphinx/application.py", line 191, in __init__
+       self.setup_extension(extension)
+     File "/usr/local/lib/python2.7/site-packages/sphinx/application.py", line 411, in setup_extension
+       self.registry.load_extension(self, extname)
+     File "/usr/local/lib/python2.7/site-packages/sphinx/registry.py", line 318, in load_extension
+       raise ExtensionError(__('Could not import extension %s') % extname, err)
+   ExtensionError: Could not import extension sphinxcontrib.googlechart (exception: cannot import name Directive)
+
+   Extension error:
+   Could not import extension sphinxcontrib.googlechart (exception: cannot import name Directive)
