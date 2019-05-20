@@ -14,18 +14,18 @@ See also: :ref:`tips-extension-authors`
 .. _tip-of-the-day-trigger-rebuild:
 .. rst-class:: panel panel-default
 
-Trigger Documentation Rendering
-===============================
+Trigger Documentation Rendering on the Documentation Server
+===========================================================
 
-Usually, extension documentation should automatically be rerendered.
+Usually, extension documentation should be rerendered automatically.
 
 If you made a change that has been merged, but it is not yet visible,
 do the following:
 
-#. Wait a few minutes
+#. Wait up to 10 minutes
 #. Reload your browser
 
-You may also render the repository locally, to make sure there are 
+You may also render the repository locally, to make sure there are
 no build errors breaking the rendering. See :ref:`render-troubleshooting-errors`.
 
 You can also look in the files in :file:`_buildinfo` online to see the
@@ -33,7 +33,7 @@ exitcodes and warnings. For example, for this manual:
 
 https://docs.typo3.org/typo3cms/HowToDocument/stable/_buildinfo/
 
-If this yields not results, you can iniated a rebuild:
+If this yields no results, you can iniate a rebuild:
 
 To trigger a rebuild of a manual, click the "request_rebuild.php" file
 in the respective .../\*.git.make folder.
