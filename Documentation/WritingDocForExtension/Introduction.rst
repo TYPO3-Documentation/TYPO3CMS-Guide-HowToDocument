@@ -20,7 +20,8 @@ extension contains a directory `Documentation` with at least the following files
 
 In addition, the `composer.json` of your extension should require the relevant version(s) of `typo3/cms-core`.
 
-Finally, to trigger documentation rendering you should add `https://docs-hook.typo3.org/` as a webhook to your public repository.
+Finally, to trigger documentation rendering you should add `https://docs-hook.typo3.org/` as a webhook to your
+public repository. Make sure to set the content type to `application-json`.
 
 These are the same files and general principles that apply to any documentation
 project. See :ref:`general-conventions-dir-and-filenames` for more information.
