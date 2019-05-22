@@ -7,32 +7,21 @@
 Introduction & Basics
 =====================
 
+.. _extension-documentation-files:
 
-About Extension Documentation
+Extension Documentation Files
 =============================
 
-The documentation for all extensions is structured in the same way: The
-extension contains a directory `Documentation` with at least the following files:
+The documentation for extensions is structured in a similar way as the documentation
+for official manuals.
 
-* `Index.rst` : contains text to be rendered on the startpage and the toctree
-* `Includes.txt` : some basic definitions for sphinx
-* `Settings.cfg` : settings
-
-In addition, the `composer.json` of your extension should require the relevant version(s) of `typo3/cms-core`.
-
-Finally, to trigger documentation rendering you should add `https://docs-hook.typo3.org/` as a webhook to your
-public repository. Make sure to set the content type to `application-json`.
-
-These are the same files and general principles that apply to any documentation
-project. See :ref:`general-conventions-dir-and-filenames` for more information.
+See :ref:`general-conventions-dir-and-filenames` for more details on these files.
 
 See https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual for an
 example.
 
-The Documentation may deviate from this recommendation, for example it may consist
-of only one `Readme.rst` or `Readme.md`. See :ref:`supported-filenames-and-formats`.
-Please note that using this has some drawbacks and it is recommended to use the
-files as described in :ref:`general-conventions-dir-and-filenames`.
+See :ref:`writing-doc-for-ext-from-scratch` if you want to start extension documentation
+right now.
 
 About TYPO3 Extensions
 ======================

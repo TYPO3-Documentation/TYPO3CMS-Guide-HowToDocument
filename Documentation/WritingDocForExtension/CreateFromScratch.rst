@@ -8,6 +8,9 @@
 How to Start Documentation for Your TYPO3 Extension
 ===================================================
 
+Overview
+========
+
 This chapter describes how to create documentation for your extension
 using *local editing and rendering with Docker*. It
 requires Docker for running the rendering toolchain locally on
@@ -24,6 +27,16 @@ you used the extension_builder to start your extension:
 
 #. :ref:`doc-for-ext-with-extension-builder`
 #. :ref:`doc-for-ext-from-example`
+
+Prerequisites
+=============
+
+Useful resources:
+
+* :ref:`Coding Guidelines <format-rest-cgl>`
+* :ref:`general-conventions-dir-and-filenames`
+* :ref:`reST <Formatting-with-reST>` (or :ref:`rest-cheat-sheet`
+  as more concise reference)
 
 .. _doc-for-ext-with-extension-builder:
 
@@ -66,14 +79,13 @@ Method 2: Start Documentation from Example Manual
 
       cp -r TYPO3CMS-Example-ExtensionManual/Documentation <extension-directory>/
 
-2. Add additional files
+2. Add or modify additional files
 
-   Some files are not mandatory, but it is recommended to use them:
-
-   * :ref:`gitignore-in-filenames` is useful, so you don't accidentally commit
+   * (*required*) Make sure :ref:`composer-json` requires correct TYPO3 version.
+   * (*recommended*) :ref:`gitignore-in-filenames` is useful, so you don't accidentally commit
      the generated documentation in :file:`Documentation-GENERATED-temp` to your Git
      repository.
-   * :ref:`editorconfig-in-filenames` is useful, so you will use the
+   * (*recommended*) :ref:`editorconfig-in-filenames` is useful, so you will use the
      recommended :ref:`Coding Guidelines <format-rest-cgl>`
      in your editor or IDE. You may need to set this
      up first (see :ref:`phpstorm-editorconfig` for PhpStorm).
@@ -87,17 +99,14 @@ Method 2: Start Documentation from Example Manual
 
    You may also want to consider adding :ref:`CONTRIBUTING.rst <contributing-rst>`
    and :ref:`README.rst <readme-rst>` to your extension,
-   if you plan to host the repository on GitHub.
+   if you plan to host your extension on a public repository.
 
 3. Edit the documentation
 
    Start editing away. Use the existing text to guide you. Look at other
-   extension manuals (for example `sphinx <https://docs.typo3.org/typo3cms/extensions/sphinx/>`__)
+   extension manuals (for example `form <https://docs.typo3.org/typo3cms/extensions/form/>`__)
    for inspiration. (Click on "Related Links" to jump to the repository or scroll to
    bottom of rendered page and click on "View page source" to see reST source.)
-
-   Check out the section on :ref:`reST <Formatting-with-reST>` to see how to format headlines,
-   code-blocks, images etc. and use the :ref:`rest-cheat-sheet` as a handy reference.
 
 4. Fill out Settings.cfg
 
@@ -108,13 +117,18 @@ Method 2: Start Documentation from Example Manual
    Before you publish your changes, make sure the documentation is rendered
    correctly.
 
-   Look at `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__ for a quick start.
+   Look at :ref:`render-documenation-with-docker` for a quick start.
 
 6. When You Are Done, Publish Your Changes
 
    If you are working on your own extension, `make it publicly available
    <https://extensions.typo3.org/faq/publish-an-extension/>`__.
-   The documentation will then automatically be rendered on docs.typo3.org.
+
+.. important::
+
+   In order to trigger documentation rendering on the documentation server you should
+   add `https://docs-hook.typo3.org/` as a webhook to your
+   public repository. Make sure to set the content type to `application-json`.
 
 .. tip::
 

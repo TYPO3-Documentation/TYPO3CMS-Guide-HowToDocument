@@ -3,20 +3,17 @@
 
 .. _general-conventions-dir-and-filenames:
 
-=====================
-Directories and Files
-=====================
+==========================
+Directories and File Names
+==========================
 
-Directory and File Names
-========================
 
 * All documentation resides in a :file:`Documentation` subfolder
 * This folder contains the files :file:`Settings.cfg`, :file:`Includes.txt` and :file:`Index.rst`
-* Use **CamelCase** for file and directory names.
 * reSt files have ending **.rst**
 * Included files have ending **.rst.txt**
-* The `composer.json` file is valid and contains `typo3/cms-core` in the `required` section.
-
+* The :ref:`composer-json` file is valid and contains `typo3/cms-core` in the `required` section.
+* Use **CamelCase** for directories and .rst file names. (*recommended*)
 
 .. code-block:: none
 
@@ -29,12 +26,7 @@ Directory and File Names
    --> Includes.txt
   |
    --> Index.rst
-  |
-   --> Topic1/
-         |
-         -> Index.rst
-         -> Subtopic1.rst
-         -> Subtopic2.rst
+
 
 If the documentation follows these conventions, the documentation rendering toolchain
 automatically detects the documentation and renders it correctly on the documentation
@@ -43,12 +35,27 @@ server.
 It is **strongly recommended** to do it the way it is described here.
 For alternatives, please look at :ref:`supported-filenames-and-formats`.
 
-
 At least the files :file:`Settings.cfg`, :file:`Includes.txt` and
 :file:`Index.rst` are required in the :file:`Documentation` folder (at least
 if you are creating an entire sphinx project and not a single-file solution).
 
+The file :file:`composer.json` is mandatory.
+
 The rest of the files listed here are optional, but strongly recommended.
+
+
+.. _composer-json:
+
+composer.json
+=============
+
+The `composer.json` file must be valid and contain `typo3/cms-core` in the `required` section.
+
+Example:
+
+* `composer.json for TYPO3 8.7 <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/blob/8-7/composer.json>`__
+
+
 
 .. _settings-cfg:
 
