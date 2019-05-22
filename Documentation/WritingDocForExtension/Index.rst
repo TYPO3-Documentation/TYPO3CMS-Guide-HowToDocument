@@ -17,8 +17,7 @@ be a system extension in the core.
 
 
 .. toctree::
-   :hidden:
-   :glob:
+   :maxdepth: 2
 
    Introduction
    CreateFromScratch
