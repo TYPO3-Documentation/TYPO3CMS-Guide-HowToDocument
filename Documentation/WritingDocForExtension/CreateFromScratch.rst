@@ -81,7 +81,7 @@ Method 2: Start Documentation from Example Manual
 
 2. Add or modify additional files
 
-   * (*required*) Make sure :ref:`composer-json` requires correct TYPO3 version.
+   * (*required*) Make sure :ref:`composer-json` requires the correct TYPO3 version.
    * (*recommended*) :ref:`gitignore-in-filenames` is useful, so you don't accidentally commit
      the generated documentation in :file:`Documentation-GENERATED-temp` to your Git
      repository.
@@ -126,7 +126,7 @@ Method 2: Start Documentation from Example Manual
 
 .. important::
 
-   In order to trigger documentation rendering on the documentation server you should
+   In order to trigger documentation rendering on the documentation server you have to
    add `https://docs-hook.typo3.org/` as a webhook to your
    public repository. Make sure to set the content type to `application-json`.
 
