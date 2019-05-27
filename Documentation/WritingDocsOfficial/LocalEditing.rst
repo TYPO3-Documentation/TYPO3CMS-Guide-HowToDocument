@@ -85,19 +85,17 @@ are specific to TYPO3 documentation.
 
    .. important::
 
-      Make sure the repository is up-to-date by pulling from upstream as described
-      in :ref:`contribute-edit-locally-more-changes`. 
+      If you did not just fork and clone but are using a local reporitory, you created a while ago:
       
-   .. important::
-   
-      Always branch from *latest* (or *master*, if that is the name of the main branch).
+      #. Make sure the repository is up-to-date by pulling from upstream as described
+         in :ref:`contribute-edit-locally-more-changes`. 
+      #. Always branch from *latest* (or *master*, if that is the name of the main branch).
+         If you have still checked out a feature branch, switch back to *latest* or *master*
+         first:
       
-      If you have still checked out a feature branch, switch back to *latest* or *master*
-      first:
+         .. code-block:: bash
       
-      .. code-block:: bash
-      
-         git checkout master
+            git checkout master
 
    For example, create the branch `feature/changes-in-cgl`:
 
