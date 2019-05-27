@@ -86,16 +86,18 @@ are specific to TYPO3 documentation.
    .. important::
 
       Make sure the repository is up-to-date by pulling from upstream as described
-      in :ref:`contribute-edit-locally-more-changes`. Your fork and local
-
-
-   For the URL for upstream, you must use the URL of the original repository (this
-   should include `TYPO3-Documentation` in the URL), not the URL of your fork.
-
-   .. code-block:: bash
-
-      git remote add upstream git@github.com:TYPO3-Documentation/<NAME OF REPOSITORY>.git
-      git pull upstream master
+      in :ref:`contribute-edit-locally-more-changes`. 
+      
+   .. important::
+   
+      Always branch from *latest* (or *master*, if that is the name of the main branch).
+      
+      If you have still checked out a feature branch, switch back to *latest* or *master*
+      first:
+      
+      .. code-block:: bash
+      
+         git checkout master
 
    For example, create the branch `feature/changes-in-cgl`:
 
