@@ -3,9 +3,9 @@
 
 .. _docs-contribute-git-docker:
 
-=======================================
-Local Editing and Rendering with Docker
-=======================================
+======================================================
+Workflow #2: "Local Editing and Rendering with Docker"
+======================================================
 
 This section walks you through contributing to the documentation
 with Git and Docker.
