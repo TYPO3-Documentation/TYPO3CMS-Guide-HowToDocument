@@ -14,6 +14,10 @@ changes to existing documentation of extensions. The extension may be a
 third party extension by someone else or one you maintain yourself, it may
 be a system extension in the core.
 
+.. important::
+
+   When redirected here, :ref:`webhook` might be the place to check out. This
+   section explains how to setup new rendering via webhook for TYPO3 extensions.
 
 
 .. toctree::
@@ -23,4 +27,5 @@ be a system extension in the core.
    CreateFromScratch
    ContributeToThirdPartyExtension
    ContributeToSystemExtension
+   Webhook
    ExtensionAuthorTips

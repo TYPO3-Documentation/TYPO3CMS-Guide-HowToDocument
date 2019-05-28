@@ -127,8 +127,7 @@ Method 2: Start Documentation from Example Manual
 .. important::
 
    In order to trigger documentation rendering on the documentation server you have to
-   add `https://docs-hook.typo3.org/` as a webhook to your
-   public repository. Make sure to set the content type to `application-json`.
+   add an webhook, see :ref:`webhook`.
 
 .. tip::
 
