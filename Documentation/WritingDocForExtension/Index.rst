@@ -2,8 +2,9 @@
 .. highlight:: rst
 
 .. _writing-doc-for-ext-start:
-
 .. _how-to-start-docs-extension:
+.. _extension-documentation-files:
+.. _write-doc-extensions-intro:
 
 ============================
 How to Document an Extension
@@ -19,13 +20,23 @@ be a system extension in the core.
    When redirected here, :ref:`webhook` might be the place to check out. This
    section explains how to setup new rendering via webhook for TYPO3 extensions.
 
+**Useful resources**:
+
+* If necessary, ask for help as explained in :ref:`how-to-get-help`.
+* :ref:`Coding Guidelines <format-rest-cgl>`
+* :ref:`general-conventions-dir-and-filenames`
+* :ref:`rest-cheat-sheet`
+* :ref:`rendering-docs`
+* :ref:`about-typo3-extensions`
+
+**Table of Contents:**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   Introduction
    CreateFromScratch
-   ContributeToThirdPartyExtension
-   ContributeToSystemExtension
    Webhook
    ExtensionAuthorTips
+   ContributeToSystemExtension
+   ContributeToThirdPartyExtension
+

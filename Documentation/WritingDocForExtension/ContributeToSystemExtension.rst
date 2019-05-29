@@ -38,7 +38,7 @@ see :ref:`overview-of-types`.
       :class: with-shadow
       :target: https://github.com/TYPO3/TYPO3.CMS/pull/172#issuecomment-494721296
 
-See `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`
+See `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
 for a list of system extension documentation.
 
 Use the `sample extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
