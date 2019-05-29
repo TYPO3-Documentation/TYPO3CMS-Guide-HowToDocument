@@ -51,7 +51,7 @@ directory in your extension folder. Rename this directory to :file:`Documentatio
 
    mv Documentation.tmpl Documentation
 
-Then continue with step 3 of the next section.
+Then continue with step 2 of the next section.
 
 
 .. _doc-for-ext-from-example:
