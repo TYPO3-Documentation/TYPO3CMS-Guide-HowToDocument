@@ -8,35 +8,25 @@
 How to Start Documentation for Your TYPO3 Extension
 ===================================================
 
-Overview
-========
-
-This chapter describes how to create documentation for your extension
+This page describes how to create documentation for your extension
 using *local editing and rendering with Docker*. It
 requires Docker for running the rendering toolchain locally on
 your computer to check if the documentation is rendered correctly.
 
-This is the preferred workflow, but if you have problems with
-Docker see the alternative for rendering described under :ref:`rendering-docs`.
-
 .. tip::
-   If necessary, ask for help as explained in :ref:`how-to-get-help`.
+
+   This page is a "quick start". If you are just getting started, you
+   may want to begin with :ref:`writing-doc-for-ext-start`.
+
+The documentation for extensions is structured in a similar way as the documentation
+for official manuals. See :ref:`general-conventions-dir-and-filenames` for more details
+on these files.
 
 There are basically 2 ways to start, depending on whether
 you used the extension_builder to start your extension:
 
 #. :ref:`doc-for-ext-with-extension-builder`
 #. :ref:`doc-for-ext-from-example`
-
-Prerequisites
-=============
-
-Useful resources:
-
-* :ref:`Coding Guidelines <format-rest-cgl>`
-* :ref:`general-conventions-dir-and-filenames`
-* :ref:`reST <Formatting-with-reST>` (or :ref:`rest-cheat-sheet`
-  as more concise reference)
 
 .. _doc-for-ext-with-extension-builder:
 
@@ -58,8 +48,6 @@ Then continue with step 2 of the next section.
 
 Method 2: Start Documentation from Example Manual
 =================================================
-
-
 
 .. rst-class:: bignums-xxl
 
