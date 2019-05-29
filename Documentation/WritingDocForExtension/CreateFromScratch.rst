@@ -127,7 +127,7 @@ Method 2: Start Documentation from Example Manual
 .. important::
 
    In order to trigger documentation rendering on the documentation server you have to
-   add an webhook, see :ref:`webhook`.
+   add a webhook, see :ref:`webhook`.
 
 .. tip::
 
