@@ -8,6 +8,14 @@ Webhook
 
 This section describes how to add webhooks for auto rendering to a repository.
 
+The system currently supports the following git systems:
+
+  - GitHub
+  - Bitbucket (cloud)
+  - GitLab (cloud and self-hosted)
+
+The following chapters provide illustrated walkthrough tutorials on how to add the necessary hook in those systems.
+
 .. _webhook-github:
 
 GitHub
