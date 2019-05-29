@@ -6,14 +6,14 @@
 Webhook
 =======
 
-This section describes how to add webhooks for auto rendering to an repository.
+This section describes how to add webhooks for auto rendering to a repository.
 
 .. _webhook-github:
 
 GitHub
 ======
 
-Add auto rendering for an Repository via GitHub webhook in five steps:
+Add auto rendering for a repository via GitHub webhook in five steps:
 
 .. rst-class:: bignums-xxl
 
@@ -51,7 +51,7 @@ Add auto rendering for an Repository via GitHub webhook in five steps:
 
 #. Webhook was added
 
-   GitHub should show an notice that creation of Webhook was successful.
+   GitHub should show a notice that creation of webhook was successful.
 
    .. figure:: /images/webhook/github/webhook-added.png
       :width: 932
@@ -59,7 +59,7 @@ Add auto rendering for an Repository via GitHub webhook in five steps:
 #. (Optional) visit intercept and check request
 
    If curious, visit https://intercept.typo3.com/admin/docs/deployments and
-   check "Recent actions" (scroll down). The repository should have created an
+   check "Recent actions" (scroll down). The repository should have created a
    "Docs hook ping from github repository".
 
    .. figure:: /images/webhook/github/intercept-feedback.png
