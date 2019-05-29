@@ -33,7 +33,7 @@ Commands to Render Documentation
 
    docker pull t3docs/render-documentation
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
-   dockrun_t3rdf makehtml
+   dockrun_t3rd makehtml
    xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 Explanations, the numbers correspond to the line numbers in code snippet:
@@ -44,9 +44,9 @@ Explanations, the numbers correspond to the line numbers in code snippet:
    The next run will usually be faster because
    it will only pull (download) the Docker image again if a newer one is
    available.
-#. **Prepare dockrun_t3rdf:**
+#. **Prepare dockrun_t3rd:**
    This will not only run the Docker container, it
-   will make the command `dockrun_t3rdf` available in your current terminal.
+   will make the command `dockrun_t3rd` available in your current terminal.
    You must do this again for every new terminal you open.
 #. **Render the documentation:** This will automatically find the documentation
    in the :file:`Documentation`
@@ -89,7 +89,7 @@ Example Aliases
    alias t3docrun='source <(docker run --rm t3docs/render-documentation show-shell-commands)'
 
    # build docs
-   alias t3docmake='dockrun_t3rdf makehtml'
+   alias t3docmake='dockrun_t3rd makehtml'
 
    # open generated docs in browser (uses t3open alias, see above)
    # - use xdg-open for Linux
