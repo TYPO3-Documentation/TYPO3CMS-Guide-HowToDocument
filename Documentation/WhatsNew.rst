@@ -15,6 +15,25 @@ Whats New in This Guide
 2019
 ====
 
+.. _news-2019-new-doc-server:
+.. rst-class:: panel panel-default
+
+NEW: Webhook and composer.json
+-------------------------------
+
+.. important::
+
+   It is important, that you make the necessary changes for your extension,
+   as described in :ref:`tip-ext-new-doc-server`.
+
+The following was added:
+
+* :ref:`webhook`
+* :ref:`composer-json`
+
+:ref:`how-to-start-documentation-for-ext` was updated.
+
+
 .. _news-2019-rest-tables:
 .. rst-class:: panel panel-default
 

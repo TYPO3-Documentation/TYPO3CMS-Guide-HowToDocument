@@ -8,6 +8,31 @@ Tips for Extension Authors
 ==========================
 
 
+.. _tip-ext-new-doc-server:
+.. rst-class:: panel panel-default
+
+Webhook and composer.json
+=========================
+
+Because of the
+`move to the new documentation server <https://typo3.org/article/docstypo3org-gets-new-infrastructure/>`__,
+a valid composer.json
+and a webhook is now mandatory for extensions, in order to automatically be
+rendered on the documentation server.
+
+#. Add a valid :ref:`composer-json` to your extension
+#. Create the :ref:`webhook`
+
+If you see the following on the rendered page of your extension, it has not
+yet been rendered with the new mechanism:
+
+.. figure:: ../images/docs_deprecation.png
+   :class: with-shadow
+   :alt: Deprecation message on rendered extension documentation page
+
+   Deprecation message on rendered extension documentation page
+
+
 
 .. _tip-edit-me-on-github:
 .. rst-class:: panel panel-default

@@ -35,11 +35,13 @@ server.
 It is **strongly recommended** to do it the way it is described here.
 For alternatives, please look at :ref:`supported-filenames-and-formats`.
 
-At least the files :file:`Settings.cfg`, :file:`Includes.txt` and
-:file:`Index.rst` are required in the :file:`Documentation` folder (at least
-if you are creating an entire sphinx project and not a single-file solution).
+.. important::
 
-The file :file:`composer.json` is mandatory.
+   The files :file:`Settings.cfg`, :file:`Includes.txt` and
+   :file:`Index.rst` are required in the :file:`Documentation` folder (at least
+   if you are creating an entire sphinx project and not a single-file solution).
+
+   The file :file:`composer.json` is mandatory.
 
 The rest of the files listed here are optional, but strongly recommended.
 
@@ -53,8 +55,8 @@ The `composer.json` file must be valid and contain `typo3/cms-core` in the `requ
 
 Example:
 
-* `composer.json for TYPO3 8.7 <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/blob/8-7/composer.json>`__
-
+* `composer.json for an official manual (not an extension) <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/blob/8-7/composer.json>`__ (TYPO3 8.7)
+* `composer.json for system extension form <https://github.com/TYPO3/TYPO3.CMS/blob/9.5/typo3/sysext/form/composer.json>`__ (TYPO3 9.5)
 
 
 .. _settings-cfg:
