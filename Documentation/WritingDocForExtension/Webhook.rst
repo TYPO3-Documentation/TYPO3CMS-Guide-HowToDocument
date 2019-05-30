@@ -8,13 +8,28 @@ Webhook
 
 This section describes how to add webhooks for auto rendering to a repository.
 
-The system currently supports the following git systems:
+The system currently supports Git as VCS (Version Control System), and the
+following hosters:
 
-  - GitHub
-  - Bitbucket (cloud)
-  - GitLab (cloud and self-hosted)
+  - :ref:`webhook-github`
+  - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
+  - GitLab Cloud and GitLab self-hosted
+
+If none of the above is used, a mirror to one of these is recommend. Also the
+:ref:`Documentation Team <https://typo3.org/community/teams/documentation/>` can
+setup custom hostings.
 
 The following chapters provide illustrated walkthrough tutorials on how to add the necessary hook in those systems.
+
+.. _webhook-legacy:
+
+Legacy webhook
+==============
+
+If the repository already had an hook, this is considered deprecated. An
+compatibility layer is still in place, but will be removed in the future.
+
+An update is necessary.
 
 .. _webhook-github:
 
@@ -74,28 +89,62 @@ Add auto rendering for a repository via GitHub webhook in five steps:
       :width: 932
 
 
+.. _webhook-bitbucket-cloud:
 
-Bitbucket
-=========
+Bitbucket Cloud
+===============
 
-Add auto rendering for a repository via Bitbucket webhook in two steps:
+Add auto rendering for a repository via Bitbucket webhook in five steps:
 
 .. rst-class:: bignums-xxl
 
-#. Go to "Settings" and "Webhooks" section within the repository
+#. Go to "Settings" section within the repository
 
-   .. figure:: /images/webhook/bitbucket/bitbucket-settings-webhooks.jpg
-      :width: 740
+   .. figure:: /images/webhook/bitbucket/cloud/repository-start.png
+      :width: 932
 
-#. Click the "Add webhook" button
+#. Go to "Webhooks" section within the repository settings
+
+   .. figure:: /images/webhook/bitbucket/cloud/settings-tab.png
+      :width: 932
+
+#. Add webhook
+
+   .. figure:: /images/webhook/bitbucket/cloud/webhook-section.png
+      :width: 932
 
 #. Fill in webhook configuration
 
    #. Choose a title for this hook: e.g. "TYPO3 Docs".
 
-   #. Fill URL fields with ``https://docs-hook.typo3.org``.
+   #. Fill URL field with ``https://docs-hook.typo3.org``.
+
+   #. Enable "Active" Status.
+
+   #. Select ``Repository push`` for "Triggers".
 
    #. Click on "Save"
-   
-   .. figure:: /images/webhook/bitbucket/bitbucket-add-webhook.jpg
-      :width: 570
+
+   .. figure:: /images/webhook/bitbucket/cloud/webhook-add.png
+      :width: 932
+
+#. Webhook was added
+
+   Bitbucket should show a notice, which disappears after some seconds, that
+   creation of webhook was successful. Also the webhook should be shown in the
+   list.
+
+   .. figure:: /images/webhook/bitbucket/cloud/webhook-added.png
+      :width: 932
+
+#. (Optional) visit intercept and check request
+
+   If curious, visit https://intercept.typo3.com/admin/docs/deployments and
+   check "Recent actions" (scroll down).
+
+   In order to appear, the hook needs to be triggered. Therefore either the
+   branch ``master`` can be pushed. Or a new Branch ``documentation-draft`` can
+   be created and pushed.
+
+   .. figure:: /images/webhook/bitbucket/cloud/intercept-feedback.png
+      :width: 932
