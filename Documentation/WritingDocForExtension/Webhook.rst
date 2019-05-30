@@ -72,3 +72,30 @@ Add auto rendering for a repository via GitHub webhook in five steps:
 
    .. figure:: /images/webhook/github/intercept-feedback.png
       :width: 932
+
+
+
+Bitbucket
+=========
+
+Add auto rendering for a repository via Bitbucket webhook in two steps:
+
+.. rst-class:: bignums-xxl
+
+#. Go to "Settings" and "Webhooks" section within the repository
+
+   .. figure:: /images/webhook/bitbucket/bitbucket-settings-webhooks.jpg
+      :width: 740
+
+#. Click the "Add webhook" button
+
+#. Fill in webhook configuration
+
+   #. Choose a title for this hook: e.g. "TYPO3 Docs".
+
+   #. Fill URL fields with ``https://docs-hook.typo3.org``.
+
+   #. Click on "Save"
+   
+   .. figure:: /images/webhook/bitbucket/bitbucket-add-webhook.jpg
+      :width: 570
