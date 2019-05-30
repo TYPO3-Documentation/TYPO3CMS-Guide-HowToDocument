@@ -20,8 +20,7 @@ a valid composer.json
 and a webhook is now mandatory for extensions, in order to automatically be
 rendered on the documentation server.
 
-#. Add a valid :ref:`composer-json` to your extension
-#. Create the :ref:`webhook`
+Read more: :ref:`migrate`
 
 If you see the following on the rendered page of your extension, it has not
 yet been rendered with the new mechanism:

@@ -19,7 +19,7 @@ Writing Documentation
 
 **Did you know?**
 
-   - Extension Authors: :ref:`tip-ext-new-doc-server` (**Important**)
+   - Extension Authors: :ref:`Migrate Documentation to New Server <migrate>` (**Important**)
    - Extension Authors: :ref:`tip-edit-me-on-github`
    - Extension Authors: :ref:`tip-link-to-issues`
 
