@@ -53,11 +53,34 @@ composer.json
 
 The `composer.json` file must be valid and contain `typo3/cms-core` in the `required` section.
 
-Example:
+Example for TYPO3 CMS 8.7:
 
-* `composer.json for an official manual (not an extension) <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/blob/8-7/composer.json>`__ (TYPO3 8.7)
-* `composer.json for system extension form <https://github.com/TYPO3/TYPO3.CMS/blob/9.5/typo3/sysext/form/composer.json>`__ (TYPO3 9.5)
+.. code-block:: json
 
+   {
+       "name": "vendor/package-key",
+       "type": "typo3-cms-extension",
+       "description": "An example extension",
+       "license": "GPL-2.0-or-later",
+       "require": {
+         "typo3/cms-core": "^8.7"
+       }
+   }
+
+For extensions supporting TYPO3 versions lower then 8.x, ``typo3/cms`` is
+required as dependency instead of ``typo3/cms-core``:
+
+.. code-block:: json
+
+   {
+       "name": "vendor/package-key",
+       "type": "typo3-cms-extension",
+       "description": "An example extension",
+       "license": "GPL-2.0-or-later",
+       "require": {
+         "typo3/cms": "^8.7"
+       }
+   }
 
 .. _settings-cfg:
 
