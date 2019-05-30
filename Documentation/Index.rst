@@ -19,18 +19,19 @@ Writing Documentation
 
 **Did you know?**
 
-   -  Extension Authors: :ref:`tip-edit-me-on-github`
-   -  Extension Authors: :ref:`tip-link-to-issues`
-   -  :ref:`tip-of-the-day-trigger-rebuild`
-   -  Extension Authors: :ref:`tip-extension-rendered-old-layout`
+   - Extension Authors: :ref:`tip-ext-new-doc-server` (**Important**)
+   - Extension Authors: :ref:`tip-edit-me-on-github`
+   - Extension Authors: :ref:`tip-link-to-issues`
 
-   :ref:`General Tips ... <Tip-of-the-day>` | :ref:`Tips for extension authors ... <tips-extension-authors>`
+   :ref:`More tips for extension authors ... <tips-extension-authors>`
+
+.. uncomment this, when there are new general tips
+   :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 **What's new in this guide?**
 
+   - 2019-02-03 :ref:`news-2019-new-doc-server`
    - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
-   - 2019-01-22 :ref:`news-2019-guidelines-for-images`
-   - 2018-11-27 :ref:`news-2018-content-styleguide`
 
    :ref:`All News ... <whats-new>`
 
