@@ -115,9 +115,9 @@ This is an up-to-date list of mappings commonly used:
 
    [intersphinx_mapping]
 
-   # h2document     = https://docs.typo3.org/typo3cms/HowToDocument/
-   # t3contribute   = https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
-   # t3coreapi      = https://docs.typo3.org/typo3cms/CoreApiReference/
+   # h2document     = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/
+   # t3contribute   = https://docs.typo3.org/m/typo3/guide-contributionworkflow/master/en-us/
+   # t3coreapi      = https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/
    # t3docteam      = https://docs.typo3.org/typo3cms/Teams/T3DocTeam/
    # t3editors      = https://docs.typo3.org/typo3cms/EditorsTutorial/
    # t3extbase      = https://docs.typo3.org/typo3cms/ExtbaseGuide/
