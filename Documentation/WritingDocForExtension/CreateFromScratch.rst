@@ -46,7 +46,7 @@ Then continue with step 2 of the next section.
 
 .. _doc-for-ext-from-example:
 
-Method 2: Start Documentation from Example Manual
+Method 2: Start Documentation From Example Manual
 =================================================
 
 .. rst-class:: bignums-xxl
