@@ -118,19 +118,19 @@ This is an up-to-date list of mappings commonly used:
    # h2document     = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/
    # t3contribute   = https://docs.typo3.org/m/typo3/guide-contributionworkflow/master/en-us/
    # t3coreapi      = https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/
-   # t3docteam      = https://docs.typo3.org/typo3cms/Teams/T3DocTeam/
-   # t3editors      = https://docs.typo3.org/typo3cms/EditorsTutorial/
-   # t3extbase      = https://docs.typo3.org/typo3cms/ExtbaseGuide/
-   # t3extbasebook  = https://docs.typo3.org/typo3cms/ExtbaseFluidBook/
-   # t3install      = https://docs.typo3.org/typo3cms/InstallationGuide/
-   # t3l10n         = https://docs.typo3.org/typo3cms/FrontendLocalizationGuide/
-   # t3start        = https://docs.typo3.org/typo3cms/GettingStartedTutorial/
-   # t3sitepackage  = https://docs.typo3.org/typo3cms/SitePackageTutorial/
-   # t3tca          = https://docs.typo3.org/typo3cms/TCAReference/
-   # t3templating   = https://docs.typo3.org/typo3cms/TemplatingTutorial/
-   # t3ts45         = https://docs.typo3.org/typo3cms/TyposcriptIn45MinutesTutorial/
-   # t3tsconfig     = https://docs.typo3.org/typo3cms/TSconfigReference/
-   # t3tsref        = https://docs.typo3.org/typo3cms/TyposcriptReference/
+   # t3docteam      = https://docs.typo3.org/m/typo3/team-t3docteam/master/en-us/
+   # t3editors      = https://docs.typo3.org/m/typo3/tutorial-editors/master/en-us/
+   # t3extbase      = https://docs.typo3.org/m/typo3/guide-extbasefluid/master/en-us/
+   # t3extbasebook  = https://docs.typo3.org/m/typo3/book-extbasefluid/master/en-us/
+   # t3install      = https://docs.typo3.org/m/typo3/guide-installation/master/en-us/
+   # t3l10n         = https://docs.typo3.org/m/typo3/guide-frontendlocalization/master/en-us/
+   # t3start        = https://docs.typo3.org/m/typo3/tutorial-getting-started/master/en-us/
+   # t3sitepackage  = https://docs.typo3.org/m/typo3/tutorial-sitepackage/master/en-us/
+   # t3tca          = https://docs.typo3.org/m/typo3/reference-tca/master/en-us/
+   # t3templating   = https://docs.typo3.org/m/typo3/tutorial-templating-with-fluid/master/en-us/
+   # t3ts45         = https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/master/en-us/
+   # t3tsconfig     = https://docs.typo3.org/m/typo3/reference-tsconfig/master/en-us/
+   # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
 
 
 
