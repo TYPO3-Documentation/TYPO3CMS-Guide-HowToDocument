@@ -137,6 +137,21 @@ Spread the Word
 `new <https://docs.typo3.org/News/Index.html>`__
 and that you find interesting. Remind people, that everyone can contribute!
 
+.. _how-you-can-help-new-content:
+
+Make Suggestions for New Content
+================================
+
+Sometimes you can directly add content in a manual or create an issue for it.
+
+But, sometimes you are not sure, where the new content should go or if it should
+be created at all.
+
+If this is the case, either:
+
+* Raise the question in the #typo3-documentation channel on Slack
+* Or, add a comment with your suggestion to this general issue: 
+  `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
 
 .. _how-you-can-help-review-manuals:
 
@@ -147,30 +162,5 @@ Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start r
 If you find something that needs fixing or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
-You can also give general feedback as issues, but if possible try to
-outline some way in which the manual can be improved.
-
-If you can, please try to fix the issue yourself.
-
-Some general things to look out for:
-
-* Does the manual contain spelling mistakes or language errors?
-* Is the language clear and easy to follow?
-
-Here are some things to look out for, while reviewing Tutorials:
-
-* Does the manual contain clear, easy to follow steps with screenshots or code examples,
-  where necessary?
-* Is the information correct and up to date? 
-* Is someone, who is new to the topic, capable of following the Tutorial?
-
-More information: :ref:`t3docteam:whats-a-tutorial`
-
-Here are some things to look out for, while reviewing Guides:
-
-* Does it have a clear structure?
-* Did you easily find the information you needed?
-* For longer sections: Is there a summary available, as a "Quick Start" or "Quick Reference"
-  (Example: :ref:`Logging Quick Start <t3coreapi:logging-quickstart>`)?
-
+.. todo:: how to give (general) feedback on documentation
 
