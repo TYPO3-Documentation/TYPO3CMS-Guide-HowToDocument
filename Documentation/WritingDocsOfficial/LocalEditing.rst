@@ -85,16 +85,16 @@ are specific to TYPO3 documentation.
 
    .. important::
 
-      If you did not just fork and clone but are using a local reporitory, you created a while ago:
-      
+      If you did not just fork and clone but are using a local repository, you created a while ago:
+
       #. Make sure the repository is up-to-date by pulling from upstream as described
-         in :ref:`contribute-edit-locally-more-changes`. 
-      #. Always branch from *latest* (or *master*, if that is the name of the main branch).
-         If you have still checked out a feature branch, switch back to *latest* or *master*
+         in :ref:`contribute-edit-locally-more-changes`.
+      #. Always branch from *master* (see also :ref:`tip-branches-master`).
+         If you have still checked out a feature branch, switch back to  *master*
          first:
-      
+
          .. code-block:: bash
-      
+
             git checkout master
 
    For example, create the branch `feature/changes-in-cgl`:
@@ -185,7 +185,7 @@ Explanation
 -----------
 
 This section describes how to keep your local repository up-to-date. This is
-similar to the section "Keep your fork synced" on the online resource 
+similar to the section "Keep your fork synced" on the online resource
 `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__.
 
 If you have already created a patch for a repository, you can reuse your
@@ -257,6 +257,6 @@ resources, for example:
   <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
 * `How to Create a Pull Request on GitHub
   <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
-* `For a repo <https://help.github.com/en/articles/fork-a-repo>`__  
+* `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
 
 
