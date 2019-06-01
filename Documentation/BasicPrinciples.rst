@@ -77,7 +77,7 @@ https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
 Technically, this means converting the reST (.rst files) into HTML, automatically
 creating the menu, using the current theme to add additional styles and images.
 
-
+.. _documentation-types:
 
 Documentation Types
 ===================
@@ -91,8 +91,10 @@ included in the git repository of an extension) and consists of one :file:`Docum
 folder. A "manual" can be a tutorial, such as the :ref:`t3start:start`, a guide,
 an extension manual or something else.
 
+.. _doc-type-tutorial:
+
 Tutorial
-~~~~~~~~
+--------
 
 A tutorial is a manual. 
 
@@ -103,8 +105,10 @@ learning, tutorials provide examples to illustrate the subjects they cover.
 In addition, tutorials provide guidance on how to avoid common pitfalls and highlight
 key concepts that should be remembered for future reference.
 
+.. _doc-type-guide:
+
 Guide
-~~~~~
+-----
 
 A guide is a manual.
 
@@ -114,13 +118,43 @@ to cover in order to gain a practical overview of the process. Once completed, t
 becomes a practical reference tool to which a reader can refer as needed. Guides offer
 advice on how best to achieve a given task.
 
+
+.. _doc-type-extension-manual:
+
 Extension Manual
-~~~~~~~~~~~~~~~~
+----------------
 
 An extension manual covers only the extension. This documentation is (usually) included
 in the source code of an extension in a :file:`Documentation` subdirectory.
 
+.. _doc-type-official:
+
+Official Documentation
+----------------------
+
+This documentation is authored and maintained by the TYPO3 community.
+
+The Documentation Team generally maintains this documentation, but maintainance tasks
+may be delegated to others, for example by giving write permission to GitHub repositories.
+
+In general, it is recommended for the TYPO3 experts to take on jobs of continuosly updating
+content and making sure it is correct and up to date.
+
+.. _doc-type-community:
+
+Community Documentation
+-----------------------
+
+Third party extension manuals are typically "community documentation". 
+
+This documentation is usually maintained by the extension author.
+
+The TYPO3 Documentation Team cannot maintain "community documentation", but it
+helps by providing documentation, support and an example extension manual. 
+
+
 .. _overview-of-types:
+.. _contribution-matrix:
 
 Documentation Contribution Matrix
 =================================
