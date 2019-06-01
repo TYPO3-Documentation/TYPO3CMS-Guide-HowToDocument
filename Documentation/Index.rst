@@ -16,10 +16,13 @@ Writing Documentation
    This manual is about writing TYPO3 documentation
    (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in: :ref:`how-to-read-this-guide`
 
+**Important / Breaking changes**
+
+   - :ref:`tip-branches-master`
+   - :ref:`tip-ext-new-doc-server` (for Extension Authors)
 
 **Did you know?**
 
-   - Extension Authors: :ref:`Migrate Documentation to New Server <migrate>` (**Important**)
    - Extension Authors: :ref:`tip-edit-me-on-github`
    - Extension Authors: :ref:`tip-link-to-issues`
 

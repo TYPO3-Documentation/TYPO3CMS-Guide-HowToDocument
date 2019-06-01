@@ -7,12 +7,12 @@
 Tips for Extension Authors
 ==========================
 
-
 .. _tip-ext-new-doc-server:
 .. rst-class:: panel panel-default
 
-Webhook and composer.json
-=========================
+2019-05-29 - [IMPORTANT] Webhook and composer.json
+===================================================
+
 
 Because of the
 `move to the new documentation server <https://typo3.org/article/docstypo3org-gets-new-infrastructure/>`__,
@@ -29,8 +29,7 @@ yet been rendered with the new mechanism:
    :class: with-shadow
    :alt: Deprecation message on rendered extension documentation page
 
-   Deprecation message on rendered extension documentation page
-
+      Deprecation message on rendered extension documentation page
 
 
 .. _tip-edit-me-on-github:
