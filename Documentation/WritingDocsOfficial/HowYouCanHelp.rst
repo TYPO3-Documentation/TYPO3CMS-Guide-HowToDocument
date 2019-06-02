@@ -5,18 +5,30 @@
 .. _docs-official-how-you-can-help:
 .. _how-to-contribute:
 
+.. _contribute-what:
+
 ================
-How You Can Help
+Contribute What?
 ================
+
+.. note:: 
+
+   This page used to be called "How You Can Help" but we found, that **"how"**
+   you can help is already described by the :ref:`contribution workflow
+   <contribute>` on the previous pages. 
+   
+   This page helps with the **"what"** of contribution: What exactly can you do to
+   help?
 
 Everyone can contribute to the TYPO3 documentation and contributions are
 very much appreciated.
 
-There are a number of things you can do to help.
 
 .. important::
    These are just examples to get you started. You are not restricted to this,
    as a contributor. If you can make useful improvements, do it!
+   The best contributions come from starting with something that bothers you
+   the most.
 
 
 
@@ -129,13 +141,23 @@ necessary changes themselves.
 
 Thank others for their contributions (e.g. on Slack or personally).
 
+.. _contribute-what-social-media:
+
 Spread the Word
 ===============
 
-`Tweet <https://twitter.com/search?f=tweets&vertical=default&q=%23typo3>`__
-(hashtag: #typo3) or blog about things in the documentation, that are 
+Tell others about things in the documentation, that are 
 `new <https://docs.typo3.org/News/Index.html>`__
-and that you find interesting. Remind people, that everyone can contribute!
+and that you find interesting. 
+
+Remind people, that everyone can contribute!
+
+* `Tweet <https://twitter.com/>`__
+  (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__). 
+  Additionally, you can use `#T3Docs <https://twitter.com/search?q=%23T3Docs>`__,
+  `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
+  #T3DC (for docs contribution)
+
 
 .. _how-you-can-help-new-content:
 
@@ -144,8 +166,8 @@ Make Suggestions for New Content
 
 Sometimes you can directly add content in a manual or create an issue for it.
 
-But, sometimes you are not sure, where the new content should go or if it should
-be created at all.
+But, what if you are not sure, where the new content should go or if it should
+be created at all?
 
 If this is the case, either:
 
@@ -162,5 +184,23 @@ Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start r
 If you find something that needs fixing or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
+Help to keep this list up to date: :ref:`t3docteam:overview-of-manuals-review`
+
+.. ------------------------------------------------------
+
 .. todo:: how to give (general) feedback on documentation
+.. todo:: systematic review: how?
+
+.. draft
+
+   Blog About Your Contributions 
+   =============================
+
+   Telling a real life story may help others to make the decision to 
+   contribute. It's your story, so you decide what's in it, but here
+   are some ideas to get you started:
+
+   * What gave you the motivation to contribute?
+   * What advice can you give others?
+
 
