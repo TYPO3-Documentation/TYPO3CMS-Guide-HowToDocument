@@ -5,20 +5,11 @@
 .. _docs-official-how-you-can-help:
 .. _how-to-contribute:
 
-.. _contribute-what:
 
 ================
-Contribute What?
+How You Can Help
 ================
 
-.. note:: 
-
-   This page used to be called "How You Can Help" but we found, that **"how"**
-   you can help is already described by the :ref:`contribution workflow
-   <contribute>` on the previous pages. 
-   
-   This page helps with the **"what"** of contribution: What exactly can you do to
-   help?
 
 Everyone can contribute to the TYPO3 documentation and contributions are
 very much appreciated.
