@@ -18,7 +18,7 @@ be a system extension in the core.
 .. important::
 
    When redirected here, :ref:`migrate` might be the place to check out. This
-   section explains how to migrat existing documentation.
+   section explains how to migrate existing documentation.
 
    Additionally, a valid :ref:`composer-json` is now required.
 
