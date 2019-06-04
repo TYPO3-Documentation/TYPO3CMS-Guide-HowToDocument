@@ -16,7 +16,7 @@ following hosters:
   - GitLab Cloud and GitLab self-hosted
 
 If none of the above is used, a mirror to one of these is recommend. Also the
-:ref:`Documentation Team <https://typo3.org/community/teams/documentation/>` can
+`Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
 setup custom hostings.
 
 The following chapters provide illustrated walkthrough tutorials on how to add the necessary hook in those systems.
@@ -26,7 +26,7 @@ The following chapters provide illustrated walkthrough tutorials on how to add t
 Legacy webhook
 ==============
 
-If the repository already had an hook, this is considered deprecated. An
+If the repository already had a hook, this is considered deprecated. A
 compatibility layer is still in place, but will be removed in the future.
 
 An update is necessary.

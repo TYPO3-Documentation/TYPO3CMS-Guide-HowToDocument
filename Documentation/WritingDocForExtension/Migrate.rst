@@ -3,45 +3,45 @@
 .. _migrate:
 
 =====================
-Migrate documentation
+Migrate Documentation
 =====================
 
 Since May 29th 2019 a new infrastructure is in place at docs.typo3.org. This
-requires some migration tasks, in order to keep extension documentation
-rendering at docs.typo3.org
+requires some migration tasks, in order to ensure that extension documentation
+is rendered on docs.typo3.org
 
 .. _migrate-necessary-steps:
 
-Necessary steps
+Necessary Steps
 ===============
 
-The following section will explain all two necessary steps.
+The two necessary steps are:
 
 .. rst-class:: bignums-xxl
 
-#. Add necessary :file:`composer.json`, see :ref:`composer-json`
+#. Add mandatory :file:`composer.json`, see :ref:`composer-json`
 
-   This file is necessary, in order to determine mandatory information, like
+   This file is necessary, in order to determine required information, like
    vendor, package name and supported TYPO3 version.
 
 #. Add new webhook, see :ref:`webhook`
 
-   The legacy webhook is no longer necessary, as explained at
+   The legacy webhook is no longer necessary, as explained in
    :ref:`webhook-legacy`.
 
 .. _migrate-info-about-changes:
 
-Info about changes
+Info About Changes
 ==================
 
 .. _migrate-extension-release:
 
-Extension release
+Extension Release
 -----------------
 
 The TER (TYPO3 Extension Repository) will no longer trigger documentation
 rendering. Therefore uploading an extension at extensions.typo3.org does not
-trigger rendering anymore.
+automatically trigger rendering anymore.
 
 In order to release a new version of an extension:
 
@@ -49,7 +49,7 @@ In order to release a new version of an extension:
 
 #. Add :ref:`webhook` (if not already done).
 
-#. Tag the Git commit with an valid version.
+#. Tag the Git commit with a valid version.
 
 #. Publish the extension at https://packagist.org/ (This is done by Webhook +
    Tagging)
@@ -95,17 +95,17 @@ Existing Documentation
 ----------------------
 
 Existing Documentation is kept until end of 2020. Each documentation contains an
-information block that it's outdated, together with an link to the necessary
+information block that it's outdated, together with a link to the necessary
 steps.
 
-In order to migrate, follow :ref:`migrate`. The Documentation team can setup
-redirects for old documentation to new documentation afterwards. Send an message
+In order to migrate, follow :ref:`migrate`. The Documentation Team can setup
+redirects for old documentation to new documentation afterwards. Send a message
 within `Slack <https://my.typo3.org/about-mytypo3org/slack>`_
 `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
 
 .. _migrate-url-structure:
 
-URL structure
+URL Structure
 -------------
 
 The URL structure has changed. Redirects are in place.
@@ -133,14 +133,14 @@ The URL structure now consists of the following parts:
       <https://github.com/TYPO3/Fluid>`_
 
 ``vendor``
-   Collects all packages of the same vendor, e.g. "typo3" or an company
+   Collects all packages of the same vendor, e.g. "typo3" or a company
    providing extensions. Same as on packagist.org.
 
 ``package``
    Defines the package. Same as on packagist.org.
 
 ``version``
-   Defines the concrete version, either in form of "Major.Minor" or ``master`` or
+   Defines the version, either in form of "Major.Minor" or ``master`` or
    ``draft``.
 
 ``locale``
