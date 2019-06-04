@@ -16,7 +16,7 @@ following hosters:
   - GitLab Cloud and GitLab self-hosted
 
 If none of the above is used, a mirror to one of these is recommend. Also the
-:ref:`Documentation Team <https://typo3.org/community/teams/documentation/>` can
+`Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
 setup custom hostings.
 
 The following chapters provide illustrated walkthrough tutorials on how to add the necessary hook in those systems.
