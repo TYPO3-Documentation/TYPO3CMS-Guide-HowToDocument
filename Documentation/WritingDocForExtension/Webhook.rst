@@ -26,7 +26,7 @@ The following chapters provide illustrated walkthrough tutorials on how to add t
 Legacy webhook
 ==============
 
-If the repository already had an hook, this is considered deprecated. An
+If the repository already had a hook, this is considered deprecated. A
 compatibility layer is still in place, but will be removed in the future.
 
 An update is necessary.
