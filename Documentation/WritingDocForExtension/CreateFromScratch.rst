@@ -16,16 +16,15 @@ your computer to check if the documentation is rendered correctly.
 .. tip::
 
    This page is a "quick start". If you are just getting started, you
-   may want to begin with :ref:`writing-doc-for-ext-start`.
+   may want to look at the resources on :ref:`writing-doc-for-ext-start`.
 
 The documentation for extensions is structured in a similar way as the documentation
 for official manuals. See :ref:`general-conventions-dir-and-filenames` for more details
 on these files.
 
-There are basically 2 ways to start, depending on whether
-you used the extension_builder to start your extension:
+There are basically 2 ways to start:
 
-#. :ref:`doc-for-ext-with-extension-builder`
+#. :ref:`doc-for-ext-with-extension-builder` (extension_builder)
 #. :ref:`doc-for-ext-from-example`
 
 .. _doc-for-ext-with-extension-builder:
@@ -43,6 +42,12 @@ directory in your extension folder. Rename this directory to :file:`Documentatio
 
 Then continue with step 2 of the next section.
 
+.. warning::
+
+   Current and previous versions of the extension_builder generate documentation with
+   tabs (instead of spaces). You should use spaces as specified in :ref:`format-rest-cgl`.
+   You should reformat the generated documentation before you proceed. Mixing tabs and
+   spaces may cause inconsistent indenting and may lead to problems with the rendering.
 
 .. _doc-for-ext-from-example:
 
