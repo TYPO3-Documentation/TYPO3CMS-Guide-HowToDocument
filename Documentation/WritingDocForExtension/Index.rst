@@ -20,8 +20,6 @@ be a system extension in the core.
    When redirected here, :ref:`migrate` might be the place to check out. This
    section explains how to migrate existing documentation.
 
-   Additionally, a valid :ref:`composer-json` is now required.
-
 **Useful resources**:
 
 * If necessary, ask for help as explained in :ref:`how-to-get-help`.
