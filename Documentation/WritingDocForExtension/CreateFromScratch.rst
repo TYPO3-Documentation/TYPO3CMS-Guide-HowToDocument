@@ -56,7 +56,7 @@ Method 2: Start Documentation From Example Manual
 
 .. rst-class:: bignums-xxl
 
-1. Clone sample extension manual
+#. Clone sample extension manual
 
    In a temporary directory, clone the GitHub project
    `sample extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
@@ -66,22 +66,23 @@ Method 2: Start Documentation From Example Manual
       git clone https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual.git
 
    Move or copy the entire :file:`Documentation` directory, so that the Documentation
-   directory is a direct subdirectory of your extension, e.g.
+   directory is a direct subdirectory of the extension, e.g.
 
    .. code-block:: bash
 
       cp -r TYPO3CMS-Example-ExtensionManual/Documentation <extension-directory>/
 
-2. Add or modify additional files
+#. Add or modify additional files
 
-   * (*required*) Make sure :ref:`composer-json` requires the correct TYPO3 version.
-   * (*recommended*) :ref:`gitignore-in-filenames` is useful, so you don't accidentally commit
-     the generated documentation in :file:`Documentation-GENERATED-temp` to your Git
-     repository.
-   * (*recommended*) :ref:`editorconfig-in-filenames` is useful, so you will use the
-     recommended :ref:`Coding Guidelines <format-rest-cgl>`
-     in your editor or IDE. You may need to set this
-     up first (see :ref:`phpstorm-editorconfig` for PhpStorm).
+   * (*required*) Make sure :ref:`composer-json` is up to date.
+   * (*required*) Make sure :ref:`settings-cfg` is up to date.
+   * (*recommended*) :ref:`gitignore-in-filenames` is useful, in order to
+     prevent accidentally commiting the generated documentation in
+     :file:`Documentation-GENERATED-temp` to the Git repository.
+   * (*recommended*) :ref:`editorconfig-in-filenames` is useful, so the
+     recommended :ref:`Coding Guidelines <format-rest-cgl>` will be used within
+     editor or IDE. :ref:`phpstorm-editorconfig` contains further information
+     for PhpStorm.
 
    .. code-block:: bash
 
@@ -94,37 +95,42 @@ Method 2: Start Documentation From Example Manual
    and :ref:`README.rst <readme-rst>` to your extension,
    if you plan to host your extension on a public repository.
 
-3. Edit the documentation
+#. Edit documentation
 
    Start editing away. Use the existing text to guide you. Look at other
    extension manuals (for example `form <https://docs.typo3.org/typo3cms/extensions/form/>`__)
    for inspiration. (Click on "Related Links" to jump to the repository or scroll to
    bottom of rendered page and click on "View page source" to see reST source.)
 
-4. Fill out Settings.cfg
+#. Fill out composer.json
+
+   Be sure to fill out :file:`composer.json` correctly as described in :ref:`composer-json`.
+
+#. Fill out Settings.cfg
 
    Be sure to fill out :file:`Settings.cfg` correctly as described in :ref:`settings-cfg`.
 
-5. Render the Documentation Locally
+#. Render documentation
 
-   Before you publish your changes, make sure the documentation is rendered
-   correctly.
+   Before publishing changes, make sure the documentation is rendered correctly.
 
-   Look at :ref:`render-documenation-with-docker` for a quick start.
+   Look at :ref:`render-documenation-with-docker` for a quick start, how to
+   render locally.
 
-6. When You Are Done, Publish Your Changes
+   There is also a :ref:`draft branch <migrate-branches>` that allows to render
+   a preview at docs.typo3.org.
+
+#. Publish when done
 
    If you are working on your own extension, `make it publicly available
    <https://extensions.typo3.org/faq/publish-an-extension/>`__.
-
-.. important::
 
    In order to trigger documentation rendering on the documentation server you have to
    add a webhook, see :ref:`webhook`.
 
 .. tip::
 
-   Think about hosting your extension repository on GitHub.
+   Think about hosting your extension repository on GitHub, Bitbucket or GitLab.
    That way others can report issues and assist you by creating change requests
    for the documentation and code!
 
