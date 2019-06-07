@@ -8,7 +8,7 @@ Directories and File Names
 ==========================
 
 
-* All documentation resides in a :file:`Documentation` subfolder
+* All documentation resides in a :file:`Documentation` subfolder.
 * This folder contains the files :file:`Settings.cfg`, :file:`Includes.txt` and :file:`Index.rst`
 * reSt files have ending **.rst**
 * Included files have ending **.rst.txt**
@@ -110,9 +110,9 @@ Make sure that all directives exist in the correct section.
 Intersphinx mapping
 -------------------
 
-Settings.cfg contains start urls for the intersphinx linking mechanism.
+:file:`Settings.cfg` contains start urls for the :ref:`intersphinx` linking mechanism.
 
-You must uncomment all manuals you use in your cross-references
+Every manual used for cross referencing mus be uncommented.
 
 This is an up-to-date list of mappings commonly used:
 
@@ -142,13 +142,8 @@ This is an up-to-date list of mappings commonly used:
 Example Settings.cfg
 --------------------
 
-We are showing the contents of this manual's Settings.cfg by using the
-`literalincludes` directive.
-
 .. literalinclude:: ../Settings.cfg
-   :linenos:
-
-
+   :language: cfg
 
 .. _includes-txt:
 
@@ -159,16 +154,11 @@ Includes.txt
 
 This file can be the same for all Documentation projects!
 
-Use `Includes.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
-from this project as an up-to-date example.
-
-We are showing the contents of this manual's Includes.txt by using the
-`literalincludes` directive.
+`Includes.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
+from this project can be used as an up-to-date example.
 
 .. literalinclude:: ../Includes.txt
-   :linenos:
-
-
+   :language: rst
 
 
 .. _index-rst:
@@ -191,16 +181,16 @@ in this manual as an example.
 Minimal Example
 ---------------
 
-.. code-block:: rest
+.. code-block:: rst
    :linenos:
 
-      .. include:: Includes.txt
+   .. include:: Includes.txt
 
-      =================
-      T3DocTeam at Work
-      =================
+   =================
+   T3DocTeam at Work
+   =================
 
-      some text
+   some text
 
 
    .. toctree::
@@ -218,12 +208,7 @@ Minimal Example
 Complete Example
 ----------------
 
-We are showing the contents of this manual's Index.rst by using the
-`literalincludes` directive.
-
 .. literalinclude:: ../Index.rst
-   :linenos:
-
 
 .. _editorconfig-in-filenames:
 
