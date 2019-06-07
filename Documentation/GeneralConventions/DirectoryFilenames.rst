@@ -12,21 +12,17 @@ Directories and File Names
 * This folder contains the files :file:`Settings.cfg`, :file:`Includes.txt` and :file:`Index.rst`
 * reSt files have ending **.rst**
 * Included files have ending **.rst.txt**
-* The :ref:`composer-json` file is valid and contains `typo3/cms-core` in the `required` section.
+* The :ref:`composer-json` in project root.
 * Use **CamelCase** for directories and .rst file names. (*recommended*)
 
 .. code-block:: none
 
-  composer.json
-  |
-  Documentation/
-  |
-   --> Settings.cfg
-  |
-   --> Includes.txt
-  |
-   --> Index.rst
-
+   .
+   ├── composer.json
+   └── Documentation
+       ├── Includes.txt
+       ├── Index.rst
+       └── Settings.cfg
 
 If the documentation follows these conventions, the documentation rendering toolchain
 automatically detects the documentation and renders it correctly on the documentation
@@ -37,23 +33,32 @@ For alternatives, please look at :ref:`supported-filenames-and-formats`.
 
 .. important::
 
-   The files :file:`Settings.cfg`, :file:`Includes.txt` and
-   :file:`Index.rst` are required in the :file:`Documentation` folder (at least
-   if you are creating an entire sphinx project and not a single-file solution).
+   The files :file:`Settings.cfg` and :file:`Index.rst` are required in the
+   :file:`Documentation` folder (at least if you are creating an entire sphinx
+   project and not a single-file solution).
 
-   The file :file:`composer.json` is mandatory.
+   The file :file:`composer.json` is mandatory inside the project root folder,
+   one level above :file:`Documentation`.
 
 The rest of the files listed here are optional, but strongly recommended.
-
 
 .. _composer-json:
 
 composer.json
 =============
 
-The `composer.json` file must be valid and contain `typo3/cms-core` in the `required` section.
+The :file:`composer.json` file must be valid and contain TYPO3 CMS as
+requirement in the. In order to validate the :file:`composer.json`, the
+following command can be used within the folder containing the file:
 
-Example for TYPO3 CMS 8.7:
+.. code-block:: bash
+
+   composer validate
+
+The following two examples demonstrate the minimum content for different
+supported TYPO3 versions.
+
+Example for TYPO3 CMS > 8.7.7:
 
 .. code-block:: json
 
@@ -63,11 +68,11 @@ Example for TYPO3 CMS 8.7:
        "description": "An example extension",
        "license": "GPL-2.0-or-later",
        "require": {
-         "typo3/cms-core": "^8.7"
+         "typo3/cms-core": "^8.7.8"
        }
    }
 
-For extensions supporting TYPO3 versions lower then 8.x, ``typo3/cms`` is
+For extensions supporting TYPO3 versions lower then 8.7.7, ``typo3/cms`` is
 required as dependency instead of ``typo3/cms-core``:
 
 .. code-block:: json
@@ -78,7 +83,7 @@ required as dependency instead of ``typo3/cms-core``:
        "description": "An example extension",
        "license": "GPL-2.0-or-later",
        "require": {
-         "typo3/cms": "^8.7"
+         "typo3/cms": "^7.6"
        }
    }
 
