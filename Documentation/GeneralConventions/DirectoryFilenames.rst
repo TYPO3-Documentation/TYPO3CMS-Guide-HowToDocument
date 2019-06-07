@@ -48,7 +48,7 @@ composer.json
 =============
 
 The :file:`composer.json` file must be valid and contain TYPO3 CMS as
-requirement in the. In order to validate the :file:`composer.json`, the
+requirement. In order to validate the :file:`composer.json`, the
 following command can be used within the folder containing the file:
 
 .. code-block:: bash
