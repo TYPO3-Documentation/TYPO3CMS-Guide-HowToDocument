@@ -101,7 +101,7 @@ Settings.cfg
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Settings.cfg>`__
   in this project as an up-to-date example for an official manual!
 * Use the file in `TYPO3CMS-Example-ExtensionManual
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/latest/Documentation/Settings.cfg>`__
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/master/Documentation/Settings.cfg>`__
   as an up-to-date example for an extension manual!
 
 The file consists of sections, which start with a keyword in brackets, such as `[general]`.
