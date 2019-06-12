@@ -1,11 +1,10 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-.. _supported-filenames-and-formats:
 
-============================================
-Additionally Supported Filenames and Formats
-============================================
+==============================
+Additionally Supported Formats
+==============================
 
 
 .. important::
@@ -17,6 +16,9 @@ Additionally Supported Filenames and Formats
 Name of Start Page
 ==================
 
+.. important::
+
+   The information here was moved: :ref:`supported-filenames-and-formats`.
 
 It is recommended to name the startpage `Documentation/Index.rst`. The following
 is also supported (in this order):
@@ -34,8 +36,11 @@ If none of these files exist, no documentation will be rendered.
 The files ending in .md contain Markdown, the files ending in .rst
 contain reStructuredText (reST).
 
-Rendering Formats
-=================
+
+.. _supported-formats:
+
+Formats
+=======
 
 Using reStructuredText (reST) is strongly recommended.
 
