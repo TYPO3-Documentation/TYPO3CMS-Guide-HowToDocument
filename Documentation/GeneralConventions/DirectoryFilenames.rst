@@ -7,45 +7,54 @@
 Directories and File Names
 ==========================
 
+If the documentation follows these conventions, the documentation rendering toolchain
+automatically detects the documentation and renders it correctly on the documentation
+server.
 
-* All documentation resides in a :file:`Documentation` subfolder.
-* This folder contains the files :file:`Settings.cfg`, :file:`Includes.txt` and :file:`Index.rst`
-* reSt files have ending **.rst**
+For documentation to be rendered, you need at least:
+
+* (**required**) :ref:`composer-json` in project root. As of May 29, 2019, this is now mandatory!
+* (**required**) a :ref:`"start file" <start-file>`,
+  usually :file:`Documentation/Index.rst` or one of the
+  :ref:`alternatives <start-file>`, such as :file:`README.rst`.
+* (**required**) :ref:`Documentation/Settings.cfg <settings-cfg>`
+
+
+The other files listed here may not be required, but are recommended.
+
+Further conventions:
+
+* reStructueredText files have ending **.rst**
+* Markdown files have ending **.md**
 * Included files have ending **.rst.txt**
-* The :ref:`composer-json` in project root.
-* Use **CamelCase** for directories and .rst file names. (*recommended*)
+* Use **CamelCase** for directories and .rst file names (e.g. :file:`Index.rst`,
+  :file:`ExtensionArchitecture.rst`).
+
+
+Minimal Setup ("classic")
+=========================
+
+This is the recommended setup. It is used by the official documentation.
 
 .. code-block:: none
 
    .
    ├── composer.json
    └── Documentation
-       ├── Includes.txt
        ├── Index.rst
        └── Settings.cfg
+       └── ...
 
-If the documentation follows these conventions, the documentation rendering toolchain
-automatically detects the documentation and renders it correctly on the documentation
-server.
+For alternative start page (e.g. :file:`README.rst` or :file:`README.md`),
+see :ref:`"start file" <start-file>`.
 
-It is **strongly recommended** to do it the way it is described here.
-For alternatives, please look at :ref:`supported-filenames-and-formats`.
-
-.. important::
-
-   The files :file:`Settings.cfg` and :file:`Index.rst` are required in the
-   :file:`Documentation` folder (at least if you are creating an entire sphinx
-   project and not a single-file solution).
-
-   The file :file:`composer.json` is mandatory inside the project root folder,
-   one level above :file:`Documentation`.
-
-The rest of the files listed here are optional, but strongly recommended.
 
 .. _composer-json:
 
 composer.json
 =============
+
+*-- required*
 
 The :file:`composer.json` file must be valid and contain TYPO3 CMS as
 requirement. In order to validate the :file:`composer.json`, the
@@ -87,10 +96,207 @@ required as dependency instead of ``typo3/cms-core``:
        }
    }
 
+
+.. _index-rst:
+.. _start-file:
+.. _supported-filenames-and-formats:
+
+Start File
+==========
+
+*-- required*
+
+The recommended start file is :file:`Documentation/Index.rst`. This is what is used for
+official manuals.
+
+Use `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Index.rst>`__
+in this manual as an example.
+
+The following is also supported (in this priority):
+
+#. :file:`Documentation/Index.rst`
+#. :file:`Documentation/index.rst`
+#. :file:`Documentation/Index.md`
+#. :file:`Documentation/index.md`
+#. :file:`README.rst`
+#. :file:`README.md`
+
+
+If none of these files exist, no documentation will be rendered.
+
+The files ending in .md contain Markdown, the files ending in .rst
+contain reStructuredText (reST).
+
+
+.. tip::
+
+   Official manuals often contain both: :file:`README.rst` and :file:`Documentation/Index.rst`.
+   Because :file:`Documentation/Index.rst` has higher priority, this will be used as start
+   page. The additional README.rst is used as an :ref:`"about file" <about-file>`.
+
+
+.. warning::
+
+   If you use a single file solution (everything in one file without toctree), there is
+   still an open issue concerning the menu. See the
+   :ref:`workaround <single-file-workaround>`.
+
+
+
+Example - "classic" with toctree
+--------------------------------
+
+A similar structure is used by the official documentation.
+
+Files
+~~~~~
+
+.. code-block:: none
+
+   .
+   ├── ...
+   ├── composer.json
+   └── Documentation
+       ├── Index.rst
+       ├── Settings.cfg
+       └── Introduction.rst
+       └── Configuration.rst
+
+
+Content
+~~~~~~~
+
+Index.rst:
+
+.. code-block:: rst
+   :linenos:
+
+   .. include:: Includes.txt
+
+   =====
+   Title
+   =====
+
+   some text
+
+
+   .. toctree::
+      :hidden:
+
+      Introduction.rst
+      Configuration.rst
+
+
+* line 1 : every .rst file should include Includes.txt
+* line 3-5: the header
+* line 10-14: the toctree defines which other pages will be included
+  and combined. The menu is generated from all combined files (recursively).
+  Here we include the files
+  :file:`Introduction.rst`, :file:`Configuration.rst`
+
+Introduction.rst:
+
+.. code-block:: rst
+
+   .. include:: ../Includes.txt
+
+   ============
+   Introduction
+   ============
+
+   some text
+
+   A subsection
+   ============
+
+
+Alternatively, the introduction file may include a toctree as well.
+
+
+
+.. _doc-start-file-single-file:
+
+Example - Single File
+---------------------
+
+This uses an alternative start file :file:`README.rst` on the top level,
+instead of :file:`Documentation/Index.rst`.
+
+This may be better suited for extensions.
+
+Files
+~~~~~
+
+.. code-block:: none
+
+   .
+   ├── ...
+   ├── README.rst
+   └── Documentation
+       ├── Settings.cfg
+       └── ...
+
+
+Content
+~~~~~~~
+
+.. code-block:: rst
+   :linenos:
+
+   =====
+   Title
+   =====
+
+
+   Introduction
+   ============
+
+   ... text with introduction ...
+
+   Configuration
+   =============
+
+   ... text with configuration ...
+
+
+* line 1 : every .rst file should include Includes.txt
+* line 3-5: the title
+* Here, all text is contained in one file.
+
+.. _single-file-workaround:
+
+Workaround for Single File
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. warning::
+
+   If you use a single file solution (everything in one file), there is
+   still an `open issue concerning the menu <https://github.com/t3docs/docker-render-documentation/issues/64>`__.
+
+   Currently, there is a workaround: Remove the title:
+
+   .. code-block:: rst
+
+
+      Introduction
+      ============
+
+      ... text with introduction ...
+
+      Configuration
+      =============
+
+      ... text with configuration ...
+
+
+
+
 .. _settings-cfg:
 
 Settings.cfg
 ============
+
+*-- required*
 
 :file:`Documentation/Settings.cfg`
 
@@ -112,7 +318,7 @@ Intersphinx mapping
 
 :file:`Settings.cfg` contains start urls for the :ref:`intersphinx` linking mechanism.
 
-Every manual used for cross referencing mus be uncommented.
+Every manual used for cross referencing must be uncommented.
 
 This is an up-to-date list of mappings commonly used:
 
@@ -139,8 +345,10 @@ This is an up-to-date list of mappings commonly used:
 
 
 
-Example Settings.cfg
---------------------
+Example
+-------
+
+This is :file:`Settings.cfg` for this manual.
 
 .. literalinclude:: ../Settings.cfg
    :language: cfg
@@ -150,83 +358,42 @@ Example Settings.cfg
 Includes.txt
 ============
 
+*-- optional (recommended for official documentation)*
+
 :file:`Documentation/Includes.txt`
 
 This file can be the same for all Documentation projects!
 
-`Includes.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
-from this project can be used as an up-to-date example.
+Example:
+
+* `Includes.txt in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
 
 .. literalinclude:: ../Includes.txt
    :language: rst
 
-
-.. _index-rst:
-
-Index.rst
-=========
-
-:file:`Documentation/Index.rst`
-
-.. important::
-
-   This file must be adapted for the manual.
-
-It contains text that is displayed on the start page
-as well as the toctree.
-
-Use `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Index.rst>`__
-in this manual as an example.
-
-Minimal Example
----------------
-
-.. code-block:: rst
-   :linenos:
-
-   .. include:: Includes.txt
-
-   =================
-   T3DocTeam at Work
-   =================
-
-   some text
-
-
-   .. toctree::
-      :hidden:
-
-      Introduction/Index
-      Configuration/Index
-
-
-* line 1 : every .rst file should include Includes.txt
-* line 3-5: the header
-* line 10-14: the toctree, which specifically includes the files
-  :file:`Introduction/Index.rst`, :file:`Configuration/Index.rst`
-
-Complete Example
-----------------
-
-.. literalinclude:: ../Index.rst
 
 .. _editorconfig-in-filenames:
 
 .editorconfig
 =============
 
+*-- optional (strongly recommended)*
+
 :file:`.editorconfig`
 
 For more information, see :ref:`editorconfig`.
 
-Use the file in `this manual: .editorconfig
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
-as an example.
+Example:
+
+* `.editorconfig in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
+
 
 .. _gitignore-in-filenames:
 
 .gitignore
 ==========
+
+*-- optional (strongly recommended)*
 
 :file:`.gitignore`
 
@@ -236,7 +403,7 @@ your editor).
 
 You can ignore additional files by adding them to your .git/info/exclude file.
 
-.gitignore will apply to anyone using the repository, .git/info/exclude is for yourself
+The file :file:`.gitignore` will apply to anyone using the repository, :file:`.git/info/exclude` is for yourself
 only and will not be included in the repository on GitHub when you push.
 
 Use the file in `this manual: .gitignore
@@ -255,28 +422,67 @@ Minimal Example
    *GENERATED*
 
 .. _readme-rst:
+.. _about-file:
 
-README.rst
-==========
+About File (e.g. README.rst)
+============================
 
-This file will be displayed on GitHub when someone browses through the
+**optional** (recommended for official TYPO3 documentation)
+
+This file will be displayed on the Git hoster (e.g. GitHub or Gitlab) when someone browses through the
 repositories. Use `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/README.rst>`__
 from this project as an example! (see `source <https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/master/README.rst>`__).
 
+
+.. image:: ../images/github-readme.png
+   :class: with-shadow
+   :target: https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/README.rst
+
 The link "Read online" will help people to jump directly to the rendered version.
+
+Goal:
+
+* Provide only basic information and point people to rendered docs
+* Look good on Git hosters such as GitHub
+
+
+Because of the order of the supported file formats (see :ref:`supported-filenames-and-formats`),
+*if* a file such as :file:`Documentation/Index.rst` exists as well as :file:`README.rst`
+and has a higher priority, the README.rst is *not* rendered on docs.typo3.org.
+The other file with higher priority is rendered on docs.typo3.org but README.rst is rendered on GitHub,
+because that is one of the default filenames that GitHub uses to determine what to render.
+
+In the official TYPO3 documentation, we follow this principle:
+
+* README.rst usually contains 2 links:
+
+   * to the rendered documentation
+   * to the GitHub repository
+
+.. tip::
+
+   Because of the flexibility of the :ref:`supported file names <supported-filenames-and-formats>`,
+   a README.rst may actually be the documentation start page. This is the case, if no other supported
+   file (such as :file:`Documentation/Index.rst` exists). Do not do this for official documentation,
+   stick to the conventions. You are however free to do this for your **extension documentation.**
 
 .. _contributing-rst:
 
 CONTRIBUTING.rst
 ================
 
-This file should contain some information about contributing to the documentation.
+*-- optional (recommended for official TYPO3 documentation)*
 
-You can name it CONTRIBUTING.md or CONTRIBUTING.rst, but as we commonly use reST
-here, it is best to stick to CONTRIBUTING.rst.
+This file serves the purpose of guiding people who come via GitHub towards
+our documentation for contributors. As a minimal solution, put a link in there
+to :ref:`docs-contribute`.
+
+
+You can name it :file:`CONTRIBUTING.md` or :file:`CONTRIBUTING.rst`, but as we commonly use reST
+here, it is best to stick to :file:`CONTRIBUTING.rst`.
 
 Again, use `CONTRIBUTING.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/CONTRIBUTING.rst>`__
-from this manual.
+from this manual as an example.
 
 A link to the file will automatically displayed by GitHub when someone enters the
 "Issues" area (and has not created an issue yet) or when someone creates an issue.
