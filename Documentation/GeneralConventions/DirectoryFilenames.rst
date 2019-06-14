@@ -77,7 +77,12 @@ Example for TYPO3 CMS > 8.7.7:
        "description": "An example extension",
        "license": "GPL-2.0-or-later",
        "require": {
-         "typo3/cms-core": "^8.7.8"
+           "typo3/cms-core": "^8.7.8"
+       },
+       "extra": {
+           "typo3/cms": {
+               "extension-key": "extension_key"
+           }
        }
    }
 
@@ -92,10 +97,19 @@ required as dependency instead of ``typo3/cms-core``:
        "description": "An example extension",
        "license": "GPL-2.0-or-later",
        "require": {
-         "typo3/cms": "^7.6"
+           "typo3/cms": "^7.6"
+       },
+       "extra": {
+           "typo3/cms": {
+               "extension-key": "extension_key"
+           }
        }
    }
 
+The ``extra`` section can be used to provide an TYPO3 ``extension_key`` for the
+package. This will be used when found. If not provided, the ``package-key`` will
+be used, where all ``-`` get replaced by ``_``, to follow TYPO3 and packagist
+conventions.
 
 .. _index-rst:
 .. _start-file:

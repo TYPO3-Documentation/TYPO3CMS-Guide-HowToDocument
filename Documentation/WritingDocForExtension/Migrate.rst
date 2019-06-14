@@ -15,7 +15,7 @@ is rendered on docs.typo3.org
 Necessary Steps
 ===============
 
-The two necessary steps are:
+The three necessary steps are:
 
 .. rst-class:: bignums-xxl
 
@@ -28,6 +28,13 @@ The two necessary steps are:
 
    The legacy webhook is no longer necessary, as explained in
    :ref:`webhook-legacy`.
+
+#. Provide redirects
+
+   Inform the TYPO3 documentation team, within `#typo3-documentation
+   <https://typo3.slack.com/messages/C028JEPJL>`_ slack channel.
+   The team will setup the redirects from existing legacy rendering to current
+   rendering.
 
 .. _migrate-info-about-changes:
 
