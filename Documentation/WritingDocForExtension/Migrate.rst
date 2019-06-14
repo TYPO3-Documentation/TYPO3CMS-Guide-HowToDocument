@@ -24,7 +24,7 @@ These four necessary steps are:
    This file is necessary, in order to determine required information, like
    vendor, package name and supported TYPO3 version.
 
-#. Add mandatory :file:`Documentation/Settings.cfg`, see :ref:`settings-cfg`
+#. Add :file:`Documentation/Settings.cfg`, see :ref:`settings-cfg`
 
    If this file does not exist, your documentation will get rendered, but
    the title will not be displayed in the left sidebar.
@@ -45,7 +45,7 @@ These four necessary steps are:
 .. tip::
 
    Check your rendered documentation. Contact us on Slack (#typo3-documentation)
-   if there are problems you cannot fix yourself.
+   if there are :ref:`problems you cannot fix yourself <migrate-common-errors>`.
 
 .. _migrate-info-about-changes:
 
@@ -172,3 +172,142 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
    Defines the locale, e.g. ``en-us`` or ``fr-fr``.
 
 
+.. _migrate-known-problems:
+
+Known Problems
+==============
+
+* Currently, the project cannot be rendered if the :ref:`start-file` is :file:`README.rst`
+  (or .md) and not :file:`Documentation/Index.rst`. This is a
+  `known problem <https://github.com/t3docs/docker-render-documentation/issues/31>`__
+  and already fixed in
+  the development version of our Docker container. We will update this on the
+  server shortly. You can use the v2.1.0 version of the Docker container locally.
+* A single-file solution (without toctree) may have problems with
+  the menu. This is also a `known problem <https://github.com/t3docs/docker-render-documentation/issues/64>`__
+  and already fixed in development version.
+
+.. _migrate-common-errors:
+
+Common Errors
+=============
+
+Here we show some common errors you can and should fix yourself. 
+
+Contact us on Slack, if you need help!
+
+.. tip::
+
+   We also made some changes to the
+   `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__.
+
+   Make sure to use the updated version if you want to
+   :ref:`start an extension from scratch <doc-for-ext-from-example>`!
+
+Missing Title
+-------------
+
+.. image:: ../images/missing-title.png
+   :class: with-shadow
+
+**Solution:** :file:`Documentation/Settings.cfg` must contain the title
+(`project`) and release (`release`).
+
+Example:
+
+.. code-block:: none
+
+   [general]
+
+   project     = Your title
+   version     = 2.0
+   release     = 2.0.0
+
+
+
+
+FAQ for Extension Authors
+=========================
+
+How Do I Find My New Rendered Documentation?
+--------------------------------------------
+
+**Answer:** Several possibilities:
+
+#. Search for your extension on https://docs.typo3.org/Home/Extensions.html
+#. Or, construct the URL yourself from the rules above: `https://docs.typo3.org/p/<vendor>/<package>/<version>/<en-us>`
+#. Or, if you just triggered rendering, look on https://intercept.typo3.com/admin/docs/deployments.
+   The column **Branch** contains a link.
+
+
+Is it Possible to Highjack Extension Documentation?
+---------------------------------------------------
+
+How do you make sure only the author of the extension publishes the documentation?
+
+**Answer:**  Documentation rendering is restricted to one repository per package.
+
+I.e. if someone triggers documentation rendering with a repository with vendor *myVendor* and
+package *myPackage*, then nobody else will be able to trigger documentation from
+a different repository with that exact vendor/package name combination. You
+could say this works on a first come first served basis. However, if someone
+with malicious intent registers a package first from a fake or wrong repository,
+we will have to correct this by hand. The original author should in that case
+notify us.
+
+Is There a Way to Manually Trigger Docs Rendering Aside From a Git Repository Push?
+-----------------------------------------------------------------------------------
+
+**Answer:** Yes and no. Regular users do not have this option at the moment. However,
+as a member of the Documentation Team you can go to https://intercept.typo3.com
+and log in with your typo3.org account. Then in the menu you can navigate to
+:guilabel:`Documentation > Deployments`. At the top right hand side you will see a button
+:guilabel:`Add Configuration`. By clicking this button and going through the form,
+you can add a repository manually without the hook. Nevertheless we strongly
+recommend the usage of the webhook.
+
+Is Documentation Independant of TER?
+------------------------------------
+
+Does the new workflow also mean that the documentation and the extension at
+TER (https://extensions.typo3.org) are two separate, independent entities?
+
+**Answer:** Yes. In theory you could have the documentation in GitHub (for example)
+and the extension (code) somewhere else (or not in Git at all). You just
+need to fire the webhook from GitHub/GitLab/Bitbucket to trigger the
+documentation rendering.
+
+Can I use a README.rst (or README.md) instead?
+----------------------------------------------
+
+GitHub (or Gitlab, bitbucket) etc. automatically render a :file:`README.rst` (or .md)
+on the repository homepage.
+
+For TYPO3 documentation I am required to have extra documentation in a :file:`Documentation`
+folder. This means I have to maintain 2 documentations. Or not?
+
+
+**Answer:** No. You have these 2 options:
+
+#. Use a :file:`README.rst` (or .md) **and** a :file:`Documentation/Index.rst` (for example).
+   This is done in our official manuals. The :file:`README.rst` is not used as documentation,
+   it is used as an :ref:`about the repo file <about-file>`. The README is mostly
+   used to direct users who come via GitHub (or Gitlab, Bitbucket etc.) to the rendered
+   documentation on docs.typo3.org
+#. Or, use :file:`README.rst` (or .md) as main documentation (:ref:`start-file`) and
+   put everything in the :file:`README.rst`. The :file:`Documentation/Settings.cfg` file
+   must also exist, but that is all that needs to be in the `Documentation`
+   directory.
+
+.. important::
+
+   About using method 2) There are currently still :ref:`2 open issues <migrate-known-problems>`,
+   but this is already resolved in a
+   "development" version.
+
+Actually, you have more options, but we do not want to make things too complicated.
+
+Which one should you choose? That is up to you.
+
+We recommend: Use method 1) for extensive documentation with several chapters,
+use method 2) for minimal documentation which can be maintained in one file.
