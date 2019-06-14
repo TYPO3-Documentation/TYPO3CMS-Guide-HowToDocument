@@ -15,7 +15,7 @@ is rendered on docs.typo3.org
 Necessary Steps
 ===============
 
-The three necessary steps are:
+These four necessary steps are:
 
 .. rst-class:: bignums-xxl
 
@@ -24,6 +24,11 @@ The three necessary steps are:
    This file is necessary, in order to determine required information, like
    vendor, package name and supported TYPO3 version.
 
+#. Add mandatory :file:`Documentation/Settings.cfg`, see :ref:`settings-cfg`
+
+   If this file does not exist, your documentation will get rendered, but
+   the title will not be displayed in the left sidebar.
+
 #. Add new webhook, see :ref:`webhook`
 
    The legacy webhook is no longer necessary, as explained in
@@ -31,10 +36,16 @@ The three necessary steps are:
 
 #. Provide redirects
 
-   Inform the TYPO3 documentation team, within `#typo3-documentation
-   <https://typo3.slack.com/messages/C028JEPJL>`_ slack channel.
+   Inform the TYPO3 Documentation Team, within `#typo3-documentation
+   <https://typo3.slack.com/messages/C028JEPJL>`_ Slack channel (you must
+   register for Slack first, see :ref:`slack`).
    The team will setup the redirects from existing legacy rendering to current
    rendering.
+
+.. tip::
+
+   Check your rendered documentation. Contact us on Slack (#typo3-documentation)
+   if there are problems you cannot fix yourself.
 
 .. _migrate-info-about-changes:
 
@@ -152,3 +163,7 @@ The URL structure now consists of the following parts:
 
 ``locale``
    Defines the locale, e.g. ``en-us`` or ``fr-fr``.
+
+
+
+
