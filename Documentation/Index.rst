@@ -16,27 +16,27 @@ Writing Documentation
    This manual is about writing TYPO3 documentation
    (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in: :ref:`how-to-read-this-guide`
 
-**Important / Breaking changes**
 
-   - :ref:`tip-branches-master`
-   - :ref:`tip-ext-new-doc-server` (for Extension Authors)
 
 **Did you know?**
 
-   - Extension Authors: :ref:`tip-edit-me-on-github`
-   - Extension Authors: :ref:`tip-link-to-issues`
+   - 2019-06-01 :ref:`tip-branches-master`
+   - 2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <migrate>` (Extension Authors)
+   - 2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
+   - 2019-03-13 :ref:`tip-link-to-issues` (Extension Authors)
 
    :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 .. uncomment this, when there are new general tips
    :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
-**What's new in this guide?**
 
-   - 2019-02-03 :ref:`news-2019-new-doc-server`
-   - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+.. uncomment this when there are more new pages:
+.. **What's new in this guide?**
 
-   :ref:`All News ... <whats-new>`
+..   - 2019-02-03 :ref:`news-2019-new-doc-server`
+..   - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+.. :ref:`What's new in this guide <whats-new>`
 
 
 .. toctree::

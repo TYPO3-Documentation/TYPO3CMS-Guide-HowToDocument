@@ -10,9 +10,8 @@ Tips for Extension Authors
 .. _tip-ext-new-doc-server:
 .. rst-class:: panel panel-default
 
-2019-05-29 - [IMPORTANT] Webhook and composer.json
-===================================================
-
+[IMPORTANT] Migration to New Infrastructure
+===========================================
 
 Because of the
 `move to the new documentation server <https://typo3.org/article/docstypo3org-gets-new-infrastructure/>`__,

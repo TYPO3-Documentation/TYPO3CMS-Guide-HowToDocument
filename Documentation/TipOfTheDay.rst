@@ -15,8 +15,8 @@ See also: :ref:`tips-extension-authors`
 .. _tip-branches-master:
 .. rst-class:: panel panel-default
 
-2019-06-01 - [IMPORTANT] Change Main Branches to master
-=======================================================
+[IMPORTANT] Change Main Branches to master
+==========================================
 
 
 This is important if you are using the

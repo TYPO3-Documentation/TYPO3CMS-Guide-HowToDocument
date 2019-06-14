@@ -38,7 +38,7 @@ These four necessary steps are:
 
    Inform the TYPO3 Documentation Team, within `#typo3-documentation
    <https://typo3.slack.com/messages/C028JEPJL>`_ Slack channel (you must
-   register for Slack first, see :ref:`slack`).
+   `register for Slack <https://my.typo3.org/index.php?id=35>`__ first).
    The team will setup the redirects from existing legacy rendering to current
    rendering.
 
@@ -170,7 +170,5 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
 
 ``locale``
    Defines the locale, e.g. ``en-us`` or ``fr-fr``.
-
-
 
 
