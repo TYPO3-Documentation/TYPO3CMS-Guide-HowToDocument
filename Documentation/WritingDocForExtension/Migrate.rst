@@ -99,7 +99,8 @@ The rendering supports two branches within repositories:
 ``documentation-draft``
    Should contain a draft of the documentation.
    Every push to this branch triggers a new rendering, available at
-   ``https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/``.
+   ``https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/``
+   (same URL as master, except *master* is replaced by *draft*).
 
    This state is not indexed by search engines. This branch can be used to test
    rendering before releasing a new version of an extension.
@@ -112,9 +113,11 @@ The rendering supports two branches within repositories:
 Existing Documentation
 ----------------------
 
-Existing Documentation is kept until end of 2020. Each documentation contains an
+Existing legacy documentation is kept until end of 2020. Each documentation contains an
 information block that it's outdated, together with a link to the necessary
 steps.
+
+
 
 In order to migrate, follow :ref:`migrate`. The Documentation Team can setup
 redirects for old documentation to new documentation afterwards. Send a message
@@ -129,6 +132,10 @@ URL Structure
 The URL structure has changed. Redirects are in place.
 
 The URL structure now consists of the following parts:
+
+`https://docs.typo3.org/<type>/<vendor>/<package>/<version>/<locale>`
+
+Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
 
 ``type``
    One of:
