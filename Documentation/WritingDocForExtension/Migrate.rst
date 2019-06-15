@@ -29,6 +29,11 @@ These four necessary steps are:
    If this file does not exist, your documentation will get rendered, but
    the title will not be displayed in the left sidebar.
 
+   .. tip::
+
+      We may drop this requirement in the future, but for now it is
+      recommended to at least add a minimal :file:`Documentation/Settings.cfg`
+
 #. Add new webhook, see :ref:`webhook`
 
    The legacy webhook is no longer necessary, as explained in
@@ -192,7 +197,7 @@ Known Problems
 Common Errors
 =============
 
-Here we show some common errors you can and should fix yourself. 
+Here we show some common errors you can and should fix yourself.
 
 Contact us on Slack, if you need help!
 
