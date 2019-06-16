@@ -13,7 +13,7 @@ following hosters:
 
   - :ref:`webhook-github`
   - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
-  - GitLab Cloud and GitLab self-hosted
+  - :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
 If none of the above is used, a mirror to one of these is recommend. Also the
 `Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
@@ -147,4 +147,48 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    be created and pushed.
 
    .. figure:: /images/webhook/bitbucket/cloud/intercept-feedback.png
+      :width: 932
+
+.. _webhook-gitlab:
+
+GitLab Cloud and GitLab self-hosted
+===================================
+
+Add auto rendering for a repository via GitLab webhook in XXXXXXX steps:
+
+.. rst-class:: bignums-xxl
+
+#. Go to "Integrations" section within the repository
+
+   .. figure:: /images/webhook/gitlab/repository-start.png
+      :width: 932
+
+#. Add webhook by filling in webhook configuration
+
+   #. Fill URL field with ``https://docs-hook.typo3.org``.
+
+   #. Select ``Push events`` and ``Tag push events`` for "Trigger".
+
+   #. Click on "Add webhook"
+
+   .. figure:: /images/webhook/gitlab/webhook-add.png
+      :width: 932
+
+#. Webhook was added
+
+   The webhook should be shown in the list (scroll down).
+
+   .. figure:: /images/webhook/gitlab/webhook-added.png
+      :width: 932
+
+#. (Optional) Trigger webhook and visit intercept to check request
+
+   If curious, visit https://intercept.typo3.com/admin/docs/deployments and
+   check "Recent actions" (scroll down).
+
+   In order to appear, the hook needs to be triggered. Therefore either the
+   branch ``master`` can be pushed. Or a new Branch ``documentation-draft`` can
+   be created and pushed.
+
+   .. figure:: /images/webhook/gitlab/intercept-feedback.png
       :width: 932
