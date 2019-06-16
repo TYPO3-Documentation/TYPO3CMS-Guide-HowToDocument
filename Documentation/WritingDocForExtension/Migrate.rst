@@ -47,7 +47,10 @@ The necessary steps are:
    Alternatively, you can request a redirect by commenting in  
    `this GitHub issue <https://github.com/TYPO3-Documentation/T3DocTeam/issues/92>`__
    The team will setup the redirects from existing legacy rendering to current
-   rendering.
+   rendering:
+   
+   * legacy URL: `https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
+   * new URL: `https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
 
 .. tip::
 
