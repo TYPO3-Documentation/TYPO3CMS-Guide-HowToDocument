@@ -154,7 +154,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 GitLab Cloud and GitLab self-hosted
 ===================================
 
-Add auto rendering for a repository via GitLab webhook in XXXXXXX steps:
+Add auto rendering for a repository via GitLab webhook in four steps:
 
 .. rst-class:: bignums-xxl
 
