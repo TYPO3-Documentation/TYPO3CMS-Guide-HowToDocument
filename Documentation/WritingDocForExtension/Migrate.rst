@@ -325,7 +325,7 @@ Our `team page <https://typo3.org/community/teams/documentation/#c9886>`__ conta
 information about how to contact us.
 
 In most cases, the `Slack channel #typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`__
-is the preferred method ofcommunication (you must `register first <https://my.typo3.org/index.php?id=35>`__).
+is the preferred method of communication (you must `register first <https://my.typo3.org/index.php?id=35>`__).
 
 
 
