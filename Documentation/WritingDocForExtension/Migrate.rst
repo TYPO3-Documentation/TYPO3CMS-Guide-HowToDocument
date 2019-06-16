@@ -215,7 +215,7 @@ Missing Title
 .. image:: ../images/missing-title.png
    :class: with-shadow
 
-**Solution:** :file:`Documentation/Settings.cfg` must contain the title
+**Solution:** :ref:`settings-cfg` should contain the title
 (`project`) and release (`release`).
 
 Example:
@@ -225,7 +225,6 @@ Example:
    [general]
 
    project     = Your title
-   version     = 2.0
    release     = 2.0.0
 
 
