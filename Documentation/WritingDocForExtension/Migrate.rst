@@ -15,7 +15,7 @@ is rendered on docs.typo3.org
 Necessary Steps
 ===============
 
-These four necessary steps are:
+The necessary steps are:
 
 .. rst-class:: bignums-xxl
 
