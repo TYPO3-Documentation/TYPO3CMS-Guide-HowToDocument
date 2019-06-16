@@ -44,6 +44,8 @@ The necessary steps are:
    Inform the TYPO3 Documentation Team, within `#typo3-documentation
    <https://typo3.slack.com/messages/C028JEPJL>`_ Slack channel (you must
    `register for Slack <https://my.typo3.org/index.php?id=35>`__ first).
+   Alternatively, you can request a redirect by commenting in  
+   `this GitHub issue <https://github.com/TYPO3-Documentation/T3DocTeam/issues/92>`__
    The team will setup the redirects from existing legacy rendering to current
    rendering.
 
