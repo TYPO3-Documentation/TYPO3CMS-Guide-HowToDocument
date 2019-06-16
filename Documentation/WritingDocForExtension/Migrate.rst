@@ -315,3 +315,17 @@ Which one should you choose? That is up to you.
 
 We recommend: Use method 1) for extensive documentation with several chapters,
 use method 2) for minimal documentation which can be maintained in one file.
+
+Further Questions?
+==================
+
+Get in touch with us, if you have problems, would like to ask questions or make suggestions.
+
+Our `team page <https://typo3.org/community/teams/documentation/#c9886>`__ contains
+information about how to contact us.
+
+In most cases, the `Slack channel #typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`__
+is the preferred method ofcommunication (you must `register first <https://my.typo3.org/index.php?id=35>`__).
+
+
+
