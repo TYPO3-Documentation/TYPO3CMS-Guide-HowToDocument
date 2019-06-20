@@ -46,14 +46,14 @@ Example
 
 .. code-block:: rest
 
-   ====================
-   This is the DocTitle
-   ====================
+   ========
+   DocTitle
+   ========
 
    About this document ...
 
-   Main topic 1
-   ============
+   Topic 1
+   =======
    Here we go.
 
    Subtopic 1.1
@@ -64,8 +64,8 @@ Example
    ~~~~~~~~~~~~~~~~~
    And this is even more specific.
 
-   Main Topic 2
-   ============
+   Topic 2
+   =======
    ...
 
 
