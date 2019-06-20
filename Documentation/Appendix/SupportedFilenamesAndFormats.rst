@@ -70,14 +70,3 @@ Without doing lots of investigations we have implemented the same solution for T
 This means that our rendering tools detect markdown files as well. They have .md as file ending.
 
 If you’re encountering problems with the rendering of your markdown files, consider switching to reST.
-
-
-Drawbacks of Other Formats and Filenames
-========================================
-
-Drawbacks of Markdown
----------------------
-
-Not everything is currently rendered correctly with the existing toolchain in Markdown.
-
-See this open `issue <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd/issues/39>`__
