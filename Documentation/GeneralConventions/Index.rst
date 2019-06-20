@@ -33,6 +33,7 @@ if something is not ok.
 
    ContentStyleGuide
    DirectoryFilenames
+   Format
    MenuHierarchy
    CodingGuidelines
    GuidelinesForImages
