@@ -107,18 +107,6 @@ Add some new YouTube videos from the  `TYPO3 YouTube channel
 
 See :ref:`youtube-videos` for information on how to do this.
 
-Add Information from the ChangeLog
-==================================
-
-Find information in the `TYPO3 ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-that is not yet documented and add it to a manual where the information
-is best documented, e.g.:
-
-* :ref:`t3coreapi:start`
-* :ref:`t3tsconfig:start`
-* :ref:`t3tca:start`
-* :ref:`t3tsref:start`
-
 
 Teach and Motivate Others
 =========================
@@ -147,7 +135,7 @@ Remind people, that everyone can contribute!
   (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__). 
   Additionally, you can use `#T3Docs <https://twitter.com/search?q=%23T3Docs>`__,
   `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
-  #T3DC (for docs contribution)
+  #T3DC (for docs contribution) and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
 
 
 .. _how-you-can-help-new-content:
@@ -176,6 +164,26 @@ If you find something that needs fixing or something is missing, either fix it o
 issue for it, if you cannot make the changes yourself.
 
 Help to keep this list up to date: :ref:`t3docteam:overview-of-manuals-review`
+
+
+Add Information from the ChangeLog
+==================================
+
+.. important::
+
+   This is already being taken care of by the TYPO3 Core Team. For each release,
+   the Changelogs are checked and official documentation is updated. This mostly
+   concerns TYPO3 Explained and the references. 
+
+Find information in the `TYPO3 ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+that is not yet documented and add it to a manual where the information
+is best documented, e.g.:
+
+* :ref:`t3coreapi:start`
+* :ref:`t3tsconfig:start`
+* :ref:`t3tca:start`
+* :ref:`t3tsref:start`
+
 
 .. ------------------------------------------------------
 
