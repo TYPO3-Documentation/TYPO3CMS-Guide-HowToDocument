@@ -18,7 +18,7 @@ very much appreciated.
 .. important::
    These are just examples to get you started. You are not restricted to this,
    as a contributor. If you can make useful improvements, do it!
-   The best contributions come from starting with something that bothers you
+   Some of the best contributions come from starting with something that bothers you
    the most.
 
 
