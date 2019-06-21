@@ -33,6 +33,10 @@ Commands to Render Documentation
 
    docker pull t3docs/render-documentation
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
+   # If the command above will fail, please run the following three commands:
+   # mkdir -p ~/bin
+   # docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
+   # source ~/bin/t3docs
    dockrun_t3rd makehtml
    xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
