@@ -29,12 +29,22 @@ Commands to Render Documentation
 ================================
 
 .. code-block:: bash
-   :linenos:
 
    docker pull t3docs/render-documentation
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
    dockrun_t3rd makehtml
    xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
+.. note::
+
+   If above command does not work, use the following instead:
+
+   .. code-block:: bash
+
+      mkdir -p ~/bin
+      docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
+      source ~/bin/t3docs
+      xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 Explanations, the numbers correspond to the line numbers in code snippet:
 
