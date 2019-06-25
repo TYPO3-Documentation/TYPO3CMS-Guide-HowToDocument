@@ -50,6 +50,7 @@ Writing Documentation
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
    RenderingDocs/Index
+   HowToAddTranslation/Index
    Tools/Index
    Appendix/Index
    UsefulLinks
