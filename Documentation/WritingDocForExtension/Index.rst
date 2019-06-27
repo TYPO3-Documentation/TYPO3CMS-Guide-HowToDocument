@@ -48,13 +48,13 @@ resources:
 * :ref:`Coding Guidelines <format-rest-cgl>`
 * :ref:`general-conventions-dir-and-filenames`
 * :ref:`rest-cheat-sheet`
-* :ref:`rendering-docs`
+* :ref:`render-documenation-with-docker`
 * :ref:`about-typo3-extensions`
 
-**Table of Contents:**
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    CreateFromScratch
    CreateWithExtensionBuilder

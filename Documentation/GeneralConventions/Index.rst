@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _general-conventions:
+.. _conventions:
 
 ===========
 Conventions
