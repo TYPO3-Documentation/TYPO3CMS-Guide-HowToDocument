@@ -34,6 +34,17 @@ The necessary steps are:
       We may drop this requirement in the future, but for now it is
       recommended to at least add a minimal :file:`Documentation/Settings.cfg`
 
+      Example for (very) minimal Settings.cfg (for full example see :ref:`settings-cfg`):
+
+      .. code-block:: none
+
+         [general]
+
+         project     = Extension name
+         release     = latest
+
+
+
 #. Add new webhook, see :ref:`webhook`
 
    The legacy webhook is no longer necessary, as explained in
