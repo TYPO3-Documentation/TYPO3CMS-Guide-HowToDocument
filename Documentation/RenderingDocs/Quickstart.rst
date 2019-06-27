@@ -13,13 +13,8 @@ Here, we show the basic rendering commands for rendering locally with the offici
 These commands work best on Linux, but may also work on Mac or Windows (depending
 on your system). You should use a bash compatible shell, if possible.
 
-.. tip::
-
-   If these commands do not work on your platform, please
-   see the more extensive `Docker Render Readme (GitHub) <https://github.com/t3docs/docker-render-documentation#quickstart-on-linux-or-macos>`__
-   for additional information.
-
-If you run into a problem while rendering, `report an issue <https://github.com/t3docs/docker-render-documentation/issues/new>`__
+If you run into a problem while rendering, check :ref:`rendering-docs-troubleshooting`,
+`report an issue <https://github.com/t3docs/docker-render-documentation/issues/new>`__
 or :ref:`ask for help <get-help-on-writing-docs>`.
 
 
