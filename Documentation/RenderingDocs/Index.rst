@@ -9,7 +9,7 @@ How to Render Documentation
 ===========================
 
 This chapter explains how to render a manual locally on your machine
-with Docker.
+with Docker in order to test the rendering.
 
 It is recommended to do this if you edit locally before you publish your changes, because
 that way you will get a preview of how it is later rendered on the
@@ -22,7 +22,7 @@ Here, we will briefly also explain the other methods for rendering.
 
 .. important::
 
-   Please note that the **Local Editing and Rendering with Docker**
+   Please note that the :ref:`Local Editing and Rendering with Docker <render-documenation-with-docker>`
    is currently the **recommended and  fully supported** workflow.
    If you edit on GitHub directly, GitHub preview
    should also be sufficient for making small changes.
@@ -30,11 +30,11 @@ Here, we will briefly also explain the other methods for rendering.
 
 .. rst-class:: bignums
 
-   1. Render Documentation Locally Using Docker
+   #. Render Documentation Locally Using Docker
 
       See :ref:`render-documenation-with-docker`
 
-   2. Preview on GitHub
+   #. Preview on GitHub
 
       This method is useful if you are editing documentation directly on
       GitHub
@@ -45,25 +45,36 @@ Here, we will briefly also explain the other methods for rendering.
       preview is not to be recommended for major changes that involve
       markup beyond basic reST markup.
 
-   3. Extension *sphinx*
+   #. Preview using documentation-draft
+
+      You can use the `documentation-draft` to get a preview for your extensions.
+      See :ref:`migrate-branches`.
+
+   #. Extension *sphinx*
 
       If you install the extension
       `sphinx <https://extensions.typo3.org/extension/sphinx/>`__,
       you can render extension documentation of the extensions that are currently
       installed in the backend of your TYPO3 installation.
 
-   4. Using a Starter Project (Sandbox)
+      This method has the drawback that sphinx must be installed on the system
+      where the TYPO3 installation is running. The extension provides ways to
+      do this, but there may be version conflicts and other difficulties.
 
-      With this method, you will get a starter project, where you can
-      make your changes directly on GitHub. The changes will automatically
-      be rendered. To get access to a starter project, you must contact the
-      Documentation Team. Use the Slack channel **#typo3-documentation**
-      as described in :ref:`slack`.
+      Using Docker avoids these problems by providing an entire self-contained
+      environment including operating system and all required packages.
 
-   5. Various Online or Local Tools for reST Rendering
+   #. Various Online or Local Tools for reST Rendering
 
       These have the same drawbacks as already noted for *Preview on GitHub*.
 
+
+.. important::
+
+   The method of using a starter project (sandbox) with an URL such as
+   `/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-056/` is now deprecated.
+   You can still find your existing starter project on GitHub (https://github.com/T3DocumentationStarter)
+   and render this locally.
 
 
 .. toctree::
