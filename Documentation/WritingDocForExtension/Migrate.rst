@@ -39,7 +39,20 @@ The necessary steps are:
    The legacy webhook is no longer necessary, as explained in
    :ref:`webhook-legacy`.
 
-#. Provide redirects
+#. Check if your documentation rendered
+
+   You can got to `intercept <https://intercept.typo3.com/admin/docs/deployments>`__.
+
+   In the overview you can see recently rendered documentation.
+
+   Click on the link in the column :guilabel:`"Branch"` to go to the rendered documentation.
+
+   .. image:: ../images/intercept2.png
+      :class: with-shadow
+
+   You can find the log by clicking on the link in the column :guilabel:`"Last rendered"`.
+
+#. Request redirects
 
    Inform the TYPO3 Documentation Team, within `#typo3-documentation
    <https://typo3.slack.com/messages/C028JEPJL>`_ Slack channel (you must
@@ -54,7 +67,7 @@ The necessary steps are:
 
 .. tip::
 
-   Check your rendered documentation. Contact us on Slack (#typo3-documentation)
+   Contact us on Slack (#typo3-documentation)
    if there are :ref:`problems you cannot fix yourself <migrate-common-errors>`.
 
 .. _migrate-info-about-changes:
