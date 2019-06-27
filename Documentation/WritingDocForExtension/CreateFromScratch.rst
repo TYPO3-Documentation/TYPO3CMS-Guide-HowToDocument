@@ -3,56 +3,22 @@
 
 .. _how-to-start-documentation-for-ext:
 .. _writing-doc-for-ext-from-scratch:
+.. _doc-for-ext-from-example:
 
-===================================================
-How to Start Documentation for Your TYPO3 Extension
-===================================================
-
-This page describes how to create documentation for your extension
-using *local editing and rendering with Docker*. It
-requires Docker for running the rendering toolchain locally on
-your computer to check if the documentation is rendered correctly.
+=================================================
+Start Extension Documentation From Example Manual
+=================================================
 
 .. tip::
 
    This page is a "quick start". If you are just getting started, you
-   may want to look at the resources on :ref:`writing-doc-for-ext-start`.
+   may want to look at :ref:`writing-doc-for-ext-start` and some of
+   the resources listed there first.
 
-The documentation for extensions is structured in a similar way as the documentation
-for official manuals. See :ref:`general-conventions-dir-and-filenames` for more details
-on these files.
+This description uses the example extension manual:
 
-There are basically 2 ways to start:
-
-#. :ref:`doc-for-ext-with-extension-builder` (extension_builder)
-#. :ref:`doc-for-ext-from-example`
-
-.. _doc-for-ext-with-extension-builder:
-
-Method 1: Start Documentation With Extension Builder
-====================================================
-
-If you used the `extension_builder <https://github.com/FriendsOfTYPO3/extension_builder>`__
-to generate your extension, it will already have created a :file:`Documentation.tmpl`
-directory in your extension folder. Rename this directory to :file:`Documentation`.
-
-.. code-block:: bash
-
-   mv Documentation.tmpl Documentation
-
-Then continue with step 2 of the next section.
-
-.. warning::
-
-   Current and previous versions of the extension_builder generate documentation with
-   tabs (instead of spaces). You should use spaces as specified in :ref:`format-rest-cgl`.
-   You should reformat the generated documentation before you proceed. Mixing tabs and
-   spaces may cause inconsistent indenting and may lead to problems with the rendering.
-
-.. _doc-for-ext-from-example:
-
-Method 2: Start Documentation From Example Manual
-=================================================
+* `repository on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+* `rendered documentation <https://docs.typo3.org/typo3cms/ExtensionManualExample/>`__
 
 .. rst-class:: bignums-xxl
 

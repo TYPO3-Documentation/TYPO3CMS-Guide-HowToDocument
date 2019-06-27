@@ -41,17 +41,28 @@ Writing Documentation
 
 .. toctree::
    :hidden:
+   :caption: BASICS
 
-   Preface/Index
+   About
    HowToGetHelp
    BasicPrinciples
    GeneralConventions/Index
    WritingReST/Index
+
+.. toctree::
+   :hidden:
+   :caption: HOWTOS
+
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
    RenderingDocs/Index
    HowToAddTranslation/Index
    Tools/Index
+
+.. toctree::
+   :hidden:
+   :caption: OTHER
+
    Appendix/Index
    UsefulLinks
    Sitemap/Index
