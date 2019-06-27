@@ -136,7 +136,7 @@ The rendering supports two branches within repositories:
    ``https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/``
    (same URL as master, except *master* is replaced by *draft*).
 
-   This state is not indexed by search engines. This branch can be used to test
+   This is not indexed by search engines. This branch can be used to test
    rendering before releasing a new version of an extension.
 
    In order to test a different rendering, remove the branch, and create it
