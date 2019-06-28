@@ -63,4 +63,4 @@ resources:
    ExtensionAuthorTips
    ContributeToSystemExtension
    ContributeToThirdPartyExtension
-
+   FAQ
