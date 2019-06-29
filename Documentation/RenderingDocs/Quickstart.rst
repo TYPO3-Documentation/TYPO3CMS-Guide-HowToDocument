@@ -3,6 +3,7 @@
 .. highlight:: bash
 
 .. _render-documenation-with-docker:
+.. _render-documentation-with-docker:
 
 ===================================
 Rendering Documentation with Docker
@@ -20,43 +21,73 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
 
 Run these commands in a terminal in the parent directory of the directory :file:`Documentation`.
 
+Prerequisites
+=============
+
+Install Docker:
+
+* https://docs.docker.com/install/
+
 Commands to Render Documentation
 ================================
 
-.. code-block:: bash
+.. rst-class:: bignums-xxl
 
-   docker pull t3docs/render-documentation
-   source <(docker run --rm t3docs/render-documentation show-shell-commands)
-   dockrun_t3rd makehtml
-   xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
-.. note::
-
-   If above command does not work, use the following instead:
+#. Make dockrun_t3rd available in current terminal
 
    .. code-block:: bash
 
-      mkdir -p ~/bin
-      docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
-      source ~/bin/t3docs
+      source <(docker run --rm t3docs/render-documentation show-shell-commands)
+
+   .. tip::
+
+      If this command does not work on your platform,
+      look at :ref:`render-troubleshooting-source`
+      for alternatives.
+
+#. Run dockrun_t3rd
+
+   .. code-block:: bash
+
+      dockrun_t3rd makehtml
+
+#. Open generated documentation
+
+   Look at the output of the previous command to see where the
+   generated documentation is located or use one of these commands
+   to directly open the start page in a browser:
+
+   Linux::
+
       xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
-Explanations, the numbers correspond to the line numbers in code snippet:
+   MacOS::
 
-#. **docker pull**
-   You can run this every time before docker run, but it is not necessary
-   unless you want to make sure the docker image gets updated.
-   The next run will usually be faster because
-   it will only pull (download) the Docker image again if a newer one is
-   available.
+      open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
+   Windows::
+
+      start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
+
+
+Explanations
+============
+
+The numbers correspond to the steps:
+
+
 #. **Prepare dockrun_t3rd:**
-   This will not only run the Docker container, it
-   will make the command `dockrun_t3rd` available in your current terminal.
+   This will run the Docker container, in order to
+   make the command `dockrun_t3rd` available in your current terminal.
    You must do this again for every new terminal you open.
+
 #. **Render the documentation:** This will automatically find the documentation
    in the :file:`Documentation`
    subfolder. It will create a directory :file:`Documentation-GENERATED-temp`
    and write the results there.
+
 #. **View the documentation:**
    You can now view the rendered documentation in your browser.
 
@@ -75,6 +106,7 @@ Explanations, the numbers correspond to the line numbers in code snippet:
 
 When you make additional changes, you can run step 3 again and reload the page
 in your browser.
+
 
 
 Example Aliases

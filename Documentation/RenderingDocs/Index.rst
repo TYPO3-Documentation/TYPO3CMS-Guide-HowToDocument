@@ -32,7 +32,9 @@ Here, we will briefly also explain the other methods for rendering.
 
    #. Render Documentation Locally Using Docker
 
-      See :ref:`render-documenation-with-docker`
+      * :ref:`render-documenation-with-docker` (should work on Linux)
+      * :ref:`render-with-docker-compose` (should work better on MacOS
+        or Windows, but is still being tested)
 
    #. Preview on GitHub
 
@@ -82,4 +84,5 @@ Here, we will briefly also explain the other methods for rendering.
    :glob:
 
    Quickstart
+   RenderWithDockerCompose
    Troubleshooting
