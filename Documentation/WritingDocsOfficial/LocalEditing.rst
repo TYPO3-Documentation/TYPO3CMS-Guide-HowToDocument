@@ -222,11 +222,6 @@ You must now do the following:
    git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
    git pull upstream master
 
-.. important::
-
-   Some repositories use main branch "latest", not "master". In that case use "latest" instead
-   of master.
-
 
 Replace the URI with the correct URI for the original repository, not your fork!
 
