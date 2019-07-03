@@ -9,7 +9,7 @@
 reStructuredText & Sphinx
 =========================
 
-This chapter is a reference for writing documentation using reStructuredText
+This chapter is an introduction and reference for writing documentation using reStructuredText
 (also referred to as reST) and Sphinx.
 
 It is recommended to read (or at least browse through)
@@ -27,11 +27,12 @@ the section that is relevant for what you plan to do.
 Or, use the :ref:`rest-cheat-sheet`, which contains the most commonly used
 markup on one page.
 
-We won't be covering every reST and sphinx markup that is
+We won't be covering every reST markup that is
 available. For more information, see other resources, such as:
 http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html
 
 .. tip::
+
    See the t3SphinxThemeRtd demo docs for more examples.
 
    .. rst-class:: horizbuttons-striking-m
