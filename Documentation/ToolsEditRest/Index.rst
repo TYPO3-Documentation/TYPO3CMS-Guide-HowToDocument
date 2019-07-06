@@ -8,13 +8,19 @@
 Tools for Editing reST
 ======================
 
+We will cover some IDEs here, that may be useful if you edit locally
+with the :ref:`docs-contribute-git-docker`.
+
 When editing reST files locally, you should use an editor or IDE with
 good support for syntax highlighting and marking errors in reST.
 
-`PhpStorm <https://www.jetbrains.com/phpstorm/>`__ is commonly used by
-developers in the TYPO3 community. It does however cost money.
+* `PhpStorm <https://www.jetbrains.com/phpstorm/>`__ is commonly used by
+  developers in the TYPO3 community. It does however cost money. PhpStorm
+  comes with a number of plugins for TYPO3, e.g. for TypoScript and Fluid.
+* **Visual Studio Code** also comes with plugins for TYPO3 and for reStructuredText.
+  And it is free.
 
-Good alternatives can be found in the "Free Editors" section of
+Other alternatives can be found in the "Free Editors" section of
 `StackOverflow: reStructuredText tool support <https://stackoverflow.com/a/2747041/2444812>`__.
 
 The editor or IDE should ideally have the following features:
@@ -34,6 +40,63 @@ editor / IDE to comply with our :ref:`basic coding guidelines
 
 You may have to install
 an additional plugin, see `EditorConfig <https://editorconfig.org/#download>`__.
+
+Visual Studio Code
+==================
+
+restructuredText Plugin
+-----------------------
+
+#. Open Extensions (:kbd:`CTRL+SHIFT+X`)
+#. Enter *reStructuredText* in search box
+#. Select LeXtudio extension
+#. Press install
+
+.. image:: ../images/vscode-rest-ext.png
+   :class: with-shadow
+
+The LeXtudio extension comes with some built in code snippets.
+
+You can:
+
+* show all snippets by pressing :kbd:`CTRL+Space`
+* start entering the beginning of a snippet name and press tab
+
+.. tip::
+
+   Try this now by typing image and then TAB.
+
+.. image:: ../videos/vscodesnippets.gif
+   :class: with-shadow
+
+You can easily extend the snippets by adding **user snippets**:
+
+#. Open :guilabel:`File > Preferences > User Snippets`
+#. Enter a name
+#. Edit the json file
+
+Here is an example:
+
+.. code-block:: json
+
+    "image (full)": {
+            "prefix": "imgf",
+            "body": [
+                ".. image:: $1",
+                "   :class: with-shadow",
+                "   :alt: $2",
+                "   :target: $3",
+                "$4"
+            ],
+            "description": "image with parameters"
+       }
+
+* You can enter the snippet by typing imgf and then TAB
+* The $1, $2 etc. mark the places where further TABs will take you.
+  Use this if extra text needs to be entered
+
+.. image:: ../videos/vscodesnippets2.gif
+   :class: with-shadow
 
 PhpStorm
 ========
