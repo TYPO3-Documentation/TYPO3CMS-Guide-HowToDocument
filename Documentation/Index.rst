@@ -21,11 +21,11 @@ Writing Documentation
 **Did you know?**
 
    - 2019-06-01 :ref:`tip-branches-master`
-   - 2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <migrate>` (Extension Authors)
+   - 2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <tip-ext-new-doc-server>` (Extension Authors)
    - 2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
    - 2019-03-13 :ref:`tip-link-to-issues` (Extension Authors)
 
-   :ref:`More tips for extension authors ... <tips-extension-authors>`
+   :ref:`FAQ for extension authors ... <faq-for-extension-authors>`
 
 .. uncomment this, when there are new general tips
    :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`

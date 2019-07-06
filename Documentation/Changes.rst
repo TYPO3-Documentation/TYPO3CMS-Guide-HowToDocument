@@ -2,15 +2,12 @@
 
 .. include:: Includes.txt
 
-.. _Tip-of-the-day:
+.. _changes:
 
 =============
-Did you know?
+Changes
 =============
 
-See also: :ref:`tips-extension-authors`
-
-.. --------------------------------------------------------
 
 .. _tip-branches-master:
 .. rst-class:: panel panel-default
@@ -70,6 +67,26 @@ make sure to get the latest changes and work on `master` in the future.
          git checkout master
 
 
-.. --------------------------------------------------------
+.. _tip-ext-new-doc-server:
+.. rst-class:: panel panel-default
 
-For older, outdated tips, see :ref:`Tip-of-the-day-outdated`.
+[IMPORTANT] Migration to New Infrastructure
+===========================================
+
+Because of the
+`move to the new documentation server <https://typo3.org/article/docstypo3org-gets-new-infrastructure/>`__,
+a valid composer.json
+and a webhook is now mandatory for extensions, in order to automatically be
+rendered on the documentation server.
+
+Read more: :ref:`migrate`
+
+If you see the following on the rendered page of your extension, it has not
+yet been rendered with the new mechanism:
+
+.. figure:: images/docs_deprecation.png
+   :class: with-shadow
+   :alt: Deprecation message on rendered extension documentation page
+
+      Deprecation message on rendered extension documentation page
+

@@ -60,7 +60,7 @@ resources:
    CreateWithExtensionBuilder
    Migrate
    Webhook
-   ExtensionAuthorTips
+   FAQ
    ContributeToSystemExtension
    ContributeToThirdPartyExtension
-   FAQ
+

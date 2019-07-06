@@ -3,35 +3,61 @@
 .. _faq-for-extension-authors:
 
 =========================
-FAQ for Extension Authors
+FAQ
 =========================
 
-Why does the documentation not provide a title?
+.. rst-class:: panel panel-default
+
+Why Does the Documentation not Provide a Title?
 ===============================================
 
 .. image:: ../images/missing-title.png
    :class: with-shadow
 
 Refer to :ref:`migrate-necessary-steps` in order to fix this issue.
+
+You must add the project title to your :file:`Settings.cfg`:
+
+.. code-block:: rest
+
+    [general]
+
+    # .................................................................................
+    # ...   (required) title (displayed in left sidebar (desktop) or top panel (mobile)
+    # .................................................................................
+
+    project     = title, e.g. extension name
+
+    # .................................................................................
+    # ...   (recommended) version, displayed next to title (desktop) and in <meta name="book-version"
+    # .................................................................................
+
+    release     = 2.0.0
+
 :ref:`settings-cfg` provides detail information.
 
+
+.. rst-class:: panel panel-default
 
 How Do I Find My New Rendered Documentation?
 ============================================
 
-**Answer:** Several possibilities:
+There are several possibilities:
 
-#. Search for for extension on https://docs.typo3.org/Home/Extensions.html.
+#. Search for the extension on https://docs.typo3.org/Home/Extensions.html.
 #. Or, create URL manually, see :ref:`migrate-url-structure`.
-#. Or, rendering was done right now the URL will be referenced from https://intercept.typo3.com/admin/docs/deployments.
+#. Or, if it was just rerendered, the URL will be referenced from https://intercept.typo3.com/admin/docs/deployments.
    The column **Branch** contains the link.
+
+
+.. rst-class:: panel panel-default
 
 Is it Possible to Highjack Extension Documentation?
 ===================================================
 
 How do you make sure only the author of the extension publishes the documentation?
 
-**Answer:**  Documentation rendering is restricted to one repository per package.
+Documentation rendering is restricted to one repository per package.
 
 I.e. if someone triggers documentation rendering with a repository with vendor *myVendor* and
 package *myPackage*, then nobody else will be able to trigger documentation from
@@ -41,10 +67,13 @@ with malicious intent registers a package first from a fake or wrong repository,
 we will have to correct this by hand. The original author should in that case
 notify us.
 
+
+.. rst-class:: panel panel-default
+
 Is There a Way to Manually Trigger Docs Rendering Aside From a Git Repository Push?
 ===================================================================================
 
-**Answer:** Yes and no. Regular users do not have this option at the moment. However,
+Yes and no. Regular users do not have this option at the moment. However,
 as a member of the Documentation Team you can go to https://intercept.typo3.com
 and log in with your typo3.org account. Then in the menu you can navigate to
 :guilabel:`Documentation > Deployments`. At the top right hand side you will see a button
@@ -52,17 +81,36 @@ and log in with your typo3.org account. Then in the menu you can navigate to
 you can add a repository manually without the hook. Nevertheless we strongly
 recommend the usage of the webhook.
 
+
+.. rst-class:: panel panel-default
+
 Is Documentation Independant of TER?
 ====================================
 
-Does the new workflow also mean that the documentation and the extension at
-TER (https://extensions.typo3.org) are two separate, independent entities?
+Yes.
 
-**Answer:** Yes. In theory you could have the documentation in GitHub (for example)
+The documentation and the extension at
+TER (https://extensions.typo3.org) are two separate, independent entities.
+
+In theory you could have the documentation in GitHub (for example)
 and the extension (code) somewhere else (or not in Git at all). You just
 need to fire the webhook from GitHub/GitLab/Bitbucket to trigger the
 documentation rendering.
 
+
+.. rst-class:: panel panel-default
+
+Should I Add a Link to the Documentation in TER?
+================================================
+
+The documentation link should get updated automatically in TER.
+
+Only use "external documentation" if your documentation is hosted
+somewhere else (not on docs.typo3.org).
+
+
+
+.. rst-class:: panel panel-default
 .. _faq-can-i-use-a-readmerst-or-readmemd-instead:
 
 Can I use a README.rst (or README.md) instead?
@@ -99,6 +147,74 @@ Which one should you choose? That is up to you.
 
 We recommend: Use method 1) for extensive documentation with several chapters,
 use method 2) for minimal documentation which can be maintained in one file.
+
+.. _tip-edit-me-on-github:
+.. rst-class:: panel panel-default
+
+How do I Get an "Edit me on GitHub" Button
+==========================================
+
+
+Why might you want an "Edit me on GitHub" button on the rendered pages
+of your extension documentation?
+
+.. figure:: ../images/edit_me_on_github+shadow.svg
+   :class: with-shadow
+   :alt: "Edit me on GitHub" button
+
+   "Edit me on GitHub" button
+
+It makes it easier to contribute to the documentation!
+
+**How do you enable this?**
+
+Just add this to your :ref:`settings-cfg` and customize it:
+
+.. code-block:: none
+
+   [html_theme_options]
+
+   # to get the "Edit me on Github Button"
+   github_branch = master
+   github_repository = TYPO3-Console/TYPO3-Console
+
+If you used the `sample extension <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+and followed the steps in :ref:`how-to-start-documentation-for-ext`, you should actually already have this.
+
+Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_console/>`__
+extension for a working example.
+
+
+
+
+.. _tip-link-to-issues:
+.. rst-class:: panel panel-default
+
+How can I link to my Issues?
+============================
+
+
+Do you want contributors to find the issues for your extension easily when
+reading your extension documentation on docs.typo3.org?
+
+Add `project_issues` to your :ref:`settings-cfg`:
+
+.. code-block:: none
+
+   [html_theme_options]
+
+   project_issues = https://github.com/<user>/<extension-key>/issues
+
+Replace `<user>` and `<extension-key>` with your username and extension key
+or replace entire URL with URL to your issues.
+
+A link to the Issues will then be available in the "Related Links" section.
+
+.. image:: ../images/related-links.svg
+   :class: with-shadow
+
+Example extension: `news <https://docs.typo3.org/typo3cms/extensions/news/>`__
+
 
 Further Questions?
 ==================
