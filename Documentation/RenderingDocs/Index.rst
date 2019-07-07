@@ -22,10 +22,16 @@ Here, we will briefly also explain the other methods for rendering.
 
 .. important::
 
+   The method of using a starter project (sandbox) with an URL such as
+   `/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-056/` is now deprecated.
+   You can still find your existing starter project on GitHub (https://github.com/T3DocumentationStarter)
+   and render this locally.
+
+.. important::
+
    Please note that the :ref:`Local Editing and Rendering with Docker <render-documenation-with-docker>`
    is currently the **recommended and  fully supported** workflow.
-   If you edit on GitHub directly, GitHub preview
-   should also be sufficient for making small changes.
+   If you edit on GitHub directly, GitHub preview should also be sufficient for making small changes.
 
 
 .. rst-class:: bignums
@@ -68,13 +74,6 @@ Here, we will briefly also explain the other methods for rendering.
 
       These have the same drawbacks as already noted for *Preview on GitHub*.
 
-
-.. important::
-
-   The method of using a starter project (sandbox) with an URL such as
-   `/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-056/` is now deprecated.
-   You can still find your existing starter project on GitHub (https://github.com/T3DocumentationStarter)
-   and render this locally.
 
 
 .. toctree::
