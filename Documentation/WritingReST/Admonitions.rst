@@ -3,9 +3,9 @@
 
 .. _rest-admonitions:
 
-=============================
-Note, Hint etc. (Admonitions)
-=============================
+=======================================
+Tip, Note, Important etc. (Admonitions)
+=======================================
 
 The following directives are called Admonitions. You
 can use them to point out additional or important
@@ -36,17 +36,6 @@ Important
 .. important::
    Some important information which should be considered.
 
-
-Hint
-====
-
-.. code-block:: rest
-
-   .. hint::
-      Some hint on how to do things.
-
-.. hint::
-   Some hint on how to do things.
 
 
 Tip

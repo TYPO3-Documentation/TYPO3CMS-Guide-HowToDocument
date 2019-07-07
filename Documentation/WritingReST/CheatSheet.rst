@@ -34,46 +34,47 @@
 reST & Sphinx Cheat Sheet
 =========================
 
+Every reST (.rst) file should use these underlining styles. In reST, you can use different
+styles in any order you want. These are our conventions for TYPO3 documentation.
 
-Source (header with header label):
-   .. code-block:: rest
+.. code-block:: rest
+   :linenos:
 
-      .. _rest-cheat-sheet:
-      =========================
-      reST & Sphinx Cheat Sheet
-      =========================
+      ========
+      DocTitle
+      ========
 
-More information:
+      Then use underlining only:
 
-* :ref:`Headlines-and-sections`
-* :ref:`explicit-link-targets`
+      .. _header1:
+
+      Header 1
+      ========
+
+      Header 1.1
+      ----------
+
+      Header 1.1.1
+      ~~~~~~~~~~~~
+
+      Header 1.1.1.1
+      """"""""""""""
+
+* line 1-3: This is the doc title. Every .rst file should have one.
+* line 7: header label. This can be used for cross-referencing to this section::
+
+    :ref:`header1`
+
+* 9-10: Header level 1
+* etc.
 
 
-This is a Header Level 1
-========================
 
-Source (header level 1)::
-
-      This is a Header Level 1
-      ========================
+.. seealso::
+   * :ref:`Headlines-and-sections`
+   * :ref:`explicit-link-targets`
 
 
-
-This is a Header Level 2
-------------------------
-
-Source (header level 2)::
-
-      This is a Header Level 2
-      ------------------------
-
-This is a Header Level 3
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Source (header level 3)::
-
-      This is a Header Level 3
-      ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _cheat-sheet-links:
 
@@ -85,23 +86,77 @@ Source (header level 3)::
 External Links
 --------------
 
-This is an external link: `t3o <https://typo3.org>`__.
+method 1:
 
-Source (external link)::
+   Check out more information on `t3o <https://typo3.org>`__.
 
-   This is an external link: `t3o <https://typo3.org>`__.
+   Source::
+
+      Check out more information on `t3o <https://typo3.org>`__.
+
+   ::
+
+      `anchor text <URL>`__
+
+   (with one or two underscores at the end, if in doubt, use two)
+
+method 2: "External Hyperlink Targets"
+
+   Check out more information on t3o_
+
+   .. _t3o: https://typo3.org
+
+   source::
+
+      Check out more information on t3o_
+
+      .. (this is a comment) the link is defined (usually on bottom of page)
+
+      .. _t3o: https://typo3.org
+
+   This may be more convenient if you use a link several times.
+
+
+.. _linked: https://typo3.org
 
 .. _cheat-sheet-intersphinx:
 
 Cross-References
 ----------------
 
-This is a cross-reference to a section in this manual: :ref:`intersphinx`.
+When linking within docs.typo3.org, you should use this method of cross-referencing.
 
-Source::
+Use it to link to a section in this manual::
 
-   This is a cross-reference to a section in this manual: :ref:`intersphinx`.
+   :ref:`intersphinx`
 
+A section with the label **intersphinx** must exist! It is placed before the header::
+
+   .. _intersphinx:
+
+   Intersphinx
+   ===========
+
+Or, when cross-referencing to other manuals::
+
+   :ref:`shortcut:label`
+
+   :ref:`t3writedoc:intersphinx`
+
+
+When you are linking to another manual, make sure the
+shortcut (here: "t3write") is included in :ref:`settings-cfg`::
+
+      [intersphinx_mapping]
+
+      t3tsref          = https://docs.typo3.org/typo3cms/TyposcriptReference/
+      t3writedoc       = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/Index.html
+
+
+.. tip::
+
+   This is a cool feature, where reST & Sphinx shines: Even when a section is
+   moved, the link will still work!
 
 .. t3-field-list-table::
  :header-rows: 1
@@ -111,25 +166,22 @@ Source::
    :OtherManual:  Link to: Other manual
 
  - :Anchor:       **Explicit** anchor text
-   :ThisManual:   1) ``:ref:`Cross Reference <intersphinx>```
-                  :ref:`Cross Reference <intersphinx>`
-   :OtherManual:  2) ``:ref:`TSref <t3tsref:start>```
-                  :ref:`TSref <t3tsref:start>`
+   :ThisManual:   ``:ref:`Cross Referencing <intersphinx>```
+
+   :OtherManual:  ``:ref:`Cross Referencing <t3docwrite:intersphinx>```
+
 
  - :Anchor:       **Automatic** anchor text
-   :ThisManual:   3) ``:ref:`intersphinx```
-                  :ref:`intersphinx`
-   :OtherManual:  4) ``:ref:`t3tsref:start```
-                  :ref:`t3tsref:start`
+   :ThisManual:   ``:ref:`intersphinx```
 
-.. tip::
+   :OtherManual:  ``:ref:`t3docwrite:intersphinx```
 
-   When you are linking to another manual, make sure the
-   shortcut (e.g. "t3tsref") is included in :ref:`settings-cfg`::
 
-      [intersphinx_mapping]
+.. seealso::
 
-      t3tsref       = https://docs.typo3.org/typo3cms/TyposcriptReference/
+   * :ref:`link-targets-explanation` (labels)
+   * :ref:`intersphinx`
+   * :ref:`settings-cfg`
 
 
 
@@ -142,7 +194,11 @@ This is a bullet list:
 * list item 1
 * list item 2
 
-More text. **Important:** Always add blank line before and after list!
+More text.
+
+.. important::
+
+   Always add blank line before and after list!
 
 .. code-block:: rest
 
@@ -153,10 +209,50 @@ More text. **Important:** Always add blank line before and after list!
 
    More text. **Important:** Always add blank line before and after list!
 
+Add a blank link too, when starting another list hierarchy::
+
+   This is a bullet list:
+
+   * list item 1
+
+      * list item 1.1
+      * list item 1.2
+
+   * list item 2
+
+
+:ref:`numbered-lists`
+=====================
+
+.. important::
+
+   Always add blank line before and after list!
+
+some text
+
+#. list item 1
+#. list item 2
+
+
+some text
+
+.. code-block:: rest
+
+   some text
+
+   #. list item 1
+   #. list item 2
+
+   some text
+
 
 
 :ref:`Code Blocks <writing-rest-codeblocks-with-syntax-highlighting>`
 =====================================================================
+
+.. important::
+
+   Use syntactically correct code in your codeblocks.
 
 Code Block Directive
 --------------------
@@ -166,13 +262,24 @@ Code Block Directive
 .. code-block:: php
 
    $a = 'hello';
+   $b = 'something';
 
-Source::
+Source:
 
-  .. code-block:: php
+.. code-block:: rest
+   :linenos:
 
-     $a = 'hello';
+   .. code-block:: php
 
+      $a = 'hello';
+      $b = 'something';
+
+This uses the **directive** "code-block" (line 1)
+
+.. important::
+
+   Make sure to indent correctly. The lines of the code-block (line 3+)
+   must be indented (3 spaces).
 
 Literal Block (`::`)
 --------------------
@@ -243,6 +350,19 @@ Source (image):
       .. image:: ../images/a4.jpg
          :class: with-shadow
 
+Another example:
+
+   .. code-block:: rest
+
+      .. image:: ../images/a4.jpg
+         :class: with-shadow
+         :target: https://typo3.org
+         :alt: alt text
+         :width: 100px
+
+.. seealso::
+
+   * :ref:`images`
 
 
 :ref:`YouTube Videos <youtube>`
@@ -298,9 +418,42 @@ This is an example with a code block (:rst:`::`) embedded in the sections.
 
    Do something else ...
 
+With Big Numbers XXL
+--------------------
 
-:ref:`Tips, Hints, Important <rest-admonitions>`
-================================================
+*Source:* ::
+
+   .. rst-class:: bignums-xxl
+
+   1. Embed an image
+
+      Source::
+
+         .. image: some_image.png
+            :class: with-shadow
+
+   2. Two
+
+      Do something else ...
+
+*How it looks:*
+
+.. rst-class:: bignums-xxl
+
+1. Embed an image
+
+   Source::
+
+      ../images/a4.jpg
+         :class: with-shadow
+
+2. Two
+
+   Do something else ...
+
+
+:ref:`Tips, Hints, Important <rest-admonitions>` (Admonitions)
+==============================================================
 
 .. ---------------------------------------------------------------
    tip: This directive will display the following indented text as
