@@ -105,9 +105,8 @@ are specific to TYPO3 documentation.
 
 6. Make changes
 
-   Using your preferred IDE or editor, make changes to the files. Make
-   sure you adhere to :ref:`format-rest-cgl`, e.g.
-   use 3 spaces to indent (not tabs).
+   Using your preferred IDE or editor (see :ref:`tools-for-editing-rest`,
+   make changes to the files.
 
    If you are not familier with reST, you might want to check out
    :ref:`reST Introduction <writing-rest-introduction>` first!

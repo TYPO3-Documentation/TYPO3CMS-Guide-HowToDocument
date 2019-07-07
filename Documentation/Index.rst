@@ -55,9 +55,10 @@ Writing Documentation
 
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
+   ToolsEditRest/Index
    RenderingDocs/Index
    HowToAddTranslation/Index
-   Tools/Index
+
 
 .. toctree::
    :hidden:

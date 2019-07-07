@@ -4,6 +4,7 @@
 
 .. _how-to-document-images:
 .. _rest-images:
+.. _images:
 
 ======
 Images
