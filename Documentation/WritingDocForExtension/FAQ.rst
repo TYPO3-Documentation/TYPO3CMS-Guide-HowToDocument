@@ -1,6 +1,7 @@
 .. include:: ../Includes.txt
 
 .. _faq-for-extension-authors:
+.. _tips-extension-authors:
 
 =========================
 FAQ
