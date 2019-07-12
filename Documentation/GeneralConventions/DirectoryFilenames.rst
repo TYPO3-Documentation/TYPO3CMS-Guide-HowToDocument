@@ -477,7 +477,7 @@ In the official TYPO3 documentation, we follow this principle:
 
    Because of the flexibility of the :ref:`supported file names <supported-filenames-and-formats>`,
    a README.rst may actually be the documentation start page. This is the case, if no other supported
-   file (such as :file:`Documentation/Index.rst` exists). Do not do this for official documentation,
+   file with higher priority (such as :file:`Documentation/Index.rst`) exists. Do not do this for official documentation,
    stick to the conventions. You are however free to do this for your **extension documentation.**
 
 .. _contributing-rst:
@@ -498,5 +498,5 @@ here, it is best to stick to :file:`CONTRIBUTING.rst`.
 Again, use `CONTRIBUTING.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/CONTRIBUTING.rst>`__
 from this manual as an example.
 
-A link to the file will automatically displayed by GitHub when someone enters the
+A link to the file will automatically be displayed by GitHub when someone enters the
 "Issues" area (and has not created an issue yet) or when someone creates an issue.
