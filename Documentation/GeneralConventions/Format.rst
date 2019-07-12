@@ -33,7 +33,7 @@ Do this once and you are in line with the TYPO3 conventions.
 Markdown
 ========
 
-Currently, you can also use markdown for your documentation.
+Currently, you can also use markdown for your (extension) documentation.
 
 One problem with markdown is that there are many dialects. Since a while there is a standard **commonmark**.
 At https://readthedocs.org people are trying to make commonmark available.
