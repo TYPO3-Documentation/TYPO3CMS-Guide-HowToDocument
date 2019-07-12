@@ -81,7 +81,6 @@ readthedocs::
    * new lines are important, e.g. before, after and between bullet lists
    * more, see :ref:`rest-common-pitfalls`
 
-* no out-of-the-box preview that works with our manuals without external tools
 * some people simply hate it
 
 
