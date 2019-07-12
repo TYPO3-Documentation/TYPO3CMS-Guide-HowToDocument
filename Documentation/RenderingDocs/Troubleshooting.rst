@@ -14,7 +14,40 @@ Remember, you can always ask questions in the **#typo3-documentation**
 channel on Slack! `Register for slack <https://my.typo3.org/index.php?id=35>`__
 and join the channel, if you have not done so already.
 
-When you run `dockrun_t3rdf makehtml`, you should see some output. If
+
+
+
+.. _render-troubleshooting-source:
+
+Problems with `source < (docker run ...`
+========================================
+
+
+.. code-block:: bash
+
+   source <(docker run --rm t3docs/render-documentation show-shell-commands)
+   dockrun_t3rd makehtml
+
+If these commands do not work on your platform, use one of these instead:
+
+.. rst-class:: bignums
+
+#. :ref:`render-with-docker-compose`
+
+#. **or**
+
+   .. code-block:: bash
+
+      mkdir -p ~/bin
+      docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
+      source ~/bin/t3docs
+
+.. _docker-troubleshoot-sample-output-ok:
+
+Sample Output Without Errors
+============================
+
+When you run render, you should see some output. If
 everything works correctly, the final output should look like this:
 
 .. code-block:: none
@@ -116,13 +149,10 @@ should be taken care of. Warnings are listed in the file
 Incremental Rendering
 =====================
 
-After you make changes, you can initiate rendering again, for example:
+After you make changes, you can initiate rendering again.
 
-.. code-block:: bash
 
-   dockrun_t3rdf makehtml
-
-This will cause .rst files, that have been changed, to be rendered again.
+This will cause .rst files, that has been changed, to be rendered again.
 
 If the menu (toctree) has been changed, the menu may not be correctly
 displayed for unchanged files because they will not be rendered again.
@@ -133,7 +163,7 @@ folder and render again, for example:
 .. code-block:: bash
 
   rm -rf Documentation-GENERATED-temp
-  dockrun_t3rdf makehtml
+
 
 
 

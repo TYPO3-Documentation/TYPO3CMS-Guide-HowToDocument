@@ -116,24 +116,11 @@ are specific to TYPO3 documentation.
 
 7. Render the documentation
 
-   Render with Docker in order to test the changes
-   (see `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__).
+   Render with Docker in order to test the changes:
 
-   .. code-block:: bash
-
-      # this does a docker run and makes the
-      # command dockrun_t3rdf available in your current terminal
-      source <(docker run --rm t3docs/render-documentation show-shell-commands)
-
-      # build documentation, will create directory Documentation-GENERATED-temp
-      dockrun_t3rdf makehtml
-
-      # open result in Browser
-      # on MacOS:
-      open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-      # on Linux:
-      xdg-open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-
+   * :ref:`render-documenation-with-docker` (works best on Linux)
+   * :ref:`render-with-docker-compose` (should work better on MacOS
+     or Windows, but is still being tested)
 
 8. Commit
 
