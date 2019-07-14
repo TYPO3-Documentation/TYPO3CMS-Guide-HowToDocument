@@ -50,7 +50,7 @@ Necessary Steps
    Inform the TYPO3 Documentation Team, within `#typo3-documentation
    <https://typo3.slack.com/messages/C028JEPJL>`_ Slack channel. Registration
    for Slack is available at `my.typo3.org
-   <https://my.typo3.org/index.php?id=35>`__).
+   <https://my.typo3.org/index.php?id=35>`__.
    Alternatively, a redirect can be requested by commenting in `this GitHub
    issue <https://github.com/TYPO3-Documentation/T3DocTeam/issues/92>`__.
 
