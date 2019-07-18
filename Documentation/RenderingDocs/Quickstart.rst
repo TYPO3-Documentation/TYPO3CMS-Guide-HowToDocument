@@ -104,7 +104,7 @@ The numbers correspond to the steps:
       echo "file://"$(pwd)/"Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 
-When you make additional changes, you can run step 3 again and reload the page
+When you make additional changes, you can run step 2 again and reload the page
 in your browser.
 
 
