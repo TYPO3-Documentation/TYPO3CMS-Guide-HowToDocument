@@ -1,16 +1,17 @@
-.. include:: Includes.txt
+.. include:: ../Includes.txt
+.. highlight:: rst
 
+.. _work-with-github:
 .. _useful-links:
 
-============
-Useful Links
-============
-
+===========================================
+How to Work With GitHub
+===========================================
 
 
 .. _links-github-issues:
 
-GitHub Issues
+Issues
 =============
 
 To go to the Issue Board on GitHub for a manual you are reading online,
@@ -18,7 +19,7 @@ just click on :guilabel:`Related Links` on the bottom and then :guilabel:`Issues
 
 But, you may want to get an overview for all open issues for TYPO3 documentation.
 The repositories of the official manuals are all included in the organization
-`TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__. 
+`TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
 
 Here are some links you can use to get a list of all issues:
 
@@ -56,10 +57,10 @@ The Docker image for rendering is in the organization **t3docs** (instead of TYP
 * `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__
 
 
-GitHub Pull Requests
+Pull Requests
 ====================
 
-Anyone is welcome to review open pull requests! 
+Anyone is welcome to review open pull requests!
 
 In **TYPO3-Documentation**:
 

@@ -98,25 +98,37 @@ Tutorial
 
 A tutorial is a manual. 
 
-Tutorials are designed to be step-by-step instructions specifically created to walk a
-beginner through a particular task from beginning to end. To facilitate effective
+Tutorials are designed to be a **learning-oriented** resource that take
+newcomers by the hand and guide them through a specific topic. To facilitate effective
 learning, tutorials provide examples to illustrate the subjects they cover.
 
-In addition, tutorials provide guidance on how to avoid common pitfalls and highlight
-key concepts that should be remembered for future reference.
+They may not necessarily follow best-practices by the letter. They are
+designed to make it easier to get started.
+
+:ref:`Read more ... <writing-tutorial>`
+
+The defitions for tutorials, guides, explanations and references were taken from
+`Daniele Procida: What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
 
 .. _doc-type-guide:
 
-Guide
------
+How-To Guide
+------------
 
 A guide is a manual.
 
-Guides are designed to familiarize a reader with a specific topic in order to provide a
-working knowledge of that particular process. Readers should peruse the guide from cover
-to cover in order to gain a practical overview of the process. Once completed, the Guide
-becomes a practical reference tool to which a reader can refer as needed. Guides offer
-advice on how best to achieve a given task.
+Guides offer advice on **how best to achieve a given task**. They are goal oriented.
+
+:ref:`Read more ... <writing-guide>`
+
+
+.. _doc-type-reference:
+
+Reference
+---------
+
+A reference is well structured and allows the reader to find information about a specific
+topic. They should be short and to the point.
 
 
 .. _doc-type-extension-manual:

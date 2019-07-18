@@ -53,10 +53,12 @@ Writing Documentation
    :hidden:
    :caption: HOWTOS
 
+   WritingContent/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
    ToolsEditRest/Index
    RenderingDocs/Index
+   GitHub/Index
    HowToAddTranslation/Index
 
 
