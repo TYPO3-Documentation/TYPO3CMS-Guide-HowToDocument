@@ -22,6 +22,7 @@ Commit Message Recommendations
 * A commit message for the docs should consists of a subject line (first line).
   More lines (seperated by first line with an empty new line) are optional.
 * If an issue exists, link to it, by using "Resolves: #issue number", e.g. "Resolves: #4".
+* If it should be backported to an older branch, use `Releases:` (as in :ref:`t3contribute:commitmessage`)
 
 
 Examples
@@ -67,6 +68,14 @@ You can refer to more than one issue:
    Resolves: #<issue number>
    Resolves: #<issue number>
 
+Add the branches to which the change should be added:
+
+.. code-block:: none
+
+   <subject>
+
+   Resolves: #<issue number>
+   Releases: master, 9.5
 
 Using TYPO3 Core Commit Message Rules
 =====================================
