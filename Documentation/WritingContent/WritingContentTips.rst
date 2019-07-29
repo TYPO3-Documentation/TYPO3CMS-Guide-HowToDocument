@@ -23,44 +23,52 @@ People read differently on the web than they read print media.
 
    -- `"8 Tips for Better Readability" by Roby Collinge <https://usabilla.com/blog/8-guidelines-for-better-readability-on-the-web/>`__
 
+This information is not specific to online documentation, it is about
+information on the web in general. Nonetheless, we should consider
+that information about reading on the Web at least partly
+applies to reading online documentation as well.
+
 So:
 
 * Readers on the web often do not read, they scan (skim).
 * Additionally, they often do not read entire manuals, they google for
   the information they are looking for and start reading there.
 
-This has several consequences:
 
-* Text with good formatting is easier to scan. Use paragraphs. Use section
-  headers, etc. See more tips on formatting below.
-* You have to expect that a user will land directly on one page, any page, and
-  start reading.
+Tip 1: Write for Online Reading
+===============================
+
+* Make it easier for the reader who has not read previous pages.
+* Make sure, the title is clear.
+* Text with good formatting is easier to scan (see the next two 
+  tips)
+  
+Tip 2: Use paragraphs
+=====================
+
+In any case, avoid long "walls of text". Give the eye something to cling to.  
+
+Tip 3: Use Subheaders
+=====================
+
+Look at `this page <https://iconshots.com/tutorials/web-development/why-https-is-important-and-why-should-every-website-switch/>`__
+
+Imagine removing all the subheaders and then reading it.
 
 
-
-
-Tip 1: Read your own content!
+Tip 4: Read your own content!
 =============================
 
 Put yourself in the shoes of your reader!
 
 
-Tip 2: Write for Online Reading
-===============================
-
-Make it easier for the reader who has not read previous pages.
-
-Make sure, the title is clear.
-
-
-
-Tip 3: Use a Consistent and Clear Vocabulary
+Tip 5: Use a Consistent and Clear Vocabulary
 ============================================
 
 Use specific (not ambiguos) language.
 
 
-Tip 4: Write simple, short sentences
+Tip 6: Write simple, short sentences
 ====================================
 
 Keep the text as short as possible. Edit out anything that can be omitted
@@ -74,12 +82,9 @@ without loss:
 
    -- `Strunk & White: "The Elements of Style <http://www.jlakes.org/ch/web/The-elements-of-style.pdf>`__
 
-Tip 5: Use paragraphs
-=====================
 
-In any case, avoid long "walls of text". Give the eye something to cling to.
 
-Tip 6: Use a spellchecker
+Tip 7: Use a spellchecker
 ==========================
 
 .. tipp::
@@ -88,14 +93,6 @@ Tip 6: Use a spellchecker
    recommendations for style improvements. Try out this
    `free online check <https://www.grammarly.com/grammar-check>` by
    Grammarly.
-
-
-Tip 7: Use Subheaders
-=====================
-
-Look at `this page <https://iconshots.com/tutorials/web-development/why-https-is-important-and-why-should-every-website-switch/>`__
-
-Imagine removing all the subheaders and then reading it.
 
 
 Tip 8: Use StackOverflow to Learn
@@ -139,14 +136,14 @@ Here are some tips:
 
 * `Docker <https://docs.docker.com/get-started/>`__
 * Google Developer: `Get Started With Analyzing Runtime Performance <https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/>`__
-
+* `use TYPO3 blog <https://usetypo3.com/9lts-api-classes.html>`__
 
 
 Tip 10: Read Your Own Content
 =============================
 
 We do not wish to annoy you with repetition, but we must reiterate
-tip 1. Additionally, when you write new
+tip 4. Additionally, when you write new
 content, finish it, **wait a few days**, and then read it again!
 
 Proofread for spelling, proofread for formatting, proofread for
