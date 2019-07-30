@@ -43,7 +43,11 @@ Necessary Steps
 #. Add new webhook, see :ref:`webhook`
 
    The legacy webhook is no longer necessary, as explained in
-   :ref:`webhook-legacy`.
+   :ref:`webhook-legacy`. Instead the new webhook has to be added as described
+   at :ref:`webhook`.
+
+   In case the old hook is in play, remove it first, and add the new one
+   instead.
 
 #. Request redirects
 
