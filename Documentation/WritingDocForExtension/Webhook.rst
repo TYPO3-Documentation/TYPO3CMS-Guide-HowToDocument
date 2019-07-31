@@ -19,7 +19,21 @@ If none of the above is used, a mirror to one of these is recommend. Also the
 `Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
 setup custom hostings.
 
-The following chapters provide illustrated walkthrough tutorials on how to add the necessary hook in those systems.
+The following chapters provide illustrated walkthrough tutorials on how to add
+the necessary hook in those systems.
+
+.. _webhook-how-webhook-works:
+
+How webhook works
+=================
+
+If that's the first time working with webhooks, take a look at `GitHub developer
+<https://developer.github.com/webhooks/>`_. The configuration below triggers
+rendering only on push events. In order to trigger a rendering, a push has to
+happen.
+
+In order to test the integration, a push to `master` branch or
+`documentation-draft` branch can be used, see :ref:`migrate-branches`.
 
 .. _webhook-legacy:
 
