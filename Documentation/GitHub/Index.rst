@@ -23,6 +23,10 @@ The repositories of the official manuals are all included in the organization
 
 Here are some links you can use to get a list of all issues:
 
+.. note::
+
+   GitLab will show a 404 page while you are not logged in following these links!
+
 For New Contributors
 --------------------
 
