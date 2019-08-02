@@ -113,7 +113,7 @@ Teach and Motivate Others
 
 If you are already familiar with the workflow, you can help others
 to get started. Whenever you are at a `TYPO3 event <https://typo3.org/community/events/>`__
-(Sprint, Barcamp, etc.), on `StackOverflow <https://stackoverflow.com/questions/tagged/typo3>`__ 
+(Sprint, Barcamp, etc.), on `StackOverflow <https://stackoverflow.com/questions/tagged/typo3>`__
 or in a `Slack <https://my.typo3.org/index.php?id=35>`__ channel and someone finds
 something missing in the documentation, help them make the
 necessary changes themselves.
@@ -125,14 +125,14 @@ Thank others for their contributions (e.g. on Slack or personally).
 Spread the Word
 ===============
 
-Tell others about things in the documentation, that are 
+Tell others about things in the documentation, that are
 `new <https://docs.typo3.org/News/Index.html>`__
-and that you find interesting. 
+and that you find interesting.
 
 Remind people, that everyone can contribute!
 
 * `Tweet <https://twitter.com/>`__
-  (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__). 
+  (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__).
   Additionally, you can use `#T3Docs <https://twitter.com/search?q=%23T3Docs>`__,
   `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
   #T3DC (for docs contribution) and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
@@ -151,7 +151,7 @@ be created at all?
 If this is the case, either:
 
 * Raise the question in the #typo3-documentation channel on Slack
-* Or, add a comment with your suggestion to this general issue: 
+* Or, add a comment with your suggestion to this general issue:
   `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
 
 .. _how-you-can-help-review-manuals:
@@ -173,7 +173,7 @@ Add Information from the ChangeLog
 
    This is already being taken care of by the TYPO3 Core Team. For each release,
    the Changelogs are checked and official documentation is updated. This mostly
-   concerns TYPO3 Explained and the references. 
+   concerns TYPO3 Explained and the references.
 
 Find information in the `TYPO3 ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
 that is not yet documented and add it to a manual where the information
@@ -192,10 +192,10 @@ is best documented, e.g.:
 
 .. draft
 
-   Blog About Your Contributions 
+   Blog About Your Contributions
    =============================
 
-   Telling a real life story may help others to make the decision to 
+   Telling a real life story may help others to make the decision to
    contribute. It's your story, so you decide what's in it, but here
    are some ideas to get you started:
 
