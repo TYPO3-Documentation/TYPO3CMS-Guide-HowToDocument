@@ -51,43 +51,7 @@ https://capitalizemytitle.com/ to check title spelling.
 Fix Issues
 ==========
 
-If you are a new contributor, you can look for issues in TYPO3-Documentation
-with the label "good first issue":
-
-* `"good first issue"
-  <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation+no%3Aassignee>`__
-* ... or go to the `Issues tab in Github <https://github.com/issues>`__ and enter `is:open is:issue archived:false label:"good first issue" user:TYPO3-Documentation` in the search field (this should get you the same result) 
-
-
-Using this link, you can get a list of all open, unassigned issues:
-
-* `Open, unassigned issues 
-  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+no%3Aassignee>`__ (without Documentation Team issues, without t3SphinxThemeRtd, without t3SphinxThemeRtdDemoDocs)
-
-Pick an issue for a topic you are familiar with and try to fix it. Some of the
-issues address a problem, some are enhancements where new text needs to be
-written.
-
-For more links to GitHub issues, see :ref:`links-github-issues`.
-
-
-You can also look at the open issues of a manual you are familiar with, pick one
-and fix the problem.
-
-For example:
-
-* `Issues for this guide "Writing Documentation"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
-* `Issues for "Getting Started Tutorial"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
-
-To find the issues for a specific manual click on "Related links" (on the
-bottom left of the page).
-
-.. image:: ../images/related-links-issues.png
-   :class: with-shadow
-
-
+See :ref:`links-github-issues`.
 
 
 Replace Outdated Images

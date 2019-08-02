@@ -21,6 +21,10 @@ But, you may want to get an overview for all open issues for TYPO3 documentation
 The repositories of the official manuals are all included in the organization
 `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
 
+Pick an issue for a topic you are familiar with and try to fix it. Some of the
+issues address a problem, some are enhancements where new text needs to be
+written.
+
 Here are some links you can use to get a list of all issues:
 
 .. note::
@@ -45,6 +49,25 @@ For Contributors
 
 This includes all issues for official manuals. We excluded the repos that should
 typically be handled by a Documentation Team member.
+
+Well-Known Topics
+-----------------
+
+You can also look at the open issues of a manual you are familiar with, pick one
+and fix the problem.
+
+For example:
+
+* `Issues for this guide "Writing Documentation"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+* `Issues for "Getting Started Tutorial"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
+
+To find the issues for a specific manual click on "Related links" (on the
+bottom left of the page).
+
+.. image:: ../images/related-links-issues.png
+   :class: with-shadow
 
 Advanced
 --------
