@@ -14,14 +14,31 @@ How to Work With GitHub
 Issues
 =============
 
-To go to the Issue Board on GitHub for a manual you are reading online,
-just click on :guilabel:`Related Links` on the bottom and then :guilabel:`Issues`.
+Pick an issue for a topic you are familiar with and try to fix it. Some of the
+issues address a problem, some are enhancements where new text needs to be
+written.
+
+
+Find open issues
+----------------
+
+To find the issues for a specific manual click on :guilabel:`Related Links` (on the
+bottom left of any page of the manual) and then :guilabel:`Issues`.
+
+.. image:: ../images/related-links-issues.png
+   :class: with-shadow
+
 
 But, you may want to get an overview for all open issues for TYPO3 documentation.
 The repositories of the official manuals are all included in the organization
 `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
 
 Here are some links you can use to get a list of all issues:
+
+.. note::
+
+   GitHub will show a 404 page if you are not logged in following these links!
+   So, remember to log in first!
 
 For New Contributors
 --------------------
@@ -41,6 +58,19 @@ For Contributors
 
 This includes all issues for official manuals. We excluded the repos that should
 typically be handled by a Documentation Team member.
+
+Well-Known Topics
+-----------------
+
+You can also look at the open issues of a manual you are familiar with, pick one
+and fix the problem.
+
+For example:
+
+* `Issues for this guide "Writing Documentation"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+* `Issues for "Getting Started Tutorial"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
 Advanced
 --------
