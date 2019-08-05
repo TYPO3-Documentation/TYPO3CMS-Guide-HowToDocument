@@ -5,12 +5,6 @@
 .. _docs-official-how-you-can-help:
 .. _how-to-contribute:
 
-.. aka "Ways to Contribute"
-
-.. todo:: how to give (general) feedback on documentation
-
-.. todo:: systematic review: how?
-
 
 ================
 How You Can Help
