@@ -8,6 +8,22 @@
 How to Work With GitHub
 ===========================================
 
+How to Find a GitHub Repository
+===============================
+
+The repositories of the official manuals are all included in the organization
+`TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
+
+There, you can browse through the repositories or search for a specific
+repository:
+
+.. image:: ../images/github-repo-search.png
+   :class: with-shadow
+
+
+Additionally, on any rendered page, you can open :guilabel:`"Related Links" > "Repository"`.
+
+
 
 .. _links-github-issues:
 
@@ -19,8 +35,19 @@ issues address a problem, some are enhancements where new text needs to be
 written.
 
 
-Find open issues
-----------------
+Find Issues for a Specific Manual
+---------------------------------
+
+You can look at the open issues of a manual you are familiar with, pick one
+and fix the problem.
+
+For example:
+
+* `Issues for this guide "Writing Documentation"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+* `Issues for "Getting Started Tutorial"
+  <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
+
 
 To find the issues for a specific manual click on :guilabel:`Related Links` (on the
 bottom left of any page of the manual) and then :guilabel:`Issues`.
@@ -28,20 +55,20 @@ bottom left of any page of the manual) and then :guilabel:`Issues`.
 .. image:: ../images/related-links-issues.png
    :class: with-shadow
 
+Some Links to Specific Issues
+-----------------------------
 
-But, you may want to get an overview for all open issues for TYPO3 documentation.
-The repositories of the official manuals are all included in the organization
-`TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
-
-Here are some links you can use to get a list of all issues:
+In the following sections you will find some links to a list of issues.
 
 .. note::
 
    GitHub will show a 404 page if you are not logged in following these links!
    So, remember to log in first!
 
+
 For New Contributors
---------------------
+~~~~~~~~~~~~~~~~~~~~
+
 
 * `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__
 
@@ -52,28 +79,16 @@ this! Start with any issue that seems to be a good fit for you!
 .. _useful-links-for-contributors:
 
 For Contributors
-----------------
+~~~~~~~~~~~~~~~~
 
 * `Open, unassigned issues  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (without team issues, without t3SphinxThemeRtd, without "Writing Documentation")
 
-This includes all issues for official manuals. We excluded the repos that should
-typically be handled by a Documentation Team member.
+This includes all issues for official manuals. We excluded the issues in repositories
+that should typically be handled by a Documentation Team member.
 
-Well-Known Topics
------------------
-
-You can also look at the open issues of a manual you are familiar with, pick one
-and fix the problem.
-
-For example:
-
-* `Issues for this guide "Writing Documentation"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
-* `Issues for "Getting Started Tutorial"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
 Advanced
---------
+~~~~~~~~
 
 For Documentation Team members, members of task forces, advanced contributors:
 
