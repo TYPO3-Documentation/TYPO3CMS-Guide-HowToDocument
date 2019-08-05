@@ -10,6 +10,9 @@ Workflow #1: "Edit me on Github"
 .. youtube:: wNxO-aXY5Yw
 
 
+First time contributor? Look at :ref:`contribute` for some general information about
+contributing to TYPO3 documentation.
+
 .. rst-class:: bignums-xxl
 
 1. Get a GitHub account:

@@ -161,6 +161,11 @@ merged, you can reload the page (which you fixed) in your browser.
 
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
+Next Steps
+==========
+
+* Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
+
 
 .. _contribute-edit-locally-more-changes:
 
