@@ -5,6 +5,12 @@
 .. _docs-official-how-you-can-help:
 .. _how-to-contribute:
 
+.. aka "Ways to Contribute"
+
+.. todo:: how to give (general) feedback on documentation
+
+.. todo:: systematic review: how?
+
 
 ================
 How You Can Help
@@ -16,8 +22,9 @@ very much appreciated.
 
 
 .. important::
-   These are just examples to get you started. You are not restricted to this,
-   as a contributor. If you can make useful improvements, do it!
+
+   These are just examples to get you started. As a contributor, you are not
+   restricted to this. If you can make useful improvements, do it!
    Some of the best contributions come from starting with something that bothers you
    the most.
 
@@ -26,10 +33,11 @@ very much appreciated.
 Make Minor Changes
 ==================
 
-If you see a typo, a broken link or can make some improvements in
-the spelling, do not hesitate to click on "Edit me on Github" and make
+If you see a typo, a broken link, something is outdated or you can make improvements in
+any way, do not hesitate to click on "Edit me on Github" and make
 the change yourself. See :ref:`docs-contribute-github-method` for
 a walkthrough.
+
 
 .. _how-you-can-help-check-spelling:
 
@@ -72,17 +80,21 @@ Add some new YouTube videos from the  `TYPO3 YouTube channel
 See :ref:`youtube-videos` for information on how to do this.
 
 
-Teach and Motivate Others
+Teach
 =========================
 
 If you are already familiar with the workflow, you can help others
 to get started. Whenever you are at a `TYPO3 event <https://typo3.org/community/events/>`__
 (Sprint, Barcamp, etc.), on `StackOverflow <https://stackoverflow.com/questions/tagged/typo3>`__
 or in a `Slack <https://my.typo3.org/index.php?id=35>`__ channel and someone finds
-something missing in the documentation, help them make the
+something missing or a problem in the documentation, help them make the
 necessary changes themselves.
 
-Thank others for their contributions (e.g. on Slack or personally).
+Motivate
+===============
+
+Thank others for their contributions (e.g. on Slack, Twitter or personally).
+
 
 .. _contribute-what-social-media:
 
@@ -90,8 +102,8 @@ Spread the Word
 ===============
 
 Tell others about things in the documentation, that are
-`new <https://docs.typo3.org/News/Index.html>`__
-and that you find interesting.
+`new <https://docs.typo3.org/News/Index.html>`__,
+that you found interesting or that helped you in any way.
 
 Remind people, that everyone can contribute!
 
@@ -99,7 +111,21 @@ Remind people, that everyone can contribute!
   (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__).
   Additionally, you can use `#T3Docs <https://twitter.com/search?q=%23T3Docs>`__,
   `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
-  #T3DC (for docs contribution) and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
+  and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
+
+
+Blog About Your Contributions
+=============================
+
+Telling a real life story may help others to make the decision to
+contribute. It's your story, so you decide what's in it, but here
+are some ideas to get you started:
+
+* What gave you the motivation to contribute?
+* How did you benefit from contributing? For example, what did you learn?
+* What advice can you give others?
+
+
 
 
 .. _how-you-can-help-new-content:
@@ -139,31 +165,14 @@ Add Information from the ChangeLog
    the Changelogs are checked and official documentation is updated. This mostly
    concerns TYPO3 Explained and the references.
 
-Find information in the `TYPO3 ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-that is not yet documented and add it to a manual where the information
-is best documented, e.g.:
-
-* :ref:`t3coreapi:start`
-* :ref:`t3tsconfig:start`
-* :ref:`t3tca:start`
-* :ref:`t3tsref:start`
+Regardless of this, if you find something missing, you can add it yourself. Or
+ask in Slack #typo3-documentation if you can help out.
 
 
-.. ------------------------------------------------------
+More Ideas?
+===========
 
-.. todo:: how to give (general) feedback on documentation
-.. todo:: systematic review: how?
-
-.. draft
-
-   Blog About Your Contributions
-   =============================
-
-   Telling a real life story may help others to make the decision to
-   contribute. It's your story, so you decide what's in it, but here
-   are some ideas to get you started:
-
-   * What gave you the motivation to contribute?
-   * What advice can you give others?
-
-
+Do you have more ideas to add to this list? Either add them directly using one
+:ref:`the two workflows <contribute>`
+or `contact us
+<https://typo3.org/community/teams/documentation/#c9886>`__ and make your suggestions.
