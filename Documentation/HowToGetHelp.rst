@@ -59,7 +59,7 @@ Additionally, you can contact us via `email <documentation@typo3.org>`__.
 General Support for TYPO3
 =========================
 
-Got to https://typo3.org/help/. There you will also be directed to the
+Go to https://typo3.org/help/. There, you will also be directed to the
 Slack channel **#typo3-cms**, but some other methods for getting help
 and support are listed as well.
 
