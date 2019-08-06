@@ -197,8 +197,8 @@ Index.rst:
    .. toctree::
       :hidden:
 
-      Introduction.rst
-      Configuration.rst
+      Introduction
+      Configuration
 
 
 * line 1 : every .rst file should include Includes.txt
