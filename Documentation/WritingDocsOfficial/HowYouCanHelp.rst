@@ -143,7 +143,7 @@ If this is the case, either:
 Review Manuals
 ==============
 
-Pick a manual (such as :ref:`t3start:start`, :ref:`t3coreapi:start`) and start reviewing it.
+Pick a manual (such as :ref:`t3extbasebook:start`, :ref:`t3coreapi:start`) and start reviewing it.
 If you find something that needs fixing or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
