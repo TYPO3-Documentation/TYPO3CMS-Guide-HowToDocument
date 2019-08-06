@@ -166,7 +166,7 @@ ask in Slack #typo3-documentation if you can help out.
 More Ideas?
 ===========
 
-Do you have more ideas to add to this list? Either add them directly using one
+Do you have more ideas to add to this list? Either add them directly to this page using one of
 :ref:`the two workflows <contribute>`
 or `contact us
 <https://typo3.org/community/teams/documentation/#c9886>`__ and make your suggestions.
