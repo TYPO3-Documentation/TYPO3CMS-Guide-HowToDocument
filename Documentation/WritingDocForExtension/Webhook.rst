@@ -79,7 +79,7 @@ Add auto rendering for a repository via GitHub webhook in five steps:
 
    #. Select ``Just the push event.`` for "Which events would you like to trigger this webhook?".
 
-   #. Enable "Activate".
+   #. Enable "Active".
 
    #. Click on "Add webhook"
 
