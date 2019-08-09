@@ -4,9 +4,9 @@
 .. _work-with-github:
 .. _useful-links:
 
-===========================================
+=======================
 How to Work With GitHub
-===========================================
+=======================
 
 How to Find a GitHub Repository
 ===============================
@@ -28,7 +28,7 @@ Additionally, on any rendered page, you can open :guilabel:`"Related Links" > "R
 .. _links-github-issues:
 
 Issues
-=============
+======
 
 Pick an issue for a topic you are familiar with and try to fix it. Some of the
 issues address a problem, some are enhancements where new text needs to be
@@ -110,13 +110,13 @@ New Content
 
 These issues describe missing content that needs to be written:
 
-* `content missing <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22content+missing%22+archived%3Afalse+user%3ATYPO3-Documentation+>`__
+* `Content missing <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22content+missing%22+archived%3Afalse+user%3ATYPO3-Documentation+>`__
 
 
 .. _github-pull-requests:
 
 Pull Requests
-====================
+=============
 
 Anyone is welcome to review open pull requests!
 
@@ -130,11 +130,11 @@ In **t3docs** (Docker image):
 
 About reviewing pull requests, you can look in the GitHub help pages:
 
+* `About pull request reviews <https://help.github.com/en/articles/about-pull-request-reviews>`__ (GitHub)
+* `Commenting on a pull request <https://help.github.com/en/articles/commenting-on-a-pull-request>`__ (GitHub)
+
 .. tip::
 
    If you are reviewing a pull request and want to leave comments, make sure to
    `mark the line <https://help.github.com/en/articles/commenting-on-a-pull-request>`__
    in the PR.
-
-* `About pull request reviews <https://help.github.com/en/articles/about-pull-request-reviews>`__ (GitHub)
-* `Commenting on a pull request <https://help.github.com/en/articles/commenting-on-a-pull-request>`__ (GitHub)
