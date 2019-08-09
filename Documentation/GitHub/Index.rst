@@ -66,9 +66,10 @@ In the following sections you will find some links to a list of issues.
    So, remember to log in first!
 
 
+.. _github-good-first-issue:
+
 For New Contributors
 ~~~~~~~~~~~~~~~~~~~~
-
 
 * `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__
 
@@ -102,6 +103,18 @@ The Docker image for rendering is in the organization **t3docs** (instead of TYP
 * `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__
 
 
+.. _github-new-content:
+
+New Content
+-----------
+
+These issues describe missing content that needs to be written:
+
+* `content missing <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22content+missing%22+archived%3Afalse+user%3ATYPO3-Documentation+>`__
+
+
+.. _github-pull-requests:
+
 Pull Requests
 ====================
 
@@ -109,8 +122,19 @@ Anyone is welcome to review open pull requests!
 
 In **TYPO3-Documentation**:
 
-* `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-asc>`__
+* `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-desc>`__
 
-In **t3docs**:
+In **t3docs** (Docker image):
 
 * `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__
+
+About reviewing pull requests, you can look in the GitHub help pages:
+
+.. tip::
+
+   If you are reviewing a pull request and want to leave comments, make sure to
+   `mark the line <https://help.github.com/en/articles/commenting-on-a-pull-request>`__
+   in the PR.
+
+* `About pull request reviews <https://help.github.com/en/articles/about-pull-request-reviews>`__ (GitHub)
+* `Commenting on a pull request <https://help.github.com/en/articles/commenting-on-a-pull-request>`__ (GitHub)
