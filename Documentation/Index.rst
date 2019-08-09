@@ -7,7 +7,7 @@ Writing Documentation
 =====================
 
 :Authors:   TYPO3 Documentation Team & community (see :ref:`credits`)
-:Status:    Fully revised (July, 2019)
+:Status:    Fully revised (August, 2019)
 :License:   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__)
 
 

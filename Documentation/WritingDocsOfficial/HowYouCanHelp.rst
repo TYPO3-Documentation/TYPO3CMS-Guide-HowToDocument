@@ -40,6 +40,14 @@ Fix Issues
 
 See :ref:`links-github-issues`.
 
+Review Pull Requests
+====================
+
+:ref:`Find an open pull request <github-pull-requests>` and review it.
+
+Some pull requests make changes in documentation describing an aspect
+of TYPO3 you may know well.
+Help in this area is very much appreciated!
 
 Replace Outdated Images
 =======================
@@ -123,17 +131,57 @@ If this is the case, either:
 * Or, add a comment with your suggestion to this general issue:
   `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
 
+
+Write New Content
+================================
+
+:ref:`Write missing content <github-new-content>`.
+
+
 .. _how-you-can-help-review-manuals:
 
 Review Manuals
 ==============
 
-Pick a manual (such as :ref:`t3extbasebook:start`, :ref:`t3coreapi:start`) and start reviewing it.
+Pick a manual and start reviewing it.
 If you find something that needs fixing or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
 
-Help to keep this list up to date: :ref:`t3docteam:overview-of-manuals-review`
+.. tip::
 
+   Usually, there is :ref:`one branch for each major TYPO3 version <t3start:usage-version-selector>`
+   in a manual. Please focus your
+   efforts mostly on the latest "master" branch, to get that up to date and ready!
+
+You can for example start with:
+
+* :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
+  is up to date and technically correct. Also, the text needs to be shortened in some parts and
+  language impprovements are necessary (grammar, style). For the master branch, you can
+  `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
+  once you have started reviewing. This makes it easier for other reviewers to just skip the parts
+  that are already ok.
+* :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
+  "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
+  `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
+
+.. tip::
+
+   If you don't have write access to a GitHub repository (which is usually the case if you
+   just started), you cannot check off the checkmarks in the review list. In that case, just leave a comment
+   in the issue.
+
+Once you start and are confident that you can make progress, you may want to talk about
+your intentions in the #typo3-documentation Slack channel (as this is a bigger change).
+You can also mention if you need help (because reviewing an entire manual can be quite
+too much to do for one person).
+
+You can check here to see the current review status of each manual:
+
+* :ref:`t3docteam:overview-of-manuals-review`
+
+
+.. _how-you-can-help-changelog:
 
 Add Information from the ChangeLog
 ==================================
