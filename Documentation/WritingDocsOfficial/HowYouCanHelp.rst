@@ -33,21 +33,6 @@ the change yourself. See :ref:`docs-contribute-github-method` for
 a walkthrough.
 
 
-.. _how-you-can-help-check-spelling:
-
-Check Spelling
-==============
-
-Check spelling for consistency. For example, compare spelling of title
-and headlines to `The TYPO3 Writing Style Guide
-<https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
-
-Is spelling of proper nouns correct?
-
-See :ref:`content-styleguide` for more information, use the online tool
-https://capitalizemytitle.com/ to check title spelling.
-
-
 .. _how-you-can-help-fix-issues:
 
 Fix Issues
@@ -161,6 +146,20 @@ Add Information from the ChangeLog
 
 Regardless of this, if you find something missing, you can add it yourself. Or
 ask in Slack #typo3-documentation if you can help out.
+
+.. _how-you-can-help-check-spelling:
+
+Check Spelling
+==============
+
+Check spelling for consistency. For example, compare spelling of title
+and headlines to `The TYPO3 Writing Style Guide
+<https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
+
+Is spelling of proper nouns correct?
+
+See :ref:`content-styleguide` for more information, use the online tool
+https://capitalizemytitle.com/ to check title spelling.
 
 
 More Ideas?
