@@ -40,14 +40,79 @@ Fix Issues
 
 See :ref:`links-github-issues`.
 
+
+
+.. _how-you-can-help-review-pr:
+
 Review Pull Requests
 ====================
+
+*--* **new**, *added August 10, 2019*
 
 :ref:`Find an open pull request <github-pull-requests>` and review it.
 
 Some pull requests make changes in documentation describing an aspect
 of TYPO3 you may know well.
 Help in this area is very much appreciated!
+
+
+.. _how-you-can-help-write-new-content:
+
+Write New Content
+=================
+
+*--* **new**, *added August 10, 2019*
+
+* :ref:`Write missing content <github-new-content>`.
+
+
+
+.. _how-you-can-help-add-diagrams:
+
+Add Diagrams
+============
+
+
+*--* **new**, *added August 11, 2019*
+
+Often things can be conveyed more easily if visual aids like diagrams
+are used with the text.
+
+You can create UML diagrams (such as class diagrams, sequence diagrams, etc.),
+cheat sheets or others.
+
+Here are some examples:
+
+* :ref:`Check out sequence diagram on new page about request handling <t3coreapi:request-handling>`
+* :ref:`System Overview in "TYPO3 Explained" contains a diagram <overview>`
+
+
+.. figure:: ../images/diagram.png
+   :class: with-shadow
+   :target: https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/RequestHandling/Index.html#typo3-implementation
+
+   Page in the documentation with a diagram
+
+See `this issue <https://github.com/TYPO3-Documentation/T3DocTeam/issues/41>`__ for more
+information and a discussion.
+
+Use for example the tool `PlantUML <http://plantuml.com/starting>`__ to create UML diagrams.
+
+
+.. _how-you-can-help:
+
+Create Cheat Sheets
+===================
+
+*--* **new**, *added August 11, 2019*
+
+Look at the existing cheat sheets and check if they are up to date:
+
+* `List of cheat sheets <https://docs.typo3.org/Home/CheatSheets.html>`__
+
+You can create further cheat sheets and add them to this list.
+
+
 
 Replace Outdated Images
 =======================
@@ -58,6 +123,7 @@ reference.
 Look at :ref:`how-to-document-images` for information about how to
 embed images with reST.
 
+
 Add YouTube Videos
 ==================
 
@@ -65,6 +131,52 @@ Add some new YouTube videos from the  `TYPO3 YouTube channel
 <https://www.youtube.com/channel/UCwpl8LY9Tr3PB26Kk2FYW_w>`__.
 
 See :ref:`youtube-videos` for information on how to do this.
+
+
+.. _how-you-can-help-review-manuals:
+
+Review Manuals
+==============
+
+*--* **new**, *added August 9, 2019*
+
+Pick a manual and start reviewing it.
+If you find something that needs fixing or something is missing, either fix it or write an
+issue for it, if you cannot make the changes yourself.
+
+.. tip::
+
+   Usually, there is :ref:`one branch for each major TYPO3 version <t3start:usage-version-selector>`
+   in a manual. Please focus your
+   efforts mostly on the latest "master" branch, to get that up to date and ready!
+
+You can for example start with:
+
+* :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
+  is up to date and technically correct. Also, the text needs to be shortened in some parts and
+  language impprovements are necessary (grammar, style). For the master branch, you can
+  `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
+  once you have started reviewing. This makes it easier for other reviewers to just skip the parts
+  that are already ok.
+* :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
+  "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
+  `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
+
+.. tip::
+
+   If you don't have write access to a GitHub repository (which is usually the case if you
+   just started), you cannot check off the checkmarks in the review list. In that case, just leave a comment
+   in the issue.
+
+Once you start and are confident that you can make progress, you may want to talk about
+your intentions in the #typo3-documentation Slack channel (as this is a bigger change).
+You can also mention if you need help (because reviewing an entire manual can be quite
+too much to do for one person).
+
+You can check here to see the current review status of each manual:
+
+* :ref:`t3docteam:overview-of-manuals-review`
+
 
 
 Teach
@@ -132,53 +244,8 @@ If this is the case, either:
   `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
 
 
-Write New Content
-================================
-
-:ref:`Write missing content <github-new-content>`.
 
 
-.. _how-you-can-help-review-manuals:
-
-Review Manuals
-==============
-
-Pick a manual and start reviewing it.
-If you find something that needs fixing or something is missing, either fix it or write an
-issue for it, if you cannot make the changes yourself.
-
-.. tip::
-
-   Usually, there is :ref:`one branch for each major TYPO3 version <t3start:usage-version-selector>`
-   in a manual. Please focus your
-   efforts mostly on the latest "master" branch, to get that up to date and ready!
-
-You can for example start with:
-
-* :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
-  is up to date and technically correct. Also, the text needs to be shortened in some parts and
-  language impprovements are necessary (grammar, style). For the master branch, you can
-  `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
-  once you have started reviewing. This makes it easier for other reviewers to just skip the parts
-  that are already ok.
-* :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
-  "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
-  `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
-
-.. tip::
-
-   If you don't have write access to a GitHub repository (which is usually the case if you
-   just started), you cannot check off the checkmarks in the review list. In that case, just leave a comment
-   in the issue.
-
-Once you start and are confident that you can make progress, you may want to talk about
-your intentions in the #typo3-documentation Slack channel (as this is a bigger change).
-You can also mention if you need help (because reviewing an entire manual can be quite
-too much to do for one person).
-
-You can check here to see the current review status of each manual:
-
-* :ref:`t3docteam:overview-of-manuals-review`
 
 
 .. _how-you-can-help-changelog:
