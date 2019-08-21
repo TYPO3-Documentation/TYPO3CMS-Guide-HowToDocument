@@ -11,6 +11,11 @@ How to Work With GitHub
 How to Find a GitHub Repository
 ===============================
 
+The source for every manual on docs.typo3.org (for example this manual :ref:`start` or
+:ref:`t3coreapi:start`) is contained in a GitHub repository.
+
+In the repository, you can find the source files, but also the issues and pull requests.
+
 The repositories of the official manuals are all included in the organization
 `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
 
@@ -21,9 +26,12 @@ repository:
    :class: with-shadow
 
 
-Additionally, on any rendered page, you can open :guilabel:`"Related Links" > "Repository"`.
+Alternatively, on any rendered page on docs.typo3.org (for example, this page),
+you can open :guilabel:`"Related Links"` on the bottom of the menu
+and click on :guilabel:`"Repository"`.
 
-
+.. image:: ../images/related-links-repository.png
+   :class: with-shadow
 
 .. _links-github-issues:
 
@@ -33,10 +41,6 @@ Issues
 Pick an issue for a topic you are familiar with and try to fix it. Some of the
 issues address a problem, some are enhancements where new text needs to be
 written.
-
-
-Find Issues for a Specific Manual
----------------------------------
 
 You can look at the open issues of a manual you are familiar with, pick one
 and fix the problem.
@@ -49,14 +53,32 @@ For example:
   <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
 
-To find the issues for a specific manual click on :guilabel:`Related Links` (on the
-bottom left of any page of the manual) and then :guilabel:`Issues`.
+Find Issues for a Specific Manual
+---------------------------------
 
-.. image:: ../images/related-links-issues.png
-   :class: with-shadow
+From docs.typo3.org:
+   To find the issues for a specific manual click on :guilabel:`Related Links` (on the
+   bottom left of any page of the manual) and then :guilabel:`Issues`.
 
-Some Links to Specific Issues
------------------------------
+   .. image:: ../images/related-links-issues.png
+      :class: with-shadow
+
+From the repository on GitHub:
+   If you have already located the repository on GitHub, you can find the Issues
+   by clicking on the :guilabel:`Issues` tab:
+
+   .. image:: ../images/github-issues.png
+      :class: with-shadow
+
+From the list of repositories in `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__:
+   Look for the exclamantion mark (!) issues icon:
+
+   .. image:: ../images/github-list-issues.png
+      :class: with-shadow
+
+
+Links to Specific Issues
+------------------------
 
 In the following sections you will find some links to a list of issues.
 
@@ -82,7 +104,8 @@ this! Start with any issue that seems to be a good fit for you!
 For Contributors
 ~~~~~~~~~~~~~~~~
 
-* `Open, unassigned issues  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (without team issues, without t3SphinxThemeRtd, without "Writing Documentation")
+* `Open, unassigned issues  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__
+  (without T3DocTeam issues, without t3SphinxThemeRtd, without "Writing Documentation")
 
 This includes all issues for official manuals. We excluded the issues in repositories
 that should typically be handled by a Documentation Team member.
@@ -91,7 +114,7 @@ that should typically be handled by a Documentation Team member.
 Advanced
 ~~~~~~~~
 
-For Documentation Team members, members of task forces, advanced contributors:
+For Documentation Team members, members of initiatives, advanced contributors:
 
 * `All open issues in TYPO3-Documentation
   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__

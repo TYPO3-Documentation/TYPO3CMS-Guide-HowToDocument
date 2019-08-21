@@ -38,7 +38,8 @@ a walkthrough.
 Fix Issues
 ==========
 
-See :ref:`links-github-issues`.
+See :ref:`links-github-issues`. As a new contributor, specifically look at issues
+with the label :ref:`good first issue <github-good-first-issue>`.
 
 Review Pull Requests
 ====================
