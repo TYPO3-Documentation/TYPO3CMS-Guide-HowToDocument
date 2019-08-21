@@ -101,23 +101,23 @@ Tip 8: Use StackOverflow to Learn
 Yes, `Stack Overflow <https://stackoverflow.com/>`__ can be a good teacher. Or, we
 should add, its users are.
 
-You may notice, there are some brilliant
+You may notice, there are some good
 answers on StackOverflow, ideally formatted for readability, very well written
 and structured. If you have not signed up for StackOverflow yet, do it now
 and start writing questions and / or answers.
 
-Advanced StackOverflow users `often use number or
+Advanced Stack Overflow users `often use number or
 unnumbered lists <https://stackoverflow.com/a/927386/2444812>`__ and other formatting
 elements.
 
-Of course, it is better to keep the text as short as possible,
+Of course, it is better to keep the text on Stack Overflow as short as possible,
 but if the text is longer than a paragraph, lists help to structure the text
 and make it more readable.
 
 Additionally, some users are very good at explaining things.
 
 See how this `highly voted answer by Mysticial on branch prediction
-<https://stackoverflow.com/a/11227902/2444812>` uses a railroad junction
+<https://stackoverflow.com/a/11227902/2444812>`__ uses a railroad junction
 analogy.
 
 You can use the advanced search to search for `highly voted answers
@@ -146,8 +146,6 @@ We do not wish to annoy you with repetition, but we must reiterate
 tip 4. Additionally, when you write new
 content, finish it, **wait a few days**, and then read it again!
 
-Proofread for spelling, proofread for formatting, proofread for
-readability, proofread for correctness.
 
 .. _write-good-content-resources:
 
