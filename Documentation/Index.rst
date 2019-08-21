@@ -59,7 +59,13 @@ Writing Documentation
    ToolsEditRest/Index
    RenderingDocs/Index
    GitHub/Index
+
+.. toctree::
+   :hidden:
+   :caption: ADVANCED
+
    HowToAddTranslation/Index
+   HowToUpdateDocs/Index
 
 
 .. toctree::
