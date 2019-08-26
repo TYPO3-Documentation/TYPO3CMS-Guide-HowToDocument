@@ -155,7 +155,7 @@ You can for example start with:
 
 * :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
   is up to date and technically correct. Also, the text needs to be shortened in some parts and
-  language impprovements are necessary (grammar, style). For the master branch, you can
+  language improvements are necessary (grammar, style). For the master branch, you can
   `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
   once you have started reviewing. This makes it easier for other reviewers to just skip the parts
   that are already ok.
