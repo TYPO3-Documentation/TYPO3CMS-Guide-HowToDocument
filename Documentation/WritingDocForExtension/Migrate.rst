@@ -49,18 +49,6 @@ Necessary Steps
    In case the old hook is in play, remove it first, and add the new one
    instead.
 
-#. Wait for approval
-
-   The first time a new repository is triggering the webhook, it will not be
-   processed. Instead the TYPO3 Documentation Team has to approve. This is
-   necessary in order to prevent miss usage of the infrastructure and extension
-   names.
-
-   In case this takes to long, request the approval within Slack channel
-   `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
-   Registration for Slack is available at `my.typo3.org
-   <https://my.typo3.org/index.php?id=35>`__.
-
 #. Request redirects
 
    Inform the TYPO3 Documentation Team, within `#typo3-documentation

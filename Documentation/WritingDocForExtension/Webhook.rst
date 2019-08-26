@@ -19,6 +19,18 @@ If none of the above is used, a mirror to one of these is recommend. Also the
 `Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
 setup custom hostings.
 
+.. important::
+
+   The first time a new repository is triggering the webhook, it will not be
+   processed. Instead the TYPO3 Documentation Team has to approve. This is
+   necessary in order to prevent miss usage of the infrastructure and extension
+   names.
+
+   In case this takes to long, request the approval within Slack channel
+   `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
+   Registration for Slack is available at `my.typo3.org
+   <https://my.typo3.org/index.php?id=35>`__.
+
 The following chapters provide illustrated walkthrough tutorials on how to add
 the necessary hook in those systems.
 
