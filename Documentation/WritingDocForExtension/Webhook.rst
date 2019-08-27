@@ -36,8 +36,8 @@ the necessary hook for the respective hoster.
 
 .. _webhook-how-webhook-works:
 
-How webhooks works
-==================
+How Webhooks Work
+=================
 
 If it's your first time working with webhooks, take a look at `GitHub developer
 <https://developer.github.com/webhooks/>`_. The configuration below triggers
@@ -48,7 +48,7 @@ In order to test the integration, a push to `master` branch or
 
 .. _webhook-legacy:
 
-Legacy webhook
+Legacy Webhook
 ==============
 
 If the repository already had a hook, this is considered deprecated. A
@@ -176,7 +176,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 
 .. _webhook-gitlab:
 
-GitLab Cloud and GitLab self-hosted
+GitLab Cloud and GitLab Self-hosted
 ===================================
 
 Add auto rendering for a repository via GitLab webhook in four steps:
