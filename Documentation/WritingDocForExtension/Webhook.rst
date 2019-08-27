@@ -26,7 +26,7 @@ setup custom hostings.
    necessary in order to prevent miss usage of the infrastructure and extension
    names.
 
-   In case this takes to long, request the approval within Slack channel
+   In case this takes too long, request the approval within Slack channel
    `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
    Registration for Slack is available at `my.typo3.org
    <https://my.typo3.org/index.php?id=35>`__.
@@ -107,7 +107,7 @@ Add auto rendering for a repository via GitHub webhook in five steps:
 
 #. (Optional) visit intercept and check request
 
-   If curious, visit https://intercept.typo3.com/admin/docs/deployments and
+   If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down). The repository should have created a
    "Docs hook ping from github repository".
 
@@ -165,7 +165,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 
 #. (Optional) visit intercept and check request
 
-   If curious, visit https://intercept.typo3.com/admin/docs/deployments and
+   If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down).
 
    In order to appear, the hook needs to be triggered. Therefore either the
@@ -209,7 +209,7 @@ Add auto rendering for a repository via GitLab webhook in four steps:
 
 #. (Optional) Trigger webhook and visit intercept to check request
 
-   If curious, visit https://intercept.typo3.com/admin/docs/deployments and
+   If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down).
 
    In order to appear, the hook needs to be triggered. Therefore either the
