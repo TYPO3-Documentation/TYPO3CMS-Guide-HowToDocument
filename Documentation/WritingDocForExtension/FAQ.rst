@@ -62,11 +62,15 @@ Documentation rendering is restricted to one repository per package.
 
 I.e. if someone triggers documentation rendering with a repository with vendor *myVendor* and
 package *myPackage*, then nobody else will be able to trigger documentation from
-a different repository with that exact vendor/package name combination. You
-could say this works on a first come first served basis. However, if someone
-with malicious intent registers a package first from a fake or wrong repository,
-we will have to correct this by hand. The original author should in that case
-notify us.
+a different repository with that exact `vendor/package` name combination. You
+could say this works on a first come first served basis. 
+
+We have added mechanisms to prevent registering a package from the wrong repository
+with malicious intent or accidentally: The first time someone triggers documentation
+rendering for a specific `vendor/package` combination, the Documentation Team must
+approve of this. This way, misuse is prevented.
+
+See :ref:`webhook` for more information.
 
 
 .. rst-class:: panel panel-default
