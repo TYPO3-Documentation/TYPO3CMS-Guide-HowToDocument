@@ -15,47 +15,44 @@ following hosters:
   - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
   - :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
-If none of the above is used, a mirror to one of these is recommend. Also the
+If none of the above is used, a mirror to one of these is recommended. Also the
 `Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
 setup custom hostings.
 
+The following sections provide illustrated walkthrough tutorials on how to add
+the necessary hook for the respective hoster.
+
 .. important::
 
-   The first time a new repository is triggering the webhook, it will not be
-   processed. Instead the TYPO3 Documentation Team has to approve. This is
-   necessary in order to prevent miss usage of the infrastructure and extension
+   The first time a new repository triggers the webhook, the request will not be
+   processed. Instead, the TYPO3 Documentation Team has to approve. This is
+   necessary to prevent misuse of the infrastructure and extension
    names.
 
-   In case this takes too long, request the approval within Slack channel
+   In case this takes too long, request the approval within the Slack channel
    `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
    Registration for Slack is available at `my.typo3.org
    <https://my.typo3.org/index.php?id=35>`__.
 
-The following chapters provide illustrated walkthrough tutorials on how to add
-the necessary hook in those systems.
-
 .. _webhook-how-webhook-works:
 
-How webhook works
+How Webhooks Work
 =================
 
-If that's the first time working with webhooks, take a look at `GitHub developer
+If it's your first time working with webhooks, take a look at `GitHub developer
 <https://developer.github.com/webhooks/>`_. The configuration below triggers
-rendering only on push events. In order to trigger a rendering, a push has to
-happen.
+rendering only on push events. 
 
 In order to test the integration, a push to `master` branch or
 `documentation-draft` branch can be used, see :ref:`migrate-branches`.
 
 .. _webhook-legacy:
 
-Legacy webhook
+Legacy Webhook
 ==============
 
 If the repository already had a hook, this is considered deprecated. A
 compatibility layer is still in place, but will be removed in the future.
-
-An update is necessary.
 
 .. _webhook-github:
 
@@ -110,6 +107,9 @@ Add auto rendering for a repository via GitHub webhook in five steps:
    If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down). The repository should have created a
    "Docs hook ping from github repository".
+   
+   For the documentation to be rendered, the hook needs to be triggered: Either push to the
+   branch ``master``. Or push to a new branch ``documentation-draft``.
 
    .. figure:: /images/webhook/github/intercept-feedback.png
       :width: 932
@@ -168,16 +168,15 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down).
 
-   In order to appear, the hook needs to be triggered. Therefore either the
-   branch ``master`` can be pushed. Or a new Branch ``documentation-draft`` can
-   be created and pushed.
+   For the documentation to be rendered, the hook needs to be triggered: Either push to the
+   branch ``master``. Or push to a new branch ``documentation-draft``.
 
    .. figure:: /images/webhook/bitbucket/cloud/intercept-feedback.png
       :width: 932
 
 .. _webhook-gitlab:
 
-GitLab Cloud and GitLab self-hosted
+GitLab Cloud and GitLab Self-hosted
 ===================================
 
 Add auto rendering for a repository via GitLab webhook in four steps:
@@ -212,9 +211,8 @@ Add auto rendering for a repository via GitLab webhook in four steps:
    If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down).
 
-   In order to appear, the hook needs to be triggered. Therefore either the
-   branch ``master`` can be pushed. Or a new Branch ``documentation-draft`` can
-   be created and pushed.
+   For the documentation to be rendered, the hook needs to be triggered: Either push to the
+   branch ``master``. Or push to a new branch ``documentation-draft``.
 
    .. figure:: /images/webhook/gitlab/intercept-feedback.png
       :width: 932
