@@ -7,7 +7,9 @@
 Bullet Lists
 ============
 
-This section contains information on bullet lists and numbered lists. 
+This section contains information on bullet lists and numbered lists.
+A text block which begins with a "\*", "+", "-", "•", "‣", or "⁃", 
+followed by whitespace, is a bullet list item.
 
 * Each item of a list should start with a `*` or `-` and a space after it
 * Lists should have an empty line before and after
@@ -25,8 +27,14 @@ numbered lists:
 
 **See also:** 
 
-* `Docutils cheat-sheet for reStructuredText: Bullet list <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
-* `Docutils cheat-sheet for reStructuredText: Enumerated lists <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
+* `Docutils cheat-sheet for reStructuredText: Bullet list
+  <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
+  
+* `Docutils cheat-sheet for reStructuredText: Enumerated lists
+  <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
+  
+* `Docutils reference: bullet-lists
+   <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists>`__
 
 
 Example 1: List with Sublist Items
