@@ -34,7 +34,7 @@ numbered lists:
   <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
   
 * `Docutils reference: bullet-lists
-   <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists>`__
+  <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists>`__
 
 
 Example 1: List with Sublist Items
