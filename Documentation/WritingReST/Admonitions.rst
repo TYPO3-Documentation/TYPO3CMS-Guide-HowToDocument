@@ -37,7 +37,6 @@ Important
    Some important information which should be considered.
 
 
-
 Tip
 ===
 
@@ -61,3 +60,14 @@ Note
 .. note::
    A note
 
+
+Attention
+=========
+
+.. code-block:: rest
+
+   .. attention::
+      A attention
+
+.. attention::
+   A attention
