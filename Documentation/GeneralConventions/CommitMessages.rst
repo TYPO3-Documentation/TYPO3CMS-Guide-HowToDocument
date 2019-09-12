@@ -9,7 +9,7 @@ Commit Messages
 
 The Documentation Team currently does not have strict "rules" for commit messages. These
 are recommendations.
-  
+
 Commit Message Recommendations
 ==============================
 
@@ -36,7 +36,7 @@ Example Commit Message With Issue
    Add chapter for commit message rules
 
    Resolves: #4
-   
+
 This consists of the following parts:
 
 .. code-block:: none
@@ -44,7 +44,7 @@ This consists of the following parts:
    <subject>
 
    Resolves: #<issue number>
-   
+
 The issue number is optional. GitHub will automatically create a link to
 the issue.
 
@@ -87,7 +87,7 @@ as is customary in core development
 However, this is not mandatory throughout the docs at the moment. If
 possible, use the conventions, that are being used in
 the manual in which you are working, e.g. `TYPO3 Explained commits
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/latest>`__
+<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/master>`__
 typically use these conventions.
 
 Additional Information
