@@ -4,9 +4,9 @@
 .. _general-conventions:
 .. _conventions:
 
-===========
-Conventions
-===========
+================================
+Conventions, CGL, Best Practices
+================================
 
 In general, the documentation follows the conventions as described in the
 following sections.
@@ -39,4 +39,5 @@ if something is not ok.
    CodingGuidelines
    GuidelinesForImages
    CommitMessages
+   HowToUpdateDocs
    Licenses

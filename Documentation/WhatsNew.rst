@@ -18,6 +18,17 @@ Whats New in This Guide
 .. _news-2019-new-doc-server:
 .. rst-class:: panel panel-default
 
+NEW: Conventions for Updating Documentation
+-------------------------------------------
+
+* :ref:`howto-update-docs`
+
+
+
+
+.. _news-2019-new-doc-server:
+.. rst-class:: panel panel-default
+
 NEW: Migration to new Infrastructure
 ------------------------------------
 

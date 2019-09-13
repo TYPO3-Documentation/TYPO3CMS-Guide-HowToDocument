@@ -10,7 +10,6 @@ Writing Documentation
 :Status:    Fully revised (August, 2019)
 :License:   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__)
 
-
 **About this manual:**
 
    This manual is about writing TYPO3 documentation
@@ -31,12 +30,13 @@ Writing Documentation
    :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 
-.. uncomment this when there are more new pages:
-.. **What's new in this guide?**
+**What's new in this guide?**
 
-..   - 2019-02-03 :ref:`news-2019-new-doc-server`
-..   - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
-.. :ref:`What's new in this guide <whats-new>`
+   - 2019-09-13 :ref:`howto-update-docs`
+   - 2019-05-29 :ref:`news-2019-new-doc-server`
+   - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+
+   More: :ref:`What's new in this guide ... <whats-new>`
 
 
 .. toctree::
@@ -59,13 +59,7 @@ Writing Documentation
    ToolsEditRest/Index
    RenderingDocs/Index
    GitHub/Index
-
-.. toctree::
-   :hidden:
-   :caption: ADVANCED
-
    HowToAddTranslation/Index
-   HowToUpdateDocs/Index
 
 
 .. toctree::
