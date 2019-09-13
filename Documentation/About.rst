@@ -8,6 +8,17 @@
 About This Guide
 ================
 
+How This Guide is Structured
+============================
+
+This manual covers writing TYPO3 documentation. This includes, contributing
+to official documentation, the core changelog and system extensions and
+writing documentation for third party extensions.
+
+It is more than just documentation: it also lists some conventions, coding
+guidelines and provides links to GitHub issues.
+
+
 .. _getting-started:
 .. _how-to-read-this-guide:
 

@@ -68,6 +68,12 @@ Writing Documentation
 
 .. toctree::
    :hidden:
+   :caption: ADVANCED
+
+   T3DocTeam @ Work  ➜  <https://docs.typo3.org/typo3cms/Teams/T3DocTeam/>
+
+.. toctree::
+   :hidden:
    :caption: OTHER
 
    Appendix/Index
