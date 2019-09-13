@@ -13,7 +13,11 @@ Writing Documentation
 **About this manual:**
 
    This manual is about writing TYPO3 documentation
-   (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in: :ref:`how-to-read-this-guide`
+   (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in:
+
+   .. rst-class:: horizbuttons-primary-xxl
+
+   * :ref:`how-to-read-this-guide`
 
 
 

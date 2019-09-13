@@ -15,7 +15,7 @@ Whats New in This Guide
 2019
 ====
 
-.. _news-2019-new-doc-server:
+.. _news-2019-update-docs:
 .. rst-class:: panel panel-default
 
 NEW: Conventions for Updating Documentation
