@@ -141,22 +141,25 @@ Or, when cross-referencing to other manuals::
 
    :ref:`shortcut:label`
 
-   :ref:`t3writedoc:intersphinx`
+   :ref:`h2document:intersphinx`
 
 
 When you are linking to another manual, make sure the
-shortcut (here: "t3write") is included in :ref:`settings-cfg`::
+shortcut (here: "h2document") is included in :ref:`settings-cfg`::
 
       [intersphinx_mapping]
 
-      t3tsref          = https://docs.typo3.org/typo3cms/TyposcriptReference/
-      t3writedoc       = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/Index.html
+      h2document       = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/Index.html
+      ...
+
+We use the same conventions for naming the shortcuts in :file:`Settings.cfg`, 
+see :ref:`settings-cfg`. Not used manuals are commented out.
 
 
 .. tip::
 
    This is a cool feature, where reST & Sphinx shines: Even when a section is
-   moved, the link will still work!
+   moved to another page (which effectively changes the URL), the link will still work!
 
 .. t3-field-list-table::
  :header-rows: 1
