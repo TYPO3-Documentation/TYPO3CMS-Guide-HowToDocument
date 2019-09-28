@@ -161,3 +161,8 @@ About reviewing pull requests, you can look in the GitHub help pages:
    If you are reviewing a pull request and want to leave comments, make sure to
    `mark the line <https://help.github.com/en/articles/commenting-on-a-pull-request>`__
    in the PR.
+   
+Solve an Issue
+==============
+
+When you solve an issue from the github simply write solves #[issue id] into the commit message. See `Closing issues using keywords <https://help.github.com/en/articles/closing-issues-using-keywords>`__.
