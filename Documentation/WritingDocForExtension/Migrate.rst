@@ -38,7 +38,6 @@ Necessary Steps
       [general]
 
       project = Extension name
-      release = latest
 
 #. Add new webhook, see :ref:`webhook`
 
