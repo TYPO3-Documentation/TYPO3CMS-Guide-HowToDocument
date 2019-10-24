@@ -152,6 +152,9 @@ content, finish it, **wait a few days**, and then read it again!
 Additional Resources
 ====================
 
+* Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
+  (May 19, 2017) - A very good blogpost about different kind of manuals.
+* `How to fix the 7 most common glitches in technical writing <https://www.writing-skills.com/the-7-most-common-mistakes-in-technical-writing-and-how-to-fix-them>`_
 * `"8 Tips for Better Readability" by Roby Collinge
   <https://usabilla.com/blog/8-guidelines-for-better-readability-on-the-web/>`__
   is a very good resource. However, some of the tips do not concern you as
