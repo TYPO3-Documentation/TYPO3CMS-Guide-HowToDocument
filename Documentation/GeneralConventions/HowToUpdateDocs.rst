@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _howto-update-docs:
+.. _update-docs:
 
 =====================================
 Update Documentation for New Releases
