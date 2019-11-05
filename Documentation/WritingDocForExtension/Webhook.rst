@@ -41,10 +41,16 @@ How Webhooks Work
 
 If it's your first time working with webhooks, take a look at `GitHub developer
 <https://developer.github.com/webhooks/>`_. The configuration below triggers
-rendering only on push events. 
+rendering only on push events.
 
 In order to test the integration, a push to `master` branch or
 `documentation-draft` branch can be used, see :ref:`migrate-branches`.
+
+.. note::
+
+   Documentation rendering is only triggered for versions affected by push event.
+   Not the whole repository will be rendered each time.
+   If a push event for branch 7.8 is triggered, only this version will be rendered.
 
 .. _webhook-legacy:
 
