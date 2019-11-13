@@ -8,25 +8,25 @@ Webhook
 
 This section describes how to add webhooks for auto rendering to a repository.
 
-The system currently supports Git as VCS (Version Control System), and the
+The system supports Git as VCS (Version Control System), and the
 following hosters:
 
   - :ref:`webhook-github`
   - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
   - :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
-If none of the above is used, a mirror to one of these is recommended. Also the
-`Documentation Team <https://typo3.org/community/teams/documentation/>`__ can
-setup custom hostings.
+If none of the above is used, a mirror to one of the supported hosters must be setup.
+Otherwise it is not possible to enable documentation rendering on docs.typo3.org.
 
 The following sections provide illustrated walkthrough tutorials on how to add
 the necessary hook for the respective hoster.
 
 .. important::
 
-   The first time a new repository triggers the webhook, the request will not be
-   processed. Instead, the TYPO3 Documentation Team has to approve. This is
-   necessary to prevent misuse of the infrastructure and extension
+   The first time a new repository triggers the webhook,
+   the request will not be processed.
+   Instead, the TYPO3 Documentation Team has to approve.
+   This is necessary to prevent misuse of the infrastructure and extension
    names.
 
    In case this takes too long, request the approval within the Slack channel
