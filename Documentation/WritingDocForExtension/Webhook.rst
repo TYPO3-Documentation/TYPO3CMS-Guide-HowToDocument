@@ -15,9 +15,6 @@ following hosters:
   - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
   - :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
-If none of the above is used, a mirror to one of the supported hosters must be setup.
-Otherwise it is not possible to enable documentation rendering on docs.typo3.org.
-
 The following sections provide illustrated walkthrough tutorials on how to add
 the necessary hook for the respective hoster.
 
@@ -33,6 +30,17 @@ the necessary hook for the respective hoster.
    `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
    Registration for Slack is available at `my.typo3.org
    <https://my.typo3.org/index.php?id=35>`__.
+
+.. _foreign-setups:
+
+Foreign setups
+==============
+
+In some cases one might use a different hoster then mentioned above.
+Or the file structure does not match the structure of an TYPO3 extension.
+
+In such cases a mirror to one of the supported hosters must be setup.
+Otherwise it is not possible to enable documentation rendering on docs.typo3.org.
 
 .. _webhook-how-webhook-works:
 
