@@ -15,6 +15,9 @@ is rendered on docs.typo3.org
 Necessary Steps
 ===============
 
+Walk through the following steps in defined order. Proceed with next step only
+if the previous step was successful.
+
 .. rst-class:: bignums-xxl
 
 #. Add mandatory :file:`composer.json`, see :ref:`composer-json`
