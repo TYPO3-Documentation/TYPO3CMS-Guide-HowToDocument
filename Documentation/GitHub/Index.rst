@@ -35,8 +35,8 @@ and click on :guilabel:`"Repository"`.
 
 .. _links-github-issues:
 
-Issues
-======
+Find Issues
+===========
 
 Pick an issue for a topic you are familiar with and try to fix it. Some of the
 issues address a problem, some are enhancements where new text needs to be
@@ -136,10 +136,33 @@ These issues describe missing content that needs to be written:
 * `Content missing <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22content+missing%22+archived%3Afalse+user%3ATYPO3-Documentation+>`__
 
 
+.. _github-solve-issue:
+
+Solve an Issue
+==============
+
+When you solve an existing issue from GitHub, it is good practice to refer to it in the commit message.
+
+For example, write:
+
+.. code-block:: none
+
+   Resolves: #12
+
+
+This will automatically close the issue and a link to the issue is displayed in the commit message and
+pull request on GitHub.
+
+.. seealso::
+
+   :ref:`general-conventions-commit-messages`
+
+
+
 .. _github-pull-requests:
 
-Pull Requests
-=============
+Find Pull Requests
+==================
 
 Anyone is welcome to review open pull requests!
 
@@ -161,3 +184,4 @@ About reviewing pull requests, you can look in the GitHub help pages:
    If you are reviewing a pull request and want to leave comments, make sure to
    `mark the line <https://help.github.com/en/articles/commenting-on-a-pull-request>`__
    in the PR.
+   
