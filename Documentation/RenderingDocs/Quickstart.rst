@@ -48,6 +48,9 @@ Commands to Render Documentation
 
 #. Run dockrun_t3rd
 
+   Please use this command in the parent folder of your documentation. In most cases you will
+   have a folder :file:`Documentation`. You must run this command one level above.
+
    .. code-block:: bash
 
       dockrun_t3rd makehtml
