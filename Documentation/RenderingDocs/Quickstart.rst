@@ -46,9 +46,10 @@ Commands to Render Documentation
       look at :ref:`render-troubleshooting-source`
       for alternatives.
 
-#. Run dockrun_t3rd 
-   Please use this command in the parent folder of your documention (in many cases you will have a folder documentation, 
-   so you see this command one level above).
+#. Run dockrun_t3rd
+
+   Please use this command in the parent folder of your documentation. In most cases you will
+   have a folder :file:`Documentation`. You must run this command one level above.
 
    .. code-block:: bash
 
