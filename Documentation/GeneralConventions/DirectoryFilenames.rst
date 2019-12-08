@@ -332,13 +332,17 @@ Intersphinx mapping
 
 :file:`Settings.cfg` contains start urls for the :ref:`intersphinx` linking mechanism.
 
-Every manual used for cross referencing must be uncommented.
+Every manual used for cross referencing must be uncommented in the section `intersphinx_mapping`.
 
 This is an up-to-date list of mappings commonly used:
 
 .. code-block:: none
 
    [intersphinx_mapping]
+
+   # ----------------
+   # official manuals
+   # ----------------
 
    # h2document     = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/
    # t3contribute   = https://docs.typo3.org/m/typo3/guide-contributionworkflow/master/en-us/
@@ -356,8 +360,30 @@ This is an up-to-date list of mappings commonly used:
    # t3ts45         = https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/master/en-us/
    # t3tsconfig     = https://docs.typo3.org/m/typo3/reference-tsconfig/master/en-us/
    # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
+   # t3vhref        = https://docs.typo3.org/other/typo3/view-helper-reference/master/en-us/
+
+   # ----------------
+   # system extension
+   # ----------------
+
+   # ckedit         = https://docs.typo3.org/c/typo3/cms-rte-ckeditor/master/en-us/
+   # core           = https://docs.typo3.org/c/typo3/cms-core/master/en-us/
+   # form           = https://docs.typo3.org/c/typo3/cms-form/master/en-us/
+   # fsc            = https://docs.typo3.org/c/typo3/cms-fluid-styled-content/master/en-us/
+   # sched          = https://docs.typo3.org/c/typo3/cms-scheduler/master/en-us/
 
 
+.. tip::
+
+   Uncomment **only** the manuals to which you will be linking to in your manual For example, change::
+   
+      # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
+      
+   to
+   
+      t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
+   
+      
 
 Example
 -------
