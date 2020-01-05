@@ -316,6 +316,10 @@ Composer
 (the TYPO3) Documentation Team
    Capitalized, unless it means *any* documentation team.
 
+Data Processor
+   Capitalized: The Data Processor as used in FLUIDTEMPLATE is a common name, specific
+   to TYPO3 and not just any old generic data processor.
+
 Docker
    The product Docker is a brand name and therefore capitalized, so use that
    unless you explicitly mean the command `docker` (see `Use the Docker command line
