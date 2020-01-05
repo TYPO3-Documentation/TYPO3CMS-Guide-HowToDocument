@@ -339,6 +339,9 @@ extension
 Extension Manager
    Capitalized. Example: "Use the Extension Manager to activate an extension."
 
+FlexForm
+   FlexForm (singular), FlexForms (plural)
+
 Fluid
    Capitalized. The rule set of :ref:`spelling-proper-names`.
 
