@@ -12,23 +12,23 @@ Writing Documentation
 
 **About this manual:**
 
-   This manual is about writing TYPO3 documentation
-   (`docs.typo3.org <https://docs.typo3.org>`__). Find out more in:
+This manual is about writing TYPO3 documentation (`docs.typo3.org <https://docs.typo3.org>`__).
+Find out more in:
 
-   .. rst-class:: horizbuttons-primary-xxl
+.. rst-class:: horizbuttons-primary-xxl
 
-   * :ref:`how-to-read-this-guide`
+* :ref:`how-to-read-this-guide`
 
 
 
 **Did you know?**
 
-   - 2019-06-01 :ref:`tip-branches-master`
-   - 2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <tip-ext-new-doc-server>` (Extension Authors)
-   - 2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
-   - 2019-03-13 :ref:`tip-link-to-issues` (Extension Authors)
+- 2019-06-01 :ref:`tip-branches-master`
+- 2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <tip-ext-new-doc-server>` (Extension Authors)
+- 2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
+- 2019-03-13 :ref:`tip-link-to-issues` (Extension Authors)
 
-   :ref:`FAQ for extension authors ... <faq-for-extension-authors>`
+:ref:`FAQ for extension authors ... <faq-for-extension-authors>`
 
 .. uncomment this, when there are new general tips
    :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
@@ -36,11 +36,11 @@ Writing Documentation
 
 **What's new in this guide?**
 
-   - 2019-09-13 :ref:`howto-update-docs`
-   - 2019-05-29 :ref:`news-2019-new-doc-server`
-   - 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+- 2019-09-13 :ref:`howto-update-docs`
+- 2019-05-29 :ref:`news-2019-new-doc-server`
+- 2019-02-03 :ref:`news-2019-rest-cheat-sheet`
 
-   More: :ref:`What's new in this guide ... <whats-new>`
+More: :ref:`What's new in this guide ... <whats-new>`
 
 
 .. toctree::
