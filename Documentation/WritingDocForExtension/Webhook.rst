@@ -116,12 +116,12 @@ Add auto rendering for a repository via GitHub webhook in five steps:
    .. figure:: /images/webhook/github/webhook-added.png
       :width: 932
 
-#. (Optional) visit intercept and check request
+#. Trigger webhook and visit to check request
 
-   If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
+   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down). The repository should have created a
    "Docs hook ping from github repository".
-   
+
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
    branch ``master``. Or push to a new branch ``documentation-draft``.
 
@@ -177,9 +177,9 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    .. figure:: /images/webhook/bitbucket/cloud/webhook-added.png
       :width: 932
 
-#. (Optional) visit intercept and check request
+#. Trigger webhook and visit to check request
 
-   If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
+   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down).
 
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
@@ -220,9 +220,9 @@ Add auto rendering for a repository via GitLab webhook in four steps:
    .. figure:: /images/webhook/gitlab/webhook-added.png
       :width: 932
 
-#. (Optional) Trigger webhook and visit intercept to check request
+#. Trigger webhook and visit to check request
 
-   If curious, visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
+   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
    check "Recent actions" (scroll down).
 
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
