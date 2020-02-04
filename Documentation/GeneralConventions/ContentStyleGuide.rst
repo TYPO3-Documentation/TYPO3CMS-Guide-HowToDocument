@@ -16,6 +16,11 @@ General Information
 The authoritative style guide for writing official text for TYPO3 is `The TYPO3 Writing Style Guide
 <https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
 
+.. important::
+
+   We use different **title capitalization** from the content style guide, to ease contribution.
+   The main differences are explained below in :ref:`spelling-title-case`.
+
 This section aims to add some additional explanations and more examples for rules
 already defined in the style guide. It also explains how to apply the rules in
 the documentation (e.g. format with reST).
@@ -25,53 +30,37 @@ for some words, we have added a :ref:`spelling-ref`. If something is not
 mentioned here specifically, use correct spelling in English language
 or rather American (US) language. Refer to the resources, which the style guide suggests, or use
 `Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
-If in doubt, ask in Slack channel #typo3-documentation (see
-:ref:`how-to-get-help`) or contact
-`the Content Group <https://typo3.org/community/teams/content/>`__.
-
+If in doubt, ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
 
 .. _spelling-title-case:
+.. _spelling-ref-title:
 
 Rules for Titles & Section Headers
 ==================================
 
-Basic rules (read in this order, use the first rule that applies and skip the rest):
+We use "sentence case" for title case:
 
-#. Exceptions: Words with special spelling like TYPO3, TypoScript, PHP, stdWrap etc. are written the
-   way they are commonly written (see :ref:`spelling-typo3`, :ref:`spelling-acronyms`). The same
-   goes for class names, functions, database tables, database fields, configuration options etc.
-   that are taken from the
-   source code: They are written the way they are written in the source (see :ref:`spelling-source-code`).
-#. The first and the last word of a title is always capitalized.
-#. Capitalize all words with 4 or more letters.
-#. Capitalize all important words (nouns, `pronouns <https://en.wikipedia.org/wiki/Pronoun>`__,
-   adjectives, verbs, adverbs), for example "Is", "Are", "Has".
-#. Lowercase `articles <https://www.merriam-webster.com/dictionary/article>`__ (e.g. a, an, the)
-   `prepositions <https://www.merriam-webster.com/dictionary/preposition>`__
-   (e.g. in) and `conjunctions <https://www.merriam-webster.com/dictionary/conjunction>`__
-   (e.g. and, or) **with fewer than 4 letters**.
+* The first word is capitalized.
+* All other words are spelled as they would be spelled elsewhere: Proper nouns are capitalized,
+  all other words written in lowercase.
 
-Capitalize means: The first letter of a word  is a capital letter. Example: **England** is capitalized,
-**the** is not.
+This is different from the content style guide where more words are capitalized (first
+and last word, all words with 4 letters and more, all principal words).
 
-.. tip::
+This was changed on February 4, 2020 for the following reasons:
 
-   You can use the tool https://capitalizemytitle.com/ to check the title. Choose "AP" and
-   "Title Case" for correct spelling in title. The result may slightly deviate from our rules
-   for the exceptions (e.g. TYPO3). For a spelling reference, see :ref:`spelling-ref-title`
-   on this page.
+* Sentence case is easier to follow for occasional contributors and developers
+* It is already being used intuitively by contributors most of the time. If
+  the other title capitalization were enforced, a number of PR would have
+  to be corrected as they come in.
+* Most of the documentation is spelled this way
 
-The rules for title case are based on the `TYPO3 Content Style Guide
-<https://typo3.org/community/teams/content/writing-style-guide/#c8486>`__:
+For discussion, see `Title capitalization in the docs (revisited) <https://decisions.typo3.org/t/title-capitalization-in-the-docs-revisited/562>`__
 
 Examples:
 
-* TYPO3 is always spelled TYPO3 (rule #1): "TYPO3 Is Always Spelled TYPO3", "stdWrap", "TypoScript", 
-  "Programming With PHP", "insert()"
-* The first word is always capitalized (see rule #2), so *in* is capitalized here: "**In** the End"
-* *With* is a preposition with 4 letters, so it must be capitalized (rule #3): "Install **With** Composer"
-* *Is* is a verb. Though it is short, do capitalize it (rule #4), as in "This **Is** the End"
-* *In* is a preposition with fewer than 4 letters, so first letter is lowercase (rule #5): "Rules **in** the Style Guide"
+* "TYPO3 is always spelled TYPO3"
+* "Using TypoScript"
 
 .. important::
 
@@ -88,20 +77,24 @@ as described in :ref:`Headlines-and-sections`::
    =====================
 
 
+Manual Titles
+=============
+
+The manual titles have an all major words title capitalization policy:
+
+* "Editors Tutorial"
+* "TypoScript in 45 Minutes"
+
 
 .. _spelling-buttons:
-
-Rules for Buttons
-=================
-
-
-The same rules as in the title apply to buttons: `Style Guide: Buttons
-<https://typo3.org/community/teams/content/writing-style-guide/#c8487>`__
-
 .. _spelling-anchor-text:
 
-Rules for Links
-===============
+Rules for Buttons & Links
+=========================
+
+
+The same spelling rules as in the title apply to buttons and links.
+
 
 If you refer to another document, chapter or section of another manual in the docs
 and use its title as anchor text, use title capitalization.
@@ -130,8 +123,6 @@ Example:
 .. code-block:: rest
 
    See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
-
-In our spelling, this would be "Test Docker Installation".
 
 
 How this looks:
@@ -404,75 +395,6 @@ See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide
 for terms pending a decision.
 
 
-
-.. _spelling-ref-title:
-
-Title Spelling Reference
-========================
-
-This is a list of words and how they should be used in a title.
-
-Most words in a title are capitalized. Exceptions are **articles,
-prepositions** and **conjunctions** with less than 4 letters and a few
-exceptions like acronyms (all caps) or words that use capital
-letters within a word (e.g. stdWrap, TypoScript).
-
-
-See :ref:`rules for title case <spelling-title-case>`.
-
-These are only some examples, more examples for lowercase spelling, see 
-`TYPO3 Content Style Guide
-<https://typo3.org/community/teams/content/writing-style-guide/#c8483>`__.
-
-**Even if a word is lowercased in this list, it is always capitalized
-if used as first or last word in title!**
-
-a
-   Rule #5: Article with less than 4 letters (lowercase)
-Always
-   Rule #3 and #4: 4 letters or more and adverb
-an
-   Rule #5: Article with less than 4 letters (lowercase)
-and
-   Rule #5: Conjunction with less than 4 letters (lowercase)
-but
-   Rule #5: Conjunction with less than 4 letters (lowercase)
-for
-   Rule #5: Preposition with less than 4 letters (lowercase)
-He
-   Rule #4: Pronoun
-in
-   Rule #5: Preposition with less than 4 letters (lowercase)
-Is
-   Rule #4: Verb
-It
-   Rule #4: Pronoun
-Me
-   Rule #4: Pronoun
-or
-   Rule #5: Conjunction with less than 4 letters (lowercase)
-PHP
-   Rule #1: Exception
-She
-   Rule #4: Pronoun
-stdWrap
-   Rule #1: Exception
-the
-   Rule #5: Article with less than 4 letters (lowercase)
-Throughout
-   Rule #3: 4 letters or more
-TYPO3
-   Rule #1: Exception: TYPO3 is always spelled TYPO3
-TypoScript
-   Rule #1: Exception
-With
-   Rule #3: 4 letters or more. Capitalized even though preposition.
-Within
-   Rule #3: 4 letters or more. Capitalized even though preposition.
-Without
-   Rule #3: 4 letters or more. Capitalized even though preposition.
-
-
 Used Resources
 ==============
 
@@ -481,6 +403,7 @@ In addition to the TYPO3 Content Style Guide, some other resources have been use
 * "Don't use the same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
   Use consistent terminology
   <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__
+* `Microsoft style guide <https://docs.microsoft.com/de-de/style-guide/welcome/>`__
 
 Capitalization:
 
