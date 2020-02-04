@@ -98,67 +98,40 @@ From the list of repositories in `TYPO3-Documentation <https://github.com/TYPO3-
       :class: with-shadow
 
 
-Links to Specific Issues
-------------------------
-
-In the following sections you will find some links to a list of issues.
-
 
 
 .. _github-good-first-issue:
+.. _useful-links-for-contributors:
 
-For New Contributors
-~~~~~~~~~~~~~~~~~~~~
+Links to GitHub issues
+----------------------
+
+Here are some links to GitHub issues in `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
 
 .. important::
 
    GitHub will show a 404 page if you are not logged in following these links!
    So, remember to log in first!
+
+For new contributors:
 
 * `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__ (Link to GitHub)
 
-We added a label "Good first issue" which is used to tag issues that outline
-a small task that may be good to get started. But, you are not restricted to
-this! Start with any issue that seems to be a good fit for you!
+For contributors:
 
-.. _useful-links-for-contributors:
+* `All open, unassigned issues (without team, theme etc.) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
 
-For Contributors
-~~~~~~~~~~~~~~~~
+For team members and advanced contributors:
 
-.. important::
-
-   GitHub will show a 404 page if you are not logged in following these links!
-   So, remember to log in first!
-
-
-
-* `Open, unassigned issues  <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
-
-
-This includes all issues for official manuals. We excluded the issues in repositories
-that should typically be handled by a Documentation Team member.
-
-
-Advanced
-~~~~~~~~
-
-.. important::
-
-   GitHub will show a 404 page if you are not logged in following these links!
-   So, remember to log in first!
-
-
-For Documentation Team members, members of initiatives, advanced contributors:
-
-* `All open issues in TYPO3-Documentation
+* `All open issues
   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (Link to GitHub)
-* `All open, unassigned issues in TYPO3-Documentation
+* `All open, unassigned issues
   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__ (Link to GitHub)
 
 The Docker image for rendering is in the organization **t3docs** (instead of TYPO3-Documentation):
 
 * `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
+
 
 
 .. _github-solve-issue:
