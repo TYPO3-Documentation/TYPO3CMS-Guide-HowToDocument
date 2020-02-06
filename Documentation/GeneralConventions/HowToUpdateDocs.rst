@@ -15,11 +15,6 @@ Here, we describe some best practices for updating the official documentation
 for a new TYPO3 release. We stick to the core conventions as much as possible because that
 makes it easier for everyone to contribute to documentation and core.
 
-.. hint::
-
-   These are not strict rules, but rather recommendations. If a better method is found and
-   used, please update this page.
-
 How to Handle Deprecations and Breaking Changes
 ===============================================
 
