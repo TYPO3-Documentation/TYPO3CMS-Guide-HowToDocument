@@ -108,6 +108,10 @@ The commit message can point out the releases to which the change should apply
 (as in the core commits), e.g. `Releases: master, 9.5`, see
 :ref:`general-conventions-commit-messages`.
 
+You can link to the issue for the changes in the team repository, for example::
+
+   Related: TYPO3-Documentation/T3DocTeam#121
+
 Applying Changes to Several Releases
 ====================================
 
