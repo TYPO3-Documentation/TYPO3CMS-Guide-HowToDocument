@@ -21,8 +21,30 @@ Commit Message Recommendations
   if possible, but below 80 in any case.
 * A commit message for the docs should consists of a subject line (first line).
   More lines (seperated by first line with an empty new line) are optional.
-* If an issue exists, link to it, by using "Resolves: #issue number", e.g. "Resolves: #4".
-* If it should be backported to an older branch, use `Releases:` (as in :ref:`t3contribute:commitmessage`)
+
+Issues
+------
+  
+If an issue exists, link to it, by using for example "Resolves: #issue number", e.g.::
+
+  Resolves: #4
+
+"Resolves" will automatically close the issue, using "Related" will not.
+
+You can also cross link to issues in other repositories in TYPO3-Documentation::
+   
+   Related: TYPO3-Documentation/T3DocTeam#121
+
+.. seealso::
+
+   * Stack Overflow: `Link to the issue number on GitHub within a commit message <https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message>`__
+
+Releases
+--------
+
+If it should be backported to an older branch, use `Releases:` (as in :ref:`t3contribute:commitmessage`)::
+
+   Releases: master, 9.5
 
 
 Examples
