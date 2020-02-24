@@ -10,7 +10,7 @@ Spelling
 
 
 
-General Information
+General information
 ===================
 
 The authoritative style guide for writing official text for TYPO3 is `The TYPO3 Writing Style Guide
@@ -35,7 +35,7 @@ If in doubt, ask in Slack channel #typo3-documentation (see :ref:`how-to-get-hel
 .. _spelling-title-case:
 .. _spelling-ref-title:
 
-Rules for Titles & Section Headers
+Rules for titles & section headers
 ==================================
 
 We use "sentence case" for title case:
@@ -55,6 +55,8 @@ This was changed on February 4, 2020 for the following reasons:
   to be corrected as they come in.
 * Most of the documentation is spelled this way
 
+This means, the same rules as in :ref:`spelling-plain-text` apply to the titles.
+
 For discussion, see `Title capitalization in the docs (revisited) <https://decisions.typo3.org/t/title-capitalization-in-the-docs-revisited/562>`__
 
 Examples:
@@ -70,67 +72,26 @@ In reST, headers are created by underlining / overlining with (`====`, `----`, e
 as described in :ref:`Headlines-and-sections`::
 
    =================
-   This Is the Title
+   This is the title
    =================
 
-   This Is the Subheader
+   This is the subheader
    =====================
 
-
-Manual Titles
-=============
-
-The manual titles have an all major words title capitalization policy:
-
-* "Editors Tutorial"
-* "TypoScript in 45 Minutes"
 
 
 .. _spelling-buttons:
 .. _spelling-anchor-text:
 
-Rules for Buttons & Links
+Rules for buttons & links
 =========================
-
 
 The same spelling rules as in the title apply to buttons and links.
 
 
-If you refer to another document, chapter or section of another manual in the docs
-and use its title as anchor text, use title capitalization.
-
-This has an additional advantage: If you do not specifically supply an anchor text with
-the `:ref:` directive, the title of the page referred to will automatically be
-used as anchor text (which will hopefully already be spelled correctly using
-title capitalization).
-
-Example:
-
-.. code-block:: rest
-
-   Please see :ref:`t3coreapi:start` to get a good understanding of ...
-
-Generated readable representation:
-   Please see :ref:`t3coreapi:start` to get a good understanding of ...
-
-
-If you refer to another page outside of the docs, you may use the title
-capitalization and spelling that is used on that external page (preferred),
-but using our title capitalization will also be correct.
-
-Example:
-
-.. code-block:: rest
-
-   See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
-
-
-How this looks:
-   See `Test Docker installation  <https://docs.docker.com/get-started/#test-docker-installation>`__
-
 .. _spelling-refer-to-gui-elements:
 
-Rules for Referring to GUI Elements
+Rules for referring to GUI elements
 ===================================
 
 If the text refers to terms used in the GUI (e.g. a clickpath for selecting
@@ -142,19 +103,13 @@ markup for this.
 
 .. _spelling-plain-text:
 
-Rules for Plain Text
+Rules for plain text
 ====================
-
-As already mentioned: If the text is used in :ref:`titles, subheaders <spelling-title-case>`,
-:ref:`anchor text <spelling-anchor-text>` or a text is :ref:`referring to
-GUI elements <spelling-refer-to-gui-elements>`, use the correct spelling for that.
-
-For anything else (plain text) common rules of the English language are applied.
 
 
 .. _spelling-compound-words:
 
-Rules for Compound Words
+Rules for compound words
 ------------------------
 
 Compound words (or compounds) are words that have been glued together from one or more separate
@@ -186,7 +141,7 @@ How can you decide for yourself in other edge cases?
 
 .. _spelling-plain-text-capitalization:
 
-Capitalization Rules (plain text)
+Capitalization rules (plain text)
 ---------------------------------
 
 #. If a word has special spelling, e.g. a :ref:`special TYPO3 word <spelling-typo3>`
@@ -207,16 +162,16 @@ to list some common terms that may be difficult to spell or that are spelled dif
 
 .. _spelling-typo3:
 
-Exceptions: Specific TYPO3 Spellings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exceptions for specific TYPO3 spellings
+---------------------------------------
 
 There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
 TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
 
 .. _spelling-source-code:
 
-Exceptions: Words Taken From Source Code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exceptions for words taken from source code
+-------------------------------------------
 
 If you are using class names, function names, databases tables or fields, configuration
 options etc, use the spelling that is used in the source code.
@@ -230,7 +185,7 @@ Examples:
 .. _spelling-acronyms:
 
 Acronyms
-~~~~~~~~
+--------
 
 Often acronyms are written with capital letters only. If terms are commonly spelled that
 way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
@@ -238,8 +193,8 @@ way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
 .. _spelling-proper-names:
 
-Proper Names, Brand Names
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Proper names, brand names
+-------------------------
 
 General rules of the English language apply here:
 
@@ -258,7 +213,7 @@ Examples:
 
 .. _spelling-executables:
 
-Tools With Executables
+Tools With executables
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Some tools have a program, which you can run. For example, **Git** has the command line
@@ -270,136 +225,21 @@ The same goes for **Docker**, **Composer**, etc.
 
 
 
-
-.. _preferred-terms:
-.. _spelling-ref:
-.. _spelling-ref-this-guide:
-
-Spelling & Preferred Terms Reference
+Spelling & preferred terms reference
 ====================================
 
-The spelling here is how the terms will be used in normal text (not headlines).
+The content was moved to :ref:`spelling-ref`.
 
-backend (noun)
-   Usually not capitalized. This is not specific to TYPO3. Fluid is capitalized, like 
-   Docker (see :ref:`spelling-proper-names`). Backend is a general thing, like any backend,
-   any extension, any plugin or any car and not a 1953 Chevy Corvette.
-
-   Example: "when you log in to the backend ..."
-
-   Note: Outside of the TYPO3 context, you will also encounter spellings like back-end
-   or back end. These are not wrong, but in the context of TYPO3, we try to use consistent
-   spelling, so stick to backend.
-
-code sprint
-   Commonly written in lowercase. See `Wikipedia: Hackathon
-   <https://en.wikipedia.org/wiki/Hackathon#Code_sprints>`__
-
-(the TYPO3) Core
-   Example: "The TYPO3 Core comes with a number of icons that may be used in your extension."
-
-Composer
-   Adhering to Docker rule set. Use Composer unless you explicitly mean the command `composer`.
-
-(the TYPO3) Core Team
-   Capitalized.
-
-(the TYPO3) Documentation Team
-   Capitalized, unless it means *any* documentation team.
-
-Docker
-   The product Docker is a brand name and therefore capitalized, so use that
-   unless you explicitly mean the command `docker` (see `Use the Docker command line
-   <https://docs.docker.com/engine/reference/commandline/cli/>`__).
-
-Edit me on GitHub workflow
-   Use this to describe the workflow which involves editing on GitHub as
-   opposed to "local editing and rendering with Docker".
-
-Extbase
-   Capitalized. Adhering to the rule set of :ref:`spelling-proper-names`.
-
-extension
-   See description for backend for an explanation of why we use lowercase.
-
-   Examples:
-
-   *  "When you create the documentation for your extension, make sure ..."
-   * "... includes all TYPO3 extensions that are uploaded to TER"
-
-Extension Manager
-   Capitalized. Example: "Use the Extension Manager to activate an extension."
-
-Fluid
-   Capitalized. The rule set of :ref:`spelling-proper-names`.
-
-frontend
-   Usually not capitalized. See backend for an explanation.
-
-Git
-   The same applies as for Docker. Use Git unless you explicitly mean the command
-   line command `git`.
-
-GitHub
-   Exception: This is the official spelling.
-
-Introduction Package
-   Example: “The official TYPO3 Introduction Package is a great place to start”
-
-Local editing and rendering with Docker
-   is used to describe the workflow of editing locally.
-
-quick start
-   Of course, if used as a title, it will be spelled **Quick Start!**
-
-reStructuredText
-   This is the official spelling. Alternate word: **reST**, but this may be confused
-   with REST(ful). We commonly use reST within this document, because it is shorter and
-   we assume you know we are not talking about REST here, but elsewhere, reStructuredText
-   should be preferred.
-
-sitepackage
-   In the context of a TYPO3 sitepackage, a TYPO3 sitepackage extension or the sitepackage
-   builder, we use the spelling sitepackage and not site package.
-
-system extension
-   "system extension" is commonly used to describe an extension shipped with the
-   core and located in the directory sysext in the file system. The alternate term
-   "core extension" is discouraged
-   (see `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/47>`__).
-
-TCA
-   is an :ref:`acronym <spelling-acronyms>`.
-
-third party extension
-   Not a system extension maintained in the core, an extension publicly
-   available. It is preferred to use "third party extension" and not "3rd party extension" (see
-   `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
-   for discussion).
-
-TSconfig
-   :ref:`TYPO3 exception <spelling-typo3>`. Note the lowercase "c" after TS! Spelling TSConfig is sometimes
-   used, but it should be **TSconfig!**
-
-TYPO3
-   :ref:`TYPO3 exception <spelling-typo3>`: TYPO3 is always spelled TYPO3.
-
-TypoScript
-   :ref:`TYPO3 exception <spelling-typo3>`
-
-ViewHelper
-   :ref:`TYPO3 exception <spelling-typo3>`
+.. _spelling-ref-title:
 
 
-See also `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
-for terms pending a decision.
 
-
-Used Resources
+Used resources
 ==============
 
 In addition to the TYPO3 Content Style Guide, some other resources have been used:
 
+* `Microsoft Writing Style Guide <https://docs.microsoft.com/en-us/style-guide/welcome/>`__
 * "Don't use the same word for 2 different meanings", see `RACKSPACE DEVELOPER DOCS:
   Use consistent terminology
   <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__

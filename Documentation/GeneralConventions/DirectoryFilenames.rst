@@ -4,7 +4,7 @@
 .. _general-conventions-dir-and-filenames:
 
 ==========================
-Directories and File Names
+Directories and file names
 ==========================
 
 If the documentation follows these conventions, the documentation rendering toolchain
@@ -31,7 +31,7 @@ Further conventions:
   :file:`ExtensionArchitecture.rst`).
 
 
-Minimal Setup ("classic")
+Minimal setup ("classic")
 =========================
 
 This is the recommended setup. It is used by the official documentation.
@@ -115,7 +115,7 @@ conventions.
 .. _start-file:
 .. _supported-filenames-and-formats:
 
-Start File
+Start file
 ==========
 
 *-- required*
@@ -230,7 +230,7 @@ Alternatively, the introduction file may include a toctree as well.
 
 .. _doc-start-file-single-file:
 
-Example - Single File
+Example - single file
 ---------------------
 
 This uses an alternative start file :file:`README.rst` on the top level,
@@ -279,7 +279,7 @@ Content
 
 .. _single-file-workaround:
 
-Workaround for Single File
+Workaround for single file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. warning::
@@ -449,7 +449,7 @@ only and will not be included in the repository on GitHub when you push.
 Use the file in `this manual: .gitignore
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.gitignore>`__ as a template.
 
-Minimal Example
+Minimal example
 ---------------
 
 .. code-block:: none
@@ -464,7 +464,7 @@ Minimal Example
 .. _readme-rst:
 .. _about-file:
 
-About File (e.g. README.rst)
+About file (e.g. README.rst)
 ============================
 
 **optional** (recommended for official TYPO3 documentation)

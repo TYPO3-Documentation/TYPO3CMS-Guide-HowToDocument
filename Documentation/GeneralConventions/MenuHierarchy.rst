@@ -4,14 +4,14 @@
 .. _general-conventions-menu-hierarchy:
 
 ==============
-Menu Hierarchy
+Menu hierarchy
 ==============
 
 Technically, the file hiearchy on disc must not affect the menu hierarchy in any way. But, as a general
 convention, we use the common practice that the file hierarchy reflects the menu
 hierarchy.
 
-Multi-File Solution
+Multi-file solution
 ===================
 
 So, the menu structure  for the files described under
@@ -58,7 +58,7 @@ See :ref:`example-toctree` to see how this is rendered.
 .. image:: ../images/toctree.png
    :class: with-shadow
 
-Single-File Solution
+Single-file solution
 ====================
 
 What you can also do, is put everything into one file, e.g. Index.rst contains:

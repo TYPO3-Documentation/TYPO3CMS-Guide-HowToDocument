@@ -183,7 +183,7 @@ If you have already created a patch for a repository, you can reuse your
 local repository. This means you do not have to fork and clone for every new patch.
 
 However, if you reuse your local clone, you should make sure it is up-to-date
-before you create the another branch for a new patch.
+before you create another branch for a new patch.
 
 You local repository is based on the forked repository in your workspace.
 

@@ -5,7 +5,7 @@
 .. _update-docs:
 
 =====================================
-Update Documentation for New Releases
+Update documentation for new releases
 =====================================
 
 Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi:start`,
@@ -15,12 +15,7 @@ Here, we describe some best practices for updating the official documentation
 for a new TYPO3 release. We stick to the core conventions as much as possible because that
 makes it easier for everyone to contribute to documentation and core.
 
-.. hint::
-
-   These are not strict rules, but rather recommendations. If a better method is found and
-   used, please update this page.
-
-How to Handle Deprecations and Breaking Changes
+How to handle deprecations and breaking changes
 ===============================================
 
 .. important::
@@ -30,7 +25,7 @@ How to Handle Deprecations and Breaking Changes
    add some information about the deprecation where this may be helpful.
 
 This has the disadvantage that the documentation must be modified twice: once to point out
-the documentation, and finally to remove it.
+the deprecation, and finally to remove it.
 
 But, on the other hand, we have found that it is more user friendly to **document the
 deprecation and the alternative to make migration easier**. This mean, we do not (yet)
@@ -39,49 +34,85 @@ time to adjust to the changes. Also, deprecated features may still be used, but 
 documentation were removed entirely, a search for documentation would direct everyone to a previous
 version where the feature is still documented without mentioning the deprecation.
 
-While we recommend for developers to read the Changelogs we should not make this a necessary
-requirement. It should be possible to get enough information from reading the main docs.
+See the next section for some examples.
 
-Here are some examples, how you can point out deprecations:
+How to add version hints
+========================
+
+Example, how you can point out **deprecations**:
 
 .. code-block:: rest
 
-   .. warning::
-      The hook shown here is deprecated since TYPO3 v9 - use a custom
+   .. deprecated:: 10.2
+	   The hook shown here is deprecated since TYPO3 10.2 - use a custom
       :ref:`PSR-15 middleware<request-handling>` instead.
 
+New **feature**:
 
 .. code-block:: rest
 
-   .. note::
-      Starting with TYPO3 v10 hooks and signals have been replaced by a PSR-14 based
+   .. versionadded:: 10.2	
+      Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
       event dispatching system.
 
 .. code-block:: rest
 
-   The symfony expression language has been implemented for TypoScript conditions in
-   both frontend and backend since TYPO3 9.4.
+   .. versionadded:: 9.4
+      The symfony expression language has been implemented for TypoScript conditions in
+      both frontend and backend since TYPO3 9.4.
 
+Changes:
 
-see
+.. code-block:: rest
 
-* :ref:`t3coreapi:hooks-creation`
-* :ref:`t3tsref:conditions`
+   .. versionchanged:: 2.3.1
+	   This feature was changed ...
 
+For more information, see the open issue:
+
+* `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+
+Link to changelog
+=================
+
+Linking to the changelog should not be necessary if all necessary information has been transferred
+to the documentation, but it is not discouraged either.
+
+The changelog often does not have a title label, so you cannot easily link to it with `:ref:`.
+
+You can use either:
+
+* Just use a link, as in:
+
+.. code-block:: rest
+
+   `anchor text <url>`__
+
+* Use the method described in `How to link to a changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__:
+
+.. code-block:: rest
+
+   :doc:`t3core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
+
+For this to work, t3core must be defined in :file:`Settings.cfg`
 
 Issues
 ======
 
 * It is not necessary to create an issue for every change.
 
-Commit Messages
+Commit messages
 ===============
 
 The commit message can point out the releases to which the change should apply
 (as in the core commits), e.g. `Releases: master, 9.5`, see
 :ref:`general-conventions-commit-messages`.
 
-Applying Changes to Several Releases
+You can link to the issue for the changes in the team repository, for example::
+
+   Related: TYPO3-Documentation/T3DocTeam#121
+
+Applying changes to several releases
 ====================================
 
 Sometimes a necessary change applies to several major versions. Example: A change in
@@ -104,7 +135,7 @@ If this is the case, it is recommended to:
 This makes it easier to find related changes and check for which version a branch was last
 updated.
 
-How to Mark What State a Manual is in
+How to mark what state a manual is in
 =====================================
 
 In order to keep track of which changes have already been applied and give readers hints
@@ -126,13 +157,15 @@ applied, you might use::
 See :ref:`t3start:start`.
 
 
-Work in Progress
+Work in progress
 ================
 
 Several suggestions have been made to improve the process but these still require
 more work or a decision, e.g.
 
 * `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+* `Link to changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__
+* `How can we get changes added to documentation early? And what is master: master or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__
 * `Add information when page / manual was last reviewed and what state it is in <https://github.com/TYPO3-Documentation/T3DocTeam/issues/73>`__
 * `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__
 

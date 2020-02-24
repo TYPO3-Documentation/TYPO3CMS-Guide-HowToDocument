@@ -3,9 +3,9 @@
 
 .. _supported-formats:
 
-==========================================
+========================
 Formats (reST, Markdown)
-==========================================
+========================
 
 
 .. _formats-rest:
@@ -99,7 +99,7 @@ readthedocs::
 * less features
 
 
-Additional Information
+Additional information
 ----------------------
 
 

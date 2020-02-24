@@ -4,10 +4,10 @@
 .. _format-rest-cgl:
 
 ================================
-Coding Guidelines for reST Files
+Coding guidelines for reST files
 ================================
 
-Basic Formatting Rules
+Basic formatting rules
 ======================
 
 Encoding
@@ -17,7 +17,7 @@ Encoding
 
 .. _cgl-indenting:
 
-Whitespace and Indenting
+Whitespace and indenting
 ------------------------
 
 .. important::
@@ -103,14 +103,14 @@ This sample .editorconfig will instruct your editor / IDE to:
 * remove trailing whitespace (line 10)
 
 
-Special Characters
+Special characters
 ------------------
 
 The only way to include "special" characters is to use them directly
 
 .. _rest-cgl-headline-underlines:
 
-Headline Underlining
+Headline underlining
 ====================
 
 In reStructuredText it is possible to use any type of underlining. The first
@@ -159,7 +159,7 @@ file::
 
 .. _rest-refer-to-gui-elements:
 
-Referring to GUI Elements
+Referring to GUI elements
 =========================
 
 If you describe something that needs to be selected from a menu or other GUI
@@ -187,7 +187,7 @@ How it looks:
    Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
 
 
-Refer to Keystrokes
+Refer to keystrokes
 ===================
 
 When pointing out keyboard shortcuts or keystroke sequences, use
