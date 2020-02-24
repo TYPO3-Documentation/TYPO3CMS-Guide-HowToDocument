@@ -33,6 +33,7 @@ if something is not ok.
    :hidden:
 
    ContentStyleGuide
+   Glossary
    DirectoryFilenames
    Format
    MenuHierarchy
