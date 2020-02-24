@@ -54,12 +54,6 @@ Guidelines:
 
 * Focus only on the steps the user needs to take
 
-Structure:
-
-* Pick up the ideas from `Ubuntu: How to write a tutorial <https://tutorials.ubuntu.com/tutorial/tutorial-guidelines#0>`__
-
-* Describe here what we actually want to recommend
-
 Literature
 ==========
 
