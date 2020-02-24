@@ -5,7 +5,7 @@
 .. _update-docs:
 
 =====================================
-Update Documentation for New Releases
+Update documentation for new releases
 =====================================
 
 Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi:start`,
@@ -15,7 +15,7 @@ Here, we describe some best practices for updating the official documentation
 for a new TYPO3 release. We stick to the core conventions as much as possible because that
 makes it easier for everyone to contribute to documentation and core.
 
-How to Handle Deprecations and Breaking Changes
+How to handle deprecations and breaking changes
 ===============================================
 
 .. important::
@@ -101,7 +101,7 @@ Issues
 
 * It is not necessary to create an issue for every change.
 
-Commit Messages
+Commit messages
 ===============
 
 The commit message can point out the releases to which the change should apply
@@ -112,7 +112,7 @@ You can link to the issue for the changes in the team repository, for example::
 
    Related: TYPO3-Documentation/T3DocTeam#121
 
-Applying Changes to Several Releases
+Applying changes to several releases
 ====================================
 
 Sometimes a necessary change applies to several major versions. Example: A change in
@@ -135,7 +135,7 @@ If this is the case, it is recommended to:
 This makes it easier to find related changes and check for which version a branch was last
 updated.
 
-How to Mark What State a Manual is in
+How to mark what state a manual is in
 =====================================
 
 In order to keep track of which changes have already been applied and give readers hints
@@ -157,7 +157,7 @@ applied, you might use::
 See :ref:`t3start:start`.
 
 
-Work in Progress
+Work in progress
 ================
 
 Several suggestions have been made to improve the process but these still require

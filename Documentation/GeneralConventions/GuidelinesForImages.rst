@@ -4,7 +4,7 @@
 .. _guidelines-for-images:
 
 ==============================
-Guidelines for Creating Images
+Guidelines for creating images
 ==============================
 
 When embedding images with reST, please add a shadow,
@@ -20,13 +20,13 @@ common are:
    useful for the reader
 #. Diagrams, such as UML diagrams
 
-General Guidelines
+General guidelines
 ==================
 
 * In general, comply with the
   `TYPO3 Web Styleguide <https://styleguide.typo3.org/patternlab/public/index.html>`__
 
-Texts & Fonts
+Texts & fonts
 -------------
 
 * When using fonts, please use recommended: **Primary font: "Source Sans Pro", "Helvetica", "Arial",
@@ -43,13 +43,13 @@ Texts & Fonts
   like Helvetica or Arial. Remember, the Web Style Guide proposes
   *Source Sans Pro, Helvetica, Arial*.
 
-Image Formats
+Image formats
 -------------
 
 * It is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
   and SVG for vector graphics images. In any case, you can use .png.
 
-Guidelines for Screenshots
+Guidelines for screenshots
 ==========================
 
 * use PNG format (.png file ending)
@@ -84,7 +84,7 @@ Another example:
 You may however notice, that it might be helpful to point out some relevant part of the
 screenshots. That is what we do by creating images as described in the next section.
 
-Guidelines for Screenshots with Graphics Elements
+Guidelines for screenshots with graphics elements
 =================================================
 
 You will often see a screenshot where additional graphic elements have been added in the
@@ -112,7 +112,7 @@ Or clone the repository:
 The icons will be in images/final/icons.
 
 
-Follow These Guidelines
+Follow these guidelines
 -----------------------
 
 * Icons are used for numbers and arrows. The size of the icons should not be changed.

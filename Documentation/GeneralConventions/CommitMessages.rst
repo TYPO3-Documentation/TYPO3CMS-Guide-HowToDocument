@@ -4,13 +4,13 @@
 .. _general-conventions-commit-messages:
 
 ===============
-Commit Messages
+Commit messages
 ===============
 
 The Documentation Team currently does not have strict "rules" for commit messages. These
 are recommendations.
 
-Commit Message Recommendations
+Commit message recommendations
 ==============================
 
 * Write commit messages that are **clear**, **concise** and **meaningful**
@@ -50,7 +50,7 @@ If it should be backported to an older branch, use `Releases:` (as in :ref:`t3co
 Examples
 ========
 
-Example Commit Message With Issue
+Example commit message with issue
 ---------------------------------
 
 .. code-block:: none
