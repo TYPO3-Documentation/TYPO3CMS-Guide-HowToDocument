@@ -63,13 +63,14 @@ Writing Documentation
    ToolsEditRest/Index
    RenderingDocs/Index
    GitHub/Index
-   HowToAddTranslation/Index
 
 
 .. toctree::
    :hidden:
    :caption: ADVANCED
 
+   HowToAddTranslation/Index
+   ../GeneralConventions/HowToUpdateDocs
    T3DocTeam @ Work  ➜  <https://docs.typo3.org/typo3cms/Teams/T3DocTeam/>
 
 .. toctree::
