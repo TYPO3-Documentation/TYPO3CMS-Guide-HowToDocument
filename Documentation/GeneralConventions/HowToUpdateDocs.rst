@@ -80,15 +80,7 @@ to the documentation, but it is not discouraged either.
 
 The changelog often does not have a title label, so you cannot easily link to it with `:ref:`.
 
-You can use either:
-
-* Just use a link, as in:
-
-.. code-block:: rest
-
-   `anchor text <url>`__
-
-* Use the method described in `How to link to a changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__:
+You can use the method described in `How to link to a changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__:
 
 .. code-block:: rest
 
