@@ -4,11 +4,11 @@
 .. _write-good-content:
 
 =============================
-Tips for Writing Good Content
+Tips for writing good content
 =============================
 
 
-How People Read on the Web
+How people read on the web
 ==========================
 
 People read differently on the web than they read print media.
@@ -35,7 +35,7 @@ So:
   the information they are looking for and start reading there.
 
 
-Tip 1: Write for Online Reading
+Tip 1: Write for online reading
 ===============================
 
 * Make it easier for the reader who has not read previous pages.
@@ -48,7 +48,7 @@ Tip 2: Use paragraphs
 
 In any case, avoid long "walls of text". Give the eye something to cling to.  
 
-Tip 3: Use Subheaders
+Tip 3: Use subheaders
 =====================
 
 Look at `this page <https://iconshots.com/tutorials/web-development/why-https-is-important-and-why-should-every-website-switch/>`__
@@ -56,16 +56,19 @@ Look at `this page <https://iconshots.com/tutorials/web-development/why-https-is
 Imagine removing all the subheaders and then reading it.
 
 
-Tip 4: Read your own content!
-=============================
+Tip 4: Think about your audience
+================================
 
-Put yourself in the shoes of your reader!
+What is the typical target audience of your text?
+Put yourself in the shoes of your readers while writing.
+Find someone from your target audience to read your text and
+give feedback.
 
 
-Tip 5: Use a Consistent and Clear Vocabulary
+Tip 5: Use a consistent and clear vocabulary
 ============================================
 
-Use specific (not ambiguos) language.
+Use specific (not ambiguous) language.
 
 
 Tip 6: Write simple, short sentences
@@ -87,15 +90,15 @@ without loss:
 Tip 7: Use a spellchecker
 ==========================
 
-.. tipp::
+.. hint::
 
    Use a spellchecker that also points out grammar mistakes and gives
    recommendations for style improvements. Try out this
-   `free online check <https://www.grammarly.com/grammar-check>` by
+   `free online check <https://www.grammarly.com/grammar-check>`__ by
    Grammarly.
 
 
-Tip 8: Use StackOverflow to Learn
+Tip 8: Use Stack Overflow to learn
 ==================================
 
 Yes, `Stack Overflow <https://stackoverflow.com/>`__ can be a good teacher. Or, we
@@ -139,12 +142,10 @@ Here are some tips:
 * `use TYPO3 blog <https://usetypo3.com/9lts-api-classes.html>`__
 
 
-Tip 10: Read Your Own Content
+Tip 10: Read your own content
 =============================
 
-We do not wish to annoy you with repetition, but we must reiterate
-tip 4. Additionally, when you write new
-content, finish it, **wait a few days**, and then read it again!
+When you write new content, finish it, **wait a few days**, and then read it again!
 
 
 .. _write-good-content-resources:

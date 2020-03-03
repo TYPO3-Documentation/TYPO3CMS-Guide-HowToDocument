@@ -6,7 +6,7 @@
 .. _writing-tutorial:
 
 ==============================
-Writing a Tutorial
+Writing a tutorial
 ==============================
 
 

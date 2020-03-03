@@ -4,7 +4,7 @@
 .. _writing-content:
 
 ==============================
-How to Write Good Content
+How to write good content
 ==============================
 
 
@@ -16,14 +16,12 @@ How to Write Good Content
 
    Overview of content types, taken from Daniele Procida
 
+**Table of contents**
 
 .. toctree::
-   :hidden:
+   :titlesonly:
 
    WritingContentTips
    Tutorial
 
-
-.. todo:: Still needs some work
-..  Guide
 
