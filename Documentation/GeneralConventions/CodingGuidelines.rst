@@ -155,6 +155,53 @@ file::
    
    etc.
 
+.. _version-hints:
+
+How to add version hints
+========================
+
+Example, how you can point out **deprecations**::
+
+   .. deprecated:: 10.2
+      The hook shown here is deprecated since TYPO3 10.2 - use a custom
+      :ref:`PSR-15 middleware<request-handling>` instead.
+
+New **feature**::
+
+   .. versionadded:: 10.2
+      Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
+      event dispatching system.
+
+Changes::
+
+   .. versionchanged:: 2.3.1
+      This feature was changed ...
+
+For more information, see the open issue:
+
+* `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+
+.. _link-to-changelog:
+
+Link to changelog
+=================
+
+Linking to the changelog should not be necessary if all necessary information has been transferred
+to the documentation, but it is not discouraged either.
+
+The changelog often does not have a title label, so you cannot easily link to it with `:ref:`.
+
+You can use the method described in `How to link to a changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__:
+
+.. code-block:: rest
+
+   :doc:`t3core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
+
+For this to work, t3core must be defined in :file:`Settings.cfg`:
+
+.. code-block:: none
+
+   t3core = https://docs.typo3.org/c/typo3/cms-core/master/en-us/
 
 
 .. _rest-refer-to-gui-elements:

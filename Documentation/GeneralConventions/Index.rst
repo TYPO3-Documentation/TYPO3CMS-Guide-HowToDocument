@@ -38,6 +38,28 @@ be found in the subchapters.
    Use common spelling for American English. Some specific TYPO3 terms
    have a special spelling. See :ref:`spelling-ref`
 
+#. Version hints
+
+   :ref:`version-hints` describes how to add version hints for new sections
+   or chapters::
+
+      .. deprecated:: 10.2
+         The hook shown here is deprecated since TYPO3 10.2 - use a custom
+         :ref:`PSR-15 middleware<request-handling>` instead.
+
+      .. versionadded:: 10.2
+         Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
+         event dispatching system.
+
+      .. versionchanged:: 2.3.1
+         This feature was changed ...
+
+#. Link to the changelog
+
+   :ref:`link-to-changelog` describes how to link to the changelog::
+
+      :doc:`t3coreapi:Changelog/10.0/Feature-88770-PSR-14BasedEventDispatcher`
+
 #. Coding guidelines for headers
 
    Headline underline should follow :ref:`rest-cgl-headline-underlines`::
@@ -54,6 +76,21 @@ be found in the subchapters.
 
       Third header level
       ~~~~~~~~~~~~~~~~~~
+
+   .. seealso::
+
+      * :ref:`format-rest-cgl`
+
+#. Refer to elements in the GUI with :rst:`:guilabel:`
+
+   Example::
+
+      :guilabel:`ADMIN TOOLS > Extensions`
+
+   This will look like this: :guilabel:`ADMIN TOOLS > Extensions`
+
+
+
 
 **Table of contents**
 
