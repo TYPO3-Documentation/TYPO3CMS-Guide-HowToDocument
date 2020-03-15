@@ -213,6 +213,15 @@ Remind people, that everyone can contribute!
   `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
   and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
 
+Review documentation
+====================
+
+Pick a manual and start reviewing it.
+
+If you find something that needs fixing or something is missing, either fix it or write an
+issue for it and add a warning.
+
+More information: :ref:`guidelines-for-reviewing`
 
 Blog About Your Contributions
 =============================
@@ -224,9 +233,6 @@ are some ideas to get you started:
 * What gave you the motivation to contribute?
 * How did you benefit from contributing? For example, what did you learn?
 * What advice can you give others?
-
-
-
 
 .. _how-you-can-help-new-content:
 
@@ -243,10 +249,6 @@ If this is the case, either:
 * Raise the question in the #typo3-documentation channel on Slack
 * Or, add a comment with your suggestion to this general issue:
   `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
-
-
-
-
 
 
 .. _how-you-can-help-changelog:
