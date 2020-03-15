@@ -115,6 +115,13 @@ Extension Manager
 Spelling:
    Capitalized. Example: "Use the Extension Manager to activate an extension."
 
+Flexform
+--------
+
+Spelling
+   Flexform (singular), Flexforms (plural)
+   
+
 Fluid
 -----
 
