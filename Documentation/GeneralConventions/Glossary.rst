@@ -71,6 +71,13 @@ Spelling:
 Spelling:
    Capitalized.
 
+Data Processor
+--------------
+
+Spelling:
+   Capitalized: The Data Processor as used in FLUIDTEMPLATE is a common name, specific
+   to TYPO3 and not just any old generic data processor.
+
 (the TYPO3) Documentation Team
 ------------------------------
 
@@ -225,7 +232,7 @@ TypoScript
 Spelling:
    :ref:`TYPO3 exception <spelling-typo3>`
 
-ViewHelper
+Viewhelper
 ----------
 
 
