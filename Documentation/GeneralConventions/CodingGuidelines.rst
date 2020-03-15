@@ -22,13 +22,20 @@ Whitespace and indenting
 
 .. important::
 
-   Always use indentation levels correctly (3 spaces). Your code may not
+   Always use indentation levels correctly. Your code may not
    be rendered as expected if you do not.
 
 * remove white space from the end of lines (= no trailing tabs or spaces)
 * don't use tabs
 * one indentenation level consists of **three spaces**
 * code examples use three spaces as indentation level as well
+
+.. note::
+
+   Currently, the documentation is not always indented consistently.
+   In some manuals, an indentation level of 4 spaces was used instead.
+   We currently recommend to use what has been used on the page you
+   are currently editing.
 
 Example:
 
@@ -84,6 +91,7 @@ Sample contents of :file:`.editorconfig`
    trim_trailing_whitespace = true
    indent_style = space
    indent_size = 3
+   max_line_length = 80
 
    # MD-Files
    [*.md]
@@ -93,6 +101,7 @@ Sample contents of :file:`.editorconfig`
    trim_trailing_whitespace = true
    indent_style = space
    indent_size = 4
+   max_line_length = 80
 
 
 This sample .editorconfig will instruct your editor / IDE to:
