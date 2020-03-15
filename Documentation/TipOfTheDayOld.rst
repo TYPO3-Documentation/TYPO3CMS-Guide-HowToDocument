@@ -2,30 +2,38 @@
 
 .. include:: Includes.txt
 
-.. _Tip-of-the-day:
+.. _Tip-of-the-day-outdated:
 
 =============
-Did you know?
+Outdated tips
 =============
 
-See also: :ref:`tips-extension-authors`
+.. important::
+
+   Do not follow these tips! They are outdated.
 
 
-.. _tip-of-the-day-trigger-rebuild:
+
+
+.. _tip-of-the-day-trigger-rebuild-old:
 .. rst-class:: panel panel-default
 
-Trigger Documentation Rendering
-===============================
+Outdated: Trigger Documentation Rendering on the Documentation Server
+=====================================================================
 
-Usually, extension documentation should automatically be rerendered.
+.. important::
+
+   Since moving to the new documentation server, this tip is outdated.
+
+Usually, extension documentation should be rerendered automatically.
 
 If you made a change that has been merged, but it is not yet visible,
 do the following:
 
-#. Wait a few minutes
+#. Wait up to 10 minutes
 #. Reload your browser
 
-You may also render the repository locally, to make sure there are 
+You may also render the repository locally, to make sure there are
 no build errors breaking the rendering. See :ref:`render-troubleshooting-errors`.
 
 You can also look in the files in :file:`_buildinfo` online to see the
@@ -33,7 +41,7 @@ exitcodes and warnings. For example, for this manual:
 
 https://docs.typo3.org/typo3cms/HowToDocument/stable/_buildinfo/
 
-If this yields not results, you can iniated a rebuild:
+If this yields no results, you can iniate a rebuild:
 
 To trigger a rebuild of a manual, click the "request_rebuild.php" file
 in the respective .../\*.git.make folder.
@@ -49,8 +57,8 @@ Here are the links:
 .. _tip-of-the-day-2017-02-13:
 .. rst-class:: panel panel-default
 
-'toctree' and the Hierarchical Structure of a Manual
-====================================================
+Outdated: 'toctree' and the Hierarchical Structure of a Manual
+==============================================================
 
 **Update:** Part of this description has been migrated to
 :ref:`rest-menu-hierachy`.
@@ -134,8 +142,8 @@ Solution
 .. _tip-of-the-day-2016-10-08:
 .. rst-class:: panel panel-default
 
-How to Write Inline Code
-========================
+OUtdated: How to Write Inline Code
+==================================
 
 **Update:** This information has been migrated to :ref:`Inline-Code`
 and extended (2019-01-06).
@@ -210,12 +218,11 @@ Things get tricky if your inline code already contains single backquotes (backti
 .. _tip-of-the-day-2016-09-11:
 .. rst-class:: panel panel-default
 
-Optional: Add borders to Your Images
+Outdated: Add borders to Your Images
 ====================================
 
 **Update:** It is now also possible to add a drop shadow (`:class: with-shadow`)
-to images. For an up-to-date
-description of how to embed images, see
+to images. This is recommended. For an up-to-date description of how to embed images, see
 :ref:`how-to-document-images` (2019-01-06).
 
 2016-09-11 by Martin Bless
@@ -242,7 +249,4 @@ having a border because they are not separated enough from the background. Examp
          :class: with-shadow
 
    .. figure:: images/2016-09-11-2.png
-      :class: with-shadow
-
-
-
+   :class: with-shadow

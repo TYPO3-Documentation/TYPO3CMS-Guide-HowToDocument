@@ -3,9 +3,9 @@
 
 .. _docs-contribute-git-docker:
 
-=======================================
-Local Editing and Rendering with Docker
-=======================================
+======================================================
+Workflow #2: "Local Editing and Rendering with Docker"
+======================================================
 
 This section walks you through contributing to the documentation
 with Git and Docker.
@@ -85,17 +85,17 @@ are specific to TYPO3 documentation.
 
    .. important::
 
-      Make sure the repository is up-to-date by pulling from upstream as described
-      in :ref:`contribute-edit-locally-more-changes`. Your fork and local
+      If you did not just fork and clone but are using a local repository, you created a while ago:
 
+      #. Make sure the repository is up-to-date by pulling from upstream as described
+         in :ref:`contribute-edit-locally-more-changes`.
+      #. Always branch from *master* (see also :ref:`tip-branches-master`).
+         If you have still checked out a feature branch, switch back to  *master*
+         first:
 
-   For the URL for upstream, you must use the URL of the original repository (this
-   should include `TYPO3-Documentation` in the URL), not the URL of your fork.
+         .. code-block:: bash
 
-   .. code-block:: bash
-
-      git remote add upstream git@github.com:TYPO3-Documentation/<NAME OF REPOSITORY>.git
-      git pull upstream master
+            git checkout master
 
    For example, create the branch `feature/changes-in-cgl`:
 
@@ -105,9 +105,8 @@ are specific to TYPO3 documentation.
 
 6. Make changes
 
-   Using your preferred IDE or editor, make changes to the files. Make
-   sure you adhere to :ref:`format-rest-cgl`, e.g.
-   use 3 spaces to indent (not tabs).
+   Using your preferred IDE or editor (see :ref:`tools-for-editing-rest`,
+   make changes to the files.
 
    If you are not familier with reST, you might want to check out
    :ref:`reST Introduction <writing-rest-introduction>` first!
@@ -117,24 +116,11 @@ are specific to TYPO3 documentation.
 
 7. Render the documentation
 
-   Render with Docker in order to test the changes
-   (see `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__).
+   Render with Docker in order to test the changes:
 
-   .. code-block:: bash
-
-      # this does a docker run and makes the
-      # command dockrun_t3rdf available in your current terminal
-      source <(docker run --rm t3docs/render-documentation show-shell-commands)
-
-      # build documentation, will create directory Documentation-GENERATED-temp
-      dockrun_t3rdf makehtml
-
-      # open result in Browser
-      # on MacOS:
-      open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-      # on Linux:
-      xdg-open "file:///$(pwd)/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
-
+   * :ref:`render-documenation-with-docker` (works best on Linux)
+   * :ref:`render-with-docker-compose` (should work better on MacOS
+     or Windows, but is still being tested)
 
 8. Commit
 
@@ -175,6 +161,11 @@ merged, you can reload the page (which you fixed) in your browser.
 
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
+Next Steps
+==========
+
+* Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
+
 
 .. _contribute-edit-locally-more-changes:
 
@@ -185,14 +176,14 @@ Explanation
 -----------
 
 This section describes how to keep your local repository up-to-date. This is
-similar to the section "Keep your fork synced" on the online resource 
+similar to the section "Keep your fork synced" on the online resource
 `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__.
 
 If you have already created a patch for a repository, you can reuse your
 local repository. This means you do not have to fork and clone for every new patch.
 
 However, if you reuse your local clone, you should make sure it is up-to-date
-before you create the another branch for a new patch.
+before you create another branch for a new patch.
 
 You local repository is based on the forked repository in your workspace.
 
@@ -221,11 +212,6 @@ You must now do the following:
 
    git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
    git pull upstream master
-
-.. important::
-
-   Some repositories use main branch "latest", not "master". In that case use "latest" instead
-   of master.
 
 
 Replace the URI with the correct URI for the original repository, not your fork!
@@ -257,6 +243,6 @@ resources, for example:
   <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
 * `How to Create a Pull Request on GitHub
   <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
-* `For a repo <https://help.github.com/en/articles/fork-a-repo>`__  
+* `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
 
 

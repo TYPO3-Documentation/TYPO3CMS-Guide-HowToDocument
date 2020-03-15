@@ -15,6 +15,29 @@ Whats New in This Guide
 2019
 ====
 
+.. _news-2019-update-docs:
+.. rst-class:: panel panel-default
+
+NEW: Conventions for Updating Documentation
+-------------------------------------------
+
+* :ref:`howto-update-docs`
+
+
+
+
+.. _news-2019-new-doc-server:
+.. rst-class:: panel panel-default
+
+NEW: Migration to new Infrastructure
+------------------------------------
+
+.. important::
+
+   It is important, that you make the necessary changes for your extension,
+   as described in :ref:`migrate`.
+
+
 .. _news-2019-rest-tables:
 .. rst-class:: panel panel-default
 

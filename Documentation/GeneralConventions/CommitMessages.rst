@@ -4,13 +4,13 @@
 .. _general-conventions-commit-messages:
 
 ===============
-Commit Messages
+Commit messages
 ===============
 
 The Documentation Team currently does not have strict "rules" for commit messages. These
 are recommendations.
-  
-Commit Message Recommendations
+
+Commit message recommendations
 ==============================
 
 * Write commit messages that are **clear**, **concise** and **meaningful**
@@ -21,13 +21,36 @@ Commit Message Recommendations
   if possible, but below 80 in any case.
 * A commit message for the docs should consists of a subject line (first line).
   More lines (seperated by first line with an empty new line) are optional.
-* If an issue exists, link to it, by using "Resolves: #issue number", e.g. "Resolves: #4".
+
+Issues
+------
+  
+If an issue exists, link to it, by using for example "Resolves: #issue number", e.g.::
+
+  Resolves: #4
+
+"Resolves" will automatically close the issue, using "Related" will not.
+
+You can also cross link to issues in other repositories in TYPO3-Documentation::
+   
+   Related: TYPO3-Documentation/T3DocTeam#121
+
+.. seealso::
+
+   * Stack Overflow: `Link to the issue number on GitHub within a commit message <https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message>`__
+
+Releases
+--------
+
+If it should be backported to an older branch, use `Releases:` (as in :ref:`t3contribute:commitmessage`)::
+
+   Releases: master, 9.5
 
 
 Examples
 ========
 
-Example Commit Message With Issue
+Example commit message with issue
 ---------------------------------
 
 .. code-block:: none
@@ -35,7 +58,7 @@ Example Commit Message With Issue
    Add chapter for commit message rules
 
    Resolves: #4
-   
+
 This consists of the following parts:
 
 .. code-block:: none
@@ -43,7 +66,7 @@ This consists of the following parts:
    <subject>
 
    Resolves: #<issue number>
-   
+
 The issue number is optional. GitHub will automatically create a link to
 the issue.
 
@@ -67,6 +90,14 @@ You can refer to more than one issue:
    Resolves: #<issue number>
    Resolves: #<issue number>
 
+Add the branches to which the change should be added:
+
+.. code-block:: none
+
+   <subject>
+
+   Resolves: #<issue number>
+   Releases: master, 9.5
 
 Using TYPO3 Core Commit Message Rules
 =====================================
@@ -78,7 +109,7 @@ as is customary in core development
 However, this is not mandatory throughout the docs at the moment. If
 possible, use the conventions, that are being used in
 the manual in which you are working, e.g. `TYPO3 Explained commits
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/latest>`__
+<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/master>`__
 typically use these conventions.
 
 Additional Information

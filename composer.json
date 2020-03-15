@@ -1,0 +1,9 @@
+{
+    "name": "typo3/docs-how-to-document",
+    "type": "typo3-cms-documentation",
+    "description": "Writing documentation",
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^9.5"
+    }
+}

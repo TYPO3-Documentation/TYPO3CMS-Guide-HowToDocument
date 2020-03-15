@@ -7,6 +7,5 @@ Appendix
 .. toctree::
    :hidden:
 
-   SupportedFilenamesAndFormats
    ExampleTocTree/Index
    ResourcesForEditors
