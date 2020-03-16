@@ -11,9 +11,9 @@ This section describes how to add webhooks for auto rendering to a repository.
 The system supports Git as VCS (Version Control System), and the
 following hosters:
 
-  - :ref:`webhook-github`
-  - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
-  - :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
+- :ref:`webhook-github`
+- :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
+- :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
 The following sections provide illustrated walkthrough tutorials on how to add
 the necessary hook for the respective hoster.
@@ -30,6 +30,21 @@ the necessary hook for the respective hoster.
    `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
    Registration for Slack is available at `my.typo3.org
    <https://my.typo3.org/index.php?id=35>`__.
+
+.. _approval-intercept:
+
+Approval
+========
+
+In order to render documentation, the TYPO3 Documentation Team needs to approve
+each new extension when requesting rendering for the first time.
+
+In order to approve an extension, the following things need to apply:
+
+#. The extension needs to be published in TER under the same extension key as
+   claimed by :ref:`composer.json <composer-json>`.
+
+#. The Git Repository is referenced from TER detail view page.
 
 .. _foreign-setups:
 
