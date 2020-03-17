@@ -70,9 +70,9 @@ Here are some :ref:`examples for screenshots <t3contribute:how-to-see-merge-conf
 
 How it looks:
 
-   .. image:: images/github-getting-started-raw.png
-      :class: with-shadow
-      :scale: 70
+.. image:: images/github-getting-started-raw.png
+   :class: with-shadow
+   :scale: 70
 
 Another example:
 
