@@ -200,8 +200,3 @@ Example output:
    Extension error:
    Could not import extension sphinxcontrib.googlechart (exception: cannot import name Directive)
 
-Missing documentation for extension versions
-============================================
-
-If you are missing some documentation for some extension versions we have a
-:ref:`workaround <reregister-versions>` to fix that.

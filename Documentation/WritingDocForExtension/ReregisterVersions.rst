@@ -18,35 +18,35 @@ remove them directly after that.
 With a lot of versions release this task can get very tedious. To get over it
 in an efficient way, the follow script can help with the task.
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      #!/bin/sh
+   #!/bin/sh
 
-      EXTENSION="$1"
+   EXTENSION="$1"
 
-      mkdir -p "/tmp/$EXTENSION"
-      git clone "git@github.com:$EXTENSION.git" "/tmp/$EXTENSION"
+   mkdir -p "/tmp/$EXTENSION"
+   git clone "git@github.com:$EXTENSION.git" "/tmp/$EXTENSION"
 
-      cd "/tmp/$EXTENSION"
-      for tag in $(git tag)
-      do
-              git checkout -b $tag $tags;
-              git push origin refs/heads/$tag;
-              git push --delete origin refs/heads/$tag;
-              git checkout master;
-              git branch -D $tag;
-              sleep 10;
-      done
+   cd "/tmp/$EXTENSION"
+   for tag in $(git tag)
+   do
+           git checkout -b $tag $tags;
+           git push origin refs/heads/$tag;
+           git push --delete origin refs/heads/$tag;
+           git checkout master;
+           git branch -D $tag;
+           sleep 10;
+   done
 
-      rm -rf "/tmp/$EXTENSION"
+   rm -rf "/tmp/$EXTENSION"
 
 The script needs to be called with the repository name. If you saved the script
 with the name trigger_documentation_push.sh this would be executed like for
 example
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      trigger_documentation_push.sh evoWeb/sf_register
+   trigger_documentation_push.sh evoWeb/sf_register
 
 This will create a temporary folder, clones the script into that, creates
 branches for each tag, pushes and deletes them to origin, deletes them locally,

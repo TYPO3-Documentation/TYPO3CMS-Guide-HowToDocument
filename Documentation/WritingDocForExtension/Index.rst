@@ -60,7 +60,9 @@ resources:
    CreateWithExtensionBuilder
    Migrate
    Webhook
+   ReregisterVersions
    FAQ
    ContributeToSystemExtension
    ContributeToThirdPartyExtension
+
 
