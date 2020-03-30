@@ -7,6 +7,16 @@
 FAQ
 =========================
 
+
+.. rst-class:: panel panel-default
+
+I am missing some documentation for extension versions
+======================================================
+
+If you are missing documentation for some extension versions we have a
+:ref:`workaround <reregister-versions>` to fix that.
+
+
 .. rst-class:: panel panel-default
 
 Why Does the Documentation not Provide a Title?

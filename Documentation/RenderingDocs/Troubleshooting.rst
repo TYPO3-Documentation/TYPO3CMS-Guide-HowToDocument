@@ -199,3 +199,4 @@ Example output:
 
    Extension error:
    Could not import extension sphinxcontrib.googlechart (exception: cannot import name Directive)
+
