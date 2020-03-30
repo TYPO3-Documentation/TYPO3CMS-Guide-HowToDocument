@@ -66,6 +66,12 @@ if the previous step was successful.
    * legacy URL: `https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
    * new URL: `https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
 
+All future versions will now be rendered, see :ref:`migrate-extension-release`.
+Also some branches will be rendered, see :ref:`migrate-branches`.
+
+In case there are old versions of an extension that should be rendered,
+follow :ref:`reregister-versions` to trigger rendering for them.
+
 .. _migrate-info-about-changes:
 
 Info About Changes
@@ -88,8 +94,7 @@ In order to release a new version of an extension:
 
 #. Tag the Git commit with a valid version.
 
-#. Publish the extension at https://packagist.org/ (This is done by Webhook +
-   Tagging)
+#. Publish the extension at https://packagist.org/ (This is done by Webhook + Tagging)
 
 .. _migrate-version-numbers:
 
@@ -135,8 +140,6 @@ Existing Documentation
 Existing legacy documentation is kept until end of 2020. Each documentation contains an
 information block that it's outdated, together with a link to the necessary
 steps.
-
-
 
 In order to migrate, follow :ref:`migrate`. The Documentation Team can setup
 redirects for old documentation to new documentation afterwards. Send a message
