@@ -92,7 +92,7 @@ From the repository on GitHub:
       :class: with-shadow
 
 From the list of repositories in `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__:
-   Look for the exclamantion mark (!) issues icon:
+   Look for the exclamation mark (!) issues icon:
 
    .. image:: ../images/github-list-issues.png
       :class: with-shadow
