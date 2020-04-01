@@ -107,7 +107,7 @@ designed to make it easier to get started.
 
 :ref:`Read more ... <writing-tutorial>`
 
-The defitions for tutorials, guides, explanations and references were taken from
+The definitions for tutorials, guides, explanations and references were taken from
 `Daniele Procida: What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
 
 .. _doc-type-guide:
