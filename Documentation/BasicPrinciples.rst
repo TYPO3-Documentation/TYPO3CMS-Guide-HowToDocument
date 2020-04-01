@@ -146,7 +146,7 @@ Official Documentation
 
 This documentation is authored and maintained by the TYPO3 community.
 
-The Documentation Team generally maintains this documentation, but maintainance tasks
+The Documentation Team generally maintains this documentation, but maintenance tasks
 may be delegated to others, for example by giving write permission to GitHub repositories.
 
 In general, it is recommended for the TYPO3 experts to take on jobs of continuosly updating
