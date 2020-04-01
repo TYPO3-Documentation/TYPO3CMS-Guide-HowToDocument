@@ -149,7 +149,7 @@ This documentation is authored and maintained by the TYPO3 community.
 The Documentation Team generally maintains this documentation, but maintenance tasks
 may be delegated to others, for example by giving write permission to GitHub repositories.
 
-In general, it is recommended for the TYPO3 experts to take on jobs of continuosly updating
+In general, it is recommended for the TYPO3 experts to take on jobs of continuously updating
 content and making sure it is correct and up to date.
 
 .. _doc-type-community:
