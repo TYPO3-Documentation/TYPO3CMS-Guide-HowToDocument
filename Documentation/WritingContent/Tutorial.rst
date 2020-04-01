@@ -24,7 +24,7 @@ From looking at the literature mentioned below we should consider the following 
 
 * the reader should achieve something meaningful and experience success, find it doable and enjoyable, enhance competence, gain confidence, and wants to do it again.
 
-* concentrate on practical knowledge, not theoretical knowledge. Learn a new craft or skill, concentrate on leraning by by doing
+* concentrate on practical knowledge, not theoretical knowledge. Learn a new craft or skill, concentrate on learning by by doing
 
 Guidelines:
 
