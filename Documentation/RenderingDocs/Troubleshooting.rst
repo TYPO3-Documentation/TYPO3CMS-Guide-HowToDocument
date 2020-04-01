@@ -93,7 +93,7 @@ definitely got a problem that needs to be taken care of.
    the last rendered results (which are now no longer up to
    date) !
 
-Scroll back in your terminal to see where the errors occured:
+Scroll back in your terminal to see where the errors occurred:
 
 .. code-block:: none
 
