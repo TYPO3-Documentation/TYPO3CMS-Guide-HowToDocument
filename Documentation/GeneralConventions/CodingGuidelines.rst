@@ -27,7 +27,7 @@ Whitespace and indenting
 
 * remove white space from the end of lines (= no trailing tabs or spaces)
 * don't use tabs
-* one indentenation level consists of **three spaces**
+* one indentation level consists of **three spaces**
 * code examples use three spaces as indentation level as well
 
 .. note::
