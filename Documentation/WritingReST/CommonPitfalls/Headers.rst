@@ -10,7 +10,7 @@ Problems With Headers
 If you use section titles (headers), the underline must be **at least** as long as the text.
 
 Though you can make the underlines longer than the text, common practice
-througout the docs is to to keep it the same length.
+throughout the docs is to to keep it the same length.
 
 .. tip::
 
