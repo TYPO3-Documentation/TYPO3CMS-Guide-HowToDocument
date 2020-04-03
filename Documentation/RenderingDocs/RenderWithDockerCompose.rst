@@ -44,14 +44,14 @@ work fine on all platforms.
 
    .. code-block:: yaml
 
-      version: '2'
+      version: '3'
       services:
         t3docmake:
           image: t3docs/render-documentation:latest
-          volumes:
-          - ./:/PROJECT:ro
-          - ./Documentation-GENERATED-temp:/RESULT
           command: makehtml
+          volumes:
+            - ./:/PROJECT:ro
+            - ./Documentation-GENERATED-temp:/RESULT
 
 #. Run docker-compose
 
