@@ -108,7 +108,7 @@ are specific to TYPO3 documentation.
    Using your preferred IDE or editor (see :ref:`tools-for-editing-rest`,
    make changes to the files.
 
-   If you are not familier with reST, you might want to check out
+   If you are not familiar with reST, you might want to check out
    :ref:`reST Introduction <writing-rest-introduction>` first!
 
    Also, see our :ref:`rest-cheat-sheet` in this guide.

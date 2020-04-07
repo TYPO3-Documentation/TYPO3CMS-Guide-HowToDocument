@@ -141,7 +141,7 @@ Example Aliases
 
    # --- combined aliases ---
 
-   # run docker, generate documenation and open result in browser
+   # run docker, generate documentation and open result in browser
    alias t3doc='t3docrun && t3docmake && t3docopen'
 
 

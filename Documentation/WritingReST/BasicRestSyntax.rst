@@ -12,7 +12,7 @@ Basic reST & Sphinx Syntax
    Some of this text was taken from the Wiki page:
    https://wiki.typo3.org/ReST_Syntax
 
-The .rst files are writting in reStructuredText (reST) format. They
+The .rst files are written in reStructuredText (reST) format. They
 contain text with additional markup.
 
 Paragraphs

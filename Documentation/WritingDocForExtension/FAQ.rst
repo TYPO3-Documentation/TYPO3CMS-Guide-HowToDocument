@@ -99,7 +99,7 @@ recommend the usage of the webhook.
 
 .. rst-class:: panel panel-default
 
-Is Documentation Independant of TER?
+Is Documentation Independent of TER?
 ====================================
 
 Yes.
