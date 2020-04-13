@@ -38,9 +38,9 @@ opening `<`.
 
 .. tip::
 
-   To test this yourself right now, click on "Edit me on Github" in the top right corner
+   To test this yourself right now, click on "Edit me on GitHub" in the top right corner
    of this page, fix the errors, then use "Preview changes" to view the changes
-   (you need a Github account for this, if you do not
+   (you need a GitHub account for this, if you do not
    have an account, go to `https://github.com/join <https://github.com/join>`__).
 
 

@@ -4,7 +4,7 @@
 .. _docs-contribute-github-method:
 
 ================================
-Workflow #1: "Edit me on Github"
+Workflow #1: "Edit me on GitHub"
 ================================
 
 .. youtube:: wNxO-aXY5Yw

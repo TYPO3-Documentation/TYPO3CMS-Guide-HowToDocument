@@ -12,5 +12,5 @@ Resources for This Guide
 * :ref:`Linktargets <linktargets>`  (labels for cross-referencing)
 * `warnings.txt <https://docs.typo3.org/typo3cms/HowToDocument/_buildinfo/warnings.txt>`__
   (list of warnings)
-* `Issues on Github <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+* `Issues on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
   (or click on "Related links", "Issues")

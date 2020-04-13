@@ -28,15 +28,15 @@ are specific to TYPO3 documentation.
 
 .. rst-class:: bignums-xxl
 
-1. Get a `Github <https://github.com>`__ account:
+1. Get a `GitHub <https://github.com>`__ account:
 
-   Fill out the form on `Join Github <https://github.com/join>`__.
+   Fill out the form on `Join GitHub <https://github.com/join>`__.
 
    The general convention in the TYPO3 community is to use your full
    real name as name (*not* username), but it is not a requirement.
 
    Be sure to use an email-address that you will regularly check as
-   soon as you upload changes to Github.
+   soon as you upload changes to GitHub.
 
 2. Find and fork the repository
 
@@ -45,7 +45,7 @@ are specific to TYPO3 documentation.
    the link "Related Links". Then click on the link "Repository".
 
 
-   This will direct you to the repository on Github.
+   This will direct you to the repository on GitHub.
 
    There, click on the "Fork" button in the upper right.
 
@@ -53,7 +53,7 @@ are specific to TYPO3 documentation.
       :class: with-shadow
 
    .. note::
-      The repository will be forked to your workspace on Github. You can
+      The repository will be forked to your workspace on GitHub. You can
       delete it later or reuse it for further changes.
 
 
@@ -144,7 +144,7 @@ are specific to TYPO3 documentation.
 10. Create Pull request
 
    Now, in your browser, visit the forked repository in your `GitHub
-   <https://github.com/>`__ workspace. Github will already make
+   <https://github.com/>`__ workspace. GitHub will already make
    some suggestions for a pull request and will display your pushed
    branch as "Your recently pushed branches".
 
@@ -236,7 +236,7 @@ For more information in this guide:
 * `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
 
 
-For more information about GitHub see the help pages on Github or other
+For more information about GitHub see the help pages on GitHub or other
 resources, for example:
 
 * `Creating a pull request from a fork

@@ -73,7 +73,7 @@ Documentation rendering is restricted to one repository per package.
 I.e. if someone triggers documentation rendering with a repository with vendor *myVendor* and
 package *myPackage*, then nobody else will be able to trigger documentation from
 a different repository with that exact `vendor/package` name combination. You
-could say this works on a first come first served basis. 
+could say this works on a first come first served basis.
 
 We have added mechanisms to prevent registering a package from the wrong repository
 with malicious intent or accidentally: The first time someone triggers documentation
@@ -189,7 +189,7 @@ Just add this to your :ref:`settings-cfg` and customize it:
 
    [html_theme_options]
 
-   # to get the "Edit me on Github Button"
+   # to get the "Edit me on GitHub Button"
    github_branch = master
    github_repository = TYPO3-Console/TYPO3-Console
 

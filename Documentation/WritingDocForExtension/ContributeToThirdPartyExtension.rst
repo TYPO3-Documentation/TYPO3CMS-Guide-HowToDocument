@@ -116,15 +116,15 @@ Method 2: Find Rendered Manual on https://extensions.typo3.org
 Follow Contribution Guide
 =========================
 
-Hopefully, the extension has a contribution guide. You can look at the Github
+Hopefully, the extension has a contribution guide. You can look at the GitHub
 help pages to check for `conventions for contribution guides
 <https://help.github.com/articles/setting-guidelines-for-repository-contributors/>`__.
 
-In the Github repository, you should find a file like:
+In the GitHub repository, you should find a file like:
 
 * CONTRIBUTING.md
 * .github/CONTRIBUTING.md
 * etc.
 
 If no contribution guide exists, follow the general conventions for TYPO3 documentation
-and conventions for creating Pull Requests on Github or contact the author.
+and conventions for creating Pull Requests on GitHub or contact the author.
