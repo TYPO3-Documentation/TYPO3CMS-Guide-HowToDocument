@@ -58,7 +58,7 @@ Line Length
 * if in doubt about the length: use short lines!
 
   * That way reST is readable as source as well
-  * Files can be easily edited directly on Github
+  * Files can be easily edited directly on GitHub
   * Files can be compared in a diff view
 
 
@@ -68,7 +68,7 @@ Line Length
 -------------
 
 
-Most of our documentation projects contain an .editorconfig file. 
+Most of our documentation projects contain an .editorconfig file.
 
 Use this file to setup your editor / IDE correctly. With some, everything will
 just work automatically. With others, you will need to download a plugin. This
@@ -123,7 +123,7 @@ Headline underlining
 ====================
 
 In reStructuredText it is possible to use any type of underlining. The first
-used will be recognized as level 1 etc. 
+used will be recognized as level 1 etc.
 
 However, adhering to the standard for TYPO3 documentation makes it easier for
 other contributors to find their way around a file and pick the correct underlining
@@ -143,25 +143,25 @@ file::
 
    2. Header Level 1
    =================
-   
+
    3. Header Level 2
    -----------------
-   
+
    4. Header Level 3
    ~~~~~~~~~~~~~~~~~
-   
+
    5. Header Level 4
    """""""""""""""""
-   
+
    6. Header Level 5
    '''''''''''''''''
-   
+
    7. Header Level 6
    ^^^^^^^^^^^^^^^^^
-   
+
    8. Header Level 7
    #################
-   
+
    etc.
 
 .. _version-hints:
