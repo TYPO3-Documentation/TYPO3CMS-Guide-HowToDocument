@@ -72,7 +72,6 @@ More: :ref:`What's new in this guide ... <whats-new>`
    HowToAddTranslation/Index
    ../GeneralConventions/HowToUpdateDocs
    ../GeneralConventions/ReviewInformation
-   T3DocTeam @ Work  ➜  <https://docs.typo3.org/typo3cms/Teams/T3DocTeam/>
 
 .. toctree::
    :hidden:

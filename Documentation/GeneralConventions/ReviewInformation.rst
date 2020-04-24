@@ -12,6 +12,9 @@ Reviewing manuals and finding a workflow for this is still a work in progress.
 See the :ref:`Related Issues <review-workflow-related-issues>`.
 
 
+An overview of all manual maintainers and review status is maintained
+in the `Wiki <https://wiki.typo3.org/DocTeam/Official_Documentation_Maintenance>`__.
+
 Guidelines for reviewing
 ========================
 
