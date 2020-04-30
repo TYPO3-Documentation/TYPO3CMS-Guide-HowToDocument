@@ -30,7 +30,7 @@ in an efficient way, the follow script can help with the task.
    cd "/tmp/$EXTENSION"
    for tag in $(git tag)
    do
-           git checkout -b $tag $tags;
+           git checkout -b $tag $tag;
            git push origin refs/heads/$tag;
            git push --delete origin refs/heads/$tag;
            git checkout master;
@@ -46,7 +46,7 @@ example
 
 .. code-block:: bash
 
-   trigger_documentation_push.sh evoWeb/sf_register
+   sh trigger_documentation_push.sh evoWeb/sf_register
 
 This will:
 
