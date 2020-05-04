@@ -8,28 +8,15 @@ Webhook
 
 This section describes how to add webhooks for auto rendering to a repository.
 
-The system supports Git as VCS (Version Control System), and the
-following hosters:
+The system supports Git as VCS (Version Control System),
+and the following hosters:
 
 - :ref:`webhook-github`
 - :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
 - :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
-The following sections provide illustrated walkthrough tutorials on how to add
-the necessary hook for the respective hoster.
-
-.. important::
-
-   The first time a new repository triggers the webhook,
-   the request will not be processed.
-   Instead, the TYPO3 Documentation Team has to approve.
-   This is necessary to prevent misuse of the infrastructure and extension
-   names.
-
-   In case this takes too long, request the approval within the Slack channel
-   `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
-   Registration for Slack is available at `my.typo3.org
-   <https://my.typo3.org/index.php?id=35>`__.
+.. contents:: Table of Contents
+   :local:
 
 .. _approval-intercept:
 
@@ -45,6 +32,14 @@ In order to approve an extension, the following things need to apply:
    claimed by :ref:`composer.json <composer-json>`.
 
 #. The Git Repository is referenced from TER detail view page.
+
+This is necessary to prevent misuse of the infrastructure and extension names.
+
+In case the approval takes to long,
+request the approval within the Slack channel
+`#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
+Registration for Slack is available at `my.typo3.org
+<https://my.typo3.org/index.php?id=35>`__.
 
 .. _foreign-setups:
 

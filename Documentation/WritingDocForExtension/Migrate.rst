@@ -1,16 +1,21 @@
 .. include:: ../Includes.txt
 
 .. _migrate:
+.. _register-for-rendering:
 
-=====================
-Migrate Documentation
-=====================
+===========================
+Register for docs.typo3.org
+===========================
 
-Since May 29th 2019 a new infrastructure is in place at docs.typo3.org. This
-requires some migration tasks, in order to ensure that extension documentation
-is rendered on docs.typo3.org
+Follow the :ref:`register-necessary-steps` in order to have extension
+documentation rendered on docs.typo3.org out of the box.
+When migrating existing documentation, :ref:`migrate-info-about-changes` might be interesting as well.
+
+.. contents:: Table of Contents
+   :local:
 
 .. _migrate-necessary-steps:
+.. _register-necessary-steps:
 
 Necessary Steps
 ===============
@@ -51,7 +56,19 @@ if the previous step was successful.
    In case the old hook is in play, remove it first, and add the new one
    instead.
 
-#. Request redirects
+#. Trigger webhook for released versions,
+   see :ref:`reregister-versions` (optional)
+
+   In case documentation for already released versions should be rendered again,
+   follow :ref:`reregister-versions`.
+
+   It will explain how the process of rendering
+   can be triggered once more for already released versions.
+
+#. Request redirects (optional)
+
+   This step adds work load to a small team.
+   Please check whether there is a need to request redirects.
 
    Inform the TYPO3 Documentation Team, within `#typo3-documentation
    <https://typo3.slack.com/messages/C028JEPJL>`_ Slack channel. Registration
@@ -66,52 +83,55 @@ if the previous step was successful.
    * legacy URL: `https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
    * new URL: `https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
 
-All future versions will now be rendered, see :ref:`migrate-extension-release`.
-Also some branches will be rendered, see :ref:`migrate-branches`.
-
-In case there are old versions of an extension that should be rendered,
-follow :ref:`reregister-versions` to trigger rendering for them.
-
-.. _migrate-info-about-changes:
-
-Info About Changes
-==================
+All future versions will now be rendered, see :ref:`workflow-extension-release`.
+Also some branches will be rendered, see :ref:`supported-branches`.
 
 .. _migrate-extension-release:
+.. _workflow-extension-release:
 
-Extension Release
------------------
+Workflow of Extension Release
+=============================
 
-The TER (TYPO3 Extension Repository) will no longer trigger documentation
-rendering. Therefore uploading an extension at extensions.typo3.org does not
-automatically trigger rendering anymore.
+For full information about publishing extensions check :ref:`t3coreapi:publish-extension`.
 
-In order to release a new version of an extension:
-
-#. Publish the extension at https://extensions.typo3.org/
+The following steps only describe what's necessary to publish documentation to show up on extensions.typo3.org:
 
 #. Add :ref:`webhook` (if not already done).
 
-#. Tag the Git commit with a valid version.
+#. Tag the Git commit with a valid version: :ref:`supported-version-numbers`.
 
-#. Publish the extension at https://packagist.org/ (This is done by Webhook + Tagging)
+#. Push (publish) the Git tag.
+
+Publishing a tag will trigger rendering of documentation for that tag.
+The result will be published on docs.typo3.org.
+Furthermore an JSON file will provide info about the new available documentation.
+
+This file is used by extensions.typo3.org to find matching documentation.
+extensions.typo3.org will only provide a link for latest available version.
+This has to match the released version on docs.typo3.org.
+No fallback is in place (e.g. master will not be linked by default).
+
+Please note that it might take some time until extensions.typo3.org displays changed URLs to docs.typo3.org.
+The information needs to be picked up by a command.
+Caches for detail page need to be invalidated, and SOLR index needs to be updated.
 
 .. _migrate-version-numbers:
+.. _supported-version-numbers:
 
 Version Numbers
----------------
+===============
 
-There is no change necessary. https://docs.typo3.org/ does no longer show three
-level version numbers in form of ``Major.Minor.Patch``. Only the first two
-levels are shown ``Major.Minor``.
+docs.typo3.org does no longer show three level version numbers in form of ``Major.Minor.Patch``.
+Only the first two levels are shown ``Major.Minor``.
 
-This reduces the amount of documentation while keeping relevant information, as
-patch levels should not introduce breaking changes or new features.
+This reduces the amount of documentation while keeping relevant information,
+as patch levels should not introduce breaking changes or new features.
 
 .. _migrate-branches:
+.. _supported-branches:
 
-Supported branches
-------------------
+Supported Branches
+==================
 
 The rendering supports two branches within repositories:
 
@@ -132,26 +152,11 @@ The rendering supports two branches within repositories:
    In order to test a different rendering, remove the branch, and create it
    again.
 
-.. _migrate-existing-documentation:
-
-Existing Documentation
-----------------------
-
-Existing legacy documentation is kept until end of 2020. Each documentation contains an
-information block that it's outdated, together with a link to the necessary
-steps.
-
-In order to migrate, follow :ref:`migrate`. The Documentation Team can setup
-redirects for old documentation to new documentation afterwards. Send a message
-within `Slack <https://my.typo3.org/about-mytypo3org/slack>`_
-`#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
-
 .. _migrate-url-structure:
+.. _url-structure:
 
 URL Structure
--------------
-
-The URL structure has changed. Redirects are in place.
+=============
 
 The URL structure now consists of the following parts:
 
@@ -192,3 +197,19 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
 
 ``locale``
    Defines the locale, e.g. ``en-us`` or ``fr-fr``.
+
+.. _migrate-info-about-changes:
+.. _migrate-existing-documentation:
+
+Info About Changes
+==================
+
+Since May 29th 2019 a new infrastructure is in place at docs.typo3.org.
+This requires some migration tasks, in order to ensure that extension documentation
+is rendered on docs.typo3.org.
+
+Existing legacy documentation is kept until end of 2020.
+Each documentation contains an information block that it's outdated,
+together with a link to the necessary steps.
+
+In order to migrate, follow :ref:`migrate-necessary-steps`.
