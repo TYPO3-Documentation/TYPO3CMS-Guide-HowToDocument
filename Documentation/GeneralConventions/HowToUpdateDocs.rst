@@ -39,7 +39,7 @@ See the next section for some examples.
 How to add version hints
 ========================
 
-Example, how you can point out **deprecations**:
+Example, how you can point out **deprecations**::
 
    .. deprecated:: 10.2
       The hook shown here is deprecated since TYPO3 10.2 - use a custom
