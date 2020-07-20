@@ -74,8 +74,7 @@ More: :ref:`What's new in this guide ... <whats-new>`
    ../GeneralConventions/ReviewInformation
 
 .. toctree::
-   :hidden:
-   :caption: OTHER
+   :hidden:   
 
    Appendix/Index
    UsefulLinks
