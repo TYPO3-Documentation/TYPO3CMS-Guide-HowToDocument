@@ -73,6 +73,14 @@ More: :ref:`What's new in this guide ... <whats-new>`
    ../GeneralConventions/HowToUpdateDocs
    ../GeneralConventions/ReviewInformation
 
+
+.. toctree::
+   :hidden:
+   :caption: MAINTAINERS
+
+   Maintainers/Index
+
+
 .. toctree::
    :hidden:   
 
