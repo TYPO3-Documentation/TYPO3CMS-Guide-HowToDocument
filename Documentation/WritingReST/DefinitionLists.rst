@@ -73,23 +73,23 @@ Source::
 
 Rendering result:
 
-   .. rst-class:: dl-parameters
+.. rst-class:: dl-parameters
 
-   parameterAbc
-      :sep:`|` :aspect:`Condition:` required
-      :sep:`|` :aspect:`Type:` string
-      :sep:`|` :aspect:`Default:` ''
-      :sep:`|`
+parameterAbc
+   :sep:`|` :aspect:`Condition:` required
+   :sep:`|` :aspect:`Type:` string
+   :sep:`|` :aspect:`Default:` ''
+   :sep:`|`
 
-      Text describing parameterAbc ...
+   Text describing parameterAbc ...
 
-   parameterBcd
-      :sep:`|` :aspect:`Condition:` optional
-      :sep:`|` :aspect:`Type:` boolean
-      :sep:`|` :aspect:`Default:` false
-      :sep:`|`
+parameterBcd
+   :sep:`|` :aspect:`Condition:` optional
+   :sep:`|` :aspect:`Type:` boolean
+   :sep:`|` :aspect:`Default:` false
+   :sep:`|`
 
-      Text describing parameterBcd ...
+   Text describing parameterBcd ...
 
 Explanation:
 
@@ -153,27 +153,27 @@ Source::
 
 Rendering result:
 
-   .. _label-parameterAbc:
-   .. rst-class:: dl-parameters
+.. _label-parameterAbc:
+.. rst-class:: dl-parameters
 
-   parameterAbc
-      :sep:`|` :aspect:`Condition:` required
-      :sep:`|` :aspect:`Type:` string
-      :sep:`|` :aspect:`Default:` ''
-      :sep:`|`
+parameterAbc
+   :sep:`|` :aspect:`Condition:` required
+   :sep:`|` :aspect:`Type:` string
+   :sep:`|` :aspect:`Default:` ''
+   :sep:`|`
 
-      Text describing parameterAbc ...
+   Text describing parameterAbc ...
 
-   .. _label-parameterBcd:
-   .. rst-class:: dl-parameters
+.. _label-parameterBcd:
+.. rst-class:: dl-parameters
 
-   parameterBcd
-      :sep:`|` :aspect:`Condition:` optional
-      :sep:`|` :aspect:`Type:` boolean
-      :sep:`|` :aspect:`Default:` false
-      :sep:`|`
+parameterBcd
+   :sep:`|` :aspect:`Condition:` optional
+   :sep:`|` :aspect:`Type:` boolean
+   :sep:`|` :aspect:`Default:` false
+   :sep:`|`
 
-      Text describing parameterBcd ...
+   Text describing parameterBcd ...
 
 Link example:
 
@@ -185,7 +185,7 @@ Source::
 
 Result:
 
-   Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
+Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
 
-   Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
+Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
 
