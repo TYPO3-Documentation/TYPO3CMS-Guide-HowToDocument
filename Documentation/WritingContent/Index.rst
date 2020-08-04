@@ -23,5 +23,9 @@ How to write good content
 
    WritingContentTips
    Tutorial
+   Resources
+
+
+.. todo:: finalize Guide.rst
 
 
