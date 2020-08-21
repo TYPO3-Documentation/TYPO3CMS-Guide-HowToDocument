@@ -453,3 +453,15 @@ Source (tip):
          To look at the reST source of this rendered page, scroll to the bottom
          and click on "View page source".
 
+
+:ref:`Diagrams <diagrams>`
+===============================
+
+Source:
+
+.. literalinclude:: Diagrams/sequence.rst.txt
+   :language: rst
+
+How it looks:
+
+.. include:: Diagrams/sequence.rst.txt
