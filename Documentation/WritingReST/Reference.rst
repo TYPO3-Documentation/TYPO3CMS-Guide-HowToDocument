@@ -27,8 +27,8 @@ reST & Sphinx Reference
    Admonitions
    Comments
    Tables
-   Diagrams
    SpecialCharacters
+   Diagrams
    Orphans
    CleverRest
    SpecialStyles
