@@ -255,7 +255,6 @@ Example:
 
    Press :kbd:`ctrl` + :kbd:`s`
 
-Result:
-
+How it looks:
    Press :kbd:`ctrl` + :kbd:`s`
 
