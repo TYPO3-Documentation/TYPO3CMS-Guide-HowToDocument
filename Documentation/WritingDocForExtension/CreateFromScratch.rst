@@ -88,8 +88,8 @@ This description uses the example extension manual:
 
 #. Publish when done
 
-   If you are working on your own extension, `make it publicly available
-   <https://extensions.typo3.org/faq/publish-an-extension/>`__.
+   If you are working on your own extension, :ref:`make it publicly available
+   <t3coreapi:publish-extension>`
 
    In order to trigger documentation rendering on the documentation server you have to
    add a webhook, see :ref:`webhook`.
