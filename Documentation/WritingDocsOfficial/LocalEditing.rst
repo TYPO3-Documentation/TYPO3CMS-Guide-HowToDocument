@@ -143,13 +143,13 @@ are specific to TYPO3 documentation.
 
 10. Create Pull request
 
-   Now, in your browser, visit the forked repository in your `GitHub
-   <https://github.com/>`__ workspace. GitHub will already make
-   some suggestions for a pull request and will display your pushed
-   branch as "Your recently pushed branches".
+    Now, in your browser, visit the forked repository in your `GitHub
+    <https://github.com/>`__ workspace. GitHub will already make
+    some suggestions for a pull request and will display your pushed
+    branch as "Your recently pushed branches".
 
-   Click on the green button "Compare & pull request" and then
-   "Create pull request".
+    Click on the green button "Compare & pull request" and then
+    "Create pull request".
 
 
 

@@ -25,6 +25,9 @@ general writing tips:
   This is also not an article that is specific to documentation, but the tips
   are very good and general, especially for writing in clarity in mind.
 
+
+.. pull-quote::
+
    Clarity means making your content easy to understand.
 
    -- Neil Patel

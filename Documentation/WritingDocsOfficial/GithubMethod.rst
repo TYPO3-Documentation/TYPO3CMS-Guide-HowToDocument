@@ -87,11 +87,11 @@ contributing to TYPO3 documentation.
 
 10. You're done!
 
-   Well, almost. Your change will now be reviewed. A reviewer might
-   suggest changes. Monitor your notifications (email) from GitHub. If at any
-   point, you are not sure what to do, don't hesitate to
-   :ref:`ask for help <how-to-get-help>`. When your pull request is accepted,
-   it will be merged. You will get a notification (email).
+    Well, almost. Your change will now be reviewed. A reviewer might
+    suggest changes. Monitor your notifications (email) from GitHub. If at any
+    point, you are not sure what to do, don't hesitate to
+    :ref:`ask for help <how-to-get-help>`. When your pull request is accepted,
+    it will be merged. You will get a notification (email).
 
 
 **Congratulations! You are now a contributor. Welcome and thank you!**

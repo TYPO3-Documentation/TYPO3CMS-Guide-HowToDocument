@@ -114,11 +114,11 @@ Source::
 
 Result:
 
-   Paragraph ...
+Paragraph ...
 
-   ::
+::
 
-      Literal Block
+   Literal Block
 
 In words: The paragraph will appear as written. The code block just follows.
 *Both colons* and one empty line will be removed and not lead to any special
@@ -136,9 +136,9 @@ Source::
 
 Result:
 
-   Paragraph ... ::
+Paragraph ... ::
 
-      Literal Block
+   Literal Block
 
 In words: The paragraph will appear as written after *both colons* together
 with the preceding whitespace (!) have been removed from the end of the line.
@@ -156,9 +156,9 @@ Source::
 
 Result:
 
-   Paragraph::
+Paragraph::
 
-      Literal Block
+   Literal Block
 
 In words: The source of the paragraph has TWO colons at the end which are NOT
 preceded by whitespace. In the output just one of the colons will be removed.

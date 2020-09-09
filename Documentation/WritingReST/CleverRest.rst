@@ -70,18 +70,18 @@ multiple empty lines:
 
 And this is how it looks like:
 
-   Message
-      *
+Message
+   *
 
-        + Hello
-        + World!
-      *
+     + Hello
+     + World!
+   *
 
-        + Hello
-        + World!
-      *
+     + Hello
+     + World!
+   *
 
-        + Hello
-        + World!
+     + Hello
+     + World!
 
 

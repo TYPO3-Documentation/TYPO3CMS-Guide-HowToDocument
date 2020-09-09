@@ -30,12 +30,12 @@ Example 1: Bullet List
 
 **How it looks:**
 
-   this is some text
+this is some text
 
-   * this is a list item
-   * another item
+* this is a list item
+* another item
 
-   more text
+more text
 
 
 Example 2: List With Sublist
@@ -46,7 +46,6 @@ Example 2: List With Sublist
    this is some text
 
    * this is a list item
-
       * this is a sublevel list item
       * another item
 
@@ -55,14 +54,13 @@ Example 2: List With Sublist
 
 How it looks:
 
-   this is some text
+this is some text
 
-   * this is a list item
+* this is a list item
+   * this is a sublevel list item
+   * another item
 
-      * this is a sublevel list item
-      * another item
-
-   this is more text
+this is more text
 
 
 Wrong Syntax
@@ -77,10 +75,10 @@ Wrong Syntax
 
 How it looks:
 
-   this is some text
-   * this is a list item
-   * another item
-   more text
+this is some text
+* this is a list item
+* another item
+more text
 
 
 Additional Information

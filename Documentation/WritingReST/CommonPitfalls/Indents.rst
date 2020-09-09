@@ -24,9 +24,9 @@ Correct Syntax
 
 How it looks:
 
-   .. image:: ../../images/a4.jpg
-      :width: 100px
-      :class: with-shadow
+.. image:: ../../images/a4.jpg
+   :width: 100px
+   :class: with-shadow
 
 Incorrect Syntax
 ----------------

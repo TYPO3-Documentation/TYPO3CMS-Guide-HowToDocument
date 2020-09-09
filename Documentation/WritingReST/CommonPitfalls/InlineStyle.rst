@@ -22,7 +22,7 @@ Correct Syntax
 How it looks:
 
 
-   This is normal text. **This is bold text.**
+This is normal text. **This is bold text.**
 
 Wrong Syntax
 ------------
@@ -34,7 +34,7 @@ Wrong Syntax
 How it looks:
 
 
-   This is normal text. ** This is bold text.**
+This is normal text. ** This is bold text.**
 
 
 Additional Information
