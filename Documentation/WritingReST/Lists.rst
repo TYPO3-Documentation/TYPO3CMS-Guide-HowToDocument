@@ -60,10 +60,8 @@ Example 1: List with Sublist Items
 * item 2 is a longer text with line breaks. We must format and
   indent like this
 * item 3
-
    * subitem 3.1
    * subitem 3.1
-
 * item 4
 
 

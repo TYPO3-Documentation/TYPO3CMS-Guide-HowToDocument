@@ -212,7 +212,7 @@ Nested bignums-xxl > bignums > Normally Styled
 
 *Source:* ::
 
-.. rst-class:: bignums-xxl
+   .. rst-class:: bignums-xxl
 
    1. ONE One one bignums-xxl
 

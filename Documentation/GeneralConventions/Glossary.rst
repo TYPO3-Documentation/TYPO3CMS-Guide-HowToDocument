@@ -205,7 +205,7 @@ third party extension
 ---------------------
 
 Preferred term:
-    It is preferred to use "third party extension" and not "3rd party extension" (see
+   It is preferred to use "third party extension" and not "3rd party extension" (see
    `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/38>`__
    for discussion).
 

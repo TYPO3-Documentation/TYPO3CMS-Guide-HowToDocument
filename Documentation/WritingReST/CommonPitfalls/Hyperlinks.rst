@@ -27,7 +27,7 @@ Example:
 
 How this looks:
 
-   `T3O <https://typo3.org>`__
+`T3O <https://typo3.org>`__
 
 
 Common Mistake #1: Missing Space
@@ -56,7 +56,7 @@ Wrong Syntax
 How this looks:
 
 
-   `T3O<https://typo3.org>`__
+`T3O<https://typo3.org>`__
 
 
 Common Mistake #2: Missing Undercore (_)
@@ -76,7 +76,7 @@ Wrong Syntax
 How this looks:
 
 
-   `T3O <https://typo3.org>`
+`T3O <https://typo3.org>`
 
 
 .. _common-pitfalls-links-more-information:

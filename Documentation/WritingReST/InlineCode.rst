@@ -119,15 +119,13 @@ Things get tricky if your inline code already contains single backquotes (backti
    `inline literals`_. Again: Don't escape or double anything, whitespace is maintained.
    *Example:*
 
-      Write
+   Write::
 
-         .. code-block:: rst
+      SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
 
-            SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
+   to get::
 
-      to get:
-
-         SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
+      SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
 
    **The drawbacks** of literal inline code notation are:
 

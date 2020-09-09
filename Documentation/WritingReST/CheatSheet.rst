@@ -86,38 +86,21 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
 External Links
 --------------
 
-method 1:
+method 1::
+
+   `anchor text <URL>`__
 
    Check out more information on `t3o <https://typo3.org>`__.
 
-   Source::
+(with one or two underscores at the end, if in doubt, use two)
 
-      Check out more information on `t3o <https://typo3.org>`__.
-
-   ::
-
-      `anchor text <URL>`__
-
-   (with one or two underscores at the end, if in doubt, use two)
-
-method 2: "External Hyperlink Targets"
+method 2: "External Hyperlink Targets"::
 
    Check out more information on t3o_
 
-   .. _t3o: https://typo3.org
+   _t3o: https://typo3.org
 
-   source::
-
-      Check out more information on t3o_
-
-      .. (this is a comment) the link is defined (usually on bottom of page)
-
-      .. _t3o: https://typo3.org
-
-   This may be more convenient if you use a link several times.
-
-
-.. _linked: https://typo3.org
+This may be more convenient if you use a link several times.
 
 .. _cheat-sheet-intersphinx:
 
@@ -318,13 +301,13 @@ Examples:
 
 Source (inline text with textroles):
 
-   .. code-block:: rest
-      :linenos:
+.. code-block:: rest
+   :linenos:
 
-      :php:`$result = $a + 23;`
-      :typoscript:`lib.hello.value = Hello World!`
-      :file:`/etc/passwd`
-      :kbd:`ctrl` + :kbd:`s`
+   :php:`$result = $a + 23;`
+   :typoscript:`lib.hello.value = Hello World!`
+   :file:`/etc/passwd`
+   :kbd:`ctrl` + :kbd:`s`
 
 
 
@@ -335,9 +318,9 @@ Normal text, **bold text** and *italic text*.
 
 Source (bold & italic):
 
-   .. code-block:: rest
+.. code-block:: rest
 
-      Normal text, **bold text** and *italic text*.
+   Normal text, **bold text** and *italic text*.
 
 
 :ref:`Images <rest-images>`
@@ -348,20 +331,20 @@ Source (bold & italic):
 
 Source (image):
 
-   .. code-block:: rest
+.. code-block:: rest
 
-      .. image:: ../images/a4.jpg
-         :class: with-shadow
+   .. image:: ../images/a4.jpg
+      :class: with-shadow
 
 Another example:
 
-   .. code-block:: rest
+.. code-block:: rest
 
-      .. image:: ../images/a4.jpg
-         :class: with-shadow
-         :target: https://typo3.org
-         :alt: alt text
-         :width: 100px
+   .. image:: ../images/a4.jpg
+      :class: with-shadow
+      :target: https://typo3.org
+      :alt: alt text
+      :width: 100px
 
 .. seealso::
 
@@ -375,9 +358,9 @@ Another example:
 
 Source (YouTube):
 
-   .. code-block:: rest
+.. code-block:: rest
 
-      .. youtube:: wNxO-aXY5Yw
+   .. youtube:: wNxO-aXY5Yw
 
 
 
