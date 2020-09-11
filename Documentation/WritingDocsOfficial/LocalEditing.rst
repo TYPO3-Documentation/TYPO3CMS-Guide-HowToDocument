@@ -41,9 +41,8 @@ are specific to TYPO3 documentation.
 2. Find and fork the repository
 
    Find the repository for the manual you wish to make changes to.
-   On the lower left side of the rendered documentation, click on
-   the link "Related Links". Then click on the link "Repository".
-
+   In the footer of the rendered documentation on docs.typo3.org,
+   click on the link :guilabel:`Repository`.
 
    This will direct you to the repository on GitHub.
 

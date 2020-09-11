@@ -28,7 +28,7 @@ see :ref:`overview-of-types`.
 .. tip::
 
    There is an easy shortcut for minor changes: You can use
-   the `Edit me on GitHub method <docs-contribute-github-method>`__ for
+   the `Edit on GitHub method <docs-contribute-github-method>`__ for
    minor changes to system extensions documentation and the changelog. Under the hood,
    a patch will get created and pushed to Gerrit and you will find a
    comment in your pull request with information about where to find your patch

@@ -37,15 +37,11 @@ mentioned in :ref:`supported-filenames-and-formats`.
 
 To find the repository, use one of these methods:
 
-Method 1: Find the Source with "Related Links"
-----------------------------------------------
+Method 1: Find the Source on docs.typo3.org
+-------------------------------------------
 
-In the page of the rendered docs for the extension, click on "Related links", and
-then "Repository".
-
-.. image:: ../images/related_repository.png
-   :class: with-shadow
-
+In the page of the rendered docs for the extension, click on :guilabel:`Repository`
+in the footer.
 
 Sometimes the metadata in Settings.cfg in a Documentation
 project is not filled out and this link is missing. Then, you can use Method 2.

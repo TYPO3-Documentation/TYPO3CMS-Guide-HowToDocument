@@ -29,12 +29,8 @@ repository:
 
 
 Alternatively, on any rendered page on docs.typo3.org (for example, this page),
-you can open :guilabel:`"Related Links"` on the bottom of the menu
-and click on :guilabel:`"Repository"`.
-
-.. image:: ../images/related-links-repository.png
-   :class: with-shadow
-
+you can find the link :guilabel:`Repository` in the footer on the bottom
+of the page.
 
 
 .. _github-get-notifications:
@@ -78,11 +74,8 @@ Find Issues for a Specific Manual
 ---------------------------------
 
 From docs.typo3.org:
-   To find the issues for a specific manual click on :guilabel:`Related Links` (on the
-   bottom left of any page of the manual) and then :guilabel:`Issues`.
-
-   .. image:: ../images/related-links-issues.png
-      :class: with-shadow
+   To find the issues for a specific manual click on the link
+   :guilabel:`Issues` in the footer on the bottom of the page.
 
 From the repository on GitHub:
    If you have already located the repository on GitHub, you can find the Issues

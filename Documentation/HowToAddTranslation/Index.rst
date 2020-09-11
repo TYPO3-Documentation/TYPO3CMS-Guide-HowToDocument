@@ -48,5 +48,5 @@ wind up on the corresponding translated page.
    for example :file:`/Documentation-GENERATED-temp/Result/project/de-de/0.0.0/Index.html`
 
 
-Once the documentation has been rerendered on the documentation server, you can switch the
-language by clicking on *"Related Links" / the version* on the bottom of the menu.
+Once the documentation has been rerendered on the documentation server, you can
+switch the language using the version selector.

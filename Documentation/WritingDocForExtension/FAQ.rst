@@ -163,21 +163,23 @@ Which one should you choose? That is up to you.
 We recommend: Use method 1) for extensive documentation with several chapters,
 use method 2) for minimal documentation which can be maintained in one file.
 
-.. _tip-edit-me-on-github:
+
 .. rst-class:: panel panel-default
 
-How do I Get an "Edit me on GitHub" Button
+.. _tip-edit-me-on-github:
+
+How do I Get an "Edit on GitHub" Button
 ==========================================
 
 
-Why might you want an "Edit me on GitHub" button on the rendered pages
+Why might you want an "Edit on GitHub" button on the rendered pages
 of your extension documentation?
 
 .. figure:: ../images/edit_me_on_github+shadow.svg
    :class: with-shadow
-   :alt: "Edit me on GitHub" button
+   :alt: "Edit on GitHub" button
 
-   "Edit me on GitHub" button
+   "Edit on GitHub" button
 
 It makes it easier to contribute to the documentation!
 
@@ -189,7 +191,7 @@ Just add this to your :ref:`settings-cfg` and customize it:
 
    [html_theme_options]
 
-   # to get the "Edit me on GitHub Button"
+   # to get the "Edit on GitHub Button"
    github_branch = master
    github_repository = TYPO3-Console/TYPO3-Console
 
@@ -223,10 +225,7 @@ Add `project_issues` to your :ref:`settings-cfg`:
 Replace `<user>` and `<extension-key>` with your username and extension key
 or replace entire URL with URL to your issues.
 
-A link to the Issues will then be available in the "Related Links" section.
-
-.. image:: ../images/related-links.svg
-   :class: with-shadow
+A link to the Issues will then be available footer section.
 
 Example extension: `news <https://docs.typo3.org/typo3cms/extensions/news/>`__
 
