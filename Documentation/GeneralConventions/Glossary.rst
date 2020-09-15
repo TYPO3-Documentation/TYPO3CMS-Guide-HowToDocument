@@ -92,8 +92,8 @@ Spelling:
    unless you explicitly mean the command `docker` (see `Use the Docker command line
    <https://docs.docker.com/engine/reference/commandline/cli/>`__).
 
-Edit me on GitHub workflow
---------------------------
+Edit on GitHub workflow
+-----------------------
 
 Preferred term:
    Use this to describe the workflow which involves editing on GitHub as

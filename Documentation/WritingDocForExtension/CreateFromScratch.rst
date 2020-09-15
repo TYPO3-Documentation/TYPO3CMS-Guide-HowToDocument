@@ -65,8 +65,7 @@ This description uses the example extension manual:
 
    Start editing away. Use the existing text to guide you. Look at other
    extension manuals (for example `form <https://docs.typo3.org/typo3cms/extensions/form/>`__)
-   for inspiration. (Click on "Related Links" to jump to the repository or scroll to
-   bottom of rendered page and click on "View page source" to see reST source.)
+   for inspiration. (You can find a link to the repository in the footer.)
 
 #. Fill out composer.json
 

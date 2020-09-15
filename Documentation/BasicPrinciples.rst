@@ -191,34 +191,31 @@ are:
  - :Type:         Official `guides, tutorials <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
                   `core docs <https://docs.typo3.org/typo3cms/References/Index.html>`__,
                   etc.
-   :Issues:       On page of rendered docs, click on *Related links > Issues*
-   :Source:       On page of rendered docs, click on *Related Links > Repository*, or click on *Edit me on GitHub*
+   :Issues:       On page of rendered docs, click on :guilabel:`Issues` in the
+                  footer on the bottom of the page
+   :Source:       On page of rendered docs, click on :guilabel:`Repository` in
+                  the footer, or click on :guilabel:`Edit on GitHub` on top right
    :Workflow:     Create GitHub pull request, see :ref:`docs-contribute`.
 
  - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-   :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
+   :Issues:       `Core issues on forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
    :Source:       TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__, mirror:
                   `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__
    :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `System extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
    :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
-   :Source:       Same as for Changelog, inside TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
+   :Source:       Same as for Changelog, inside TYPO3 source code:
+                  `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
                   `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
    :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
  - :Type:         `3rdparty extensions <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
-   :Issues:       On page of rendered docs, click on *Related Links > Issues*
-   :Source:       On page of rendered docs, click on *Related Links > Repository*, see :ref:`contribute-to-3rdparty-extension`
+   :Issues:       On page of rendered docs, click on :guilabel:`Issues` link in footer
+   :Source:       On page of rendered docs, click on :guilabel:`Repository`
+                  link in footer, see :ref:`contribute-to-3rdparty-extension`
    :Workflow:     It depends, see :ref:`contribute-to-3rdparty-extension`
 
-
-To get to the issues or repository of the documentation: On the page of the rendered
-manual, click on "Related Links" and then click on "Issues" or "Repository".
-
-
-.. image:: images/related2.png
-   :class: with-shadow
 
 
 Official TYPO3 Manuals
@@ -241,12 +238,21 @@ Find out more about the :ref:`core contribution workflow <t3contribute:Start>`
 in general or about :ref:`t3contribute:Adding-documentation` in the Contribution
 Guide.
 
+In addition to using the core workflow, the core documentation can also
+be changed via :ref:`"Edit on GitHub" <docs-contribute-github-method>`.
+In this case, a Gerrit patch is created automatically from the pull request.
+
 Documentation for 3rdparty Extensions
 -------------------------------------
 
 The documentation for a 3rdparty extension is maintained within the
 source-code of this extensions. If and where it is edited depends
 on where the extension is hosted and maintained.
+
+If the extension is hosted on GitHub and correctly
+:ref:`configured in Documentation/Settings.cfg <tip-edit-me-on-github>`,
+extension documentation contributors
+can also make changes via :ref:`"Edit on GitHub" <docs-contribute-github-method>`.
 
 To find out how to contribute documentation for a specific extension:
 :ref:`contribute-to-3rdparty-extension`

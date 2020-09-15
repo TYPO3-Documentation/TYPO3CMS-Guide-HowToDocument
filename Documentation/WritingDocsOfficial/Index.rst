@@ -26,14 +26,14 @@ Use what you are most comfortable with!
 
 .. tip::
 
-   We recommend to try out the :ref:`"Edit me on GitHub" workflow <docs-contribute-github-method>`,
+   We recommend to try out the :ref:`"Edit on GitHub" workflow <docs-contribute-github-method>`,
    because it is a way to quickly make changes, but use :ref:`"Local Editing and Rendering
    with Docker" <docs-contribute-git-docker>` in the long run for larger
    changes.
 
 .. rst-class:: bignums
 
-   1. "Edit me on GitHub" workflow
+   1. "Edit on GitHub" workflow
 
       You can edit documentation directly online in your browser.
 

@@ -4,7 +4,7 @@
 .. _docs-contribute-github-method:
 
 ================================
-Workflow #1: "Edit me on GitHub"
+Workflow #1: "Edit on GitHub"
 ================================
 
 .. youtube:: wNxO-aXY5Yw
@@ -24,7 +24,7 @@ contributing to TYPO3 documentation.
    Pick a manual, for example :ref:`t3start:start` or :ref:`t3install:start`
    and find a page there, that you want to change.
 
-3. Click on "Edit me on GitHub":
+3. Click on "Edit on GitHub":
 
    You should find the button on the top right of any page!
 

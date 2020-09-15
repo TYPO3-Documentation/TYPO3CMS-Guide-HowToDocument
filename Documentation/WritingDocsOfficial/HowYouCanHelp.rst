@@ -28,7 +28,7 @@ Make Minor Changes
 ==================
 
 If you see a typo, a broken link, something is outdated or you can make improvements in
-any way, do not hesitate to click on "Edit me on GitHub" and make
+any way, do not hesitate to click on "Edit on GitHub" and make
 the change yourself. See :ref:`docs-contribute-github-method` for
 a walkthrough.
 

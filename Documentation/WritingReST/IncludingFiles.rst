@@ -36,7 +36,7 @@ Disadvantages
 
 #. You cannot see the source of included text when clicking on "Show source of the page".
 
-#. The "Edit me on GitHub" button cannot take you directly to the editing of included files.
+#. The "Edit on GitHub" button cannot take you directly to the editing of included files.
    It still can be done but needs much more knowledge about the GitHub interface.
 
 #. When Sphinx reports warnings and errors the exact text location can be much harder to spot.

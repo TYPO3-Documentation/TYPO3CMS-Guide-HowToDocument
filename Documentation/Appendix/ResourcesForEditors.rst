@@ -13,4 +13,4 @@ Resources for This Guide
 * `warnings.txt <https://docs.typo3.org/typo3cms/HowToDocument/_buildinfo/warnings.txt>`__
   (list of warnings)
 * `Issues on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
-  (or click on "Related links", "Issues")
+

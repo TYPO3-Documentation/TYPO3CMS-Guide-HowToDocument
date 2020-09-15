@@ -136,14 +136,6 @@ There may be problems which will not break the rendering but which
 should be taken care of. Warnings are listed in the file
 :file:`Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt`
 
-
-.. tip::
-
-   You can also find :file:`warnings.txt` for online rendered documentation, by
-   opening the links in :guilabel:`"Related Links"` (on bottom of menu) and then
-   clicking on :guilabel:`"BUILDINFO"` and then :guilabel:`warnings.txt`
-
-
 .. _render-troubleshooting-incremental:
 
 Incremental Rendering
