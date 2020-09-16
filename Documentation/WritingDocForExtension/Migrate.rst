@@ -104,7 +104,7 @@ The following steps only describe what's necessary to publish documentation to s
 
 Publishing a tag will trigger rendering of documentation for that tag.
 The result will be published on docs.typo3.org.
-Furthermore an JSON file will provide info about the new available documentation.
+Furthermore a JSON file will provide info about the new available documentation.
 
 This file is used by extensions.typo3.org to find matching documentation.
 extensions.typo3.org will only provide a link for latest available version.
