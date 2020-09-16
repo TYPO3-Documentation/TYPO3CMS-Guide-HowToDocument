@@ -94,7 +94,8 @@ Workflow of Extension Release
 
 For full information about publishing extensions check :ref:`t3coreapi:publish-extension`.
 
-The following steps only describe what's necessary to publish documentation to show up on extensions.typo3.org:
+The following steps only describe what's necessary for documentation publishing and for
+the link to the documentation to be displayed on extensions.typo3.org:
 
 #. Add :ref:`webhook` (if not already done).
 
@@ -104,10 +105,11 @@ The following steps only describe what's necessary to publish documentation to s
 
 Publishing a tag will trigger rendering of documentation for that tag.
 The result will be published on docs.typo3.org.
-Furthermore an JSON file will provide info about the new available documentation.
+Furthermore a JSON file which provides info about the new available documentation
+will be automatically generated on the documentation server.
 
 This file is used by extensions.typo3.org to find matching documentation.
-extensions.typo3.org will only provide a link for latest available version.
+extensions.typo3.org will only show the link to the latest available version.
 This has to match the released version on docs.typo3.org.
 No fallback is in place (e.g. master will not be linked by default).
 
