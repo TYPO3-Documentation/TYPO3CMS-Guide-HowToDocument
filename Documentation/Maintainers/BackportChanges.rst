@@ -43,11 +43,32 @@ There may be reasons to do this differently:
   Sometimes, the structure has changed. In this case,
   decide if it is worth the effort.
 
+
+How to merge?
+=============
+
+Using the second option in the green "Merge pull request" button
+:guilabel:`Squash and merge` has proven useful for a number of
+reasons:
+
+#. This merges everything into one commit which makes it easier
+   to cherry pick
+#. This automatically adds the PR number into the commit message
+   which adds a reference to the original PR when
+   merging or cherry-picking this to another branch. That way
+   the backport process is visible in the pull request.
+
+If there are more than 1 contributor who committed changes, a
+text about additional authors is automatically added to the commit.
+
+
 How to backport?
 ================
 
-If you cherry-pick a commit locally, you can use -x to
-automatically insert information that this is a cherry-pick.
+If you cherry-pick a commit locally, you can (optionally) use -x to
+automatically insert information that this is a cherry-pick and
+the original commit id.
+
 This makes the history clearer. Sometimes minor changes have
 to be done while backporting to fix merge conflicts.
 
