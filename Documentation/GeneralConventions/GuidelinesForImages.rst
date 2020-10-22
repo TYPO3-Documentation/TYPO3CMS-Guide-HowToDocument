@@ -120,7 +120,13 @@ Follow these guidelines
   corner radius of 2 px.
 * Text fields are TYPO3 Orange (#F49700) and have a corner radius of 2 px.
 * Dividing surfaces have a 2px frame in TYPO3 Orange (#F49700) with a corner radius
-  of 2 px
+  of 2 px.
+* Icon shadows have an
+
+  * offset of (4 px, 4 px)
+  * blur of 10 px
+  * spreading radius of 0 px
+  * color of RGBA (0, 0, 0, 0.3)
 
 
 Examples
