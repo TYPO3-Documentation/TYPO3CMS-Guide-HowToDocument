@@ -123,9 +123,10 @@ Follow these guidelines
   of 2 px.
 * Icon shadows have an
 
-  * offset of (4 px, 4 px)
-  * blur of 10 px
-  * spreading radius of 0 px
+  * horizontal offset of 4 px
+  * vertical offset of 4 px
+  * blur radius of 10 px
+  * spread radius of 0 px
   * color of RGBA (0, 0, 0, 0.3)
 
 
@@ -135,18 +136,16 @@ Examples
 
 .. figure:: images/backend-with-boxes.png
    :class: with-shadow
-   :scale: 70
 
-   Image with rectangles and numbers
+   PNG Image with rectangles and numbers
 
-.. figure:: images/backend-boxes2+shadow.svg
+.. figure:: images/backend-with-boxes-2.svg
    :class: with-shadow
-   :scale: 70
 
-   Another alternative with rectangles and numbers
+   SVG image with rectangles and numbers
 
 .. figure:: ../images/edit_me_on_github+shadow.svg
    :class: with-shadow
-   :alt: Arrow with drop shadow
+   :alt: Image with arrow
 
-   Arrow with drop shadow
+   SVG Image with arrow
