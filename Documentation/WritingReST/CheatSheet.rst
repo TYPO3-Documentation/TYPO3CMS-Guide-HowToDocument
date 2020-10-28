@@ -135,7 +135,7 @@ shortcut (here: "h2document") is included in :ref:`settings-cfg`::
       h2document       = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/Index.html
       ...
 
-We use the same conventions for naming the shortcuts in :file:`Settings.cfg`, 
+We use the same conventions for naming the shortcuts in :file:`Settings.cfg`,
 see :ref:`settings-cfg`. Not used manuals are commented out.
 
 
@@ -175,61 +175,58 @@ see :ref:`settings-cfg`. Not used manuals are commented out.
 :ref:`Lists <rest-lists>`
 =========================
 
-This is a bullet list:
+To create a bullet list:
 
-* list item 1
-* list item 2
+*  add a blank line before and after the list
+*  indent the list item text by 3 spaces - including the item sign
+*  to create a nested list:
+
+   *  indent the items by 3 spaces (left-align with parent item text)
+   *  apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
 
-.. important::
-
-   Always add blank line before and after list!
-
 .. code-block:: rest
 
-   This is a bullet list:
+   To create a bullet list:
 
-   * list item 1
-   * list item 2
+   *  add a blank line before and after the list
+   *  indent the list item text by 3 spaces - including the item sign
+   *  to create a nested list:
 
-   More text. **Important:** Always add blank line before and after list!
+      *  indent the items by 3 spaces (left-align with parent item text)
+      *  apply rules of parent list (blank lines, item text indentation, ..)
 
-Add a blank link too, when starting another list hierarchy::
+   More text.
 
-   This is a bullet list:
-
-   * list item 1
-
-      * list item 1.1
-      * list item 1.2
-
-   * list item 2
 
 
 :ref:`numbered-lists`
 =====================
 
-.. important::
+To create a numbered list:
 
-   Always add blank line before and after list!
+#. add a blank line before and after the list
+#. indent the list item text by 3 spaces - including the item sign
+#. to create a nested list:
 
-some text
+   #. indent the items by 3 spaces (left-align with parent item text)
+   #. apply rules of parent list (blank lines, item text indentation, ..)
 
-#. list item 1
-#. list item 2
-
-
-some text
+More text.
 
 .. code-block:: rest
 
-   some text
+   To create a numbered list:
 
-   #. list item 1
-   #. list item 2
+   #. add a blank line before and after the list
+   #. indent the list item text by 3 spaces - including the item sign
+   #. to create a nested list:
 
-   some text
+      #. indent the items by 3 spaces (left-align with parent item text)
+      #. apply rules of parent list (blank lines, item text indentation, ..)
+
+   More text.
 
 
 
