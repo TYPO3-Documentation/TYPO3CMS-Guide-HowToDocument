@@ -495,6 +495,7 @@ because that is one of the default filenames that GitHub uses to determine what 
 In the official TYPO3 documentation, we follow this principle:
 
 *  README.rst usually contains 2 links:
+
    *  to the rendered documentation
    *  to the GitHub repository
 

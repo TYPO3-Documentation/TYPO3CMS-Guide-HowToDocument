@@ -76,9 +76,11 @@ readthedocs::
 `-`
 
 *  Syntax may be unusual and rendering breaks if not done correctly, e.g.
+
    *  indenting is important
    *  new lines are important, e.g. before, after and between bullet lists
    *  more, see :ref:`rest-common-pitfalls`
+
 *  some people simply hate it
 
 **Markdown**

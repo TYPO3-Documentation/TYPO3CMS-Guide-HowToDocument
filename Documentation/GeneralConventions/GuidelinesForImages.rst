@@ -115,19 +115,19 @@ The icons will be in images/final/icons.
 Follow these guidelines
 -----------------------
 
-* Icons are used for numbers and arrows. The size of the icons should not be changed.
-* Simple frames are TYPO3 Orange (#F49700) and have a line thickness of 2 px and a
-  corner radius of 2 px.
-* Text fields are TYPO3 Orange (#F49700) and have a corner radius of 2 px.
-* Dividing surfaces have a 2px frame in TYPO3 Orange (#F49700) with a corner radius
-  of 2 px.
-* Icon shadows have an
+*  Icons are used for numbers and arrows. The size of the icons should not be changed.
+*  Simple frames are TYPO3 Orange (#F49700) and have a line thickness of 2 px and a
+   corner radius of 2 px.
+*  Text fields are TYPO3 Orange (#F49700) and have a corner radius of 2 px.
+*  Dividing surfaces have a 2px frame in TYPO3 Orange (#F49700) with a corner radius
+   of 2 px.
+*  Icon shadows have an
 
-  * horizontal offset of 4 px
-  * vertical offset of 4 px
-  * blur radius of 10 px
-  * spread radius of 0 px
-  * color of RGBA (0, 0, 0, 0.3)
+   * horizontal offset of 4 px
+   * vertical offset of 4 px
+   * blur radius of 10 px
+   * spread radius of 0 px
+   * color of RGBA (0, 0, 0, 0.3)
 
 
 Examples
