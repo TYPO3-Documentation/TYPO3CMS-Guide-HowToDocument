@@ -68,40 +68,40 @@ readthedocs::
 
 `+`
 
-* extendable
-* semantic markup
-* cross-references across manuals (links still work if text is moved - unless moved to a different manual)
-* richer feature set
+*  extendable
+*  semantic markup
+*  cross-references across manuals (links still work if text is moved - unless moved to a different manual)
+*  richer feature set
 
 `-`
 
-* Syntax may be unusual and rendering breaks if not done correctly, e.g.
-   * indenting is important
-   * new lines are important, e.g. before, after and between bullet lists
-   * more, see :ref:`rest-common-pitfalls`
-* some people simply hate it
+*  Syntax may be unusual and rendering breaks if not done correctly, e.g.
+   *  indenting is important
+   *  new lines are important, e.g. before, after and between bullet lists
+   *  more, see :ref:`rest-common-pitfalls`
+*  some people simply hate it
 
 **Markdown**
 
 `+`
 
-* in general better tool support
-* widely supported
-* syntax is (mostly) simpler and easier to read
+*  in general better tool support
+*  widely supported
+*  syntax is (mostly) simpler and easier to read
 
 `-`
 
-* various flavors (unless **commonmark** is used)
-* less features
+*  various flavors (unless **commonmark** is used)
+*  less features
 
 
 Additional information
 ----------------------
 
 
-* Eli Bendersky: `"reStructuredText vs. Markdown for technical documentation"
-  <https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/>`__ (February 24, 2017)
-* Victor Zverovich: `"reStructuredText vs Markdown for documentation" <https://www.zverovich.net/2016/06/16/rst-vs-markdown.html>`__ (2016)
-* Eric Holscher: `"Why You Shouldn’t Use “Markdown” for Documentation"
-  <https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/>`__ (March 15, 2016)
-* Eric Holscher: `Read the Docs & Sphinx now support Commonmark <https://blog.readthedocs.com/adding-markdown-support/>`__ (2015)
+*  Eli Bendersky: `"reStructuredText vs. Markdown for technical documentation"
+   <https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/>`__ (February 24, 2017)
+*  Victor Zverovich: `"reStructuredText vs Markdown for documentation" <https://www.zverovich.net/2016/06/16/rst-vs-markdown.html>`__ (2016)
+*  Eric Holscher: `"Why You Shouldn’t Use “Markdown” for Documentation"
+   <https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/>`__ (March 15, 2016)
+*  Eric Holscher: `Read the Docs & Sphinx now support Commonmark <https://blog.readthedocs.com/adding-markdown-support/>`__ (2015)

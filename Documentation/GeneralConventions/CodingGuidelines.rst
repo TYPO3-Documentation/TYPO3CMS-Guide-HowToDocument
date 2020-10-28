@@ -13,7 +13,7 @@ Basic formatting rules
 Encoding
 --------
 
-* use utf-8
+*  use utf-8
 
 .. _cgl-indenting:
 
@@ -25,10 +25,10 @@ Whitespace and indenting
    Always use indentation levels correctly. Your code may not
    be rendered as expected if you do not.
 
-* remove white space from the end of lines (= no trailing tabs or spaces)
-* don't use tabs
-* one indentation level consists of **three spaces**
-* code examples use three spaces as indentation level as well
+*  remove white space from the end of lines (= no trailing tabs or spaces)
+*  don't use tabs
+*  one indentation level consists of **three spaces**
+*  code examples use three spaces as indentation level as well
 
 .. note::
 
@@ -48,18 +48,18 @@ Example:
       :class: with-shadow
 
 
-* lines 2-4 must be indented one level (3 spaces)
+*  lines 2-4 must be indented one level (3 spaces)
 
 
 Line Length
 -----------
 
-* Keep lines shorter than 80 characters.
-* if in doubt about the length: use short lines!
+*  Keep lines shorter than 80 characters.
+*  if in doubt about the length: use short lines!
 
-  * That way reST is readable as source as well
-  * Files can be easily edited directly on GitHub
-  * Files can be compared in a diff view
+   *  That way reST is readable as source as well
+   *  Files can be easily edited directly on GitHub
+   *  Files can be compared in a diff view
 
 
 .. _editorconfig:
@@ -106,10 +106,10 @@ Sample contents of :file:`.editorconfig`
 
 This sample .editorconfig will instruct your editor / IDE to:
 
-* use utf8 as encoding (line 7)
-* use spaces instead of tabs (line 11)
-* use 3 spaces for indenting (line 12)
-* remove trailing whitespace (line 10)
+*  use utf8 as encoding (line 7)
+*  use spaces instead of tabs (line 11)
+*  use 3 spaces for indenting (line 12)
+*  remove trailing whitespace (line 10)
 
 
 Special characters
@@ -188,7 +188,7 @@ Changes::
 
 For more information, see the open issue:
 
-* `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+*  `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
 
 .. _link-to-changelog:
 

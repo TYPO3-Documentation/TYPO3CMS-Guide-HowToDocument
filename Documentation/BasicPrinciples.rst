@@ -14,8 +14,8 @@ Introduction to TYPO3 Documentation
 For an excellent introduction, please see the 3 part series on Marcus
 Schwemer's blog TYPO3 Worx:
 
-* `GUIDE TO TYPO3 DOCUMENTATION – PART 1: THE USER-INTERFACE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-part-1-the-ui/>`__
-* `GUIDE TO TYPO3 DOCUMENTATION – PART 2: CONTENT STRUCTURE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-content-structure/>`__
+*  `GUIDE TO TYPO3 DOCUMENTATION – PART 1: THE USER-INTERFACE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-part-1-the-ui/>`__
+*  `GUIDE TO TYPO3 DOCUMENTATION – PART 2: CONTENT STRUCTURE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-content-structure/>`__
 
 .. important::
 
@@ -31,15 +31,15 @@ What's TYPO3 Documentation?
 
 TYPO3 documentation may be one of the following:
 
-* It can be one of the `official manuals <https://docs.typo3.org/>`__
-  like :ref:`t3coreapi:start`.
-* It can be the documentation of a
-  `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
-* It can be the documentation of a
-  `third party extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
-* TYPO3 documentation can also be a
-  `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-  entry for the core, for example a documented breaking change or new feature.
+*  It can be one of the `official manuals <https://docs.typo3.org/>`__
+   like :ref:`t3coreapi:start`.
+*  It can be the documentation of a
+   `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
+*  It can be the documentation of a
+   `third party extension <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
+*  TYPO3 documentation can also be a
+   `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+   entry for the core, for example a documented breaking change or new feature.
 
 .. _common-characteristics-typo3-docs:
 
@@ -48,18 +48,18 @@ Common Characteristics of TYPO3 Documentation
 
 All of these examples have a few things in common:
 
-* The documentation is rendered and found on https://docs.typo3.org
-* The documentation has a **common theme**, all pages look similar and use the same styles
-* Most of the documentation can be directly **edited by the community**. For third party
-  extensions, this depends on where and how the source-code is hosted and maintained.
-* The source of the documentation is written (mostly) in reStructuredText (**reST**)
-* All documentation is rendered using the **same rendering toolchain**. All documentation
-  can be rendered locally, with the officially supported Docker image.
-* The documentation source files adhere to :ref:`general-conventions` and
-  share a **common structure** (e.g. all documentation files in a
-  :file:`Documentation` subdirectory).
-* Due to the conventions, the rendering of documentation can be automated and
-  every documentation project only requires a minimum of setup.
+*  The documentation is rendered and found on https://docs.typo3.org
+*  The documentation has a **common theme**, all pages look similar and use the same styles
+*  Most of the documentation can be directly **edited by the community**. For third party
+   extensions, this depends on where and how the source-code is hosted and maintained.
+*  The source of the documentation is written (mostly) in reStructuredText (**reST**)
+*  All documentation is rendered using the **same rendering toolchain**. All documentation
+   can be rendered locally, with the officially supported Docker image.
+*  The documentation source files adhere to :ref:`general-conventions` and
+   share a **common structure** (e.g. all documentation files in a
+   :file:`Documentation` subdirectory).
+*  Due to the conventions, the rendering of documentation can be automated and
+   every documentation project only requires a minimum of setup.
 
 .. _whats-rendering:
 
@@ -96,7 +96,7 @@ an extension manual or something else.
 Tutorial
 --------
 
-A tutorial is a manual. 
+A tutorial is a manual.
 
 Tutorials are designed to be a **learning-oriented** resource that take
 newcomers by the hand and guide them through a specific topic. To facilitate effective
@@ -157,12 +157,12 @@ content and making sure it is correct and up to date.
 Community Documentation
 -----------------------
 
-Third party extension manuals are typically "community documentation". 
+Third party extension manuals are typically "community documentation".
 
 This documentation is usually maintained by the extension author.
 
 The TYPO3 Documentation Team cannot maintain "community documentation", but it
-helps by providing documentation, support and an example extension manual. 
+helps by providing documentation, support and an example extension manual.
 
 
 .. _overview-of-types:
@@ -175,9 +175,9 @@ Documentation Contribution Matrix
 Considering how to contribute, the things that differ for various kinds of documentation
 are:
 
-* Where the issues are maintained (e.g. on Forge or GitHub)
-* Where the source code (Git repository) is kept
-* The workflow for making changes to the documentation
+*  Where the issues are maintained (e.g. on Forge or GitHub)
+*  Where the source code (Git repository) is kept
+*  The workflow for making changes to the documentation
 
 
 .. t3-field-list-table::
@@ -285,9 +285,9 @@ Manager or in the TYPO3 source, e.g. `GitHub: TYPO3.CMS: /typo3/sysext
 
 Examples for system extensions are:
 
-* `ext:form <https://docs.typo3.org/typo3cms/extensions/form/>`__
-* `ext:fluid_styled_content <https://docs.typo3.org/typo3cms/extensions/fluid_styled_content/>`__
-* `ext:rte_ckeditor <https://docs.typo3.org/typo3cms/extensions/rte_ckeditor/>`__
+*  `ext:form <https://docs.typo3.org/typo3cms/extensions/form/>`__
+*  `ext:fluid_styled_content <https://docs.typo3.org/typo3cms/extensions/fluid_styled_content/>`__
+*  `ext:rte_ckeditor <https://docs.typo3.org/typo3cms/extensions/rte_ckeditor/>`__
 
 Note, that if your system has been installed with Composer, not all system extensions may exist
 in the system, if each system extension has been required separately as "subtree splitted packages"
@@ -295,8 +295,8 @@ in the system, if each system extension has been required separately as "subtree
 
 For more information on subtree split, see
 
-* `Usetypo3: The TYPO3 Subtree Split and Composer <https://usetypo3.com/typo3-subtree-split-and-composer.html>`__
-* :ref:`Installation and Upgrade guide: Composer migration <composer-migration-require-subtree-packages>`
+*  `Usetypo3: The TYPO3 Subtree Split and Composer <https://usetypo3.com/typo3-subtree-split-and-composer.html>`__
+*  :ref:`Installation and Upgrade guide: Composer migration <composer-migration-require-subtree-packages>`
 
 System Extension Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

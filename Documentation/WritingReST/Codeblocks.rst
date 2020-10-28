@@ -14,15 +14,15 @@ Codeblocks with Syntax Highlighting
 Quick Reference
 ===============
 
-* To insert a snippet as code with syntax highlighting, use the `code-block`
-  directive or the shorthand `::`.
-* You can explicitly set the language in the `code-block`, you cannot in the shorthand.
-* If you do not explicitly set the language, the default language (as set with
-  the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
-  was used, the default set in :ref:`Includes.txt <includes-txt>` is used.
-* It is recommended to use the short form (`::`), and not code-block explicitly.
-* Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
-  in a code block.
+*  To insert a snippet as code with syntax highlighting, use the `code-block`
+   directive or the shorthand `::`.
+*  You can explicitly set the language in the `code-block`, you cannot in the shorthand.
+*  If you do not explicitly set the language, the default language (as set with
+   the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
+   was used, the default set in :ref:`Includes.txt <includes-txt>` is used.
+*  It is recommended to use the short form (`::`), and not code-block explicitly.
+*  Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
+   in a code block.
 
 The following examples all do the same thing:
 

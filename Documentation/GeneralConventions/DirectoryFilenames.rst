@@ -13,22 +13,22 @@ server.
 
 For documentation to be rendered, you need at least:
 
-* (**required**) :ref:`composer-json` in project root. As of May 29, 2019, this is now mandatory!
-* (**required**) a :ref:`"start file" <start-file>`,
-  usually :file:`Documentation/Index.rst` or one of the
-  :ref:`alternatives <start-file>`, such as :file:`README.rst`.
-* (**required**) :ref:`Documentation/Settings.cfg <settings-cfg>`
+*  (**required**) :ref:`composer-json` in project root. As of May 29, 2019, this is now mandatory!
+*  (**required**) a :ref:`"start file" <start-file>`,
+   usually :file:`Documentation/Index.rst` or one of the
+   :ref:`alternatives <start-file>`, such as :file:`README.rst`.
+*  (**required**) :ref:`Documentation/Settings.cfg <settings-cfg>`
 
 
 The other files listed here may not be required, but are recommended.
 
 Further conventions:
 
-* reStructueredText files have ending **.rst**
-* Markdown files have ending **.md**
-* Included files have ending **.rst.txt**
-* Use **CamelCase** for directories and .rst file names (e.g. :file:`Index.rst`,
-  :file:`ExtensionArchitecture.rst`).
+*  reStructueredText files have ending **.rst**
+*  Markdown files have ending **.md**
+*  Included files have ending **.rst.txt**
+*  Use **CamelCase** for directories and .rst file names (e.g. :file:`Index.rst`,
+   :file:`ExtensionArchitecture.rst`).
 
 
 Minimal setup ("classic")
@@ -201,12 +201,12 @@ Index.rst:
       Configuration
 
 
-* line 1 : every .rst file should include Includes.txt
-* line 3-5: the header
-* line 10-14: the toctree defines which other pages will be included
-  and combined. The menu is generated from all combined files (recursively).
-  Here we include the files
-  :file:`Introduction.rst`, :file:`Configuration.rst`
+*  line 1 : every .rst file should include Includes.txt
+*  line 3-5: the header
+*  line 10-14: the toctree defines which other pages will be included
+   and combined. The menu is generated from all combined files (recursively).
+   Here we include the files
+   :file:`Introduction.rst`, :file:`Configuration.rst`
 
 Introduction.rst:
 
@@ -273,9 +273,9 @@ Content
    ... text with configuration ...
 
 
-* line 1 : every .rst file should include Includes.txt
-* line 3-5: the title
-* Here, all text is contained in one file.
+*  line 1 : every .rst file should include Includes.txt
+*  line 3-5: the title
+*  Here, all text is contained in one file.
 
 .. _single-file-workaround:
 
@@ -317,12 +317,12 @@ Settings.cfg
 .. important::
    This file must be adapted for the manual.
 
-* Use  `Settings.cfg
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Settings.cfg>`__
-  in this project as an up-to-date example for an official manual!
-* Use the file in `TYPO3CMS-Example-ExtensionManual
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/master/Documentation/Settings.cfg>`__
-  as an up-to-date example for an extension manual!
+*  Use  `Settings.cfg
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Settings.cfg>`__
+   in this project as an up-to-date example for an official manual!
+*  Use the file in `TYPO3CMS-Example-ExtensionManual
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/master/Documentation/Settings.cfg>`__
+   as an up-to-date example for an extension manual!
 
 The file consists of sections, which start with a keyword in brackets, such as `[general]`.
 Make sure that all directives exist in the correct section.
@@ -376,14 +376,14 @@ This is an up-to-date list of mappings commonly used:
 .. tip::
 
    Uncomment **only** the manuals to which you will be linking to in your manual For example, change::
-   
+
       # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
-      
+
    to::
-   
+
       t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
-   
-      
+
+
 
 Example
 -------
@@ -406,7 +406,7 @@ This file can be the same for all Documentation projects!
 
 Example:
 
-* `Includes.txt in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
+*  `Includes.txt in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
 
 .. literalinclude:: ../Includes.txt
    :language: rst
@@ -425,7 +425,7 @@ For more information, see :ref:`editorconfig`.
 
 Example:
 
-* `.editorconfig in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
+*  `.editorconfig in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
 
 
 .. _gitignore-in-filenames:
@@ -482,8 +482,8 @@ The link "Read online" will help people to jump directly to the rendered version
 
 Goal:
 
-* Provide only basic information and point people to rendered docs
-* Look good on Git hosters such as GitHub
+*  Provide only basic information and point people to rendered docs
+*  Look good on Git hosters such as GitHub
 
 
 Because of the order of the supported file formats (see :ref:`supported-filenames-and-formats`),
@@ -494,9 +494,9 @@ because that is one of the default filenames that GitHub uses to determine what 
 
 In the official TYPO3 documentation, we follow this principle:
 
-* README.rst usually contains 2 links:
-   * to the rendered documentation
-   * to the GitHub repository
+*  README.rst usually contains 2 links:
+   *  to the rendered documentation
+   *  to the GitHub repository
 
 .. tip::
 

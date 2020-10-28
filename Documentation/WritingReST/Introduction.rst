@@ -65,19 +65,19 @@ We will not go into the exact definition here. For now, all you need to know
 is that some of the markup you will be using is added on by Sphinx.
 This is the case for some additional directives such as:
 
-* the :ref:`:ref: <intersphinx>` directive for cross-referencing
-* the :ref:`toctree <rest-menu-hierachy>` directive for creating table of contents (=toc)
-  and menus
-* the :ref:`code-block <codeblock-directive>` directive for creating code blocks with syntax
-  highlighting. `code-block` is a Sphinx directive, while `code`
-  is a (native) reStructuredText directive. We commonly use `code-block`,
-  not `code`.
+*  the :ref:`:ref: <intersphinx>` directive for cross-referencing
+*  the :ref:`toctree <rest-menu-hierachy>` directive for creating table of contents (=toc)
+   and menus
+*  the :ref:`code-block <codeblock-directive>` directive for creating code blocks with syntax
+   highlighting. `code-block` is a Sphinx directive, while `code`
+   is a (native) reStructuredText directive. We commonly use `code-block`,
+   not `code`.
 
 
 Additional information:
 
-* `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__
-* `What is the difference: reST, docutils, sphinx, readthedocs <https://coderwall.com/p/vemncg/what-is-the-difference-rest-docutils-sphinx-readthedocs>`__ (2016)
+*  `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__
+*  `What is the difference: reST, docutils, sphinx, readthedocs <https://coderwall.com/p/vemncg/what-is-the-difference-rest-docutils-sphinx-readthedocs>`__ (2016)
 
 
 Rendering

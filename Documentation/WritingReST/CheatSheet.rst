@@ -60,19 +60,19 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
       Header 1.1.1.1
       """"""""""""""
 
-* line 1-3: This is the doc title. Every .rst file should have one.
-* line 7: header label. This can be used for cross-referencing to this section::
+*  line 1-3: This is the doc title. Every .rst file should have one.
+*  line 7: header label. This can be used for cross-referencing to this section::
 
     :ref:`header1`
 
-* 9-10: Header level 1
-* etc.
+*  9-10: Header level 1
+*  etc.
 
 
 
 .. seealso::
-   * :ref:`Headlines-and-sections`
-   * :ref:`explicit-link-targets`
+   *  :ref:`Headlines-and-sections`
+   *  :ref:`explicit-link-targets`
 
 
 
@@ -165,9 +165,9 @@ see :ref:`settings-cfg`. Not used manuals are commented out.
 
 .. seealso::
 
-   * :ref:`link-targets-explanation` (labels)
-   * :ref:`intersphinx`
-   * :ref:`settings-cfg`
+   *  :ref:`link-targets-explanation` (labels)
+   *  :ref:`intersphinx`
+   *  :ref:`settings-cfg`
 
 
 
@@ -345,7 +345,7 @@ Another example:
 
 .. seealso::
 
-   * :ref:`images`
+   *  :ref:`images`
 
 
 :ref:`YouTube Videos <youtube>`

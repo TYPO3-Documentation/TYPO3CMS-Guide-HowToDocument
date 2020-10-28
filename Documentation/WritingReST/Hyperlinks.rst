@@ -72,8 +72,8 @@ External Links
 
 You can use one or more underscores (`_`) for the link. The difference is as follows:
 
-* One underscore creates a :ref:`named reference <external-links-named-reference>`
-* Two underscores create an :ref:`anonymous URL <external-links-anonymous>`
+*  One underscore creates a :ref:`named reference <external-links-named-reference>`
+*  Two underscores create an :ref:`anonymous URL <external-links-anonymous>`
 
 For further explanation of the difference between these 2, please see
 `Stackoverflow <https://stackoverflow.com/questions/27420317/restructured-text-rst-http-links-underscore-vs-use>`__.
@@ -93,7 +93,7 @@ Syntax
 
    `Anchor text <URL>`__
 
-* There must always be a space between the anchor text and the URL
+*  There must always be a space between the anchor text and the URL
 
 Example
 ~~~~~~~
@@ -124,7 +124,7 @@ underscore instead of 2.
 
    `Anchor text <URL>`_
 
-* There must always be a space between the anchor text and the URL
+*  There must always be a space between the anchor text and the URL
 
 
 
@@ -151,7 +151,7 @@ A section label of the name `columns-inline` is set::
 
 Here, the link target *columns-inline* will be defined.
 
-* Place the link target definition directly before the section header:
+*  Place the link target definition directly before the section header:
 
 .. code-block:: rest
 
@@ -160,9 +160,9 @@ Here, the link target *columns-inline* will be defined.
    Inline columns
    ==============
 
-* You can define more than one link target definition (for example if
-  you want to keep some for historical reasons to not break links but
-  the name has changed considerably)
+*  You can define more than one link target definition (for example if
+   you want to keep some for historical reasons to not break links but
+   the name has changed considerably)
 
 
 .. _implicit-link-targets:
@@ -190,7 +190,7 @@ manuals correctly.
 Additional information: See the `Sphinx documentation
 <https://www.sphinx-doc.org/en/1.6/markup/inline.html#cross-referencing-arbitrary-locations>`__.
 
-For an overview of the link types, see :ref:`cheat-sheet-intersphinx` in 
+For an overview of the link types, see :ref:`cheat-sheet-intersphinx` in
 the "ReST & Sphinx Cheat Sheet".
 
 In the Same Manual

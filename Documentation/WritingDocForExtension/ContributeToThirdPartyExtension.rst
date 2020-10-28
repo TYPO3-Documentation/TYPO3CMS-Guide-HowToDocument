@@ -118,9 +118,9 @@ help pages to check for `conventions for contribution guides
 
 In the GitHub repository, you should find a file like:
 
-* CONTRIBUTING.md
-* .github/CONTRIBUTING.md
-* etc.
+*  CONTRIBUTING.md
+*  .github/CONTRIBUTING.md
+*  etc.
 
 If no contribution guide exists, follow the general conventions for TYPO3 documentation
 and conventions for creating Pull Requests on GitHub or contact the author.

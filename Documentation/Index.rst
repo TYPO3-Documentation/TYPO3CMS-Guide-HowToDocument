@@ -17,7 +17,7 @@ Find out more in:
 
 .. rst-class:: horizbuttons-primary-xxl
 
-* :ref:`how-to-read-this-guide`
+*  :ref:`how-to-read-this-guide`
 
 
 
@@ -74,7 +74,7 @@ More: :ref:`What's new in this guide ... <whats-new>`
    ../GeneralConventions/ReviewInformation
 
 .. toctree::
-   :hidden:   
+   :hidden:
 
    Appendix/Index
    UsefulLinks

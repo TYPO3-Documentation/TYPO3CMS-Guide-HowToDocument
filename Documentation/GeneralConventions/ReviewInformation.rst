@@ -32,17 +32,17 @@ Guidelines for reviewing
 
 What to watch out for while reviewing:
 
-* **Duplicate content:** Check for similar content in other manuals (and the TYPO3 Wiki).
-  Merge duplicate content: Decide where the content should live, remove it in the
-  other places and add links.
-* **Remove redundant content:** Keep content short and to the point.
-  For things that are not TYPO3-specific: Link elsewhere if good
-  documentation is already available elsewhere.
-* **Technical correctness:** Is information correct and up-to-date (for version of
-  branch)? Does it propagate good best practices (instead of deprecated ones)?
-* **Didactic:** Is the text easy to understand and follow? For lengthy texts: Is there
-  a quick start or a summary at the beginning (Example: :ref:`Logging Quick Start <t3coreapi:logging-quickstart>`)?
-* **Language correctness:** Spelling, grammar, style.
+*  **Duplicate content:** Check for similar content in other manuals (and the TYPO3 Wiki).
+   Merge duplicate content: Decide where the content should live, remove it in the
+   other places and add links.
+*  **Remove redundant content:** Keep content short and to the point.
+   For things that are not TYPO3-specific: Link elsewhere if good
+   documentation is already available elsewhere.
+*  **Technical correctness:** Is information correct and up-to-date (for version of
+   branch)? Does it propagate good best practices (instead of deprecated ones)?
+*  **Didactic:** Is the text easy to understand and follow? For lengthy texts: Is there
+   a quick start or a summary at the beginning (Example: :ref:`Logging Quick Start <t3coreapi:logging-quickstart>`)?
+*  **Language correctness:** Spelling, grammar, style.
 
 Not everyone is a native English speaker and not everyone knows TYPO3 inside-out. It
 is entirely fine to only focus on one aspect at a time (e.g. language) while reviewing.
@@ -95,7 +95,7 @@ the review information on the start page, e.g.
 
 Examples:
 
-* :ref:`t3start:start`.
+*  :ref:`t3start:start`.
 
 .. _reviewInfoWarning:
 
@@ -142,5 +142,5 @@ In order to render this, add this to :file:`Settings.cfg`:
 Related Issues
 ==============
 
-* `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__
-* `Update the docs before we release the new version. <https://github.com/TYPO3-Documentation/T3DocTeam/issues/70>`__
+*  `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__
+*  `Update the docs before we release the new version. <https://github.com/TYPO3-Documentation/T3DocTeam/issues/70>`__

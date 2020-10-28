@@ -44,5 +44,5 @@ Possible Errors
 Additional Information
 ======================
 
-* `Text syntax: bold, italic, verbatim and special characters
-  <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html#text-syntax-bold-italic-verbatim-and-special-characters>`__
+*  `Text syntax: bold, italic, verbatim and special characters
+   <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html#text-syntax-bold-italic-verbatim-and-special-characters>`__
