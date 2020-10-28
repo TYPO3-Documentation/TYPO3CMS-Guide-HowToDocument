@@ -145,22 +145,19 @@ see :ref:`settings-cfg`. Not used manuals are commented out.
    moved to another page (which effectively changes the URL), the link will still work!
 
 .. t3-field-list-table::
- :header-rows: 1
+   :header-rows: 1
 
- - :Anchor:
-   :ThisManual:   Link to: Same manual
-   :OtherManual:  Link to: Other manual
+   -  :Anchor:
+      :ThisManual:   Link to: Same manual
+      :OtherManual:  Link to: Other manual
 
- - :Anchor:       **Explicit** anchor text
-   :ThisManual:   ``:ref:`Cross Referencing <intersphinx>```
+   -  :Anchor:       **Explicit** anchor text
+      :ThisManual:   ``:ref:`Cross Referencing <intersphinx>```
+      :OtherManual:  ``:ref:`Cross Referencing <t3docwrite:intersphinx>```
 
-   :OtherManual:  ``:ref:`Cross Referencing <t3docwrite:intersphinx>```
-
-
- - :Anchor:       **Automatic** anchor text
-   :ThisManual:   ``:ref:`intersphinx```
-
-   :OtherManual:  ``:ref:`t3docwrite:intersphinx```
+   -  :Anchor:       **Automatic** anchor text
+      :ThisManual:   ``:ref:`intersphinx```
+      :OtherManual:  ``:ref:`t3docwrite:intersphinx```
 
 
 .. seealso::

@@ -181,40 +181,40 @@ are:
 
 
 .. t3-field-list-table::
- :header-rows: 1
+   :header-rows: 1
 
- - :Type:         Type of documentation
-   :Issues:       Issues
-   :Source:       Source Code (Git repository)
-   :Workflow:     Workflow for making changes
+   -  :Type:         Type of documentation
+      :Issues:       Issues
+      :Source:       Source Code (Git repository)
+      :Workflow:     Workflow for making changes
 
- - :Type:         Official `guides, tutorials <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
-                  `core docs <https://docs.typo3.org/typo3cms/References/Index.html>`__,
-                  etc.
-   :Issues:       On page of rendered docs, click on :guilabel:`Issues` in the
-                  footer on the bottom of the page
-   :Source:       On page of rendered docs, click on :guilabel:`Repository` in
-                  the footer, or click on :guilabel:`Edit on GitHub` on top right
-   :Workflow:     Create GitHub pull request, see :ref:`docs-contribute`.
+   -  :Type:         Official `guides, tutorials <https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html>`__,
+                     `core docs <https://docs.typo3.org/typo3cms/References/Index.html>`__,
+                     etc.
+      :Issues:       On page of rendered docs, click on :guilabel:`Issues` in the
+                     footer on the bottom of the page
+      :Source:       On page of rendered docs, click on :guilabel:`Repository` in
+                     the footer, or click on :guilabel:`Edit on GitHub` on top right
+      :Workflow:     Create GitHub pull request, see :ref:`docs-contribute`.
 
- - :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
-   :Issues:       `Core issues on forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
-   :Source:       TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__, mirror:
-                  `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__
-   :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
+   -  :Type:         `TYPO3 Core Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
+      :Issues:       `Core issues on forge <https://forge.typo3.org/projects/typo3cms-core/issues>`__
+      :Source:       TYPO3 source code: `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__, mirror:
+                     `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__
+      :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
- - :Type:         `System extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
-   :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
-   :Source:       Same as for Changelog, inside TYPO3 source code:
-                  `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
-                  `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
-   :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
+   -  :Type:         `System extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
+      :Issues:       Core issues: https://forge.typo3.org/projects/typo3cms-core/issues
+      :Source:       Same as for Changelog, inside TYPO3 source code:
+                     `git.typo3.org <git://git.typo3.org/Packages/TYPO3.CMS>`__,
+                     `GitHub <https://github.com/TYPO3/TYPO3.CMS>`__ as mirror
+      :Workflow:     see :ref:`Contribution Guide: Add documentation <t3contribute:Adding-documentation>`
 
- - :Type:         `3rdparty extensions <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
-   :Issues:       On page of rendered docs, click on :guilabel:`Issues` link in footer
-   :Source:       On page of rendered docs, click on :guilabel:`Repository`
-                  link in footer, see :ref:`contribute-to-3rdparty-extension`
-   :Workflow:     It depends, see :ref:`contribute-to-3rdparty-extension`
+   -  :Type:         `3rdparty extensions <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
+      :Issues:       On page of rendered docs, click on :guilabel:`Issues` link in footer
+      :Source:       On page of rendered docs, click on :guilabel:`Repository`
+                     link in footer, see :ref:`contribute-to-3rdparty-extension`
+      :Workflow:     It depends, see :ref:`contribute-to-3rdparty-extension`
 
 
 
