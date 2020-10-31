@@ -120,7 +120,14 @@ Follow these guidelines
   corner radius of 2 px.
 * Text fields are TYPO3 Orange (#F49700) and have a corner radius of 2 px.
 * Dividing surfaces have a 2px frame in TYPO3 Orange (#F49700) with a corner radius
-  of 2 px
+  of 2 px.
+* Icon shadows have an
+
+  * horizontal offset of 4 px
+  * vertical offset of 4 px
+  * blur radius of 10 px
+  * spread radius of 0 px
+  * color of RGBA (0, 0, 0, 0.3)
 
 
 Examples
@@ -129,18 +136,16 @@ Examples
 
 .. figure:: images/backend-with-boxes.png
    :class: with-shadow
-   :scale: 70
 
-   Image with rectangles and numbers
+   PNG Image with rectangles and numbers
 
-.. figure:: images/backend-boxes2+shadow.svg
+.. figure:: images/backend-with-boxes-2.svg
    :class: with-shadow
-   :scale: 70
 
-   Another alternative with rectangles and numbers
+   SVG image with rectangles and numbers
 
 .. figure:: ../images/edit_me_on_github+shadow.svg
    :class: with-shadow
-   :alt: Arrow with drop shadow
+   :alt: Image with arrow
 
-   Arrow with drop shadow
+   SVG Image with arrow
