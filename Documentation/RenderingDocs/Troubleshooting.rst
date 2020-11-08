@@ -122,7 +122,7 @@ latest changes.
 
 .. code-block:: none
 
-   .. include:: ../Includes.rst.txt
+   .. include:: /Includes.rst.txt
 
 Correct the path, so it will point to the existing Includes.rst.txt (which
 should be located in the directory :file:`Documentation`.

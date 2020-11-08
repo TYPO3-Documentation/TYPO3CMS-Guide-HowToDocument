@@ -183,7 +183,7 @@ Use codeblock without specifying language::
       $a = 'b';
 
 This uses whatever language has last been set with the :ref:`codeblocks-highlight-directive`
-in the current file or in Includes.rst-txt.
+in the current file or in :file:`Includes.rst.txt`.
 
 .. _writing-rest-codeblocks-syntactically-correct:
 .. _codeblocks-syntactically-correct:
