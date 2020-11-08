@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 .. _rendering-docs-troubleshooting:
@@ -117,14 +117,14 @@ Everything with exitcode != 0 is relevant. Here, we see a problem
 with the requirements. This is usually caused by an incorrect path
 for including a file.
 
-Remember, every file includes :file:`Includes.txt` at the top. Check your
+Remember, every file includes :file:`Includes.rst.txt` at the top. Check your
 latest changes.
 
 .. code-block:: none
 
-   .. include:: ../Includes.txt
+   .. include:: ../Includes.rst.txt
 
-Correct the path, so it will point to the existing Includes.txt (which
+Correct the path, so it will point to the existing Includes.rst.txt (which
 should be located in the directory :file:`Documentation`.
 
 .. _render-troubleshooting-warnings:

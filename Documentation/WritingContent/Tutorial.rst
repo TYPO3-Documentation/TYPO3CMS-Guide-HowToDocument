@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. todo:: Add information about writing a tutorial

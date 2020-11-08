@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. _how-to-start-documentation-for-ext:

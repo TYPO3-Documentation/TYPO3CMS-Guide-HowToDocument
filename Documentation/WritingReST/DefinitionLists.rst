@@ -1,5 +1,5 @@
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. _Styled-Definition-Lists:
@@ -108,7 +108,7 @@ Attention:
 
 The textroles `ascpect` and `sep` (for separator) need to be defined. The usual
 way of defining them is by having these lines in the
-:file:`Documentation/Includes.txt` file. Add these lines::
+:file:`Documentation/Includes.rst.txt` file. Add these lines::
 
    .. role:: aspect (emphasis)
    .. role:: sep (strong)

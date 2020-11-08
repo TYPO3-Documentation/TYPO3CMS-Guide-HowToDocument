@@ -1,9 +1,8 @@
-.. This is 'Includes.txt'. It is included at the very top of each and
+.. This is 'Includes.rst.txt'. It is included at the very top of each and
    every ReST source file in THIS documentation project (= manual).
    
 .. This files lives at 
-   https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt
-   Version: 2018-10-16
+   https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.rst.txt
 
 .. More information about this file:
    https://docs.typo3.org/typo3cms/HowToDocument/GeneralConventions/DirectoryFilenames.html#includes-txt

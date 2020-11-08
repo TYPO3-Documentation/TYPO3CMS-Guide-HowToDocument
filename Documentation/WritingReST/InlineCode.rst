@@ -1,5 +1,5 @@
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. _Inline-Code:
@@ -36,7 +36,7 @@ Use Textroles
    ================ ================================================= ============================================ ===
    Role             Source                                            Output                                       Note
    ================ ================================================= ============================================ ===
-   (default)        ```result = (1 + x) * 32```                       `result = (1 + x) * 32`                      This works because in :file:`Includes.txt` we set the default role to ``:code:`...```
+   (default)        ```result = (1 + x) * 32```                       `result = (1 + x) * 32`                      This works because in :file:`Includes.rst.txt` we set the default role to ``:code:`...```
 
    aspect           ``:aspect:`Description:```                        :aspect:`Description:`                       For better optics
    html             ``:html:`<a href="#">```                          :html:`<a href="#">`
@@ -148,7 +148,7 @@ within sentences is *inline code*.
 - has **no** syntax highlighting,
 - does **not** need to be syntactically correct,
 - can be compared to `<span>...</span>` tags in html,
-- and is made up by self-defined names. For example, look at the :file:`../../Includes.txt`
+- and is made up by self-defined names. For example, look at the :file:`../../Includes.rst.txt`
   file to see how `:php:`, `:ts:` are defined.
 
 In contrast, *code-blocks*
@@ -168,11 +168,11 @@ language with the exception of the TypoScript manuals, where `typoscript` is
 the default.
 
 
-Use 'Includes.txt' File
------------------------
+Use 'Includes.rst.txt' File
+---------------------------
 
 In general, the manual you are working on will already contain an
-:ref:`Includes.txt <includes-txt>` file. In that file, the textroles
+:ref:`Includes.rst.txt <includes-txt>` file. In that file, the textroles
 are defined.
 
 You Need Another Textrole for Code Markup?

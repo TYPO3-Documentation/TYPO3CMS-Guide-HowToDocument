@@ -3,7 +3,7 @@
 .. editor's note: this page is not included in the menu in the toctree
 ..                it is linked from the start page
 
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _whats-new:
 

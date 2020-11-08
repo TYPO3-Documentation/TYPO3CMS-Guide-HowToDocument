@@ -2,15 +2,15 @@
 
 .. -----------------------------------------------------------
    include directive: Here, it includes the file
-   Includes.txt. All files in the documentation project should
+   Includes.rst.txt. All files in the documentation project should
    do this. Use correct path!
    -----------------------------------------------------------
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. ------------------------------------------------------------------
    highlight directive: sets the default language for code-blocks.
-   Usually, default is set to PHP in Includes.txt. Here, we set it to
+   Usually, default is set to PHP in Includes.rst.txt. Here, we set it to
    rst (for reStructuredText).
    ------------------------------------------------------------------
 

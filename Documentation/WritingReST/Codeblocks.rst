@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. _writing-rest-codeblocks-with-syntax-highlighting:
@@ -19,7 +19,7 @@ Quick Reference
 * You can explicitly set the language in the `code-block`, you cannot in the shorthand.
 * If you do not explicitly set the language, the default language (as set with
   the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
-  was used, the default set in :ref:`Includes.txt <includes-txt>` is used.
+  was used, the default set in :ref:`Includes.rst.txt <includes-txt>` is used.
 * It is recommended to use the short form (`::`), and not code-block explicitly.
 * Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
   in a code block.
@@ -43,7 +43,7 @@ The following examples all do the same thing:
             $a = 'b';
 
       You can use this, if the default language is already set to PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.txt
+      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.rst.txt
       <includes-txt>`).
 
 
@@ -66,7 +66,7 @@ The following examples all do the same thing:
             $a = 'b';
 
       You can use this, if you already set the language PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.txt
+      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.rst.txt
       <includes-txt>`).
 
 
@@ -183,7 +183,7 @@ Use codeblock without specifying language::
       $a = 'b';
 
 This uses whatever language has last been set with the :ref:`codeblocks-highlight-directive`
-in the current file or in Includes.txt.
+in the current file or in Includes.rst-txt.
 
 .. _writing-rest-codeblocks-syntactically-correct:
 .. _codeblocks-syntactically-correct:
@@ -251,7 +251,7 @@ Use PHP highlighting::
    .. highlight:: php
 
 For TYPO3 we have adopted the convention that each reStructuredText source file
-imports the :file:`Documentation/Includes.txt` file at the top. And in the
+imports the :file:`Documentation/Includes.rst.txt` file at the top. And in the
 included file - in general - we set PHP as default language for highlighting.
 Exception: In the TypoScript manuals we are using `typoscript` as default.
 

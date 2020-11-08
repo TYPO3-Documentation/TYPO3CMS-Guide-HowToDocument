@@ -1,5 +1,5 @@
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 ==================
 Special Characters
