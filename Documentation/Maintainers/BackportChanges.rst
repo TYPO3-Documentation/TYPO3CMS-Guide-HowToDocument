@@ -61,6 +61,9 @@ reasons:
 If there are more than 1 contributor who committed changes, a
 text about additional authors is automatically added to the commit.
 
+.. seealso::
+
+   * `Configuring commit squashing for pull requests <https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuring-commit-squashing-for-pull-requests>`__
 
 How to backport?
 ================
