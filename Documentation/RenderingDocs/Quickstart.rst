@@ -26,7 +26,7 @@ Prerequisites
 
 Install Docker:
 
-* https://docs.docker.com/install/
+*  https://docs.docker.com/install/
 
 Commands to Render Documentation
 ================================

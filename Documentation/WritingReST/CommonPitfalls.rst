@@ -6,4 +6,4 @@
 
 .. rst-class:: horizbuttons-tip-xxl
 
-- :ref:`This chapter has moved <rest-common-pitfalls>`
+-  :ref:`This chapter has moved <rest-common-pitfalls>`

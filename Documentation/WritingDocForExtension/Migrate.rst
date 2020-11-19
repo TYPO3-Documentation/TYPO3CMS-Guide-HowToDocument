@@ -80,8 +80,8 @@ if the previous step was successful.
    The team will setup the redirects from existing legacy rendering to current
    rendering:
 
-   * legacy URL: `https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
-   * new URL: `https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
+   *  legacy URL: `https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
+   *  new URL: `https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
 
 All future versions will now be rendered, see :ref:`workflow-extension-release`.
 Also some branches will be rendered, see :ref:`supported-branches`.

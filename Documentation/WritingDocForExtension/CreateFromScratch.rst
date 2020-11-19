@@ -17,8 +17,8 @@ Start Extension Documentation From Example Manual
 
 This description uses the example extension manual:
 
-* `repository on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-* `rendered documentation <https://docs.typo3.org/typo3cms/ExtensionManualExample/>`__
+*  `repository on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+*  `rendered documentation <https://docs.typo3.org/typo3cms/ExtensionManualExample/>`__
 
 .. rst-class:: bignums-xxl
 
@@ -40,15 +40,15 @@ This description uses the example extension manual:
 
 #. Add or modify additional files
 
-   * (*required*) Make sure :ref:`composer-json` is up to date.
-   * (*required*) Make sure :ref:`settings-cfg` is up to date.
-   * (*recommended*) :ref:`gitignore-in-filenames` is useful, in order to
-     prevent accidentally commiting the generated documentation in
-     :file:`Documentation-GENERATED-temp` to the Git repository.
-   * (*recommended*) :ref:`editorconfig-in-filenames` is useful, so the
-     recommended :ref:`Coding Guidelines <format-rest-cgl>` will be used within
-     editor or IDE. :ref:`phpstorm-editorconfig` contains further information
-     for PhpStorm.
+   *  (*required*) Make sure :ref:`composer-json` is up to date.
+   *  (*required*) Make sure :ref:`settings-cfg` is up to date.
+   *  (*recommended*) :ref:`gitignore-in-filenames` is useful, in order to
+      prevent accidentally commiting the generated documentation in
+      :file:`Documentation-GENERATED-temp` to the Git repository.
+   *  (*recommended*) :ref:`editorconfig-in-filenames` is useful, so the
+      recommended :ref:`Coding Guidelines <format-rest-cgl>` will be used within
+      editor or IDE. :ref:`phpstorm-editorconfig` contains further information
+      for PhpStorm.
 
    .. code-block:: bash
 

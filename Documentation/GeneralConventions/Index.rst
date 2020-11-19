@@ -79,7 +79,7 @@ be found in the subchapters.
 
    .. seealso::
 
-      * :ref:`format-rest-cgl`
+      *  :ref:`format-rest-cgl`
 
 #. Refer to elements in the GUI with :rst:`:guilabel:`
 

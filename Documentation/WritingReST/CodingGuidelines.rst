@@ -11,4 +11,4 @@ This file was moved to
 
 .. rst-class:: horizbuttons-striking-m
 
-- :ref:`format-rest-cgl`
+-  :ref:`format-rest-cgl`

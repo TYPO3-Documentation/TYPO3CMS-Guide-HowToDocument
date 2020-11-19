@@ -20,17 +20,17 @@ work fine on all platforms.
    The workflow with Docker Compose is still being tested and optimized.
    Please help to improve our description by:
 
-   * Testing the workflow. Report your results in this
-     `issue <https://github.com/t3docs/docker-render-documentation/issues/26>`__
-   * Improving this page if you can
+   *  Testing the workflow. Report your results in this
+      `issue <https://github.com/t3docs/docker-render-documentation/issues/26>`__
+   *  Improving this page if you can
 
 .. rst-class:: bignums-xxl
 
 
 #. Install Docker and Docker Compose
 
-   * https://docs.docker.com/install/
-   * https://docs.docker.com/compose/install/
+   *  https://docs.docker.com/install/
+   *  https://docs.docker.com/compose/install/
 
 #. Create a docker-compose.yml file
 

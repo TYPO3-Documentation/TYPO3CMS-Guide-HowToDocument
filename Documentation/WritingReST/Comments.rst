@@ -38,14 +38,12 @@ Example::
 
    .. here we start an unordered list:
 
-   - one
+   -  one
 
-   - two
+   -  two
 
-     .. this is another comment. Since it's within the list it is aligned
-        with 'two', which is the contents of the second list item
+      .. this is another comment. Since it's within the list it is aligned
+         with 'two', which is the contents of the second list item
 
-   - three
-
-
+   -  three
 

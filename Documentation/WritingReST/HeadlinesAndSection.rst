@@ -75,8 +75,8 @@ Syntax
 Length of Underlines
 --------------------
 
-The length of the underlines must at least have the length of the text. It 
-may be longer, not shorter. 
+The length of the underlines must at least have the length of the text. It
+may be longer, not shorter.
 
 Example 1: This Works
 ~~~~~~~~~~~~~~~~~~~~~
@@ -86,7 +86,7 @@ Example 1: This Works
    =========
    Example 1
    =========
-   
+
 Example 2: This Works Too
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -105,15 +105,15 @@ Example 3: This Does not Work
    Example 1
    =======
 
-   
+
 
 Additional Information
 ======================
 
-* **Docutils:** Read about `sections
-  <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections>`__
-  in the Docutils documentation for the most fundamental description.
+*  **Docutils:** Read about `sections
+   <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections>`__
+   in the Docutils documentation for the most fundamental description.
 
-* **Sphinx** is explaining `sections
-  <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
-  as well.
+*  **Sphinx** is explaining `sections
+   <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
+   as well.

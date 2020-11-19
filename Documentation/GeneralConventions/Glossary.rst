@@ -12,13 +12,13 @@ Spelling reference, preferred terms & glossary
 
 This section has 3 goals:
 
-* Define the **spelling**. You can use this list to check how a special TYPO3 term is
-  spelled
-* **Preferred terms**: Sometimes there are more terms for one thing, which basically
-  mean the same thing, such as "third party extension" and "community extension.
-  Here, we define the preferred term.
-* **Glossary**: Sometimes a term may have several different meanings. Here we also
-  define the meaning for some difficult edge cases.
+*  Define the **spelling**. You can use this list to check how a special TYPO3 term is
+   spelled
+*  **Preferred terms**: Sometimes there are more terms for one thing, which basically
+   mean the same thing, such as "third party extension" and "community extension.
+   Here, we define the preferred term.
+*  **Glossary**: Sometimes a term may have several different meanings. Here we also
+   define the meaning for some difficult edge cases.
 
 In this list, the terms in the header are spelled **exactly** as they should be spelled.
 This means that the first word is sometimes lowercased. This is something you should not
@@ -114,7 +114,7 @@ Spelling:
    Examples:
 
    *  "When you create the documentation for your extension, make sure ..."
-   * "... includes all TYPO3 extensions that are uploaded to TER"
+   *  "... includes all TYPO3 extensions that are uploaded to TER"
 
 Extension Manager
 -----------------
@@ -127,7 +127,7 @@ Flexform
 
 Spelling
    Flexform (singular), Flexforms (plural)
-   
+
 
 Fluid
 -----
@@ -243,8 +243,8 @@ Spelling:
 More information
 ----------------
 
-* See `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
-  for discussion about spelling.
-* See open issue about `Clarifying terms <https://github.com/TYPO3-Documentation/T3DocTeam/issues/77>`__
-* Open related issue
-  `Several changes for making TYPO3 concepts easier to understand for new users <https://github.com/TYPO3-Documentation/T3DocTeam/issues/120>`__
+*  See `Issue on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/36>`__
+   for discussion about spelling.
+*  See open issue about `Clarifying terms <https://github.com/TYPO3-Documentation/T3DocTeam/issues/77>`__
+*  Open related issue
+   `Several changes for making TYPO3 concepts easier to understand for new users <https://github.com/TYPO3-Documentation/T3DocTeam/issues/120>`__

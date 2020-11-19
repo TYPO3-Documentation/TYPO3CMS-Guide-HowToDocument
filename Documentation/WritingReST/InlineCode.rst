@@ -144,21 +144,21 @@ within sentences is *inline code*.
 
 *inline code*
 
-- is styled somewhat differently,
-- has **no** syntax highlighting,
-- does **not** need to be syntactically correct,
-- can be compared to `<span>...</span>` tags in html,
-- and is made up by self-defined names. For example, look at the :file:`../../Includes.txt`
-  file to see how `:php:`, `:ts:` are defined.
+-  is styled somewhat differently,
+-  has **no** syntax highlighting,
+-  does **not** need to be syntactically correct,
+-  can be compared to `<span>...</span>` tags in html,
+-  and is made up by self-defined names. For example, look at the :file:`../../Includes.txt`
+   file to see how `:php:`, `:ts:` are defined.
 
 In contrast, *code-blocks*
 
-- appear "as a box",
-- can have syntax highlighting,
-- need to be syntactically correct in order to have highlighting,
-- can be compared to `<pre>...</pre>` blocks in html,
-- use predefined names for the different languages that come with Pygments,
-  the syntax highlighter.
+-  appear "as a box",
+-  can have syntax highlighting,
+-  need to be syntactically correct in order to have highlighting,
+-  can be compared to `<pre>...</pre>` blocks in html,
+-  use predefined names for the different languages that come with Pygments,
+   the syntax highlighter.
 
 Definition of Textroles
 ========================
