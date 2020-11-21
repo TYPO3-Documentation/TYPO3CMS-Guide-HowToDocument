@@ -410,7 +410,6 @@ Example:
    <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
 
 .. literalinclude:: ../Includes.rst.txt
-.. literalinclude:: ../Includes.rst.txt
    :language: rst
 
 
