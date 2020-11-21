@@ -121,4 +121,4 @@ Scroll down to "Improving documentation":
 Next Steps
 ==========
 
-* Look at :ref:`docs-official-how-you-can-help` for more ways to contribute
+*  Look at :ref:`docs-official-how-you-can-help` for more ways to contribute

@@ -47,7 +47,7 @@ Example, how you can point out **deprecations**::
 
 New **feature**::
 
-   .. versionadded:: 10.2	
+   .. versionadded:: 10.2
       Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
       event dispatching system.
 
@@ -59,8 +59,8 @@ Changes::
 
 Further information:
 
-* see the open issue: `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
-* General section about reST CGL: :ref:`version-hints`
+*  see the open issue: `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+*  General section about reST CGL: :ref:`version-hints`
 
 
 Link to changelog
@@ -78,7 +78,7 @@ For this to work, t3core must be defined in :file:`Settings.cfg`
 Issues
 ======
 
-* It is not necessary to create an issue for every change.
+*  It is not necessary to create an issue for every change.
 
 Commit messages
 ===============
@@ -99,13 +99,13 @@ the documentation is necessary in current master (10) and also in 9.5 branch.
 
 If this is the case, it is recommended to:
 
-* apply the change to the lower version (9.5 in our example) first, and then create
-  another PR for the higher version making necessary additional changes. This is the
-  reverse order of what is being used in the core!
-* The person merging the commit should take care of merging into other branches as well
-  (in case that is necessary). This is the same convention as in the core.
-* The changes can be bundled into one commit and the commit / PR can have a subject
-  such as:
+*  apply the change to the lower version (9.5 in our example) first, and then create
+   another PR for the higher version making necessary additional changes. This is the
+   reverse order of what is being used in the core!
+*  The person merging the commit should take care of merging into other branches as well
+   (in case that is necessary). This is the same convention as in the core.
+*  The changes can be bundled into one commit and the commit / PR can have a subject
+   such as:
 
 .. code-block:: none
 
@@ -142,9 +142,9 @@ Work in progress
 Several suggestions have been made to improve the process but these still require
 more work or a decision, e.g.
 
-* `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
-* `Link to changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__
-* `How can we get changes added to documentation early? And what is master: master or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__
-* `Add information when page / manual was last reviewed and what state it is in <https://github.com/TYPO3-Documentation/T3DocTeam/issues/73>`__
-* `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__
+*  `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+*  `Link to changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__
+*  `How can we get changes added to documentation early? And what is master: master or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__
+*  `Add information when page / manual was last reviewed and what state it is in <https://github.com/TYPO3-Documentation/T3DocTeam/issues/73>`__
+*  `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__
 

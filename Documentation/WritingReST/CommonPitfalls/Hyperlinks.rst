@@ -84,4 +84,4 @@ How this looks:
 Additional Information
 ======================
 
-* :ref:`external-links`
+*  :ref:`external-links`

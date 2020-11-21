@@ -21,7 +21,7 @@ Whats New in This Guide
 NEW: Conventions for Updating Documentation
 -------------------------------------------
 
-* :ref:`howto-update-docs`
+*  :ref:`howto-update-docs`
 
 
 
@@ -126,10 +126,10 @@ More News in 2018
 ------------------
 
 
-* Nov 26, 2018 :ref:`docs-contribute-github-method`
-* Oct 21, 2018 :ref:`general-conventions-commit-messages`
-* July 13, 2018 :ref:`rendering-docs-troubleshooting`
-* July 13, 2018 :ref:`basic-principles`
-* July 13, 2018 :ref:`general-conventions`
-* July 13, 2018 :ref:`rest-common-pitfalls` for help on avoiding common errors when working with reST
-* July 23, 2018 :ref:`youtube-videos`
+*  Nov 26, 2018 :ref:`docs-contribute-github-method`
+*  Oct 21, 2018 :ref:`general-conventions-commit-messages`
+*  July 13, 2018 :ref:`rendering-docs-troubleshooting`
+*  July 13, 2018 :ref:`basic-principles`
+*  July 13, 2018 :ref:`general-conventions`
+*  July 13, 2018 :ref:`rest-common-pitfalls` for help on avoiding common errors when working with reST
+*  July 23, 2018 :ref:`youtube-videos`

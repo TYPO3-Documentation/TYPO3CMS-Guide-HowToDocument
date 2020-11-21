@@ -64,10 +64,10 @@ and fix the problem.
 
 For example:
 
-* `Issues for this guide "Writing Documentation"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
-* `Issues for "Getting Started Tutorial"
-  <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
+*  `Issues for this guide "Writing Documentation"
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+*  `Issues for "Getting Started Tutorial"
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
 
 Find Issues for a Specific Manual
@@ -108,22 +108,22 @@ Here are some links to GitHub issues in `TYPO3-Documentation <https://github.com
 
 For new contributors:
 
-* `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__ (Link to GitHub)
+*  `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__ (Link to GitHub)
 
 For contributors:
 
-* `All open, unassigned issues (without team, theme etc.) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
+*  `All open, unassigned issues (without team, theme etc.) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
 
 For team members and advanced contributors:
 
-* `All open issues
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (Link to GitHub)
-* `All open, unassigned issues
-  <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__ (Link to GitHub)
+*  `All open issues
+   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (Link to GitHub)
+*  `All open, unassigned issues
+   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__ (Link to GitHub)
 
 The Docker image for rendering is in the organization **t3docs** (instead of TYPO3-Documentation):
 
-* `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
+*  `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
 
 
 
@@ -165,22 +165,22 @@ Anyone is welcome to review open pull requests!
 
 In **TYPO3-Documentation**:
 
-* `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-desc>`__ (Link to GitHub)
+*  `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-desc>`__ (Link to GitHub)
 
 In **t3docs** (Docker image):
 
-* `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__ (Link to GitHub)
+*  `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__ (Link to GitHub)
 
 About reviewing pull requests, you can look in the GitHub help pages:
 
 .. seealso::
 
-    * `About pull request reviews <https://help.github.com/en/articles/about-pull-request-reviews>`__ (GitHub)
-    * `Commenting on a pull request <https://help.github.com/en/articles/commenting-on-a-pull-request>`__ (GitHub)
+    *  `About pull request reviews <https://help.github.com/en/articles/about-pull-request-reviews>`__ (GitHub)
+    *  `Commenting on a pull request <https://help.github.com/en/articles/commenting-on-a-pull-request>`__ (GitHub)
 
 .. tip::
 
    If you are reviewing a pull request and want to leave comments, make sure to
    `mark the line <https://help.github.com/en/articles/commenting-on-a-pull-request>`__
    in the PR.
-   
+

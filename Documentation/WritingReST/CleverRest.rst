@@ -52,18 +52,18 @@ multiple empty lines:
    Message
       *
 
-        + Hello
-        + World!
+         +  Hello
+         +  World!
 
       *
 
-        + Hello
-        + World!
+         +  Hello
+         +  World!
 
       *
 
-        + Hello
-        + World!
+         +  Hello
+         +  World!
 
 
 **Result:**
@@ -73,15 +73,15 @@ And this is how it looks like:
 Message
    *
 
-     + Hello
-     + World!
+      +  Hello
+      +  World!
+
    *
 
-     + Hello
-     + World!
+      +  Hello
+      +  World!
+
    *
 
-     + Hello
-     + World!
-
-
+      +  Hello
+      +  World!

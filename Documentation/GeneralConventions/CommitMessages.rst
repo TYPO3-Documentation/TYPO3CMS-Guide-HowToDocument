@@ -13,18 +13,18 @@ are recommendations.
 Commit message recommendations
 ==============================
 
-* Write commit messages that are **clear**, **concise** and **meaningful**
-* Use imperative form: "Fix typo" (instead of "Fixed typo"). This is
-  seen from the person, that is going to apply your patch: What will the patch do?
-  Fix typo!
-* As in the TYPO3 core commit message rules, try to keep first line below 52 characters
-  if possible, but below 80 in any case.
-* A commit message for the docs should consists of a subject line (first line).
-  More lines (separated by first line with an empty new line) are optional.
+*  Write commit messages that are **clear**, **concise** and **meaningful**
+*  Use imperative form: "Fix typo" (instead of "Fixed typo"). This is
+   seen from the person, that is going to apply your patch: What will the patch do?
+   Fix typo!
+*  As in the TYPO3 core commit message rules, try to keep first line below 52 characters
+   if possible, but below 80 in any case.
+*  A commit message for the docs should consists of a subject line (first line).
+   More lines (separated by first line with an empty new line) are optional.
 
 Issues
 ------
-  
+
 If an issue exists, link to it, by using for example "Resolves: #issue number", e.g.::
 
   Resolves: #4
@@ -32,12 +32,12 @@ If an issue exists, link to it, by using for example "Resolves: #issue number", 
 "Resolves" will automatically close the issue, using "Related" will not.
 
 You can also cross link to issues in other repositories in TYPO3-Documentation::
-   
+
    Related: TYPO3-Documentation/T3DocTeam#121
 
 .. seealso::
 
-   * Stack Overflow: `Link to the issue number on GitHub within a commit message <https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message>`__
+   *  Stack Overflow: `Link to the issue number on GitHub within a commit message <https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message>`__
 
 Releases
 --------
@@ -115,7 +115,7 @@ typically use these conventions.
 Additional Information
 ======================
 
-* `How to write a git commit message <https://chris.beams.io/posts/git-commit/>`__
-* :ref:`t3contribute:commitmessage` in TYPO3 Contribution Guide - Core Development
+*  `How to write a git commit message <https://chris.beams.io/posts/git-commit/>`__
+*  :ref:`t3contribute:commitmessage` in TYPO3 Contribution Guide - Core Development
 
 

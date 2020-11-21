@@ -30,23 +30,23 @@ applies to reading online documentation as well.
 
 So:
 
-* Readers on the web often do not read, they scan (skim).
-* Additionally, they often do not read entire manuals, they google for
-  the information they are looking for and start reading there.
+*  Readers on the web often do not read, they scan (skim).
+*  Additionally, they often do not read entire manuals, they google for
+   the information they are looking for and start reading there.
 
 
 Tip 1: Write for online reading
 ===============================
 
-* Make it easier for the reader who has not read previous pages.
-* Make sure, the title is clear.
-* Text with good formatting is easier to scan (see the next two 
-  tips)
-  
+*  Make it easier for the reader who has not read previous pages.
+*  Make sure, the title is clear.
+*  Text with good formatting is easier to scan (see the next two
+   tips)
+
 Tip 2: Use paragraphs
 =====================
 
-In any case, avoid long "walls of text". Give the eye something to cling to.  
+In any case, avoid long "walls of text". Give the eye something to cling to.
 
 Tip 3: Use subheaders
 =====================
@@ -133,13 +133,13 @@ a high number of users).
 Tip 9: Read other documentation
 ===============================
 
-* Ask yourself questions: What works for you, what doesn't?
+*  Ask yourself questions: What works for you, what doesn't?
 
 Here are some tips:
 
-* `Docker <https://docs.docker.com/get-started/>`__
-* Google Developer: `Get Started With Analyzing Runtime Performance <https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/>`__
-* `use TYPO3 blog <https://usetypo3.com/9lts-api-classes.html>`__
+*  `Docker <https://docs.docker.com/get-started/>`__
+*  Google Developer: `Get Started With Analyzing Runtime Performance <https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/>`__
+*  `use TYPO3 blog <https://usetypo3.com/9lts-api-classes.html>`__
 
 
 Tip 10: Read your own content
@@ -153,15 +153,15 @@ When you write new content, finish it, **wait a few days**, and then read it aga
 Additional Resources
 ====================
 
-* Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
-  (May 19, 2017) - A very good blogpost about different kind of manuals.
-* `How to fix the 7 most common glitches in technical writing <https://www.writing-skills.com/the-7-most-common-mistakes-in-technical-writing-and-how-to-fix-them>`_
-* `"8 Tips for Better Readability" by Roby Collinge
-  <https://usabilla.com/blog/8-guidelines-for-better-readability-on-the-web/>`__
-  is a very good resource. However, some of the tips do not concern you as
-  a writer. They are only relevant for theme development. As a writer, skip
-  right down to tip 5.
-* `Strunk & White: "The Elements of Style <http://www.jlakes.org/ch/web/The-elements-of-style.pdf>`__
-  is a classic. Many principles still apply.
+*  Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
+   (May 19, 2017) - A very good blogpost about different kind of manuals.
+*  `How to fix the 7 most common glitches in technical writing <https://www.writing-skills.com/the-7-most-common-mistakes-in-technical-writing-and-how-to-fix-them>`_
+*  `"8 Tips for Better Readability" by Roby Collinge
+   <https://usabilla.com/blog/8-guidelines-for-better-readability-on-the-web/>`__
+   is a very good resource. However, some of the tips do not concern you as
+   a writer. They are only relevant for theme development. As a writer, skip
+   right down to tip 5.
+*  `Strunk & White: "The Elements of Style <http://www.jlakes.org/ch/web/The-elements-of-style.pdf>`__
+   is a classic. Many principles still apply.
 
 You can find more in the :ref:`resources` section.

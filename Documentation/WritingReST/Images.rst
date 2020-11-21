@@ -24,19 +24,19 @@ additional parameters must be indented one level (add 3 spaces to indent).
 
 Recommended parameters for images:
 
-* `:class: with-shadow`
+*  `:class: with-shadow`
 
 Alternatively, a border can be defined:
 
-* `:class: with-border`
+*  `:class: with-border`
 
 
 Optional parameters for images:
 
-* `:alt:` : alt text
-* `:target:` link target
-* `:width:` : width of image, use for example px (e.g. `:width: 100px`
-* `:scale:` : scale images, e.g. `:scale: 65`
+*  `:alt:` : alt text
+*  `:target:` link target
+*  `:width:` : width of image, use for example px (e.g. `:width: 100px`
+*  `:scale:` : scale images, e.g. `:scale: 65`
 
 Additional parameters can be found on the docutils page `reStructuredText Directives
 <http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__

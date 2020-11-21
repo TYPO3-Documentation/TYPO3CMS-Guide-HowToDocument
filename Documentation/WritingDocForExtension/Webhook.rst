@@ -11,9 +11,9 @@ This section describes how to add webhooks for auto rendering to a repository.
 The system supports Git as VCS (Version Control System),
 and the following hosters:
 
-- :ref:`webhook-github`
-- :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
-- :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
+-  :ref:`webhook-github`
+-  :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
+-  :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
 .. contents:: Table of Contents
    :local:

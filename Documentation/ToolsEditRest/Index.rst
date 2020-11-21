@@ -14,24 +14,24 @@ with the :ref:`docs-contribute-git-docker`.
 When editing reST files locally, you should use an editor or IDE with
 good support for syntax highlighting and marking errors in reST.
 
-* `PhpStorm <https://www.jetbrains.com/phpstorm/>`__ is commonly used by
-  developers in the TYPO3 community. It does however cost money. PhpStorm
-  comes with a number of plugins for TYPO3, e.g. for TypoScript and Fluid.
-* **Visual Studio Code** also comes with plugins for TYPO3 and for reStructuredText.
-  And it is free.
+*  `PhpStorm <https://www.jetbrains.com/phpstorm/>`__ is commonly used by
+   developers in the TYPO3 community. It does however cost money. PhpStorm
+   comes with a number of plugins for TYPO3, e.g. for TypoScript and Fluid.
+*  **Visual Studio Code** also comes with plugins for TYPO3 and for reStructuredText.
+   And it is free.
 
 Other alternatives can be found in the "Free Editors" section of
 `StackOverflow: reStructuredText tool support <https://stackoverflow.com/a/2747041/2444812>`__.
 
 The editor or IDE should ideally have the following features:
 
-* syntax highlighting for reST
-* show syntax errors
-* provide possibility to use (configurable) code snippets for easy insertion of
-  directives
-* provide keyboard shortcuts and configurable commands for running
-  Docker
-* built in spell checking (English)
+*  syntax highlighting for reST
+*  show syntax errors
+*  provide possibility to use (configurable) code snippets for easy insertion of
+   directives
+*  provide keyboard shortcuts and configurable commands for running
+   Docker
+*  built in spell checking (English)
 
 Setup your editor / IDE to use the .editorconfig file, which already
 exists in most documentation repositories. This will set up your
@@ -59,8 +59,8 @@ The LeXtudio extension comes with some built in code snippets.
 
 You can:
 
-* show all snippets by pressing :kbd:`CTRL+Space`
-* start entering the beginning of a snippet name and press tab
+*  show all snippets by pressing :kbd:`CTRL+Space`
+*  start entering the beginning of a snippet name and press tab
 
 .. tip::
 
@@ -91,9 +91,9 @@ Here is an example:
             "description": "image with parameters"
        }
 
-* You can enter the snippet by typing imgf and then TAB
-* The $1, $2 etc. mark the places where further TABs will take you.
-  Use this if extra text needs to be entered
+*  You can enter the snippet by typing imgf and then TAB
+*  The $1, $2 etc. mark the places where further TABs will take you.
+   Use this if extra text needs to be entered
 
 .. image:: ../videos/vscodesnippets2.gif
    :class: with-shadow

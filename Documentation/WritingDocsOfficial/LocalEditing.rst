@@ -117,9 +117,9 @@ are specific to TYPO3 documentation.
 
    Render with Docker in order to test the changes:
 
-   * :ref:`render-documenation-with-docker` (works best on Linux)
-   * :ref:`render-with-docker-compose` (should work better on MacOS
-     or Windows, but is still being tested)
+   *  :ref:`render-documenation-with-docker` (works best on Linux)
+   *  :ref:`render-with-docker-compose` (should work better on MacOS
+      or Windows, but is still being tested)
 
 8. Commit
 
@@ -163,7 +163,7 @@ merged, you can reload the page (which you fixed) in your browser.
 Next Steps
 ==========
 
-* Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
+*  Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
 
 
 .. _contribute-edit-locally-more-changes:
@@ -188,8 +188,8 @@ You local repository is based on the forked repository in your workspace.
 
 For example,
 
-* URL of fork:  `git@github.com:<your username>/TYPO3CMS-Guide-HowToDocument.git`
-* original URL: `git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
+*  URL of fork:  `git@github.com:<your username>/TYPO3CMS-Guide-HowToDocument.git`
+*  original URL: `git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
 
 So, running the following will not get the latest changes:
 
@@ -231,17 +231,17 @@ More information
 
 For more information in this guide:
 
-* :ref:`Formatting-with-reST`
-* `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
+*  :ref:`Formatting-with-reST`
+*  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
 
 
 For more information about GitHub see the help pages on GitHub or other
 resources, for example:
 
-* `Creating a pull request from a fork
-  <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
-* `How to Create a Pull Request on GitHub
-  <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
-* `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
+*  `Creating a pull request from a fork
+   <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
+*  `How to Create a Pull Request on GitHub
+   <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
+*  `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
 
 

@@ -40,5 +40,5 @@ This is normal text. ** This is bold text.**
 Additional Information
 ======================
 
-* `Docutils cheat-sheet for reStructuredText: Inline markup
-  <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__
+*  `Docutils cheat-sheet for reStructuredText: Inline markup
+   <http://docutils.sourceforge.net/docs/user/rst/quickref.html#inline-markup>`__

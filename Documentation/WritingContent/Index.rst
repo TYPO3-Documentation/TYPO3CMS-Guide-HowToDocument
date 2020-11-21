@@ -8,8 +8,8 @@ How to write good content
 ==============================
 
 
-* Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
-  (May 19, 2017) - A very good blogpost about different kind of manuals.
+*  Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
+   (May 19, 2017) - A very good blogpost about different kind of manuals.
 
 .. figure:: ../images/content-types.png
    :class: with-shadow

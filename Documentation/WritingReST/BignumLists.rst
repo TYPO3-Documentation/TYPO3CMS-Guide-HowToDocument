@@ -39,9 +39,9 @@ With XXL Big Numbers
 
 3. THREE Three three
 
-   * Well, here we are again, old lovely...
-   * You may now serve the fish.
-   * Fish. Very good, Miss Sophie. Did you enjoy the soup?
+   *  Well, here we are again, old lovely...
+   *  You may now serve the fish.
+   *  Fish. Very good, Miss Sophie. Did you enjoy the soup?
 
 
 .. _big-nums:

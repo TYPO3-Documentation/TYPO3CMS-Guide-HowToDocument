@@ -43,12 +43,12 @@ This chapter walks you through extension documentation.
 It provides links to additional information,
 but you may also want to look at the following basic resources:
 
-* If necessary, ask for help as explained in :ref:`how-to-get-help`.
-* :ref:`Coding Guidelines <format-rest-cgl>`
-* :ref:`general-conventions-dir-and-filenames`
-* :ref:`rest-cheat-sheet`
-* :ref:`render-documenation-with-docker`
-* :ref:`about-typo3-extensions`
+*  If necessary, ask for help as explained in :ref:`how-to-get-help`.
+*  :ref:`Coding Guidelines <format-rest-cgl>`
+*  :ref:`general-conventions-dir-and-filenames`
+*  :ref:`rest-cheat-sheet`
+*  :ref:`render-documenation-with-docker`
+*  :ref:`about-typo3-extensions`
 
 
 .. toctree::

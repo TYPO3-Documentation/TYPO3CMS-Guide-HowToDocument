@@ -64,7 +64,7 @@ Write New Content
 
 *--* **new**, *added August 10, 2019*
 
-* :ref:`Write missing content <github-new-content>`.
+*  :ref:`Write missing content <github-new-content>`.
 
 
 
@@ -84,8 +84,8 @@ cheat sheets or others.
 
 Here are some examples:
 
-* :ref:`Check out sequence diagram on new page about request handling <t3coreapi:request-handling>`
-* :ref:`System Overview in "TYPO3 Explained" contains a diagram <overview>`
+*  :ref:`Check out sequence diagram on new page about request handling <t3coreapi:request-handling>`
+*  :ref:`System Overview in "TYPO3 Explained" contains a diagram <overview>`
 
 
 .. figure:: ../images/diagram.png
@@ -109,7 +109,7 @@ Create Cheat Sheets
 
 Look at the existing cheat sheets and check if they are up to date:
 
-* `List of cheat sheets <https://docs.typo3.org/Home/CheatSheets.html>`__
+*  `List of cheat sheets <https://docs.typo3.org/Home/CheatSheets.html>`__
 
 You can create further cheat sheets and add them to this list.
 
@@ -153,15 +153,15 @@ issue for it, if you cannot make the changes yourself.
 
 You can for example start with:
 
-* :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
-  is up to date and technically correct. Also, the text needs to be shortened in some parts and
-  language improvements are necessary (grammar, style). For the master branch, you can
-  `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
-  once you have started reviewing. This makes it easier for other reviewers to just skip the parts
-  that are already ok.
-* :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
-  "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
-  `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
+*  :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
+   is up to date and technically correct. Also, the text needs to be shortened in some parts and
+   language improvements are necessary (grammar, style). For the master branch, you can
+   `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
+   once you have started reviewing. This makes it easier for other reviewers to just skip the parts
+   that are already ok.
+*  :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
+   "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
+   `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
 
 .. tip::
 
@@ -176,7 +176,7 @@ too much to do for one person).
 
 You can check here to see the current review status of each manual:
 
-* :ref:`t3docteam:overview-of-manuals-review`
+*  :ref:`t3docteam:overview-of-manuals-review`
 
 
 
@@ -207,11 +207,11 @@ that you found interesting or that helped you in any way.
 
 Remind people, that everyone can contribute!
 
-* `Tweet <https://twitter.com/>`__
-  (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__).
-  Additionally, you can use `#T3Docs <https://twitter.com/search?q=%23T3Docs>`__,
-  `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
-  and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
+*  `Tweet <https://twitter.com/>`__
+   (hashtag: `#TYPO3 <https://twitter.com/search?q=%23TYPO3>`__).
+   Additionally, you can use `#T3Docs <https://twitter.com/search?q=%23T3Docs>`__,
+   `#T3Contribute <https://twitter.com/search?q=%23T3Contribute>`__,
+   and `@T3DocTeam <https://twitter.com/T3docTeam>`__.
 
 Review documentation
 ====================
@@ -230,9 +230,9 @@ Telling a real life story may help others to make the decision to
 contribute. It's your story, so you decide what's in it, but here
 are some ideas to get you started:
 
-* What gave you the motivation to contribute?
-* How did you benefit from contributing? For example, what did you learn?
-* What advice can you give others?
+*  What gave you the motivation to contribute?
+*  How did you benefit from contributing? For example, what did you learn?
+*  What advice can you give others?
 
 .. _how-you-can-help-new-content:
 
@@ -246,9 +246,9 @@ be created at all?
 
 If this is the case, either:
 
-* Raise the question in the #typo3-documentation channel on Slack
-* Or, add a comment with your suggestion to this general issue:
-  `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
+*  Raise the question in the #typo3-documentation channel on Slack
+*  Or, add a comment with your suggestion to this general issue:
+   `What content is missing in the documentation? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/85>`__
 
 
 .. _how-you-can-help-changelog:

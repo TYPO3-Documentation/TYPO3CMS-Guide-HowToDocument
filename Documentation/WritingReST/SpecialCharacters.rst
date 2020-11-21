@@ -20,30 +20,30 @@ Some Lists of Characters
 
 ARROW
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=arrow&.submit=Suchen>`__
-   :sep:`|` ⃪ ⃮ ⃯ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ 
-   ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨ 
+   :sep:`|` ⃪ ⃮ ⃯ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙
+   ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨
    ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷
-   ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆ 
-   ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛ 
-   ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥ 
-   ⇦ ⇧ ⇨ ⇩ ⇪ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰ 
-   ⇱ ⇲ ⇳ ⇴ ⇵ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⌁ 
-   ⍇ ⍈ ⍐ ⍗ ⍼ ⎋ 
-   ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➥ ➦ ➧ ➨ 
-   ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ 
-   ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾ 
-   ⟰ ⟱ ⟲ ⟳ ⟴ 
-   ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾ 
-   ⟿ ⤀ ⤁ ⤂ ⤃ ⤄ ⤅ ⤆ ⤇ ⤈ ⤉ ⤊ ⤋ 
-   ⤌ ⤍ ⤎ ⤏ ⤐ ⤑ ⤒ ⤓ ⤔ ⤕ ⤖ ⤗ ⤘ ⤙ ⤚ ⤛ ⤜ ⤝ ⤞ ⤟ ⤠ 
-   ⤡ ⤢ ⤣ ⤤ ⤥ ⤦ ⤧ ⤨ ⤩ ⤪ ⤭ ⤮ ⤯ ⤰ ⤱ ⤲ 
-   ⤳ ⤴ ⤵ ⤶ ⤷ ⤸ ⤹ ⤺ ⤻ ⤼ ⤽ ⤾ ⤿ 
-   ⥀ ⥁ ⥂ ⥃ ⥄ ⥅ ⥆ ⥇ ⥈ ⥉ ⥰ ⥱ ⥲ ⥳ ⥴ ⥵ 
-   ⥶ ⥷ ⥸ ⥹ ⥺ ⥻ ⦨ ⦩ ⦪ ⦫ ⦬ ⦭ ⦮ ⦯ ⦳ ⦴ ⦽ ⧪ ⧬ ⧭ ⨗ 
-   ⬀ ⬁ ⬂ ⬃ ⬄ 
-   ⬅ ⬆ ⬇ ⬈ ⬉ ⬊ ⬋ ⬌ ⬍ 
-   ⬎ ⬏ ⬐ ⬑ ⬰ ⬲ ⬳ ⬴ ⬵ ⬶ ⬷ ⬸ 
-   ⬹ ⬺ ⬻ ⬼ ⬽ ⬾ ⬿ ⭀ ⭁ ⭂ ⭃ ⭄ 
+   ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆
+   ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛
+   ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥
+   ⇦ ⇧ ⇨ ⇩ ⇪ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰
+   ⇱ ⇲ ⇳ ⇴ ⇵ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⌁
+   ⍇ ⍈ ⍐ ⍗ ⍼ ⎋
+   ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➥ ➦ ➧ ➨
+   ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲
+   ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾
+   ⟰ ⟱ ⟲ ⟳ ⟴
+   ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾
+   ⟿ ⤀ ⤁ ⤂ ⤃ ⤄ ⤅ ⤆ ⤇ ⤈ ⤉ ⤊ ⤋
+   ⤌ ⤍ ⤎ ⤏ ⤐ ⤑ ⤒ ⤓ ⤔ ⤕ ⤖ ⤗ ⤘ ⤙ ⤚ ⤛ ⤜ ⤝ ⤞ ⤟ ⤠
+   ⤡ ⤢ ⤣ ⤤ ⤥ ⤦ ⤧ ⤨ ⤩ ⤪ ⤭ ⤮ ⤯ ⤰ ⤱ ⤲
+   ⤳ ⤴ ⤵ ⤶ ⤷ ⤸ ⤹ ⤺ ⤻ ⤼ ⤽ ⤾ ⤿
+   ⥀ ⥁ ⥂ ⥃ ⥄ ⥅ ⥆ ⥇ ⥈ ⥉ ⥰ ⥱ ⥲ ⥳ ⥴ ⥵
+   ⥶ ⥷ ⥸ ⥹ ⥺ ⥻ ⦨ ⦩ ⦪ ⦫ ⦬ ⦭ ⦮ ⦯ ⦳ ⦴ ⦽ ⧪ ⧬ ⧭ ⨗
+   ⬀ ⬁ ⬂ ⬃ ⬄
+   ⬅ ⬆ ⬇ ⬈ ⬉ ⬊ ⬋ ⬌ ⬍
+   ⬎ ⬏ ⬐ ⬑ ⬰ ⬲ ⬳ ⬴ ⬵ ⬶ ⬷ ⬸
+   ⬹ ⬺ ⬻ ⬼ ⬽ ⬾ ⬿ ⭀ ⭁ ⭂ ⭃ ⭄
    ⭅ ⭆ ⭇ ⭈ ⭉ ⭊ ⭋ ⭌ ⽮ ꜛ ꜜ ￩ ￪ ￫ ￬
    :sep:`|`
 
@@ -59,8 +59,8 @@ CHECK
 
 CIRCLED DIGIT
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+digit&.submit=Suchen>`__
-   :sep:`|` ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ 
-   :sep:`|` 
+   :sep:`|` ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨
+   :sep:`|`
 
 CIRCLED LATIN
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=latin&.submit=Suchen>`__
@@ -76,12 +76,12 @@ CIRCLED NUMBER
 DOUBLE CIRCLED DIGIT
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=double+circled+digit&.submit=Suchen>`__
    :sep:`|` ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽
-   :sep:`|` 
+   :sep:`|`
 
 NEGATIVE CIRCLED DIGIT
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+digit&.submit=Suchen>`__
    :sep:`|` ⓿ ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾
-   :sep:`|` 
+   :sep:`|`
 
 NEGATIVE CIRCLED NUMBER
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+number&.submit=Suchen>`__
@@ -93,7 +93,7 @@ QUOTATION
    :sep:`|` "«»―‘’‚‛“”„‟‹›❛❜❝❞❟❠❮❯〝〞〟＂
    :sep:`|` " « » ― ‘ ’ ‚ ‛ “ ” „ ‟ ‹ › ❛ ❜ ❝ ❞ ❟ ❠ ❮ ❯ 〝 〞 〟 ＂
    :sep:`|`
-   
+
 PARENTHESIZED LATIN
    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=PARENTHESIZED+latin&.submit=Suchen>`__
    :sep:`|` ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵
@@ -113,12 +113,12 @@ Code
 ----
 ::
 
-   - ``:literal:`␠abc``` → :literal:`␠abc`
-   - ```␠abc``` → `␠abc`
-   - \`\`␠abc\`\` → ``␠abc``
+   -  ``:literal:`␠abc``` → :literal:`␠abc`
+   -  ```␠abc``` → `␠abc`
+   -  \`\`␠abc\`\` → ``␠abc``
 
 Result
 ------
-- ``:literal:`␠abc``` → :literal:`␠abc`
-- ```␠abc``` → `␠abc`
-- \`\`␠abc\`\` → ``␠abc``
+-  ``:literal:`␠abc``` → :literal:`␠abc`
+-  ```␠abc``` → `␠abc`
+-  \`\`␠abc\`\` → ``␠abc``
