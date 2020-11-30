@@ -60,14 +60,37 @@ Docs: https://plantuml.com/deployment-diagram
 Icons
 =====
 
-.. note::
-   The PlantUML Standard Library including its large icon sets is not available
-   yet in PlantUML v2017.15 which is used in the current TYPO3 documentation
-   rendering process. To use its icons nevertheless, we have to include the
-   icons by remote url.
+There are two ways to integrate icons into your diagrams: Either by using the
+supplied *PlantUML Standard Library*, which comes with a suitable set of symbols,
+or by using remote font sets. The standard library can be used for offline
+rendering, while the remote font sets always contain the latest symbols.
 
-.. include:: Diagrams/icons.rst.txt
-.. literalinclude:: Diagrams/icons.rst.txt
+Standard Library
+----------------
+
+The PlantUML Standard Library contains dumps of various well-known third-party
+font sets such as Font Awesome (v4 and v5), Devicon, etc. The available icons
+can best be searched by checking out the `project repository
+<https://github.com/plantuml/plantuml-stdlib/tree/e58cee3f88e462e45d9ef0581a517a9e6dd6d69a>`_
+with the release date of PlantUML v2018.13, which is used in the current
+rendering process of the TYPO3 documentation.
+
+.. include:: Diagrams/icons_stdlib.rst.txt
+.. literalinclude:: Diagrams/icons_stdlib.rst.txt
+   :language: rst
+
+Remote font sets
+----------------
+
+.. note::
+
+   Including icons this way requires an online connection during the rendering
+   process.
+
+The latest icons can be integrated directly via remote url.
+
+.. include:: Diagrams/icons_remote.rst.txt
+.. literalinclude:: Diagrams/icons_remote.rst.txt
    :language: rst
 
 Docs: https://plantuml.com/stdlib
