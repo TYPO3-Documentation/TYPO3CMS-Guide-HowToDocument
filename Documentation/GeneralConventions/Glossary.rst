@@ -45,6 +45,14 @@ Spelling:
    Note: Outside of the TYPO3 context, you will also encounter spellings like back-end
    or back end. These are not wrong, but in the context of TYPO3, we try to use consistent
    spelling, so stick to backend.
+   
+cross-site scripting
+--------------
+
+Spelling:
+   Commonly written in lowercase with one dash between cross and site. See `Wikipedia: 
+   Cross-site scripting <https://en.wikipedia.org/wiki/Cross-site_scripting>`__
+
 
 code sprint
 -----------
