@@ -84,6 +84,7 @@ More: :ref:`What's new in this guide ... <whats-new>`
 .. toctree::
    :hidden:
 
+   genindex
    Appendix/Index
    UsefulLinks
    Sitemap/Index
