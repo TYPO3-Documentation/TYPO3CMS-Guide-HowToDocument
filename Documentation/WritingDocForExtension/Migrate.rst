@@ -137,10 +137,13 @@ Supported Branches
 
 The rendering supports two branches within repositories:
 
-``master``
+``master`` / ``main``
    Should contain the current development state, used for upcoming release.
-   Every push to this branch triggers a new rendering, available at
+   Every push to these branches triggers a new rendering, available at
    ``https://docs.typo3.org/p/<vendor>/<package>/master/en-us/``.
+
+   Both branch names are supported, but result in the same URL.
+   Please use either ``master`` or ``main``, not both.
 
 ``documentation-draft``
    Should contain a draft of the documentation.
