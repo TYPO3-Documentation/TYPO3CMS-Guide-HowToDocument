@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _faq-for-extension-authors:
 .. _tips-extension-authors:

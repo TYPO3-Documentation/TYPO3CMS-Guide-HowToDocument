@@ -1,6 +1,6 @@
 
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. _writing-rest-comments:

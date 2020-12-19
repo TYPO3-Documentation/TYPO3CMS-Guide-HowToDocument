@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: rst
 
 .. _general-conventions-dir-and-filenames:
@@ -185,7 +185,7 @@ Index.rst:
 .. code-block:: rst
    :linenos:
 
-   .. include:: Includes.txt
+   .. include:: /Includes.rst.txt
 
    =====
    Title
@@ -201,7 +201,7 @@ Index.rst:
       Configuration
 
 
-*  line 1 : every .rst file should include Includes.txt
+*  line 1: every .rst file should include /Includes.rst.txt
 *  line 3-5: the header
 *  line 10-14: the toctree defines which other pages will be included
    and combined. The menu is generated from all combined files (recursively).
@@ -212,7 +212,7 @@ Introduction.rst:
 
 .. code-block:: rst
 
-   .. include:: ../Includes.txt
+   .. include:: /Includes.rst.txt
 
    ============
    Introduction
@@ -273,7 +273,7 @@ Content
    ... text with configuration ...
 
 
-*  line 1 : every .rst file should include Includes.txt
+*  line 1: every .rst file should include /Includes.rst.txt
 *  line 3-5: the title
 *  Here, all text is contained in one file.
 
@@ -395,20 +395,21 @@ This is :file:`Settings.cfg` for this manual.
 
 .. _includes-txt:
 
-Includes.txt
-============
+Includes.rst.txt
+================
 
 *-- optional (recommended for official documentation)*
 
-:file:`Documentation/Includes.txt`
+:file:`Documentation/Includes.rst.txt`
 
 This file can be the same for all Documentation projects!
 
 Example:
 
-*  `Includes.txt in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
+*  `Includes.rst.txt in this manual 
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
 
-.. literalinclude:: ../Includes.txt
+.. literalinclude:: ../Includes.rst.txt
    :language: rst
 
 
