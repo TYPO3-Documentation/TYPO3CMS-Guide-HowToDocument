@@ -31,6 +31,12 @@ or sentence.
    The goal of this page is to give guidance for people editing the documentation
    (and other content, e.g. in the TYPO3 backend). It is not intended as a glossary
    for beginners.
+   
+API
+---
+Spelling:
+   Commonly written in uppercase, see `Wikipedia: 
+   API <https://en.wikipedia.org/wiki/API)>`__ 
 
 backend (noun)
 --------------
