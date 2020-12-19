@@ -37,6 +37,8 @@ API
 Spelling:
    Commonly written in uppercase, see `Wikipedia: 
    API <https://en.wikipedia.org/wiki/API)>`__ 
+   The APIs themselves are written in CamelCase i.e.
+   PageTitle API, Icon API
 
 backend (noun)
 --------------
