@@ -123,9 +123,9 @@ Things get tricky if your inline code already contains single backquotes (backti
 
       SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
 
-   to get::
+   to get:
 
-      SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
+   SQL-example code: ``SELECT  `tt_content` . `bodytext`  AS  `t1` . `text`;``
 
    **The drawbacks** of literal inline code notation are:
 
