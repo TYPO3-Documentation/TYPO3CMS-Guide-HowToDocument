@@ -241,7 +241,7 @@ TypoScript
 Spelling:
    :ref:`TYPO3 exception <spelling-typo3>`
 
-Viewhelper
+ViewHelper
 ----------
 
 
