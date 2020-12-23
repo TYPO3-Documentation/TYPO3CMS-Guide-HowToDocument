@@ -157,13 +157,13 @@ What terms mean:
 .. glossary::
 
    third party extension
-      …
+      Any extension that is not part of the `TYPO3 Core`:pn:
 
    TYPO3 CMS
       The TYPO3 content management system.
 
    TYPO3 Core Team
-      This is the team that drives the development of the TYPO3 `Core`:pn:.
+      This is the team that drives the development of the `TYPO3 Core`:pn:.
 
 
 .. Example usage of :term:
