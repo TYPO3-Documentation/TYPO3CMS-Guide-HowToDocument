@@ -12,20 +12,19 @@ Spelling, terms and glossary
 
 .. index:: pair: Text role; pn (proper name)
 
-*Very much recommended:* Make use of text role `pn` (proper name) to point out
-that some special spelling is applied due to a proper name like
-`TYPO3 Core Team`:pn:. The recommended way for markup is:
+*Highly recommended:* Make use of text role `pn` (proper name) to mark up
+special names like `TYPO3 Core Team`:pn:. The recommended way of writing this
+isis:
 
 .. code-block:: rst
 
    `TYPO3 Core Team`:pn:
 
-Having `:pn:` at then end facilitates reading. In future Sphinx will be able
-to automatically create a list of all proper names used in a manual.
-
-Currently the 'pn' textrole is defined in file :file:`Includes.rst.txt`. It is
-a derivative of 'emphasis' and rendered in html as `<em class="pn">`. Visual
-appearance is italics, but that may changed in future.
+Put `:pn:` to the end of the text. This facilitates reading the source.
+Currently the 'pn' text role is defined in file :file:`Includes.rst.txt`. It is
+a derivative of 'emphasis' and shown in italics. We are free to change that in
+our theme. A future Sphinx will be able to automatically create a sorted list
+of all proper names used.
 
 
 Spelling
@@ -131,7 +130,7 @@ V
 Terms
 =====
 
-Worth knowing about some of the terms:
+How to use these terms:
 
 reStructuredText
    Use 'reST' as abbreviation.
@@ -153,6 +152,8 @@ Glossary
 .. https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#glossary
 .. Creating a glossary with terms that you can refer to - obtaining a link.
 
+What terms mean:
+
 .. glossary::
 
    third party extension
@@ -163,6 +164,7 @@ Glossary
 
    TYPO3 Core Team
       This is the team that drives the development of the TYPO3 `Core`:pn:.
+
 
 .. Example usage of :term:
 ..
