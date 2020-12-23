@@ -1,19 +1,19 @@
 .. This is 'Includes.rst.txt'. It is included at the very top of each and
    every ReST source file in THIS documentation project (= manual).
-   
-.. This files lives at 
+
+.. This files lives at
    https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.rst.txt
 
 .. More information about this file:
    https://docs.typo3.org/typo3cms/HowToDocument/GeneralConventions/DirectoryFilenames.html#includes-txt
 
-.. Define some additional textroles
+.. Define some additional text roles
    See: https://docs.typo3.org/typo3cms/HowToDocument/WritingReST/InlineCode.html
 
 
-.. ---------
-.. textroles
-.. ---------
+.. ----------
+.. text roles
+.. ----------
 
 .. role:: aspect (emphasis)
 .. role:: html(code)

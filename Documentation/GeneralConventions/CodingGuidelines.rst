@@ -220,7 +220,7 @@ Referring to GUI elements
 
 If you describe something that needs to be selected from a menu or other GUI
 element or clicked one after the other, use *>* as separator and use
-:ref:`textrole guilabel <textroles>`.
+:ref:`text role guilabel <text-roles>`.
 
 .. important::
 
@@ -247,7 +247,7 @@ Refer to keystrokes
 ===================
 
 When pointing out keyboard shortcuts or keystroke sequences, use
-:ref:`textrole <textroles>` kbd.
+:ref:`text role <text-roles>` kbd.
 
 Example:
 
