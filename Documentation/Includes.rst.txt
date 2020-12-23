@@ -1,7 +1,7 @@
 .. This is 'Includes.rst.txt'. It is included at the very top of each and
    every ReST source file in THIS documentation project (= manual).
-   
-.. This files lives at 
+
+.. This files lives at
    https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.rst.txt
 
 .. More information about this file:
@@ -15,12 +15,13 @@
 .. textroles
 .. ---------
 
-.. role:: aspect (emphasis)
+.. role:: aspect(emphasis)
 .. role:: html(code)
 .. role:: js(code)
 .. role:: php(code)
+.. role:: pn(emphasis)
 .. role:: rst(code)
-.. role:: sep (strong)
+.. role:: sep(strong)
 .. role:: typoscript(code)
 
 .. role:: ts(typoscript)
