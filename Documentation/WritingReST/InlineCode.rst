@@ -4,9 +4,9 @@
 
 .. _Inline-Code:
 
-=======================
-Inline Code & Textroles
-=======================
+========================
+Inline code & text roles
+========================
 
 
 .. hint::
@@ -24,13 +24,13 @@ There are several ways to semantically mark specific parts of the text. The main
 a consistent style for specific parts of the text, for example code fragments, file names and GUI
 elements.
 
-.. _textroles:
+.. _text-roles:
 
-Use Textroles
--------------
+Using text roles
+----------------
 
 1. **Preferred:** Use `Sphinx interpreted text roles <http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html>`__
-   to explicitly specify what kind of text / code (= textrole) it is. This shows
+   to explicitly specify what kind of text / code (text role) it is. This shows
    the semantics and in the output there may be a a special coloring or highlighting:
 
    ================ ================================================= ============================================ ===
@@ -93,8 +93,8 @@ Use Textroles
 
 
 2. As an alternative, you can use the default text role for small inline
-   code snippets, but it is better to use specific textroles. However, if no
-   textrole exists, you may use this to mark the text.
+   code snippets, but it is better to use specific text roles. However, if no
+   text role exists, you may use this to mark the text.
 
    Surround the code by *single backticks* and don't start or end
    the code with whitespace. Example: Type ```2 + 2 = 4``` to get `2 + 2 = 4`
@@ -109,7 +109,7 @@ When to Use Literal Code \`\`...``
 
 Things get tricky if your inline code already contains single backquotes (backticks).
 
-4. In many cases you can still use the *interpreted textrole* as described in 1. to 3.
+4. In many cases you can still use the *interpreted text role* as described in 1. to 3.
    For example we can write ``:code:`:html:`<br>```` to get :code:`:html:`<br>``
 
    This is possible if (a) your code doesn't start with a backtick and (b) if no backtick in
@@ -160,7 +160,8 @@ In contrast, *code-blocks*
 -  use predefined names for the different languages that come with Pygments,
    the syntax highlighter.
 
-Definition of Textroles
+
+Definition of text roles
 ========================
 
 For all officials TYPO3 manuals `php` is set as default highlight
@@ -172,15 +173,16 @@ Use 'Includes.rst.txt' File
 ---------------------------
 
 In general, the manual you are working on will already contain an
-:ref:`Includes.rst.txt <includes-txt>` file. In that file, the textroles
+:ref:`Includes.rst.txt <includes-txt>` file. In that file, the text roles
 are defined.
 
-You Need Another Textrole for Code Markup?
-------------------------------------------
+
+You need a custom text role?
+----------------------------
 
 You need another 'language' to mark up inline?
 
-You are free to define additional textroles *in your project* or even
+You are free to define additional text roles *in your project* or even
 *on an individual page* as you like. Make use of the `role directive
 <http://docutils.sourceforge.net/docs/ref/rst/directives.html#role>`__.
 Example: You want 'haskell'? Define that role as derivative of 'code'::

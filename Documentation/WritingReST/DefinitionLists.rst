@@ -98,22 +98,22 @@ with 'dl-parameters', meaning a definition list style for parameters.
 As a result the rendered html construct will look like
 `<dl class="dl-parameters">...</dl>`. The first line of the description
 is used for multiple "keyword: value" explanations. As a separator
-we are using the vertical bar. And we are using a special textrole
+we are using the vertical bar. And we are using a special text role
 "sep" (for separator) for it. As a result it will be rendered as
 `<span class="sep">|</span>`. The "keyword:" part is marked up specially
-as well just to give it the ":aspect:" textrole Our css uses the classes to
+as well just to give it the ":aspect:" text role Our css uses the classes to
 give the whole construct a nice styling.
 
 Attention:
 
-The textroles `ascpect` and `sep` (for separator) need to be defined. The usual
+The text roles `ascpect` and `sep` (for separator) need to be defined. The usual
 way of defining them is by having these lines in the
 :file:`Documentation/Includes.rst.txt` file. Add these lines::
 
    .. role:: aspect (emphasis)
    .. role:: sep (strong)
 
-Sphinx already comes with standard textroles 'emphasis' and 'strong'. 'aspect'
+Sphinx already comes with standard text roles 'emphasis' and 'strong'. 'aspect'
 and 'sep' inherit their properties and are further specialized.
 
 Example 3: Nicely Styled Though Labels Interfere

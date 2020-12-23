@@ -281,10 +281,10 @@ Source::
       $a = 'hello';
 
 
-:ref:`Inline Code, Textroles <textroles>`
-=========================================
+:ref:`Inline code, text roles <text-roles>`
+===========================================
 
-For inline code or for other semantic markup of special texts, use textroles.
+For inline code or for other semantic markup of special texts, use text roles.
 
 Examples:
 
@@ -293,7 +293,7 @@ Examples:
 #. :file:`/etc/passwd` (file)
 #. :kbd:`ctrl` + :kbd:`s` (keyboard strokes)
 
-Source (inline text with textroles):
+Source (inline text with text roles):
 
 .. code-block:: rest
    :linenos:
