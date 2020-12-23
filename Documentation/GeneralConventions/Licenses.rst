@@ -2,6 +2,7 @@
 .. highlight:: rst
 
 .. _general-conventions-licenses:
+.. _licenses:
 
 ========
 Licenses

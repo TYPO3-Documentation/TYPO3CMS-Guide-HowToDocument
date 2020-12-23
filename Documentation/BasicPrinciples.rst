@@ -82,6 +82,10 @@ creating the menu, using the current theme to add additional styles and images.
 Documentation Types
 ===================
 
+.. hint::
+
+   See boilerplate texts for the start page on :ref:`example-start-page`.
+
 Manual
 ------
 
