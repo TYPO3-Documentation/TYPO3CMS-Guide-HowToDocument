@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Numbered lists
 .. _numbered-lists:
 
 ==============
-Numbered Lists
+Numbered lists
 ==============
 
 

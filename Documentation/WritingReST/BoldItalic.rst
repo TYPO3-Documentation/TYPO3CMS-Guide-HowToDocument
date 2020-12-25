@@ -1,12 +1,14 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Font styles
 .. _rest-bold-italic:
 
 =================
 Bold, Italic etc.
 =================
 
+
+.. index:: reST; Bold
 
 Bold
 ====
@@ -19,6 +21,8 @@ How it looks:
 
 This is normal text. **This is bold text**
 
+
+.. index:: reST; Italic
 
 Italic
 ======

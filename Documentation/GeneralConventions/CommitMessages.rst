@@ -23,7 +23,7 @@ Commit message recommendations
    More lines (separated by first line with an empty new line) are optional.
 
 
-.. index:: Git; `Resolves: #issue`
+.. index:: Git; Resolves
 
 Issues
 ------
@@ -43,7 +43,7 @@ You can also cross link to issues in other repositories in TYPO3-Documentation::
    *  Stack Overflow: `Link to the issue number on GitHub within a commit message <https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message>`__
 
 
-.. index:: Git; `Releases: master, 9.5`
+.. index:: Git; Releases
 
 Releases
 --------
@@ -105,8 +105,6 @@ Add the branches to which the change should be added:
    Resolves: #<issue number>
    Releases: master, 9.5
 
-
-.. index:: Git; `[BUGFIX],[FEATURE],[TASK] etc.`
 
 Using TYPO3 Core commit message rules
 =====================================

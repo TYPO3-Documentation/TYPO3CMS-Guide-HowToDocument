@@ -28,10 +28,11 @@
    header: Use (over and) underline to mark a text as header
    ---------------------------------------------------------
 
+.. index:: reST; Cheat sheet
 .. _rest-cheat-sheet:
 
 =========================
-reST & Sphinx Cheat Sheet
+reST & Sphinx cheat sheet
 =========================
 
 Every reST (.rst) file should use these underlining styles. In reST, you can use different
@@ -81,9 +82,11 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
 :ref:`Links <how-to-document-hyperlinks>`
 =========================================
 
+
+.. index:: reST; External links
 .. _cheat-sheet-external-links:
 
-External Links
+External links
 --------------
 
 method 1::
@@ -102,9 +105,13 @@ method 2: "External Hyperlink Targets"::
 
 This may be more convenient if you use a link several times.
 
+
+.. index::
+   reST; Cross references
+   reST roles; ref
 .. _cheat-sheet-intersphinx:
 
-Cross-References
+Cross references
 ----------------
 
 When linking within docs.typo3.org, you should use this method of cross-referencing.
@@ -168,6 +175,9 @@ see :ref:`settings-cfg`. Not used manuals are commented out.
 
 
 
+.. index::
+   reST; Lists
+   reST; Bullet lists
 
 :ref:`Lists <rest-lists>`
 =========================
@@ -197,6 +207,7 @@ More text.
    More text.
 
 
+.. index:: reST; Numbered lists
 
 :ref:`numbered-lists`
 =====================
@@ -226,15 +237,19 @@ More text.
    More text.
 
 
+.. index:: reST; Code blocks
 
 :ref:`Code Blocks <writing-rest-codeblocks-with-syntax-highlighting>`
 =====================================================================
 
 .. important::
 
-   Use syntactically correct code in your codeblocks.
+   Use syntactically correct code in your code blocks.
 
-Code Block Directive
+
+.. index:: reST directives; code-block
+
+Code block directive
 --------------------
 
 **How it looks:**
@@ -261,6 +276,7 @@ This uses the **directive** "code-block" (line 1)
    Make sure to indent correctly. The lines of the code-block (line 3+)
    must be indented (3 spaces).
 
+
 Literal Block (`::`)
 --------------------
 
@@ -280,6 +296,8 @@ Source::
 
       $a = 'hello';
 
+
+.. index:: reST roles
 
 :ref:`Inline code, text roles <text-roles>`
 ===========================================
@@ -304,8 +322,11 @@ Source (inline text with text roles):
    :kbd:`ctrl` + :kbd:`s`
 
 
+.. index::
+   reST; Bold
+   reST; Italic
 
-:ref:`Bold & Italic <rest-bold-italic>`
+:ref:`Bold & italic <rest-bold-italic>`
 =======================================
 
 Normal text, **bold text** and *italic text*.
@@ -316,6 +337,10 @@ Source (bold & italic):
 
    Normal text, **bold text** and *italic text*.
 
+
+.. index::
+   reST; Images
+   reST directives; image
 
 :ref:`Images <rest-images>`
 ===========================
@@ -345,7 +370,11 @@ Another example:
    *  :ref:`images`
 
 
-:ref:`YouTube Videos <youtube>`
+.. index::
+   reST; YouTube videos
+   reST directives; youtube
+
+:ref:`YouTube videos <youtube>`
 ===============================
 
 .. youtube:: wNxO-aXY5Yw
@@ -357,8 +386,11 @@ Source (YouTube):
    .. youtube:: wNxO-aXY5Yw
 
 
+.. index::
+   reST; Styled numbered lists
+   reST classes; bignums
 
-:ref:`Styled Numbered Lists <big-nums>`
+:ref:`Styled numbered lists <big-nums>`
 =======================================
 
 This is often used, for a Quick Start section, involving a few numbered steps:
@@ -432,7 +464,9 @@ With Big Numbers XXL
    Do something else ...
 
 
-:ref:`Tips, Hints, Important <rest-admonitions>` (Admonitions)
+.. index:: reST; Admonitions
+
+:ref:`Tips, hints, important <rest-admonitions>` (Admonitions)
 ==============================================================
 
 .. ---------------------------------------------------------------
@@ -452,4 +486,3 @@ Source (tip):
 
          To look at the reST source of this rendered page, scroll to the bottom
          and click on "View page source".
-

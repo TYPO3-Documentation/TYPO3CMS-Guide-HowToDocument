@@ -1,15 +1,14 @@
-
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Definition lists
 .. _Styled-Definition-Lists:
 
 ================
-Definition Lists
+Definition lists
 ================
 
 
-List Style "dl-parameters"
+List style "dl-parameters"
 ==========================
 
 This list style is used in TYPO3 documentation to style the explanation
@@ -46,6 +45,8 @@ parameterBcd
 
 This markup works but isn't very readable due to the lack of styling.
 
+
+.. index:: reST class; dl-parameters
 
 Example 2: Nicely Styled
 ------------------------
@@ -116,8 +117,10 @@ way of defining them is by having these lines in the
 Sphinx already comes with standard text roles 'emphasis' and 'strong'. 'aspect'
 and 'sep' inherit their properties and are further specialized.
 
-Example 3: Nicely Styled Though Labels Interfere
-------------------------------------------------
+
+
+Example 3: Nicely styled through labels interfere
+-------------------------------------------------
 
 Let's say you want to place labels in front of each definition list
 item. This creates anchors you can link to symbolically with the

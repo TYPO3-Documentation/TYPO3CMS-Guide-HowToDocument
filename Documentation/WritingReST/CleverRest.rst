@@ -1,12 +1,11 @@
-
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Clever
 .. _Clever-reST:
 
-====================
+===========
 Clever reST
-====================
+===========
 
 Place 'List' in 'Empty List Item' in 'Definition Description'
 =============================================================

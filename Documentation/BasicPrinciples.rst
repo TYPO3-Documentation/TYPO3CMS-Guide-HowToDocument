@@ -1,6 +1,5 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
 .. _basic-principles:
 
 ================
@@ -335,7 +334,7 @@ For more information on subtree split, see
 *  :ref:`Installation and Upgrade guide: Composer migration <composer-migration-require-subtree-packages>`
 
 
-.. index:: pair: System extension; Documentation
+.. index:: pair: System extensions; Documentation
 
 System extension documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -365,7 +364,7 @@ Often, but not necessarily, these extensions are hosted on GitHub.
 They can be installed by the TYPO3 Extension Manager or via Composer.
 
 
-.. index:: pair Third-party extensions; Documentation
+.. index:: pair: Third-party extensions; Documentation
 
 Third-party extension documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

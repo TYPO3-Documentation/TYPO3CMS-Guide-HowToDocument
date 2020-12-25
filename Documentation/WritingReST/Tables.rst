@@ -1,8 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
-
-
+.. index:: reST; Tables
 .. _rest-tables:
 
 ======
@@ -12,7 +10,9 @@ Tables
 There are several ways to create tables in reST. Use what works best for your use case.
 
 
-Grid Table
+.. index:: reST; Grid table
+
+Grid table
 ==========
 
 
@@ -43,7 +43,10 @@ http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
 You can use this `table generator <https://www.tablesgenerator.com/text_tables>`__ to
 create a grid table.
 
-Simple Table
+
+.. index:: reST; Simple table
+
+Simple table
 ============
 
 
@@ -67,8 +70,10 @@ Header 1  Header 2
 http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
 
 
-Csv Tables
-==========
+.. index:: reST; Csv table
+
+Csv table
+=========
 
 .. code-block:: rest
 
@@ -91,7 +96,10 @@ Csv Tables
 http://docutils.sourceforge.net/docs/ref/rst/directives.html#id4
 
 
-t3-field-list-table Tables
+.. index::
+   reST directives; t3-field-list-table
+
+t3-field-list-table tables
 ==========================
 
 `t3-field-list-table` is a custom directive, created by the t3SphinxThemeRtd

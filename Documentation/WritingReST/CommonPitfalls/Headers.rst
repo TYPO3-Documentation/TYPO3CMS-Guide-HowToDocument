@@ -1,11 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Headers
 
 =====================
-Problems With Headers
+Problems with headers
 =====================
-
 
 If you use section titles (headers), the underline must be **at least** as long as the text.
 
@@ -19,8 +18,7 @@ throughout the docs is to to keep it the same length.
    the `reStructuredText plugin <https://plugins.jetbrains.com/plugin/7124-restructuredtext-support>`__.
 
 
-
-Correct Syntax
+Correct syntax
 ==============
 
 ::
@@ -37,7 +35,7 @@ Correct Syntax
    ======================================================
 
 
-Wrong Syntax
+Wrong syntax
 ============
 
 
@@ -47,9 +45,7 @@ Wrong Syntax
    ------------
 
 
-
-
-Additional Information
+Additional information
 ======================
 
 *  :ref:`Headlines-and-sections`

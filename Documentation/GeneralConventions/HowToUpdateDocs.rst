@@ -46,9 +46,9 @@ See the next section for some examples.
 .. index::
    Documentation; Version hints
    reST; Version hints
-   reST; `deprecated`
-   reST; `versionadded`
-   reST; `versionchanged`
+   reST directives; deprecated
+   reST directives; versionadded
+   reST directives; versionchanged
 
 How to add version hints
 ========================
@@ -78,7 +78,7 @@ Further information:
 
 .. index::
    reST; Changelog links
-   reST; `:doc:`
+   reST roles; doc
 
 Link to changelog
 =================
@@ -142,7 +142,7 @@ updated.
 
 .. index::
    Documentation; Status
-   reST; `:Status:`
+   reST roles; Status
 
 How to mark what state a manual is in
 =====================================

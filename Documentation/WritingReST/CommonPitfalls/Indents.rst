@@ -1,10 +1,9 @@
 .. include:: /Includes.rst.txt
-
 .. highlight:: rst
-
+.. index:: reST; Indentation
 
 =====================
-Problems With Indents
+Problems with indents
 =====================
 
 
@@ -13,7 +12,8 @@ Common mistake #1: Incorrect indents
 
 Always indent correctly (3 spaces per level)
 
-Correct Syntax
+
+Correct syntax
 --------------
 
 ::
@@ -28,7 +28,8 @@ How it looks:
    :width: 100px
    :class: with-shadow
 
-Incorrect Syntax
+
+Incorrect syntax
 ----------------
 
 Here, `:width:` is indented with only 2 spaces. The image will not be

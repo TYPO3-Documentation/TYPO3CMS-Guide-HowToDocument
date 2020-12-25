@@ -1,10 +1,11 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 
+.. index:: pair: reST; Orphaned pages
 .. _rest-orphans:
 
 ==============
-Orphaned Pages
+Orphaned pages
 ==============
 
 

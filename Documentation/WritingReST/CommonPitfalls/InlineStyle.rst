@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Inline styles
 .. _common-pitfalls-inline-style:
 
 ==========================
-Problems With Inline Style
+Problems with inline style
 ==========================
 
 
@@ -12,7 +12,7 @@ If you use **bold** or *italic*, make sure there is no space between
 the markup and the styled text.
 
 
-Correct Syntax
+Correct syntax
 --------------
 
 ::
@@ -24,7 +24,8 @@ How it looks:
 
 This is normal text. **This is bold text.**
 
-Wrong Syntax
+
+Wrong syntax
 ------------
 
 ::
@@ -37,7 +38,7 @@ How it looks:
 This is normal text. ** This is bold text.**
 
 
-Additional Information
+Additional information
 ======================
 
 *  `Docutils cheat-sheet for reStructuredText: Inline markup

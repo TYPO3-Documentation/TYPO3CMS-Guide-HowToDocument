@@ -70,7 +70,7 @@ There are 3 goals here:
 .. index::
    Reviewing manuals; Review information
    Reviewing manuals; Outdated contend
-   reST; `:Status:`
+   reST directives; Status
 .. _add-review-info-to-startpage:
 
 Add review information to the start page
@@ -108,7 +108,7 @@ Examples:
 
 .. index::
    Reviewing manuals; Outdated contend
-   reST; `.. warning::`
+   reST directives; warning
 .. _reviewInfoWarning:
 
 Add warning for outdated content
@@ -133,7 +133,7 @@ cases where updating is not possible immediately.
 
 .. index::
    Reviewing manuals; Todo
-   reST; `.. todo::`
+   reST directives; todo
 
 Todo directive
 --------------

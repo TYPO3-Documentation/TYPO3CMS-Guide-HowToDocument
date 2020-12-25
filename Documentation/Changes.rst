@@ -9,7 +9,7 @@ Changes
 
 
 .. index::
-   changes; Main branches to master
+   Changes; Main branches to master
    Git; Branch master
    Git; Branch latest (outdated)
 .. _tip-branches-master:

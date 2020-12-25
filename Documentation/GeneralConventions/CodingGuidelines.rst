@@ -190,9 +190,9 @@ file::
    reST; Deprecations
    reST; Feature
    reST; Changes
-   reST; `deprecated`
-   reST; `versionadded`
-   reST; `versionchanged`
+   reST directives; deprecated
+   reST directives; versionadded
+   reST directives; versionchanged
 .. _version-hints:
 
 How to add version hints
@@ -222,7 +222,7 @@ For more information, see the open issue:
 
 .. index::
    reST; Link to changelog
-   reST; `:doc:`
+   reST roles; doc
    File; Settings.cfg
 .. _link-to-changelog:
 
@@ -249,7 +249,7 @@ For this to work, t3core must be defined in :file:`Settings.cfg`:
 
 .. index::
    reST; GUI elements
-   reST; `:guilabel:`
+   reST roles; guilabel
 .. _rest-refer-to-gui-elements:
 
 Referring to GUI elements
@@ -282,7 +282,7 @@ How it looks:
 
 .. index::
    reST; Keystrokes
-   reST; `:kbd:`
+   reST roles; kbd
 
 Refering to keystrokes
 ======================
@@ -298,4 +298,3 @@ Example:
 
 How it looks:
    Press :kbd:`ctrl` + :kbd:`s`
-

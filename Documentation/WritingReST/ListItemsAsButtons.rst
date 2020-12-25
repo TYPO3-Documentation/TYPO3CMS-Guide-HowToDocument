@@ -1,14 +1,12 @@
 
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Buttons
 .. _list-items-as-buttons:
 
 =====================
-List Items as Buttons
+List items as buttons
 =====================
-
-
 
 .. attention::
 
@@ -19,7 +17,7 @@ List Items as Buttons
    is already used in the Sphinx-Python-domain.
 
 
-How Does It Work?
+How does it work?
 =================
 
 The *t3SphinxThemeRtd* theme for TYPO3 comes along with style that make
@@ -36,7 +34,9 @@ the list like so::
    -  three `with link <#>`__
 
 
-Available Styles
+.. index:: reST classes; horizbuttons
+
+Available styles
 ================
 
 horizbuttons-attention-m
