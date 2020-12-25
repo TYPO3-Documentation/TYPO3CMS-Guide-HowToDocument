@@ -1,14 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
-
 .. _about:
 
 ================
-About This Guide
+About this guide
 ================
 
-How This Guide is Structured
+
+How this guide is structured
 ============================
 
 This manual covers writing TYPO3 documentation. This includes, contributing
@@ -19,15 +18,15 @@ It is more than just documentation: it also lists some conventions, coding
 guidelines and provides links to GitHub issues.
 
 
+.. index:: Writing documentation; Getting started
 .. _getting-started:
 .. _how-to-read-this-guide:
 
-How to Read This Guide
+How to read this guide
 ======================
 
 This manual introduces you to writing TYPO3 documentation. You can read
 it cover-to-cover.
-
 
 .. tip::
 
@@ -42,8 +41,6 @@ it cover-to-cover.
 But often, you would like to **jump right in**, start with a specific task
 and learn as you go along. In that case, find your task here and start reading:
 
-
-
 *  :ref:`writing-doc-for-ext-from-scratch` if you have an extension and would
    like to write documentation for it using the sample extension manual.
 *  :ref:`docs-contribute-github-method` if you would like to contribute to
@@ -54,6 +51,7 @@ and learn as you go along. In that case, find your task here and start reading:
    the official documentation and are already familiar with Git and Docker
 *  :ref:`render-documenation-with-docker` if you would like to start with rendering the
    documentation locally with Docker.
+
 
 .. _credits:
 
@@ -70,7 +68,6 @@ Further chapters like
 :ref:`rest-common-pitfalls`, :ref:`rest-cheat-sheet`, :ref:`docs-contribute`,
 :ref:`basic-principles`, :ref:`writing-doc-for-ext-start` and :ref:`docs-official-how-you-can-help`
 were added by Sybille Peters.
-
 
 A number of other people have helped by reviewing and refining the text
 and pointing out missing information. For more contributors, see the

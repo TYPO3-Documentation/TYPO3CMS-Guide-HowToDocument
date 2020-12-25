@@ -4,11 +4,11 @@
 .. _basic-principles:
 
 ================
-Basic Principles
+Basic principles
 ================
 
 
-Introduction to TYPO3 Documentation
+Introduction to TYPO3 documentation
 ===================================
 
 For an excellent introduction, please see the 3 part series on Marcus
@@ -24,10 +24,11 @@ Schwemer's blog TYPO3 Worx:
    <rendering-docs>` is the recommended approach. If you edit on GitHub directly,
    GitHub preview should be sufficient for making small changes.
 
+.. index::  TYPO3 documentation
 .. _whats-typo3-documentation:
 
-What's TYPO3 Documentation?
-===========================
+What is the TYPO3 documentation?
+================================
 
 TYPO3 documentation may be one of the following:
 
@@ -41,9 +42,10 @@ TYPO3 documentation may be one of the following:
    `Changelog <https://docs.typo3.org/typo3cms/extensions/core/latest/>`__
    entry for the core, for example a documented breaking change or new feature.
 
+
 .. _common-characteristics-typo3-docs:
 
-Common Characteristics of TYPO3 Documentation
+Common characteristics of TYPO3 documentation
 =============================================
 
 All of these examples have a few things in common:
@@ -61,10 +63,12 @@ All of these examples have a few things in common:
 *  Due to the conventions, the rendering of documentation can be automated and
    every documentation project only requires a minimum of setup.
 
+
+.. index::  TYPO3 documentation; Rendering
 .. _whats-rendering:
 
-What's "Rendering"?
-===================
+What is "rendering"?
+====================
 
 Rendering means (in this specific case) converting the reST
 format (.rst files) into its final, readable form, which you can view in your
@@ -77,10 +81,15 @@ https://docs.typo3.org/typo3cms/HowToDocument/_sources/BasicPrinciples.txt
 Technically, this means converting the reST (.rst files) into HTML, automatically
 creating the menu, using the current theme to add additional styles and images.
 
+
+.. index::  TYPO3 documentation; Types
 .. _documentation-types:
 
-Documentation Types
+Documentation types
 ===================
+
+
+.. index::  TYPO3 documentation; Manual
 
 Manual
 ------
@@ -91,6 +100,8 @@ included in the git repository of an extension) and consists of one :file:`Docum
 folder. A "manual" can be a tutorial, such as the :ref:`t3start:start`, a guide,
 an extension manual or something else.
 
+
+.. index::  TYPO3 documentation; Tutorial
 .. _doc-type-tutorial:
 
 Tutorial
@@ -110,9 +121,11 @@ designed to make it easier to get started.
 The definitions for tutorials, guides, explanations and references were taken from
 `Daniele Procida: What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
 
+
+.. index::  TYPO3 documentation; How-to guide
 .. _doc-type-guide:
 
-How-To Guide
+How-to guide
 ------------
 
 A guide is a manual.
@@ -122,6 +135,7 @@ Guides offer advice on **how best to achieve a given task**. They are goal orien
 :ref:`Read more ... <writing-guide>`
 
 
+.. index::  TYPO3 documentation; Reference
 .. _doc-type-reference:
 
 Reference
@@ -131,17 +145,20 @@ A reference is well structured and allows the reader to find information about a
 topic. They should be short and to the point.
 
 
+.. index::  TYPO3 documentation; Extension manual
 .. _doc-type-extension-manual:
 
-Extension Manual
+Extension manual
 ----------------
 
 An extension manual covers only the extension. This documentation is (usually) included
 in the source code of an extension in a :file:`Documentation` subdirectory.
 
+
+.. index::  TYPO3 documentation; Official documentation
 .. _doc-type-official:
 
-Official Documentation
+Official documentation
 ----------------------
 
 This documentation is authored and maintained by the TYPO3 community.
@@ -152,9 +169,11 @@ may be delegated to others, for example by giving write permission to GitHub rep
 In general, it is recommended for the TYPO3 experts to take on jobs of continuously updating
 content and making sure it is correct and up to date.
 
+
+.. index::  TYPO3 documentation; Community documentation
 .. _doc-type-community:
 
-Community Documentation
+Community documentation
 -----------------------
 
 Third party extension manuals are typically "community documentation".
@@ -165,10 +184,11 @@ The TYPO3 Documentation Team cannot maintain "community documentation", but it
 helps by providing documentation, support and an example extension manual.
 
 
+.. index:: Contribution matrix
 .. _overview-of-types:
 .. _contribution-matrix:
 
-Documentation Contribution Matrix
+Documentation contribution matrix
 =================================
 
 
@@ -218,7 +238,9 @@ are:
 
 
 
-Official TYPO3 Manuals
+.. index:: Official TYPO3 manuals
+
+Official TYPO3 manuals
 ----------------------
 
 The official TYPO3 manuals are hosted on GitHub. Editing the documentation
@@ -226,10 +248,13 @@ requires a GitHub account and involves creating a pull request on GitHub.
 
 Find out more about how to contribute: :ref:`docs-contribute`.
 
-Documentation for the Core
---------------------------
 
-The documentation for the core (changelog and system extensions) is added
+.. index:: Core documentation
+
+Core documentation
+------------------
+
+The documentation for the TYPO3 Core (changelog and system extensions) is added
 to the TYPO3 source code. For this reason, the workflow of changing
 something in the core documentation is very similar to adding a patch
 to the core.
@@ -242,8 +267,11 @@ In addition to using the core workflow, the core documentation can also
 be changed via :ref:`"Edit on GitHub" <docs-contribute-github-method>`.
 In this case, a Gerrit patch is created automatically from the pull request.
 
-Documentation for 3rdparty Extensions
--------------------------------------
+
+.. index:: Extension manual
+
+Extension manuals
+------------------
 
 The documentation for a 3rdparty extension is maintained within the
 source-code of this extensions. If and where it is edited depends
@@ -257,6 +285,9 @@ can also make changes via :ref:`"Edit on GitHub" <docs-contribute-github-method>
 To find out how to contribute documentation for a specific extension:
 :ref:`contribute-to-3rdparty-extension`
 
+
+.. index:: Wiki
+
 What about the Wiki?
 --------------------
 
@@ -267,15 +298,20 @@ The TYPO3 Wiki on https://wiki.typo3.org does contain documentation as well,
 but that is not the scope of this manual. In any case, most of the information
 from the Wiki is being moved from the Wiki to some manual on docs.typo3.org.
 
+
+.. index:: Extensions
 .. _about-typo3-extensions:
 
-About TYPO3 Extensions
+About TYPO3 extensions
 ======================
 
 In TYPO3, basically everything is an extension. There are system extensions
 and third party extensions:
 
-System Extensions
+
+.. index:: System extensions
+
+System extensions
 -----------------
 
 System extensions (or core extensions) are extensions that are maintained
@@ -298,7 +334,10 @@ For more information on subtree split, see
 *  `Usetypo3: The TYPO3 Subtree Split and Composer <https://usetypo3.com/typo3-subtree-split-and-composer.html>`__
 *  :ref:`Installation and Upgrade guide: Composer migration <composer-migration-require-subtree-packages>`
 
-System Extension Documentation
+
+.. index:: pair: System extension; Documentation
+
+System extension documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Find the documentation for a system extension on
@@ -312,7 +351,10 @@ in this guide.
 See also :ref:`overview-of-types` for an overview of the issues, source and workflow for various
 kinds of documentation, including system extensions.
 
-Third Party Extensions
+
+.. index:: Third-party extensions
+
+Third-party extensions
 ----------------------
 
 Third party extensions are extension that can be created by anyone. They are not included in the TYPO3 core
@@ -322,7 +364,10 @@ Often, but not necessarily, these extensions are hosted on GitHub.
 
 They can be installed by the TYPO3 Extension Manager or via Composer.
 
-Third Party Extension Documentation
+
+.. index:: pair Third-party extensions; Documentation
+
+Third-party extension documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Find the documentation on `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.

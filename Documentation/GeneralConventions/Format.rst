@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Documentation; Formats
 .. _supported-formats:
 
 ========================
@@ -8,6 +8,9 @@ Formats (reST, Markdown)
 ========================
 
 
+.. index::
+   Documentation; reST
+   reST
 .. _formats-rest:
 
 reST
@@ -28,6 +31,9 @@ The tool `pandoc` can convert existing markdown file into reST format.
 Do this once and you are in line with the TYPO3 conventions.
 
 
+.. index::
+   Documentation; Markdown
+   Markdown
 .. _formats-markdown:
 
 Markdown
@@ -44,6 +50,10 @@ This means that our rendering tools detect markdown files as well. They have .md
 
 If you’re encountering problems with the rendering of your markdown files, consider switching to reST.
 
+
+.. index::
+   reST; vs. Markdown
+   Markdown; vs. reST
 
 reST vs. Markdown
 =================

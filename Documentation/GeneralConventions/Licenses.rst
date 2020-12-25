@@ -1,6 +1,9 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   Documentation; License
+   Documentation; Openpub license
+   Documentation; Creative Commons license
 .. _general-conventions-licenses:
 
 ========

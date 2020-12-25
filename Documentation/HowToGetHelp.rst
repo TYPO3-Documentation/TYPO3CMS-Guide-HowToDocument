@@ -1,5 +1,7 @@
 .. include:: /Includes.rst.txt
-
+.. index::
+   Help
+   Support
 .. _how-to-get-help:
 .. _slack:
 .. _help:
@@ -9,9 +11,12 @@
 Help & Support
 ==============
 
+.. index::
+   Help; Writing documentation
+   Slack; #typo3-documentation
 .. _get-help-on-writing-docs:
 
-Get Help on Writing Documentation
+Get help on writing documentation
 =================================
 
 If you wish to contribute to the docs, have questions about the
@@ -37,7 +42,12 @@ channel.
 .. hint::
    Do not ask if you can ask a question. Ask your question directly.
 
-Get Help on Using Documentation
+
+.. index::
+   Help; Using documentation
+   Slack; #typo3-documentation
+
+Get help on using documentation
 ===============================
 
 The same method as in :ref:`get-help-on-writing-docs` applies: Post
@@ -48,19 +58,25 @@ Engagement and curiosity is a good thing! You may even have stumbled
 upon something that is not documented well or is not user friendly.
 In that case, let us know about it!
 
-Contact Us
-==========
+
+.. index:: pair: Contact; Documentation Team
+
+Contact the Documentation Team
+==============================
 
 If you wish to contact the Documentation Team, you can also use the
 **#typo3-documentation** channel on Slack.
 
 Additionally, you can contact us via `email <documentation@typo3.org>`__.
 
-General Support for TYPO3
+
+.. index::
+   Help; Support for TYPO3
+   Slack; #typo3-cms
+
+General support for TYPO3
 =========================
 
 Go to https://typo3.org/help/. There, you will also be directed to the
 Slack channel **#typo3-cms**, but some other methods for getting help
 and support are listed as well.
-
-

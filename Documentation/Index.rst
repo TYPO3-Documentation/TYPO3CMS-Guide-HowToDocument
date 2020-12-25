@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. index:: ! Documentation
+.. index:: ! Writing documentation
 .. _start:
 
 =====================

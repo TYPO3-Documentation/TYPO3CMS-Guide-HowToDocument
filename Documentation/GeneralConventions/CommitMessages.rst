@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Git; Commit messages
 .. _general-conventions-commit-messages:
 
 ===============
@@ -22,6 +22,9 @@ Commit message recommendations
 *  A commit message for the docs should consists of a subject line (first line).
    More lines (separated by first line with an empty new line) are optional.
 
+
+.. index:: Git; `Resolves: #issue`
+
 Issues
 ------
 
@@ -38,6 +41,9 @@ You can also cross link to issues in other repositories in TYPO3-Documentation::
 .. seealso::
 
    *  Stack Overflow: `Link to the issue number on GitHub within a commit message <https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message>`__
+
+
+.. index:: Git; `Releases: master, 9.5`
 
 Releases
 --------
@@ -99,7 +105,10 @@ Add the branches to which the change should be added:
    Resolves: #<issue number>
    Releases: master, 9.5
 
-Using TYPO3 Core Commit Message Rules
+
+.. index:: Git; `[BUGFIX],[FEATURE],[TASK] etc.`
+
+Using TYPO3 Core commit message rules
 =====================================
 
 If you wish, you can use the prefixes [BUGFIX],[FEATURE],[TASK] etc.
@@ -111,6 +120,7 @@ possible, use the conventions, that are being used in
 the manual in which you are working, e.g. `TYPO3 Explained commits
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/master>`__
 typically use these conventions.
+
 
 Additional Information
 ======================

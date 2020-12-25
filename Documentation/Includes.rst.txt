@@ -19,6 +19,7 @@
 .. role:: html(code)
 .. role:: js(code)
 .. role:: php(code)
+.. role:: pn(emphasis)
 .. role:: rst(code)
 .. role:: sep (strong)
 .. role:: typoscript(code)
