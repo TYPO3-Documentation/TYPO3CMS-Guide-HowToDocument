@@ -12,15 +12,16 @@ Spelling, terms and glossary
 
 .. index:: pair: Text role; pn (proper name)
 
-*Highly recommended:* Make use of text role `pn` (proper name) to mark up
-special names like `TYPO3 Core Team`:pn:. The recommended way of writing this
-is:
+Feel free to use the `pn` (proper name) text role to mark up special names 
+like `TYPO3 Core Team`:pn: when it's desirable to make them clearly visible.
+The recommended reST source for this is:
 
 .. code-block:: rst
 
    `TYPO3 Core Team`:pn:
 
 Put `:pn:` to the end of the text. This facilitates reading the source.
+
 Currently the 'pn' text role is defined in file :file:`Includes.rst.txt`. It is
 a derivative of 'emphasis' and shown in italics. We are free to change that in
 our theme. A future Sphinx will be able to automatically create a sorted list
