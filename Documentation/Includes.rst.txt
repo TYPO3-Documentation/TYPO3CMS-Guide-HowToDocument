@@ -15,12 +15,13 @@
 .. text roles
 .. ----------
 
-.. role:: aspect (emphasis)
+.. role:: aspect(emphasis)
 .. role:: html(code)
 .. role:: js(code)
 .. role:: php(code)
+.. role:: pn(emphasis)
 .. role:: rst(code)
-.. role:: sep (strong)
+.. role:: sep(strong)
 .. role:: typoscript(code)
 
 .. role:: ts(typoscript)
