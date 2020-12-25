@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
-
+.. index:: Extension manuals; FAQ
 .. _faq-for-extension-authors:
 .. _tips-extension-authors:
 
-=========================
+===
 FAQ
-=========================
+===
 
 
 .. rst-class:: panel panel-default
@@ -19,7 +19,7 @@ If you are missing documentation for some extension versions we have a
 
 .. rst-class:: panel panel-default
 
-Why Does the Documentation not Provide a Title?
+Why Does the Documentation not provide a title?
 ===============================================
 
 .. image:: ../images/missing-title.png
@@ -50,7 +50,7 @@ You must add the project title to your :file:`Settings.cfg`:
 
 .. rst-class:: panel panel-default
 
-How Do I Find My New Rendered Documentation?
+How do I find my new rendered documentation?
 ============================================
 
 There are several possibilities:
@@ -63,7 +63,7 @@ There are several possibilities:
 
 .. rst-class:: panel panel-default
 
-Is it Possible to Highjack Extension Documentation?
+Is it possible to highjack extension documentation?
 ===================================================
 
 How do you make sure only the author of the extension publishes the documentation?
@@ -85,8 +85,8 @@ See :ref:`webhook` for more information.
 
 .. rst-class:: panel panel-default
 
-Is There a Way to Manually Trigger Docs Rendering Aside From a Git Repository Push?
-===================================================================================
+Is there a way to manually trigger documentation rendering aside from a Git repository push?
+============================================================================================
 
 Yes and no. Regular users do not have this option at the moment. However,
 as a member of the Documentation Team you can go to https://intercept.typo3.com
@@ -99,8 +99,8 @@ recommend the usage of the webhook.
 
 .. rst-class:: panel panel-default
 
-Is Documentation Independent of TER?
-====================================
+Is the documentation independent of the TER?
+============================================
 
 Yes.
 
@@ -115,7 +115,7 @@ documentation rendering.
 
 .. rst-class:: panel panel-default
 
-Should I Add a Link to the Documentation in TER?
+Should I add a link to the documentation in TER?
 ================================================
 
 The documentation link should get updated automatically in TER.
@@ -124,8 +124,8 @@ Only use "external documentation" if your documentation is hosted
 somewhere else (not on docs.typo3.org).
 
 
-
 .. rst-class:: panel panel-default
+.. index:: Files; README.rst
 .. _faq-can-i-use-a-readmerst-or-readmemd-instead:
 
 Can I use a README.rst (or README.md) instead?
@@ -159,12 +159,11 @@ use method 2) for minimal documentation which can be maintained in one file.
 
 
 .. rst-class:: panel panel-default
-
+.. index:: "Edit on GitHub" Button
 .. _tip-edit-me-on-github:
 
 How do I Get an "Edit on GitHub" Button
-==========================================
-
+=======================================
 
 Why might you want an "Edit on GitHub" button on the rendered pages
 of your extension documentation?
@@ -196,12 +195,10 @@ Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_con
 extension for a working example.
 
 
-
-
-.. _tip-link-to-issues:
 .. rst-class:: panel panel-default
+.. _tip-link-to-issues:
 
-How can I link to my Issues?
+How can I link to my issues?
 ============================
 
 

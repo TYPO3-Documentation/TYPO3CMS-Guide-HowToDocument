@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: pair: Official documentation; "Edit on GitHub"
 .. _docs-contribute-github-method:
 
 ================================

@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: pair: Documentation; Third-party extensions
 .. _contribute-to-3rdparty-extension:
 
-===================================
-Contribute to Third Party Extension
-===================================
+====================================
+Contribute to third-party extensions
+====================================
 
 This chapter addresses contributing to third party extension documentation.
 
@@ -37,6 +37,7 @@ mentioned in :ref:`supported-filenames-and-formats`.
 
 To find the repository, use one of these methods:
 
+
 Method 1: Find the Source on docs.typo3.org
 -------------------------------------------
 
@@ -45,6 +46,7 @@ in the footer.
 
 Sometimes the metadata in Settings.cfg in a Documentation
 project is not filled out and this link is missing. Then, you can use Method 2.
+
 
 Method 2: Find the Source on https://extensions.typo3.org
 ---------------------------------------------------------
@@ -76,18 +78,20 @@ the core) on https://extensions.typo3.org. System extensions are for
 example indexed_search, form, impexp, etc.
 
 
-Find the Rendered Manual
+.. index:: Third-party extensions; Find the manual
+
+Find the rendered manual
 ========================
 
 You can also find the rendered documentation:
 
-Method 1: Find Rendered Manual on docs.typo3.org
+Method 1: Find rendered manual on docs.typo3.org
 ------------------------------------------------
 
 Go to:
 `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
 
-Method 2: Find Rendered Manual on https://extensions.typo3.org
+Method 2: Find rendered manual on https://extensions.typo3.org
 --------------------------------------------------------------
 
 .. rst-class:: bignums
@@ -109,8 +113,13 @@ Method 2: Find Rendered Manual on https://extensions.typo3.org
    You cannot find system extensions (extensions that are maintained in
    the core) on https://extensions.typo3.org.
 
-Follow Contribution Guide
-=========================
+
+.. index::
+   Third-party extensions; Contribution guide
+   Files; CONTRIBUTING.md
+
+Follow the contribution guide
+=============================
 
 Hopefully, the extension has a contribution guide. You can look at the GitHub
 help pages to check for `conventions for contribution guides
@@ -123,4 +132,4 @@ In the GitHub repository, you should find a file like:
 *  etc.
 
 If no contribution guide exists, follow the general conventions for TYPO3 documentation
-and conventions for creating Pull Requests on GitHub or contact the author.
+and conventions for creating pull requests on GitHub or contact the author.

@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Documentation; Translation
 .. _add-translation:
 
-===========================================
-How to Add Translation
-===========================================
+=======================
+How to add translations
+=======================
 
 If you want to add a translation to official documentation or to
 your extension documentation, please keep in mind that it must be updated

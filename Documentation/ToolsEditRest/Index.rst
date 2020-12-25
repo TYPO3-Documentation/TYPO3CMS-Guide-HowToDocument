@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Editors
 .. _tools:
 .. _tools-for-editing-rest:
 
@@ -40,6 +40,9 @@ editor / IDE to comply with our :ref:`basic coding guidelines
 
 You may have to install
 an additional plugin, see `EditorConfig <https://editorconfig.org/#download>`__.
+
+
+.. index:: reST; Visual Studio Code
 
 Visual Studio Code
 ==================
@@ -99,6 +102,9 @@ Here is an example:
 
 .. image:: ../videos/vscodesnippets2.gif
    :class: with-shadow
+
+
+.. index:: reST; PhpStorm
 
 PhpStorm
 ========

@@ -1,13 +1,12 @@
-
 .. include:: /Includes.rst.txt
 .. highlight:: bash
-
+.. Index:: Rendering; Docker
 .. _render-documenation-with-docker:
 .. _render-documentation-with-docker:
 
-===================================
-Rendering Documentation with Docker
-===================================
+=======================================
+Rendering the documentation with Docker
+=======================================
 
 Here, we show the basic rendering commands for rendering locally with the official Docker container.
 
@@ -28,8 +27,11 @@ Install Docker:
 
 *  https://docs.docker.com/install/
 
-Commands to Render Documentation
-================================
+
+.. Index:: Rendering; Commands
+
+Commands to render the documentation
+====================================
 
 .. rst-class:: bignums-xxl
 
@@ -74,7 +76,6 @@ Commands to Render Documentation
       start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 
-
 Explanations
 ============
 
@@ -111,8 +112,7 @@ When you make additional changes, you can run step 2 again and reload the page
 in your browser.
 
 
-
-Example Aliases
+Example aliases
 ===============
 
 .. tip::
@@ -143,8 +143,3 @@ Example Aliases
 
    # run docker, generate documentation and open result in browser
    alias t3doc='t3docrun && t3docmake && t3docopen'
-
-
-
-
-

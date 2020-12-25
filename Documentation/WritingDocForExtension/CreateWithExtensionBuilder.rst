@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Files; Documentation.tmpl
 .. _doc-for-ext-with-extension-builder:
 
-==========================================
-Start Documentation With Extension Builder
-==========================================
+==============================================
+Start documentation with the extension builder
+==============================================
 
 If you used the `extension_builder <https://github.com/FriendsOfTYPO3/extension_builder>`__
 to generate your extension, it will already have created a :file:`Documentation.tmpl`
