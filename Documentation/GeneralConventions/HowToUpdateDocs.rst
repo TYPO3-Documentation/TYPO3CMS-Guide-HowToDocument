@@ -59,7 +59,6 @@ Changes::
 
 Further information:
 
-*  see the open issue: `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
 *  General section about reST CGL: :ref:`version-hints`
 
 
@@ -142,7 +141,6 @@ Work in progress
 Several suggestions have been made to improve the process but these still require
 more work or a decision, e.g.
 
-*  `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
 *  `Link to changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__
 *  `How can we get changes added to documentation early? And what is master: master or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__
 *  `Add information when page / manual was last reviewed and what state it is in <https://github.com/TYPO3-Documentation/T3DocTeam/issues/73>`__
