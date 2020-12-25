@@ -12,16 +12,15 @@ Spelling, terms and glossary
 
 .. index:: pair: Text role; pn (proper name)
 
-Feel free to use the `pn` (proper name) text role to mark up special names 
-like `TYPO3 Core Team`:pn: when it's desirable to make them clearly visible.
-The recommended reST source for this is:
+*Highly recommended:* Make use of text role `pn` (proper name) to mark up
+special names like `TYPO3 Core Team`:pn:. The recommended way of writing this
+is:
 
 .. code-block:: rst
 
    `TYPO3 Core Team`:pn:
 
 Put `:pn:` to the end of the text. This facilitates reading the source.
-
 Currently the 'pn' text role is defined in file :file:`Includes.rst.txt`. It is
 a derivative of 'emphasis' and shown in italics. We are free to change that in
 our theme. A future Sphinx will be able to automatically create a sorted list
@@ -38,6 +37,7 @@ Pick the spelling and recommended terms from this list.
 
 A
 
+`Apache`,
 `API`,
 
 
@@ -53,13 +53,18 @@ C
 `Core Team`, `TYPO3 Core Team`,
 `Core`, `TYPO3 Core`
 `cross-site scripting`,
+`Crowdin`,
 
 
 D
 
 `Data Processor`,
+`DBAL`
 `Docker`,
+`Docker Compose`,
+`Doctrine`
 `Documentation Team`, `TYPO3 Documentation Team`,
+`DataHandler`,
 
 
 E
@@ -74,10 +79,11 @@ E
 
 F
 
-`Flexform`,
-`Flexforms`,
+`FlexForm`,
 `Fluid`,
+`FormEngine`,
 `frontend`,
+`frontend rendering`,
 
 
 G
@@ -88,12 +94,35 @@ G
 
 I
 
+`InnoDB`,
 `Introduction Package`,
+
+L
+
+`LinkHandler`,
+`Linux`,
 
 M
 
+`Markdown`,
 `mark up the text`,
 `markup (the)`,
+`MariaDB`,
+`MySQL`,
+`MacOs`, outdated: `Mac`, `Mac OS X`,
+
+N
+
+`nginx`
+
+O
+
+`Open Source`,
+
+P
+
+`page TSconfig`,
+`PostgreSQL`
 
 Q
 
@@ -108,24 +137,39 @@ R
 S
 
 `sitepackage`,
-`system extension`,
+`Sphinx`
+`system extension`, not: `sys extension`, `core extension`
 
 
 T
 
 `TCA`,
+`TCE`,
+`TCEforms`,
+`TCEmain`,
 `textrole`,
 `third party extension`,
+`toctree`,
 `TSconfig`,
-`TYPO3 Core Team`, `Core Team`,
-`TYPO3 Core`, `Core`,
 `TYPO3`,
-`TypoScript`
+`TYPO3 Core`, `Core`,
+`TYPO3 Core Engine`, 
+`TYPO3 Core Team`, `Core Team`,
+`TYPO3 Core Engine`
+`TypoScript`,
 
+U
+
+`UNIX`,
 
 V
 
 `ViewHelper`
+
+W
+
+`Windows`, `Microsoft Windows`,
+`windows`, `modal windows`,
 
 
 
