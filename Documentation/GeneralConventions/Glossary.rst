@@ -14,7 +14,7 @@ Spelling, terms and glossary
 
 *Highly recommended:* Make use of text role `pn` (proper name) to mark up
 special names like `TYPO3 Core Team`:pn:. The recommended way of writing this
-isis:
+is:
 
 .. code-block:: rst
 
