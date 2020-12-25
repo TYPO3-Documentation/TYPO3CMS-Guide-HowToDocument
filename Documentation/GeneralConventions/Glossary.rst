@@ -35,6 +35,11 @@ Spelling
 Pick the spelling and recommended terms from this list.
 
 
+A
+
+`API`,
+
+
 B
 
 `backend`,
