@@ -150,12 +150,6 @@ folder. This means I have to maintain 2 documentations. Or not?
    must also exist, but that is all that needs to be in the `Documentation`
    directory.
 
-.. important::
-
-   About using method 2) There are currently still :ref:`2 open issues <migrate-known-problems>`,
-   but this is already resolved in a
-   "development" version.
-
 Actually, you have more options, but we do not want to make things too complicated.
 
 Which one should you choose? That is up to you.
