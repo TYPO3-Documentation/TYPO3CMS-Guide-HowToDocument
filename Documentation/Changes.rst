@@ -40,6 +40,7 @@ make sure to get the latest changes and work on `master` in the future.
       .. code-block:: bash
 
          git branch
+
       or
 
       .. code-block:: bash
@@ -88,5 +89,4 @@ yet been rendered with the new mechanism:
    :class: with-shadow
    :alt: Deprecation message on rendered extension documentation page
 
-      Deprecation message on rendered extension documentation page
-
+   Deprecation message on rendered extension documentation page

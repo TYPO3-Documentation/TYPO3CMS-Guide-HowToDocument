@@ -64,7 +64,7 @@ Write New Content
 
 *--* **new**, *added August 10, 2019*
 
-*  :ref:`Write missing content <github-new-content>`.
+*  :ref:`Write missing content <links-github-issues>`.
 
 
 

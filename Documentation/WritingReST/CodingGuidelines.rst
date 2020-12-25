@@ -2,9 +2,9 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 
-=========================
-Coding Guidlines for reST
-=========================
+==========================
+Coding guidelines for reST
+==========================
 
 
 This file was moved to

@@ -79,19 +79,21 @@ Here is an example:
 
 .. code-block:: json
 
-    "image (full)": {
-            "prefix": "imgf",
-            "body": [
-                ".. image:: $1",
-                "   :class: with-shadow",
-                "   :alt: $2",
-                "   :target: $3",
-                "$4"
-            ],
-            "description": "image with parameters"
-       }
+   {
+      "image (full)": {
+         "prefix": "imgf",
+         "body": [
+            ".. image:: $1",
+            "   :class: with-shadow",
+            "   :alt: $2",
+            "   :target: $3",
+            "$4"
+         ],
+         "description": "image with parameters"
+      }
+   }
 
-*  You can enter the snippet by typing imgf and then TAB
+*  You can enter the snippet by typing `imgf`:code: and then TAB
 *  The $1, $2 etc. mark the places where further TABs will take you.
    Use this if extra text needs to be entered
 

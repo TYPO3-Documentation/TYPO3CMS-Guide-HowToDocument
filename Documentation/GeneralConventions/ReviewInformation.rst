@@ -139,6 +139,8 @@ In order to render this, add this to :file:`Settings.cfg`:
    [extensions]
    todo_include_todos=True
 
+.. _review-workflow-related-issues:
+
 Related Issues
 ==============
 

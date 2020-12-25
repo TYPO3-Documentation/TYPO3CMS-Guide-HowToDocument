@@ -206,10 +206,11 @@ These can be countries, names of people, corporations or brand names.
 Examples:
 
 *  "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
-  previous knowledge of **Git**.": Git is capitalized, because it is a brand name (quote from
-  `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
+   previous knowledge of **Git**.": Git is capitalized, because it is a brand name (quote from
+   `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
 *  **Wikipedia**
 *  **Europe**
+
 
 .. _spelling-executables:
 
@@ -229,9 +230,6 @@ Spelling & preferred terms reference
 ====================================
 
 The content was moved to :ref:`spelling-ref`.
-
-.. _spelling-ref-title:
-
 
 
 Used resources

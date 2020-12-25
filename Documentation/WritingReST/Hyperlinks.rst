@@ -231,7 +231,7 @@ need to prefix the name of that manual:
    :ref:`t3tca:columns-inline`
 
 
-The name `t3tca` is the name we have given it in the :ref:`Settings.cfg` file:
+The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file:
 
 .. code-block:: none
 
