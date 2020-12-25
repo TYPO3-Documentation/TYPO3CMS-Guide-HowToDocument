@@ -1,5 +1,5 @@
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 .. _render-documenation-with-docker:

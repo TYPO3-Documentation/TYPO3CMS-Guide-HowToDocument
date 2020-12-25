@@ -1,6 +1,6 @@
 :orphan:
 
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _Tip-of-the-day-outdated:
 
@@ -161,7 +161,7 @@ Preferred: Use Single Backticks ` ... `
 
 2. Just write the code as it is - don't escape or double anything.
 
-3. Even better: Explicitly specify what kind of code (= textrole) it is. This better shows
+3. Even better: Explicitly specify what kind of code (text role) it is. This better shows
    the semantics and in the output there may be a a special coloring or highlighting (on the way):
 
    ================ ================================================= ============================================ ===
@@ -184,7 +184,7 @@ When to Use Literal Code \`\`...``
 
 Things get tricky if your inline code already contains single backquotes (backticks).
 
-4. In many cases you can still use the *interpreted textrole* as described in 1. to 3.
+4. In many cases you can still use the *interpreted text role* as described in 1. to 3.
    For example we can write ``:code:`:html:`<br>```` to get :code:`:html:`<br>``
 
    This is possible if (a) your code doesn't start with a backtick and (b) if no backtick in

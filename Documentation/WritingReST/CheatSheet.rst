@@ -2,15 +2,15 @@
 
 .. -----------------------------------------------------------
    include directive: Here, it includes the file
-   Includes.txt. All files in the documentation project should
+   Includes.rst.txt. All files in the documentation project should
    do this. Use correct path!
    -----------------------------------------------------------
 
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. ------------------------------------------------------------------
    highlight directive: sets the default language for code-blocks.
-   Usually, default is set to PHP in Includes.txt. Here, we set it to
+   Usually, default is set to PHP in Includes.rst.txt. Here, we set it to
    rst (for reStructuredText).
    ------------------------------------------------------------------
 
@@ -281,10 +281,10 @@ Source::
       $a = 'hello';
 
 
-:ref:`Inline Code, Textroles <textroles>`
-=========================================
+:ref:`Inline code, text roles <text-roles>`
+===========================================
 
-For inline code or for other semantic markup of special texts, use textroles.
+For inline code or for other semantic markup of special texts, use text roles.
 
 Examples:
 
@@ -293,7 +293,7 @@ Examples:
 #. :file:`/etc/passwd` (file)
 #. :kbd:`ctrl` + :kbd:`s` (keyboard strokes)
 
-Source (inline text with textroles):
+Source (inline text with text roles):
 
 .. code-block:: rest
    :linenos:
