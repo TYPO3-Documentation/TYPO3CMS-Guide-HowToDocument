@@ -19,6 +19,9 @@ For documentation to be rendered, you need at least:
    :ref:`alternatives <start-file>`, such as :file:`README.rst`.
 *  (**required**) :ref:`Documentation/Settings.cfg <settings-cfg>`
 
+.. hint::
+
+   For some example texts, please see :ref:`exampleTexts`.
 
 The other files listed here may not be required, but are recommended.
 
@@ -140,6 +143,9 @@ If none of these files exist, no documentation will be rendered.
 
 The files ending in .md contain Markdown, the files ending in .rst
 contain reStructuredText (reST).
+
+For information about what texts can be on the start page, please
+see :ref:`example-start-page`.
 
 
 .. tip::
