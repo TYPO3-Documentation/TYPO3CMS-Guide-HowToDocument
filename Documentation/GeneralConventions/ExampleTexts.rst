@@ -39,7 +39,7 @@ The following should be on the start page, typically in this order:
       author is "Documentation Team", it should be a link to the
       docs team page on typo3.org, not a link to the email address.
 
-*  *required*: Link to sitemap (as button style)
+*  *optional*: Link to sitemap or index (as button style). This is good practice if the menu contains many items.
 
 *  *required*: (in sidebar with title "Contributors:") Link to
    information about contribution, link targets and the shortcut.
