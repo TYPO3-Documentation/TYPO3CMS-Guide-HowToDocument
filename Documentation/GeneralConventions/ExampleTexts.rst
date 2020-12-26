@@ -137,3 +137,6 @@ Menu
 ====
 
 *  *required*: Should contain "Sitemap", typically as last item
+*  Should not contain "Linktargets". There should be a link to the link targets
+   on the start page as described above. The filename should be
+   :file:`Documentation/Targets.rst`.
