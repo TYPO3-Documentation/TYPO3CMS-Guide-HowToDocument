@@ -5,6 +5,7 @@
    Documentation; Openpub license
    Documentation; Creative Commons license
 .. _general-conventions-licenses:
+.. _licenses:
 
 ========
 Licenses

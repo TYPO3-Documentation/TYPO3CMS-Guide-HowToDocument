@@ -87,6 +87,10 @@ creating the menu, using the current theme to add additional styles and images.
 Documentation types
 ===================
 
+.. hint::
+
+   See boilerplate texts for the start page on :ref:`example-start-page`.
+
 
 .. index::  TYPO3 documentation; Manual
 

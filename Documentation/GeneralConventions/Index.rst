@@ -100,6 +100,7 @@ be found in the subchapters.
    ContentStyleGuide
    Glossary
    DirectoryFilenames
+   ExampleTexts
    Format
    MenuHierarchy
    CodingGuidelines
