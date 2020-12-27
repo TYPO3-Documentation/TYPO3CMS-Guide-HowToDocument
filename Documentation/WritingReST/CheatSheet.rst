@@ -459,9 +459,30 @@ Source (tip):
 
 Source:
 
-.. literalinclude:: Diagrams/sequence.rst.txt
-   :language: rst
+.. code-block:: rest
+
+   .. uml::
+
+      == Initialization ==
+
+      Alice -> Bob: Authentication Request
+      Bob --> Alice: Authentication Response
+
+      == Repetition ==
+
+      Alice -> Bob: Another authentication Request
+      Alice <-- Bob: another authentication Response
 
 How it looks:
 
-.. include:: Diagrams/sequence.rst.txt
+.. uml::
+
+   == Initialization ==
+
+   Alice -> Bob: Authentication Request
+   Bob --> Alice: Authentication Response
+
+   == Repetition ==
+
+   Alice -> Bob: Another authentication Request
+   Alice <-- Bob: another authentication Response
