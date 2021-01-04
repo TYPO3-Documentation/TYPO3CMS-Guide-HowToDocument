@@ -102,7 +102,7 @@ You may however notice, that it might be helpful to point out some relevant part
 screenshots. That is what we do by creating images as described in the next section.
 
 
-.. index:: Screenshots; With graphics elements
+.. index:: Screenshots; Adding graphics elements
 
 Guidelines for screenshots with graphics elements
 =================================================
