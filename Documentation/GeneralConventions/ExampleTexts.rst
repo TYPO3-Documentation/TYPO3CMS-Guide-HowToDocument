@@ -136,7 +136,9 @@ See `decision: Proposal for documentation manual start page <https://decisions.t
 Menu
 ====
 
-*  *required*: Should contain "Sitemap", typically as last item
 *  Should not contain "Linktargets". There should be a link to the link targets
    on the start page as described above. The filename should be
    :file:`Documentation/Targets.rst`.
+*  *required*: Should contain "Sitemap", typically as last item. The file name
+   should be :file:`Documentation/Sitemap.rst` (which is already the convention
+   in most official manuals
