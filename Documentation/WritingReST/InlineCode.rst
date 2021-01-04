@@ -173,8 +173,8 @@ language with the exception of the TypoScript manuals, where `typoscript` is
 the default.
 
 
-Use 'Includes.rst.txt' file
----------------------------
+About the 'Includes.rst.txt' file
+---------------------------------
 
 In general, the manual you are working on will already contain an
 :ref:`Includes.rst.txt <includes-txt>` file. In that file, the text roles
