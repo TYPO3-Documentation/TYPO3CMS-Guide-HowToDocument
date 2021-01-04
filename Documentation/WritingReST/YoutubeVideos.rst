@@ -2,7 +2,7 @@
 .. highlight:: rst
 .. index::
    reST; YouTube videos
-   reST directives; youtube
+   reST directives; YouTube
 .. _youtube-videos:
 .. _youtube:
 
