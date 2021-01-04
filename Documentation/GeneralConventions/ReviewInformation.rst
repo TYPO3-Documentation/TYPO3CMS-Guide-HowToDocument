@@ -69,7 +69,7 @@ There are 3 goals here:
 
 .. index::
    Reviewing manuals; Review information
-   Reviewing manuals; Outdated contend
+   Reviewing manuals; Outdated content
    reST directives; Status
 .. _add-review-info-to-startpage:
 
@@ -107,7 +107,7 @@ Examples:
 
 
 .. index::
-   Reviewing manuals; Outdated contend
+   Reviewing manuals; Outdated content
    reST directives; warning
 .. _reviewInfoWarning:
 
