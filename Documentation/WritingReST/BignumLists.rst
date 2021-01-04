@@ -5,9 +5,9 @@
    reST classes; bignums
 .. _styled-numbered-lists:
 
-===================================
-Styled numbered sections (big-nums)
-===================================
+==================================
+Styled numbered sections (bignums)
+==================================
 
 
 .. _big-nums-xxl:
