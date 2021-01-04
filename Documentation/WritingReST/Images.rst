@@ -44,7 +44,7 @@ Additional parameters can be found on the docutils page `reStructuredText Direct
 Examples
 ========
 
-.. index:: reST; Images scaling
+.. index:: reST; Image scaling
 
 Example 1: Scaled image with shadow and link target
 ---------------------------------------------------
@@ -167,7 +167,7 @@ Some text ... (will be displayed on the right of the image).
 
 
 Example 5: Image with border
---------------------------------
+----------------------------
 
 .. image:: ../images/a4.jpg
    :class: with-border
