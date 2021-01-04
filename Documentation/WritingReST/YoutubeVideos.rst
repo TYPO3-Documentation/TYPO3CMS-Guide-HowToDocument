@@ -1,11 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   reST; YouTube videos
+   reST directives; YouTube
 .. _youtube-videos:
 .. _youtube:
 
 ====================
-Embed YouTube Videos
+Embed YouTube videos
 ====================
 
 .. rst-class:: bignums

@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Common pitfalls
 .. _rest-common-pitfalls:
 
 ===============
-Common Pitfalls
+Common pitfalls
 ===============
 
 Here we describe some common mistakes. Read this section before you start

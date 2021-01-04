@@ -1,11 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
-
+.. index::
+   reST; Hyperlinks
+   reST; Cross referencing
+   reST roles; ref
 .. _how-to-document-hyperlinks:
 
 ==============================
-Hyperlinks & Cross-referencing
+Hyperlinks & cross referencing
 ==============================
 
 
@@ -57,9 +59,10 @@ by adding a label before the section header::
 How to create links is described in more detail in the next sections.
 
 
+.. index:: reST; External links
 .. _external-links:
 
-External Links
+External links
 ==============
 
 .. important::
@@ -81,9 +84,11 @@ For further explanation of the difference between these 2, please see
 
 If in doubt, just use 2 underscores as explained in the next section :ref:`external-links-anonymous`.
 
+
+.. index:: reST; Anonymous URL
 .. _external-links-anonymous:
 
-External Link as Anonymous URL
+External link as anonymous URL
 ------------------------------
 
 Syntax
@@ -103,15 +108,16 @@ Example
    `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
-How it Looks
+How it looks
 ~~~~~~~~~~~~
 
 `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
+.. index:: reST; Named references
 .. _external-links-named-reference:
 
-External Link as Named Reference
+External link as named reference
 --------------------------------
 
 Syntax
@@ -128,18 +134,20 @@ underscore instead of 2.
 
 
 
-
+.. index:: reST; Link targets
 .. _link-targets-explanation:
 
-Link Targets
+Link targets
 ============
 
 When using the :ref:`intersphinx` mechanism (as described in the next section), you
 will link to link targets.
 
+
+.. index:: reST; Link targets, explicit
 .. _explicit-link-targets:
 
-Explicit Link Targets (Labels for Cross-Referencing)
+Explicit link targets (Labels for cross referencing)
 ----------------------------------------------------
 
 You can define an explicit link target with a label for a section (or chapter):
@@ -165,9 +173,10 @@ Here, the link target *columns-inline* will be defined.
    the name has changed considerably)
 
 
+.. index:: reST; Link targets, implicit
 .. _implicit-link-targets:
 
-Implicit Link Targets
+Implicit link targets
 ---------------------
 
 For every section (or chapter), an implicit link target is created from the
@@ -177,10 +186,13 @@ However, there are some disadvantages in using these, so we will not go into
 that further.
 
 
+.. index::
+   reST; Link targets, Cross referencing
+   reST roles; ref
 .. _intersphinx:
 .. _cross-referencing:
 
-Cross-Referencing (`:ref:`)
+Cross referencing (`:ref:`)
 ===========================
 
 This section describes how to link to sections of the current or other
@@ -193,7 +205,7 @@ Additional information: See the `Sphinx documentation
 For an overview of the link types, see :ref:`cheat-sheet-intersphinx` in
 the "ReST & Sphinx Cheat Sheet".
 
-In the Same Manual
+In the same manual
 ------------------
 
 A :ref:`section label <explicit-link-targets>` of the name `columns-inline` has been set somewhere::
@@ -215,10 +227,10 @@ You can also explicitly set an anchor text::
    :ref:`Inline columns <columns-inline>`
 
 
-From One Manual to Another
+From one manual to another
 --------------------------
 
-Example 1: Use Text of Headline as Anchor Text
+Example 1: Use text of headline as anchor text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Again, we want to link to the label `columns-inline`.
@@ -231,7 +243,7 @@ need to prefix the name of that manual:
    :ref:`t3tca:columns-inline`
 
 
-The name `t3tca` is the name we have given it in the :ref:`Settings.cfg` file:
+The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file:
 
 .. code-block:: none
 
@@ -253,7 +265,7 @@ of the headline is that follows the label *in the manual we link to*, in this ca
 the TCA manual.
 
 
-Example 2: Specify Anchor Text
+Example 2: Specify anchor text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -266,7 +278,7 @@ writing:
 
 .. _intersphinx-benefits:
 
-Understanding the Benefits
+Understanding the benefits
 --------------------------
 
 Imagine that the TCA manual has been restructured. Text and maybe urls changed, but the - purely -

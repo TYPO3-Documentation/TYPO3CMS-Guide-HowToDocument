@@ -53,6 +53,7 @@ On the page you are looking at now, "Introduction" is a level 1 header and "reST
 The levels determine how the headers will be styled and also how they will be structured
 in the menu in the sidepanel.
 
+.. index:: ! Sphinx
 
 Sphinx
 ======
@@ -79,6 +80,7 @@ Additional information:
 *  `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__
 *  `What is the difference: reST, docutils, sphinx, readthedocs <https://coderwall.com/p/vemncg/what-is-the-difference-rest-docutils-sphinx-readthedocs>`__ (2016)
 
+.. index:: reST; Rendering
 
 Rendering
 =========
@@ -93,7 +95,7 @@ Our headline example from above will look like this:
    :class: with-shadow
 
 
-Looking at the Source
+Looking at the source
 =====================
 
 Whenever you come across a documentation page on docs.typo3.org, you can look
@@ -104,7 +106,6 @@ rendered version.
 
 .. image:: ../images/view-page-source.png
    :class: with-shadow
-
 
 
 .. hint::

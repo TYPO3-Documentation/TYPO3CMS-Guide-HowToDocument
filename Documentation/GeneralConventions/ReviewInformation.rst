@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: ! Reviewing manuals
 .. _guidelines-for-reviewing:
 
 ================================
@@ -14,6 +14,9 @@ See the :ref:`Related Issues <review-workflow-related-issues>`.
 
 An overview of all manual maintainers and review status is maintained
 in the `Wiki <https://wiki.typo3.org/DocTeam/Official_Documentation_Maintenance>`__.
+
+
+.. index:: Reviewing manuals; Guidelines
 
 Guidelines for reviewing
 ========================
@@ -63,6 +66,11 @@ There are 3 goals here:
    mark pages that have been already checked as ok or not ok and find all unchecked pages
    or find all pages with problems.
 
+
+.. index::
+   Reviewing manuals; Review information
+   Reviewing manuals; Outdated content
+   reST directives; Status
 .. _add-review-info-to-startpage:
 
 Add review information to the start page
@@ -97,6 +105,10 @@ Examples:
 
 *  :ref:`t3start:start`.
 
+
+.. index::
+   Reviewing manuals; Outdated content
+   reST directives; warning
 .. _reviewInfoWarning:
 
 Add warning for outdated content
@@ -119,7 +131,11 @@ cases where updating is not possible immediately.
       The information on this page is outdated!
 
 
-Todo Directive
+.. index::
+   Reviewing manuals; Todo
+   reST directives; todo
+
+Todo directive
 --------------
 
 The "todo" directive will not get rendered by default.
@@ -139,7 +155,10 @@ In order to render this, add this to :file:`Settings.cfg`:
    [extensions]
    todo_include_todos=True
 
-Related Issues
+
+.. _review-workflow-related-issues:
+
+Related issues
 ==============
 
 *  `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__

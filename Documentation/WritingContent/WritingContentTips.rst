@@ -1,12 +1,14 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Writing; Content
 .. _write-good-content:
 
 =============================
 Tips for writing good content
 =============================
 
+
+.. index:: Writing; Readability
 
 How people read on the web
 ==========================
@@ -35,6 +37,8 @@ So:
    the information they are looking for and start reading there.
 
 
+.. index:: Writing; Online
+
 Tip 1: Write for online reading
 ===============================
 
@@ -42,6 +46,7 @@ Tip 1: Write for online reading
 *  Make sure, the title is clear.
 *  Text with good formatting is easier to scan (see the next two
    tips)
+
 
 Tip 2: Use paragraphs
 =====================
@@ -84,7 +89,6 @@ without loss:
    unnecessary lines and a machine no unnecessary parts."
 
    -- `Strunk & White: "The Elements of Style <http://www.jlakes.org/ch/web/The-elements-of-style.pdf>`__
-
 
 
 Tip 7: Use a spellchecker

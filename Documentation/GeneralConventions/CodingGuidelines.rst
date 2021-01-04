@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: pair: Coding guidelines; reST
 .. _format-rest-cgl:
 
 ================================
@@ -10,15 +10,24 @@ Coding guidelines for reST files
 Basic formatting rules
 ======================
 
+
+.. index::
+   reST; Encoding
+   reST; Utf-8
+
 Encoding
 --------
 
 *  use utf-8
 
+
+.. index::
+   reST; Whitespace
+   reST; Indentation
 .. _cgl-indenting:
 
-Whitespace and indenting
-------------------------
+Whitespace and indentation
+--------------------------
 
 .. important::
 
@@ -51,7 +60,9 @@ Example:
 *  lines 2-4 must be indented one level (3 spaces)
 
 
-Line Length
+.. index:: reST; Line length
+
+Line length
 -----------
 
 *  Keep lines shorter than 80 characters.
@@ -61,6 +72,10 @@ Line Length
    *  Files can be easily edited directly on GitHub
    *  Files can be compared in a diff view
 
+
+.. index::
+   .editorconfig
+   Files; .editorconfig
 
 .. _editorconfig:
 
@@ -112,11 +127,19 @@ This sample .editorconfig will instruct your editor / IDE to:
 *  remove trailing whitespace (line 10)
 
 
+.. index:: reST; Special characters
+
 Special characters
 ------------------
 
 The only way to include "special" characters is to use them directly
 
+
+.. index::
+   reST; Headlines
+   reST; Headers
+   reST; Titles
+   reST; Underlining
 .. _rest-cgl-headline-underlines:
 
 Headline underlining
@@ -164,6 +187,14 @@ file::
 
    etc.
 
+.. index::
+   reST; Version hints
+   reST; Deprecations
+   reST; Feature
+   reST; Changes
+   reST directives; deprecated
+   reST directives; versionadded
+   reST directives; versionchanged
 .. _version-hints:
 
 How to add version hints
@@ -190,6 +221,11 @@ For more information, see the open issue:
 
 *  `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
 
+
+.. index::
+   reST; Link to changelog
+   reST roles; doc
+   File; Settings.cfg
 .. _link-to-changelog:
 
 Link to changelog
@@ -213,6 +249,9 @@ For this to work, t3core must be defined in :file:`Settings.cfg`:
    t3core = https://docs.typo3.org/c/typo3/cms-core/master/en-us/
 
 
+.. index::
+   reST; GUI elements
+   reST roles; guilabel
 .. _rest-refer-to-gui-elements:
 
 Referring to GUI elements
@@ -243,8 +282,12 @@ How it looks:
    Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
 
 
-Refer to keystrokes
-===================
+.. index::
+   reST; Keystrokes
+   reST roles; kbd
+
+Refering to keystrokes
+======================
 
 When pointing out keyboard shortcuts or keystroke sequences, use
 :ref:`text role <text-roles>` kbd.
@@ -257,4 +300,3 @@ Example:
 
 How it looks:
    Press :kbd:`ctrl` + :kbd:`s`
-

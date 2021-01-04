@@ -1,7 +1,9 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 .. index::
-   Spelling, Terms, Glossary
+   Spelling; Reference
+   Preferred terms
+   Glossary
 .. _preferred-terms:
 .. _spelling-ref:
 .. _spelling-ref-this-guide:

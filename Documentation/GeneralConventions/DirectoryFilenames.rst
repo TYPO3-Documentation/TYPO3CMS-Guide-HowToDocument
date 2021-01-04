@@ -1,5 +1,8 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
+.. index::
+   ! Files
+   Directories
 
 .. _general-conventions-dir-and-filenames:
 
@@ -52,6 +55,7 @@ For alternative start page (e.g. :file:`README.rst` or :file:`README.md`),
 see :ref:`"start file" <start-file>`.
 
 
+.. index:: Files; composer.json
 .. _composer-json:
 
 composer.json
@@ -114,6 +118,10 @@ package. This will be used when found. If not provided, the ``package-key`` will
 be used, where all ``-`` get replaced by ``_``, to follow TYPO3 and packagist
 conventions.
 
+
+.. index::
+   Files; Start file
+   Files; Documentation/Index.rst
 .. _index-rst:
 .. _start-file:
 .. _supported-filenames-and-formats:
@@ -310,6 +318,7 @@ Workaround for single file
 
 
 
+.. index:: Files; Settings.cfg
 
 .. _settings-cfg:
 
@@ -332,6 +341,11 @@ Settings.cfg
 
 The file consists of sections, which start with a keyword in brackets, such as `[general]`.
 Make sure that all directives exist in the correct section.
+
+
+.. index::
+   Intersphinx mapping
+   Settings.cfg; Intersphinx mapping
 
 Intersphinx mapping
 -------------------
@@ -399,6 +413,8 @@ This is :file:`Settings.cfg` for this manual.
 .. literalinclude:: ../Settings.cfg
    :language: cfg
 
+
+.. index:: Files; Includes.rst.txt
 .. _includes-txt:
 
 Includes.rst.txt
@@ -419,6 +435,7 @@ Example:
    :language: rst
 
 
+.. index:: Files; .editorconfig
 .. _editorconfig-in-filenames:
 
 .editorconfig
@@ -435,6 +452,7 @@ Example:
 *  `.editorconfig in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
 
 
+.. index:: Files; .gitignore
 .. _gitignore-in-filenames:
 
 .gitignore
@@ -456,6 +474,7 @@ only and will not be included in the repository on GitHub when you push.
 Use the file in `this manual: .gitignore
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.gitignore>`__ as a template.
 
+
 Minimal example
 ---------------
 
@@ -468,6 +487,8 @@ Minimal example
    # ignore generated documentation
    *GENERATED*
 
+
+.. index:: Files; README.rst
 .. _readme-rst:
 .. _about-file:
 
@@ -513,6 +534,8 @@ In the official TYPO3 documentation, we follow this principle:
    file with higher priority (such as :file:`Documentation/Index.rst`) exists. Do not do this for official documentation,
    stick to the conventions. You are however free to do this for your **extension documentation.**
 
+
+.. index:: Files; CONTRIBUTING.rst
 .. _contributing-rst:
 
 CONTRIBUTING.rst

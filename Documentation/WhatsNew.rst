@@ -8,7 +8,7 @@
 .. _whats-new:
 
 =======================
-Whats New in This Guide
+Whats new in this guide
 =======================
 
 
@@ -18,18 +18,16 @@ Whats New in This Guide
 .. _news-2019-update-docs:
 .. rst-class:: panel panel-default
 
-NEW: Conventions for Updating Documentation
+NEW: Conventions for updating documentation
 -------------------------------------------
 
 *  :ref:`howto-update-docs`
 
 
-
-
 .. _news-2019-new-doc-server:
 .. rst-class:: panel panel-default
 
-NEW: Migration to new Infrastructure
+NEW: Migration to new infrastructure
 ------------------------------------
 
 .. important::
@@ -41,7 +39,7 @@ NEW: Migration to new Infrastructure
 .. _news-2019-rest-tables:
 .. rst-class:: panel panel-default
 
-NEW: Tables (reST and Sphinx Reference)
+NEW: Tables (reST and Sphinx reference)
 ---------------------------------------
 
 2019-02-05 by Sybille Peters
@@ -50,11 +48,10 @@ See the new page :ref:`rest-tables` describing how to use tables
 in reST.
 
 
-
 .. _news-2019-rest-cheat-sheet:
 .. rst-class:: panel panel-default
 
-NEW: Cheat Sheet for reST and Sphinx
+NEW: Cheat sheet for reST and Sphinx
 ------------------------------------
 
 2019-02-03 by Sybille Peters
@@ -64,11 +61,10 @@ used markup on one page.
 
 
 
-
 .. _news-2019-guidelines-for-images:
 .. rst-class:: panel panel-default
 
-NEW: Guidelines for Images
+NEW: Guidelines for images
 --------------------------
 
 2019-01-22 by Sybille Peters
@@ -93,7 +89,7 @@ suggestions or give feedback in the Slack channel (see :ref:`slack`).
 .. _news-2019-tools-for-editing-rest:
 .. rst-class:: panel panel-default
 
-NEW: Tools Chapter
+NEW: Tools chapter
 ------------------
 
 2019-01-04 by Sybille Peters
@@ -109,7 +105,7 @@ editing reST files with PhpStorm.
 .. _news-2018-content-styleguide:
 .. rst-class:: panel panel-default
 
-NEW: Spelling Guide
+NEW: Spelling guide
 -------------------
 
 2018-11-27 by Sybille Peters
@@ -122,9 +118,8 @@ and spelling of plaintext were added in order to make it easier to use consisten
 .. _news-2018-more:
 .. rst-class:: panel panel-default
 
-More News in 2018
+More news in 2018
 ------------------
-
 
 *  Nov 26, 2018 :ref:`docs-contribute-github-method`
 *  Oct 21, 2018 :ref:`general-conventions-commit-messages`

@@ -1,13 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Documentation; Extension
 .. _writing-doc-for-ext-start:
 .. _how-to-start-docs-extension:
 .. _extension-documentation-files:
 .. _write-doc-extensions-intro:
 
 ============================
-How to Document an Extension
+How to document an extension
 ============================
 
 .. important::

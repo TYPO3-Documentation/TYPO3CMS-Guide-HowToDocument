@@ -1,6 +1,9 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   ! Images
+   Screenshots
+   see: Screenshots; Images
 .. _guidelines-for-images:
 
 ==============================
@@ -20,11 +23,17 @@ common are:
    useful for the reader
 #. Diagrams, such as UML diagrams
 
+
+.. index:: Images; Styleguide
+
 General guidelines
 ==================
 
 *  In general, comply with the
    `TYPO3 Web Styleguide <https://styleguide.typo3.org/patternlab/public/index.html>`__
+
+
+.. index:: Images; Fonts
 
 Texts & fonts
 -------------
@@ -43,11 +52,19 @@ Texts & fonts
    like Helvetica or Arial. Remember, the Web Style Guide proposes
    *Source Sans Pro, Helvetica, Arial*.
 
+
+.. index::
+   Images; Formats
+   Images; PNG
+   Images; SVG
+
 Image formats
 -------------
 
 *  It is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
    and SVG for vector graphics images. In any case, you can use .png.
+
+.. index:: Screenshots; Guidelines
 
 Guidelines for screenshots
 ==========================
@@ -84,6 +101,9 @@ Another example:
 You may however notice, that it might be helpful to point out some relevant part of the
 screenshots. That is what we do by creating images as described in the next section.
 
+
+.. index:: Screenshots; Adding graphics elements
+
 Guidelines for screenshots with graphics elements
 =================================================
 
@@ -95,6 +115,9 @@ we did not have guidelines for this, so you may see various shapes in different 
    This still needs some work. If you plan on adding images to a manual, contact
    us in the #typo3-documentation channel. Help with optimizing this section is also
    appreciated.
+
+
+.. index:: Screenshots; Icons
 
 To get the icons
 ----------------

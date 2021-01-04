@@ -1,7 +1,6 @@
 .. include:: /Includes.rst.txt
-
 .. highlight:: shell
-
+.. index:: Changes; Backporting
 .. _backport-changes:
 
 ================
@@ -44,6 +43,8 @@ There may be reasons to do this differently:
   decide if it is worth the effort.
 
 
+.. index:: GitHub; Squash and merge
+
 How to merge?
 =============
 
@@ -64,6 +65,9 @@ text about additional authors is automatically added to the commit.
 .. seealso::
 
    * `Configuring commit squashing for pull requests <https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuring-commit-squashing-for-pull-requests>`__
+
+
+.. index:: GitHub; Backport
 
 How to backport?
 ================

@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
+.. index:: reST; Hyperlinks
 .. highlight:: rst
 
-
 ===================
-Problems With Links
+Problems with links
 ===================
 
 There are several ways to write links, here we assume you are
@@ -11,7 +11,7 @@ using external links with the following syntax. For more information
 see the :ref:`references <common-pitfalls-links-more-information>`
 at the bottom on this page.
 
-Correct Syntax
+Correct syntax
 ==============
 
 ::
@@ -30,7 +30,7 @@ How this looks:
 `T3O <https://typo3.org>`__
 
 
-Common Mistake #1: Missing Space
+Common mistake #1: Missing space
 ================================
 
 Make sure there is a space between the anchor text and the
@@ -45,7 +45,7 @@ opening `<`.
 
 
 
-Wrong Syntax
+Wrong syntax
 ------------
 
 ::
@@ -59,7 +59,7 @@ How this looks:
 `T3O<https://typo3.org>`__
 
 
-Common Mistake #2: Missing Undercore (_)
+Common mistake #2: Missing undercore (_)
 ========================================
 
 Missing `_` or `__` at the end:
@@ -81,7 +81,7 @@ How this looks:
 
 .. _common-pitfalls-links-more-information:
 
-Additional Information
+Additional information
 ======================
 
 *  :ref:`external-links`

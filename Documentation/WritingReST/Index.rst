@@ -1,6 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   ! reST
+   reStructuredText
+   see: reStructuredText; reST
+   ! Sphinx
 .. _Formatting-with-reST:
 .. _format-sphinx:
 .. _rest-quick-start:

@@ -1,6 +1,8 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   Documentation; Update
+   Documentation; New releases
 .. _howto-update-docs:
 .. _update-docs:
 
@@ -14,6 +16,11 @@ Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi
 Here, we describe some best practices for updating the official documentation
 for a new TYPO3 release. We stick to the core conventions as much as possible because that
 makes it easier for everyone to contribute to documentation and core.
+
+
+.. index::
+   Documentation; Deprecations
+   Documentation; Breaking changes
 
 How to handle deprecations and breaking changes
 ===============================================
@@ -35,6 +42,13 @@ documentation were removed entirely, a search for documentation would direct eve
 version where the feature is still documented without mentioning the deprecation.
 
 See the next section for some examples.
+
+.. index::
+   Documentation; Version hints
+   reST; Version hints
+   reST directives; deprecated
+   reST directives; versionadded
+   reST directives; versionchanged
 
 How to add version hints
 ========================
@@ -61,6 +75,9 @@ Further information:
 
 *  General section about reST CGL: :ref:`version-hints`
 
+.. index::
+   reST; Changelog links
+   reST roles; doc
 
 Link to changelog
 =================
@@ -74,10 +91,15 @@ How to link to the changelog is described in :ref:`link-to-changelog`.
 For this to work, t3core must be defined in :file:`Settings.cfg`
 
 
+.. index:: Updates; Issues
+
 Issues
 ======
 
 *  It is not necessary to create an issue for every change.
+
+
+.. index:: pair: Updates; Commit messages
 
 Commit messages
 ===============
@@ -90,6 +112,9 @@ You can link to the issue for the changes in the team repository, for example::
 
    Related: TYPO3-Documentation/T3DocTeam#121
 
+
+.. index:: Updates; Several releases
+
 Applying changes to several releases
 ====================================
 
@@ -100,7 +125,7 @@ If this is the case, it is recommended to:
 
 *  apply the change to the lower version (9.5 in our example) first, and then create
    another PR for the higher version making necessary additional changes. This is the
-   reverse order of what is being used in the core!
+   reverse order of what is being used in the Core!
 *  The person merging the commit should take care of merging into other branches as well
    (in case that is necessary). This is the same convention as in the core.
 *  The changes can be bundled into one commit and the commit / PR can have a subject
@@ -112,6 +137,11 @@ If this is the case, it is recommended to:
 
 This makes it easier to find related changes and check for which version a branch was last
 updated.
+
+
+.. index::
+   Documentation; Status
+   reST roles; Status
 
 How to mark what state a manual is in
 =====================================

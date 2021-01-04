@@ -1,11 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. Index::
+   pair: Documentation; Rendering
+   Rendering; Locally
 .. _rendering-docs:
 .. _rendering-docs-quickstart:
 
 ===========================
-How to Render Documentation
+How to render documentation
 ===========================
 
 This chapter explains how to render a manual locally on your machine

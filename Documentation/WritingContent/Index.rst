@@ -1,11 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
 .. _writing-content:
 
-==============================
+=========================
 How to write good content
-==============================
+=========================
 
 
 *  Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__

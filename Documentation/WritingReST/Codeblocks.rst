@@ -1,12 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   reST; Code blocks
+   reST; syntax highlighting
 .. _writing-rest-codeblocks-with-syntax-highlighting:
 
-===================================
-Codeblocks with Syntax Highlighting
-===================================
-
+====================================
+Code blocks with syntax highlighting
+====================================
 
 
 .. _codeblock-quick-reference:
@@ -70,10 +71,10 @@ The following examples all do the same thing:
       <includes-txt>`).
 
 
-
+.. index:: reST; Code block shorthand notation
 .. _codeblock-shorthand:
 
-Using the '::' Notation (Recommended)
+Using the '::' notation (recommended)
 =====================================
 
 It's nice to use this notation and the preferred way to create a code block in
@@ -101,7 +102,7 @@ Quoting the important part of the specification:
    minimized" form).
 
 
-Example of Form 1: Expanded
+Example of form 1: Expanded
 ---------------------------
 
 Source::
@@ -125,7 +126,7 @@ In words: The paragraph will appear as written. The code block just follows.
 output.
 
 
-Example of Form 2: Partially Minimized
+Example of form 2: Partially minimized
 --------------------------------------
 
 Source::
@@ -145,7 +146,7 @@ with the preceding whitespace (!) have been removed from the end of the line.
 The code block then just follows.
 
 
-Example of Form 3: Fully Minimized
+Example of form 3: Fully minimized
 ----------------------------------
 
 Source::
@@ -165,10 +166,11 @@ preceded by whitespace. In the output just one of the colons will be removed.
 The code block then follows normally.
 
 
+.. index:: reST directives; code-block
 .. _codeblock-directive:
 
-Codeblock Directive
-===================
+Code block directive
+====================
 
 Use codeblock with language PHP::
 
@@ -185,10 +187,11 @@ Use codeblock without specifying language::
 This uses whatever language has last been set with the :ref:`codeblocks-highlight-directive`
 in the current file or in :file:`Includes.rst.txt`.
 
+
 .. _writing-rest-codeblocks-syntactically-correct:
 .. _codeblocks-syntactically-correct:
 
-Use Syntactically Correct Code
+Use syntactically correct code
 ==============================
 
 .. attention::
@@ -224,17 +227,18 @@ Use Syntactically Correct Code
 installed the command `pygmentize -L` will list all available lexers.
 
 
+.. index:: reST directives; highlight
 .. _writing-rest-codeblocks-highlight-directive:
 .. _codeblocks-highlight-directive:
 
-Highlight Directive
+Highlight directive
 ===================
 
 You can set the default language with the `highlight` directive. All following
-codeblocks will use the language as specified in the `highlight` directive for
+code blocks will use the language as specified in the `highlight` directive for
 syntax highlighting.
 
-If all of your codeblocks in one file have the same language, it is easier to just set this
+If all of your code blocks in one file have the same language, it is easier to just set this
 once at the beginning of the file.
 
 This way, you don't need to set the language for each code-block (`..
@@ -260,14 +264,14 @@ remains valid up to the next or up to the end of the *single file* it is used
 in.
 
 
-Highlight Language 'guess'
+Highlight language 'guess'
 --------------------------
 
 Note that there is a - pseudo - language 'guess' as well. This should use the
 highlighter for the first language that Pygments finds to have no syntax error.
 
 
-Highlight Language 'none'
+Highlight language 'none'
 -------------------------
 
 The pseudo language 'none' is recognized as well. In this case no highlighting
@@ -276,10 +280,14 @@ will occur.
 
 .. _writing-rest-codeblocks-some-more-examples:
 
-Some More Examples
+Some more examples
 ==================
 
-Add Line Numbers to Code Snippet
+.. index::
+   reST roles; linenos
+   reST; Line numbers
+
+Add line numbers to code snippet
 --------------------------------
 
 
@@ -316,7 +324,9 @@ Result
        $rssFeedPageType = 9818; // pageType of your RSS feed page
 
 
-Turn off Highlighting: Method 1
+.. index:: reST; Highlighting: none
+
+Turn off highlighting: Method 1
 -------------------------------
 
 Source:
@@ -350,7 +360,7 @@ A description:
    └── installed.json
 
 
-Turn off Highlighting: Method 2
+Turn off highlighting: Method 2
 -------------------------------
 
 Source:
@@ -384,9 +394,10 @@ A description::
    └── installed.json
 
 
+.. index:: reST; Lexers
 .. _writing-rest-codeblocks-available-lexers:
 
-Available Lexers
+Available lexers
 ================
 
 You can use any of the following names of lexers:

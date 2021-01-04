@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
 .. highlight:: bash
-
+.. Index:: Rendering; Docker Compose
 .. _render-with-docker-compose:
 
-===========================================
-Rendering Documentation with Docker Compose
-===========================================
+===============================================
+Rendering the documentation with Docker Compose
+===============================================
 
 This workflow is very similar to :ref:`render-documentation-with-docker`,
 it uses the same Docker image, but the commands for running it are slightly

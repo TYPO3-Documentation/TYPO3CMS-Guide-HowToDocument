@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Documentation; Content style guide
 .. _general-conventions:
 .. _conventions:
 
