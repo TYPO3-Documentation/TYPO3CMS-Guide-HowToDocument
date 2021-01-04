@@ -73,7 +73,9 @@ Line length
    *  Files can be compared in a diff view
 
 
-.. index:: .editorconfig
+.. index::
+   .editorconfig
+   Files; .editorconfig
 
 .. _editorconfig:
 
