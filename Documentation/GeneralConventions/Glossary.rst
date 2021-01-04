@@ -56,6 +56,7 @@ C
 `Core`, `TYPO3 Core`
 `cross-site scripting`,
 `Crowdin`,
+`CSV`, `comma separated values`,
 
 
 D
@@ -126,6 +127,7 @@ O
 P
 
 `page TSconfig`,
+`PNG`,
 `PostgreSQL`
 
 Q
@@ -142,6 +144,8 @@ S
 
 `sitepackage`,
 `Sphinx`
+`style guide (en)`, `Styleguide (de)`, 
+`SVG`,
 `system extension`, not: 'sys extension', `core extension`
 
 
