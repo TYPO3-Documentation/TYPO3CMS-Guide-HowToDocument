@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-.. index:: reST; Clever
+.. index:: reST; Clever reST
 .. _Clever-reST:
 
 ===========
