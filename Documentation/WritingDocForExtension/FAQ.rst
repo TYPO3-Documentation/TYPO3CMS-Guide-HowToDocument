@@ -159,11 +159,11 @@ use method 2) for minimal documentation which can be maintained in one file.
 
 
 .. rst-class:: panel panel-default
-.. index:: "Edit on GitHub" Button
+.. index:: "Edit on GitHub" button
 .. _tip-edit-me-on-github:
 
-How do I Get an "Edit on GitHub" Button
-=======================================
+How do I get an "Edit on GitHub" button?
+========================================
 
 Why might you want an "Edit on GitHub" button on the rendered pages
 of your extension documentation?
