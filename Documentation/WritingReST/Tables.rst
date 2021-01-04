@@ -70,9 +70,9 @@ Header 1  Header 2
 http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
 
 
-.. index:: reST; Csv table
+.. index:: reST; CSV table
 
-Csv table
+CSV table
 =========
 
 .. code-block:: rest
