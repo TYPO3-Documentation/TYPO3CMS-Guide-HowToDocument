@@ -326,7 +326,7 @@ Result
 
 .. index:: reST; Highlighting: none
 
-Turn off Highlighting: Method 1
+Turn off highlighting: Method 1
 -------------------------------
 
 Source:
@@ -360,7 +360,7 @@ A description:
    └── installed.json
 
 
-Turn off Highlighting: Method 2
+Turn off highlighting: Method 2
 -------------------------------
 
 Source:
