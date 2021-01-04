@@ -24,13 +24,13 @@ common are:
 #. Diagrams, such as UML diagrams
 
 
-.. index:: Images; Styleguide
+.. index:: Images; Style guide
 
 General guidelines
 ==================
 
 *  In general, comply with the
-   `TYPO3 Web Styleguide <https://styleguide.typo3.org/patternlab/public/index.html>`__
+   `TYPO3 web style guide <https://styleguide.typo3.org/patternlab/public/index.html>`__
 
 
 .. index:: Images; Fonts
