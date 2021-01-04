@@ -54,6 +54,7 @@ C
 `Core`, `TYPO3 Core`
 `cross-site scripting`,
 `Crowdin`,
+`CSV`, `comma separated values`,
 
 
 D
