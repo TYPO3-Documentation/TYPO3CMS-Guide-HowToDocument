@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. index::
-   reST: Special styles
+   reST; Special styles
    reST classes
    reST classes; with-border
    reST classes; with-shadow
