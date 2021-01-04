@@ -3,7 +3,6 @@
 .. highlight:: rst
 .. index::
    reST; Inline code
-   reST roles
 .. _Inline-Code:
 
 ========================
