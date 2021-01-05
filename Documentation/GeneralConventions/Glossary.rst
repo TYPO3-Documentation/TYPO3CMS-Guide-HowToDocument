@@ -95,6 +95,12 @@ G
 `GitHub`,
 
 
+H
+
+`how to document`,
+`how-to`, `a how-to video`,
+
+
 I
 
 `InnoDB`,
