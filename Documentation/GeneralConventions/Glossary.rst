@@ -52,12 +52,16 @@ B
 C
 
 `code sprint`,
+
+`command line`, run something at the command line,
+`command-line something`, run a command-line spell-checker,
+
 `Composer`,
 `Core Team`, `TYPO3 Core Team`,
 `Core`, `TYPO3 Core`
 `cross-site scripting`,
 `Crowdin`,
-`CSV`, `comma separated values`,
+`CSV` (comma separated values),
 
 
 D
@@ -119,7 +123,7 @@ M
 `markup (the)`,
 `MariaDB`,
 `MySQL`,
-`MacOs`, outdated: `Mac`, `Mac OS X`,
+`MacOs`, outdated: Mac, `Mac OS X`,
 `model-view-controller`,
 `MVC`,
 
