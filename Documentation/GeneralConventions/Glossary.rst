@@ -62,6 +62,7 @@ C
 `cross-site scripting`,
 `Crowdin`,
 `CSV` (comma separated values),
+`checkbox`
 
 
 D
