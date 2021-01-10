@@ -95,4 +95,35 @@ Example 2: List with sublist and error
    *  subitem 3.2
 *  item 4
 
+
+Example 3: List with sublist and whitespace error
+=================================================
+
+.. important::
+
+   Each asterix `*` has to be followed by two spaces. 
+   If you only use one the sublist is interpreted like
+   a citation.
+
+.. code-block:: rest
+
+   * item 1
+   * item 2
+   * item 3
+      * subitem 3.1
+      * subitem 3.2
+   * item 4
+
+**How it looks:**
+
+* item 1
+* item 2
+* item 3
+
+   * subitem 3.1
+   * subitem 3.2
+   
+* item 4
+
+
 For more information on common errors, see :ref:`rest-common-pitfalls`.
