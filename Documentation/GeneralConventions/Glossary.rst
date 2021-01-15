@@ -149,7 +149,7 @@ Q
 
 R
 
-`reStructuredText`, `reST`,
+`reStructuredText`, `reST`, `richt text editor`, `RTE`
 
 
 S
