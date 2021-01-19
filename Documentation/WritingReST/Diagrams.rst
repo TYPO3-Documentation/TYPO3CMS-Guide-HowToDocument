@@ -1,11 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
+.. index::
+   ! Diagrams
+   Diagrams; PlantUML
+.. _PlantUML-diagrams:
 
-.. _diagrams:
-
-========
-Diagrams
-========
+=================
+PlantUML diagrams
+=================
 
 In order to render diagrams in the TYPO3 documentation,
 `PlantUML <https://plantuml.com/>`_ is integrated into the rendering process.
@@ -16,6 +18,7 @@ In order to render diagrams in the TYPO3 documentation,
    :depth: 1
    :local:
 
+.. index:: Diagrams; Activity
 
 Activity diagram
 ================
@@ -121,6 +124,8 @@ Activity diagram
 Docs: https://plantuml.com/activity-diagram-legacy
 
 
+.. index:: Diagrams; Class
+
 Class diagram
 =============
 
@@ -186,6 +191,7 @@ Class diagram
 
 Docs: https://plantuml.com/class-diagram
 
+.. index:: Diagrams; Component
 
 Component diagram
 =================
@@ -252,6 +258,7 @@ Component diagram
 
 Docs: https://plantuml.com/component-diagram
 
+.. index:: Diagrams; Deployment
 
 Deployment diagram
 ==================
@@ -300,6 +307,8 @@ Deployment diagram
 
 Docs: https://plantuml.com/deployment-diagram
 
+
+.. index:: pair:Diagrams; Icons
 
 Icons
 =====
@@ -429,6 +438,8 @@ The latest icons can be integrated directly via remote url.
 Docs: https://plantuml.com/stdlib
 
 
+.. index:: pair: Diagrams; Maths
+
 Maths
 =====
 
@@ -493,6 +504,8 @@ Misc
 Docs: https://plantuml.com/link | https://plantuml.com/sequence-diagram
 
 
+.. index:: Diagrams; Object
+
 Object diagram
 ==============
 
@@ -539,6 +552,8 @@ Object diagram
 Docs: https://plantuml.com/object-diagram
 
 
+.. index:: Diagrams; Sequence
+
 Sequence diagram
 ================
 
@@ -570,6 +585,8 @@ Sequence diagram
 
 Docs: https://plantuml.com/sequence-diagram
 
+
+.. index:: Diagrams; State
 
 State diagram
 =============
@@ -621,6 +638,8 @@ State diagram
 Docs: https://plantuml.com/state-diagram
 
 
+.. index:: Diagrams; Timing
+
 Timing diagram
 ==============
 
@@ -666,6 +685,8 @@ Timing diagram
 
 Docs: https://plantuml.com/timing-diagram
 
+
+.. index:: Diagrams; Use case
 
 Use Case diagram
 ================
