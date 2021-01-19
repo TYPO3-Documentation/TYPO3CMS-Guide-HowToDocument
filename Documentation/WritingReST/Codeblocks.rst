@@ -70,6 +70,10 @@ The following examples all do the same thing:
       directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.rst.txt
       <includes-txt>`).
 
+.. seealso::
+
+   Add a :ref:`diagram <diagrams>` to your code to enrich your documentation
+   and provide a broader view on your solution.
 
 .. index:: reST; Code block shorthand notation
 .. _codeblock-shorthand:

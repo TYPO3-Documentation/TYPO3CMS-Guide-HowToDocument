@@ -486,3 +486,38 @@ Source (tip):
 
          To look at the reST source of this rendered page, scroll to the bottom
          and click on "View page source".
+
+
+:ref:`Diagrams <diagrams>`
+==========================
+
+Source:
+
+.. code-block:: rest
+
+   .. uml::
+
+      == Initialization ==
+
+      Alice -> Bob: Authentication Request
+      Bob --> Alice: Authentication Response
+
+      == Repetition ==
+
+      Alice -> Bob: Another authentication Request
+      Alice <-- Bob: another authentication Response
+
+
+How it looks:
+
+.. uml::
+
+   == Initialization ==
+
+   Alice -> Bob: Authentication Request
+   Bob --> Alice: Authentication Response
+
+   == Repetition ==
+
+   Alice -> Bob: Another authentication Request
+   Alice <-- Bob: another authentication Response
