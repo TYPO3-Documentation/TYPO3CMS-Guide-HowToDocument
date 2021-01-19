@@ -14,6 +14,6 @@ writing documentation for TYPO3 extensions and formatting with
 reST and sphinx. 
 
 :Repository:  https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument
-:Read online: https://docs.typo3.org/typo3cms/HowToDocument/Index.html
+:Read online: https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/Index.html
 
 
