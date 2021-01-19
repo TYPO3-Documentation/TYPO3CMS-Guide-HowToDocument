@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Bullet lists
 .. _rest-lists:
 
 ============
-Bullet Lists
+Bullet lists
 ============
 
 This section contains information on bullet lists and numbered lists.
@@ -37,7 +37,9 @@ Numbered lists:
    <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists>`__
 
 
-Example 1: List with Sublist Items
+.. index:: reST; Bullet list with sublist
+
+Example 1: List with sublist items
 ==================================
 
 .. code-block:: rest
@@ -67,7 +69,7 @@ Example 1: List with Sublist Items
 *  item 4
 
 
-Example 2: List with Sublist and Error
+Example 2: List with sublist and error
 ======================================
 
 .. important::
@@ -92,5 +94,36 @@ Example 2: List with Sublist and Error
    *  subitem 3.1
    *  subitem 3.2
 *  item 4
+
+
+Example 3: List with sublist and whitespace error
+=================================================
+
+.. important::
+
+   Each asterix `*` has to be followed by two spaces. 
+   If you only use one the sublist is interpreted like
+   a citation.
+
+.. code-block:: rest
+
+   * item 1
+   * item 2
+   * item 3
+      * subitem 3.1
+      * subitem 3.2
+   * item 4
+
+**How it looks:**
+
+* item 1
+* item 2
+* item 3
+
+   * subitem 3.1
+   * subitem 3.2
+   
+* item 4
+
 
 For more information on common errors, see :ref:`rest-common-pitfalls`.

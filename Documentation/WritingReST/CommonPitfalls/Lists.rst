@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Lists
 
 ===================
-Problems With Lists
+Problems with lists
 ===================
 
 If you use lists, make sure there is an empty line before and after the
@@ -14,10 +14,10 @@ parent item text.
 The same applies for bullet lists and enumerated lists.
 
 
-Correct Syntax
+Correct syntax
 ==============
 
-Example 1: Bullet List
+Example 1: Bullet list
 ~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -39,7 +39,7 @@ this is some text
 more text
 
 
-Example 2: List With Sublist
+Example 2: List with sublist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -66,7 +66,7 @@ this is some text
 this is more text
 
 
-Wrong Syntax
+Wrong syntax
 ------------
 
 ::
@@ -84,7 +84,7 @@ this is some text
 more text
 
 
-Additional Information
+Additional information
 ======================
 
 *  `Docutils cheat-sheet for reStructuredText: Bullet list

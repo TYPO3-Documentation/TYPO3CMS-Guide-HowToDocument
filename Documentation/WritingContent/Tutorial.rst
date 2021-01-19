@@ -1,13 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: pair: Writing; Tutorials
 .. todo:: Add information about writing a tutorial
 
 .. _writing-tutorial:
 
-==============================
+==================
 Writing a tutorial
-==============================
+==================
 
 
 Text used so far in the first section of TYPO3 tutorials:

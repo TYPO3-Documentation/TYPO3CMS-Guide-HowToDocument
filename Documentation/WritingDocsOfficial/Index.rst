@@ -1,12 +1,12 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Official documentation
 .. _contribute:
 .. _docs-contribute:
 .. _docs-official-workflow-methods:
 
 ===========================================
-How to Contribute to Official Documentation
+How to contribute to official documentation
 ===========================================
 
 The community is welcome to make changes to the official documentation

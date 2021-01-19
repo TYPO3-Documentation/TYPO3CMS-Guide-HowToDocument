@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Editors
 .. _tools:
 .. _tools-for-editing-rest:
 
@@ -41,6 +41,9 @@ editor / IDE to comply with our :ref:`basic coding guidelines
 You may have to install
 an additional plugin, see `EditorConfig <https://editorconfig.org/#download>`__.
 
+
+.. index:: reST; Visual Studio Code
+
 Visual Studio Code
 ==================
 
@@ -79,24 +82,29 @@ Here is an example:
 
 .. code-block:: json
 
-    "image (full)": {
-            "prefix": "imgf",
-            "body": [
-                ".. image:: $1",
-                "   :class: with-shadow",
-                "   :alt: $2",
-                "   :target: $3",
-                "$4"
-            ],
-            "description": "image with parameters"
-       }
+   {
+      "image (full)": {
+         "prefix": "imgf",
+         "body": [
+            ".. image:: $1",
+            "   :class: with-shadow",
+            "   :alt: $2",
+            "   :target: $3",
+            "$4"
+         ],
+         "description": "image with parameters"
+      }
+   }
 
-*  You can enter the snippet by typing imgf and then TAB
+*  You can enter the snippet by typing `imgf`:code: and then TAB
 *  The $1, $2 etc. mark the places where further TABs will take you.
    Use this if extra text needs to be entered
 
 .. image:: ../videos/vscodesnippets2.gif
    :class: with-shadow
+
+
+.. index:: reST; PhpStorm
 
 PhpStorm
 ========

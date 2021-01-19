@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: pair: Documentation; System extensions
 .. _contribute-to-system-extension:
 
-==============================
-Contribute to System Extension
-==============================
+===============================
+Contribute to system extensions
+===============================
 
 The documentation for system extensions is maintained inside the TYPO3
 source code, so the contribution workflow is a little different.

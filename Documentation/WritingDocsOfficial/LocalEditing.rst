@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Official documentation; Local editing
 .. _docs-contribute-git-docker:
 
 ======================================================
-Workflow #2: "Local Editing and Rendering with Docker"
+Workflow #2: "Local editing and rendering with Docker"
 ======================================================
 
 This section walks you through contributing to the documentation
@@ -18,12 +18,10 @@ If necessary, ask for help as explained in :ref:`how-to-get-help`.
 Quick Start
 ===========
 
-
 This describes how to create a pull request for the TYPO3 documentation. All
 steps described are steps you would usually do for any GitHub pull
 request. Only the part about editing (step 6) and rendering (step 7)
 are specific to TYPO3 documentation.
-
 
 
 .. rst-class:: bignums-xxl
@@ -151,7 +149,6 @@ are specific to TYPO3 documentation.
     "Create pull request".
 
 
-
 Now, wait for someone to review and merge your pull request
 
 
@@ -160,15 +157,17 @@ merged, you can reload the page (which you fixed) in your browser.
 
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
-Next Steps
+
+Next steps
 ==========
 
 *  Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
 
 
+.. index:: Official documentation; Fork up-to date
 .. _contribute-edit-locally-more-changes:
 
-Keep Your Local Fork Up-to-date
+Keep your local fork up-to date
 ===============================
 
 Explanation
@@ -201,8 +200,7 @@ So, running the following will not get the latest changes:
 because origin points to your fork.
 
 
-
-Do it Now
+Do it now
 ---------
 
 You must now do the following:

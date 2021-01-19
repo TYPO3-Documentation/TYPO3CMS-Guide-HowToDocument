@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
-
+.. index:: ! Writing documentation
 .. _start:
 
 =====================
-Writing Documentation
+Writing documentation
 =====================
 
 :Authors:   TYPO3 Documentation Team & community (see :ref:`credits`)
@@ -86,7 +86,6 @@ More: :ref:`What's new in this guide ... <whats-new>`
 
    genindex
    Appendix/Index
-   UsefulLinks
    Sitemap/Index
 
 

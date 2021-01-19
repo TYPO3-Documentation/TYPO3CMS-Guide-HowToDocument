@@ -1,6 +1,8 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   Files; Menu hierarchy
+   Menu hierarchy
 .. _general-conventions-menu-hierarchy:
 
 ==============
@@ -10,6 +12,7 @@ Menu hierarchy
 Technically, the file hierarchy on disc must not affect the menu hierarchy in any way. But, as a general
 convention, we use the common practice that the file hierarchy reflects the menu
 hierarchy.
+
 
 Multi-file solution
 ===================

@@ -1,11 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   reST; Toctree
+   Manual; Hierarchical structure
 .. _toctree:
 .. _rest-menu-hierachy:
 
 ==================================================
-Toctree and the Hierarchical Structure of a Manual
+Toctree and the hierarchical structure of a manual
 ==================================================
 
 You can define what should be included in the menu with the
@@ -19,7 +21,9 @@ The first headline of an .rst file is its "doctitle". That is the document's
 title property. The title and the following headlines are used for
 cross-references and appear in menus and table of contents.
 
-General Rules for Using `..toctree::`
+.. index:: reST directives; toctree
+
+General rules for using `..toctree::`
 =====================================
 
 .. rst-class:: bignums
@@ -37,8 +41,9 @@ General Rules for Using `..toctree::`
 *Note:* What we call "headlines" here is called "sections" in reST-jargon, see :ref:`Headlines-and-sections`.
 
 
-Toctree Examples
+Toctree examples
 ================
+
 
 Example: hidden
 ---------------

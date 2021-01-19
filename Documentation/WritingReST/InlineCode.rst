@@ -1,7 +1,8 @@
 
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   reST; Inline code
 .. _Inline-Code:
 
 ========================
@@ -16,14 +17,16 @@ Inline code & text roles
   :ref:`writing-rest-codeblocks-with-syntax-highlighting`.
 
 
+.. index:: reST; Markup
 
-How to Semantically Markup Specific Text
-========================================
+How to semantically mark up specific text
+=========================================
 
 There are several ways to semantically mark specific parts of the text. The main goal is to be able to use
 a consistent style for specific parts of the text, for example code fragments, file names and GUI
 elements.
 
+.. index:: reST; Text roles
 .. _text-roles:
 
 Using text roles
@@ -103,8 +106,9 @@ Using text roles
 3. Just write the code as it is. This may make the text more difficult to read.
    Use your common sense.
 
+.. index:: reST; Literal code
 
-When to Use Literal Code \`\`...``
+When to use literal code \`\`...``
 ----------------------------------
 
 Things get tricky if your inline code already contains single backquotes (backticks).
@@ -136,7 +140,7 @@ Things get tricky if your inline code already contains single backquotes (backti
 .. _interpreted text roles: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#interpreted-text
 .. _inline literals: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#inline-literals
 
-Inline Code versus Code-Blocks
+Inline code versus code blocks
 ==============================
 
 The name for - very - small code snippets that occur within normal text flow
@@ -169,8 +173,8 @@ language with the exception of the TypoScript manuals, where `typoscript` is
 the default.
 
 
-Use 'Includes.rst.txt' File
----------------------------
+About the 'Includes.rst.txt' file
+---------------------------------
 
 In general, the manual you are working on will already contain an
 :ref:`Includes.rst.txt <includes-txt>` file. In that file, the text roles

@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: bash
-
+.. index:: Rendering; Troubleshooting
 .. _rendering-docs-troubleshooting:
 
 ===========================================
-Troubleshooting Local Rendering With Docker
+Troubleshooting local rendering with Docker
 ===========================================
 
 If you run into problems, here are some
@@ -15,8 +15,7 @@ channel on Slack! `Register for slack <https://my.typo3.org/index.php?id=35>`__
 and join the channel, if you have not done so already.
 
 
-
-
+.. index:: Rendering; Problems with `source < (docker run ...`
 .. _render-troubleshooting-source:
 
 Problems with `source < (docker run ...`
@@ -42,9 +41,10 @@ If these commands do not work on your platform, use one of these instead:
       docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
       source ~/bin/t3docs
 
+
 .. _docker-troubleshoot-sample-output-ok:
 
-Sample Output Without Errors
+Sample output without errors
 ============================
 
 When you run render, you should see some output. If
@@ -66,9 +66,10 @@ Relevant is the exitcode 0. It indicates that everything executed
 smoothly.
 
 
+.. index:: Rendering; Errors
 .. _render-troubleshooting-errors:
 
-Errors That Break the Rendering
+Errors that break the rendering
 ===============================
 
 If there are errors which break the rendering, you may see something like:
@@ -127,6 +128,8 @@ latest changes.
 Correct the path, so it will point to the existing Includes.rst.txt (which
 should be located in the directory :file:`Documentation`.
 
+
+.. index:: Rendering; Warnings
 .. _render-troubleshooting-warnings:
 
 Warnings
@@ -136,13 +139,14 @@ There may be problems which will not break the rendering but which
 should be taken care of. Warnings are listed in the file
 :file:`Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt`
 
+
+.. index:: Rendering; Incremental
 .. _render-troubleshooting-incremental:
 
 Incremental Rendering
 =====================
 
 After you make changes, you can initiate rendering again.
-
 
 This will cause .rst files, that has been changed, to be rendered again.
 
@@ -157,9 +161,7 @@ folder and render again, for example:
   rm -rf Documentation-GENERATED-temp
 
 
-
-
-Get Detailed Information
+Get detailed information
 ========================
 
 If you create a directory :file:`tmp-GENERATED-temp` before you start the rendering,
@@ -191,4 +193,3 @@ Example output:
 
    Extension error:
    Could not import extension sphinxcontrib.googlechart (exception: cannot import name Directive)
-

@@ -1,7 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
-
+.. index:: pair: reST; Images
 .. _how-to-document-images:
 .. _rest-images:
 .. _images:
@@ -10,8 +9,9 @@
 Images
 ======
 
+.. index:: reST directives; image
 
-How to Use Images
+How to use images
 =================
 
 Use the `.. image::` directive with additional parameters.
@@ -44,8 +44,9 @@ Additional parameters can be found on the docutils page `reStructuredText Direct
 Examples
 ========
 
+.. index:: reST; Image scaling
 
-Example 1: Scaled Image With Shadow and Link Target
+Example 1: Scaled image with shadow and link target
 ---------------------------------------------------
 
 .. image:: ../images/a4.jpg
@@ -76,7 +77,12 @@ Example 1: Scaled Image With Shadow and Link Target
 **line 4:**
    use a shadow on the image
 
-Example 2: Image With Caption
+
+.. index::
+   reST directives; figure
+   reST; Image caption
+
+Example 2: Image with caption
 -----------------------------
 
 .. figure:: ../images/a4.jpg
@@ -102,7 +108,7 @@ Example 2: Image With Caption
    width of image
 
 
-Example 3: Image With Fixed Width
+Example 3: Image with fixed width
 ---------------------------------
 
 .. image:: ../images/a4.jpg
@@ -125,6 +131,7 @@ Example 3: Image With Fixed Width
    width of image
 
 
+.. index:: reST; Image floating
 
 
 Example 4: Image with float-left
@@ -158,8 +165,9 @@ Some text ... (will be displayed on the right of the image).
    wrapping around images. Here, we use `.. rst-class:: clear-both`
    to reset the floating and start on the left again.
 
+
 Example 5: Image with border
---------------------------------
+----------------------------
 
 .. image:: ../images/a4.jpg
    :class: with-border

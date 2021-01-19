@@ -1,8 +1,8 @@
-
 .. include:: /Includes.rst.txt
+.. index:: reST; Special characters
 
 ==================
-Special Characters
+Special characters
 ==================
 
 Q: What characters can I use?
@@ -15,7 +15,7 @@ utf-8.
 Keep in mind that while you CAN use any Unicode character not all of them will
 be displayed. In general fonts contain glyphs for common characters only.
 
-Some Lists of Characters
+Some lists of characters
 ========================
 
 ARROW
@@ -104,7 +104,8 @@ STAR
    :sep:`|` ≛ ⋆ ⍟ ⍣ ★ ☆ ☪ ⚝ ✡ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ✴ ✵ ✶ ✷ ✸ ✹ ❂ ⭐ ⭑ ⭒ 🌟 🌠 🔯 ٭
    :sep:`|`
 
-Using U+2420 Symbol for Space
+
+Using U+2420 symbol for space
 =============================
 
 .. highlight:: rst

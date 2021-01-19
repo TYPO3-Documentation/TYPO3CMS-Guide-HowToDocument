@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Admonitions
 .. _rest-admonitions:
 
 =======================================
@@ -15,7 +15,9 @@ Examples
 ========
 
 
-See Also
+.. index:: reST directives; seealso
+
+See also
 --------
 
 .. code-block:: rest
@@ -27,6 +29,7 @@ See Also
    `Admonitions <http://docutils.sourceforge.net/0.7/docs/ref/rst/directives.html#admonitions>`__
 
 
+.. index:: reST directives; note
 
 Note
 ----
@@ -38,6 +41,9 @@ Note
 
 .. note::
    A note
+
+
+.. index:: reST directives; tip
 
 Tip
 ---
@@ -54,6 +60,8 @@ You may also use the admonition **hint**, but this is very similar
 and **tip** is more commonly used in the documentation.
 
 
+.. index:: reST directives; important
+
 Important
 ---------
 
@@ -65,6 +73,9 @@ Important
 
 .. important::
    Some important information which should be considered.
+
+
+.. index:: reST directives; warning
 
 Warning
 -------
@@ -80,6 +91,8 @@ Warning
 You may also use the admonitions **caution** or even **danger** if the
 severity of the warning must be stressed.
 
+
+.. index:: reST directives; attention
 
 Attention
 ---------

@@ -1,25 +1,27 @@
 :orphan:
-
 .. include:: /Includes.rst.txt
-
+.. index:: ! Changes
 .. _changes:
 
-=============
+=======
 Changes
-=============
+=======
 
 
+.. index::
+   Changes; Main branches to master
+   Git; Branch master
+   Git; Branch latest (outdated)
 .. _tip-branches-master:
 .. rst-class:: panel panel-default
 
-[IMPORTANT] Change Main Branches to master
+[IMPORTANT] Change main branches to master
 ==========================================
 
 
 This is important if you are using the
 :ref:`Local Git / Docker workflow <docs-contribute-git-docker>` and
 are working on already existing fork / clone.
-
 
 Each documentation project has a main (or default) branch. This usually
 corresponds to the latest released TYPO3 version.
@@ -40,6 +42,7 @@ make sure to get the latest changes and work on `master` in the future.
       .. code-block:: bash
 
          git branch
+
       or
 
       .. code-block:: bash
@@ -67,11 +70,14 @@ make sure to get the latest changes and work on `master` in the future.
          git checkout master
 
 
+.. index::
+   Changes; Extension manual migration
+   Extensions; Manual migration
 .. _tip-ext-new-doc-server:
 .. rst-class:: panel panel-default
 
-[IMPORTANT] Migration to New Infrastructure
-===========================================
+[IMPORTANT] Extension manual migration to the new infrastructure
+================================================================
 
 Because of the
 `move to the new documentation server <https://typo3.org/article/docstypo3org-gets-new-infrastructure/>`__,
@@ -88,5 +94,4 @@ yet been rendered with the new mechanism:
    :class: with-shadow
    :alt: Deprecation message on rendered extension documentation page
 
-      Deprecation message on rendered extension documentation page
-
+   Deprecation message on rendered extension documentation page

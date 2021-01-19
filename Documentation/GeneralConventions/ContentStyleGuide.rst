@@ -1,13 +1,12 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Spelling
 .. _content-styleguide:
 .. _spelling:
 
 ========
 Spelling
 ========
-
 
 
 General information
@@ -32,6 +31,12 @@ or rather American (US) language. Refer to the resources, which the style guide 
 `Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
 If in doubt, ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
 
+.. index::
+   pair: Spelling; Titles
+   pair: Spelling; Headers
+   Spelling; Sentence case
+   Capitalization; Sentence case
+   Capitalization; Titles
 .. _spelling-title-case:
 .. _spelling-ref-title:
 
@@ -80,6 +85,9 @@ as described in :ref:`Headlines-and-sections`::
 
 
 
+.. index::
+   pair: Spelling; Buttons
+   pair: Spelling; Links
 .. _spelling-buttons:
 .. _spelling-anchor-text:
 
@@ -89,6 +97,7 @@ Rules for buttons & links
 The same spelling rules as in the title apply to buttons and links.
 
 
+.. index:: pair: Spelling; GUI elements
 .. _spelling-refer-to-gui-elements:
 
 Rules for referring to GUI elements
@@ -101,12 +110,15 @@ used, e.g. "*File > Open*" or "click on "*ADMIN TOOLS > Extensions*".
 See :ref:`rest-refer-to-gui-elements` for information about how to use reST
 markup for this.
 
+
+.. index:: Spelling; Plain text
 .. _spelling-plain-text:
 
 Rules for plain text
 ====================
 
 
+.. index:: Spelling; Compound words
 .. _spelling-compound-words:
 
 Rules for compound words
@@ -139,6 +151,9 @@ How can you decide for yourself in other edge cases?
 
 
 
+.. index::
+   pair: Spelling; Capitalization
+   pair: Capitalization; Plain text
 .. _spelling-plain-text-capitalization:
 
 Capitalization rules (plain text)
@@ -160,6 +175,8 @@ In other texts, "internet" is still capitalized.
 For this reason we have put together a :ref:`spelling reference <spelling-ref>`
 to list some common terms that may be difficult to spell or that are spelled differently in the TYPO3 context.
 
+
+.. index:: Spelling; TYPO3-specific spellings
 .. _spelling-typo3:
 
 Exceptions for specific TYPO3 spellings
@@ -168,6 +185,8 @@ Exceptions for specific TYPO3 spellings
 There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
 TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
 
+
+.. index:: Spelling; Source code
 .. _spelling-source-code:
 
 Exceptions for words taken from source code
@@ -182,6 +201,10 @@ Examples:
 *  configuration options in :ref:`t3coreapi:soft-references-default-parsers-substitute`
 
 
+.. index::
+   Spelling; Acronyms
+   Capitalization; Acronyms
+   Acronyms
 .. _spelling-acronyms:
 
 Acronyms
@@ -191,6 +214,11 @@ Often acronyms are written with capital letters only. If terms are commonly spel
 way, this is how we spell them as well, for example HTML, CMS, PHP or LTS.
 
 
+.. index::
+   Spelling; Proper names
+   Capitalization; Proper names
+   Proper names
+   Brand names
 .. _spelling-proper-names:
 
 Proper names, brand names
@@ -206,14 +234,18 @@ These can be countries, names of people, corporations or brand names.
 Examples:
 
 *  "This manual is designed to be readable by someone with basic UNIX command-line skills, but no
-  previous knowledge of **Git**.": Git is capitalized, because it is a brand name (quote from
-  `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
+   previous knowledge of **Git**.": Git is capitalized, because it is a brand name (quote from
+   `Git User Manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`__)
 *  **Wikipedia**
 *  **Europe**
 
+
+.. index::
+   Spelling; Commands
+   Capitalization; Commands
 .. _spelling-executables:
 
-Tools With executables
+Tools with executables
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Some tools have a program, which you can run. For example, **Git** has the command line
@@ -225,14 +257,15 @@ The same goes for **Docker**, **Composer**, etc.
 
 
 
+.. index:: Spelling; Preferred terms
+
 Spelling & preferred terms reference
 ====================================
 
 The content was moved to :ref:`spelling-ref`.
 
-.. _spelling-ref-title:
 
-
+.. index:: Spelling; Resources
 
 Used resources
 ==============

@@ -1,13 +1,13 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: Manuals; Example
 .. _how-to-start-documentation-for-ext:
 .. _writing-doc-for-ext-from-scratch:
 .. _doc-for-ext-from-example:
 
-=================================================
-Start Extension Documentation From Example Manual
-=================================================
+=====================================================
+Start extension documentation from the example manual
+=====================================================
 
 .. tip::
 

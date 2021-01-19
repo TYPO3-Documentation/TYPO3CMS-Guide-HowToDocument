@@ -1,11 +1,14 @@
 
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   pair: reST; Headlines
+   pair: reST; Titles
+   pair: reST; Sections
 .. _Headlines-and-sections:
 
 ======================
-Headlines and Sections
+Headlines and sections
 ======================
 
 reStructuredText (reST) does not exactly have the notion of "headlines". Text

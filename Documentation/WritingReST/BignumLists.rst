@@ -1,11 +1,14 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index::
+   reST; Styled numbered sections
+   reST classes; bignums
 .. _styled-numbered-lists:
 
-===================================
-Styled Numbered Sections (big-nums)
-===================================
+==================================
+Styled numbered sections (bignums)
+==================================
+
 
 .. _big-nums-xxl:
 

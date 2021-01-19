@@ -1,12 +1,13 @@
 .. include:: /Includes.rst.txt
 
 ==================================
-Information for Editing This Guide
+Information for editing this guide
 ==================================
 
 Here, we list some resources that are useful when editing this manual:
 
-Resources for This Guide
+
+Resources for this guide
 ========================
 
 *  :ref:`Linktargets <linktargets>`  (labels for cross-referencing)

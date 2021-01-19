@@ -1,5 +1,7 @@
 .. include:: /Includes.rst.txt
-
+.. index::
+   Documentation; Migration
+   docs.typo3.org
 .. _migrate:
 .. _register-for-rendering:
 
@@ -17,7 +19,7 @@ When migrating existing documentation, :ref:`migrate-info-about-changes` might b
 .. _migrate-necessary-steps:
 .. _register-necessary-steps:
 
-Necessary Steps
+Necessary steps
 ===============
 
 Walk through the following steps in defined order. Proceed with next step only
@@ -86,11 +88,15 @@ if the previous step was successful.
 All future versions will now be rendered, see :ref:`workflow-extension-release`.
 Also some branches will be rendered, see :ref:`supported-branches`.
 
+
+.. index::
+   Documentation; Webhooks
+   Git; Commits
 .. _migrate-extension-release:
 .. _workflow-extension-release:
 
-Workflow of Extension Release
-=============================
+Workflow of an extension release
+================================
 
 For full information about publishing extensions check :ref:`t3coreapi:publish-extension`.
 
@@ -117,10 +123,11 @@ Please note that it might take some time until extensions.typo3.org displays cha
 The information needs to be picked up by a command.
 Caches for detail page need to be invalidated, and SOLR index needs to be updated.
 
+.. index:: Rendering; Version numbers
 .. _migrate-version-numbers:
 .. _supported-version-numbers:
 
-Version Numbers
+Version numbers
 ===============
 
 docs.typo3.org does no longer show three level version numbers in form of ``Major.Minor.Patch``.
@@ -129,10 +136,11 @@ Only the first two levels are shown ``Major.Minor``.
 This reduces the amount of documentation while keeping relevant information,
 as patch levels should not introduce breaking changes or new features.
 
+.. index:: Rendering; Branches
 .. _migrate-branches:
 .. _supported-branches:
 
-Supported Branches
+Supported branches
 ==================
 
 The rendering supports two branches within repositories:
@@ -160,7 +168,7 @@ The rendering supports two branches within repositories:
 .. _migrate-url-structure:
 .. _url-structure:
 
-URL Structure
+URL structure
 =============
 
 The URL structure now consists of the following parts:
@@ -206,7 +214,7 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
 .. _migrate-info-about-changes:
 .. _migrate-existing-documentation:
 
-Info About Changes
+Info about changes
 ==================
 
 Since May 29th 2019 a new infrastructure is in place at docs.typo3.org.

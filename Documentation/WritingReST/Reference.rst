@@ -1,10 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: reST; Reference
 .. _rest-reference:
 
 =======================
-reST & Sphinx Reference
+reST & Sphinx reference
 =======================
 
 .. toctree::

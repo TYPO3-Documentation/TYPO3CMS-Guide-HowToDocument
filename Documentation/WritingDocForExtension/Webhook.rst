@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-
+.. index:: Webhooks
 .. _webhook:
 
 =======
@@ -18,6 +18,8 @@ and the following hosters:
 .. contents:: Table of Contents
    :local:
 
+
+.. index:: Webhooks; Approval
 .. _approval-intercept:
 
 Approval
@@ -54,7 +56,7 @@ Otherwise it is not possible to enable documentation rendering on docs.typo3.org
 
 .. _webhook-how-webhook-works:
 
-How Webhooks Work
+How webhooks work
 =================
 
 If it's your first time working with webhooks, take a look at `GitHub developer
@@ -72,12 +74,14 @@ In order to test the integration, a push to `master` branch or
 
 .. _webhook-legacy:
 
-Legacy Webhook
+Legacy webhook
 ==============
 
 If the repository already had a hook, this is considered deprecated. A
 compatibility layer is still in place, but will be removed in the future.
 
+
+.. index:: Webhooks; GitHub
 .. _webhook-github:
 
 GitHub
@@ -139,9 +143,10 @@ Add auto rendering for a repository via GitHub webhook in five steps:
       :width: 932
 
 
+.. index:: Webhooks; Bitbucket
 .. _webhook-bitbucket-cloud:
 
-Bitbucket Cloud
+Bitbucket cloud
 ===============
 
 Add auto rendering for a repository via Bitbucket webhook in five steps:
@@ -198,9 +203,12 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    .. figure:: /images/webhook/bitbucket/cloud/intercept-feedback.png
       :width: 932
 
+.. index::
+   Webhooks; GitLab cloud
+   Webhooks; GitLab self-hosted
 .. _webhook-gitlab:
 
-GitLab Cloud and GitLab Self-hosted
+GitLab cloud and GitLab self-hosted
 ===================================
 
 Add auto rendering for a repository via GitLab webhook in four steps:

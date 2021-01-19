@@ -1,16 +1,18 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-
+.. index:: GitHub
 .. _work-with-github:
 .. _useful-links:
 
 =======================
-How to Work With GitHub
+How to work with GitHub
 =======================
 
+
+.. index:: GitHub; Repository
 .. _github-find-a-repository:
 
-How to Find a GitHub Repository
+How to find a GitHub repository
 ===============================
 
 The source for every manual on docs.typo3.org (for example this manual :ref:`start` or
@@ -27,15 +29,15 @@ repository:
 .. image:: ../images/github-repo-search.png
    :class: with-shadow
 
-
 Alternatively, on any rendered page on docs.typo3.org (for example, this page),
 you can find the link :guilabel:`Repository` in the footer on the bottom
 of the page.
 
 
+.. index:: GitHub; Notifications
 .. _github-get-notifications:
 
-Get Notifications From GitHub
+Get notifications from GitHub
 =============================
 
 You can get notifications for activity in a repository (e.g. new pull requests or
@@ -50,9 +52,10 @@ issues) by **watching** the repository:
    :class: with-shadow
 
 
+.. index:: GitHub; Issues
 .. _links-github-issues:
 
-Find Issues
+Find issues
 ===========
 
 Pick an issue for a topic you are familiar with and try to fix it. Some of the
@@ -70,7 +73,7 @@ For example:
    <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
 
-Find Issues for a Specific Manual
+Find issues for a specific manual
 ---------------------------------
 
 From docs.typo3.org:
@@ -89,8 +92,6 @@ From the list of repositories in `TYPO3-Documentation <https://github.com/TYPO3-
 
    .. image:: ../images/github-list-issues.png
       :class: with-shadow
-
-
 
 
 .. _github-good-first-issue:
@@ -126,7 +127,7 @@ The Docker image for rendering is in the organization **t3docs** (instead of TYP
 *  `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
 
 
-
+.. index:: GitHub; Issue solving
 .. _github-solve-issue:
 
 Solve an Issue
@@ -150,6 +151,11 @@ pull request on GitHub.
 
 
 
+.. index::
+   pair: GitHub; Pull requests
+   Pull requests
+   PR
+   see: PR; Pull requests
 .. _github-pull-requests:
 
 Find Pull Requests
