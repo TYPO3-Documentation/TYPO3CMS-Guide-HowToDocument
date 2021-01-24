@@ -131,6 +131,20 @@ These are some changes that we made for the following reasons:
 
 See `decision: Proposal for documentation manual start page <https://decisions.typo3.org/t/proposal-for-documentation-manual-start-page/668>`__
 
+.. index:: 
+   Documentation; Link targets
+   Files; Targets.rst
+
+Link targets
+============
+
+Official documentation manuals should contain a file :file:`Documentation/Targets.rst`
+with the following content:
+
+.. literalinclude:: ../Targets.rst
+   :language: rst
+
+
 .. exapmle-menu::
 
 Menu

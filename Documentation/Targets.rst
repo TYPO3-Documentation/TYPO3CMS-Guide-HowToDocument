@@ -2,23 +2,18 @@
 
 .. include:: /Includes.rst.txt
 
-.. only:: html
-
-.. _labels-for-crossreferencing:
 .. _linktargets:
 
-
-Targets for Cross-Referencing
-=============================
+Link targets
+============
 
 .. hint::
 
    This page is only relevant for documentation contributors!
 
-For an explanation of cross-referencing, see :ref:`intersphinx`.
-
-The following is a list of all :ref:`link targets <link-targets-explanation>`
-defined in this manual.
-
+This page contains an automatically generated list of all
+:ref:`link targets <h2document:link-targets-explanation>`
+in this manual. It can be used for cross-referencing within this manual
+and from other manuals using :rst:`:ref:`.
 
 .. ref-targets-list::
