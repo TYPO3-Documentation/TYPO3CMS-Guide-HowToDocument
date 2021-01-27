@@ -99,7 +99,7 @@ Looking at the source
 =====================
 
 Whenever you come across a documentation page on docs.typo3.org, you can look
-at the source code by clicking on the "View page Source" link in the footer.
+at the source code by clicking on the "View source" at the top of a page.
 
 That way, you can see how it is done and compare the reST source with the
 rendered version.
