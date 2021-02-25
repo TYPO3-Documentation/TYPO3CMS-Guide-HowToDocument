@@ -58,7 +58,7 @@ be found in the subchapters.
 
    :ref:`link-to-changelog` describes how to link to the changelog::
 
-      :doc:`t3coreapi:Changelog/10.0/Feature-88770-PSR-14BasedEventDispatcher`
+      :doc:`t3core:Changelog/10.0/Feature-88770-PSR-14BasedEventDispatcher`
 
 #. Coding guidelines for headers
 
