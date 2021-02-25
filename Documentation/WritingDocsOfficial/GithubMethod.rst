@@ -29,14 +29,14 @@ contributing to TYPO3 documentation.
    You should find the button on the top right of any page!
 
    .. image:: ../images/edit_me_on_github.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
 4. Fork the repository:
 
    Click on the green button to fork the repository.
 
    .. image:: ../images/github-edit-fork.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
 5. Make your changes:
 
@@ -45,7 +45,7 @@ contributing to TYPO3 documentation.
    should already be correct, by default. Don't change that.
 
    .. image:: ../images/github-edit-window.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
 6. Handling reST:
 
@@ -61,7 +61,7 @@ contributing to TYPO3 documentation.
    Go back to the edit window and make more changes any time.
 
    .. image:: ../images/github-edit-preview.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
 8. Finalize your changes:
 
@@ -70,7 +70,7 @@ contributing to TYPO3 documentation.
    file change"
 
    .. image:: ../images/github-propose-file-changes.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
 9. Create pull request:
 
@@ -78,12 +78,12 @@ contributing to TYPO3 documentation.
    ok, click on "Create pull request".
 
    .. image:: ../images/github-comparing-changes.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
    And finally, create your pull request:
 
    .. image:: ../images/github-create-pull-request2.png
-      :class: with-shadow
+      :class: with-border with-shadow
 
 10. You're done!
 
@@ -109,13 +109,13 @@ for an example.
 
 .. image:: ../images/dad-with-image.png
    :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
-   :class: with-shadow
+   :class: with-border with-shadow
 
 Scroll down to "Improving documentation":
 
 .. image:: ../images/dad-improve-docs.png
    :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
-   :class: with-shadow
+   :class: with-border with-shadow
 
 
 Next Steps
