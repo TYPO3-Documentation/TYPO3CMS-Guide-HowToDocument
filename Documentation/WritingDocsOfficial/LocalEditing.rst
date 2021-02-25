@@ -174,8 +174,8 @@ Explanation
 -----------
 
 This section describes how to keep your local repository up-to-date. This is
-similar to the section "Keep your fork synced" on the online resource
-`Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__.
+similar to GitHub's documentation chapter about
+`Keeping your fork synced <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced>`__.
 
 If you have already created a patch for a repository, you can reuse your
 local repository. This means you do not have to fork and clone for every new patch.
