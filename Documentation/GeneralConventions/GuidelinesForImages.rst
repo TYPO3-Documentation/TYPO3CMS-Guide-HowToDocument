@@ -117,7 +117,9 @@ we did not have guidelines for this, so you may see various shapes in different 
    appreciated.
 
 
-.. index:: Screenshots; Icons
+.. index:: 
+   pair: Screenshots; Icons
+   pair: TYPO3; Icons
 
 To get the icons
 ----------------
