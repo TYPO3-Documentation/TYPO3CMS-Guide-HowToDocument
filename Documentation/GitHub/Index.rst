@@ -9,7 +9,7 @@ How to work with GitHub
 =======================
 
 
-.. tip:: **Looking for help on 'How to edit'?
+.. tip:: **Looking for help on 'How to edit'?**
 
    Please head over to page :ref:`docs-contribute-github-method`.
 
