@@ -17,7 +17,7 @@ With XXL Big Numbers
 
 *Source:* ::
 
-   rst-class:: bignums-xxl
+   .. rst-class:: bignums-xxl
 
    1. One one one bignums-xxl
 
