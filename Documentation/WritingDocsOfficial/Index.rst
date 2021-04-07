@@ -32,7 +32,7 @@ There are two different ways in which you can make your changes before submittin
 
    1. Edit in GitHub
 
-      You can edit documentation in your browser by accessing its repository directly on GitHub.
+      You can edit documentation in your browser by accessing its repository directly in GitHub.
 
       This workflow is ideal for making minor changes such as fixing grammatical errors and typos.
 
