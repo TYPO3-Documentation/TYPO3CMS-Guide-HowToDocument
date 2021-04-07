@@ -34,7 +34,7 @@ There are two different ways in which you can make your changes before submittin
 
       You can edit documentation in your browser by accessing its repository directly on GitHub.
 
-      This workflow is ideal for making minor changes such as fixing grammatical errors or typos.
+      This workflow is ideal for making minor changes such as fixing grammatical errors and typos.
 
       :ref:`docs-contribute-github-method`.
 
@@ -43,7 +43,7 @@ There are two different ways in which you can make your changes before submittin
       This method is suited to users who are comfortable using Git, Docker
       and the command line. It's the recommended approach for making larger
       changes as it gives you greater control over what tools you use and
-      it also allows you to test and view your changes before submitting them for approval.
+      it also allows you to test and view your changes locally before submitting them for approval.
 
       :ref:`docs-contribute-git-docker`
 
