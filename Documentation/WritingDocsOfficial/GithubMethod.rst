@@ -4,7 +4,7 @@
 .. _docs-contribute-github-method:
 
 ================================
-Workflow #1: "Edit in GitHub"
+Workflow #1: "Edit on GitHub"
 ================================
 
 .. youtube:: wNxO-aXY5Yw
@@ -24,10 +24,10 @@ Workflow #1: "Edit in GitHub"
    the :ref:`t3start:start` or you want to add some new content
    to the :ref:`t3install:start`.
 
-3. Edit the page in GitHub:
+3. Edit the page on GitHub:
 
    At the top right of every page you will find an icon that says "Edit me on Github".
-   Selecting this link will take you to that pages repository in GitHub.
+   Selecting this link will take you to that pages repository on GitHub.
 
    .. image:: ../images/edit_me_on_github.png
       :class: with-border with-shadow
