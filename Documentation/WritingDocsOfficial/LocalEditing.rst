@@ -7,56 +7,34 @@
 Workflow #2: "Local editing and rendering with Docker"
 ======================================================
 
-This section walks you through contributing to the documentation
-with Git and Docker.
-
-If necessary, ask for help as explained in :ref:`how-to-get-help`.
-
-
-.. _edit-locally-quickstart:
-
-Quick Start
-===========
-
-This describes how to create a pull request for the TYPO3 documentation. All
-steps described are steps you would usually do for any GitHub pull
-request. Only the part about editing (step 6) and rendering (step 7)
-are specific to TYPO3 documentation.
-
+Using your local machine instead of editing documentation on GitHub has many advantages, it includes
+the freedom to choose which IDE you make your changes in (see :ref:`tools-for-editing-rest`) and it also gives you
+the ability to experiment and preview your changes locally before submitting them for approval.
 
 .. rst-class:: bignums-xxl
 
-1. Get a `GitHub <https://github.com>`__ account:
+1. Create a GitHub account:
 
-   Fill out the form on `Join GitHub <https://github.com/join>`__.
+   Visit `Join GitHub <https://github.com/join>`__ and create your account.
 
-   The general convention in the TYPO3 community is to use your full
-   real name as name (*not* username), but it is not a requirement.
-
-   Be sure to use an email-address that you will regularly check as
-   soon as you upload changes to GitHub.
+   Though not mandatory, the general convention in the TYPO3 community is
+   to set your GitHub name (*not* username) as your full name.
 
 2. Find and fork the repository
 
-   Find the repository for the manual you wish to make changes to.
-   In the footer of the rendered documentation on docs.typo3.org,
-   click on the link :guilabel:`Repository`.
+   In the footer of the documentation you wish to make changes to,
+   select the :guilabel:`Repository` link.
 
-   This will direct you to the repository on GitHub.
+   This will take you to the documentations repository in GitHub.
 
-   There, click on the "Fork" button in the upper right.
+   From here, select the "Fork" button in the upper right corner of the page.
 
    .. image:: ../images/github-fork.png
       :class: with-shadow
 
-   .. note::
-      The repository will be forked to your workspace on GitHub. You can
-      delete it later or reuse it for further changes.
-
-
 3. Clone the forked repository
 
-   Clone the **forked repository from your workspace** (click *Clone or
+   Clone the **forked repository from your workspace** (select *Clone or
    download* to copy the URL).
 
    In your terminal:
@@ -68,26 +46,25 @@ are specific to TYPO3 documentation.
 
 4. Setup Git Settings and SSH Key
 
-   For this, we refer to general help on Git or GitHub:
+   For this, we refer to the general help on Git and GitHub:
 
    Setup `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
    and `email <https://help.github.com/en/articles/setting-your-commit-email-address-in-git>`__
    (if not already setup in your global :file:`~/.gitconfig`).
 
-
    `Setup your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
 
-5. Create a branch
+5. Create a branch for your changes
 
 
    .. important::
 
-      If you did not just fork and clone but are using a local repository, you created a while ago:
+      If you did not just fork and clone but are instead using an old local version of this repository:
 
       #. Make sure the repository is up-to-date by pulling from upstream as described
          in :ref:`contribute-edit-locally-more-changes`.
       #. Always branch from *master* (see also :ref:`tip-branches-master`).
-         If you have still checked out a feature branch, switch back to  *master*
+         If you are checked in to a feature branch, switch back to *master*
          first:
 
          .. code-block:: bash
@@ -100,24 +77,21 @@ are specific to TYPO3 documentation.
 
       git checkout -b feature/changes-in-cgl
 
-6. Make changes
+6. Make your changes
 
-   Using your preferred IDE or editor (see :ref:`tools-for-editing-rest`,
-   make changes to the files.
+   Using your preferred IDE or editor you can now start making your changes.
 
-   If you are not familiar with reST, you might want to check out
-   :ref:`reST Introduction <writing-rest-introduction>` first!
-
-   Also, see our :ref:`rest-cheat-sheet` in this guide.
-
+   If you are not familiar with reST, you can visit the
+   :ref:`reST Introduction <writing-rest-introduction>` to help get you started
+   along with the :ref:`rest-cheat-sheet`.
 
 7. Render the documentation
 
-   Render with Docker in order to test the changes:
+   Render your changes with Docker to preview them locally:
 
    *  :ref:`render-documenation-with-docker` (works best on Linux)
    *  :ref:`render-with-docker-compose` (should work better on MacOS
-      or Windows, but is still being tested)
+      and Windows, but is still in development)
 
 8. Commit
 
@@ -125,10 +99,9 @@ are specific to TYPO3 documentation.
 
       git commit -a
 
-   Write a short commit message, describing what was changed, for example
-   "Fix link". See :ref:`general-conventions-commit-messages`, but keep in
-   mind that the conventions for commit messages for the documentation are
-   not strict.
+   Write a short, meaningful commit message describing what changes you have made.
+   See :ref:`general-conventions-commit-messages` for more information on how to
+   word your commit messages.
 
 9. Push changes
 
@@ -148,12 +121,11 @@ are specific to TYPO3 documentation.
     Click on the green button "Compare & pull request" and then
     "Create pull request".
 
-
-Now, wait for someone to review and merge your pull request
-
-
-You will receive notifications (email) about this. Once your change is
-merged, you can reload the page (which you fixed) in your browser.
+    Your change will now be reviewed. A reviewer might
+    suggest additional changes. Monitor your notifications (email) from GitHub. If at any
+    point, you are not sure what to do, don't hesitate to
+    :ref:`ask for help <how-to-get-help>`. When your pull request is accepted,
+    it will be merged. You will receive a notification email as soon as this happens.
 
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
@@ -167,7 +139,7 @@ Next steps
 .. index:: Official documentation; Fork up-to date
 .. _contribute-edit-locally-more-changes:
 
-Keep your local fork up-to date
+Keeping your local fork up-to date
 ===============================
 
 Explanation

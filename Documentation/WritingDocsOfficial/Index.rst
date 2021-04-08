@@ -5,9 +5,9 @@
 .. _docs-contribute:
 .. _docs-official-workflow-methods:
 
-===========================================
-How to contribute to official documentation
-===========================================
+=====================================
+Contribute to the TYPO3 documentation
+=====================================
 
 .. sidebar:: Quicklinks
 
@@ -15,57 +15,37 @@ How to contribute to official documentation
    * :ref:`Conventions <conventions>`
    * :ref:`Render with Docker <rendering-docs>`
    * :ref:`Typical tasks <docs-official-how-you-can-help>`
-   * `Open issues <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (login to GitHub first)
+   * `Open issues <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (a GitHub account is required)
 
-The community is welcome to make changes to the official documentation
-on https://docs.typo3.org. Any help is appreciated!
+Everyone is welcome to make changes and help improve TYPO3's documentation.
 
-You can start with very minimal knowledge and learn as
-you go along.
+No prior knowledge is required and support is always available for new contributors :ref:`here <how-to-get-help>`.
 
-Your changes will not be visible right away, someone
-must merge them. So, don't worry about breaking something!
-
-If you're stuck at any point, don't hesitate to ask for
-:ref:`help <how-to-get-help>`.
+Once you have submitted your changes they won't be visible straight away. Someone in the Documentation Team
+will need to approve the changes first before they are published.
 
 **Workflows**
 
-There are 2 different workflows which you can use to make changes.
-Use what you are most comfortable with!
-
-.. tip::
-
-   We recommend to try out the :ref:`"Edit on GitHub" workflow <docs-contribute-github-method>`,
-   because it is a way to quickly make changes, but if you are familiar with
-   working with Git, use :ref:`"Local Editing and Rendering
-   with Docker" <docs-contribute-git-docker>` in the long run for larger
-   changes.
+There are two different ways in which you can make your changes before submitting them for approval.
 
 .. rst-class:: bignums
 
-   1. "Edit on GitHub" workflow
+   1. Edit on GitHub
 
-      You can edit documentation directly online in your browser.
+      You can edit documentation in your browser by accessing its repository directly on GitHub.
 
-      This workflow can be used for minor changes (e.g. to fix typos).
+      This workflow is ideal for making minor changes such as fixing grammatical errors and typos.
 
-      **Get started:** :ref:`docs-contribute-github-method`.
+      :ref:`docs-contribute-github-method`.
 
-   2. "Local Editing and Rendering with Docker" workflow
+   2. Edit locally and render with Docker
 
-      If you are familiar with Git, Docker and the command line,
-      you can use this workflow. In fact, it is recommended.
+      This method is suited to users who are comfortable using Git, Docker
+      and the command line. It's the recommended approach for making larger
+      changes as it gives you greater control over what tools you use and
+      it also allows you to test and view your changes locally before submitting them for approval.
 
-      If you already contributed to other projects on GitHub via
-      pull requests, you should already be familiar with this workflow.
-      The only difference to a general GitHub contribution workflow
-      using Git is the local rendering with Docker!
-
-      **Get started:** :ref:`docs-contribute-git-docker`
-
-
-
+      :ref:`docs-contribute-git-docker`
 
 
 .. toctree::
