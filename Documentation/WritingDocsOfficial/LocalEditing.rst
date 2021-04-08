@@ -7,7 +7,7 @@
 Workflow #2: "Local editing and rendering with Docker"
 ======================================================
 
-Using your local machine instead of editing documentation in GitHub has many advantages, it includes
+Using your local machine instead of editing documentation on GitHub has many advantages, it includes
 the freedom to choose which IDE you make your changes in (see :ref:`tools-for-editing-rest`) and it also gives you
 the ability to experiment and preview your changes locally before submitting them for approval.
 

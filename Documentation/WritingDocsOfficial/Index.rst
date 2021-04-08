@@ -30,9 +30,9 @@ There are two different ways in which you can make your changes before submittin
 
 .. rst-class:: bignums
 
-   1. Edit in GitHub
+   1. Edit on GitHub
 
-      You can edit documentation in your browser by accessing its repository directly in GitHub.
+      You can edit documentation in your browser by accessing its repository directly on GitHub.
 
       This workflow is ideal for making minor changes such as fixing grammatical errors and typos.
 
