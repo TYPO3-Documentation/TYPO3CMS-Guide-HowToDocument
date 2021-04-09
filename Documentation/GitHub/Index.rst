@@ -202,8 +202,8 @@ Find pull requests that require my attention
 When another contributor creates their own pull request, they might ask you to review
 their change by assigning you to the pull request as an assignee.
 
-To review all requests that are assigned to you, select Pull requests from the main navigation bar
-followed by Review requests.
+To review all requests that are assigned to you, select :guilabel:`Pull requests` from the main navigation bar
+followed by :guilabel:`Review requests`.
 
 .. image:: ../images/github-review-requests.png
    :class: with-shadow
