@@ -195,3 +195,15 @@ About reviewing pull requests, you can look in the GitHub help pages:
    `mark the line <https://help.github.com/en/articles/commenting-on-a-pull-request>`__
    in the PR.
 
+
+Find pull requests that require my attention
+============================================
+
+When another contributor creates their own pull request, they might ask you to review
+their change by assigning you to the pull request as an assignee.
+
+To review all requests that are assigned to you, select :guilabel:`Pull requests` from the main navigation bar
+followed by :guilabel:`Review requests`.
+
+.. image:: ../images/github-review-requests.png
+   :class: with-shadow
