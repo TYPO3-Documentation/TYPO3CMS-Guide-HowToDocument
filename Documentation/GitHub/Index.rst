@@ -196,7 +196,7 @@ About reviewing pull requests, you can look in the GitHub help pages:
    in the PR.
 
 
-Find Pull Requests That Require My Attention
+Find pull requests that require my attention
 ============================================
 
 When another contributor creates their own pull request, they might ask you to review
