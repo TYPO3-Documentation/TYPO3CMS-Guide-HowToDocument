@@ -233,21 +233,24 @@ From one manual to another
 Example 1: Use text of headline as anchor text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Again, we want to link to the label `columns-inline`.
+Again, we want to link to the labels `columns-inline` and `This-is-ABC`.
 
-But since the label is now in a different manual, we
-need to prefix the name of that manual:
+But since the labels are now in a different manuals, we
+need to prefix the names of that manuals:
 
 .. code-block:: rest
 
    :ref:`t3tca:columns-inline`
+   :ref:`t3install:This-is-ABC`
 
 
-The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file:
+The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file: .
+`This-is-ABC` is just an example wording.
 
 .. code-block:: none
 
-   t3tca = https://docs.typo3.org/typo3cms/TCAReference/
+   t3tca         = https://docs.typo3.org/m/typo3/reference-tca/master/en-us/
+   t3install     = https://docs.typo3.org/m/typo3/guide-installation/master/en-us/
 
 
 .. important::
@@ -289,7 +292,7 @@ Tips
 ----
 
 1. For convenience many manuals already have a page "Linktargets" where you can easily
-   see what linktargets are available. Example: https://docs.typo3.org/typo3cms/TCAReference/Targets.html
+   see what linktargets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/master/en-us/Targets.html
 
 2. As an editor you should not change or remove labels once they have been published.
    If you feel that a label (= linktarget) should be changed you should keep the old one
