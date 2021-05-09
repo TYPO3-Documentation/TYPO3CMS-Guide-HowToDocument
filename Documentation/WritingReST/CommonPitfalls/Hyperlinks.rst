@@ -59,8 +59,8 @@ How this looks:
 `T3O<https://typo3.org>`__
 
 
-Common mistake #2: Missing undercore (_)
-========================================
+Common mistake #2: Missing underscore (_)
+=========================================
 
 Missing `_` or `__` at the end:
 
