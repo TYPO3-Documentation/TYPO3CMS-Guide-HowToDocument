@@ -33,7 +33,7 @@ Further conventions:
 *  reStructueredText files have ending **.rst**
 *  Markdown files have ending **.md**
 *  Included files have ending **.rst.txt**
-*  Use **CamelCase** for directories and .rst file names (e.g. :file:`Index.rst`,
+*  Use **CamelCase** for directories and .rst file names (for example :file:`Index.rst`,
    :file:`ExtensionArchitecture.rst`).
 
 
@@ -51,7 +51,7 @@ This is the recommended setup. It is used by the official documentation.
        └── Settings.cfg
        └── ...
 
-For alternative start page (e.g. :file:`README.rst` or :file:`README.md`),
+For alternative start page (for example :file:`README.rst` or :file:`README.md`),
 see :ref:`"start file" <start-file>`.
 
 
@@ -428,7 +428,7 @@ This file can be the same for all Documentation projects!
 
 Example:
 
-*  `Includes.rst.txt in this manual 
+*  `Includes.rst.txt in this manual
    <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
 
 .. literalinclude:: ../Includes.rst.txt
@@ -463,7 +463,7 @@ Example:
 :file:`.gitignore`
 
 All files listed in .gitignore will be ignored by Git. This is useful for generated files,
-that should not be added to your repository or for temporary files (e.g. backup files of
+that should not be added to your repository or for temporary files (for example backup files of
 your editor).
 
 You can ignore additional files by adding them to your .git/info/exclude file.
@@ -492,12 +492,12 @@ Minimal example
 .. _readme-rst:
 .. _about-file:
 
-About file (e.g. README.rst)
+About file (for example README.rst)
 ============================
 
 **optional** (recommended for official TYPO3 documentation)
 
-This file will be displayed on the Git hoster (e.g. GitHub or Gitlab) when someone browses through the
+This file will be displayed on the Git hoster (for example GitHub or Gitlab) when someone browses through the
 repositories. Use `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/README.rst>`__
 from this project as an example! (see `source <https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/master/README.rst>`__).
 

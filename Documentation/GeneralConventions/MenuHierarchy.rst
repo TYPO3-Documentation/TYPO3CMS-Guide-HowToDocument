@@ -64,32 +64,32 @@ See :ref:`example-toctree` to see how this is rendered.
 Single-file solution
 ====================
 
-What you can also do, is put everything into one file, e.g. Index.rst contains:
+What you can also do, is put everything into one file, for example Index.rst contains:
 
 .. code-block:: rest
 
    =======
    Chapter
    =======
-   
+
    Topic 1
    =======
-   
+
    Subtopic 1
    ----------
-   
+
    some text
-   
+
    Subtopic 2
    ----------
-   
+
    some text
-   
-   
+
+
 The rendered result will look the same as the multi-file example above, meaning the menu hierarchy
 and the rendered headings on the page.
 
 .. tip::
 
    Whatever variant you choose, it depends what is already common practice in the manual you are
-   working on and what is easiest to manage. 
+   working on and what is easiest to manage.

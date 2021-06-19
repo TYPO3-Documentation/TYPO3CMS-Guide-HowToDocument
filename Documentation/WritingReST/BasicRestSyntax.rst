@@ -77,7 +77,7 @@ Escape characters
 If you want to use a character, which would create some special reST markup,
 with its normal meaning, you must escape it with a prepended "\".
 
-E.g. surrounding text with "*" signs normally makes it show up in italics. By
+For example surrounding text with "*" signs normally makes it show up in italics. By
 escaping the special characters "*" you make the stars normal text characters::
 
    \*non-italic\*

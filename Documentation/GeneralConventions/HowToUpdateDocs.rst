@@ -10,7 +10,7 @@
 Update documentation for new releases
 =====================================
 
-Once a new TYPO3 release comes out, the main documentation (e.g. :ref:`t3coreapi:start`,
+Once a new TYPO3 release comes out, the main documentation (for example :ref:`t3coreapi:start`,
 :ref:`t3tca:start` etc.) must be updated.
 
 Here, we describe some best practices for updating the official documentation
@@ -105,7 +105,7 @@ Commit messages
 ===============
 
 The commit message can point out the releases to which the change should apply
-(as in the core commits), e.g. `Releases: master, 9.5`, see
+(as in the core commits), for example `Releases: master, 9.5`, see
 :ref:`general-conventions-commit-messages`.
 
 You can link to the issue for the changes in the team repository, for example::
@@ -169,7 +169,7 @@ Work in progress
 ================
 
 Several suggestions have been made to improve the process but these still require
-more work or a decision, e.g.
+more work or a decision, for example
 
 *  `Link to changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__
 *  `How can we get changes added to documentation early? And what is master: master or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__

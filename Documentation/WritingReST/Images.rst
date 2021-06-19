@@ -35,8 +35,8 @@ Optional parameters for images:
 
 *  `:alt:` : alt text
 *  `:target:` link target
-*  `:width:` : width of image, use for example px (e.g. `:width: 100px`
-*  `:scale:` : scale images, e.g. `:scale: 65`
+*  `:width:` : width of image, use for example px (for example `:width: 100px`
+*  `:scale:` : scale images, for example `:scale: 65`
 
 Additional parameters can be found on the docutils page `reStructuredText Directives
 <http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__

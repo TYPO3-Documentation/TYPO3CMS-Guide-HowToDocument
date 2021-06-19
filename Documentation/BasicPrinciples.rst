@@ -57,7 +57,7 @@ All of these examples have a few things in common:
 *  All documentation is rendered using the **same rendering toolchain**. All documentation
    can be rendered locally, with the officially supported Docker image.
 *  The documentation source files adhere to :ref:`general-conventions` and
-   share a **common structure** (e.g. all documentation files in a
+   share a **common structure** (for example all documentation files in a
    :file:`Documentation` subdirectory).
 *  Due to the conventions, the rendering of documentation can be automated and
    every documentation project only requires a minimum of setup.
@@ -198,7 +198,7 @@ Documentation contribution matrix
 Considering how to contribute, the things that differ for various kinds of documentation
 are:
 
-*  Where the issues are maintained (e.g. on Forge or GitHub)
+*  Where the issues are maintained (for example on Forge or GitHub)
 *  Where the source code (Git repository) is kept
 *  The workflow for making changes to the documentation
 
@@ -319,7 +319,7 @@ System extensions
 
 System extensions (or core extensions) are extensions that are maintained
 in the TYPO3 source. For a list of system extensions, look in the Extension
-Manager or in the TYPO3 source, e.g. `GitHub: TYPO3.CMS: /typo3/sysext
+Manager or in the TYPO3 source, for example `GitHub: TYPO3.CMS: /typo3/sysext
 <https://github.com/TYPO3/TYPO3.CMS/tree/master/typo3/sysext>`__.
 
 Examples for system extensions are:

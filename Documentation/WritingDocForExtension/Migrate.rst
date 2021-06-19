@@ -117,7 +117,7 @@ will be automatically generated on the documentation server.
 This file is used by extensions.typo3.org to find matching documentation.
 extensions.typo3.org will only show the link to the latest available version.
 This has to match the released version on docs.typo3.org.
-No fallback is in place (e.g. master will not be linked by default).
+No fallback is in place (for example master will not be linked by default).
 
 Please note that it might take some time until extensions.typo3.org displays changed URLs to docs.typo3.org.
 The information needs to be picked up by a command.
@@ -193,12 +193,12 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
       Provides the homepage of docs.typo3.org
 
    ``other``
-      Provides further documentation, e.g. for `Surf
+      Provides further documentation, for example for `Surf
       <https://github.com/TYPO3/Surf>`_ or `Fluid
       <https://github.com/TYPO3/Fluid>`_
 
 ``vendor``
-   Collects all packages of the same vendor, e.g. "typo3" or a company
+   Collects all packages of the same vendor, for example "typo3" or a company
    providing extensions. Same as on packagist.org.
 
 ``package``
@@ -209,7 +209,7 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
    ``draft``.
 
 ``locale``
-   Defines the locale, e.g. ``en-us`` or ``fr-fr``.
+   Defines the locale, for example ``en-us`` or ``fr-fr``.
 
 .. _migrate-info-about-changes:
 .. _migrate-existing-documentation:

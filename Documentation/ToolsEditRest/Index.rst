@@ -16,7 +16,7 @@ good support for syntax highlighting and marking errors in reST.
 
 *  `PhpStorm <https://www.jetbrains.com/phpstorm/>`__ is commonly used by
    developers in the TYPO3 community. It does however cost money. PhpStorm
-   comes with a number of plugins for TYPO3, e.g. for TypoScript and Fluid.
+   comes with a number of plugins for TYPO3, for example for TypoScript and Fluid.
 *  **Visual Studio Code** also comes with plugins for TYPO3 and for reStructuredText.
    And it is free.
 

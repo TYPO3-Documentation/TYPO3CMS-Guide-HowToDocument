@@ -12,11 +12,11 @@ This chapter addresses contributing to third party extension documentation.
 For system extensions, see :ref:`contribute-to-system-extension`.
 
 You can contribute to the documentation of any publicly available extension,
-if the repository is public (e.g. hosted on GitHub). This does not mean, the
+if the repository is public (for example hosted on GitHub). This does not mean, the
 extension author will be willing or is obligated to merge your change. But, most
 of the time, useful contributions are welcome.
 
-You can add issues or make changes via patches (e.g. pull requests on GitHub).
+You can add issues or make changes via patches (for example pull requests on GitHub).
 
 If you can make the change yourself, try to submit it as a patch instead of
 just writing an issue. It depends on the policy of the extension author

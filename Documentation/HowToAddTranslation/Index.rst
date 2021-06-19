@@ -24,7 +24,7 @@ wind up on the corresponding translated page.
 
 #. Create a localization directory
 
-   e.g. `Documentation/Localization.de_DE`, `Documentation/Localization.fr_FR`.
+   for example `Documentation/Localization.de_DE`, `Documentation/Localization.fr_FR`.
    This directory contains a complete documentation project. So, you can effectively
    copy the original :file:`Documentation` directory.
 
