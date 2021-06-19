@@ -45,7 +45,7 @@ of the page.
 Get notifications from GitHub
 =============================
 
-You can get notifications for activity in a repository (e.g. new pull requests or
+You can get notifications for activity in a repository (for example new pull requests or
 issues) by **watching** the repository:
 
 

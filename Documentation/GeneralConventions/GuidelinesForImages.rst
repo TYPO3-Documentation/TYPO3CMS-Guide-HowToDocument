@@ -61,7 +61,7 @@ Texts & fonts
 Image formats
 -------------
 
-*  It is recommended to use PNG for bitmaps (e.g. screenshots, photographs)
+*  It is recommended to use PNG for bitmaps (for example screenshots, photographs)
    and SVG for vector graphics images. In any case, you can use .png.
 
 .. index:: Screenshots; Guidelines
@@ -117,7 +117,7 @@ we did not have guidelines for this, so you may see various shapes in different 
    appreciated.
 
 
-.. index:: 
+.. index::
    pair: Screenshots; Icons
    pair: TYPO3; Icons
 

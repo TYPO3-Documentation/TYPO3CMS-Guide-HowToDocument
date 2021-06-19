@@ -193,7 +193,7 @@ necessary changes themselves.
 Motivate
 ===============
 
-Thank others for their contributions (e.g. on Slack, Twitter or personally).
+Thank others for their contributions (for example on Slack, Twitter or personally).
 
 
 .. _contribute-what-social-media:

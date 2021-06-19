@@ -28,7 +28,7 @@ Commit message recommendations
 Issues
 ------
 
-If an issue exists, link to it, by using for example "Resolves: #issue number", e.g.::
+If an issue exists, link to it, by using for example "Resolves: #issue number", for example::
 
   Resolves: #4
 
@@ -115,7 +115,7 @@ as is customary in core development
 
 However, this is not mandatory throughout the docs at the moment. If
 possible, use the conventions, that are being used in
-the manual in which you are working, e.g. `TYPO3 Explained commits
+the manual in which you are working, for example `TYPO3 Explained commits
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/master>`__
 typically use these conventions.
 

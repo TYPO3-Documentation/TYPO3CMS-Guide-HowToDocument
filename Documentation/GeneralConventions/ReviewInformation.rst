@@ -48,7 +48,7 @@ What to watch out for while reviewing:
 *  **Language correctness:** Spelling, grammar, style.
 
 Not everyone is a native English speaker and not everyone knows TYPO3 inside-out. It
-is entirely fine to only focus on one aspect at a time (e.g. language) while reviewing.
+is entirely fine to only focus on one aspect at a time (for example language) while reviewing.
 
 
 Examples for review information
@@ -87,7 +87,7 @@ information to the start page:
          Tested and reviewed for TYPO3 9.5.5 on April 11, 2019
 
 *If* pages become outdated and are not fixed immediately, you can modify
-the review information on the start page, e.g.
+the review information on the start page, for example
 
 
 :Status:

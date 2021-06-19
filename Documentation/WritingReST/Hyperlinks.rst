@@ -36,7 +36,7 @@ In Sphinx you can use several types of links:
 :ref:`Cross-Referencing <cross-referencing>` with intersphinx (`:ref:`)
    for linking to other sections of a different manual on docs.typo3.org
 
-   If your link target is in another manual (e.g. "Getting Started Tutorial", you must
+   If your link target is in another manual (for example "Getting Started Tutorial", you must
    add the shortcut (here: `t3start`) for the other manual:
 
    .. code-block:: rest

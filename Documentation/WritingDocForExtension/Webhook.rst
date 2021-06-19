@@ -170,7 +170,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 
 #. Fill in webhook configuration
 
-   #. Choose a title for this hook: e.g. "TYPO3 Docs".
+   #. Choose a title for this hook: for example "TYPO3 Docs".
 
    #. Fill URL field with ``https://docs-hook.typo3.org``.
 

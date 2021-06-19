@@ -32,7 +32,7 @@ This description uses the example extension manual:
       git clone https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual.git
 
    Move or copy the entire :file:`Documentation` directory, so that the Documentation
-   directory is a direct subdirectory of the extension, e.g.
+   directory is a direct subdirectory of the extension, for example
 
    .. code-block:: bash
 

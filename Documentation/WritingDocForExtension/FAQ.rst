@@ -37,7 +37,7 @@ You must add the project title to your :file:`Settings.cfg`:
     # ...   (required) title (displayed in left sidebar (desktop) or top panel (mobile)
     # .................................................................................
 
-    project     = title, e.g. extension name
+    project     = title, for example extension name
 
     # .................................................................................
     # ...   (recommended) version, displayed next to title (desktop) and in <meta name="book-version"

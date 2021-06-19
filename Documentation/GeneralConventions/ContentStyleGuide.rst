@@ -22,7 +22,7 @@ The authoritative style guide for writing official text for TYPO3 is `The TYPO3 
 
 This section aims to add some additional explanations and more examples for rules
 already defined in the style guide. It also explains how to apply the rules in
-the documentation (e.g. format with reST).
+the documentation (for example format with reST).
 
 Since the English language is not always specific and there may be more than one correct spelling
 for some words, we have added a :ref:`spelling-ref`. If something is not
@@ -103,9 +103,9 @@ The same spelling rules as in the title apply to buttons and links.
 Rules for referring to GUI elements
 ===================================
 
-If the text refers to terms used in the GUI (e.g. a clickpath for selecting
+If the text refers to terms used in the GUI (for example a clickpath for selecting
 something from the menu is described), the spelling used in the GUI should be
-used, e.g. "*File > Open*" or "click on "*ADMIN TOOLS > Extensions*".
+used, for example "*File > Open*" or "click on "*ADMIN TOOLS > Extensions*".
 
 See :ref:`rest-refer-to-gui-elements` for information about how to use reST
 markup for this.
@@ -159,11 +159,11 @@ How can you decide for yourself in other edge cases?
 Capitalization rules (plain text)
 ---------------------------------
 
-#. If a word has special spelling, e.g. a :ref:`special TYPO3 word <spelling-typo3>`
+#. If a word has special spelling, for example a :ref:`special TYPO3 word <spelling-typo3>`
    like TypoScript or an :ref:`acronym <spelling-acronyms>` like PHP,
    this spelling is applied.
 #. :ref:`Proper nouns and brand names <spelling-proper-names>` are
-   capitalized, e.g. Docker.
+   capitalized, for example Docker.
 #. Most other words begin with a lowercase letter.
 
 There are some edge cases and some terms are not spelled consistently throughout various
@@ -226,7 +226,7 @@ Proper names, brand names
 
 General rules of the English language apply here:
 
-If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__ or brand names (e.g. Coca-Cola)
+If `proper names <https://en.wikipedia.org/wiki/Proper_names>`__ or brand names (for example Coca-Cola)
 are used in normal text (not headlines), they are capitalized.
 
 These can be countries, names of people, corporations or brand names.

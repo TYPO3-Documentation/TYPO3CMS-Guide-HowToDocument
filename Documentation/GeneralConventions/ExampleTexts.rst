@@ -1,7 +1,7 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 
-.. todo:: Add more boilerplate texts for other content types, e.g. tutorials, guides ...
+.. todo:: Add more boilerplate texts for other content types, for example tutorials, guides ...
 
 .. _exampleTexts:
 
@@ -45,7 +45,7 @@ The following should be on the start page, typically in this order:
    information about contribution, link targets and the shortcut.
 
 *  *required*: Official documentation.
-*  *required*: Manual type, e.g. "Core Manual", "Tutorial", etc.
+*  *required*: Manual type, for example "Core Manual", "Tutorial", etc.
 *  *optional*: Credits section and link to contributors on GitHub
 *  *optional*: Short information about contribution (this should be
    very general so we do not have to change it often). This can be
@@ -112,7 +112,7 @@ Contribution
 `Documentation Team <https://typo3.org/community/teams/documentation>`__.
 
 If you find a bug in this manual, please do not be afraid to suggest a fix,
-e.g. by using the “Edit on GitHub” button in the top right corner.
+for example by using the “Edit on GitHub” button in the top right corner.
 Alternatively you can file an issue."
 
 
@@ -131,7 +131,7 @@ These are some changes that we made for the following reasons:
 
 See `decision: Proposal for documentation manual start page <https://decisions.typo3.org/t/proposal-for-documentation-manual-start-page/668>`__
 
-.. index:: 
+.. index::
    Documentation; Link targets
    Files; Targets.rst
 
