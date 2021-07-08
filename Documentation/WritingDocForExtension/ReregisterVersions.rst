@@ -31,10 +31,10 @@ To get over it in an efficient way, the following script can help with the task:
    do
            git checkout -b $tag $tag;
            git push origin refs/heads/$tag;
+           sleep 60;
            git push --delete origin refs/heads/$tag;
            git checkout master;
            git branch -D $tag;
-           sleep 10;
    done
 
    rm -rf "/tmp/$EXTENSION"
@@ -54,9 +54,9 @@ This will:
 
 #. Pushes and deletes them to origin
 
-#. Deletes them locally
+#. Takes a nap of 60 seconds and after each push, in order to allow rendering of branch before deleting branch
 
-#. Takes a nap of 10 seconds and after all work is done removes the cloned folder
+#. Deletes them locally
 
 All versions should now be queued for the extension.
 This can be checked as described at :ref:`webhook` last step.
