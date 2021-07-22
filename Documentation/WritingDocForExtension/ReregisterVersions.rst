@@ -9,7 +9,7 @@ Reregister versions
 
 If there are documentations for some extension version missing, they have to be announced to Intercept again.
 This can be achieved by triggering the :ref:`webhook` with the correct version number.
-Therefore please register webhook first, if not already done.
+Therefore please register webhook first, if it's not already done.
 
 As no new releases should be created, branches can be created for each existing release.
 Those branches need to match the release version.
@@ -40,7 +40,7 @@ To get over it in an efficient way, the following script can help with the task:
    rm -rf "/tmp/$EXTENSION"
 
 The script needs to be called with the repository name.
-If the script is saved with the name :file:`trigger_documentation_push.sh` this would be executed like for example::
+If the script is saved with the name :file:`trigger_documentation_push.sh` this would be executed using this example::
 
    sh trigger_documentation_push.sh evoWeb/sf_register
 
@@ -54,7 +54,7 @@ This will:
 
 #. Pushes and deletes them to origin
 
-#. Takes a nap of 60 seconds and after each push, in order to allow rendering of branch before deleting branch
+#. Takes a nap for 60 seconds after each push in order to allow rendering of the branch before deleting it
 
 #. Deletes them locally
 
