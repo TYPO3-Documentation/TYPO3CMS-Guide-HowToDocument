@@ -36,7 +36,7 @@ see :ref:`overview-of-types`.
 
    .. image:: ../images/github-gerrit.png
       :class: with-shadow
-      :target: https://github.com/TYPO3/TYPO3.CMS/pull/172#issuecomment-494721296
+      :target: https://github.com/typo3/typo3/pull/172#issuecomment-494721296
 
 See `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
 for a list of system extension documentation.
