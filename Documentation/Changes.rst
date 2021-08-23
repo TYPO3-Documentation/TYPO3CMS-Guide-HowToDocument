@@ -55,7 +55,7 @@ make sure to get the latest changes and work on `master` in the future.
 
       .. code-block:: bash
 
-         git remote add upstream git@github.com:TYPO3-Documentation/<name of repository>.git
+         git remote add upstream git://github.com/TYPO3-Documentation/<name of repository>.git
 
    3. Fetch from remote:
 
