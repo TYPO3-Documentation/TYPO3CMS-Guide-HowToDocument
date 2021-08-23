@@ -159,8 +159,8 @@ You local repository is based on the forked repository in your workspace.
 
 For example,
 
-*  URL of fork:  `git@github.com:<your username>/TYPO3CMS-Guide-HowToDocument.git`
-*  original URL: `git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
+*  URL of fork:  `git://github.com/<your username>/TYPO3CMS-Guide-HowToDocument.git`
+*  original URL: `git://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
 
 So, running the following will not get the latest changes:
 
@@ -179,7 +179,7 @@ You must now do the following:
 
 .. code-block:: bash
 
-   git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
+   git remote add upstream git://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
    git pull upstream master
 
 
