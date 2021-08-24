@@ -24,7 +24,7 @@ To get over it in an efficient way, the following script can help with the task:
    EXTENSION="$1"
 
    mkdir -p "/tmp/$EXTENSION"
-   git clone "git://github.com/$EXTENSION.git" "/tmp/$EXTENSION"
+   git clone "git@github.com:$EXTENSION.git" "/tmp/$EXTENSION"
 
    cd "/tmp/$EXTENSION"
    for tag in $(git tag)
