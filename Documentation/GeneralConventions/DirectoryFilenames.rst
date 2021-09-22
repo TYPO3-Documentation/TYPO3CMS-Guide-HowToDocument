@@ -163,14 +163,6 @@ see :ref:`example-start-page`.
    page. The additional README.rst is used as an :ref:`"about file" <about-file>`.
 
 
-.. warning::
-
-   If you use a single file solution (everything in one file without toctree), there is
-   still an open issue concerning the menu. See the
-   :ref:`workaround <single-file-workaround>`.
-
-
-
 Example - "classic" with toctree
 --------------------------------
 
@@ -290,32 +282,6 @@ Content
 *  line 1: every .rst file should include /Includes.rst.txt
 *  line 3-5: the title
 *  Here, all text is contained in one file.
-
-.. _single-file-workaround:
-
-Workaround for single file
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. warning::
-
-   If you use a single file solution (everything in one file), there is
-   still an `open issue concerning the menu <https://github.com/t3docs/docker-render-documentation/issues/64>`__.
-
-   Currently, there is a workaround: Remove the title:
-
-   .. code-block:: rst
-
-
-      Introduction
-      ============
-
-      ... text with introduction ...
-
-      Configuration
-      =============
-
-      ... text with configuration ...
-
 
 
 .. index:: Files; Settings.cfg
