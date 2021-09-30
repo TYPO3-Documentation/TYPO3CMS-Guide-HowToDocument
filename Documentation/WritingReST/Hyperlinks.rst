@@ -58,6 +58,13 @@ by adding a label before the section header::
 
 How to create links is described in more detail in the next sections.
 
+:ref:`Preventing links <preventing-links>`
+   being automatically generated from simple URLs.
+
+   .. code-block:: rest
+
+      :samp:`<url>`
+
 
 .. index:: reST; External links
 .. _external-links:
@@ -303,3 +310,35 @@ Tips
    aren't generated any more.
 
 
+.. index:: reST; Preventing links
+.. _preventing-links:
+
+Preventing links
+================
+
+Sphinx automatically converts simple URLs into links. This can be unintentional
+in certain contexts, for example when using a hypothetical domain like
+"example.com" in a tutorial. To prevent linking, the TYPO3 documentation uses
+the :code:`:samp:` directive to wrap the URL.
+
+For example:
+
+.. code-block:: rest
+
+   The TYPO3 backend can be accessed via :samp:`https://example.com/typo3` ..
+
+is rendered like:
+
+The TYPO3 backend can be accessed via :samp:`https://example.com/typo3` ..
+
+To emphasize parts of the URL, use curly braces:
+
+.. code-block:: rest
+
+   The *route* is the "speaking URL" as a whole without the domain part,
+   for example :samp:`https://example.com{/unlinked-urls}`.
+
+is rendered like:
+
+The *route* is the "speaking URL" as a whole without the domain part,
+for example :samp:`https://example.com{/unlinked-urls}`.

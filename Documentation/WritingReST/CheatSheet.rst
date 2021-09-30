@@ -166,6 +166,25 @@ see :ref:`settings-cfg`. Not used manuals are commented out.
       :ThisManual:   ``:ref:`intersphinx```
       :OtherManual:  ``:ref:`t3docwrite:intersphinx```
 
+.. index:: reST; Preventing links
+.. _cheat-sheet-preventing-links:
+
+Preventing links
+----------------
+
+Prevent unintentional linking of simple URLs with the :code:`:samp:` directive:
+
+.. code-block:: rest
+
+   The TYPO3 backend can be accessed via :samp:`https://example.com/typo3` ..
+
+and emphasize parts of the URL with curly braces:
+
+.. code-block:: rest
+
+   The *route* is the "speaking URL" as a whole without the domain part,
+   for example :samp:`https://example.com{/unlinked-urls}`.
+
 
 .. seealso::
 
