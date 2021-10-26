@@ -9,7 +9,7 @@ Webhook
 This section describes how to add webhooks for auto rendering to a repository.
 
 The system supports Git as VCS (Version Control System),
-and the following hosters:
+and the following hosts:
 
 -  :ref:`webhook-github`
 -  :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
