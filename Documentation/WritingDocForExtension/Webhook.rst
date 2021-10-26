@@ -48,7 +48,7 @@ Registration for Slack is available at `my.typo3.org
 Foreign setups
 ==============
 
-In some cases one might use a different hoster then mentioned above.
+In some cases one might use a different hoster than mentioned above.
 Or the file structure does not match the structure of an TYPO3 extension.
 
 In such cases a mirror to one of the supported hosters must be setup.
