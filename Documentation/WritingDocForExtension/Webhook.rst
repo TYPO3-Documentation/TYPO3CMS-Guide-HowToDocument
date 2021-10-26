@@ -9,7 +9,7 @@ Webhook
 This section describes how to add webhooks for auto rendering to a repository.
 
 The system supports Git as VCS (Version Control System),
-and the following hosters:
+and the following hosts:
 
 -  :ref:`webhook-github`
 -  :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
@@ -48,10 +48,10 @@ Registration for Slack is available at `my.typo3.org
 Foreign setups
 ==============
 
-In some cases one might use a different hoster then mentioned above.
+In some cases one might use a different host than the one mentioned above.
 Or the file structure does not match the structure of an TYPO3 extension.
 
-In such cases a mirror to one of the supported hosters must be setup.
+In such cases a mirror to one of the supported hosts must be setup.
 Otherwise it is not possible to enable documentation rendering on docs.typo3.org.
 
 .. _webhook-how-webhook-works:
