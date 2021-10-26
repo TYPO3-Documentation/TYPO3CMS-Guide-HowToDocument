@@ -37,7 +37,7 @@ In order to approve an extension, the following things need to apply:
 
 This is necessary to prevent misuse of the infrastructure and extension names.
 
-In case the approval takes to long,
+In case the approval takes too long,
 request the approval within the Slack channel
 `#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
 Registration for Slack is available at `my.typo3.org
