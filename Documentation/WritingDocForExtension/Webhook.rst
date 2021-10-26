@@ -51,7 +51,7 @@ Foreign setups
 In some cases one might use a different host than the one mentioned above.
 Or the file structure does not match the structure of an TYPO3 extension.
 
-In such cases a mirror to one of the supported hosts must be setup.
+In such cases a mirror to one of the supported hosters must be setup.
 Otherwise it is not possible to enable documentation rendering on docs.typo3.org.
 
 .. _webhook-how-webhook-works:
