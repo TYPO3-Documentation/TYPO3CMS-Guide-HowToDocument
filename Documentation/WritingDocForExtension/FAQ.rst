@@ -9,19 +9,14 @@ FAQ
 
 .. rst-class:: panel panel-default
 
-I am missing the link to docs.typo3.org for my extension
+Where is the link to my documentation in the TYPO3 extension repository?
 ========================================================
 
-All available documentations are available through an API.
-This API is consumed by extensions.typo3.org via a scheduler task.
-extensions.typo3.org needs to update the detail pages of updated extensions, which might take some time (including browser cache).
-Furthermore the search on extensions.typo3.org needs to re index the corresponding extensions which might take further time.
+Short answer: it will take a few hours and up to a day until the documentation for new extensions is linked in the details of your extension in the `TYPO3 Extension Repository (TER) <https://extensions.typo3.org>`__.
 
-Therefore it might take some hours or even a day until new extensions are linked from extensions.typo3.org.
+Long answer: the documentation of all extensions is exposed by an API which is consumed by the TER through a TYPO3 Scheduler task. The TER first needs to pick up updates of extensions which by itself can take some time due to server and browser caches. Furthermore the search in the TER also needs some time to update its index.
 
-extensions.typo3.org will only link to corresponding versions.
-Ensure that a documentation for corresponding version exists on docs.typo3.org.
-E.g. follow :ref:`reregister-versions` to publish documentation for already released versions.
+Finally the TER will only link to documentation with a matching version, so make sure that there actually is a documentation version for each of your extension version. See :ref:`reregister-versions` to publish documentation for already released versions.
 
 .. rst-class:: panel panel-default
 
