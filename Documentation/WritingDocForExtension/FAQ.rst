@@ -7,6 +7,17 @@
 FAQ
 ===
 
+.. rst-class:: panel panel-default
+
+I am missing the link to docs.typo3.org for my extension
+========================================================
+
+All available documentations are available through an API.
+This API is consumed by extensions.typo3.org via a scheduler task.
+extensions.typo3.org needs to update the detail pages of updated extensions, which might take some time (including browser cache).
+Furthermore the search on extensions.typo3.org needs to re index the corresponding extensions which might take further time.
+
+Therefore it might take some hours or even a day until new extensions are linked from extensions.typo3.org.
 
 .. rst-class:: panel panel-default
 
@@ -15,7 +26,6 @@ I am missing some documentation for extension versions
 
 If you are missing documentation for some extension versions we have a
 :ref:`workaround <reregister-versions>` to fix that.
-
 
 .. rst-class:: panel panel-default
 
