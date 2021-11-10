@@ -7,6 +7,16 @@
 FAQ
 ===
 
+.. rst-class:: panel panel-default
+
+Where is the link to my documentation in the TYPO3 extension repository?
+========================================================
+
+Short answer: it will take a few hours and up to a day until the documentation for new extensions is linked in the details of your extension in the `TYPO3 Extension Repository (TER) <https://extensions.typo3.org>`__.
+
+Long answer: the documentation of all extensions is exposed by an API which is consumed by the TER through a TYPO3 Scheduler task. The TER first needs to pick up updates of extensions which by itself can take some time due to server and browser caches. Furthermore the search in the TER also needs some time to update its index.
+
+Finally the TER will only link to documentation with a matching version, so make sure that there actually is a documentation version for each of your extension version. See :ref:`reregister-versions` to publish documentation for already released versions.
 
 .. rst-class:: panel panel-default
 
@@ -15,7 +25,6 @@ I am missing some documentation for extension versions
 
 If you are missing documentation for some extension versions we have a
 :ref:`workaround <reregister-versions>` to fix that.
-
 
 .. rst-class:: panel panel-default
 
