@@ -19,6 +19,10 @@ Furthermore the search on extensions.typo3.org needs to re index the correspondi
 
 Therefore it might take some hours or even a day until new extensions are linked from extensions.typo3.org.
 
+extensions.typo3.org will only link to corresponding versions.
+Ensure that a documentation for corresponding version exists on docs.typo3.org.
+E.g. follow :ref:`reregister-versions` to publish documentation for already released versions.
+
 .. rst-class:: panel panel-default
 
 I am missing some documentation for extension versions
