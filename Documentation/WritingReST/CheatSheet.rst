@@ -176,14 +176,14 @@ Prevent unintentional linking of simple URLs with the :code:`:samp:` directive:
 
 .. code-block:: rest
 
-   The TYPO3 backend can be accessed via :samp:`https://example.com/typo3` ..
+   The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 and emphasize parts of the URL with curly braces:
 
 .. code-block:: rest
 
    The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.com{/unlinked-urls}`.
+   for example :samp:`https://example.org{/unlinked-urls}`.
 
 
 .. seealso::
