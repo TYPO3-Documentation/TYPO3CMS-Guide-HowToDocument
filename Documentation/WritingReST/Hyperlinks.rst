@@ -382,6 +382,10 @@ For explicit mention of the local development context it uses
 
 4. :samp:`https://example.localhost`.
 
+If you need additional dummy domains, use subdomains of the domains listed
+above such as :samp:`https://staging.example.org` and
+:samp:`https://production.example.org`.
+
 For example:
 
 .. code-block:: rest
