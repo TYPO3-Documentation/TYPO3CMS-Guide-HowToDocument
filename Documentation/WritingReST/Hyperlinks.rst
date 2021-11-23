@@ -318,27 +318,27 @@ Preventing links
 
 Sphinx automatically converts simple URLs into links. This can be unintentional
 in certain contexts, for example when using a hypothetical domain like
-"example.com" in a tutorial. To prevent linking, the TYPO3 documentation uses
+"example.org" in a tutorial. To prevent linking, the TYPO3 documentation uses
 the :code:`:samp:` directive to wrap the URL.
 
 For example:
 
 .. code-block:: rest
 
-   The TYPO3 backend can be accessed via :samp:`https://example.com/typo3` ..
+   The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 is rendered like:
 
-The TYPO3 backend can be accessed via :samp:`https://example.com/typo3` ..
+The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 To emphasize parts of the URL, use curly braces:
 
 .. code-block:: rest
 
    The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.com{/unlinked-urls}`.
+   for example :samp:`https://example.org{/unlinked-urls}`.
 
 is rendered like:
 
 The *route* is the "speaking URL" as a whole without the domain part,
-for example :samp:`https://example.com{/unlinked-urls}`.
+for example :samp:`https://example.org{/unlinked-urls}`.

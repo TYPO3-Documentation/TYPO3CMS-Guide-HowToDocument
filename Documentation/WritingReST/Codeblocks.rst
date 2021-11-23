@@ -306,7 +306,7 @@ Source
           $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment';
 
           // Adjust to your needs
-          $domain = 'www.example.com';
+          $domain = 'example.org';
           $rootPageUid = 123;
           $rssFeedPageType = 9818; // pageType of your RSS feed page
 
@@ -323,7 +323,7 @@ Result
        $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment';
 
        // Adjust to your needs
-       $domain = 'www.example.com';
+       $domain = 'example.org';
        $rootPageUid = 123;
        $rssFeedPageType = 9818; // pageType of your RSS feed page
 
