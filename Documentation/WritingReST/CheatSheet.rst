@@ -202,6 +202,7 @@ and use for explicit mention of the local development context:
 
 4. :samp:`https://example.localhost`.
 
+If you need additional dummy domains, consider subdomains of the domains listed above such as :samp:`https://production.example.org` and :samp:`https://staging.example.org`.
 
 .. seealso::
 
