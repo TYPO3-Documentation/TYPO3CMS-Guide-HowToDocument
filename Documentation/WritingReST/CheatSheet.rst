@@ -185,6 +185,27 @@ and emphasize parts of the URL with curly braces:
    The *route* is the "speaking URL" as a whole without the domain part,
    for example :samp:`https://example.org{/unlinked-urls}`.
 
+.. index:: reST; Hypothetical domains
+.. _cheat-sheet-hypothetical-domains:
+
+Hypothetical domains
+--------------------
+
+If the domain name of an URL does not matter, but serves as a placeholder,
+choose from this list of dummy domains – in this order:
+
+1. :samp:`https://example.org`
+2. :samp:`https://example.com`
+3. :samp:`https://example.net`
+
+and use for explicit mention of the local development context:
+
+4. :samp:`https://example.localhost`.
+
+For further dummy domains use subdomains of the domains listed above such as
+
+-  :samp:`https://staging.example.org`
+-  :samp:`https://production.example.org`.
 
 .. seealso::
 
