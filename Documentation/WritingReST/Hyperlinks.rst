@@ -73,7 +73,7 @@ How to create links is described in more detail in the next sections.
 
    .. code-block:: rest
 
-      :samp:`https://examples.org/news/`
+      :samp:`https://example.org/news/`
 
 
 .. index:: reST; External links
