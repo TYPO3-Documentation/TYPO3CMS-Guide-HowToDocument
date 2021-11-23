@@ -59,11 +59,21 @@ by adding a label before the section header::
 How to create links is described in more detail in the next sections.
 
 :ref:`Preventing links <preventing-links>`
-   being automatically generated from simple URLs.
+   being automatically generated from simple URLs – mostly used in connection
+   with hypothetical domains.
 
    .. code-block:: rest
 
       :samp:`<url>`
+
+
+:ref:`Hypothetical domains <hypothetical-domains>`
+   are domains for use in URLs where the domain does not matter, but serves as a
+   placeholder. The TYPO3 documentation uses a defined set of them.
+
+   .. code-block:: rest
+
+      :samp:`https://examples.org/news/`
 
 
 .. index:: reST; External links
@@ -317,7 +327,8 @@ Preventing links
 ================
 
 Sphinx automatically converts simple URLs into links. This can be unintentional
-in certain contexts, for example when using a hypothetical domain like
+in certain contexts, for example when using a
+:ref:`hypothetical domain <hypothetical-domains>` like
 "example.org" in a tutorial. To prevent linking, the TYPO3 documentation uses
 the :code:`:samp:` directive to wrap the URL.
 
@@ -342,3 +353,48 @@ is rendered like:
 
 The *route* is the "speaking URL" as a whole without the domain part,
 for example :samp:`https://example.org{/unlinked-urls}`.
+
+
+.. index:: reST; Hypothetical domains
+.. _hypothetical-domains:
+
+Hypothetical domains
+====================
+
+The TYPO3 documentation uses a defined set of dummy domains when describing URLs
+where the domain name does not matter, but serves as a placeholder. The defined
+set is
+
+1. :samp:`https://example.org`
+2. :samp:`https://example.com`
+3. :samp:`https://example.net`
+
+– in this order: :samp:`https://example.org` as the preferred domain, and
+:samp:`https://example.com` and :samp:`https://example.net` as alternatives if
+multiple domains are required in the same context.
+
+Why is :samp:`https://example.com` not preferred, as common sense would have it?
+Because the preference for :samp:`.org` over :samp:`.com` fits with the fact
+that the TYPO3 documentation is hosted on :samp:`https://typo3.org` and the
+TYPO3 Association is owning the TYPO3 GmbH.
+
+For explicit mention of the local development context it uses
+
+4. :samp:`https://example.localhost`.
+
+For example:
+
+.. code-block:: rest
+
+   The class :php:`MailMessage` can be used to generate and send a mail without
+   using Fluid:
+
+   ::
+
+      $mail = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Mail\MailMessage::class);
+      $mail
+         ->from(new Address('john.doe@example.org', 'John Doe'))
+         ->to(
+            new Address('receiver@example.com', 'Max Mustermann'),
+            new Address('other@example.net')
+         )
