@@ -24,6 +24,9 @@ Quick Reference
 *  It is recommended to use the short form (`::`) instead of code-block explicitly.
 *  Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
    in a code block.
+*  Use :ref:`placeholders <codeblocks-placeholders>` in angle brackets
+   (`<placeholder-name>`) to refer to a place in the code where you don't care
+   about the exact value.
 
 The following examples all do the same thing:
 
@@ -836,3 +839,55 @@ Literalinclude
 
 There also is a `literalinclude directive
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
+
+
+.. _codeblocks-placeholders:
+
+Placeholders
+============
+
+Placeholders in this context are named tags in code and
+:ref:`example URLs <preventing-links>` where the exact value does not matter,
+but is referenced in the surrounding documentation.
+Use the *Backus-Naur form* `<placeholder-name>` for placeholders in code and
+URLs, i.e. use angle brackets to encapsulate the placeholder name.
+
+For example in PHP
+
+.. code-block:: rst
+
+   Set up a controller class to handle user interaction with the entity data
+   model:
+
+   .. code-block:: php
+
+      class <Entity>Controller extends ActionController
+      {
+         ..
+      }
+
+   where `<Entity>` corresponds to the entity data model class name.
+
+or on the command line
+
+.. code-block:: rst
+
+   Importing a TYPO3 dump file is as simple as running:
+
+   .. code-block:: bash
+
+      typo3/sysext/core/bin/typo3 impexp:import <file>
+
+   where `<file>` can be the absolute path on the server or the relative path
+   in the TYPO3 project folder.
+
+or in an example URL
+
+.. code-block:: rst
+
+   The TYPO3 backend normally appends the session token ID to the URL as
+   follows: :samp:`https://example.org/typo3/main?token=<token-id>`.
+
+In the XML and HTML markup languages, which make extensive use of angle
+brackets, the comment tag :html:`<!-- placeholder-name -->` is used to insert
+placeholders.
