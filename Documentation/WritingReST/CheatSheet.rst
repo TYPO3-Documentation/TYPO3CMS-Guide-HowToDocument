@@ -183,7 +183,7 @@ and emphasize parts of the URL with curly braces:
 .. code-block:: rest
 
    The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.org/<page-path>/{<page-name>}`.
+   for example :samp:`https://example.org/{<path>}`.
 
 .. index:: reST; Hypothetical domains
 .. _cheat-sheet-hypothetical-domains:
