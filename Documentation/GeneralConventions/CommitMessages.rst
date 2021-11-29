@@ -50,7 +50,7 @@ Releases
 
 If it should be backported to an older branch, use `Releases:` (as in :ref:`t3contribute:commitmessage`)::
 
-   Releases: master, 9.5
+   Releases: main, 11.5
 
 
 Examples
@@ -103,7 +103,7 @@ Add the branches to which the change should be added:
    <subject>
 
    Resolves: #<issue number>
-   Releases: master, 9.5
+   Releases: main, 11.5
 
 
 Using TYPO3 Core commit message rules
@@ -116,7 +116,7 @@ as is customary in core development
 However, this is not mandatory throughout the docs at the moment. If
 possible, use the conventions, that are being used in
 the manual in which you are working, for example `TYPO3 Explained commits
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/master>`__
+<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/commits/main>`__
 typically use these conventions.
 
 

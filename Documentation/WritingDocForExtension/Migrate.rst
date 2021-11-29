@@ -117,7 +117,7 @@ will be automatically generated on the documentation server.
 This file is used by extensions.typo3.org to find matching documentation.
 extensions.typo3.org will only show the link to the latest available version.
 This has to match the released version on docs.typo3.org.
-No fallback is in place (for example master will not be linked by default).
+No fallback is in place (for example `main` will not be linked by default).
 
 Please note that it might take some time until extensions.typo3.org displays changed URLs to docs.typo3.org.
 The information needs to be picked up by a command.
@@ -145,19 +145,19 @@ Supported branches
 
 The rendering supports two branches within repositories:
 
-``master`` / ``main``
+``main`` / ``master``
    Should contain the current development state, used for upcoming release.
    Every push to these branches triggers a new rendering, available at
-   ``https://docs.typo3.org/p/<vendor>/<package>/master/en-us/``.
+   ``https://docs.typo3.org/p/<vendor>/<package>/main/en-us/``.
 
    Both branch names are supported, but result in the same URL.
-   Please use either ``master`` or ``main``, not both.
+   Please use ``main``, ``master`` is only supported for backward compatibility.
 
 ``documentation-draft``
    Should contain a draft of the documentation.
    Every push to this branch triggers a new rendering, available at
    ``https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/``
-   (same URL as master, except *master* is replaced by *draft*).
+   (same URL as main, except *main* is replaced by *draft*).
 
    This is not indexed by search engines. This branch can be used to test
    rendering before releasing a new version of an extension.
@@ -175,7 +175,7 @@ The URL structure now consists of the following parts:
 
 `https://docs.typo3.org/<type>/<vendor>/<package>/<version>/<locale>`
 
-Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
+Example: https://docs.typo3.org/p/helhum/typo3-console/main/en-us/
 
 ``type``
    One of:
@@ -205,7 +205,7 @@ Example: https://docs.typo3.org/p/helhum/typo3-console/master/en-us/
    Defines the package. Same as on packagist.org.
 
 ``version``
-   Defines the version, either in form of "Major.Minor" or ``master`` or
+   Defines the version, either in form of "Major.Minor" or ``main`` or
    ``draft``.
 
 ``locale``

@@ -33,7 +33,7 @@ To get over it in an efficient way, the following script can help with the task:
            git push origin refs/heads/$tag;
            sleep 60;
            git push --delete origin refs/heads/$tag;
-           git checkout master;
+           git checkout main;
            git branch -D $tag;
    done
 

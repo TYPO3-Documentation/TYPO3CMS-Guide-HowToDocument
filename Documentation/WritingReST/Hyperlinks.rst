@@ -266,8 +266,8 @@ The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file: 
 
 .. code-block:: none
 
-   t3tca         = https://docs.typo3.org/m/typo3/reference-tca/master/en-us/
-   t3install     = https://docs.typo3.org/m/typo3/guide-installation/master/en-us/
+   t3tca         = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
+   t3install     = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
 
 
 .. important::
@@ -309,7 +309,7 @@ Tips
 ----
 
 1. For convenience many manuals already have a page "Linktargets" where you can easily
-   see what linktargets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/master/en-us/Targets.html
+   see what linktargets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/main/en-us/Targets.html
 
 2. As an editor you should not change or remove labels once they have been published.
    If you feel that a label (= linktarget) should be changed you should keep the old one

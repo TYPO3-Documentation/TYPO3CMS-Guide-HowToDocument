@@ -7,7 +7,7 @@
 Backport changes
 ================
 
-Most of the time changes will be made to master and backported.
+Most of the time changes will be made to branch `main` and backported.
 
 When creating a PR, it is possible to add the Releases in the
 :ref:`commit message <general-conventions-commit-messages>`
@@ -15,7 +15,7 @@ When creating a PR, it is possible to add the Releases in the
 
 .. code-block:: none
 
-   Releases: master, 10.4
+   Releases: main, 111.5
 
 However, this is not enforced and not always done. In any case, it is
 up to the user merging a PR to decide how far the changes are to be
@@ -26,49 +26,49 @@ Here are some tips and conventions:
 Community user: What should I do if I found an error in the documentation that applies to several versions?
 ===========================================================================================================
 
-Apply your changes to the latest version you have verified your change 
-to work with. If it is possible, apply your changed to the branch `master`.  
+Apply your changes to the latest version you have verified your change
+to work with. If it is possible, apply your changed to the branch `main`.
 
 Leave a hint about which versions you have tested, for example:
 
 .. code-block:: none
-   Verified this on 10.4 and 9.5, I suspect it will also still be the case on master. Could
+   Verified this on 11.5 and 10.4, I suspect it will also still be the case on main. Could
    someone verify this please?
 
-   Releases: master, 10.4, 9.5
-   
+   Releases: main, 11.5, 10.4
+
 The backporting itself will be done by the maintainers of the documentation team.
-Sometimes automatic backporting is not possible due to changes in the documentation 
-structure. In such a case you will be asked if you would like to provide a pull 
+Sometimes automatic backporting is not possible due to changes in the documentation
+structure. In such a case you will be asked if you would like to provide a pull
 request for the back versions.
 
 .. note::
-   Only bugs will be backported more then one version. Improvements etc can only be 
+   Only bugs will be backported more then one version. Improvements etc can only be
    backported to the latest LTS release.
 
 
 Merger: The pull request need to be backported, what should I do?
 =================================================================
 
-When the PR needs also to be backported, put a note about the versions in a comments 
+When the PR needs also to be backported, put a note about the versions in a comments
 if they are not there yet:
 
 .. code-block:: none
 
-   Releases: master, 10.4
-   
+   Releases: main, 11.5
+
 Add the label `backport required` to the PR. Merge the PR into master whenever possible.
 Otherwise merge it into the latest version it applies to.
 
 Who is doing the backport?
 ==========================
 
-As it is usually more work to do each backport separately as doing them all at once we 
+As it is usually more work to do each backport separately as doing them all at once we
 collect the backports by marking the PR with the label `label:"backport required"`.
 
-The maintainer doing the sweeping week will then apply all backports that can be done 
-automatically by the end of the month. Backports that need to be handed manually can be 
-send back to the author of the PR. In such a case a separate PR for the version in question 
+The maintainer doing the sweeping week will then apply all backports that can be done
+automatically by the end of the month. Backports that need to be handed manually can be
+send back to the author of the PR. In such a case a separate PR for the version in question
 needs to be made by the author.
 
 Up to which version?

@@ -9,13 +9,13 @@ Changes
 
 
 .. index::
-   Changes; Main branches to master
-   Git; Branch master
-   Git; Branch latest (outdated)
-.. _tip-branches-master:
+   Changes; Master branches to main
+   Git; Branch main
+   Git; Branch master (outdated)
+.. _tip-branches-main:
 .. rst-class:: panel panel-default
 
-[IMPORTANT] Change main branches to master
+[IMPORTANT] Change master branches to main
 ==========================================
 
 
@@ -25,15 +25,15 @@ are working on already existing fork / clone.
 
 Each documentation project has a main (or default) branch. This usually
 corresponds to the latest released TYPO3 version.
-For some official manuals, the main branch had been `latest`.
-We now changed this, so that `master` is the main branch for all manuals.
+For some official manuals, the main branch had been `master`.
+We now changed this, so that `main` is the main branch for all manuals.
 
-**In the future, you should make sure to always work on master.**
+**In the future, you should make sure to always work on branch main.**
 
 When you create a new fork and clone, this should not be a problem.
 
 But, when you are using a local repository that you cloned a while ago,
-make sure to get the latest changes and work on `master` in the future.
+make sure to get the latest changes and work on `main` in the future.
 
 .. rst-class:: bignums
 
@@ -63,11 +63,11 @@ make sure to get the latest changes and work on `master` in the future.
 
          git fetch upstream
 
-   4. Checkout master:
+   4. Checkout main branch:
 
       .. code-block:: bash
 
-         git checkout master
+         git checkout main
 
 
 .. index::

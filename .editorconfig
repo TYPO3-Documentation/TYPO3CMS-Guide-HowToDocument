@@ -1,7 +1,7 @@
 # EditorConfig is awesome: http://EditorConfig.org
 
 # Use as master:
-#   https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig
+#   https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/.editorconfig
 
 # top-most EditorConfig file
 root = false

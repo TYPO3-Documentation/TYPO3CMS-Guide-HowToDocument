@@ -80,7 +80,7 @@ Creating extension documentation using the sample manual
 #. Start adding documentation
 
    Now it's time to start adding content. Reviewing existing guides can help you structure your own documentation.
-   The `news extension <https://docs.typo3.org/p/georgringer/news/master/en-us/Index.html>`__ is a strong example of how extension
+   The `news extension <https://docs.typo3.org/p/georgringer/news/main/en-us/Index.html>`__ is a strong example of how extension
    documentation should be written and structured.
 
 #. Populate composer.json

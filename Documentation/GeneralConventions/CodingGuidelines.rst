@@ -246,7 +246,7 @@ For this to work, t3core must be defined in :file:`Settings.cfg`:
 
 .. code-block:: none
 
-   t3core = https://docs.typo3.org/c/typo3/cms-core/master/en-us/
+   t3core = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
 
 
 .. index::

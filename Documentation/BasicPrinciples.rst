@@ -317,7 +317,7 @@ System extensions
 System extensions (or core extensions) are extensions that are maintained
 in the TYPO3 source. For a list of system extensions, look in the Extension
 Manager or in the TYPO3 source, for example `GitHub: TYPO3.CMS: /typo3/sysext
-<https://github.com/typo3/typo3/tree/master/typo3/sysext>`__.
+<https://github.com/typo3/typo3/tree/main/typo3/sysext>`__.
 
 Examples for system extensions are:
 
