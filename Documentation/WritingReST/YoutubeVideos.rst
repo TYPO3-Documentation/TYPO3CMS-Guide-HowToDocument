@@ -14,7 +14,7 @@ Embed YouTube videos
 
 1. Get the YouTube id.
 
-   Example: The URL is `https://www.youtube.com/watch?v=rWkVS9qxBmg`.
+   Example: The URL is :samp:`https://www.youtube.com/watch?v=rWkVS9qxBmg`.
 
    The id is the text after `v=` and up to the next `&` or the end of the
    URL.

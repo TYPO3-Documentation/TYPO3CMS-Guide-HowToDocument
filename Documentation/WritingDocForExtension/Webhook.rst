@@ -108,7 +108,7 @@ Add auto rendering for a repository via GitHub webhook in five steps:
 
 #. Fill in webhook configuration
 
-   #. Configure URL ``https://docs-hook.typo3.org`` for field "Payload URL".
+   #. Configure URL :samp:`https://docs-hook.typo3.org` for field "Payload URL".
 
    #. Select ``application/json`` as "Content type".
 
@@ -172,7 +172,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 
    #. Choose a title for this hook: for example "TYPO3 Docs".
 
-   #. Fill URL field with ``https://docs-hook.typo3.org``.
+   #. Fill URL field with :samp:`https://docs-hook.typo3.org`.
 
    #. Enable "Active" Status.
 
@@ -222,7 +222,7 @@ Add auto rendering for a repository via GitLab webhook in four steps:
 
 #. Add webhook by filling in webhook configuration
 
-   #. Fill URL field with ``https://docs-hook.typo3.org``.
+   #. Fill URL field with :samp:`https://docs-hook.typo3.org`.
 
    #. Select ``Push events`` and ``Tag push events`` for "Trigger".
 

@@ -82,8 +82,8 @@ if the previous step was successful.
    The team will setup the redirects from existing legacy rendering to current
    rendering:
 
-   *  legacy URL: `https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
-   *  new URL: `https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
+   *  legacy URL: :samp:`https://docs.typo3.org/typo3cms/extensions/<extkey>/<version>/`
+   *  new URL: :samp:`https://docs.typo3.org/p/<vendor>/<package>/<branch>/<locale>`
 
 All future versions will now be rendered, see :ref:`workflow-extension-release`.
 Also some branches will be rendered, see :ref:`supported-branches`.
@@ -148,7 +148,7 @@ The rendering supports two branches within repositories:
 ``main`` / ``master``
    Should contain the current development state, used for upcoming release.
    Every push to these branches triggers a new rendering, available at
-   ``https://docs.typo3.org/p/<vendor>/<package>/main/en-us/``.
+   :samp:`https://docs.typo3.org/p/<vendor>/<package>/main/en-us/`.
 
    Both branch names are supported, but result in the same URL.
    Please use ``main``, ``master`` is only supported for backward compatibility.
@@ -156,8 +156,9 @@ The rendering supports two branches within repositories:
 ``documentation-draft``
    Should contain a draft of the documentation.
    Every push to this branch triggers a new rendering, available at
-   ``https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/``
+   :samp:`https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/`
    (same URL as main, except *main* is replaced by *draft*).
+
 
    This is not indexed by search engines. This branch can be used to test
    rendering before releasing a new version of an extension.
@@ -173,7 +174,7 @@ URL structure
 
 The URL structure now consists of the following parts:
 
-`https://docs.typo3.org/<type>/<vendor>/<package>/<version>/<locale>`
+:samp:`https://docs.typo3.org/<type>/<vendor>/<package>/<version>/<locale>`
 
 Example: https://docs.typo3.org/p/helhum/typo3-console/main/en-us/
 
