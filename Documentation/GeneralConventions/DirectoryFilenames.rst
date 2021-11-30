@@ -134,7 +134,7 @@ Start file
 The recommended start file is :file:`Documentation/Index.rst`. This is what is used for
 official manuals.
 
-Use `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Index.rst>`__
+Use `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/Documentation/Index.rst>`__
 in this manual as an example.
 
 The following is also supported (in this priority):
@@ -299,10 +299,10 @@ Settings.cfg
    This file must be adapted for the manual.
 
 *  Use  `Settings.cfg
-   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Settings.cfg>`__
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/Documentation/Settings.cfg>`__
    in this project as an up-to-date example for an official manual!
 *  Use the file in `TYPO3CMS-Example-ExtensionManual
-   <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/master/Documentation/Settings.cfg>`__
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/blob/main/Documentation/Settings.cfg>`__
    as an up-to-date example for an extension manual!
 
 The file consists of sections, which start with a keyword in brackets, such as `[general]`.
@@ -330,44 +330,44 @@ This is an up-to-date list of mappings commonly used:
    # official manuals
    # ----------------
 
-   # h2document     = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/
-   # t3contribute   = https://docs.typo3.org/m/typo3/guide-contributionworkflow/master/en-us/
-   # t3coreapi      = https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/
-   # t3docteam      = https://docs.typo3.org/m/typo3/team-t3docteam/master/en-us/
-   # t3editors      = https://docs.typo3.org/m/typo3/tutorial-editors/master/en-us/
-   # t3extbase      = https://docs.typo3.org/m/typo3/guide-extbasefluid/master/en-us/
-   # t3extbasebook  = https://docs.typo3.org/m/typo3/book-extbasefluid/master/en-us/
-   # t3install      = https://docs.typo3.org/m/typo3/guide-installation/master/en-us/
-   # t3l10n         = https://docs.typo3.org/m/typo3/guide-frontendlocalization/master/en-us/
-   # t3start        = https://docs.typo3.org/m/typo3/tutorial-getting-started/master/en-us/
-   # t3sitepackage  = https://docs.typo3.org/m/typo3/tutorial-sitepackage/master/en-us/
-   # t3tca          = https://docs.typo3.org/m/typo3/reference-tca/master/en-us/
-   # t3templating   = https://docs.typo3.org/m/typo3/tutorial-templating/master/en-us/
-   # t3ts45         = https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/master/en-us/
-   # t3tsconfig     = https://docs.typo3.org/m/typo3/reference-tsconfig/master/en-us/
-   # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
-   # t3vhref        = https://docs.typo3.org/other/typo3/view-helper-reference/master/en-us/
+   # h2document     = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/
+   # t3contribute   = https://docs.typo3.org/m/typo3/guide-contributionworkflow/main/en-us/
+   # t3coreapi      = https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/
+   # t3docteam      = https://docs.typo3.org/m/typo3/team-t3docteam/main/en-us/
+   # t3editors      = https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/
+   # t3extbase      = https://docs.typo3.org/m/typo3/guide-extbasefluid/main/en-us/
+   # t3extbasebook  = https://docs.typo3.org/m/typo3/book-extbasefluid/main/en-us/
+   # t3install      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
+   # t3l10n         = https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/
+   # t3start        = https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/
+   # t3sitepackage  = https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/
+   # t3tca          = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
+   # t3templating   = https://docs.typo3.org/m/typo3/tutorial-templating/main/en-us/
+   # t3ts45         = https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/main/en-us/
+   # t3tsconfig     = https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/
+   # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/
+   # t3vhref        = https://docs.typo3.org/other/typo3/view-helper-reference/main/en-us/
 
    # ----------------
    # system extension
    # ----------------
 
-   # ckedit         = https://docs.typo3.org/c/typo3/cms-rte-ckeditor/master/en-us/
-   # core           = https://docs.typo3.org/c/typo3/cms-core/master/en-us/
-   # form           = https://docs.typo3.org/c/typo3/cms-form/master/en-us/
-   # fsc            = https://docs.typo3.org/c/typo3/cms-fluid-styled-content/master/en-us/
-   # sched          = https://docs.typo3.org/c/typo3/cms-scheduler/master/en-us/
+   # ckedit         = https://docs.typo3.org/c/typo3/cms-rte-ckeditor/main/en-us/
+   # core           = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
+   # form           = https://docs.typo3.org/c/typo3/cms-form/main/en-us/
+   # fsc            = https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us/
+   # sched          = https://docs.typo3.org/c/typo3/cms-scheduler/main/en-us/
 
 
 .. tip::
 
    Uncomment **only** the manuals to which you will be linking to in your manual For example, change::
 
-      # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
+      # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/
 
    to::
 
-      t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/
+      t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/
 
 
 
@@ -395,7 +395,7 @@ This file can be the same for all Documentation projects!
 Example:
 
 *  `Includes.rst.txt in this manual
-   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/Documentation/Includes.txt>`__
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/Documentation/Includes.txt>`__
 
 .. literalinclude:: ../Includes.rst.txt
    :language: rst
@@ -415,7 +415,7 @@ For more information, see :ref:`editorconfig`.
 
 Example:
 
-*  `.editorconfig in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.editorconfig>`__
+*  `.editorconfig in this manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/.editorconfig>`__
 
 
 .. index:: Files; .gitignore
@@ -438,7 +438,7 @@ The file :file:`.gitignore` will apply to anyone using the repository, :file:`.g
 only and will not be included in the repository on GitHub when you push.
 
 Use the file in `this manual: .gitignore
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.gitignore>`__ as a template.
+<https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/.gitignore>`__ as a template.
 
 
 Minimal example
@@ -448,7 +448,7 @@ Minimal example
 
    # Git global ignore file
    # for local exclude patterns please edit .git/info/exclude
-   # Example file see https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/.gitignore
+   # Example file see https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/.gitignore
 
    # ignore generated documentation
    *GENERATED*
@@ -464,13 +464,13 @@ About file (for example README.rst)
 **optional** (recommended for official TYPO3 documentation)
 
 This file will be displayed on the Git hoster (for example GitHub or Gitlab) when someone browses through the
-repositories. Use `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/README.rst>`__
-from this project as an example! (see `source <https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/master/README.rst>`__).
+repositories. Use `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/README.rst>`__
+from this project as an example! (see `source <https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/main/README.rst>`__).
 
 
 .. image:: ../images/github-readme.png
    :class: with-shadow
-   :target: https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/README.rst
+   :target: https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/README.rst
 
 The link "Read online" will help people to jump directly to the rendered version.
 
@@ -517,7 +517,7 @@ to :ref:`docs-contribute`.
 You can name it :file:`CONTRIBUTING.md` or :file:`CONTRIBUTING.rst`, but as we commonly use reST
 here, it is best to stick to :file:`CONTRIBUTING.rst`.
 
-Again, use `CONTRIBUTING.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/master/CONTRIBUTING.rst>`__
+Again, use `CONTRIBUTING.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/CONTRIBUTING.rst>`__
 from this manual as an example.
 
 A link to the file will automatically be displayed by GitHub when someone enters the

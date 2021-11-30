@@ -90,7 +90,7 @@ Here are some examples:
 
 .. figure:: ../images/diagram.png
    :class: with-shadow
-   :target: https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/RequestHandling/Index.html#typo3-implementation
+   :target: https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/RequestHandling/Index.html#typo3-implementation
 
    Page in the documentation with a diagram
 
@@ -149,13 +149,13 @@ issue for it, if you cannot make the changes yourself.
 
    Usually, there is :ref:`one branch for each major TYPO3 version <t3start:usage-version-selector>`
    in a manual. Please focus your
-   efforts mostly on the latest "master" branch, to get that up to date and ready!
+   efforts mostly on the latest `main` branch, to get that up to date and ready!
 
 You can for example start with:
 
 *  :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
    is up to date and technically correct. Also, the text needs to be shortened in some parts and
-   language improvements are necessary (grammar, style). For the master branch, you can
+   language improvements are necessary (grammar, style). For the `main` branch, you can
    `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
    once you have started reviewing. This makes it easier for other reviewers to just skip the parts
    that are already ok.

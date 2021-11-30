@@ -139,7 +139,7 @@ shortcut (here: "h2document") is included in :ref:`settings-cfg`::
 
       [intersphinx_mapping]
 
-      h2document       = https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/Index.html
+      h2document       = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html
       ...
 
 We use the same conventions for naming the shortcuts in :file:`Settings.cfg`,

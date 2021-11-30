@@ -63,7 +63,7 @@ If it's your first time working with webhooks, take a look at `GitHub developer
 <https://developer.github.com/webhooks/>`_. The configuration below triggers
 rendering only on push events.
 
-In order to test the integration, a push to `master` branch or
+In order to test the integration, a push to `main` branch or
 `documentation-draft` branch can be used, see :ref:`migrate-branches`.
 
 .. note::
@@ -137,7 +137,7 @@ Add auto rendering for a repository via GitHub webhook in five steps:
    "Docs hook ping from github repository".
 
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
-   branch ``master``. Or push to a new branch ``documentation-draft``.
+   branch ``main``. Or push to a new branch ``documentation-draft``.
 
    .. figure:: /images/webhook/github/intercept-feedback.png
       :width: 932
@@ -198,7 +198,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    check "Recent actions" (scroll down).
 
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
-   branch ``master``. Or push to a new branch ``documentation-draft``.
+   branch ``main``. Or push to a new branch ``documentation-draft``.
 
    .. figure:: /images/webhook/bitbucket/cloud/intercept-feedback.png
       :width: 932
@@ -244,7 +244,7 @@ Add auto rendering for a repository via GitLab webhook in four steps:
    check "Recent actions" (scroll down).
 
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
-   branch ``master``. Or push to a new branch ``documentation-draft``.
+   branch ``main``. Or push to a new branch ``documentation-draft``.
 
    .. figure:: /images/webhook/gitlab/intercept-feedback.png
       :width: 932

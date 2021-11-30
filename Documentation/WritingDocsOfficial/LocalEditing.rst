@@ -63,13 +63,13 @@ the ability to experiment and preview your changes locally before submitting the
 
       #. Make sure the repository is up-to-date by pulling from upstream as described
          in :ref:`contribute-edit-locally-more-changes`.
-      #. Always branch from *master* (see also :ref:`tip-branches-master`).
-         If you are checked in to a feature branch, switch back to *master*
+      #. Always branch from `main` (see also :ref:`tip-branches-main`).
+         If you are checked in to a feature branch, switch back to `main`
          first:
 
          .. code-block:: bash
 
-            git checkout master
+            git checkout main
 
    For example, create the branch `feature/changes-in-cgl`:
 
@@ -167,7 +167,7 @@ So, running the following will not get the latest changes:
 
 .. code-block:: bash
 
-   git pull origin master
+   git pull origin main
 
 because origin points to your fork.
 
@@ -180,7 +180,7 @@ You must now do the following:
 .. code-block:: bash
 
    git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
-   git pull upstream master
+   git pull upstream main
 
 
 Replace the URI with the correct URI for the original repository, not your fork!
@@ -190,7 +190,7 @@ so next time it is enough to do:
 
 .. code-block:: bash
 
-   git pull upstream master
+   git pull upstream main
 
 
 Now, continue with step 5 (create branch) in :ref:`edit-locally-quickstart`.
@@ -202,7 +202,7 @@ More information
 For more information in this guide:
 
 *  :ref:`Formatting-with-reST`
-*  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
+*  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/main/README.rst>`__
 
 
 For more information about GitHub see the help pages on GitHub or other

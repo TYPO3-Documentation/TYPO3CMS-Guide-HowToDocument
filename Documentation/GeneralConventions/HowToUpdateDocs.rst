@@ -105,7 +105,7 @@ Commit messages
 ===============
 
 The commit message can point out the releases to which the change should apply
-(as in the core commits), for example `Releases: master, 9.5`, see
+(as in the core commits), for example `Releases: main, 11.5`, see
 :ref:`general-conventions-commit-messages`.
 
 You can link to the issue for the changes in the team repository, for example::
@@ -119,11 +119,11 @@ Applying changes to several releases
 ====================================
 
 Sometimes a necessary change applies to several major versions. Example: A change in
-the documentation is necessary in current master (10) and also in 9.5 branch.
+the documentation is necessary in current main (12.0) and also in 11.5 branch.
 
 If this is the case, it is recommended to:
 
-*  apply the change to the lower version (9.5 in our example) first, and then create
+*  apply the change to the lower version (11.5 in our example) first, and then create
    another PR for the higher version making necessary additional changes. This is the
    reverse order of what is being used in the Core!
 *  The person merging the commit should take care of merging into other branches as well
@@ -133,7 +133,7 @@ If this is the case, it is recommended to:
 
 .. code-block:: none
 
-   [TASK] Update with changes from 9.5.3
+   [TASK] Update with changes from 11.5.3
 
 This makes it easier to find related changes and check for which version a branch was last
 updated.
@@ -172,7 +172,7 @@ Several suggestions have been made to improve the process but these still requir
 more work or a decision, for example
 
 *  `Link to changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__
-*  `How can we get changes added to documentation early? And what is master: master or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__
+*  `How can we get changes added to documentation early? And what is master: main or latest release? <https://github.com/TYPO3-Documentation/T3DocTeam/issues/133>`__
 *  `Add information when page / manual was last reviewed and what state it is in <https://github.com/TYPO3-Documentation/T3DocTeam/issues/73>`__
 *  `Find a workflow for reviewing / updating / refining manuals <https://github.com/TYPO3-Documentation/T3DocTeam/issues/7>`__
 
