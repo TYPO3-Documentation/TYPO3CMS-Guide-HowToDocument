@@ -328,9 +328,11 @@ Preventing links
 
 Sphinx automatically converts simple URLs into links. This can be unintentional
 in certain contexts, for example when using a
-:ref:`hypothetical domain <hypothetical-domains>` like
-"example.org" in a tutorial. To prevent linking, the TYPO3 documentation uses
-the :code:`:samp:` directive to wrap the URL.
+:ref:`hypothetical domain <hypothetical-domains>` like "example.org" or
+:ref:`placeholders <codeblocks-placeholders>` instead of real query parameters
+in a tutorial.
+To prevent linking, the TYPO3 documentation uses the :code:`:samp:` directive
+to wrap the URL.
 
 For example:
 
@@ -347,12 +349,12 @@ To emphasize parts of the URL, use curly braces:
 .. code-block:: rest
 
    The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.org{/unlinked-urls}`.
+   for example :samp:`https://example.org/<page-path>/{<page-name>}`.
 
 is rendered like:
 
 The *route* is the "speaking URL" as a whole without the domain part,
-for example :samp:`https://example.org{/unlinked-urls}`.
+for example :samp:`https://example.org/<page-path>/{<page-name>}`.
 
 
 .. index:: reST; Hypothetical domains

@@ -183,7 +183,7 @@ and emphasize parts of the URL with curly braces:
 .. code-block:: rest
 
    The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.org{/unlinked-urls}`.
+   for example :samp:`https://example.org/{<path>}`.
 
 .. index:: reST; Hypothetical domains
 .. _cheat-sheet-hypothetical-domains:
@@ -335,6 +335,21 @@ Source::
    Assign the variable a::
 
       $a = 'hello';
+
+
+Placeholders
+------------
+
+Use the `Backus-Naur form <https://en.wikipedia.org/wiki/Backus-Naur_form>`__ like `<placeholder-name>` for placeholders in code and
+URLs.
+
+Examples:
+
+#. :php:`class <Entity>Controller extends ActionController`
+#. `typo3/sysext/core/bin/typo3 impexp:import <file>`
+#. :samp:`https://example.org/typo3/main?token=<token-id>`
+
+For XML and HTML, use the comment tag :html:`<!-- placeholder-name -->`.
 
 
 .. index:: reST roles
