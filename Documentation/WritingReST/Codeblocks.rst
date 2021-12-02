@@ -890,4 +890,4 @@ or in an example URL
 
 In the XML and HTML markup languages, which make extensive use of angle
 brackets, the comment tag :html:`<!-- placeholder-name -->` is used to insert
-placeholders.
+placeholders. A `<placeholder-name>` looks like a regular element and would lead to confusion.
