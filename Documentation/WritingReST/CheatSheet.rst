@@ -340,7 +340,7 @@ Source::
 Placeholders
 ------------
 
-Use the *Backus-Naur form* `<placeholder-name>` for placeholders in code and
+Use the `Backus-Naur form <https://en.wikipedia.org/wiki/Backus-Naur_form>`__ like `<placeholder-name>` for placeholders in code and
 URLs.
 
 Examples:
