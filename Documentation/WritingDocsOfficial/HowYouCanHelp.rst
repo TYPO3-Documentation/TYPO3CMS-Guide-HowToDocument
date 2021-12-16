@@ -143,7 +143,7 @@ issue for it, if you cannot make the changes yourself.
 
 .. tip::
 
-   Usually, there is :ref:`one branch for each major TYPO3 version <t3start:usage-version-selector>`
+   Usually, there is :ref:`one branch for each major TYPO3 version <t3home:usage-version-selector>`
    in a manual. Please focus your
    efforts mostly on the latest `main` branch, to get that up to date and ready!
 

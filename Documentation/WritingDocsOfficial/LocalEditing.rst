@@ -140,7 +140,7 @@ Next steps
 .. _contribute-edit-locally-more-changes:
 
 Keeping your local fork up-to date
-===============================
+==================================
 
 Explanation
 -----------
@@ -193,7 +193,7 @@ so next time it is enough to do:
    git pull upstream main
 
 
-Now, continue with step 5 (create branch) in :ref:`edit-locally-quickstart`.
+Now, continue with step 5 (create branch) in the first section of this page.
 
 
 More information

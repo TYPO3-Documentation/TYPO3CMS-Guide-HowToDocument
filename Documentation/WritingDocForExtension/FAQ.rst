@@ -10,7 +10,7 @@ FAQ
 .. rst-class:: panel panel-default
 
 Where is the link to my documentation in the TYPO3 extension repository?
-========================================================
+========================================================================
 
 Short answer: it will take a few hours and up to a day until the documentation for new extensions is linked in the details of your extension in the `TYPO3 Extension Repository (TER) <https://extensions.typo3.org>`__.
 
@@ -198,7 +198,7 @@ Just add this to your :ref:`settings-cfg` and customize it:
    github_repository = TYPO3-Console/TYPO3-Console
 
 If you used the `sample extension <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-and followed the steps in :ref:`how-to-start-documentation-for-ext`, you should actually already have this.
+and followed the steps in :ref:`how-to-start-docs-extension`, you should actually already have this.
 
 Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_console/>`__
 extension for a working example.

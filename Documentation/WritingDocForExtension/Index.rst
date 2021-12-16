@@ -14,7 +14,7 @@ This chapter explains how to write documentation for a new extension.
 
 This guide uses the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
 as a template for starting out. It contains a working navigation panel, a range of example content and adheres to the guidelines
-laid out in the :ref:`GeneralConventions` chapter.
+laid out in the :ref:`general-conventions` chapter.
 
 Rendering the documentation locally
 -----------------------------------

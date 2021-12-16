@@ -38,12 +38,12 @@ rendered at all!
 ::
 
    .. image:: ../../images/a4.jpg
-     :width: 100px
+      :width: 100px
       :class: with-shadow
 
 How it looks:
 
 
 .. image:: ../../images/a4.jpg
-  :width: 100px
+   :width: 100px
    :class: with-shadow
