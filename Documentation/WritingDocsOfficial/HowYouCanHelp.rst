@@ -73,8 +73,7 @@ Write New Content
 Add Diagrams
 ============
 
-
-*--* **new**, *added August 11, 2019*
+*updated December 18, 2021*
 
 Often things can be conveyed more easily if visual aids like diagrams
 are used with the text.
@@ -94,10 +93,7 @@ Here are some examples:
 
    Page in the documentation with a diagram
 
-See `this issue <https://github.com/TYPO3-Documentation/T3DocTeam/issues/41>`__ for more
-information and a discussion.
-
-Use for example the tool `PlantUML <http://plantuml.com/starting>`__ to create UML diagrams.
+*  :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
 
 
 .. _how-you-can-help:
