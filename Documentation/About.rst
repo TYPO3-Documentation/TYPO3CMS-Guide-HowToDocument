@@ -41,7 +41,7 @@ it cover-to-cover.
 But often, you would like to **jump right in**, start with a specific task
 and learn as you go along. In that case, find your task here and start reading:
 
-*  :ref:`writing-doc-for-ext-from-scratch` if you have an extension and would
+*  :ref:`how-to-start-docs-extension` if you have an extension and would
    like to write documentation for it using the sample extension manual.
 *  :ref:`docs-contribute-github-method` if you would like to contribute to
    the official documentation and need an easy introduction to editing
