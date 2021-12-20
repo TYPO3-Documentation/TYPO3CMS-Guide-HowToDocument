@@ -76,10 +76,10 @@ Add Diagrams
 *updated December 18, 2021*
 
 Often things can be conveyed more easily if visual aids like diagrams
-are used with the text.
+are used in conjunction with text.
 
-You can create UML diagrams (such as class diagrams, sequence diagrams, etc.),
-cheat sheets or others.
+You can create UML diagrams such as class diagrams, sequence diagrams and
+cheat sheets.
 
 Here are some examples:
 
