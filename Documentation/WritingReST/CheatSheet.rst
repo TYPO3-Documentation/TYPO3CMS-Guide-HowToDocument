@@ -543,8 +543,8 @@ Source (tip):
          and click on "View page source".
 
 
-:ref:`Diagrams <diagrams>`
-==========================
+:ref:`Diagrams <plantuml-diagrams>`
+===================================
 
 Source:
 
