@@ -9,6 +9,15 @@
 Images
 ======
 
+.. index:: automatic screenshot generation
+.. _automatic-screenshots:
+
+Automatic screenshot generation
+===============================
+
+See the `README in the t3docs-screenshots <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
+for more information on automating screenshot generation.
+
 .. index:: reST directives; image
 
 How to use images
