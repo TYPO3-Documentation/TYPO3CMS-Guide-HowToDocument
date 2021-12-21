@@ -20,13 +20,9 @@ Find out more in:
 *  :ref:`how-to-read-this-guide`
 
 
-
 **Did you know?**
 
--  2019-06-01 :ref:`tip-branches-master`
--  2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <tip-ext-new-doc-server>` (Extension Authors)
 -  2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
--  2019-03-13 :ref:`tip-link-to-issues` (Extension Authors)
 
 :ref:`FAQ for extension authors ... <faq-for-extension-authors>`
 
@@ -36,9 +32,9 @@ Find out more in:
 
 **What's new in this guide?**
 
--  2019-09-13 :ref:`howto-update-docs`
--  2019-05-29 :ref:`news-2019-new-doc-server`
--  2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+-  :ref:`PlantUML-diagrams`
+-  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
+
 
 More: :ref:`What's new in this guide ... <whats-new>`
 
