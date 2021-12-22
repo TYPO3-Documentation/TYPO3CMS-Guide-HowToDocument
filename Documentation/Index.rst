@@ -10,23 +10,40 @@ Writing documentation
 :Status:    Fully revised (August, 2019)
 :License:   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__)
 
-**About this manual:**
 
-This manual is about writing TYPO3 documentation (`docs.typo3.org <https://docs.typo3.org>`__).
-Find out more in:
+Writing extension documentation
+===============================
 
-.. rst-class:: horizbuttons-primary-xxl
+*  :ref:`how-to-start-docs-extension` covers everything you need to start writing
+   documentation for your own extension using the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+   as a base template.
 
-*  :ref:`how-to-read-this-guide`
+Writing content for `docs.typo3.org <https://docs.typo3.org>`__
+===============================================================
 
+*  :ref:`docs-contribute` explains how you can contribute and help improve TYPO3's
+   documentation. This chapter details how you can make "quick and simple" changes using the
+   Edit on Github feature and it also provides information on how you can set up your local
+   environment to make and test larger contributions on your local machine before submitting them for
+   review.
 
+Making changes to system extensions
+===================================
 
-**Did you know?**
+*  The :ref:`contribute-to-system-extension` chapter contains information on how you
+   can make changes to a system extensions documentation.
 
--  2019-06-01 :ref:`tip-branches-master`
--  2019-05-29 :ref:`[IMPORTANT] Migration to New Infrastructure <tip-ext-new-doc-server>` (Extension Authors)
+Contributing to third-party extensions
+======================================
+
+*  The :ref:`contribute-to-3rdparty-extension` chapter explains how you can about making
+   changes to third-party extensions and contains information on how you can go about finding
+   the extensions repository and contacting the author to propose changes.
+
+Did you know?
+=============
+
 -  2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
--  2019-03-13 :ref:`tip-link-to-issues` (Extension Authors)
 
 :ref:`FAQ for extension authors ... <faq-for-extension-authors>`
 
@@ -34,11 +51,12 @@ Find out more in:
    :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 
-**What's new in this guide?**
+What's new in this guide?
+=========================
 
--  2019-09-13 :ref:`howto-update-docs`
--  2019-05-29 :ref:`news-2019-new-doc-server`
--  2019-02-03 :ref:`news-2019-rest-cheat-sheet`
+-  :ref:`PlantUML-diagrams`
+-  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
+
 
 More: :ref:`What's new in this guide ... <whats-new>`
 
