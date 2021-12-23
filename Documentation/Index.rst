@@ -52,7 +52,7 @@ Writing documentation
 
          .. rst-class:: card-header h3
 
-            .. rubric:: `Third-party Extension <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToThirdPartyExtension.html>`__
+            .. rubric:: `Third-party Extensions <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToThirdPartyExtension.html>`__
 
          .. container:: card-body
 
