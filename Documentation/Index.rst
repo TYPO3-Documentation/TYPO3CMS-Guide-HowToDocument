@@ -6,39 +6,59 @@
 Writing documentation
 =====================
 
-:Authors:   TYPO3 Documentation Team & community (see :ref:`credits`)
-:Status:    Fully revised (August, 2019)
-:License:   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__)
+.. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `Extension Documentation <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/Index.html>`__
+
+         .. container:: card-body
+
+            Everything you need to start writing documentation for your own extension using
+            the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+            as a base template.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `TYPO3 Documentation <https://docs.typo3.org/>`__
+
+         .. container:: card-body
+
+            Explains how you can contribute and help improve TYPO3's documentation.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `System Extensions <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToSystemExtension.html>`__
+
+         .. container:: card-body
+
+            The chapter contains information on how you can make changes to system extension documentation.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `Third-party Extension <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToThirdPartyExtension.html>`__
+
+         .. container:: card-body
+
+            This chapter explains how you can about making changes to third-party extension documentation.
 
 
-Writing extension documentation
-===============================
-
-*  :ref:`how-to-start-docs-extension` covers everything you need to start writing
-   documentation for your own extension using the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-   as a base template.
-
-Writing content for `docs.typo3.org <https://docs.typo3.org>`__
-===============================================================
-
-*  :ref:`docs-contribute` explains how you can contribute and help improve TYPO3's
-   documentation. This chapter details how you can make "quick and simple" changes using the
-   Edit on Github feature and it also provides information on how you can set up your local
-   environment to make and test larger contributions on your local machine before submitting them for
-   review.
-
-Making changes to system extensions
-===================================
-
-*  The :ref:`contribute-to-system-extension` chapter contains information on how you
-   can make changes to a system extensions documentation.
-
-Contributing to third-party extensions
-======================================
-
-*  The :ref:`contribute-to-3rdparty-extension` chapter explains how you can about making
-   changes to third-party extensions and contains information on how you can go about finding
-   the extensions repository and contacting the author to propose changes.
 
 Did you know?
 =============
