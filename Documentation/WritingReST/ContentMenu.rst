@@ -32,7 +32,6 @@ To limit the header to a certain depth:
    :local:
    :depth: 1
 
-You can also
 
 Topic 1
 =======
