@@ -8,14 +8,14 @@
 Content menu
 ============
 
-You can display the titles of the current page as content menu.
+You can display the titles of the current page as a content menu.
 
 The simplest content menu can be created like this::
 
    .. contents::
       :local:
 
-Showing only local content menu of all headlines, excluding the page header:
+Showing only a local content menu of all headlines, excluding the page header:
 
 .. contents::
    :local:
@@ -26,7 +26,7 @@ You can also limit the levels and or give the contents menu a title::
       :local:
       :depth: 1
 
-To limit the header to a certain depth:
+To limit the header to a given depth:
 
 .. contents:: Table of Contents
    :local:
