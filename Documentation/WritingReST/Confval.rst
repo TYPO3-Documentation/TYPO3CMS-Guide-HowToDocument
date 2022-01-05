@@ -9,26 +9,36 @@
 Configuration values (confval)
 ===============================
 
-Configuration values (directive :rst:`confval`) can be used to document
-structured configuration values independent from the language they are
-configured in. The :rst:`confval` directive can be used to document
-configuration stored in PHP arrays (TCA, global configuration variables),
-TypoScript (TypoScript setup, TSconfig), XML (FlexForms, XLIFF) and YAML
-(SiteConfiguration, EXT:form).
+The :rst:`confval` directive can be used to document configuration values
+in a structured way, independent of the programming language.
+In the TYPO3 context, for example, it can be used to document configurations
+stored in PHP arrays (TCA, global configuration variables),
+TypoScript (TypoScript setup, TSconfig), XML (FlexForms, XLIFF) and
+YAML (SiteConfiguration, EXT:form).
 
 Using the :rst:`confval` directive has several benefits:
 
-*  The display is independent from the language of the configuration value
-*  The values appear automatically in on the generated keyword index
-*  You can link configuration values directly
-*  Configuration values can be typed, required and have default values
-*  The reST contains only semantic but no design information.
+*  The display is independent of the language of the configuration value
+   – for example, unlike :ref:`PHP domain <rest-phpdomain>`.
+*  The values appear automatically in the generated keyword index.
+*  You can link directly to configuration values.
+*  The content element presents the data and its attributes in a
+   well-structured way.
 
 Examples
 ========
 
-Requiered confval
------------------
+Required configuration value
+----------------------------
+
+.. confval:: label
+
+   :Required: true
+   :type: string or LLL reference
+   :Scope: Display
+   :Path: $GLOBALS > TCA > [table] > columns > [field]
+
+   The name of the field as shown in the form.
 
 .. code-block:: rst
 
@@ -39,22 +49,18 @@ Requiered confval
       :Scope: Display
       :Path: $GLOBALS > TCA > [table] > columns > [field]
 
-      The name of the field as shown in the form
+      The name of the field as shown in the form.
 
-Rendered it looks like this:
+Configuration value with default value
+--------------------------------------
 
-.. confval:: label
+.. confval:: fileCreateMask
 
-   :Required: true
-   :type: string or LLL reference
-   :Scope: Display
-   :Path: $GLOBALS > TCA > [table] > columns > [field]
+   :type: text
+   :Default: 0664
+   :Path: $GLOBALS > TYPO3_CONF_VARS > SYS
 
-   The name of the field as shown in the form
-
-Confval with default value
---------------------------
-
+   File mode mask for Unix file systems (when files are uploaded/created).
 
 .. code-block:: rst
 
@@ -65,12 +71,3 @@ Confval with default value
       :Path: $GLOBALS > TYPO3_CONF_VARS > SYS
 
       File mode mask for Unix file systems (when files are uploaded/created).
-
-.. confval:: fileCreateMask
-
-   :type: text
-   :Default: 0664
-   :Path: $GLOBALS > TYPO3_CONF_VARS > SYS
-
-   File mode mask for Unix file systems (when files are uploaded/created).
-
