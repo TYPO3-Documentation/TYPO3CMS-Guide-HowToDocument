@@ -35,6 +35,9 @@
 reST & Sphinx cheat sheet
 =========================
 
+:ref:`Headlines <Headlines-and-sections>`
+=========================================
+
 Every reST (.rst) file should use these underlining styles. In reST, you can use different
 styles in any order you want. These are our conventions for TYPO3 documentation.
 
@@ -542,6 +545,68 @@ Source (tip):
          To look at the reST source of this rendered page, scroll to the bottom
          and click on "View page source".
 
+:ref:`Graphs <graphviz-graphs>`
+===============================
+
+Source:
+
+.. code-block:: rest
+
+   .. graphviz::
+
+      graph {
+         user [
+            shape=plaintext;
+            width=4;
+            label="User";
+            style="";
+         ]
+         view [
+            shape=box;
+            width=4;
+            label=<<B>View</B><BR/>Displaying the data>;
+         ]
+         controller [
+            shape=box;
+            width=4;
+            label=<<B>Controller</B><BR/>Control of functionality>;
+         ]
+         model [
+            shape=box;
+            width=4;
+            label=<<B>Model</B><BR/>Domain model and domain logic>;
+         ]
+         user -- view -- controller -- model;
+      }
+
+How it looks:
+
+.. graphviz::
+
+   graph {
+      user [
+         shape=plaintext;
+         width=4;
+         label="User";
+         style="";
+      ]
+      view [
+         shape=box;
+         width=4;
+         label=<<B>View</B><BR/>Displaying the data>;
+      ]
+      controller [
+         shape=box;
+         width=4;
+         label=<<B>Controller</B><BR/>Control of functionality>;
+      ]
+      model [
+         shape=box;
+         width=4;
+         label=<<B>Model</B><BR/>Domain model and domain logic>;
+      ]
+      user -- view -- controller -- model;
+   }
 
 :ref:`Diagrams <plantuml-diagrams>`
 ===================================
@@ -561,7 +626,6 @@ Source:
 
       Alice -> Bob: Another authentication Request
       Alice <-- Bob: another authentication Response
-
 
 How it looks:
 
