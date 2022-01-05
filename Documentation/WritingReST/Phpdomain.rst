@@ -7,7 +7,7 @@
 PHP domain
 ==========
 
-In order to describe PHP code in the TYPO3 documentation,
+In order to describe PHP code in TYPO3's documentation,
 the Sphinx extension `sphinxcontrib-phpdomain
 <https://pypi.org/project/sphinxcontrib-phpdomain/>`__
 is integrated into the rendering process.
@@ -169,8 +169,8 @@ Interfaces
    .. php:method:: handleError($errorLevel, $errorMessage, $errorFile, $errorLine)
 
       Handles an error.
-      If the error is registered as exceptionalError it will by converted into
-      an exception, to be handledby the configured exceptionhandler.
+      If the error is registered as exceptionalError it will be converted into
+      an exception, to be handled by the configured exceptionhandler.
 
       Additionally the error message is written to the configured logs.
       If application is backend, the error message is also added to the
@@ -207,8 +207,8 @@ Interfaces
       .. php:method:: handleError($errorLevel, $errorMessage, $errorFile, $errorLine)
 
          Handles an error.
-         If the error is registered as exceptionalError it will by converted into
-         an exception, to be handledby the configured exceptionhandler.
+         If the error is registered as exceptionalError it will be converted into
+         an exception, to be handled by the configured exceptionhandler.
 
          Additionally the error message is written to the configured logs.
          If application is backend, the error message is also added to the
