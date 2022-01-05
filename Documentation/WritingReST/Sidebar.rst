@@ -3,6 +3,12 @@
 .. index:: reST; Sidebar
 .. _rest-sidebar:
 
+=======
+Sidebar
+=======
+
+Displays a box to the right of the current paragraph. The box is mostly used
+at the top of a page for quick navigation:
 
 .. sidebar:: reST content elements
 
@@ -10,16 +16,10 @@
    * :ref:`Tabs <rest-tabs>`
    * :ref:`Configuration values <rest-confval>`
 
-=======
-Sidebar
-=======
-
-Renders a box at the top right for quick navigation. Should be added at the top
-of the document::
+.. code-block:: rst
 
    .. sidebar:: reST content elements
 
       * :ref:`Cards <rest-cards>`
       * :ref:`Tabs <rest-tabs>`
       * :ref:`Configuration values <rest-confval>`
-
