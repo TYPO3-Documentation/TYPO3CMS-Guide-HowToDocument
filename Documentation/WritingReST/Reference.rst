@@ -22,15 +22,20 @@ reST & Sphinx reference
    DefinitionLists
    ListItemsAsButtons
    BignumLists
+   Confval
+   Phpdomain
    Images
    YoutubeVideos
    Admonitions
    Comments
    Tables
+   Cards
+   Tabs
    SpecialCharacters
    Graphs
    Diagrams
    Orphans
    CleverRest
    SpecialStyles
+   Sidebar
 

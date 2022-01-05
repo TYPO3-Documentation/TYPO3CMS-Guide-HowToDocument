@@ -50,7 +50,6 @@ http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_
 
    Introduction
    BasicRestSyntax
-   ContentElements/Index
    CommonPitfalls/Index
    CheatSheet
    Reference
