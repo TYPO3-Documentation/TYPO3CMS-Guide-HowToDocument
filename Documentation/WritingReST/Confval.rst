@@ -11,7 +11,7 @@ Configuration values (confval)
 
 The :rst:`confval` directive can be used to document configuration values
 in a structured way, independent of the programming language.
-In the TYPO3 context, for example, it can be used to document configurations
+In a TYPO3 context, it can be used to document configuration values
 stored in PHP arrays (TCA, global configuration variables),
 TypoScript (TypoScript setup, TSconfig), XML (FlexForms, XLIFF) and
 YAML (SiteConfiguration, EXT:form).
