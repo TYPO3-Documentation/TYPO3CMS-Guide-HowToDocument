@@ -543,7 +543,7 @@ Source:
 
 **How it looks:**
 
-.. confval:: label
+.. confval:: title
 
    :Required: true
    :type: string or LLL reference
@@ -556,7 +556,7 @@ Source:
 
 .. code-block:: rst
 
-   .. confval:: label
+   .. confval:: title
 
       :Required: true
       :type: string or LLL reference
@@ -571,7 +571,7 @@ Source:
 
 **How it looks:**
 
-.. php:namespace::  Vendor\Extension
+.. php:namespace::  Vendor\MyExtension
 
 .. php:class:: DateTime
 
@@ -590,7 +590,7 @@ Source:
 
 .. code-block:: rst
 
-   .. php:namespace::  Vendor\Extension
+   .. php:namespace::  Vendor\MyExtension
 
    .. php:class:: DateTime
 
