@@ -16,6 +16,7 @@ reST & Sphinx reference
    InlineCode
    HeadlinesAndSection
    MenuHierarchy
+   ContentMenu
    IncludingFiles
    Lists
    NumberedLists
