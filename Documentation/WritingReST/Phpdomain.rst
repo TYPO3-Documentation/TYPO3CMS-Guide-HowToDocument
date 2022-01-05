@@ -1,18 +1,16 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-.. index::
-   reST; Cards
-.. _restPhpdomain:
+.. index:: reST; PHP domain
+.. _rest-phpdomain:
 
-=========
-Phpdomain
-=========
+==========
+PHP domain
+==========
 
 About Sphinx extension `sphinxcontrib-phpdomain
 <https://pypi.org/project/sphinxcontrib-phpdomain/>`__.
 
-
-.. _restPhpdomainQuickExample:
+.. _rest-phpdomain-quick-example:
 
 Quick example
 =============
@@ -80,23 +78,21 @@ This is source:
 
       Y-m-d\TH:i:sP
 
-
-.. _restPhpdomainBestPractices:
+.. _rest-phpdomain-best-practices:
 
 Best practices
 ==============
 
-*  Use :ref:`namespaces <restPhpdomainNamespaces>` wherever they apply.
-*  If possible :ref:`autogenerate <restPhpdomainAutogenerate>` the rst code,
+*  Use :ref:`namespaces <rest-phpdomain-namespaces>` wherever they apply.
+*  If possible :ref:`autogenerate <rest-phpdomain-autogenerate>` the rst code,
    this helps keeping it up to date
 *  Only document public, non internal entities, as developers cannot depend
    on internal API.
 *  Configuration values stored in PHP arrays should be documented with
-   the :ref:`confval directive <restContentConfval>`. Phpdomain has no
+   the :ref:`confval directive <rest-confval>`. Phpdomain has no
    features to document nested PHP arrays.
 
-
-.. _restPhpdomainNamespaces:
+.. _rest-phpdomain-namespaces:
 
 Namespaces
 ==========
@@ -111,13 +107,12 @@ Add something to an existing namespace from other where in the document::
 
    .. php:currentnamespace:: Vendor\Extension
 
-
-.. _restPhpdomainExamples:
+.. _rest-phpdomain-examples:
 
 Examples
 ========
 
-.. _restPhpdomainEvents:
+.. _rest-phpdomain-events:
 
 Documenting an event:
 ---------------------
@@ -155,8 +150,7 @@ just like a php class.
 
       :param string $url: the url
 
-
-.. _restPhpdomainInterfaces:
+.. _rest-phpdomain-interfaces:
 
 Documenting interfaces:
 -----------------------
@@ -203,8 +197,7 @@ Document the class so we can link to it:
 
    An exception which represents a PHP error.
 
-
-.. _restPhpdomainExceptions:
+.. _rest-phpdomain-exceptions:
 
 Documenting exceptions
 ----------------------
@@ -225,8 +218,7 @@ Documenting exceptions
    Exception for root line traversal when a page within the root line traversal
    is missing / can not be resolved
 
-.. _restPhpdomainTraits:
-
+.. _rest-phpdomain-traits:
 
 Documenting traits
 ------------------
@@ -265,11 +257,10 @@ Document class so we can link to it
 
 .. php:class:: Context
 
-.. _restPhpdomainLinks:
+.. _rest-phpdomain-links:
 
 Linking to PHP entities
 =======================
-
 
 .. code-block:: rst
 
@@ -300,14 +291,11 @@ You can link to any PHP domain entity by using directive :rst:`:any:`::
 .. note::
    Backslashes have to be escaped by :rst:`\\`.
 
-.. _restPhpdomainAutogenerate:
+.. _rest-phpdomain-autogenerate:
 
-Autogenerate Phpdomain syntax
-=============================
+Autogenerate PHP domain syntax
+==============================
 
-We are currently working on auto-generating the PHPdomain syntax from
-phpdoc comments within the
+We are currently working on auto-generating the PHP domain syntax from
+PHPDoc comments within the
 `TYPO3 docs screenshot tool <https://github.com/TYPO3-Documentation/t3docs-screenshots/pull/234>`__.
-
-
-

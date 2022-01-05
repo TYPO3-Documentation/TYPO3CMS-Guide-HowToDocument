@@ -1,8 +1,7 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-.. index::
-   reST; Cards
-.. _restContentCards:
+.. index:: reST; Cards
+.. _rest-cards:
 
 =====
 Cards
@@ -212,7 +211,7 @@ Cards with images
 
             .. rst-class:: card-header h3
 
-               .. rubric:: :ref:`Cards <restContentCards>`
+               .. rubric:: :ref:`Cards <rest-cards>`
 
             .. container:: card-body
 
@@ -229,7 +228,7 @@ Cards with images
 
             .. rst-class:: card-header h3
 
-               .. rubric:: :ref:`Tabs <restContentTabs>`
+               .. rubric:: :ref:`Tabs <rest-tabs>`
 
             .. container:: card-body
 
@@ -249,7 +248,7 @@ Rendered it looks like this:
 
          .. rst-class:: card-header h3
 
-            .. rubric:: :ref:`Cards <restContentCards>`
+            .. rubric:: :ref:`Cards <rest-cards>`
 
          .. container:: card-body
 
@@ -266,7 +265,7 @@ Rendered it looks like this:
 
          .. rst-class:: card-header h3
 
-            .. rubric:: :ref:`Tabs <restContentTabs>`
+            .. rubric:: :ref:`Tabs <rest-tabs>`
 
          .. container:: card-body
 

@@ -3,7 +3,7 @@
 .. index::
    reST; confval
    reST; Configuration values
-.. _restContentConfval:
+.. _rest-confval:
 
 ===============================
 Configuration values (confval)

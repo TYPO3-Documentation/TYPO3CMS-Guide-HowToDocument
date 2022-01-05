@@ -1,15 +1,14 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-.. index::
-   reST; Aside
-.. _restContentSidebar:
+.. index:: reST; Sidebar
+.. _rest-sidebar:
 
 
 .. sidebar:: reST content elements
 
-   * :ref:`Cards <restContentCards>`
-   * :ref:`Tabs <restContentTabs>`
-   * :ref:`Configuration values <restContentConfval>`
+   * :ref:`Cards <rest-cards>`
+   * :ref:`Tabs <rest-tabs>`
+   * :ref:`Configuration values <rest-confval>`
 
 =======
 Sidebar
@@ -20,7 +19,7 @@ of the document::
 
    .. sidebar:: reST content elements
 
-      * :ref:`Cards <restContentCards>`
-      * :ref:`Tabs <restContentTabs>`
-      * :ref:`Configuration values <restContentConfval>`
+      * :ref:`Cards <rest-cards>`
+      * :ref:`Tabs <rest-tabs>`
+      * :ref:`Configuration values <rest-confval>`
 
