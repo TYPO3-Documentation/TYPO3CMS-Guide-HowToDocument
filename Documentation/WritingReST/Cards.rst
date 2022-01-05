@@ -7,7 +7,7 @@
 Cards
 =====
 
-Cards can be used to shortly introduce topics and generate overview pages.
+Cards are used to group content together and provide a brief introduction on a given subject.
 
 Simple cards
 ============
@@ -74,8 +74,8 @@ Simple cards
                its web server and database and how they should be configured
                prior to installation.
 
-Cards with buttons in footer
-============================
+Cards with buttons in the footer
+================================
 
 .. container:: row m-0 p-0
 
