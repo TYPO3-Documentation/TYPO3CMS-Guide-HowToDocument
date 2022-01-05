@@ -522,6 +522,74 @@ With Big Numbers XXL
    Do something else ...
 
 
+:ref:`Configuration values <rest-confval>` (confval)
+====================================================
+
+Source:
+
+.. code-block:: rst
+
+   .. confval:: label
+
+      :Required: true
+      :type: string or LLL reference
+      :Scope: Display
+      :Path: $GLOBALS > TCA > [table] > columns > [field]
+
+      The name of the field as shown in the form.
+
+How it looks:
+
+.. confval:: label
+
+   :Required: true
+   :type: string or LLL reference
+   :Scope: Display
+   :Path: $GLOBALS > TCA > [table] > columns > [field]
+
+   The name of the field as shown in the form.
+
+
+:ref:`PHP domain <rest-phpdomain>`
+==================================
+
+Source:
+
+.. code-block:: rst
+
+   .. php:namespace::  Vendor\Extension
+
+   .. php:class:: DateTime
+
+      Datetime class
+
+      .. php:method:: setDate($year, $month, $day)
+
+         Set the date.
+
+         :param int $year: The year.
+         :param int $month: The month.
+         :param int $day: The day.
+         :returns: Either false on failure, or the datetime object for method chaining.
+
+How it looks:
+
+.. php:namespace::  Vendor\Extension
+
+.. php:class:: DateTime
+
+   Datetime class
+
+   .. php:method:: setDate($year, $month, $day)
+
+      Set the date.
+
+      :param int $year: The year.
+      :param int $month: The month.
+      :param int $day: The day.
+      :returns: Either false on failure, or the datetime object for method chaining.
+
+
 .. index:: reST; Admonitions
 
 :ref:`Tips, hints, important <rest-admonitions>` (Admonitions)
@@ -544,6 +612,95 @@ Source (tip):
 
          To look at the reST source of this rendered page, scroll to the bottom
          and click on "View page source".
+
+
+:ref:`Cards <rest-cards>`
+=========================
+
+Source:
+
+.. code-block:: rst
+
+   .. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Pages <t3editors:pages>`
+
+         .. container:: card-body
+
+            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+
+         .. container:: card-footer pb-0
+
+            .. rst-class:: horizbuttons-striking-m
+
+            -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
+
+How it looks:
+
+.. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Pages <t3editors:pages>`
+
+         .. container:: card-body
+
+            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+
+         .. container:: card-footer pb-0
+
+            .. rst-class:: horizbuttons-striking-m
+
+            -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
+
+
+:ref:`Tabs <rest-tabs>`
+=======================
+
+Source:
+
+.. code-block:: rst
+
+   .. tabs::
+
+      .. group-tab:: bash
+
+         .. code-block:: bash
+
+            touch example-project-directory/public/FIRST_INSTALL
+
+      .. group-tab:: powershell
+
+         .. code-block:: powershell
+
+            echo $null >> public/FIRST_INSTALL
+
+How it looks:
+
+.. tabs::
+
+   .. group-tab:: bash
+
+      .. code-block:: bash
+
+         touch example-project-directory/public/FIRST_INSTALL
+
+   .. group-tab:: powershell
+
+      .. code-block:: powershell
+
+         echo $null >> public/FIRST_INSTALL
+
 
 :ref:`Graphs <graphviz-graphs>`
 ===============================
@@ -608,6 +765,7 @@ How it looks:
       user -- view -- controller -- model;
    }
 
+
 :ref:`Diagrams <plantuml-diagrams>`
 ===================================
 
@@ -640,3 +798,25 @@ How it looks:
 
    Alice -> Bob: Another authentication Request
    Alice <-- Bob: another authentication Response
+
+
+:ref:`Sidebar <rest-sidebar>`
+=============================
+
+Source:
+
+.. code-block:: rst
+
+   .. sidebar:: reST content elements
+
+      * :ref:`Cards <rest-cards>`
+      * :ref:`Tabs <rest-tabs>`
+      * :ref:`Configuration values <rest-confval>`
+
+How it looks:
+
+.. sidebar:: reST content elements
+
+   * :ref:`Cards <rest-cards>`
+   * :ref:`Tabs <rest-tabs>`
+   * :ref:`Configuration values <rest-confval>`
