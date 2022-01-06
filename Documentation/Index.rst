@@ -6,21 +6,58 @@
 Writing documentation
 =====================
 
-:Authors:   TYPO3 Documentation Team & community (see :ref:`credits`)
-:Status:    Fully revised (August, 2019)
-:License:   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__)
+.. container:: row m-0 p-0
 
-**About this manual:**
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-This manual is about writing TYPO3 documentation (`docs.typo3.org <https://docs.typo3.org>`__).
-Find out more in:
+      .. container:: card px-0 h-100
 
-.. rst-class:: horizbuttons-primary-xxl
+         .. rst-class:: card-header h3
 
-*  :ref:`how-to-read-this-guide`
+            .. rubric:: `Extension Documentation <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/Index.html>`__
+
+         .. container:: card-body
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `TYPO3 Documentation <https://docs.typo3.org/>`__
+
+         .. container:: card-body
+
+            Explains how you can contribute and help improve TYPO3's documentation.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `System Extensions <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToSystemExtension.html>`__
+
+         .. container:: card-body
+
+            The chapter contains information on how you can make changes to system extension documentation.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: `Third-party Extensions <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToThirdPartyExtension.html>`__
+
+         .. container:: card-body
+
+            This chapter explains how you can about making changes to third-party extension documentation.
 
 
-**Did you know?**
+
+Did you know?
+=============
 
 -  2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
 
@@ -30,7 +67,8 @@ Find out more in:
    :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 
-**What's new in this guide?**
+What's new in this guide?
+=========================
 
 -  :ref:`PlantUML-diagrams`
 -  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
