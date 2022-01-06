@@ -73,14 +73,13 @@ Write New Content
 Add Diagrams
 ============
 
-
-*--* **new**, *added August 11, 2019*
+*updated December 18, 2021*
 
 Often things can be conveyed more easily if visual aids like diagrams
-are used with the text.
+are used in conjunction with text.
 
-You can create UML diagrams (such as class diagrams, sequence diagrams, etc.),
-cheat sheets or others.
+You can create UML diagrams such as class diagrams, sequence diagrams and
+cheat sheets.
 
 Here are some examples:
 
@@ -94,10 +93,7 @@ Here are some examples:
 
    Page in the documentation with a diagram
 
-See `this issue <https://github.com/TYPO3-Documentation/T3DocTeam/issues/41>`__ for more
-information and a discussion.
-
-Use for example the tool `PlantUML <http://plantuml.com/starting>`__ to create UML diagrams.
+*  :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
 
 
 .. _how-you-can-help:
@@ -147,7 +143,7 @@ issue for it, if you cannot make the changes yourself.
 
 .. tip::
 
-   Usually, there is :ref:`one branch for each major TYPO3 version <t3start:usage-version-selector>`
+   Usually, there is :ref:`one branch for each major TYPO3 version <t3home:usage-version-selector>`
    in a manual. Please focus your
    efforts mostly on the latest `main` branch, to get that up to date and ready!
 

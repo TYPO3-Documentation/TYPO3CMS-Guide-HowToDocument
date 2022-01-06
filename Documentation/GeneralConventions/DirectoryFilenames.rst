@@ -459,7 +459,7 @@ Minimal example
 .. _about-file:
 
 About file (for example README.rst)
-============================
+===================================
 
 **optional** (recommended for official TYPO3 documentation)
 

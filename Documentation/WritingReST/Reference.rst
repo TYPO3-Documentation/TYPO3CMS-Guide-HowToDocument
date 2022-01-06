@@ -16,20 +16,27 @@ reST & Sphinx reference
    InlineCode
    HeadlinesAndSection
    MenuHierarchy
+   ContentMenu
    IncludingFiles
    Lists
    NumberedLists
    DefinitionLists
    ListItemsAsButtons
    BignumLists
+   Confval
+   Phpdomain
    Images
    YoutubeVideos
    Admonitions
    Comments
    Tables
+   Cards
+   Tabs
    SpecialCharacters
+   Graphs
    Diagrams
    Orphans
    CleverRest
    SpecialStyles
+   Sidebar
 

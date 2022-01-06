@@ -145,7 +145,7 @@ with the following content:
    :language: rst
 
 
-.. exapmle-menu::
+.. _example-menu:
 
 Menu
 ====

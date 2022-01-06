@@ -18,10 +18,6 @@ Writing documentation
 
          .. container:: card-body
 
-            Everything you need to start writing documentation for your own extension using
-            the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-            as a base template.
-
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
       .. container:: card px-0 h-100

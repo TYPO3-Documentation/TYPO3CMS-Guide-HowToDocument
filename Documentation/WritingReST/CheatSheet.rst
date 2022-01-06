@@ -35,6 +35,9 @@
 reST & Sphinx cheat sheet
 =========================
 
+:ref:`Headlines <Headlines-and-sections>`
+=========================================
+
 Every reST (.rst) file should use these underlining styles. In reST, you can use different
 styles in any order you want. These are our conventions for TYPO3 documentation.
 
@@ -69,12 +72,9 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
 *  9-10: Header level 1
 *  etc.
 
-
-
 .. seealso::
    *  :ref:`Headlines-and-sections`
    *  :ref:`explicit-link-targets`
-
 
 
 .. _cheat-sheet-links:
@@ -222,6 +222,8 @@ For further dummy domains use subdomains of the domains listed above such as
 :ref:`Lists <rest-lists>`
 =========================
 
+**How it looks:**
+
 To create a bullet list:
 
 *  add a blank line before and after the list
@@ -232,6 +234,8 @@ To create a bullet list:
    *  apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
+
+Source:
 
 .. code-block:: rest
 
@@ -252,6 +256,8 @@ More text.
 :ref:`numbered-lists`
 =====================
 
+**How it looks:**
+
 To create a numbered list:
 
 #. add a blank line before and after the list
@@ -262,6 +268,8 @@ To create a numbered list:
    #. apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
+
+Source:
 
 .. code-block:: rest
 
@@ -359,14 +367,14 @@ For XML and HTML, use the comment tag :html:`<!-- placeholder-name -->`.
 
 For inline code or for other semantic markup of special texts, use text roles.
 
-Examples:
+**How it looks:**
 
 #. :php:`$result = $a + 23;` (PHP snippet)
 #. :typoscript:`lib.hello.value = Hello World!` (TypoScript snippets)
 #. :file:`/etc/passwd` (file)
 #. :kbd:`ctrl` + :kbd:`s` (keyboard strokes)
 
-Source (inline text with text roles):
+Source:
 
 .. code-block:: rest
    :linenos:
@@ -384,9 +392,11 @@ Source (inline text with text roles):
 :ref:`Bold & italic <rest-bold-italic>`
 =======================================
 
+**How it looks:**
+
 Normal text, **bold text** and *italic text*.
 
-Source (bold & italic):
+Source:
 
 .. code-block:: rest
 
@@ -400,10 +410,12 @@ Source (bold & italic):
 :ref:`Images <rest-images>`
 ===========================
 
+**How it looks:**
+
 .. image:: ../images/a4.jpg
    :class: with-shadow
 
-Source (image):
+Source:
 
 .. code-block:: rest
 
@@ -432,9 +444,11 @@ Another example:
 :ref:`YouTube videos <youtube>`
 ===============================
 
+**How it looks:**
+
 .. youtube:: wNxO-aXY5Yw
 
-Source (YouTube):
+Source:
 
 .. code-block:: rest
 
@@ -455,22 +469,7 @@ With Big Numbers
 
 This is an example with a code block (:rst:`::`) embedded in the sections.
 
-*Source:* ::
-
-   .. rst-class:: bignums
-
-   1. Embed an image
-
-      Source::
-
-         .. image: some_image.png
-            :class: with-shadow
-
-   2. Two
-
-      Do something else ...
-
-*How it looks:*
+**How it looks:**
 
 .. rst-class:: bignums
 
@@ -485,12 +484,11 @@ This is an example with a code block (:rst:`::`) embedded in the sections.
 
    Do something else ...
 
-With Big Numbers XXL
---------------------
+Source:
 
-*Source:* ::
+.. code-block:: rest
 
-   .. rst-class:: bignums-xxl
+   .. rst-class:: bignums
 
    1. Embed an image
 
@@ -503,7 +501,11 @@ With Big Numbers XXL
 
       Do something else ...
 
-*How it looks:*
+
+With Big Numbers XXL
+--------------------
+
+**How it looks:**
 
 .. rst-class:: bignums-xxl
 
@@ -518,6 +520,91 @@ With Big Numbers XXL
 
    Do something else ...
 
+Source:
+
+.. code-block:: rest
+
+   .. rst-class:: bignums-xxl
+
+   1. Embed an image
+
+      Source::
+
+         .. image: some_image.png
+            :class: with-shadow
+
+   2. Two
+
+      Do something else ...
+
+
+:ref:`Configuration values <rest-confval>` (confval)
+====================================================
+
+**How it looks:**
+
+.. confval:: title
+
+   :Required: true
+   :type: string or LLL reference
+   :Scope: Display
+   :Path: $GLOBALS > TCA > [table] > columns > [field]
+
+   The name of the field as shown in the form.
+
+Source:
+
+.. code-block:: rst
+
+   .. confval:: title
+
+      :Required: true
+      :type: string or LLL reference
+      :Scope: Display
+      :Path: $GLOBALS > TCA > [table] > columns > [field]
+
+      The name of the field as shown in the form.
+
+
+:ref:`PHP domain <rest-phpdomain>`
+==================================
+
+**How it looks:**
+
+.. php:namespace::  Vendor\MyExtension
+
+.. php:class:: DateTime
+
+   Datetime class
+
+   .. php:method:: setDate($year, $month, $day)
+
+      Set the date.
+
+      :param int $year: The year.
+      :param int $month: The month.
+      :param int $day: The day.
+      :returns: Either false on failure, or the datetime object for method chaining.
+
+Source:
+
+.. code-block:: rst
+
+   .. php:namespace::  Vendor\MyExtension
+
+   .. php:class:: DateTime
+
+      Datetime class
+
+      .. php:method:: setDate($year, $month, $day)
+
+         Set the date.
+
+         :param int $year: The year.
+         :param int $month: The month.
+         :param int $day: The day.
+         :returns: Either false on failure, or the datetime object for method chaining.
+
 
 .. index:: reST; Admonitions
 
@@ -529,12 +616,15 @@ With Big Numbers XXL
    text with a green box (as styled by our sphinx template).
    ---------------------------------------------------------------
 
+**How it looks:**
+
 .. tip::
 
    To look at the reST source of this rendered page, scroll to the bottom
    and click on "View page source".
 
-Source (tip):
+Source:
+
    .. code-block:: rst
 
       .. tip::
@@ -543,8 +633,174 @@ Source (tip):
          and click on "View page source".
 
 
-:ref:`Diagrams <diagrams>`
-==========================
+:ref:`Cards <rest-cards>`
+=========================
+
+**How it looks:**
+
+.. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Pages <t3editors:pages>`
+
+         .. container:: card-body
+
+            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+
+         .. container:: card-footer pb-0
+
+            .. rst-class:: horizbuttons-striking-m
+
+            -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
+
+Source:
+
+.. code-block:: rst
+
+   .. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Pages <t3editors:pages>`
+
+         .. container:: card-body
+
+            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+
+         .. container:: card-footer pb-0
+
+            .. rst-class:: horizbuttons-striking-m
+
+            -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
+
+
+:ref:`Tabs <rest-tabs>`
+=======================
+
+**How it looks:**
+
+.. tabs::
+
+   .. group-tab:: bash
+
+      .. code-block:: bash
+
+         touch example-project-directory/public/FIRST_INSTALL
+
+   .. group-tab:: powershell
+
+      .. code-block:: powershell
+
+         echo $null >> public/FIRST_INSTALL
+
+Source:
+
+.. code-block:: rst
+
+   .. tabs::
+
+      .. group-tab:: bash
+
+         .. code-block:: bash
+
+            touch example-project-directory/public/FIRST_INSTALL
+
+      .. group-tab:: powershell
+
+         .. code-block:: powershell
+
+            echo $null >> public/FIRST_INSTALL
+
+
+:ref:`Graphs <graphviz-graphs>`
+===============================
+
+**How it looks:**
+
+.. graphviz::
+
+   graph {
+      user [
+         shape=plaintext;
+         width=4;
+         label="User";
+         style="";
+      ]
+      view [
+         shape=box;
+         width=4;
+         label=<<B>View</B><BR/>Displaying the data>;
+      ]
+      controller [
+         shape=box;
+         width=4;
+         label=<<B>Controller</B><BR/>Control of functionality>;
+      ]
+      model [
+         shape=box;
+         width=4;
+         label=<<B>Model</B><BR/>Domain model and domain logic>;
+      ]
+      user -- view -- controller -- model;
+   }
+
+Source:
+
+.. code-block:: rest
+
+   .. graphviz::
+
+      graph {
+         user [
+            shape=plaintext;
+            width=4;
+            label="User";
+            style="";
+         ]
+         view [
+            shape=box;
+            width=4;
+            label=<<B>View</B><BR/>Displaying the data>;
+         ]
+         controller [
+            shape=box;
+            width=4;
+            label=<<B>Controller</B><BR/>Control of functionality>;
+         ]
+         model [
+            shape=box;
+            width=4;
+            label=<<B>Model</B><BR/>Domain model and domain logic>;
+         ]
+         user -- view -- controller -- model;
+      }
+
+
+:ref:`Diagrams <plantuml-diagrams>`
+===================================
+
+**How it looks:**
+
+.. uml::
+
+   == Initialization ==
+
+   Alice -> Bob: Authentication Request
+   Bob --> Alice: Authentication Response
+
+   == Repetition ==
+
+   Alice -> Bob: Another authentication Request
+   Alice <-- Bob: another authentication Response
 
 Source:
 
@@ -563,16 +819,21 @@ Source:
       Alice <-- Bob: another authentication Response
 
 
-How it looks:
+:ref:`Sidebar <rest-sidebar>`
+=============================
 
-.. uml::
+Source / **How it looks**:
 
-   == Initialization ==
+.. sidebar:: reST content elements
 
-   Alice -> Bob: Authentication Request
-   Bob --> Alice: Authentication Response
+   * :ref:`Cards <rest-cards>`
+   * :ref:`Tabs <rest-tabs>`
+   * :ref:`Configuration values <rest-confval>`
 
-   == Repetition ==
+.. code-block:: rst
 
-   Alice -> Bob: Another authentication Request
-   Alice <-- Bob: another authentication Response
+   .. sidebar:: reST content elements
+
+      * :ref:`Cards <rest-cards>`
+      * :ref:`Tabs <rest-tabs>`
+      * :ref:`Configuration values <rest-confval>`

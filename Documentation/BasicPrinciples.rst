@@ -373,7 +373,7 @@ Third-party extension documentation
 Find the documentation on `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__.
 
 For more information about contributing to third party extension documentation or for your own extension, see
-:ref:`contribute-to-3rdparty-extension`. See :ref:`how-to-start-documentation-for-ext` for
+:ref:`contribute-to-3rdparty-extension`. See :ref:`how-to-start-docs-extension` for
 information about starting extension documentation from scratch.
 
 See also :ref:`overview-of-types` for an overview of the issues, source and workflow for various

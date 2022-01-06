@@ -45,8 +45,6 @@ http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_
       <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Index.html>`__
 
 
-
-
 .. toctree::
    :hidden:
 
