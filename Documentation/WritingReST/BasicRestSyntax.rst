@@ -7,11 +7,6 @@
 Basic reST & Sphinx syntax
 ==========================
 
-.. note::
-
-   Some of this text was taken from the Wiki page:
-   https://wiki.typo3.org/ReST_Syntax
-
 The .rst files are written in reStructuredText (reST) format. They
 contain text with additional markup.
 

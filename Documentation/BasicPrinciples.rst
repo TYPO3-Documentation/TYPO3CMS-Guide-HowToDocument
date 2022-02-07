@@ -285,20 +285,6 @@ can also make changes via :ref:`"Edit on GitHub" <docs-contribute-github-method>
 To find out how to contribute documentation for a specific extension:
 :ref:`contribute-to-3rdparty-extension`
 
-
-.. index:: Wiki
-
-What about the Wiki?
---------------------
-
-In this manual, we are focusing on TYPO3 documentation in reST / sphinx
-that can be found on docs.typo3.org.
-
-The TYPO3 Wiki on https://wiki.typo3.org does contain documentation as well,
-but that is not the scope of this manual. In any case, most of the information
-from the Wiki is being moved from the Wiki to some manual on docs.typo3.org.
-
-
 .. index:: Extensions
 .. _about-typo3-extensions:
 
