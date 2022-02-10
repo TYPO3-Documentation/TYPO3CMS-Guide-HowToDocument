@@ -12,10 +12,6 @@ Reviewing manuals and finding a workflow for this is still a work in progress.
 See the :ref:`Related Issues <review-workflow-related-issues>`.
 
 
-An overview of all manual maintainers and review status is maintained
-in the `Wiki <https://wiki.typo3.org/DocTeam/Official_Documentation_Maintenance>`__.
-
-
 .. index:: Reviewing manuals; Guidelines
 
 Guidelines for reviewing
@@ -35,7 +31,7 @@ Guidelines for reviewing
 
 What to watch out for while reviewing:
 
-*  **Duplicate content:** Check for similar content in other manuals (and the TYPO3 Wiki).
+*  **Duplicate content:** Check for similar content in other manuals.
    Merge duplicate content: Decide where the content should live, remove it in the
    other places and add links.
 *  **Remove redundant content:** Keep content short and to the point.
