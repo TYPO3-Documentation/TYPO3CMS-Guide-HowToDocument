@@ -99,7 +99,7 @@ be found in the subchapters.
 
    ContentStyleGuide
    Glossary
-   DirectoryFilenames
+   FileStructure
    ExampleTexts
    Format
    MenuHierarchy
