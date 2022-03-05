@@ -60,20 +60,6 @@ Here, we will briefly also explain the other methods for rendering.
       You can use the `documentation-draft` to get a preview for your extensions.
       See :ref:`migrate-branches`.
 
-   #. Extension *sphinx*
-
-      If you install the extension
-      `sphinx <https://extensions.typo3.org/extension/sphinx/>`__,
-      you can render extension documentation of the extensions that are currently
-      installed in the backend of your TYPO3 installation.
-
-      This method has the drawback that sphinx must be installed on the system
-      where the TYPO3 installation is running. The extension provides ways to
-      do this, but there may be version conflicts and other difficulties.
-
-      Using Docker avoids these problems by providing an entire self-contained
-      environment including operating system and all required packages.
-
    #. Various Online or Local Tools for reST Rendering
 
       These have the same drawbacks as already noted for *Preview on GitHub*.
