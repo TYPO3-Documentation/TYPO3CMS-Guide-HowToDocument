@@ -102,7 +102,6 @@ be found in the subchapters.
    FileStructure
    ExampleTexts
    Format
-   MenuHierarchy
    CodingGuidelines
    GuidelinesForImages
    CommitMessages

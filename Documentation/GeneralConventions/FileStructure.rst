@@ -224,6 +224,24 @@ information about all available variables, see the
 :doc:`Replacements <t3sphinxtest:Replacements/Index>` chapter of the Sphinx
 theme documentation.
 
+The table of contents (TOC) configured in the `.. toctree::` builds a menu
+from all the listed files. This list has to be adapted by the documentation
+author manually to fit the project's needs. TOCs in included files are resolved
+recursively. The file hierarchy should match the menu hierarchy and the file
+paths are interpreted as relative paths. For example, adding the file
+Development/Index.rst should result in
+
+.. code-block:: rst
+
+   .. toctree::
+
+      [..]
+      Contribution/Index
+      Development/Index
+
+and a subpage "PHP Development" should be placed under
+Development/PhpDevelopment.rst and included in the TOC of Development/Index.rst.
+
 The placeholders of pattern `<name>` must be replaced manually by the author of
 the documentation:
 
