@@ -27,7 +27,7 @@ for converting reStructuredText (reST) or Markdown to HTML.
 General
 =======
 
-In order for the documentation to be rendered, you need at least:
+In order for the documentation to be rendered, you need at least
 
 #. an index file in one of the following locations in weighted order:
 
@@ -38,7 +38,7 @@ In order for the documentation to be rendered, you need at least:
    -  :file:`README.rst`
    -  :file:`README.md`
 
-#. a theme configuration file under
+#. and a theme configuration file under
 
    - :file:`Documentation/Settings.cfg`.
 
@@ -63,22 +63,22 @@ Full documentation
 This is the recommended setup and is commonly used in the official TYPO3 manuals
 and extension documentation.
 
-This structure splits the documentation for the VCS host (README.md) and the
-Sphinx theme (Documentation/) and allows full use of
-:ref:`custom content elements <rest-reference>`, like UML diagrams, which are
+This structure splits the documentation for the VCS host (README.rst) and the
+Sphinx theme (Documentation/) and allows full use of a continuously expanded set
+of :ref:`custom content elements <rest-reference>`, like UML diagrams, which are
 only supported by the theme. This structure allows to add multiple pages to
 the documentation and build a full page tree.
 
 The Settings.cfg configuration file allows you to set theme variables, i.e. the
 project title, release version and the like.
 
-Of course, you can also use a README.rst instead of a README.md file to write
-the entire documentation in the same markup language.
+Of course, you can also use a README.md instead of a README.rst file as both
+markup languages are supported by the common VCS hosts.
 
 .. code-block:: none
 
    .
-   ├── README.md
+   ├── README.rst
    └── Documentation
        ├── Includes.rst.txt
        ├── Index.rst
@@ -86,30 +86,17 @@ the entire documentation in the same markup language.
        └── ..
 
 
-.. _readme-md:
+.. _readme-rst:
 
-README.md
----------
+README.rst
+----------
 
-Full documentation contains both a README.md and a Documentation/Index.rst file.
-To avoid redundancy in both places, the README.md in this case usually contains
-only a summary and links to all aspects of the project, i.e. the VCS
-repository, the published documentation and - if available - the TYPO3 Extension Repository (TER)
-page to guide the reader to the next steps. This could be for example:
-
-.. code-block:: md
-
-   # <project>
-
-   <abstract>
-
-   |                  | URL                                                           |
-   |------------------|---------------------------------------------------------------|
-   | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
-   | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
-
-or as README.rst alternatively:
+Full documentation contains both a README.rst and a Documentation/Index.rst
+file. To avoid redundancy in both places, the README.rst in this case usually
+contains only a summary and links to all aspects of the project, i.e. the VCS
+repository, the published documentation and - if available - the TYPO3 Extension
+Repository (TER) page to guide the reader to the next steps. This could be for
+example:
 
 .. code-block:: rst
 
@@ -123,8 +110,22 @@ or as README.rst alternatively:
    :Read online: https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/
    :TER:         https://extensions.typo3.org/extension/<extension-key>/
 
+or as README.md alternatively:
 
-.. _readme-md-project:
+.. code-block:: md
+
+   # <project>
+
+   <abstract>
+
+   |                  | URL                                                           |
+   |------------------|---------------------------------------------------------------|
+   | **Repository:**  | https://<vcs-repository>                                      |
+   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
+   | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
+
+
+.. _readme-rst-project:
 
 Project
 ^^^^^^^
@@ -146,10 +147,10 @@ in TYPO3 system extensions
 
 and in TYPO3 third-party extensions
 
-*  `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`mask\`".
+*  `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`mask\`\`".
 
 
-.. _readme-md-abstract:
+.. _readme-rst-abstract:
 
 Abstract
 ^^^^^^^^
@@ -294,7 +295,7 @@ Abstract
 ^^^^^^^^
 
 The *abstract* placeholder contains a short and precise description of the
-project. It should follow the abstract of README.md and - if available - the
+project. It should follow the abstract of README.rst and - if available - the
 description fields of ext_emconf.php and composer.json.
 
 
@@ -545,7 +546,7 @@ project than the documentation, for example to the project page in the TER:
 *  *project_contact* is usually set to an email address or Slack channel URL of
    the team behind the project, for example
 
-   *  "documentation\@typo3.org" or
+   *  "mailto:documentation\@typo3.org" or
    *  "\https://typo3.slack.com/archives/C028JEPJL".
 
 *  *project_repository* is set to the repository of the project's VCS, for
@@ -621,7 +622,7 @@ Single file documentation
 =========================
 
 This setup is not recommended, but can be handy for those who want to publish
-their documentation on docs.typo3.org and want to keep their mono README.md
+their documentation on docs.typo3.org and want to keep their mono README.rst
 documentation style for now.
 
 This structure allows the author to minimize effort by maintaining a single
@@ -630,48 +631,25 @@ and the Sphinx theme. On the other hand, the author only has
 the reduced set of content elements supported by the former, rather than using
 the theme's rich selection of :ref:`custom content elements <rest-reference>`.
 
-Of course, you can also use a README.rst instead of a README.md file if you
+Of course, you can also use a README.md instead of a README.rst file if you
 prefer its syntax.
 
 .. code-block:: none
 
    .
-   ├── README.md
+   ├── README.rst
    └── Documentation
        └── Settings.cfg
 
 
-.. _single-file-documentation-readme-md:
+.. _single-file-documentation-readme-rst:
 
-README.md
----------
+README.rst
+----------
 
-For single file documentation, the README.md contains the entire documentation.
+For single file documentation, the README.rst contains the entire documentation.
 This should also contain links to all aspects of the project to guide the reader
 to the next steps, for example
-
-.. code-block:: md
-
-   # <project>
-
-   <abstract>
-
-   ## Installation
-   ..
-
-   ## Configuration
-   ..
-
-   ## Usage
-   ..
-
-   |                  | URL                                                           |
-   |------------------|---------------------------------------------------------------|
-   | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
-   | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
-
-or as README.rst alternatively:
 
 .. code-block:: rst
 
@@ -697,7 +675,30 @@ or as README.rst alternatively:
    :Read online: https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/
    :TER: https://extensions.typo3.org/extension/<extension-key>/
 
-For more details, see the explanation of :ref:`README.md <readme-md>` in the
+or as README.md alternatively:
+
+.. code-block:: md
+
+   # <project>
+
+   <abstract>
+
+   ## Installation
+   ..
+
+   ## Configuration
+   ..
+
+   ## Usage
+   ..
+
+   |                  | URL                                                           |
+   |------------------|---------------------------------------------------------------|
+   | **Repository:**  | https://<vcs-repository>                                      |
+   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
+   | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
+
+For more details, see the explanation of :ref:`README.rst <readme-rst>` in the
 full documentation section.
 
 
@@ -738,7 +739,7 @@ Official TYPO3 manuals
    =========================  ==================================================
    Project                    Links
    =========================  ==================================================
-   TSconfig Reference (full)  `README.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig>`__ |
+   TSconfig Reference (full)  `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig>`__ |
                               `Settings.cfg <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Settings.cfg>`__ |
                               `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Index.rst>`__ |
                               `Includes.rst.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Includes.rst.txt>`__ |
