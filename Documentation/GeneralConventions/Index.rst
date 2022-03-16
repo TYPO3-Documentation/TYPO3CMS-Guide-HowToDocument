@@ -100,7 +100,6 @@ be found in the subchapters.
    ContentStyleGuide
    Glossary
    FileStructure
-   ExampleTexts
    Format
    CodingGuidelines
    GuidelinesForImages
