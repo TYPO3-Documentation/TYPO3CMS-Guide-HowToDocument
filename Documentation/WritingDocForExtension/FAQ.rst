@@ -134,7 +134,6 @@ somewhere else (not on docs.typo3.org).
 
 
 .. rst-class:: panel panel-default
-.. index:: Files; README.rst
 .. _faq-can-i-use-a-readmerst-or-readmemd-instead:
 
 Can I use a README.rst (or README.md) instead?

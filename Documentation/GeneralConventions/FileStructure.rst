@@ -1,9 +1,6 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index::
-   ! File structure
 
-
+.. index:: File structure
 .. _file-structure:
 
 ==============
@@ -55,6 +52,7 @@ These conventions pave the way for the *full documentation* and the
 reasons.
 
 
+.. index:: Full documentation
 .. _full-documentation:
 
 Full documentation
@@ -88,6 +86,7 @@ markup languages are supported by the common VCS hosts.
        └── ..
 
 
+.. index:: File structure; README.rst, README.rst
 .. _readme-rst:
 
 README.rst
@@ -165,6 +164,7 @@ aligned with the abstract of Index.rst and - if available - the description
 fields of ext_emconf.php and composer.json.
 
 
+.. index:: File structure; Documentation/Index.rst, Index.rst
 .. _index-rst:
 
 Documentation/Index.rst
@@ -357,6 +357,7 @@ this documentation, as follows:
       genindex
 
 
+.. index:: File structure; Documentation/Includes.rst.txt, Includes.rst.txt
 .. _includes-rst-txt:
 
 Documentation/Includes.rst.txt
@@ -426,6 +427,7 @@ marked with `:xml:`, but under the hood it uses the same highlighting as
 `:html:`.
 
 
+.. index:: File structure; Documentation/Sitemap.rst, Sitemap.rst
 .. _sitemap-rst:
 
 Documentation/Sitemap.rst
@@ -447,6 +449,7 @@ file that is automatically filled by the Sphinx template.
    .. The sitemap.html template will insert here the page tree automatically.
 
 
+.. index:: File structure; Documentation/genindex.rst, genindex.rst
 .. _genindex-rst:
 
 Documentation/genindex.rst
@@ -471,6 +474,7 @@ In addition, some content elements automatically generate indexes, such as the
    .. Sphinx will insert here the general index automatically.
 
 
+.. index:: File structure; Documentation/Settings.cfg, Settings.cfg
 .. _settings-cfg:
 
 Documentation/Settings.cfg
@@ -719,6 +723,7 @@ example if it has been permanently removed, a warning is issued and stored in
 the toolchain log file at :file:`Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt`.
 
 
+.. index:: Single file documentation
 .. _single-file-documentation:
 
 Single file documentation
