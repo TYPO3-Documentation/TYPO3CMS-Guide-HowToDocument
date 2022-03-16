@@ -286,8 +286,8 @@ Table of contents
 
 The *table-of-contents* placeholder contains a rough table of contents (TOC),
 which - in combination with the abstract - should give the reader a quick
-overview. The TOC is built with the :doc:`toctree <WritingReST/MenuHierarchy>`
-directive as follows:
+overview. The TOC is built with the
+:doc:`toctree directive <WritingReST/MenuHierarchy>` as follows:
 
 .. code-block:: rst
 
@@ -454,7 +454,8 @@ Documentation/genindex.rst
 
 The genindex.rst shows a list of all indexes of the documentation pages. It is
 an almost empty file that is automatically filled by Sphinx. An index can be
-manually applied to each documentation location using the *index* directive.
+manually applied to each documentation location using the
+:rst:dir:`index directive <sphinx:index>`.
 In addition, some content elements automatically generate indexes, such as the
 :doc:`configuration values <WritingReST/Confval>` and
 :doc:`PHP domain <WritingReST/Phpdomain>` elements.
