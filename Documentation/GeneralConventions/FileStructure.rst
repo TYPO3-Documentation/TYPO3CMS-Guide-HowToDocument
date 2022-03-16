@@ -80,9 +80,11 @@ markup languages are supported by the common VCS hosts.
    .
    ├── README.rst
    └── Documentation
+       ├── genindex.rst
        ├── Includes.rst.txt
        ├── Index.rst
        ├── Settings.cfg
+       ├── Sitemap.rst
        └── ..
 
 
@@ -209,39 +211,17 @@ other reST file - the reST style file Includes.rst.txt:
 
    **Table of contents:**
 
-   .. toctree::
-      :maxdepth: 2
-      :titlesonly:
+   <table-of-contents>
 
-      Introduction/Index
-      Installation/Index
-      Configuration/Index
-      Usage/Index
-      Contribution/Index
+   .. Meta Menu
+
+   <meta-menu>
 
 All variables of the `|name|` pattern are automatically replaced by the Sphinx
 theme, partly from Settings.cfg, partly by internal calculations. For more
 information about all available variables, see the
 :doc:`Replacements <t3sphinxtest:Replacements/Index>` chapter of the Sphinx
 theme documentation.
-
-The table of contents (TOC) configured in the `.. toctree::` builds a menu
-from all the listed files. This list has to be adapted by the documentation
-author manually to fit the project's needs. TOCs in included files are resolved
-recursively. The file hierarchy should match the menu hierarchy and the file
-paths are interpreted as relative paths. For example, adding the file
-Development/Index.rst should result in
-
-.. code-block:: rst
-
-   .. toctree::
-
-      [..]
-      Contribution/Index
-      Development/Index
-
-and a subpage "PHP Development" should be placed under
-Development/PhpDevelopment.rst and included in the TOC of Development/Index.rst.
 
 The placeholders of pattern `<name>` must be replaced manually by the author of
 the documentation:
@@ -297,6 +277,84 @@ Abstract
 The *abstract* placeholder contains a short and precise description of the
 project. It should follow the abstract of README.rst and - if available - the
 description fields of ext_emconf.php and composer.json.
+
+
+.. _index-rst-table-of-contents:
+
+Table of contents
+^^^^^^^^^^^^^^^^^
+
+The *table-of-contents* placeholder contains a rough table of contents (TOC),
+which - in combination with the abstract - should give the reader a quick
+overview. The TOC is built with the :doc:`toctree <WritingReST/MenuHierarchy>`
+directive as follows:
+
+.. code-block:: rst
+
+   .. toctree::
+      :maxdepth: 2
+      :titlesonly:
+
+      Introduction/Index
+      Installation/Index
+      Configuration/Index
+      Usage/Index
+      Contribution/Index
+
+The *maxdepth* property limits the depth of the page tree and *titlesonly*
+specifies that only the titles of the pages are displayed, no other headings.
+Both should emphasize the nature of an overview.
+
+The pages in the body of the directive are included in the TOC, and TOCs in
+those pages are resolved recursively. The documentation author must edit the
+list and provide a reST document at each of these file paths, interpreting the
+file paths as relative to the current file.
+
+In general, the file hierarchy should match the menu hierarchy, and a page must
+be placed at either :file:`<page name>.rst` or :file:`<page name>/Index.rst`
+- the latter if subpages exist or are expected. For example, the page of the
+menu path "Usage > TYPO3 Backend > Shop Dashboard" should be stored at:
+
+.. code-block:: none
+
+   .
+   └── Documentation
+       └── Usage
+           └── Typo3Backend
+               └── ShopDashboard.rst
+
+or - if it has the subpage "Sell Widget" - at
+
+.. code-block:: none
+
+   .
+   └── Documentation
+       └── Usage
+           └── Typo3Backend
+               └── ShopDashboard
+                   ├── Index.rst
+                   └── SellWidget.rst
+
+
+.. _index-rst-meta-menu:
+
+Meta menu
+^^^^^^^^^
+
+The *meta-menu* placeholder builds a second menu that is not visible in the
+content area of the page, but only in the left sidebar (desktop) or toggle menu
+(mobile) - separate from the main menu. It contains links to functional pages,
+such as the :ref:`Sitemap.rst <sitemap-rst>` and the
+:ref:`genindex.rst <genindex-rst>`, which do not provide content specific to
+this documentation, as follows:
+
+.. code-block:: rst
+
+   .. toctree::
+      :hidden:
+
+      Sitemap
+      genindex
 
 
 .. _includes-rst-txt:
@@ -366,6 +424,50 @@ highlighting of another language. This is done to avoid confusing the reader
 with too many different colors. For example, XML inline code may be semantically
 marked with `:xml:`, but under the hood it uses the same highlighting as
 `:html:`.
+
+
+.. _sitemap-rst:
+
+Documentation/Sitemap.rst
+-------------------------
+
+The Sitemap.rst contains the sitemap of the documentation. It is an almost empty
+file that is automatically filled by the Sphinx template.
+
+.. code-block:: rst
+
+   .. include:: /Includes.rst.txt
+
+   :template: sitemap.html
+
+   =======
+   Sitemap
+   =======
+
+   .. The sitemap.html template will insert here the page tree automatically.
+
+
+.. _genindex-rst:
+
+Documentation/genindex.rst
+--------------------------
+
+The genindex.rst shows a list of all indexes of the documentation pages. It is
+an almost empty file that is automatically filled by Sphinx. An index can be
+manually applied to each documentation location using the *index* directive.
+In addition, some content elements automatically generate indexes, such as the
+:doc:`configuration values <WritingReST/Confval>` and
+:doc:`PHP domain <WritingReST/Phpdomain>` elements.
+
+.. code-block:: rst
+
+   .. include:: /Includes.rst.txt
+
+   =====
+   Index
+   =====
+
+   .. Sphinx will insert here the general index automatically.
 
 
 .. _settings-cfg:
