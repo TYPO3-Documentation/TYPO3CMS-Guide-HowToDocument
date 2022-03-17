@@ -187,6 +187,9 @@ other reST file - the reST style file Includes.rst.txt:
    :Extension key:
       <extension-key>
 
+   :Package name:
+      <package-name>
+
    :Version:
       |release|
 
@@ -210,7 +213,7 @@ other reST file - the reST style file Includes.rst.txt:
 
    ----
 
-   **Table of contents:**
+   **Table of Contents:**
 
    <table-of-contents>
 
@@ -246,17 +249,18 @@ Extension key
 The *extension-key* placeholder contains the TYPO3 extension key in case of a
 TYPO3 extension documentation.
 
-In case of any other PHP application replace the table row with
+Remove this field if the project has no extension key.
 
-.. code-block:: rst
 
-   :Package name:
-      <package-name>
+.. _index-rst-package-name:
 
-and insert the Composer package name into the *package-name* placeholder.
+Package name
+^^^^^^^^^^^^
 
-Remove this table row if the documentation does not refer to either a TYPO3
-extension or a PHP application.
+The *package-name* placeholder contains the Composer package name of the
+project.
+
+Remove this field if the project is no installable package.
 
 
 .. _index-rst-author:
