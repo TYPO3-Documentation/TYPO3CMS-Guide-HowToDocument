@@ -225,7 +225,6 @@ For more information, see the open issue:
 .. index::
    reST; Link to changelog
    reST roles; doc
-   File; Settings.cfg
 .. _link-to-changelog:
 
 Link to changelog

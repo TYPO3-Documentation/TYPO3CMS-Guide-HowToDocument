@@ -99,10 +99,8 @@ be found in the subchapters.
 
    ContentStyleGuide
    Glossary
-   DirectoryFilenames
-   ExampleTexts
+   FileStructure
    Format
-   MenuHierarchy
    CodingGuidelines
    GuidelinesForImages
    CommitMessages
