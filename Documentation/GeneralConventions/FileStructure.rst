@@ -197,8 +197,9 @@ other reST file - the reST style file Includes.rst.txt:
       <author>
 
    :License:
-      This document is published under the CC BY 4.0 (Creative Commons) license
-      available from https://creativecommons.org/licenses/by/4.0/.
+      This document is published under the
+      `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
+      license.
 
    :Rendered:
       |today|
@@ -311,7 +312,7 @@ list and provide a reST document at each of these file paths, interpreting the
 file paths as relative to the current file.
 
 In general, the file hierarchy should match the menu hierarchy, and a page must
-be placed at either :file:`<page name>.rst` or :file:`<page name>/Index.rst`
+be placed at either :file:`<page-name>.rst` or :file:`<page-name>/Index.rst`
 - the latter if subpages exist or are expected. For example, the page of the
 menu path "Usage > TYPO3 Backend > Shop Dashboard" should be stored at:
 
@@ -438,9 +439,9 @@ file that is automatically filled by the Sphinx template.
 
 .. code-block:: rst
 
-   .. include:: /Includes.rst.txt
-
    :template: sitemap.html
+
+   .. include:: /Includes.rst.txt
 
    =======
    Sitemap
@@ -653,7 +654,7 @@ project than the documentation, for example to the project page in the TER:
 *  *project_contact* is usually set to an email address or Slack channel URL of
    the team behind the project, for example
 
-   *  "mailto:documentation\@typo3.org" or
+   *  "\mailto:documentation\@typo3.org" or
    *  "\https://typo3.slack.com/archives/C028JEPJL".
 
 *  *project_repository* is set to the repository of the project's VCS, for
@@ -685,7 +686,7 @@ search engine and include it in their search bar like any other search engine.
 This seems useful if your documentation is a large reference that is of high
 public interest and likely to be searched frequently by readers. Good examples
 of this are the PHP or TYPO3 Core references, for example
-"https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/", while the
+"\https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/", while the
 TYPO3 extension documentations probably are not.
 
 
