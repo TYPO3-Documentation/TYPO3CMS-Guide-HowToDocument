@@ -403,8 +403,6 @@ markup languages used in a TYPO3 project:
    .. role:: rst(code)
    .. role:: sep(strong)
    .. role:: sql(code)
-   .. role:: ts(code)
-      :class: typoscript
 
    .. role:: tsconfig(code)
       :class: typoscript
