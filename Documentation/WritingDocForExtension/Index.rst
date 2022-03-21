@@ -56,10 +56,10 @@ Creating extension documentation using the sample manual
 
    *  Make sure :ref:`composer-json` is up to date. (*required*)
    *  Make sure :ref:`settings-cfg` is up to date. (*required*)
-   *  :ref:`gitignore-in-filenames` is useful, in order to
+   *  A .gitignore is useful, in order to
       prevent accidentally committing the generated documentation in
       :file:`Documentation-GENERATED-temp` to the Git repository. (*recommended*)
-   *  :ref:`editorconfig-in-filenames` is useful, so the
+   *  An .editorconfig is useful, so the
       recommended :ref:`Coding Guidelines <format-rest-cgl>` will be used within
       an editor or IDE. :ref:`phpstorm-editorconfig` contains further information
       for PhpStorm users. (*recommended*)
@@ -72,7 +72,7 @@ Creating extension documentation using the sample manual
       cp -n TYPO3CMS-Example-ExtensionManual/.editorconfig <my-extension-directory>/.editorconfig
 
    If you plan to host your extension on a public repository, consider
-   adding a :ref:`CONTRIBUTING.rst <contributing-rst>`
+   adding a CONTRIBUTING.rst
    and :ref:`README.rst <readme-rst>` to help guide any future
    contributors.
 

@@ -3,9 +3,9 @@
 .. index:: pair: Examples; Toctree
 .. _example-toctree:
 
-=====================
-Example `Toctree`:pn:
-=====================
+=================
+Example *Toctree*
+=================
 
 Select the subchapters in the menu!
 

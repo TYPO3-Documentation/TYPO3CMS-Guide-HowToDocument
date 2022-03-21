@@ -33,7 +33,7 @@ Find the Source
 First, you need to find out where the source is maintained. Usually, this will
 be a repository on GitHub. There, you can also check if documentation is already
 available. It should be a `Documentation` folder or one of the alternatives
-mentioned in :ref:`supported-filenames-and-formats`.
+mentioned in :ref:`file-structure-general`.
 
 To find the repository, use one of these methods:
 

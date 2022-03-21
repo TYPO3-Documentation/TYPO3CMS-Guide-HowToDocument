@@ -89,7 +89,7 @@ Documentation types
 
 .. hint::
 
-   See boilerplate texts for the start page on :ref:`example-start-page`.
+   See boilerplate texts for the start page on :ref:`index-rst`.
 
 
 .. index::  TYPO3 documentation; Manual

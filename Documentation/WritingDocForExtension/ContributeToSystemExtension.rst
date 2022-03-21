@@ -22,7 +22,7 @@ see :ref:`overview-of-types`.
    workflow explained in that guide (using Git and pushing to Gerrit).
 *  You can also test the change by :ref:`rendering locally <rendering-docs>`
    as in any documentation patch, because all documentation uses a common
-   format and :ref:`file structure <general-conventions-dir-and-filenames>`
+   format and :ref:`file structure <file-structure>`
    and can be rendered with the same Docker container.
 
 .. tip::

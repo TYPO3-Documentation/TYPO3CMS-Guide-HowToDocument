@@ -88,6 +88,7 @@ markup languages are supported by the common VCS hosts.
 
 .. index:: File structure; README.rst, README.rst
 .. _readme-rst:
+.. _about-file:
 
 README.rst
 ----------
@@ -166,6 +167,7 @@ fields of ext_emconf.php and composer.json.
 
 .. index:: File structure; Documentation/Index.rst, Index.rst
 .. _index-rst:
+.. _start-file:
 
 Documentation/Index.rst
 -----------------------

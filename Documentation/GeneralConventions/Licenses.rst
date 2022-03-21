@@ -11,12 +11,11 @@
 Licenses
 ========
 
-Old manuals that are maintained by the TYPO3 documentation team usually
-have the http://www.opencontent.org/openpub/ license.
+Old manuals that are maintained by the TYPO3 Documentation Team usually
+are published under the `Open Publication License`_.
 We keep that until something else may be decided somewhere in the future.
 
+New manuals should be licensed under `Creative Commons BY 4.0`_.
 
-New manuals should use a **Creative Commons license**:
-
-**License:** `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
-
+.. _Open Publication License: https://www.opencontent.org/openpub/
+.. _Creative Commons BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -192,9 +192,9 @@ Just add this to your :ref:`settings-cfg` and customize it:
 
    [html_theme_options]
 
-   # to get the "Edit on GitHub Button"
-   github_branch = main
+   # "Edit on GitHub" button
    github_repository = TYPO3-Console/TYPO3-Console
+   github_branch     = main
 
 If you used the `sample extension <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
 and followed the steps in :ref:`how-to-start-docs-extension`, you should actually already have this.

@@ -152,7 +152,7 @@ within sentences is *inline code*.
 -  does **not** need to be syntactically correct,
 -  can be compared to `<span>...</span>` tags in html,
 -  and is made up by self-defined names. For example, look at the :file:`/Includes.rst.txt`
-   file to see how `:php:`, `:ts:` are defined.
+   file to see how `:php:` is defined.
 
 In contrast, *code-blocks*
 
@@ -176,7 +176,7 @@ About the 'Includes.rst.txt' file
 ---------------------------------
 
 In general, the manual you are working on will already contain an
-:doc:`Includes.rst.txt </Includes.rst.txt>` file. In that file, the text roles
+:ref:`Includes.rst.txt <includes-rst-txt>` file. In that file, the text roles
 are defined.
 
 

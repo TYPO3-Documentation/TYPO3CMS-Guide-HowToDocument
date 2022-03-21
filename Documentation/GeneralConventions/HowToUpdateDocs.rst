@@ -86,9 +86,9 @@ How to link to the changelog is described in :ref:`link-to-changelog`.
 
 .. code-block:: rest
 
-   :doc:`t3core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
+   :doc:`ext_core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
 
-For this to work, t3core must be defined in :file:`Settings.cfg`
+For this to work, ext_core must be defined in :file:`Settings.cfg`
 
 
 .. index:: Updates; Issues
