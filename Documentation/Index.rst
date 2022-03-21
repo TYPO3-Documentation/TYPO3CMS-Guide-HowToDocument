@@ -43,6 +43,8 @@ reST and Sphinx.
 
          .. container:: card-body
 
+            This chapter explains how to write documentation for a new extension.
+
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
       .. container:: card px-0 h-100
@@ -87,7 +89,7 @@ Did you know?
 :ref:`FAQ for extension authors ... <faq-for-extension-authors>`
 
 .. uncomment this, when there are new general tips
-:ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
+   :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 
 What's new in this guide?
