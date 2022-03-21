@@ -47,8 +47,8 @@ The following examples all do the same thing:
             $a = 'b';
 
       You can use this, if the default language is already set to PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.rst.txt
-      <includes-txt>`).
+      directive <codeblocks-highlight-directive>` in the current file (or in :doc:`Includes.rst.txt
+      </Includes.rst.txt>`).
 
 
 
@@ -70,8 +70,8 @@ The following examples all do the same thing:
             $a = 'b';
 
       You can use this, if you already set the language PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file (or in :ref:`Includes.rst.txt
-      <includes-txt>`).
+      directive <codeblocks-highlight-directive>` in the current file (or in :doc:`Includes.rst.txt
+      <Includes.rst.txt>`).
 
 .. seealso::
 

@@ -47,7 +47,6 @@ Using text roles
    js               ``:js:`var f = function () {return 1;}```         :js:`var f = function () {return 1;}`
    php              ``:php:`$result = $a + 23;```                     :php:`$result = $a + 23;`
    sep              ``:sep:`|```                                      :sep:`|`                                     To give the separator '\|' a special style in some contexts like :ref:`Styled-Definition-Lists`
-   ts               ``:ts:`lib.hello.value = Hello World!```          :ts:`lib.hello.value = Hello World!`
    typoscript       ``:typoscript:`lib.hello.value = Hello World!```  :typoscript:`lib.hello.value = Hello World!`
    yaml             ``:yaml:`- {name: John Smith, age: 33}```         :yaml:`- {name: John Smith, age: 33}`
    ================ ================================================= ============================================ ===
@@ -177,7 +176,7 @@ About the 'Includes.rst.txt' file
 ---------------------------------
 
 In general, the manual you are working on will already contain an
-:ref:`Includes.rst.txt <includes-txt>` file. In that file, the text roles
+:doc:`Includes.rst.txt </Includes.rst.txt>` file. In that file, the text roles
 are defined.
 
 

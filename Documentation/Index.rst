@@ -1,10 +1,35 @@
 .. include:: /Includes.rst.txt
+
 .. index:: ! Writing documentation
-.. _start:
 
 =====================
 Writing documentation
 =====================
+
+:Version:
+   |release|
+
+:Language:
+   en
+
+:Author:
+   TYPO3 contributors
+
+:License:
+   This document is published under the
+   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
+   license.
+
+:Rendered:
+   |today|
+
+----
+
+This guide contains information about contributing to TYPO3 documentation,
+writing documentation for TYPO3 extensions and formatting with
+reST and Sphinx.
+
+----
 
 .. container:: row m-0 p-0
 
@@ -54,8 +79,6 @@ Writing documentation
 
             This chapter explains how you can about making changes to third-party extension documentation.
 
-
-
 Did you know?
 =============
 
@@ -64,7 +87,7 @@ Did you know?
 :ref:`FAQ for extension authors ... <faq-for-extension-authors>`
 
 .. uncomment this, when there are new general tips
-   :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
+:ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
 
 
 What's new in this guide?
@@ -73,9 +96,7 @@ What's new in this guide?
 -  :ref:`PlantUML-diagrams`
 -  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
 
-
 More: :ref:`What's new in this guide ... <whats-new>`
-
 
 .. toctree::
    :hidden:
@@ -98,15 +119,13 @@ More: :ref:`What's new in this guide ... <whats-new>`
    RenderingDocs/Index
    GitHub/Index
 
-
 .. toctree::
    :hidden:
    :caption: ADVANCED
 
    HowToAddTranslation/Index
-   ../GeneralConventions/HowToUpdateDocs
-   ../GeneralConventions/ReviewInformation
-
+   GeneralConventions/HowToUpdateDocs
+   GeneralConventions/ReviewInformation
 
 .. toctree::
    :hidden:
@@ -114,13 +133,11 @@ More: :ref:`What's new in this guide ... <whats-new>`
 
    Maintainers/Index
 
+.. Meta Menu
 
 .. toctree::
    :hidden:
 
+   Sitemap
    genindex
    Appendix/Index
-   Sitemap/Index
-
-
-
