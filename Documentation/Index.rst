@@ -1,10 +1,35 @@
 .. include:: /Includes.rst.txt
+
 .. index:: ! Writing documentation
-.. _start:
 
 =====================
 Writing documentation
 =====================
+
+:Version:
+   |release|
+
+:Language:
+   en
+
+:Author:
+   TYPO3 contributors
+
+:License:
+   This document is published under the
+   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
+   license.
+
+:Rendered:
+   |today|
+
+----
+
+This guide contains information about contributing to TYPO3 documentation,
+writing documentation for TYPO3 extensions and formatting with
+reST and Sphinx.
+
+----
 
 .. container:: row m-0 p-0
 
@@ -17,6 +42,8 @@ Writing documentation
             .. rubric:: `Extension Documentation <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/Index.html>`__
 
          .. container:: card-body
+
+            This chapter explains how to write documentation for a new extension.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
@@ -54,8 +81,6 @@ Writing documentation
 
             This chapter explains how you can about making changes to third-party extension documentation.
 
-
-
 Did you know?
 =============
 
@@ -73,9 +98,7 @@ What's new in this guide?
 -  :ref:`PlantUML-diagrams`
 -  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
 
-
 More: :ref:`What's new in this guide ... <whats-new>`
-
 
 .. toctree::
    :hidden:
@@ -98,15 +121,13 @@ More: :ref:`What's new in this guide ... <whats-new>`
    RenderingDocs/Index
    GitHub/Index
 
-
 .. toctree::
    :hidden:
    :caption: ADVANCED
 
    HowToAddTranslation/Index
-   ../GeneralConventions/HowToUpdateDocs
-   ../GeneralConventions/ReviewInformation
-
+   GeneralConventions/HowToUpdateDocs
+   GeneralConventions/ReviewInformation
 
 .. toctree::
    :hidden:
@@ -114,13 +135,11 @@ More: :ref:`What's new in this guide ... <whats-new>`
 
    Maintainers/Index
 
+.. Meta Menu
 
 .. toctree::
    :hidden:
 
+   Sitemap
    genindex
    Appendix/Index
-   Sitemap/Index
-
-
-

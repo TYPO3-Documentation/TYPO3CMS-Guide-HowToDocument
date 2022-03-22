@@ -308,11 +308,11 @@ manuals will work again as soon they are rebuilt.
 Tips
 ----
 
-1. For convenience many manuals already have a page "Linktargets" where you can easily
-   see what linktargets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/main/en-us/Targets.html
+1. For convenience many manuals already have a :file:`objects.inv.json` where you can easily
+   see what link targets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/main/en-us/objects.inv.json
 
 2. As an editor you should not change or remove labels once they have been published.
-   If you feel that a label (= linktarget) should be changed you should keep the old one
+   If you feel that a label (= link target) should be changed you should keep the old one
    and add the new one on a separate line. You cannot know whether some other manual in
    the world links to the label you would like to remove.
 

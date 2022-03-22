@@ -239,13 +239,13 @@ You can use the method described in `How to link to a changelog <https://github.
 
 .. code-block:: rest
 
-   :doc:`t3core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
+   :doc:`ext_core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
 
-For this to work, t3core must be defined in :file:`Settings.cfg`:
+For this to work, ext_core must be defined in :file:`Settings.cfg`:
 
 .. code-block:: none
 
-   t3core = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
+   ext_core = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
 
 
 .. index::
