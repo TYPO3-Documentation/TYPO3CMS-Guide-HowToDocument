@@ -531,6 +531,7 @@ properties are in the correct section!
    # t3home         = https://docs.typo3.org/
    # t3install      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
    # t3l10n         = https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/
+   # t3skinning    = https://docs.typo3.org/m/typo3/reference-skinning/main/en-us/
    # t3sitepackage  = https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/
    # t3start        = https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/
    # t3tca          = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
