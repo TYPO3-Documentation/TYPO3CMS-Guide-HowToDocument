@@ -12,23 +12,6 @@
 Spelling, terms and glossary
 ============================
 
-.. index:: pair: Text role; pn (proper name)
-
-Feel free to use the `pn` (proper name) text role to mark up special names
-like `TYPO3 Core Team`:pn: when it's desirable to make them clearly visible.
-The recommended reST source for this is:
-
-.. code-block:: rst
-
-   `TYPO3 Core Team`:pn:
-
-Put `:pn:` to the end of the text. This facilitates reading the source.
-Currently the 'pn' text role is defined in file :file:`Includes.rst.txt`. It is
-a derivative of 'emphasis' and shown in italics. We are free to change that in
-our theme. A future Sphinx will be able to automatically create a sorted list
-of all proper names used.
-
-
 Spelling
 ========
 
@@ -156,7 +139,7 @@ S
 
 `sitepackage`,
 `Sphinx`
-`style guide (en)`, `Styleguide (de)`, 
+`style guide (en)`, `Styleguide (de)`,
 `SVG`,
 `system extension`, not: 'sys extension', `core extension`
 
@@ -173,7 +156,7 @@ T
 `TSconfig`,
 `TYPO3`,
 `TYPO3 Core`, `Core`,
-`TYPO3 Core Engine`, 
+`TYPO3 Core Engine`,
 `TYPO3 Core Team`, `Core Team`,
 `TYPO3 Core Engine`
 `TypoScript`,
@@ -203,7 +186,12 @@ Terms
 How to use these terms:
 
 reStructuredText
-   Use 'reST' as abbreviation.
+   Use :term:`reST` as abbreviation.
+
+reST
+   `reStructuredText <https://docutils.sourceforge.io/rst.html>`__ is a 'Markup
+   Syntax and Parser Domponent of `Docutils
+   <https://docutils.sourceforge.io/index.html>`__'.
 
 TYPO3
    Always and everywhere written with capital letters.
@@ -227,19 +215,16 @@ What terms mean:
 .. glossary::
 
    third party extension
-      Any extension that is not part of the `TYPO3 Core`:pn:
+      Any extension that is not part of the :term:`TYPO3 Core`.
 
    TYPO3 CMS
       The TYPO3 content management system.
 
+   TYPO3 Core
+      ...
+
    TYPO3 Core Team
-      This is the team that drives the development of the `TYPO3 Core`:pn:.
-
-
-.. Example usage of :term:
-..
-..    The :term:`TYPO3 Core Team` is very busy but is not responsible for
-      any :term:`third party extension`.
+      This is the team that drives the development of the :term:`TYPO3 Core`.
 
 
 .. See `Issue on GitHub
