@@ -7,11 +7,13 @@
 
 .. role:: aspect(emphasis)
 .. role:: bash(code)
+.. role:: css(code)
 .. role:: html(code)
 .. role:: js(code)
 .. role:: php(code)
 .. role:: rst(code)
 .. role:: sep(strong)
+.. role:: shell(code)
 .. role:: sql(code)
 
 .. role:: tsconfig(code)
