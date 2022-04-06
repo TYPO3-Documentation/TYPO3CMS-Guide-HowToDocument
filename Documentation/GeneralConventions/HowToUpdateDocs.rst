@@ -10,8 +10,8 @@
 Update documentation for new releases
 =====================================
 
-Once a new TYPO3 release comes out, the main documentation (for example :ref:`t3coreapi:start`,
-:ref:`t3tca:start` etc.) must be updated.
+Once a new TYPO3 release comes out, the main documentation (for example :doc:`t3coreapi:Index`,
+:doc:`t3tca:Index` etc.) must be updated.
 
 Here, we describe some best practices for updating the official documentation
 for a new TYPO3 release. We stick to the core conventions as much as possible because that
@@ -162,7 +162,7 @@ applied, you might use::
    :Status:
       needs review (All changelogs <= TYPO3 9.5.9 have been applied)
 
-See :ref:`t3start:start`.
+See :doc:`t3start:Index`.
 
 
 Work in progress

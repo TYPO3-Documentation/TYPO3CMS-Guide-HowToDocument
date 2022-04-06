@@ -114,7 +114,7 @@ You can create further cheat sheets and add them to this list.
 Replace Outdated Images
 =======================
 
-Replace outdated images, for example in the :ref:`t3tsconfig:start`
+Replace outdated images, for example in the :doc:`t3tsconfig:Index`
 reference.
 
 Look at :ref:`how-to-document-images` for information about how to
@@ -149,13 +149,13 @@ issue for it, if you cannot make the changes yourself.
 
 You can for example start with:
 
-*  :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
+*  :doc:`t3extbasebook:Index` : This currently needs some work in all branches. Check if the text
    is up to date and technically correct. Also, the text needs to be shortened in some parts and
    language improvements are necessary (grammar, style). For the `main` branch, you can
    `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
    once you have started reviewing. This makes it easier for other reviewers to just skip the parts
    that are already ok.
-*  :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
+*  :doc:`t3coreapi:Index`: The same applies as for :doc:`t3extbasebook:Index` except that
    "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
    `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
 
