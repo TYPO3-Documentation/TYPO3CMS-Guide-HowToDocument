@@ -549,7 +549,12 @@ properties are in the correct section!
    # ext_felogin        = https://docs.typo3.org/c/typo3/cms-felogin/main/en-us/
    # ext_form           = https://docs.typo3.org/c/typo3/cms-form/main/en-us/
    # ext_fsc            = https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us/
+   # ext_impexp         = https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/
    # ext_indexed_search = https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us/
+   # ext_linkvalidator  = https://docs.typo3.org/c/typo3/cms-linkvalidator/main/en-us/
+   # ext_lowlevel       = https://docs.typo3.org/c/typo3/cms-lowlevel/main/en-us/
+   # ext_recycler       = https://docs.typo3.org/c/typo3/cms-recycler/main/en-us/
+   # ext_redirects      = https://docs.typo3.org/c/typo3/cms-redirects/main/en-us/
    # ext_rte_ckeditor   = https://docs.typo3.org/c/typo3/cms-rte-ckeditor/main/en-us/
    # ext_scheduler      = https://docs.typo3.org/c/typo3/cms-scheduler/main/en-us/
    # ext_seo            = https://docs.typo3.org/c/typo3/cms-seo/main/en-us/
