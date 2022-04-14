@@ -109,7 +109,7 @@ example:
    <abstract>
 
    :Repository:  https://<vcs-repository>
-   :Read online: https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/
+   :Read online: https://docs.typo3.org/p/<package-name>/main/en-us/
    :TER:         https://extensions.typo3.org/extension/<extension-key>/
 
 or as README.md alternatively:
@@ -123,7 +123,7 @@ or as README.md alternatively:
    |                  | URL                                                           |
    |------------------|---------------------------------------------------------------|
    | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
+   | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
    | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
 
 
@@ -622,8 +622,8 @@ of the TYPO3 world the values:
 #. `since <creation-year> by the TYPO3 contributors`,
    e.g. "since 1999 by the TYPO3 contributors" (official TYPO3 manuals and TYPO3
    system extensions)
-#. `since <creation-year> by <vendor>`,
-   e.g. "since 1999 by the contributors" (third-party TYPO3 extensions)
+#. `since <creation-year> by <vendor> & contributors`,
+   e.g. "since 1999 by dkd & contributors" (third-party TYPO3 extensions)
 
 
 .. _settings-cfg-github-workflow:
@@ -791,7 +791,7 @@ to the next steps, for example
    ..
 
    :Repository:  https://<vcs-repository>
-   :Read online: https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/
+   :Read online: https://docs.typo3.org/p/<package-name>/main/en-us/
    :TER: https://extensions.typo3.org/extension/<extension-key>/
 
 or as README.md alternatively:
@@ -814,7 +814,7 @@ or as README.md alternatively:
    |                  | URL                                                           |
    |------------------|---------------------------------------------------------------|
    | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
+   | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
    | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
 
 For more details, see the explanation of :ref:`README.rst <readme-rst>` in the
