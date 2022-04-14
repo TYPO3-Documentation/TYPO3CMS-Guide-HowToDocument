@@ -37,7 +37,7 @@ work fine on all platforms.
    .. tip::
 
       Some of our repositories already contain
-      this, for example the :ref:`t3contribute:start`
+      this, for example the :doc:`t3contribute:Index`
       or this guide.
 
    You can create the file in the project directory.
