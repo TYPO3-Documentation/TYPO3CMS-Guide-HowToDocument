@@ -102,6 +102,8 @@ example:
 
 .. code-block:: rst
 
+   <badges>
+
    =========
    <project>
    =========
@@ -116,6 +118,8 @@ or as README.md alternatively:
 
 .. code-block:: md
 
+   <badges>
+
    # <project>
 
    <abstract>
@@ -125,6 +129,45 @@ or as README.md alternatively:
    | **Repository:**  | https://<vcs-repository>                                      |
    | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
    | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
+
+
+.. _readme-rst-badges:
+
+Badges
+^^^^^^
+
+Point out interesting statistics of your extension or package in the *badges*
+placeholder, which should include the latest release version, the total and
+monthly download rate and the supported TYPO3 versions:
+
+.. code-block:: rst
+
+   .. image:: https://poser.pugx.org/<package-name>/v/stable
+      :alt: Latest Stable Version
+      :target: https://extensions.typo3.org/extension/<extension-key>/
+
+   .. image:: https://img.shields.io/badge/TYPO3-11-orange.svg
+      :alt: TYPO3 11
+      :target: https://get.typo3.org/version/11
+
+   .. image:: https://poser.pugx.org/<package-name>/d/total
+      :alt: Total Downloads
+      :target: https://packagist.org/packages/<package-name>
+
+   .. image:: https://poser.pugx.org/<package-name>/d/monthly
+      :alt: Monthly Downloads
+      :target: https://packagist.org/packages/<package-name>
+
+or for the README.md alternatively:
+
+.. code-block:: md
+
+   [![Latest Stable Version](https://poser.pugx.org/<package-name>/v/stable)](https://extensions.typo3.org/extension/<extension-key>/)
+   [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg?style=flat-square)](https://get.typo3.org/version/11)
+   [![Total Downloads](https://poser.pugx.org/<package-name>/d/total)](https://packagist.org/packages/<package-name>)
+   [![Monthly Downloads](https://poser.pugx.org/<package-name>/d/monthly)](https://packagist.org/packages/<package-name>)
+
+Remove this field if the project is no extension or package.
 
 
 .. _readme-rst-project:
@@ -772,6 +815,8 @@ to the next steps, for example
 
 .. code-block:: rst
 
+   <badges>
+
    =========
    <project>
    =========
@@ -797,6 +842,8 @@ to the next steps, for example
 or as README.md alternatively:
 
 .. code-block:: md
+
+   <badges>
 
    # <project>
 
