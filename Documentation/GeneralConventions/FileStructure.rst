@@ -928,3 +928,16 @@ PHP application documentation
    Tailor (single)     `README.md <https://github.com/TYPO3/tailor>`__ |
                        `Read online <https://docs.typo3.org/other/typo3/tailor/main/en-us/>`__
    ==================  =========================================================
+
+.. seealso::
+
+   Although it is possible to write every single line of a full documentation
+   from scratch, the TYPO3 community provides tools to support you:
+
+   *  A `sample manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+      is available to be immediately copied into your own extension.
+   *  The `Extension Builder <https://extensions.typo3.org/extension/extension_builder>`__
+      optionally generates a sample documentation together with the extension
+      skeleton.
+   *  TYPO3 Core developers use the `ReST Helper <https://forger.typo3.com/utilities/rst>`__
+      to kickoff a new TYPO3 changelog entry.
