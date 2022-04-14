@@ -399,6 +399,7 @@ markup languages used in a TYPO3 project:
 
    .. role:: aspect(emphasis)
    .. role:: bash(code)
+   .. role:: css(code)
    .. role:: html(code)
    .. role:: js(code)
    .. role:: php(code)
