@@ -48,35 +48,35 @@ request for the back versions.
    backported to the latest LTS release.
 
 
-Merger: The pull request need to be backported, what should I do?
-=================================================================
+Merger: The pull request needs to be backported, what should I do?
+==================================================================
 
-When the PR needs also to be backported, put a note about the versions in a comments
-if they are not there yet:
+When the PR needs to be backported, add labels for all needed versions to
+the PR.
 
-.. code-block:: none
+Example: If the PR needs to be backported to version 11.5 and 10.4, add the
+corresponding labels :guilabel:`backport 11.5` and :guilabel:`backport 10.4`.
+The labels will trigger an automatic backport once the current PR is merged or
+the label is added to an already merged PR
 
-   Releases: main, 11.5
+How do automatic backports work
+===============================
 
-Add the label `backport required` to the PR. Merge the PR into master whenever possible.
-Otherwise merge it into the latest version it applies to.
+The CI runner will create a separate PR for each version that has been labeled
+- if, and only if, it can do the cherry picking into the branch without conflicts.
 
-Who is doing the backport?
-==========================
+If the automatic backport is successful a new PR will be created for the
+backport. This PR can be approved and merged manually.
 
-As it is usually more work to do each backport separately as doing them all at once we
-collect the backports by marking the PR with the label `label:"backport required"`.
-
-The maintainer doing the sweeping week will then apply all backports that can be done
-automatically by the end of the month. Backports that need to be handed manually can be
-send back to the author of the PR. In such a case a separate PR for the version in question
-needs to be made by the author.
+If the backport fails a comment will be added to the original PR, the
+label :guilabel:`backport failed` will be added to the original PR and
+manual cherry picking is required.
 
 Up to which version?
 ====================
 
-**Convention:** We backport to the versions still in LTS
-(if the change applies to them).
+**Convention:** We backport to the newest LTS version unless the changes only
+apply to the main version. Major errors and bug
 
 There may be reasons to do this differently:
 
@@ -113,8 +113,8 @@ text about additional authors is automatically added to the commit.
 
 .. index:: GitHub; Backport
 
-How to backport?
-================
+How to backport manually?
+=========================
 
 If you cherry-pick a commit locally, you can (optionally) use -x to
 automatically insert information that this is a cherry-pick and
