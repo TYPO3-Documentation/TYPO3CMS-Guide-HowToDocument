@@ -48,13 +48,13 @@ request for the back versions.
    backported to the latest LTS release.
 
 
-Merger: The pull request need to be backported, what should I do?
-=================================================================
+Merger: The pull request needs to be backported, what should I do?
+==================================================================
 
-When the PR needs to be backported, add labels for all needed version to
+When the PR needs to be backported, add labels for all needed versions to
 the PR.
 
-Example: If the PR needs to be backported to version 11.5 and 10.4 add the
+Example: If the PR needs to be backported to version 11.5 and 10.4, add the
 corresponding labels :guilabel:`backport 11.5` and :guilabel:`backport 10.4`.
 The labels will trigger an automatic backport once the current PR is merged or
 the label is added to an already merged PR
@@ -63,7 +63,7 @@ How do automatic backports work
 ===============================
 
 The CI runner will create a separate PR for each version that has been labeled
-if and only if he can do the cherry picking into the branch without conflicts.
+- if, and only if, it can do the cherry picking into the branch without conflicts.
 
 If the automatic backport is successful a new PR will be created for the
 backport. This PR can be approved and merged manually.
