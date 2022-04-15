@@ -15,7 +15,7 @@ When creating a PR, it is possible to add the Releases in the
 
 .. code-block:: none
 
-   Releases: main, 111.5
+   Releases: main, 11.5
 
 However, this is not enforced and not always done. In any case, it is
 up to the user merging a PR to decide how far the changes are to be
