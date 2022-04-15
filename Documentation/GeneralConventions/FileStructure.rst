@@ -102,6 +102,8 @@ example:
 
 .. code-block:: rst
 
+   <badges>
+
    =========
    <project>
    =========
@@ -109,12 +111,14 @@ example:
    <abstract>
 
    :Repository:  https://<vcs-repository>
-   :Read online: https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/
+   :Read online: https://docs.typo3.org/p/<package-name>/main/en-us/
    :TER:         https://extensions.typo3.org/extension/<extension-key>/
 
 or as README.md alternatively:
 
 .. code-block:: md
+
+   <badges>
 
    # <project>
 
@@ -123,8 +127,47 @@ or as README.md alternatively:
    |                  | URL                                                           |
    |------------------|---------------------------------------------------------------|
    | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
+   | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
    | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
+
+
+.. _readme-rst-badges:
+
+Badges
+^^^^^^
+
+Point out interesting statistics of your extension or package in the *badges*
+placeholder, which should include the latest release version, the total and
+monthly download rate and the supported TYPO3 versions:
+
+.. code-block:: rst
+
+   .. image:: https://poser.pugx.org/<package-name>/v/stable
+      :alt: Latest Stable Version
+      :target: https://extensions.typo3.org/extension/<extension-key>/
+
+   .. image:: https://img.shields.io/badge/TYPO3-11-orange.svg
+      :alt: TYPO3 11
+      :target: https://get.typo3.org/version/11
+
+   .. image:: https://poser.pugx.org/<package-name>/d/total
+      :alt: Total Downloads
+      :target: https://packagist.org/packages/<package-name>
+
+   .. image:: https://poser.pugx.org/<package-name>/d/monthly
+      :alt: Monthly Downloads
+      :target: https://packagist.org/packages/<package-name>
+
+or for the README.md alternatively:
+
+.. code-block:: md
+
+   [![Latest Stable Version](https://poser.pugx.org/<package-name>/v/stable)](https://extensions.typo3.org/extension/<extension-key>/)
+   [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg?style=flat-square)](https://get.typo3.org/version/11)
+   [![Total Downloads](https://poser.pugx.org/<package-name>/d/total)](https://packagist.org/packages/<package-name>)
+   [![Monthly Downloads](https://poser.pugx.org/<package-name>/d/monthly)](https://packagist.org/packages/<package-name>)
+
+Remove this field if the project is no extension or package.
 
 
 .. _readme-rst-project:
@@ -391,7 +434,7 @@ markup languages used in a TYPO3 project:
 .. code-block:: rst
 
    .. More information about this file:
-      https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#includes-rst-txt
+   .. https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#includes-rst-txt
 
    .. ----------
    .. text roles
@@ -399,6 +442,7 @@ markup languages used in a TYPO3 project:
 
    .. role:: aspect(emphasis)
    .. role:: bash(code)
+   .. role:: css(code)
    .. role:: html(code)
    .. role:: js(code)
    .. role:: php(code)
@@ -549,7 +593,12 @@ properties are in the correct section!
    # ext_felogin        = https://docs.typo3.org/c/typo3/cms-felogin/main/en-us/
    # ext_form           = https://docs.typo3.org/c/typo3/cms-form/main/en-us/
    # ext_fsc            = https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us/
+   # ext_impexp         = https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/
    # ext_indexed_search = https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us/
+   # ext_linkvalidator  = https://docs.typo3.org/c/typo3/cms-linkvalidator/main/en-us/
+   # ext_lowlevel       = https://docs.typo3.org/c/typo3/cms-lowlevel/main/en-us/
+   # ext_recycler       = https://docs.typo3.org/c/typo3/cms-recycler/main/en-us/
+   # ext_redirects      = https://docs.typo3.org/c/typo3/cms-redirects/main/en-us/
    # ext_rte_ckeditor   = https://docs.typo3.org/c/typo3/cms-rte-ckeditor/main/en-us/
    # ext_scheduler      = https://docs.typo3.org/c/typo3/cms-scheduler/main/en-us/
    # ext_seo            = https://docs.typo3.org/c/typo3/cms-seo/main/en-us/
@@ -616,8 +665,8 @@ of the TYPO3 world the values:
 #. `since <creation-year> by the TYPO3 contributors`,
    e.g. "since 1999 by the TYPO3 contributors" (official TYPO3 manuals and TYPO3
    system extensions)
-#. `since <creation-year> by <vendor>`,
-   e.g. "since 1999 by the contributors" (third-party TYPO3 extensions)
+#. `since <creation-year> by <vendor> & contributors`,
+   e.g. "since 1999 by dkd & contributors" (third-party TYPO3 extensions)
 
 
 .. _settings-cfg-github-workflow:
@@ -766,6 +815,8 @@ to the next steps, for example
 
 .. code-block:: rst
 
+   <badges>
+
    =========
    <project>
    =========
@@ -785,12 +836,14 @@ to the next steps, for example
    ..
 
    :Repository:  https://<vcs-repository>
-   :Read online: https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/
+   :Read online: https://docs.typo3.org/p/<package-name>/main/en-us/
    :TER: https://extensions.typo3.org/extension/<extension-key>/
 
 or as README.md alternatively:
 
 .. code-block:: md
+
+   <badges>
 
    # <project>
 
@@ -808,7 +861,7 @@ or as README.md alternatively:
    |                  | URL                                                           |
    |------------------|---------------------------------------------------------------|
    | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<vendor>/<extension-key>/main/en-us/ |
+   | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
    | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
 
 For more details, see the explanation of :ref:`README.rst <readme-rst>` in the
@@ -922,3 +975,16 @@ PHP application documentation
    Tailor (single)     `README.md <https://github.com/TYPO3/tailor>`__ |
                        `Read online <https://docs.typo3.org/other/typo3/tailor/main/en-us/>`__
    ==================  =========================================================
+
+.. seealso::
+
+   Although it is possible to write every single line of a full documentation
+   from scratch, the TYPO3 community provides tools to support you:
+
+   *  A `sample manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+      is available to be immediately copied into your own extension.
+   *  The `Extension Builder <https://extensions.typo3.org/extension/extension_builder>`__
+      optionally generates a sample documentation together with the extension
+      skeleton.
+   *  TYPO3 Core developers use the `ReST Helper <https://forger.typo3.com/utilities/rst>`__
+      to kickoff a new TYPO3 changelog entry.
