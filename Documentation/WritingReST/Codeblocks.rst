@@ -131,7 +131,7 @@ will fail.
 Examples
 ========
 
-A simple code-block with syntax highlighting
+A simple code block with syntax highlighting
 --------------------------------------------
 
 
