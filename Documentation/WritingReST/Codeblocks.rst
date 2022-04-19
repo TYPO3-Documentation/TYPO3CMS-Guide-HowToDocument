@@ -779,7 +779,7 @@ Literalinclude
 ==============
 
 A drawback of code blocks is that most editors cannot properly highlight or
-indent code within code-blocks. The directive :rst:`literalinclude` enables you
+indent code within code blocks. The directive :rst:`literalinclude` enables you
 to store longer code blocks in an external file with the proper ending.
 
 The :rst:`literalinclude` directive imports the file and displays its content as
