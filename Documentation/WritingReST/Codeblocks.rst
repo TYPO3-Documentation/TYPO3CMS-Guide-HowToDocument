@@ -778,7 +778,7 @@ installed the command `pygmentize -L` will list all available lexers.
 Literalinclude
 ==============
 
-A draw back of code-blocks is that most editors cannot properly highlight or
+A drawback of code blocks is that most editors cannot properly highlight or
 indent code within code-blocks. The directive :rst:`literalinclude` enables you
 to store longer code blocks in an external file with the proper ending.
 
