@@ -122,7 +122,7 @@ will fail.
 
    :rst:`name`
       Set a <reference-label>. This label can be used to link from any given
-      text to the specific code-block. The name needs to be unique within one
+      text to the specific code block. The name needs to be unique within one
       manual.
 
    See also the official
