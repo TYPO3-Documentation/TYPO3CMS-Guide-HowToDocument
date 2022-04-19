@@ -783,7 +783,7 @@ indent code within code blocks. The directive :rst:`literalinclude` enables you
 to store longer code blocks in an external file with the proper file extension.
 
 The :rst:`literalinclude` directive imports the file and displays its content as
-code-block.
+code block.
 
 
 .. tabs::
