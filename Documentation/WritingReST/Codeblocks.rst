@@ -330,7 +330,7 @@ You can set the default language with the `highlight` directive. All following
 code blocks will use the language as specified in the `highlight` directive for
 syntax highlighting.
 
-This language works as fall back for the outdated code-blocks that do not
+This language works as fall back for the outdated code blocks that do not
 specify the desired language.
 
 For TYPO3 we have adopted the convention that each reStructuredText source file
