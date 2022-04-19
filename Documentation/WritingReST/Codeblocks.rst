@@ -889,7 +889,7 @@ without a caption stating the file name. It is often very confusing for new
 developers where a certain code snippet should go. The recommended file name
 can help to clear this up.
 
-We recommend to always write the language name after the code block directive.
+We recommend thay you always write the language name after the code block directive.
 This makes it easier for first time contributors to adjust or copy-paste code
 blocks. For historic reasons there are code blocks without an explicit language.
 
@@ -904,10 +904,10 @@ block of code. This quick syntax has several drawbacks:
 *  It is confusing to developers who seldom contribute
 *  We cannot give a caption and state the file name where the code should go.
 *  The script language is only stated implicitly.
-*  Such code blocks cannot be easily copy-pasted to use them as foundation for your
+*  Such code blocks cannot be easily copy-pasted to use them as a foundation for your
    own code blocks.
 
-Change such code blocks as follows:
+You can change these code blocks like this:
 
 .. code-block:: diff
    :caption: UpdateShorthandCode.diff
