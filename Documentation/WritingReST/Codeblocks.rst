@@ -93,7 +93,7 @@ will fail.
    :ref:`available lexers <writing-rest-codeblocks-available-lexers>`
 
 <caption>
-   To make orientation in code-examples easier we try to always add
+   To make orientation in code examples easier try to always add
    a caption with the name of the file where the example should go. If the code
    should be entered in the backend explain where it should go there.
 
