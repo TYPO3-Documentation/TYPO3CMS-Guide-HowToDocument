@@ -168,7 +168,7 @@ A simple code block with syntax highlighting
              'Site Package'
          );
 
-Code-block with line numbers and highlighting of one line
+Code block with line numbers and highlighting of one line
 ---------------------------------------------------------
 
 
