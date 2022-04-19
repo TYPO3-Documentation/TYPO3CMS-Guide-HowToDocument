@@ -15,162 +15,52 @@ Code blocks with syntax highlighting
 Quick Reference
 ===============
 
-*  To insert a snippet as code with syntax highlighting, use the `code-block`
-   directive or the shorthand `::`.
-*  You can explicitly set the language in the `code-block`, you cannot in the shorthand.
-*  If you do not explicitly set the language, the default language (as set with
-   the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
-   was used, the default set in :ref:`Includes.rst.txt <includes-rst-txt>` is used.
-*  It is recommended to use the short form (`::`) instead of code-block explicitly.
-*  Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
-   in a code block.
-*  Use :ref:`placeholders <codeblocks-placeholders>` in angle brackets
-   (`<placeholder-name>`) to refer to a place in the code where you don't care
-   about the exact value.
+A code block consists of a `code-block` directive and the actual code indented
+by three spaces, the standard indentation for ReStructured Text. The TYPO3 source uses four
+spaces instead for consistency with other code bases.
 
-The following examples all do the same thing:
+A code block can have one or more options. To make orientation in code examples easier
+try to always add a `:caption:` with the path and name of the file where the example should go:
 
-.. rst-class:: bignums
+.. tabs::
 
-   1. Use the shorthand `::` (recommended)::
+   .. group-tab:: Source (rst)
 
-         See following example::
-
-            $a = 'b';
-
-
-      How this looks:
-         See following example:
+      .. code-block:: rst
+         :caption: Documentation/MyDocs.rst
 
          .. code-block:: php
+            :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
 
-            $a = 'b';
+            /**
+             * Add default TypoScript (constants and setup)
+             */
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+                'site_package',
+                'Configuration/TypoScript',
+                'Site Package'
+            );
 
-      You can use this, if the default language is already set to PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file
-      (or in :ref:`Includes.rst.txt <includes-rst-txt>`).
+   .. group-tab:: Output
 
+      .. code-block:: php
+         :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
 
+         /**
+          * Add default TypoScript (constants and setup)
+          */
+         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+             'site_package',
+             'Configuration/TypoScript',
+             'Site Package'
+         );
 
-   2. Set the language (PHP) in the `code-block`::
+Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
+in a code block.
 
-         See following example:
-
-         .. code-block:: php
-
-            $a = 'b';
-
-
-   3. Use `code-block` without setting the language::
-
-         See following example:
-
-         .. code-block::
-
-            $a = 'b';
-
-      You can use this, if you already set the language PHP with the :ref:`highlight
-      directive <codeblocks-highlight-directive>` in the current file
-      (or in :ref:`Includes.rst.txt <includes-rst-txt>`).
-
-.. seealso::
-
-   Add a :ref:`diagram <plantuml-diagrams>` to your code to enrich your
-   documentation and provide a broader view on your solution.
-
-.. index:: reST; Code block shorthand notation
-.. _codeblock-shorthand:
-
-Using the '::' notation (recommended)
-=====================================
-
-It's nice to use this notation and the preferred way to create a code block in
-case the highlighting is preset as desired (with the :ref:`codeblocks-highlight-directive`)
-and you don't need the special options of the :ref:`codeblock-directive`.
-
-However, the behavior of the '::' notation is "sort of intelligent". So let's
-explain it here. *Background:* "Sphinx" is based on "Docutils". Docutils
-handles the basic *parse*, *transform* and *create output* process for single
-files. Sphinx builds on this and adds the ability to handle multi file
-documentation projects. The '::' notation is already part of Docutil's `reST
-specification for creating "literal blocks"
-<http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks>`__.
-
-Quoting the important part of the specification:
-
-   The paragraph containing only "::" will be completely removed from the
-   output; no empty paragraph will remain.
-
-   As a convenience, the "::" is recognized at the end of any paragraph. If
-   immediately preceded by whitespace, both colons will be removed from the
-   output (this is the "partially minimized" form). When text immediately
-   precedes the "::", one colon will be removed from the output, leaving only
-   one colon visible (i.e., "::" will be replaced by ":"; this is the "fully
-   minimized" form).
-
-
-Example of form 1: Expanded
----------------------------
-
-Source::
-
-   Paragraph ...
-
-   ::
-
-      Literal Block
-
-Result:
-
-Paragraph ...
-
-::
-
-   Literal Block
-
-In words: The paragraph will appear as written. The code block just follows.
-*Both colons* and one empty line will be removed and not lead to any special
-output.
-
-
-Example of form 2: Partially minimized
---------------------------------------
-
-Source::
-
-   Paragraph ... ::
-
-      Literal Block
-
-Result:
-
-Paragraph ... ::
-
-   Literal Block
-
-In words: The paragraph will appear as written after *both colons* together
-with the preceding whitespace (!) have been removed from the end of the line.
-The code block then just follows.
-
-
-Example of form 3: Fully minimized
-----------------------------------
-
-Source::
-
-   Paragraph::
-
-      Literal Block
-
-Result:
-
-Paragraph::
-
-   Literal Block
-
-In words: The source of the paragraph has TWO colons at the end which are NOT
-preceded by whitespace. In the output just one of the colons will be removed.
-The code block then follows normally.
+Use :ref:`placeholders <codeblocks-placeholders>` in angle brackets
+(`<placeholder-name>`) to refer to a place in the code where the exact
+value is not important.
 
 
 .. index:: reST directives; code-block
@@ -179,21 +69,213 @@ The code block then follows normally.
 Code block directive
 ====================
 
-Use codeblock with language PHP::
+A code block has the following syntax:
 
-   .. code-block:: php
+.. code-block:: rst
+   :caption: Documentation/MyDocs.rst
 
-      $a = 'b';
+   .. code-block:: <language>
+      :caption: <caption>
+      <options>
 
-Use codeblock without specifying language::
+      <code>
 
-   .. code-block::
+There must be a newline between the options and the code. There must not be a
+newline between the directive line and options or within options. Otherwise the rendering
+will fail.
 
-      $a = 'b';
+<language>
+   The language of the code-block. We commonly use the following: :rst:`php`,
+   :rst:`typoscript` (also for tsconfig), :rst:`yaml`, :rst:`javascript`,
+   :rst:`html` (also for Fluid), :rst:`shell`, :rst:`xml`, :rst:`none`.
 
-This uses whatever language has last been set with the :ref:`codeblocks-highlight-directive`
-in the current file or in :file:`Includes.rst.txt`.
+   See all
+   :ref:`available lexers <writing-rest-codeblocks-available-lexers>`
 
+<caption>
+   To make orientation in code examples easier try to always add
+   a caption with the name of the file where the example should go. If the code
+   should be manually entered in the TYPO3 backend explain where it should go there.
+
+<options>
+   The following options may be used, all options are optional,
+   but :rst:`caption` is highly recommended:
+
+   .. code-block:: rst
+
+      .. code-block:: <language>
+         :caption: <caption>
+         :linenos:
+         :lineno-start: <start-number>
+         :emphasize-lines: <emphasized-line-numbers>
+         :name: <reference-label>
+
+   :rst:`linenos`
+      Show line numbers.
+
+   :rst:`lineno-start`
+      Start line numbers with <start-number>.
+
+   :rst:`emphasize-lines`
+      <emphasized-line-numbers> contains a comma separated list of line numbers
+      to be emphasized.
+
+   :rst:`name`
+      Set a <reference-label>. This label can be used to link from any given
+      text to the specific code block. The name needs to be unique within one
+      manual.
+
+   See also the official
+   `sphinx documentation on code-blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`__.
+
+Examples
+========
+
+A simple code block with syntax highlighting
+--------------------------------------------
+
+
+.. tabs::
+
+   .. group-tab:: Source (rst)
+
+      .. code-block:: rst
+         :caption: Documentation/MyDocs.rst
+
+         .. code-block:: php
+            :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+
+            /**
+             * Add default TypoScript (constants and setup)
+             */
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+                'site_package',
+                'Configuration/TypoScript',
+                'Site Package'
+            );
+
+   .. group-tab:: Output
+
+      .. code-block:: php
+         :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+
+         /**
+          * Add default TypoScript (constants and setup)
+          */
+         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+             'site_package',
+             'Configuration/TypoScript',
+             'Site Package'
+         );
+
+Code block with line numbers and highlighting of one line
+---------------------------------------------------------
+
+
+.. tabs::
+
+   .. group-tab:: Source (rst)
+
+      .. code-block:: rst
+         :caption: Documentation/MyDocs.rst
+
+         .. code-block:: php
+            :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+            :linenos:
+            :emphasize-lines: 4, 7
+
+            /**
+             * Add default TypoScript (constants and setup)
+             */
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+                'site_package',
+                'Configuration/TypoScript',
+                'Site Package'
+            );
+
+   .. group-tab:: Output
+
+      .. code-block:: php
+         :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+         :linenos:
+         :emphasize-lines: 4, 7
+
+         /**
+          * Add default TypoScript (constants and setup)
+          */
+         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+             'site_package',
+             'Configuration/TypoScript',
+             'Site Package'
+         );
+
+Use code blocks containing diffs
+--------------------------------
+
+To emphasize changes that should be made:
+
+.. tabs::
+
+   .. group-tab:: Source (rst)
+
+      .. code-block:: rst
+         :caption: Documentation/MyDocs.rst
+
+         .. code-block:: diff
+            :caption: ext_localconf.php.diff
+
+             <?php
+
+            -defined('TYPO3_MODE') or die();
+            +defined('TYPO3') or die();
+
+   .. group-tab:: Output
+
+      .. code-block:: diff
+         :caption: ext_localconf.php.diff
+
+          <?php
+
+         -defined('TYPO3_MODE') or die();
+         +defined('TYPO3') or die();
+
+.. hint::
+   You can use diff tools such as the
+   `bartlweb diff file generator <https://tools.bartlweb.net/diff/>`__. Make
+   sure to use the type :code:`unified context`
+
+Show a directory tree
+---------------------
+
+.. tabs::
+
+   .. group-tab:: Source (rst)
+
+      .. code-block:: rst
+         :caption: Documentation/MyDocs.rst
+
+         .. code-block:: none
+            :caption: Page tree of directory :file:`vendor/composer`
+
+            $ tree vendor/composer
+            ├── ClassLoader.php
+            ├── LICENSE
+            ├── autoload_classmap.php
+            ├── ...
+            └── installed.json
+
+
+   .. group-tab:: Output
+
+      .. code-block:: none
+         :caption: Page tree of directory :file:`vendor/composer`
+
+         $ tree vendor/composer
+         ├── ClassLoader.php
+         ├── LICENSE
+         ├── autoload_classmap.php
+         ├── ...
+         └── installed.json
 
 .. _writing-rest-codeblocks-syntactically-correct:
 .. _codeblocks-syntactically-correct:
@@ -209,30 +291,33 @@ Use syntactically correct code
    errors. In other words: If there's a syntax error in the code the
    highlighting will not work.
 
+   .. tabs::
 
-   **Wrong:** ::
-
-      .. code-block:: php
-
-         $a = array(
-            'one' => 1,
-            ...
-         );
-
-   **Correct:** ::
-
-      .. code-block:: php
-
-         $a = array(
-            'one' => 1,
-            // ...
-         );
+      .. group-tab:: Correct
 
 
-`Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses `Pygments
-<http://pygments.org/>`__ for highlighting. On a machine that has Pygments
-installed the command `pygmentize -L` will list all available lexers.
+         .. code-block:: rst
+            :caption: Documentation/MyDocs.rst
 
+            .. code-block:: php
+
+               $a = array(
+                  'one' => 1,
+                  // ...
+               );
+
+
+      .. group-tab:: Wrong
+
+         .. code-block:: rst
+            :caption: Documentation/MyDocs.rst
+
+            .. code-block:: php
+
+               $a = array(
+                  'one' => 1,
+                  ...
+               );
 
 .. index:: reST directives; highlight
 .. _writing-rest-codeblocks-highlight-directive:
@@ -245,161 +330,13 @@ You can set the default language with the `highlight` directive. All following
 code blocks will use the language as specified in the `highlight` directive for
 syntax highlighting.
 
-If all of your code blocks in one file have the same language, it is easier to just set this
-once at the beginning of the file.
-
-This way, you don't need to set the language for each code-block (`..
-code-block:: LANG`) explicitly and can use the :ref:`shorthand notation
-<codeblock-shorthand>`.
-
-Use reStructuredText highlighting::
-
-   .. highlight:: rst
-
-
-Use PHP highlighting::
-
-   .. highlight:: php
+This language works as fall back for the outdated code blocks that do not
+specify the desired language.
 
 For TYPO3 we have adopted the convention that each reStructuredText source file
 imports the :file:`Documentation/Includes.rst.txt` file at the top. And in the
 included file - in general - we set PHP as default language for highlighting.
 Exception: In the TypoScript manuals we are using `typoscript` as default.
-
-You can use the `..highlight:: LANG` directive as often as you want. Each one
-remains valid up to the next or up to the end of the *single file* it is used
-in.
-
-
-Highlight language 'guess'
---------------------------
-
-Note that there is a - pseudo - language 'guess' as well. This should use the
-highlighter for the first language that Pygments finds to have no syntax error.
-
-
-Highlight language 'none'
--------------------------
-
-The pseudo language 'none' is recognized as well. In this case no highlighting
-will occur.
-
-
-.. _writing-rest-codeblocks-some-more-examples:
-
-Some more examples
-==================
-
-.. index::
-   reST roles; linenos
-   reST; Line numbers
-
-Add line numbers to code snippet
---------------------------------
-
-
-Source
-~~~~~~
-
-::
-
-   .. code-block:: php
-      :linenos:
-
-          $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment';
-
-          // Adjust to your needs
-          $domain = 'example.org';
-          $rootPageUid = 123;
-          $rssFeedPageType = 9818; // pageType of your RSS feed page
-
-
-
-Result
-~~~~~~
-
-.. code-block:: php
-   :linenos:
-
-       <?php
-
-       $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment';
-
-       // Adjust to your needs
-       $domain = 'example.org';
-       $rootPageUid = 123;
-       $rssFeedPageType = 9818; // pageType of your RSS feed page
-
-
-.. index:: reST; Highlighting: none
-
-Turn off highlighting: Method 1
--------------------------------
-
-Source:
-~~~~~~~
-
-.. code-block:: rst
-
-   A description:
-
-   .. code-block:: none
-
-      $ tree vendor/composer
-      ├── ClassLoader.php
-      ├── LICENSE
-      ├── autoload_classmap.php
-      ├── ...
-      └── installed.json
-
-Result
-~~~~~~
-
-A description:
-
-.. code-block:: none
-
-   $ tree vendor/composer
-   ├── ClassLoader.php
-   ├── LICENSE
-   ├── autoload_classmap.php
-   ├── ...
-   └── installed.json
-
-
-Turn off highlighting: Method 2
--------------------------------
-
-Source:
-~~~~~~~
-
-.. code-block:: rst
-
-   .. highlight:: none
-
-   A description::
-
-      $ tree vendor/composer
-      ├── ClassLoader.php
-      ├── LICENSE
-      ├── autoload_classmap.php
-      ├── ...
-      └── installed.json
-
-Result
-~~~~~~
-
-.. highlight:: none
-
-A description::
-
-   $ tree vendor/composer
-   ├── ClassLoader.php
-   ├── LICENSE
-   ├── autoload_classmap.php
-   ├── ...
-   └── installed.json
-
 
 .. index:: reST; Lexers
 .. _writing-rest-codeblocks-available-lexers:
@@ -834,10 +771,60 @@ zephir \|
 **Tip:** Try the Pygments Demo at http://pygments.org/
 
 
+`Sphinx <http://www.sphinx-doc.org/en/stable/>`__ uses `Pygments
+<http://pygments.org/>`__ for highlighting. On a machine that has Pygments
+installed the command `pygmentize -L` will list all available lexers.
+
 Literalinclude
 ==============
 
-There also is a `literalinclude directive
+A drawback of code blocks is that most editors cannot properly highlight or
+indent code within code blocks. The directive :rst:`literalinclude` enables you
+to store longer code blocks in an external file with the proper file extension.
+
+The :rst:`literalinclude` directive imports the file and displays its content as
+code block.
+
+
+.. tabs::
+
+   .. group-tab:: Source (rst)
+
+      .. code-block:: rst
+         :caption: Documentation/SiteConfiguration/Index.rst
+
+         .. literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
+            :language: yaml
+            :emphasize-lines: 5,10-13
+            :linenos:
+
+   .. group-tab:: Output
+
+      .. literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
+         :language: yaml
+         :emphasize-lines: 5,10-13
+         :linenos:
+
+Literal includes can even be used to render the difference between files,
+without having to create a diff file first:
+
+.. tabs::
+
+   .. group-tab:: Source (rst)
+
+      .. code-block:: rst
+         :caption: Documentation/SiteConfiguration/Index.rst
+
+         .. literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
+            :diff: /CodeSnippets/LiteralIncludes/example_de.yaml
+
+   .. group-tab:: Output
+
+      .. literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
+         :diff: /CodeSnippets/LiteralIncludes/example_de.yaml
+
+
+See also `literalinclude directive
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
 
 
@@ -891,3 +878,46 @@ or in an example URL
 In the XML and HTML markup languages, which make extensive use of angle
 brackets, the comment tag :html:`<!-- placeholder-name -->` is used to insert
 placeholders. A `<placeholder-name>` looks like a regular element and would lead to confusion.
+
+
+Outdated code block formats
+===========================
+
+For historic reasons the :rst:`:caption:` option is missing in many code blocks.
+Try to add them whenever you touch the RST files. Do not add new code blocks
+without a caption stating the file name. It is often very confusing for new
+developers where a certain code snippet should go. The recommended file name
+can help to clear this up.
+
+We recommend that you always write the language name after the code block directive.
+This makes it easier for first time contributors to adjust or copy-paste code
+blocks. For historic reasons there are code blocks without an explicit language.
+
+If you do not explicitly set the language, the default language (as set with
+the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
+was used, the default set in :file:`Documentation/Includes.rst.txt` is used.
+
+In the past a simplified shorthand directive was widely used: A sentence ending
+with two double colon :rst:`::`, followed by a new line and an indented
+block of code. This quick syntax has several drawbacks:
+
+*  It is confusing to developers who seldom contribute
+*  We cannot give a caption and state the file name where the code should go.
+*  The script language is only stated implicitly.
+*  Such code blocks cannot be easily copy-pasted to use them as a foundation for your
+   own code blocks.
+
+You can change these code blocks like this:
+
+.. code-block:: diff
+   :caption: UpdateShorthandCode.diff
+
+    The extension already contains some unit tests that extend `typo3/testing-framework`'s base
+   -unit test class in directory :file:`Tests/Unit/Hooks` (stripped)::
+   +unit test class:
+   +
+   +.. code-block:: php
+   +   :caption: <extension_key>/Tests/Unit/Hooks/DataHandlerFlushByTagHookTest.php
+
+        <?php
+        namespace Lolli\Enetcache\Tests\Unit\Hooks;
