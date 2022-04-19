@@ -59,8 +59,8 @@ Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
 in a code block.
 
 Use :ref:`placeholders <codeblocks-placeholders>` in angle brackets
-(`<placeholder-name>`) to refer to a place in the code where you don't care
-about the exact value.
+(`<placeholder-name>`) to refer to a place in the code where the exact
+value is not important.
 
 
 .. index:: reST directives; code-block
