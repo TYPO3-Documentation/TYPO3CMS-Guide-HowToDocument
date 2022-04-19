@@ -209,7 +209,7 @@ Code block with line numbers and highlighting of one line
              'Site Package'
          );
 
-Use code-blocks containing diffs
+Use code blocks containing diffs
 --------------------------------
 
 To emphasize changes that should be made:
