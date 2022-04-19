@@ -883,11 +883,11 @@ placeholders. A `<placeholder-name>` looks like a regular element and would lead
 Outdated code-block formats
 ===========================
 
-For historic reasons the :rst:`:caption:` option is missing in many code-blocks.
-We try to add them wherever we touch the rst files. Do not add new code-blocks
+For historic reasons the :rst:`:caption:` option is missing in many code blocks.
+Try to add them whenever you touch the RST files. Do not add new code blocks
 without a caption stating the file name. It is often very confusing for new
-developer where a certain code-snippet should go. The recommended file name
-answers many questions.
+developers where a certain code snippet should go. The recommended file name
+can help to clear this up.
 
 We recommend to always write the language name after the code-block directive.
 This makes it easier for first time contributors to adjust or copy-paste code
