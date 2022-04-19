@@ -880,7 +880,7 @@ brackets, the comment tag :html:`<!-- placeholder-name -->` is used to insert
 placeholders. A `<placeholder-name>` looks like a regular element and would lead to confusion.
 
 
-Outdated code-block formats
+Outdated code block formats
 ===========================
 
 For historic reasons the :rst:`:caption:` option is missing in many code blocks.
