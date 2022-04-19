@@ -907,7 +907,7 @@ block of code. This quick syntax has several drawbacks:
 *  Such code blocks cannot be easily copy-pasted to use them as foundation for your
    own code blocks.
 
-Change such code-blocks as follows:
+Change such code blocks as follows:
 
 .. code-block:: diff
    :caption: UpdateShorthandCode.diff
