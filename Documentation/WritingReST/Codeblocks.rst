@@ -95,7 +95,7 @@ will fail.
 <caption>
    To make orientation in code examples easier try to always add
    a caption with the name of the file where the example should go. If the code
-   should be entered in the backend explain where it should go there.
+   should be manually entered in the TYPO3 backend explain where it should go there.
 
 <options>
    The following options may be used, all options but :rst:`caption` are
