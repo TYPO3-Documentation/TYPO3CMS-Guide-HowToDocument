@@ -81,7 +81,7 @@ A code block has the following syntax:
       <code>
 
 There must be a new line between the options and the code. There must not be a
-new line between options or options and directive line. Otherwise the rendering
+newline between the directive line and options or within options. Otherwise the rendering
 will fail.
 
 <language>
