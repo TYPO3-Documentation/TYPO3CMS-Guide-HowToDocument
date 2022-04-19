@@ -15,10 +15,12 @@ Code blocks with syntax highlighting
 Quick Reference
 ===============
 
-A simple code-block consists of the directive code-block and the Code indented
-by 3 spaces (4 spaces in Core extensions). A code-block can have one or more
-options. To make orientation in code-examples easier we try to always add
-a caption with the name of the file where the example should go:
+A simple code block consists of the directive `code-block` and the actual code indented
+by 3 spaces, the standard indentation for ReStructured Text. The TYPO3 source uses 4
+spaces instead for consistency with other code.
+
+A code block can have one or more options. To make orientation in code examples easier
+try to always add a `:caption:` with the path and name of the file where the example should go:
 
 .. tabs::
 
