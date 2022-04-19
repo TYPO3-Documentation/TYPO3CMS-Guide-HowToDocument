@@ -889,9 +889,9 @@ without a caption stating the file name. It is often very confusing for new
 developers where a certain code snippet should go. The recommended file name
 can help to clear this up.
 
-We recommend to always write the language name after the code-block directive.
+We recommend to always write the language name after the code block directive.
 This makes it easier for first time contributors to adjust or copy-paste code
-blocks. For historic reasons there are code-blocks without an explicit language:
+blocks. For historic reasons there are code blocks without an explicit language.
 
 If you do not explicitly set the language, the default language (as set with
 the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
