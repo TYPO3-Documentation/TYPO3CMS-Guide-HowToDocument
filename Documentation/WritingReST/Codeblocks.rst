@@ -899,7 +899,7 @@ was used, the default set in :file:`Documentation/Includes.rst.txt` is used.
 
 In the past a simplified shorthand directive was widely used: A sentence ending
 with two double colon :rst:`::`, followed by a new line and an indented
-block of code. This quick syntax has several draw-backs:
+block of code. This quick syntax has several drawbacks:
 
 *  It is confusing to developers who seldom contribute
 *  We cannot give a caption and state the file name where the code should go.
