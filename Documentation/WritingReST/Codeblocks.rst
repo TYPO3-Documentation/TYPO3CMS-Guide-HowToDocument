@@ -15,9 +15,9 @@ Code blocks with syntax highlighting
 Quick Reference
 ===============
 
-A simple code block consists of the directive `code-block` and the actual code indented
-by 3 spaces, the standard indentation for ReStructured Text. The TYPO3 source uses 4
-spaces instead for consistency with other code.
+A code block consists of a `code-block` directive and the actual code indented
+by three spaces, the standard indentation for ReStructured Text. The TYPO3 source uses four
+spaces instead for consistency with other code bases.
 
 A code block can have one or more options. To make orientation in code examples easier
 try to always add a `:caption:` with the path and name of the file where the example should go:
