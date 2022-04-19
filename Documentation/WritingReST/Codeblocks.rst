@@ -904,8 +904,8 @@ block of code. This quick syntax has several drawbacks:
 *  It is confusing to developers who seldom contribute
 *  We cannot give a caption and state the file name where the code should go.
 *  The script language is only stated implicitly.
-*  Such codeblocks cannot be easily copy-pasted to use them as models for your
-   own code-blocks.
+*  Such code blocks cannot be easily copy-pasted to use them as foundation for your
+   own code blocks.
 
 Change such code-blocks as follows:
 
