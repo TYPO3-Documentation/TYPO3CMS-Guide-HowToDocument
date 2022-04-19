@@ -98,8 +98,8 @@ will fail.
    should be manually entered in the TYPO3 backend explain where it should go there.
 
 <options>
-   The following options may be used, all options but :rst:`caption` are
-   optional:
+   The following options may be used, all options are optional,
+   but :rst:`caption` is highly recommended:
 
    .. code-block:: rst
 
