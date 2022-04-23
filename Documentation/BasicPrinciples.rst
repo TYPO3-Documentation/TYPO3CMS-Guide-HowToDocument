@@ -82,7 +82,6 @@ creating the menu, using the current theme to add additional styles and images.
 
 
 .. index::  TYPO3 documentation; Types
-.. _documentation-types:
 
 Documentation types
 ===================

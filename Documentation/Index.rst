@@ -109,6 +109,7 @@ More: :ref:`What's new in this guide ... <whats-new>`
    BasicPrinciples
    GeneralConventions/Index
    WritingReST/Index
+   UserRoundTrip
 
 .. toctree::
    :hidden:
