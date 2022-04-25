@@ -8,9 +8,15 @@ User's round trip
 
 Once the user is interested in a TYPO3 extension, a Composer package or a
 standalone manual, they should be quickly directed to all aspects of the
-project: the rendered documentation, the code repository, and the TYPO3
-Extension Repository (TER) and Packagist store pages from which the extension
-or package can be downloaded and installed. Therefore, set up a convenient
+project: 
+
+*  Rendered documentation
+*  Code repository (Github, Gitlab etc)
+*  Packagist
+*  TYPO3 Extension Repository (TER)
+*  Where to report issues
+
+Therefore, set up a convenient
 navigation from one aspect to another by using native configuration settings.
 
 .. uml::
