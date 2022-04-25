@@ -86,7 +86,7 @@ for example for the *News System* extension:
    project_issues       = https://github.com/georgringer/news/issues
 
 and find the links to the other aspects displayed in the footer of the rendered
-documentation (see `News System example <https://docs.typo3.org/p/georgringer/news/main/en-us/>`__).
+documentation (see `News extension <https://docs.typo3.org/p/georgringer/news/main/en-us/>`__).
 
 For a Composer package, replace the TER URL with the Packagist URL. For a
 standalone manual, replace the TER URL with the documentation URL.
