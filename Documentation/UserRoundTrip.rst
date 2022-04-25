@@ -8,15 +8,9 @@ User's round trip
 
 Once the user is interested in a TYPO3 extension, a Composer package or a
 standalone manual, they should be quickly directed to all aspects of the
-project: 
-
-*  Rendered documentation
-*  Code repository (Github, Gitlab etc)
-*  Packagist
-*  TYPO3 Extension Repository (TER)
-*  Where to report issues
-
-Therefore, set up a convenient
+project: the rendered documentation, the code repository, and the Packagist and
+TYPO3 Extension Repository (TER) store pages from which the extension
+or package can be downloaded and installed. Therefore, set up a convenient
 navigation from one aspect to another by using native configuration settings.
 
 .. uml::
@@ -62,6 +56,9 @@ navigation from one aspect to another by using native configuration settings.
 Project aspects
 ===============
 
+Create the round trip by cross-referencing between all aspects of a project as
+follows.
+
 
 .. _user-round-trip-documentation-aspect:
 
@@ -86,14 +83,15 @@ for example for the *News System* extension:
    project_issues       = https://github.com/georgringer/news/issues
 
 and find the links to the other aspects displayed in the footer of the rendered
-documentation (see `News extension <https://docs.typo3.org/p/georgringer/news/main/en-us/>`__).
+documentation (see `News System example <https://docs.typo3.org/p/georgringer/news/main/en-us/>`__).
 
 For a Composer package, replace the TER URL with the Packagist URL. For a
 standalone manual, replace the TER URL with the documentation URL.
 
 The Packagist URL is linked indirectly from the TER page and is therefore not
-specified in this configuration file. The issues URL is considered here because
-it is closely related to the VCS repository aspect.
+specified in this configuration file. The issues URL is specified, but not
+considered part of the round trip, as it usually does not provide a way to link
+to other aspects.
 
 
 .. _user-round-trip-vcs-repository-aspect:
@@ -165,8 +163,8 @@ Packagist page (see `Address List example <https://packagist.org/packages/friend
 
 For a Composer package, replace the TER URL with the Packagist URL.
 
-The issues URL is considered here because it is closely related to the VCS
-repository aspect.
+The issues URL is specified, but not considered part of the round trip, as it
+usually does not provide a way to link to other aspects.
 
 
 .. _user-round-trip-ter-aspect:
@@ -194,14 +192,18 @@ and find the links to the other aspects presented in the right column of the TER
 page (see `Static File Cache example <https://extensions.typo3.org/extension/staticfilecache>`__).
 
 The documentation URL is automatically resolved when the documentation is
-published on docs.typo3.org. The issues URL is considered here because it is
-closely related to the VCS repository aspect.
+published on docs.typo3.org. The issues URL is specified, but not considered
+part of the round trip, as it usually does not provide a way to link to other
+aspects.
 
 
 .. _user-round-trip-project-types:
 
 Project types
 =============
+
+It depends on your project type whether all aspects can be configured or only a
+subset.
 
 
 .. _user-round-trip-typo3-extension-type:
@@ -239,7 +241,7 @@ TYPO3 extension
    hide << inactive >> stereotype
 
 Guide the user to all four aspects of the TYPO3 extension, which is usually
-hosted on both TER and Packagist, by configuring:
+distributed on both TER and Packagist, by configuring:
 
 #. :ref:`user-round-trip-documentation-aspect`
 #. :ref:`user-round-trip-vcs-repository-aspect`
@@ -285,7 +287,7 @@ Composer package
 
    hide << inactive >> stereotype
 
-A Composer package that is not a TYPO3 extension is usually hosted only on
+A Composer package that is not a TYPO3 extension is usually distributed only on
 Packagist. Therefore, guide the user to three aspects of the package by
 configuring:
 
@@ -333,7 +335,7 @@ Standalone manual
    hide << inactive >> stereotype
 
 A standalone manual, i.e. a tutorial, guide or reference, is usually not
-hosted in a store. Therefore, guide the user to two aspects of the manual by
+provided in a store. Therefore, guide the user to two aspects of the manual by
 configuring:
 
 #. :ref:`user-round-trip-documentation-aspect`
