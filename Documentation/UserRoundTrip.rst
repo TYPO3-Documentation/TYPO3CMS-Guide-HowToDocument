@@ -6,7 +6,7 @@
 User's round trip
 =================
 
-When a user wants to find out more about a Composer package or a
+When a user wants to find out more about a TYPO3 extension, Composer package or a
 standalone manual, they should be provided with information about every aspect of the
 project including its rendered documentation, code repository and the Packagist and
 TYPO3 Extension Repository (TER) pages.
