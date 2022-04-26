@@ -6,12 +6,14 @@
 User's round trip
 =================
 
-Once the user is interested in a TYPO3 extension, a Composer package or a
-standalone manual, they should be quickly directed to all aspects of the
-project: the rendered documentation, the code repository, and the Packagist and
-TYPO3 Extension Repository (TER) store pages from which the extension
-or package can be downloaded and installed. Therefore, set up a convenient
-navigation from one aspect to another by using native configuration settings.
+When a user wants to find out more about a Composer package or a
+standalone manual, they should be provided with information about every aspect of the
+project including its rendered documentation, code repository and the Packagist and
+TYPO3 Extension Repository (TER) pages.
+
+It is recommended that you set up a navigation structure that signposts every part of
+your project so that users can quickly install, learn and potentially contribute
+to your project. This can be achieved by using the native configuration settings.
 
 .. uml::
 
