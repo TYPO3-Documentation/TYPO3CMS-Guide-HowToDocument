@@ -186,13 +186,10 @@ Common values are in the official TYPO3 manuals
 #. `<Topic> Tutorial`, e.g. "Getting Started Tutorial",
    for collections of tutorials on a specific topic
 
-in TYPO3 system extensions
+and in TYPO3 system and third-party extensions
 
-*  `TYPO3 CMS <Topic> (<package-name>)`, e.g. "TYPO3 CMS Extbase (typo3/cms-extbase)".
-
-and in TYPO3 third-party extensions
-
-*  `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`mask\`\`".
+*  `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`extbase\`\`" and
+   "TYPO3 extension \`\`mask\`\`".
 
 
 .. _readme-rst-abstract:
