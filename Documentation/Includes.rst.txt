@@ -13,7 +13,6 @@
 .. role:: php(code)
 .. role:: rst(code)
 .. role:: sep(strong)
-.. role:: shell(code)
 .. role:: sql(code)
 
 .. role:: tsconfig(code)
