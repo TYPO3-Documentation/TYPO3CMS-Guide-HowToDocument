@@ -50,7 +50,6 @@ Using text roles
    php              ``:php:`$result = $a + 23;```                     :php:`$result = $a + 23;`
    rst              ``:rst:`.. image:: /path/to/img.jpg```            :rst:`.. image:: /path/to/img.jpg`
    sep              ``:sep:`|```                                      :sep:`|`                                      To give the separator '\|' a special style in some contexts like :ref:`Styled-Definition-Lists`
-   shell            ``:shell:`find . -type d | grep typo3```          :shell:`find . -type d | grep typo3`
    sql              ``:sql:`SELECT * FRAM pages WHERE hidden=0;```    :sql:`SELECT * FRAM pages WHERE hidden=0;`
    typoscript       ``:typoscript:`lib.hello.value = Hello World!```  :typoscript:`lib.hello.value = Hello World!`
    xml              ``:xml:`<?xml version="1.0" encoding="UTF-8"?>``` :xml:`<?xml version="1.0" encoding="UTF-8"?>`
