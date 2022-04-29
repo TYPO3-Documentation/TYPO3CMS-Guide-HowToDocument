@@ -36,20 +36,28 @@ Using text roles
    to explicitly specify what kind of text / code (text role) it is. This shows
    the semantics and in the output there may be a a special coloring or highlighting:
 
-   ================ ================================================= ============================================ ===
-   Role             Source                                            Output                                       Note
-   ================ ================================================= ============================================ ===
-   (default)        ```result = (1 + x) * 32```                       `result = (1 + x) * 32`                      This works because in :file:`Includes.rst.txt` we set the default role to ``:code:`...```
+   ================ ================================================= ============================================= ====
+   Role             Source                                            Output                                        Note
+   ================ ================================================= ============================================= ====
+   (default)        ```result = (1 + x) * 32```                       `result = (1 + x) * 32`                       This works because in :file:`Includes.rst.txt` we set the default role to ``:code:`...```
 
-   aspect           ``:aspect:`Description:```                        :aspect:`Description:`                       For better optics
+   aspect           ``:aspect:`Description:```                        :aspect:`Description:`                        For better optics
+   bash             ``:bash:`find . -type d | grep typo3```           :bash:`find . -type d | grep typo3`
+   css              ``:css:`.h1 {font-size:150%}```                   :css:`.h1 {font-size:150%}`
    html             ``:html:`<a href="#">```                          :html:`<a href="#">`
-   issue            ``:issue:`12345```                                :issue:`12345`                               To link to a TYPO3 issue.
+   issue            ``:issue:`12345```                                :issue:`12345`                                To link to a TYPO3 issue.
    js               ``:js:`var f = function () {return 1;}```         :js:`var f = function () {return 1;}`
    php              ``:php:`$result = $a + 23;```                     :php:`$result = $a + 23;`
-   sep              ``:sep:`|```                                      :sep:`|`                                     To give the separator '\|' a special style in some contexts like :ref:`Styled-Definition-Lists`
+   rst              ``:rst:`.. image:: /path/to/img.jpg```            :rst:`.. image:: /path/to/img.jpg`
+   sep              ``:sep:`|```                                      :sep:`|`                                      To give the separator '\|' a special style in some contexts like :ref:`Styled-Definition-Lists`
+   sql              ``:sql:`SELECT * FRAM pages WHERE hidden=0;```    :sql:`SELECT * FRAM pages WHERE hidden=0;`
    typoscript       ``:typoscript:`lib.hello.value = Hello World!```  :typoscript:`lib.hello.value = Hello World!`
+   xml              ``:xml:`<?xml version="1.0" encoding="UTF-8"?>``` :xml:`<?xml version="1.0" encoding="UTF-8"?>`
    yaml             ``:yaml:`- {name: John Smith, age: 33}```         :yaml:`- {name: John Smith, age: 33}`
-   ================ ================================================= ============================================ ===
+   ================ ================================================= ============================================= ====
+
+
+
 
 
    `Standard Sphinx interpreted text roles
