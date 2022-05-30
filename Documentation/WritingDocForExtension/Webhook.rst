@@ -31,7 +31,7 @@ each new extension when requesting rendering for the first time.
 In order to approve an extension, the following things need to apply:
 
 #. The extension needs to be published in TER under the same extension key as
-   claimed by :ref:`composer.json <composer-json>`.
+   claimed by :ref:`t3coreapi:composer.json <composer-json>`.
 
 #. The Git Repository is referenced from TER detail view page.
 
