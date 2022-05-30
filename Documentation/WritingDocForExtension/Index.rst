@@ -54,7 +54,7 @@ Creating extension documentation using the sample manual
 
 #. Add or modify additional files
 
-   *  Make sure :ref:`composer-json` is up to date. (*required*)
+   *  Make sure :ref:`t3coreapi:composer-json` is up to date. (*required*)
    *  Make sure :ref:`settings-cfg` is up to date. (*required*)
    *  A .gitignore is useful, in order to
       prevent accidentally committing the generated documentation in
@@ -85,7 +85,7 @@ Creating extension documentation using the sample manual
 
 #. Populate composer.json
 
-   Complete the :file:`composer.json` as described in :ref:`composer-json`.
+   Complete the :file:`composer.json` as described in :ref:`t3coreapi:composer-json`.
 
 #. Populate Settings.cfg
 
