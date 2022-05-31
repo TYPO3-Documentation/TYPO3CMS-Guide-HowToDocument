@@ -98,7 +98,6 @@ What's new in this guide?
 -  :ref:`PlantUML-diagrams`
 -  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
 
-More: :ref:`What's new in this guide ... <whats-new>`
 
 .. toctree::
    :hidden:
