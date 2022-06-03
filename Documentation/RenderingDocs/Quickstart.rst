@@ -63,17 +63,25 @@ Commands to render the documentation
    generated documentation is located or use one of these commands
    to directly open the start page in a browser:
 
-   Linux::
+   .. tabs::
 
-      xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+      .. group-tab:: Linux
 
-   MacOS::
+         .. code-block:: bash
 
-      open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+            xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
-   Windows::
+      .. group-tab:: MacOS
 
-      start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+         .. code-block:: bash
+
+            open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
+      .. group-tab:: Windows
+
+         .. code-block:: powershell
+
+            start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 
 Explanations
