@@ -298,6 +298,7 @@ Linking to PHP entities
 *  :php:ns:`TYPO3\\CMS\\Core\\Exception\\Page`
 *  :php:class:`Vendor\\Extension\\DateTime`
 *  :php:class:`TYPO3\\CMS\\Seo\\Event\\ModifyUrlForCanonicalTagEvent`
+*  :php:interface:`TYPO3\\CMS\\Core\\Error\\ErrorHandlerInterface`
 *  :php:func:`Vendor\\Extension\\DateTime::setTime()`
 *  :php:const:`Vendor\\Extension\\DateTime::ATOM`
 
@@ -307,6 +308,7 @@ Linking to PHP entities
    *  :php:ns:`TYPO3\\CMS\\Core\\Exception\\Page`
    *  :php:class:`Vendor\\Extension\\DateTime`
    *  :php:class:`TYPO3\\CMS\\Seo\\Event\\ModifyUrlForCanonicalTagEvent`
+   *  :php:interface:`TYPO3\\CMS\\Core\\Error\\ErrorHandlerInterface`
    *  :php:func:`Vendor\\Extension\\DateTime::setTime()`
    *  :php:const:`Vendor\\Extension\\DateTime\\ATOM`
 
