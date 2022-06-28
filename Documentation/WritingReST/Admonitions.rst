@@ -59,22 +59,6 @@ Tip
 You may also use the admonition **hint**, but this is very similar
 and **tip** is more commonly used in the documentation.
 
-
-.. index:: reST directives; important
-
-Important
----------
-
-
-.. code-block:: rest
-
-   .. important::
-      Some important information which should be considered.
-
-.. important::
-   Some important information which should be considered.
-
-
 .. index:: reST directives; warning
 
 Warning
