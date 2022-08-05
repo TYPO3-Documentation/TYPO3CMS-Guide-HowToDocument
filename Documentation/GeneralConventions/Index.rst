@@ -60,6 +60,7 @@ be found in the subchapters.
 
       :doc:`ext_core:Changelog/10.0/Feature-88770-PSR-14BasedEventDispatcher`
 
+
 #. Coding guidelines for headers
 
    Headline underline should follow :ref:`rest-cgl-headline-underlines`::
@@ -85,9 +86,9 @@ be found in the subchapters.
 
    Example::
 
-      :guilabel:`ADMIN TOOLS > Extensions`
+      :guilabel:`Admin Tools > Extensions`
 
-   This will look like this: :guilabel:`ADMIN TOOLS > Extensions`
+   This will look like this: :guilabel:`Admin Tools > Extensions`
 
 
 
