@@ -158,7 +158,8 @@ T
 `TYPO3 Core`, `Core`,
 `TYPO3 Core Engine`,
 `TYPO3 Core Team`, `Core Team`,
-`TYPO3 Core Engine`
+`TYPO3 Core Engine`,
+`TYPO3 v11`, `TYPO3 v11.5`, `TYPO3 v11 LTS`, `TYPO3 version 11`,
 `TypoScript`,
 
 U
