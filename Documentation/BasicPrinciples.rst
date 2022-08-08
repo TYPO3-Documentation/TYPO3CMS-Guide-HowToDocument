@@ -13,12 +13,12 @@ Introduction to TYPO3 documentation
 For an excellent introduction, please see the 3 part series on Marcus
 Schwemer's blog TYPO3 Worx:
 
-*  `GUIDE TO TYPO3 DOCUMENTATION – PART 1: THE USER-INTERFACE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-part-1-the-ui/>`__
-*  `GUIDE TO TYPO3 DOCUMENTATION – PART 2: CONTENT STRUCTURE <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-content-structure/>`__
+*  `Guide to TYPO3 Documentation – Part 1: The User-Interface <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-part-1-the-ui/>`__
+*  `Guide to TYPO3 Documentation – Part 2: Content Structure <https://typo3worx.eu/2017/01/guide-to-typo3-documentation-content-structure/>`__
 
 .. important::
 
-   Please note that the section "CONVERT REST TO “READABLE” FORMATS" in part 3 is
+   Please note that the section "Contribution and ReST Helpers" in part 3 is
    slightly outdated. Currently, using the Docker container for :ref:`rendering
    <rendering-docs>` is the recommended approach. If you edit on GitHub directly,
    GitHub preview should be sufficient for making small changes.
