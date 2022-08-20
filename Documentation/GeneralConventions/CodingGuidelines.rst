@@ -36,13 +36,13 @@ Whitespace and indentation
 
 *  remove white space from the end of lines (= no trailing tabs or spaces)
 *  don't use tabs
-*  one indentation level consists of **three spaces**
-*  code examples use three spaces as indentation level as well
+*  one indentation level consists of **four spaces**
+*  code examples use four spaces as indentation level as well
 
 .. note::
 
    Currently, the documentation is not always indented consistently.
-   In some manuals, an indentation level of 4 spaces was used instead.
+   In some manuals, an indentation level of 3 spaces was used instead.
    We currently recommend to use what has been used on the page you
    are currently editing.
 
@@ -57,7 +57,7 @@ Example:
       :class: with-shadow
 
 
-*  lines 2-4 must be indented one level (3 spaces)
+*  lines 2-4 must be indented one level (4 spaces)
 
 
 .. index:: reST; Line length
@@ -123,7 +123,7 @@ This sample .editorconfig will instruct your editor / IDE to:
 
 *  use utf8 as encoding (line 7)
 *  use spaces instead of tabs (line 11)
-*  use 3 spaces for indenting (line 12)
+*  use 4 spaces for indenting (line 12)
 *  remove trailing whitespace (line 10)
 
 

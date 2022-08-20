@@ -11,14 +11,14 @@ This section contains information on bullet lists and numbered lists.
 A text block which begins with a "\*", "+", "-", "•", "‣", or "⁃",
 followed by whitespace, is a bullet list item.
 
-*  Each item of a list should start with a `*` or `-` and 2 spaces after it
+*  Each item of a list should start with a `*` or `-` and 3 spaces after it
 *  Lists should have an empty line before and after
 *  Sublists should also have an empty line before and after
-*  Indent sublists with 3 spaces
+*  Indent sublists with 4 spaces
 
 Bullet lists:
 
-*  Each item of a list should start with a `*` or `-` and 2 spaces after it
+*  Each item of a list should start with a `*` or `-` and 3 spaces after it
 
 Numbered lists:
 
@@ -101,7 +101,7 @@ Example 3: List with sublist and whitespace error
 
 .. important::
 
-   Each asterix `*` has to be followed by two spaces. 
+   Each asterix `*` has to be followed by three spaces.
    If you only use one the sublist is interpreted like
    a citation.
 
@@ -122,7 +122,7 @@ Example 3: List with sublist and whitespace error
 
    * subitem 3.1
    * subitem 3.2
-   
+
 * item 4
 
 

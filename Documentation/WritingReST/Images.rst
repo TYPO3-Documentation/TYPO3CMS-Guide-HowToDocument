@@ -29,7 +29,7 @@ Use `.. figure::` if you want to add a caption to your image.
 You can use the same parameters in figure that are defined for image.
 
 The
-additional parameters must be indented one level (add 3 spaces to indent).
+additional parameters must be indented one level (add 4 spaces to indent).
 
 Recommended parameters for images:
 

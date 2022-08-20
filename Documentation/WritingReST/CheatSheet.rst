@@ -227,10 +227,10 @@ For further dummy domains use subdomains of the domains listed above such as
 To create a bullet list:
 
 *  add a blank line before and after the list
-*  indent the list item text by 3 spaces - including the item sign
+*  indent the list item text by 4 spaces - including the item sign
 *  to create a nested list:
 
-   *  indent the items by 3 spaces (left-align with parent item text)
+   *  indent the items by 4 spaces (left-align with parent item text)
    *  apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
@@ -242,10 +242,10 @@ Source:
    To create a bullet list:
 
    *  add a blank line before and after the list
-   *  indent the list item text by 3 spaces - including the item sign
+   *  indent the list item text by 4 spaces - including the item sign
    *  to create a nested list:
 
-      *  indent the items by 3 spaces (left-align with parent item text)
+      *  indent the items by 4 spaces (left-align with parent item text)
       *  apply rules of parent list (blank lines, item text indentation, ..)
 
    More text.
@@ -261,10 +261,10 @@ Source:
 To create a numbered list:
 
 #. add a blank line before and after the list
-#. indent the list item text by 3 spaces - including the item sign
+#. indent the list item text by 4 spaces - including the item sign
 #. to create a nested list:
 
-   #. indent the items by 3 spaces (left-align with parent item text)
+   #. indent the items by 4 spaces (left-align with parent item text)
    #. apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
@@ -276,10 +276,10 @@ Source:
    To create a numbered list:
 
    #. add a blank line before and after the list
-   #. indent the list item text by 3 spaces - including the item sign
+   #. indent the list item text by 4 spaces - including the item sign
    #. to create a nested list:
 
-      #. indent the items by 3 spaces (left-align with parent item text)
+      #. indent the items by 4 spaces (left-align with parent item text)
       #. apply rules of parent list (blank lines, item text indentation, ..)
 
    More text.
@@ -322,7 +322,7 @@ This uses the **directive** "code-block" (line 1)
 .. important::
 
    Make sure to indent correctly. The lines of the code-block (line 3+)
-   must be indented (3 spaces).
+   must be indented (4 spaces).
 
 
 Literal Block (`::`)
