@@ -10,7 +10,7 @@ Problems with indents
 Common mistake #1: Incorrect indents
 ====================================
 
-Always indent correctly (3 spaces per level)
+Always indent correctly (4 spaces per level)
 
 
 Correct syntax

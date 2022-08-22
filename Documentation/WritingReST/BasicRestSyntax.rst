@@ -49,12 +49,12 @@ In reST, the indentation of a block of lines is often important. The exact numbe
 which are used to indent a block of text, does not matter. But what does matter, is that all lines
 of the block are indented with exactly the same number of spaces.
 
-We use the convention of 3 spaces per indenting level (see :ref:`cgl-indenting`).
+We use the convention of 4 spaces per indenting level (see :ref:`cgl-indenting`).
 
 Let's look at an example:
 
 The following directive inserts an image in the rendered page. All lines beginning with line
-two must be indented to the same leve. The convention is to use three spaces for one
+two must be indented to the same leve. The convention is to use 4 spaces for one
 level of indentation.
 
 .. code-block:: rest

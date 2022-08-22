@@ -43,7 +43,7 @@ Workflow #1: "Edit on GitHub"
 5. Make your changes:
 
    You will be presented with a window where you can make your changes.
-   The *"Indent mode: Spaces"* and *"Indent size: 3"*
+   The *"Indent mode: Spaces"* and *"Indent size: 4"*
    values should already be set - do not alter these.
 
    .. image:: ../images/github-edit-window.png
