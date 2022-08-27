@@ -1,0 +1,7 @@
+..  code-block:: md
+    :caption: Documentation/README.md
+
+    [![Latest Stable Version](https://poser.pugx.org/<package-name>/v/stable)](https://extensions.typo3.org/extension/<extension-key>/)
+    [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg?style=flat-square)](https://get.typo3.org/version/11)
+    [![Total Downloads](https://poser.pugx.org/<package-name>/d/total)](https://packagist.org/packages/<package-name>)
+    [![Monthly Downloads](https://poser.pugx.org/<package-name>/d/monthly)](https://packagist.org/packages/<package-name>)

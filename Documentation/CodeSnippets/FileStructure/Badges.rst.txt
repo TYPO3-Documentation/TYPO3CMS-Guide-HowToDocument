@@ -1,0 +1,18 @@
+..  code-block:: rst
+    :caption: Documentation/README.rst
+
+    ..  image:: https://poser.pugx.org/<package-name>/v/stable
+        :alt: Latest Stable Version
+        :target: https://extensions.typo3.org/extension/<extension-key>/
+
+    ..  image:: https://img.shields.io/badge/TYPO3-11-orange.svg
+        :alt: TYPO3 11
+        :target: https://get.typo3.org/version/11
+
+    ..  image:: https://poser.pugx.org/<package-name>/d/total
+        :alt: Total Downloads
+        :target: https://packagist.org/packages/<package-name>
+
+    ..  image:: https://poser.pugx.org/<package-name>/d/monthly
+        :alt: Monthly Downloads
+        :target: https://packagist.org/packages/<package-name>

@@ -12,11 +12,11 @@ be rendered with the :ref:`rendering toolchain <rendering-docs>`. The toolchain
 itself uses a `Sphinx theme <https://typo3-documentation.github.io/sphinx_typo3_theme/>`__
 for converting reStructuredText (reST) or Markdown to HTML.
 
-.. contents:: Table of Contents:
-   :backlinks: top
-   :class: compact-list
-   :depth: 2
-   :local:
+..  contents:: Table of Contents:
+    :backlinks: top
+    :class: compact-list
+    :depth: 2
+    :local:
 
 
 .. _file-structure-general:
@@ -26,18 +26,18 @@ General
 
 In order for the documentation to be rendered, you need at least
 
-#. an index file in one of the following locations in weighted order:
+#.  an index file in one of the following locations in weighted order:
 
-   -  :file:`Documentation/Index.rst`
-   -  :file:`Documentation/index.rst`
-   -  :file:`Documentation/Index.md`
-   -  :file:`Documentation/index.md`
-   -  :file:`README.rst`
-   -  :file:`README.md`
+    -  :file:`Documentation/Index.rst`
+    -  :file:`Documentation/index.rst`
+    -  :file:`Documentation/Index.md`
+    -  :file:`Documentation/index.md`
+    -  :file:`README.rst`
+    -  :file:`README.md`
 
-#. and a theme configuration file under
+#.  and a theme configuration file under
 
-   - :file:`Documentation/Settings.cfg`.
+    - :file:`Documentation/Settings.cfg`.
 
 Further conventions are:
 
@@ -90,8 +90,8 @@ markup languages are supported by the common VCS hosts.
 .. _readme-rst:
 .. _about-file:
 
-README.rst
-----------
+Entry point: :file:`README.rst`
+-------------------------------
 
 Full documentation contains both a README.rst and a Documentation/Index.rst
 file. To avoid redundancy in both places, the README.rst in this case usually
@@ -100,35 +100,28 @@ repository, the published documentation and - if available - the TYPO3 Extension
 Repository (TER) page to guide the reader to the next steps. This could be for
 example:
 
-.. code-block:: rst
 
-   <badges>
+..  tabs::
 
-   =========
-   <project>
-   =========
+    ..  group-tab:: With placeholders
 
-   <abstract>
+        ..  include:: /CodeSnippets/FileStructure/ReadmeRst.rst.txt
 
-   :Repository:  https://<vcs-repository>
-   :Read online: https://docs.typo3.org/p/<package-name>/main/en-us/
-   :TER:         https://extensions.typo3.org/extension/<extension-key>/
+    ..  group-tab:: Third party extension
 
-or as README.md alternatively:
+        ..  include:: /CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
 
-.. code-block:: md
+    ..  group-tab:: System extension
 
-   <badges>
+        ..  include:: /CodeSnippets/FileStructure/Dashboard/IndexRst.rst.txt
 
-   # <project>
+    ..  group-tab:: Official manual
 
-   <abstract>
+        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IndexRst.rst.txt
 
-   |                  | URL                                                           |
-   |------------------|---------------------------------------------------------------|
-   | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
-   | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
+    ..  group-tab:: Markdown
+
+        ..  include:: /CodeSnippets/FileStructure/ReadmeMd.rst.txt
 
 
 .. _readme-rst-badges:
@@ -140,32 +133,16 @@ Point out interesting statistics of your extension or package in the *badges*
 placeholder, which should include the latest release version, the total and
 monthly download rate and the supported TYPO3 versions:
 
-.. code-block:: rst
+..  tabs::
 
-   .. image:: https://poser.pugx.org/<package-name>/v/stable
-      :alt: Latest Stable Version
-      :target: https://extensions.typo3.org/extension/<extension-key>/
+    ..  group-tab:: Rest
 
-   .. image:: https://img.shields.io/badge/TYPO3-11-orange.svg
-      :alt: TYPO3 11
-      :target: https://get.typo3.org/version/11
+        ..  include:: /CodeSnippets/FileStructure/Badges.rst.txt
 
-   .. image:: https://poser.pugx.org/<package-name>/d/total
-      :alt: Total Downloads
-      :target: https://packagist.org/packages/<package-name>
+    ..  group-tab:: Markdown
 
-   .. image:: https://poser.pugx.org/<package-name>/d/monthly
-      :alt: Monthly Downloads
-      :target: https://packagist.org/packages/<package-name>
+        ..  include:: /CodeSnippets/FileStructure/BadgesMd.rst.txt
 
-or for the README.md alternatively:
-
-.. code-block:: md
-
-   [![Latest Stable Version](https://poser.pugx.org/<package-name>/v/stable)](https://extensions.typo3.org/extension/<extension-key>/)
-   [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg?style=flat-square)](https://get.typo3.org/version/11)
-   [![Total Downloads](https://poser.pugx.org/<package-name>/d/total)](https://packagist.org/packages/<package-name>)
-   [![Monthly Downloads](https://poser.pugx.org/<package-name>/d/monthly)](https://packagist.org/packages/<package-name>)
 
 Remove this field if the project is no extension or package.
 
@@ -202,66 +179,39 @@ project with as many keywords as possible in as few sentences as possible. It
 helps the decision maker to quickly decide whether the project is worth
 considering and whether or not to read the full documentation. It should be
 aligned with the abstract of Index.rst and - if available - the description
-fields of ext_emconf.php and composer.json.
+fields of :file:`ext_emconf.php` and :file:`composer.json`.
 
 
 .. index:: File structure; Documentation/Index.rst, Index.rst
 .. _index-rst:
 .. _start-file:
 
-Documentation/Index.rst
------------------------
+Startpage: :file:`Documentation/Index.rst`
+------------------------------------------
 
-The documentation index file at Documentation/Index.rst is the starting
+The documentation index file at :file:`Documentation/Index.rst` is the starting
 point of the main documentation. It usually contains general information about
 the manual, a summary of its purpose and a table of contents that refers to
 further pages. Besides these basic parts of this file, it includes - like any
-other reST file - the reST style file Includes.rst.txt:
+other reST file - the reST style file :file:`Includes.rst.txt`:
 
-.. code-block:: rst
+..  tabs::
 
-   .. include:: /Includes.rst.txt
+    ..  group-tab:: With placeholders
 
-   =========
-   <project>
-   =========
+        ..  include:: /CodeSnippets/FileStructure/IndexRst.rst.txt
 
-   :Extension key:
-      <extension-key>
+    ..  group-tab:: Third party extension
 
-   :Package name:
-      <package-name>
+        ..  include:: /CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
 
-   :Version:
-      |release|
+    ..  group-tab:: System extension
 
-   :Language:
-      en
+        ..  include:: /CodeSnippets/FileStructure/Dashboard/IndexRst.rst.txt
 
-   :Author:
-      <author>
+    ..  group-tab:: Official manual
 
-   :License:
-      This document is published under the
-      `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
-      license.
-
-   :Rendered:
-      |today|
-
-   ----
-
-   <abstract>
-
-   ----
-
-   **Table of Contents:**
-
-   <table-of-contents>
-
-   .. Meta Menu
-
-   <meta-menu>
+        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IndexRst.rst.txt
 
 All variables of the `|name|` pattern are automatically replaced by the Sphinx
 theme, partly from Settings.cfg, partly by internal calculations. For more
@@ -280,7 +230,7 @@ Project
 
 The *project* placeholder corresponds best to the project property of
 Settings.cfg and - in case of a TYPO3 extension documentation - to the title
-field of ext_emconf.php.
+field of :file:`ext_emconf.php`.
 
 
 .. _index-rst-extension-key:
@@ -322,8 +272,9 @@ Abstract
 ^^^^^^^^
 
 The *abstract* placeholder contains a short and precise description of the
-project. It should follow the abstract of README.rst and - if available - the
-description fields of ext_emconf.php and composer.json.
+project. It should follow the abstract of :file:`README.rst` and - if
+available - the description fields of :file:`ext_emconf.php` and
+:file:`composer.json.`
 
 
 .. _index-rst-table-of-contents:
@@ -336,17 +287,17 @@ which - in combination with the abstract - should give the reader a quick
 overview. The TOC is built with the
 :doc:`toctree directive <WritingReST/MenuHierarchy>` as follows:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. toctree::
-      :maxdepth: 2
-      :titlesonly:
+    ..  toctree::
+        :maxdepth: 2
+        :titlesonly:
 
-      Introduction/Index
-      Installation/Index
-      Configuration/Index
-      Usage/Index
-      Contribution/Index
+        Introduction/Index
+        Installation/Index
+        Configuration/Index
+        Usage/Index
+        Contribution/Index
 
 The *maxdepth* property limits the depth of the page tree and *titlesonly*
 specifies that only the titles of the pages are displayed, no other headings.
@@ -395,29 +346,29 @@ such as the :ref:`Sitemap.rst <sitemap-rst>` and the
 :ref:`genindex.rst <genindex-rst>`, which do not provide content specific to
 this documentation, as follows:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. toctree::
-      :hidden:
+    ..  toctree::
+        :hidden:
 
-      Sitemap
-      genindex
+        Sitemap
+        genindex
 
 
 .. index:: File structure; Documentation/Includes.rst.txt, Includes.rst.txt
 .. _includes-rst-txt:
 
-Documentation/Includes.rst.txt
-------------------------------
+Global rst settings: :file:`Documentation/Includes.rst.txt`
+-----------------------------------------------------------
 
 Default style configurations are bundled in a central
 Documentation/Includes.rst.txt file and included at the beginning of
 each reST file. An absolute file path should be passed to use the same include
 statement on every page, regardless of which folder level the reST file is in:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. include:: /Includes.rst.txt
+    ..  include:: /Includes.rst.txt
 
 Normally, the include directive is used with files with the extension *.txt*.
 To help your IDE associate reST syntax highlighting with the included files,
@@ -428,43 +379,23 @@ text roles that allow :ref:`inline code <Inline-Code>` to be written. This is a
 typical Includes.rst.txt that provides text roles for most programming and
 markup languages used in a TYPO3 project:
 
-.. code-block:: rst
+..  tabs::
 
-   .. More information about this file:
-   .. https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#includes-rst-txt
+    ..  group-tab:: With placeholders
 
-   .. ----------
-   .. text roles
-   .. ----------
+        ..  include:: /CodeSnippets/FileStructure/IncludesRstTxt.rst.txt
 
-   .. role:: aspect(emphasis)
-   .. role:: bash(code)
-   .. role:: css(code)
-   .. role:: html(code)
-   .. role:: js(code)
-   .. role:: php(code)
-   .. role:: rst(code)
-   .. role:: sep(strong)
-   .. role:: sql(code)
+    ..  group-tab:: Third party extension
 
-   .. role:: tsconfig(code)
-      :class: typoscript
+        ..  include:: /CodeSnippets/FileStructure/Examples/IncludesRstTxt.rst.txt
 
-   .. role:: typoscript(code)
-   .. role:: xml(code)
-      :class: html
+    ..  group-tab:: System extension
 
-   .. role:: yaml(code)
+        ..  include:: /CodeSnippets/FileStructure/Dashboard/IncludesRstTxt.rst.txt
 
-   .. default-role:: code
+    ..  group-tab:: Official manual
 
-   .. ---------
-   .. highlight
-   .. ---------
-
-   .. By default, code blocks use PHP syntax highlighting
-
-   .. highlight:: php
+        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IncludesRstTxt.rst.txt
 
 The text roles that have been assigned a specific class mimic the syntax
 highlighting of another language. This is done to avoid confusing the reader
@@ -476,30 +407,30 @@ marked with `:xml:`, but under the hood it uses the same highlighting as
 .. index:: File structure; Documentation/Sitemap.rst, Sitemap.rst
 .. _sitemap-rst:
 
-Documentation/Sitemap.rst
--------------------------
+Optional: :file:`Documentation/Sitemap.rst`
+-------------------------------------------
 
-The Sitemap.rst contains the sitemap of the documentation. It is an almost empty
-file that is automatically filled by the Sphinx template.
+The :file:`Sitemap.rst` contains the sitemap of the documentation.
+It is an almost empty file that is automatically filled by the Sphinx template.
 
-.. code-block:: rst
+..  code-block:: rst
 
-   :template: sitemap.html
+    :template: sitemap.html
 
-   .. include:: /Includes.rst.txt
+    .. include:: /Includes.rst.txt
 
-   =======
-   Sitemap
-   =======
+    =======
+    Sitemap
+    =======
 
-   .. The sitemap.html template will insert here the page tree automatically.
+    .. The sitemap.html template will insert here the page tree automatically.
 
 
 .. index:: File structure; Documentation/genindex.rst, genindex.rst
 .. _genindex-rst:
 
-Documentation/genindex.rst
---------------------------
+Optional: Automatic index: :file:`Documentation/genindex.rst`
+-------------------------------------------------------------
 
 The genindex.rst shows a list of all indexes of the documentation pages. It is
 an almost empty file that is automatically filled by Sphinx. An index can be
@@ -509,99 +440,48 @@ In addition, some content elements automatically generate indexes, such as the
 :doc:`configuration values <WritingReST/Confval>` and
 :doc:`PHP domain <WritingReST/Phpdomain>` elements.
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. include:: /Includes.rst.txt
+    .. include:: /Includes.rst.txt
 
-   =====
-   Index
-   =====
+    =====
+    Index
+    =====
 
-   .. Sphinx will insert here the general index automatically.
+    .. Sphinx will insert here the general index automatically.
 
 
 .. index:: File structure; Documentation/Settings.cfg, Settings.cfg
 .. _settings-cfg:
 
-Documentation/Settings.cfg
---------------------------
+Settings: :file:`Documentation/Settings.cfg`
+----------------------------------
 
 This file contains the configuration for the Sphinx theme. The configuration
 values are used to fill placeholders in the theme. It consists of sections
 starting with a keyword in brackets, e.g. ``[general]``: Make sure that all
 properties are in the correct section!
 
-.. code-block:: none
+..  tabs::
 
-   # More information about this file:
-   # https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#settings-cfg
+    ..  group-tab:: With placeholders
 
-   [general]
+        ..  include:: /CodeSnippets/FileStructure/SettingsCfg.rst.txt
 
-   project     = <project>
-   version     = <version>
-   release     = <release>
-   copyright   = <copyright>
+        The placeholders of pattern `<name>` must be replaced manually by the author of
+        the documentation, and commented or set empty if not required.
 
-   [html_theme_options]
+    ..  group-tab:: Third party extension
 
-   # "Edit on GitHub" button
-   github_repository    = <github-repository>
-   github_branch        = <github-branch>
+        ..  include:: /CodeSnippets/FileStructure/Examples/SettingsCfg.rst.txt
 
-   # Footer links
-   project_home         = <project-home>
-   project_contact      = <project-contact>
-   project_repository   = <project-repository>
-   project_issues       = <project-issues>
-   project_discussions  = <project-discussions>
+    ..  group-tab:: System extension
 
-   use_opensearch       = <use-opensearch>
+        ..  include:: /CodeSnippets/FileStructure/Dashboard/SettingsCfg.rst.txt
 
-   [intersphinx_mapping]
+    ..  group-tab:: Official manual
 
-   # Official TYPO3 manuals
-   # h2document     = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/
-   # t3cheatsheets  = https://docs.typo3.org/m/typo3/docs-cheatsheets/main/en-us/
-   # t3contribute   = https://docs.typo3.org/m/typo3/guide-contributionworkflow/main/en-us/
-   # t3coreapi      = https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/
-   # t3docteam      = https://docs.typo3.org/m/typo3/team-t3docteam/main/en-us/
-   # t3editors      = https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/
-   # t3extbasebook  = https://docs.typo3.org/m/typo3/book-extbasefluid/main/en-us/
-   # t3extexample   = https://docs.typo3.org/m/typo3/guide-example-extension-manual/main/en-us/
-   # t3home         = https://docs.typo3.org/
-   # t3install      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
-   # t3l10n         = https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/
-   # t3sitepackage  = https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/
-   # t3start        = https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/
-   # t3tca          = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
-   # t3translate    = https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/
-   # t3tsconfig     = https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/
-   # t3tsref        = https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/
-   # t3ts45         = https://docs.typo3.org/m/typo3/tutorial-typoscript-in-45-minutes/main/en-us/
-   # t3viewhelper   = https://docs.typo3.org/other/typo3/view-helper-reference/main/en-us/
-   # t3upgrade      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
-
-   # TYPO3 system extensions
-   # ext_adminpanel     = https://docs.typo3.org/c/typo3/cms-adminpanel/main/en-us/
-   # ext_core           = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
-   # ext_dashboard      = https://docs.typo3.org/c/typo3/cms-dashboard/main/en-us/
-   # ext_felogin        = https://docs.typo3.org/c/typo3/cms-felogin/main/en-us/
-   # ext_form           = https://docs.typo3.org/c/typo3/cms-form/main/en-us/
-   # ext_fsc            = https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us/
-   # ext_impexp         = https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/
-   # ext_indexed_search = https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us/
-   # ext_linkvalidator  = https://docs.typo3.org/c/typo3/cms-linkvalidator/main/en-us/
-   # ext_lowlevel       = https://docs.typo3.org/c/typo3/cms-lowlevel/main/en-us/
-   # ext_recycler       = https://docs.typo3.org/c/typo3/cms-recycler/main/en-us/
-   # ext_redirects      = https://docs.typo3.org/c/typo3/cms-redirects/main/en-us/
-   # ext_rte_ckeditor   = https://docs.typo3.org/c/typo3/cms-rte-ckeditor/main/en-us/
-   # ext_scheduler      = https://docs.typo3.org/c/typo3/cms-scheduler/main/en-us/
-   # ext_seo            = https://docs.typo3.org/c/typo3/cms-seo/main/en-us/
-   # ext_workspaces     = https://docs.typo3.org/c/typo3/cms-workspaces/main/en-us/
-
-The placeholders of pattern `<name>` must be replaced manually by the author of
-the documentation, and commented or set empty if not required.
+        ..  include:: /CodeSnippets/FileStructure/GettingStarted/SettingsCfg.rst.txt
 
 .. _settings-cfg-project:
 
@@ -641,9 +521,9 @@ kept anyway to satisfy internal requirements.
 
 Normally both properties are set to the same value, either
 
-*  `<major>.<minor>`, e.g. "11.5", or
-*  `<major>.<minor>.<fix>`, e.g. "11.5.1", or
-*  `main (development)`.
+*   `<major>.<minor>`, e.g. "11.5", or
+*   `<major>.<minor>.<fix>`, e.g. "11.5.1", or
+*   `main (development)`.
 
 For the release switch entries, only the major and minor versions are
 considered.
@@ -658,11 +538,11 @@ The *copyright* property contains the copyright claim of the project. It is
 displayed in the footer as "© Copyright <copyright>" and has in most use cases
 of the TYPO3 world the values:
 
-#. `since <creation-year> by the TYPO3 contributors`,
-   e.g. "since 1999 by the TYPO3 contributors" (official TYPO3 manuals and TYPO3
-   system extensions)
-#. `since <creation-year> by <vendor> & contributors`,
-   e.g. "since 1999 by dkd & contributors" (third-party TYPO3 extensions)
+#.  `since <creation-year> by the TYPO3 contributors`,
+    for example "since 1999 by the TYPO3 contributors" (official TYPO3 manuals and TYPO3
+    system extensions)
+#.  `since <creation-year> by <vendor> & contributors`,
+    for example "since 1999 by dkd & contributors" (third-party TYPO3 extensions)
 
 
 .. _settings-cfg-github-workflow:
@@ -678,9 +558,9 @@ page file.
 If the project is hosted on GitHub and public contributions are desired, these
 properties should be set accordingly:
 
-1. `<user>/<repository>`, for example to "TYPO3-Documentation/TYPO3CMS-Reference-TCA"
-   or "FriendsOfTYPO3/extension_builder".
-2. `<branch>`, for example on "main" or "10.x".
+1.  `<user>/<repository>`, for example to "TYPO3-Documentation/TYPO3CMS-Reference-TCA"
+    or "FriendsOfTYPO3/extension_builder".
+2.  `<branch>`, for example on "main" or "10.x".
 
 
 .. _settings-cfg-footer-links:
@@ -692,35 +572,35 @@ The *project_<topic>* properties provide all links with the name "<Topic>" in
 the footer of the documentation that guide the user to other aspects of the
 project than the documentation, for example to the project page in the TER:
 
-*  *project_home* is set to the homepage URL of the project. For official TYPO3
-   manuals this is the public base URL at docs.typo3.org, for public TYPO3
-   extensions this is the associated TER page or a custom project website, for
-   example
+*   *project_home* is set to the homepage URL of the project. For official TYPO3
+    manuals this is the public base URL at docs.typo3.org, for public TYPO3
+    extensions this is the associated TER page or a custom project website, for
+    example
 
-   *  "\https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/" or
-   *  "\https://extensions.typo3.org/extension/news".
+    *  "\https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/" or
+    *  "\https://extensions.typo3.org/extension/news".
 
-*  *project_contact* is usually set to an email address or Slack channel URL of
-   the team behind the project, for example
+*   *project_contact* is usually set to an email address or Slack channel URL of
+    the team behind the project, for example
 
-   *  "\mailto:documentation\@typo3.org" or
-   *  "\https://typo3.slack.com/archives/C028JEPJL".
+    *  "\mailto:documentation\@typo3.org" or
+    *  "\https://typo3.slack.com/archives/C028JEPJL".
 
-*  *project_repository* is set to the repository of the project's VCS, for
-   example
+*   *project_repository* is set to the repository of the project's VCS, for
+    example
 
-   *  "\https://github.com/FriendsOfTYPO3/extension_builder".
+    *  "\https://github.com/FriendsOfTYPO3/extension_builder".
 
-*  *project_issues* is set to the location where project issues are to be
-   created and edited, for example
+*   *project_issues* is set to the location where project issues are to be
+    created and edited, for example
 
-   *  "\https://github.com/FriendsOfTYPO3/extension_builder/issues".
+    *  "\https://github.com/FriendsOfTYPO3/extension_builder/issues".
 
-*  *project_discussions* is used in the rare case that project-related
-   discussions take place in locations other than those defined by the
-   project_contact and project_issues properties, for example
+*   *project_discussions* is used in the rare case that project-related
+    discussions take place in locations other than those defined by the
+    project_contact and project_issues properties, for example
 
-   *  "\https://github.com/FriendsOfTYPO3/extension_builder/discussions".
+    *  "\https://github.com/FriendsOfTYPO3/extension_builder/discussions".
 
 
 .. _settings-cfg-use-opensearch:
@@ -751,20 +631,20 @@ For example, if you uncomment the *t3start* mapping in the Settings.cfg above,
 the :samp:`https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Extensions/Management.html`
 page can be referenced with
 
-.. code-block:: rst
+..  code-block:: rst
 
-   :doc:`t3start:Extensions/Management`
+    :doc:`t3start:Extensions/Management`
 
 and the fragment :samp:`#install-extension-with-composer` on the same page with
 
-.. code-block:: rst
+..  code-block:: rst
 
-   :ref:`t3start:install-extension-with-composer`
+    :ref:`t3start:install-extension-with-composer`
 
 The prerequisite is that the target manual is also compiled with Sphinx and
 provides an objects.inv file in the root of the documentation that
 contains all reference targets. Since this file is binary, the rendering
-toolchain provides a twin objects.inv.json file that allows the reader
+toolchain provides a twin :file:`objects.inv.json` file that allows the reader
 to easily look up reference targets. An example of this is this
 `production objects.inv.json <https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/objects.inv.json>`__.
 
@@ -780,8 +660,8 @@ Single file documentation
 =========================
 
 This setup is not recommended, but can be handy for those who want to publish
-their documentation on docs.typo3.org and want to keep their mono README.rst
-documentation style for now.
+their documentation on docs.typo3.org and want to keep their mono
+:file:`README.rst` documentation style for now.
 
 This structure allows the author to minimize effort by maintaining a single
 documentation file that is interpreted simultaneously by the VCS host
@@ -789,8 +669,8 @@ and the Sphinx theme. On the other hand, the author only has
 the reduced set of content elements supported by the former, rather than using
 the theme's rich selection of :ref:`custom content elements <rest-reference>`.
 
-Of course, you can also use a README.md instead of a README.rst file if you
-prefer its syntax.
+Of course, you can also use a :file:`README.md` instead of a :file:`README.rst`
+file if you prefer its syntax.
 
 .. code-block:: none
 
@@ -802,63 +682,25 @@ prefer its syntax.
 
 .. _single-file-documentation-readme-rst:
 
-README.rst
-----------
+:file:`README.rst`
+------------------
 
-For single file documentation, the README.rst contains the entire documentation.
+For single file documentation, the :file:`README.rst` contains the entire
+documentation.
+
 This should also contain links to all aspects of the project to guide the reader
 to the next steps, for example
 
-.. code-block:: rst
+..  tabs::
 
-   <badges>
+    ..  group-tab:: Rest
 
-   =========
-   <project>
-   =========
+        ..  include:: /CodeSnippets/FileStructure/ReadmeRstStandalone.rst.txt
 
-   <abstract>
+    ..  group-tab:: Markdown
 
-   Installation
-   ============
-   ..
+        ..  include:: /CodeSnippets/FileStructure/ReadmeMdStandalone.rst.txt
 
-   Configuration
-   =============
-   ..
-
-   Usage
-   =====
-   ..
-
-   :Repository:  https://<vcs-repository>
-   :Read online: https://docs.typo3.org/p/<package-name>/main/en-us/
-   :TER: https://extensions.typo3.org/extension/<extension-key>/
-
-or as README.md alternatively:
-
-.. code-block:: md
-
-   <badges>
-
-   # <project>
-
-   <abstract>
-
-   ## Installation
-   ..
-
-   ## Configuration
-   ..
-
-   ## Usage
-   ..
-
-   |                  | URL                                                           |
-   |------------------|---------------------------------------------------------------|
-   | **Repository:**  | https://<vcs-repository>                                      |
-   | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
-   | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
 
 For more details, see the explanation of :ref:`README.rst <readme-rst>` in the
 full documentation section.
@@ -866,8 +708,8 @@ full documentation section.
 
 .. _single-file-documentation-settings-cfg:
 
-Documentation/Settings.cfg
---------------------------
+:file:`Documentation/Settings.cfg`
+----------------------------------
 
 This file contains the configuration for the Sphinx theme. See the explanation
 of :ref:`Settings.cfg <settings-cfg>` in the full documentation section for more
@@ -895,18 +737,18 @@ wild.
 Official TYPO3 manuals
 ----------------------
 
-.. table::
-   :widths: 25, 75
+..  table::
+    :widths: 25, 75
 
-   =========================  ==================================================
-   Project                    Links
-   =========================  ==================================================
-   TSconfig Reference (full)  `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig>`__ |
+    =========================  ==================================================
+    Project                    Links
+    =========================  ==================================================
+    TSconfig Reference (full)  `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig>`__ |
                               `Settings.cfg <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Settings.cfg>`__ |
                               `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Index.rst>`__ |
                               `Includes.rst.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Includes.rst.txt>`__ |
                               `Read online <https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/>`__
-   =========================  ==================================================
+    =========================  ==================================================
 
 
 .. _examples-typo3-system-extension-documentation:
@@ -914,18 +756,18 @@ Official TYPO3 manuals
 TYPO3 system extension documentation
 ------------------------------------
 
-.. table::
-   :widths: 25, 75
+..  table::
+    :widths: 25, 75
 
-   ===========================  ================================================
-   Project                      Links
-   ===========================  ================================================
-   Import / Export (full)       `README.rst <https://github.com/TYPO3/typo3/tree/main/typo3/sysext/impexp>`__ |
+    ===========================  ================================================
+    Project                      Links
+    ===========================  ================================================
+    Import / Export (full)       `README.rst <https://github.com/TYPO3/typo3/tree/main/typo3/sysext/impexp>`__ |
                                 `Settings.cfg <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Settings.cfg>`__ |
                                 `Index.rst <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Index.rst>`__ |
                                 `Includes.rst.txt <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Includes.rst.txt>`__ |
                                 `Read online <https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/>`__
-   ===========================  ================================================
+    ===========================  ================================================
 
 
 .. _examples-typo3-third-party-extension-documentation:
@@ -933,22 +775,22 @@ TYPO3 system extension documentation
 TYPO3 third-party extension documentation
 -----------------------------------------
 
-.. table::
-   :widths: 25, 75
+..  table::
+    :widths: 25, 75
 
-   ========================  ===================================================
-   Project                   Links
-   ========================  ===================================================
-   Extension Builder (full)  `README.rst <https://github.com/FriendsOfTYPO3/extension_builder>`__ |
+    ========================  ===================================================
+    Project                   Links
+    ========================  ===================================================
+    Extension Builder (full)  `README.rst <https://github.com/FriendsOfTYPO3/extension_builder>`__ |
                              `Settings.cfg <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Settings.cfg>`__ |
                              `Index.rst <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Index.rst>`__ |
                              `Includes.rst.txt <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Includes.rst.txt>`__ |
                              `Read online <https://docs.typo3.org/p/friendsoftypo3/extension-builder/main/en-us/>`__
-   ------------------------  ---------------------------------------------------
-   Make (single)             `README.md <https://github.com/b13/make>`__ |
+    ------------------------  ---------------------------------------------------
+    Make (single)             `README.md <https://github.com/b13/make>`__ |
                              `Settings.cfg <https://github.com/b13/make/blob/main/Documentation/Settings.cfg>`__ |
                              `Read online <https://docs.typo3.org/p/b13/make/main/en-us/>`__
-   ========================  ===================================================
+    ========================  ===================================================
 
 
 .. _examples-php-application-documentation:
@@ -956,31 +798,31 @@ TYPO3 third-party extension documentation
 PHP application documentation
 -----------------------------
 
-.. table::
-   :widths: 25, 75
+..  table::
+    :widths: 25, 75
 
-   ==================  =========================================================
-   Project             Links
-   ==================  =========================================================
-   Surf (full)         `README.md <https://github.com/TYPO3/Surf>`__ |
+    ==================  =========================================================
+    Project             Links
+    ==================  =========================================================
+    Surf (full)         `README.md <https://github.com/TYPO3/Surf>`__ |
                        `Settings.cfg <https://github.com/TYPO3/Surf/blob/master/Documentation/Settings.cfg>`__ |
                        `Index.rst <https://github.com/TYPO3/Surf/blob/master/Documentation/Index.rst>`__ |
                        `Includes.txt <https://github.com/TYPO3/Surf/blob/master/Documentation/Includes.txt>`__ |
                        `Read online <https://docs.typo3.org/other/typo3/surf/main/en-us/>`__
-   ------------------  ---------------------------------------------------------
-   Tailor (single)     `README.md <https://github.com/TYPO3/tailor>`__ |
+    ------------------  ---------------------------------------------------------
+    Tailor (single)     `README.md <https://github.com/TYPO3/tailor>`__ |
                        `Read online <https://docs.typo3.org/other/typo3/tailor/main/en-us/>`__
-   ==================  =========================================================
+    ==================  =========================================================
 
-.. seealso::
+..  seealso::
 
-   Although it is possible to write every single line of a full documentation
-   from scratch, the TYPO3 community provides tools to support you:
+    Although it is possible to write every single line of a full documentation
+    from scratch, the TYPO3 community provides tools to support you:
 
-   *  A `sample manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-      is available to be immediately copied into your own extension.
-   *  The `Extension Builder <https://extensions.typo3.org/extension/extension_builder>`__
-      optionally generates a sample documentation together with the extension
-      skeleton.
-   *  TYPO3 Core developers use the `ReST Helper <https://forger.typo3.com/utilities/rst>`__
-      to kickoff a new TYPO3 changelog entry.
+    *   A `sample manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+        is available to be immediately copied into your own extension.
+    *   The `Extension Builder <https://extensions.typo3.org/extension/extension_builder>`__
+        optionally generates a sample documentation together with the extension
+        skeleton.
+    *   TYPO3 Core developers use the `ReST Helper <https://forger.typo3.com/utilities/rst>`__
+        to kickoff a new TYPO3 changelog entry.
