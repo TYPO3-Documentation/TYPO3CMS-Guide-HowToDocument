@@ -29,7 +29,7 @@ the ability to experiment and preview your changes locally before submitting the
 
    From here, select the "Fork" button in the upper right corner of the page.
 
-   .. image:: ../images/github-fork.png
+   .. image:: /Images/github-fork.png
       :class: with-shadow
 
 3. Clone the forked repository

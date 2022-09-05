@@ -31,7 +31,7 @@ If you are missing documentation for some extension versions we have a
 Why Does the Documentation not provide a title?
 ===============================================
 
-.. image:: ../images/missing-title.png
+.. image:: /Images/missing-title.png
    :class: with-shadow
 
 Refer to :ref:`migrate-necessary-steps` in order to fix this issue.
@@ -176,7 +176,7 @@ How do I get an "Edit on GitHub" button?
 Why might you want an "Edit on GitHub" button on the rendered pages
 of your extension documentation?
 
-.. figure:: ../images/edit_me_on_github+shadow.svg
+.. figure:: /Images/edit_me_on_github+shadow.svg
    :class: with-shadow
    :alt: "Edit on GitHub" button
 

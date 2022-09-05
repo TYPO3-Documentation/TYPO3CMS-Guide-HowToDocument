@@ -34,7 +34,7 @@ see :ref:`overview-of-types`.
    comment in your pull request with information about where to find your patch
    on Gerrit.
 
-   .. image:: ../images/github-gerrit.png
+   .. image:: /Images/github-gerrit.png
       :class: with-shadow
       :target: https://github.com/typo3/typo3/pull/172#issuecomment-494721296
 

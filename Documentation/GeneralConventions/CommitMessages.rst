@@ -79,7 +79,7 @@ the issue.
 
 If you are editing online with GitHub, this may look like this:
 
-.. image:: ../images/commit-msg.png
+.. image:: /Images/commit-msg.png
    :class: with-shadow
 
 

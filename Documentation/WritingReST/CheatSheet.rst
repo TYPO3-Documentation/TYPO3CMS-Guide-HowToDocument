@@ -412,21 +412,21 @@ Source:
 
 **How it looks:**
 
-.. image:: ../images/a4.jpg
+.. image:: /Images/a4.jpg
    :class: with-shadow
 
 Source:
 
 .. code-block:: rest
 
-   .. image:: ../images/a4.jpg
+   .. image:: /Images/a4.jpg
       :class: with-shadow
 
 Another example:
 
 .. code-block:: rest
 
-   .. image:: ../images/a4.jpg
+   .. image:: /Images/a4.jpg
       :class: with-shadow
       :target: https://typo3.org
       :alt: alt text
@@ -477,7 +477,7 @@ This is an example with a code block (:rst:`::`) embedded in the sections.
 
    Source::
 
-      ../images/a4.jpg
+      /Images/a4.jpg
          :class: with-shadow
 
 2. Two
@@ -513,7 +513,7 @@ With Big Numbers XXL
 
    Source::
 
-      ../images/a4.jpg
+      /Images/a4.jpg
          :class: with-shadow
 
 2. Two

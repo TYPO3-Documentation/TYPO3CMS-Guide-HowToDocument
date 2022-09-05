@@ -60,7 +60,7 @@ Method 2: Find the Source on https://extensions.typo3.org
    3. Select the extension
 
 
-      .. image:: ../images/ter_news2.png
+      .. image:: /Images/ter_news2.png
          :alt: Link: Show manual
          :target: https://extensions.typo3.org/?L=0&id=1&tx_solr%5Bq%5D=news
          :class: with-shadow
@@ -68,7 +68,7 @@ Method 2: Find the Source on https://extensions.typo3.org
 
    4. Click take a look in the code
 
-      .. image:: ../images/take-a-look-in-the-code.png
+      .. image:: /Images/take-a-look-in-the-code.png
          :alt: Link: Take a look in the code
          :target: https://github.com/georgringer/news
          :class: with-shadow
@@ -102,7 +102,7 @@ Method 2: Find rendered manual on https://extensions.typo3.org
 
    3. Click on "Show Manual"
 
-      .. image:: ../images/ter_news.png
+      .. image:: /Images/ter_news.png
          :alt: Link: Show manual
          :target: https://docs.typo3.org/typo3cms/extensions/news/
          :class: with-shadow

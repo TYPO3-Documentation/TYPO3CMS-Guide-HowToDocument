@@ -55,7 +55,7 @@ restructuredText Plugin
 #. Select LeXtudio extension
 #. Press install
 
-.. image:: ../images/vscode-rest-ext.png
+.. image:: /Images/vscode-rest-ext.png
    :class: with-shadow
 
 The LeXtudio extension comes with some built in code snippets.
@@ -118,7 +118,7 @@ files. In order to activate a plugin, press :kbd:`ctrl + alt + s`, then
 select :guilabel:`Plugins`, search for the plugin and enable it (mark
 checkbox).
 
-.. image:: ../images/phpstorm-rest-plugin.png
+.. image:: /Images/phpstorm-rest-plugin.png
    :class: with-shadow
 
 If the Plugin is not installed yet, you may have to :guilabel:`Browse
@@ -126,7 +126,7 @@ repositories`, select the plugin and click the green :guilabel:`Install` button.
 
 Some errors in formatting will be pointed out:
 
-.. image:: ../images/phpstorm-rest-warning.png
+.. image:: /Images/phpstorm-rest-warning.png
    :class: with-shadow
 
 .. _phpstorm-editorconfig:
@@ -144,7 +144,7 @@ Spellchecking
 You can add some specific TYPO3 spellings to PhpStorms internal dictionary.
 Just place the cursor on the word, click alt-enter and then "Save to dictionary".
 
-.. image:: ../images/phpstorm-add-to-dictionary.png
+.. image:: /Images/phpstorm-add-to-dictionary.png
    :class: with-shadow
 
 

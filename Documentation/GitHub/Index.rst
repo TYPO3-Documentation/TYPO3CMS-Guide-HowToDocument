@@ -31,7 +31,7 @@ The repositories of the official manuals are all included in the organization
 There, you can browse through the repositories or search for a specific
 repository:
 
-.. image:: ../images/github-repo-search.png
+.. image:: /Images/github-repo-search.png
    :class: with-shadow
 
 Alternatively, on any rendered page on docs.typo3.org (for example, this page),
@@ -53,7 +53,7 @@ issues) by **watching** the repository:
    For example, go to the repository for `TYPO3 Explained <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi>`__
 #. Click on the **Watch** button on the top of the page
 
-.. image:: ../images/watch-repo.gif
+.. image:: /Images/watch-repo.gif
    :class: with-shadow
 
 
@@ -89,13 +89,13 @@ From the repository on GitHub:
    If you have already located the repository on GitHub, you can find the Issues
    by clicking on the :guilabel:`Issues` tab:
 
-   .. image:: ../images/github-issues.png
+   .. image:: /Images/github-issues.png
       :class: with-shadow
 
 From the list of repositories in `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__:
    Look for the exclamation mark (!) issues icon:
 
-   .. image:: ../images/github-list-issues.png
+   .. image:: /Images/github-list-issues.png
       :class: with-shadow
 
 
@@ -205,5 +205,5 @@ their change by assigning you to the pull request as an assignee.
 To review all requests that are assigned to you, select :guilabel:`Pull requests` from the main navigation bar
 followed by :guilabel:`Review requests`.
 
-.. image:: ../images/github-review-requests.png
+.. image:: /Images/github-review-requests.png
    :class: with-shadow
