@@ -3,9 +3,9 @@
 .. index:: reST; Admonitions
 .. _rest-admonitions:
 
-=======================================
-Tip, Note, Important etc. (Admonitions)
-=======================================
+===============================================
+Admonitions: Tip, Note, Warning, See also,  etc
+===============================================
 
 The following directives are called Admonitions. You
 can use them to point out additional or important
@@ -13,7 +13,6 @@ information.
 
 Examples
 ========
-
 
 .. index:: reST directives; seealso
 

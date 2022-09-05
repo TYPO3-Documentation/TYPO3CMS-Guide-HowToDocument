@@ -1,11 +1,12 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Bullet lists
-.. _rest-lists:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
 
-============
-Bullet lists
-============
+..  index:: reST; Bullet lists
+..  _rest-unordered-lists:
+
+==============================
+Bullet lists / unordered lists
+==============================
 
 This section contains information on bullet lists and numbered lists.
 A text block which begins with a "\*", "+", "-", "•", "‣", or "⁃",

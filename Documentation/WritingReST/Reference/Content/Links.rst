@@ -6,9 +6,9 @@
    reST roles; ref
 .. _how-to-document-hyperlinks:
 
-==============================
-Hyperlinks & cross referencing
-==============================
+=========================
+Links & cross referencing
+=========================
 
 
 Quick Reference
