@@ -69,7 +69,7 @@ You can:
 
    Try this now by typing image and then TAB.
 
-.. image:: ../videos/vscodesnippets.gif
+.. image:: /Images/VsStudio/vscodesnippets.gif
    :class: with-shadow
 
 You can easily extend the snippets by adding **user snippets**:
@@ -100,7 +100,7 @@ Here is an example:
 *  The $1, $2 etc. mark the places where further TABs will take you.
    Use this if extra text needs to be entered
 
-.. image:: ../videos/vscodesnippets2.gif
+.. image:: /Images/VsStudio/vscodesnippets2.gif
    :class: with-shadow
 
 
