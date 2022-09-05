@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Definition lists
-.. _Styled-Definition-Lists:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: reST; Definition lists
+..  _Styled-Definition-Lists:
 
 ================
 Definition lists
@@ -21,76 +21,76 @@ An example with a standard styling would look like this:
 
 Source::
 
-   parameterAbc
-      Condition: required, Type: string, Default: ''
+    parameterAbc
+        Condition: required, Type: string, Default: ''
 
-      Text describing parameterAbc ...
+        Text describing parameterAbc ...
 
-   parameterBcd
-      Condition: optional, Type: boolean, Default: false
+    parameterBcd
+        Condition: optional, Type: boolean, Default: false
 
-      Text describing parameterBcd ...
+        Text describing parameterBcd ...
 
 Rendering result:
 
 parameterAbc
-   Condition: required, Type: string, Default: ''
+    Condition: required, Type: string, Default: ''
 
-   Text describing parameterAbc ...
+    Text describing parameterAbc ...
 
 parameterBcd
-   Condition: optional, Type: boolean, Default: false
+    Condition: optional, Type: boolean, Default: false
 
-   Text describing parameterBcd ...
+    Text describing parameterBcd ...
 
 This markup works but isn't very readable due to the lack of styling.
 
 
-.. index:: reST class; dl-parameters
+..  index:: reST class; dl-parameters
 
 Example 2: Nicely Styled
 ------------------------
 
 Source::
 
-   .. rst-class:: dl-parameters
+    ..  rst-class:: dl-parameters
 
-   parameterAbc
-      :sep:`|` :aspect:`Condition:` required
-      :sep:`|` :aspect:`Type:` string
-      :sep:`|` :aspect:`Default:` ''
-      :sep:`|`
+    parameterAbc
+        :sep:`|` :aspect:`Condition:` required
+        :sep:`|` :aspect:`Type:` string
+        :sep:`|` :aspect:`Default:` ''
+        :sep:`|`
 
-      Text describing parameterAbc ...
+        Text describing parameterAbc ...
 
-   parameterBcd
-      :sep:`|` :aspect:`Condition:` optional
-      :sep:`|` :aspect:`Type:` boolean
-      :sep:`|` :aspect:`Default:` false
-      :sep:`|`
+    parameterBcd
+        :sep:`|` :aspect:`Condition:` optional
+        :sep:`|` :aspect:`Type:` boolean
+        :sep:`|` :aspect:`Default:` false
+        :sep:`|`
 
-      Text describing parameterBcd ...
+        Text describing parameterBcd ...
 
 
 Rendering result:
 
-.. rst-class:: dl-parameters
+..  rst-class:: dl-parameters
 
 parameterAbc
-   :sep:`|` :aspect:`Condition:` required
-   :sep:`|` :aspect:`Type:` string
-   :sep:`|` :aspect:`Default:` ''
-   :sep:`|`
+    :sep:`|` :aspect:`Condition:` required
+    :sep:`|` :aspect:`Type:` string
+    :sep:`|` :aspect:`Default:` ''
+    :sep:`|`
 
-   Text describing parameterAbc ...
+    Text describing parameterAbc ...
 
 parameterBcd
-   :sep:`|` :aspect:`Condition:` optional
-   :sep:`|` :aspect:`Type:` boolean
-   :sep:`|` :aspect:`Default:` false
-   :sep:`|`
+    :sep:`|` :aspect:`Condition:` optional
+    :sep:`|` :aspect:`Type:` boolean
+    :sep:`|` :aspect:`Default:` false
+    :sep:`|`
 
-   Text describing parameterBcd ...
+    Text describing parameterBcd ...
 
 Explanation:
 
@@ -111,8 +111,8 @@ The text roles `ascpect` and `sep` (for separator) need to be defined. The usual
 way of defining them is by having these lines in the
 :file:`Documentation/Includes.rst.txt` file. Add these lines::
 
-   .. role:: aspect (emphasis)
-   .. role:: sep (strong)
+    ..  role:: aspect (emphasis)
+    ..  role:: sep (strong)
 
 Sphinx already comes with standard text roles 'emphasis' and 'strong'. 'aspect'
 and 'sep' inherit their properties and are further specialized.
@@ -131,60 +131,60 @@ a problem, if you repeat the 'rst-class' line.
 
 Source::
 
-   .. _label-parameterAbc:
-   .. rst-class:: dl-parameters
+    ..  _label-parameterAbc:
+    ..  rst-class:: dl-parameters
 
-   parameterAbc
-      :sep:`|` :aspect:`Condition:` required
-      :sep:`|` :aspect:`Type:` string
-      :sep:`|` :aspect:`Default:` ''
-      :sep:`|`
+    parameterAbc
+        :sep:`|` :aspect:`Condition:` required
+        :sep:`|` :aspect:`Type:` string
+        :sep:`|` :aspect:`Default:` ''
+        :sep:`|`
 
-      Text describing parameterAbc ...
+        Text describing parameterAbc ...
 
-   .. _label-parameterBcd:
-   .. rst-class:: dl-parameters
+    ..  _label-parameterBcd:
+    ..  rst-class:: dl-parameters
 
-   parameterBcd
-      :sep:`|` :aspect:`Condition:` optional
-      :sep:`|` :aspect:`Type:` boolean
-      :sep:`|` :aspect:`Default:` false
-      :sep:`|`
+    parameterBcd
+        :sep:`|` :aspect:`Condition:` optional
+        :sep:`|` :aspect:`Type:` boolean
+        :sep:`|` :aspect:`Default:` false
+        :sep:`|`
 
-      Text describing parameterBcd ...
+        Text describing parameterBcd ...
 
 
 Rendering result:
 
-.. _label-parameterAbc:
-.. rst-class:: dl-parameters
+..  _label-parameterAbc:
+..  rst-class:: dl-parameters
 
 parameterAbc
-   :sep:`|` :aspect:`Condition:` required
-   :sep:`|` :aspect:`Type:` string
-   :sep:`|` :aspect:`Default:` ''
-   :sep:`|`
+    :sep:`|` :aspect:`Condition:` required
+    :sep:`|` :aspect:`Type:` string
+    :sep:`|` :aspect:`Default:` ''
+    :sep:`|`
 
-   Text describing parameterAbc ...
+    Text describing parameterAbc ...
 
-.. _label-parameterBcd:
-.. rst-class:: dl-parameters
+..  _label-parameterBcd:
+..  rst-class:: dl-parameters
 
 parameterBcd
-   :sep:`|` :aspect:`Condition:` optional
-   :sep:`|` :aspect:`Type:` boolean
-   :sep:`|` :aspect:`Default:` false
-   :sep:`|`
+    :sep:`|` :aspect:`Condition:` optional
+    :sep:`|` :aspect:`Type:` boolean
+    :sep:`|` :aspect:`Default:` false
+    :sep:`|`
 
-   Text describing parameterBcd ...
+    Text describing parameterBcd ...
 
 Link example:
 
 Source::
 
-   Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
+    Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
 
-   Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
+    Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
 
 Result:
 

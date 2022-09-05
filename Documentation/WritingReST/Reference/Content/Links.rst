@@ -1,10 +1,10 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index::
-   reST; Hyperlinks
-   reST; Cross referencing
-   reST roles; ref
-.. _how-to-document-hyperlinks:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index::
+    reST; Hyperlinks
+    reST; Cross referencing
+    reST roles; ref
+..  _how-to-document-hyperlinks:
 
 =========================
 Links & cross referencing
@@ -17,77 +17,77 @@ Quick Reference
 In Sphinx you can use several types of links:
 
 :ref:`external-links`
-   for linking to other sources outside of the reST docs on docs.typo3.org.
+    for linking to other sources outside of the reST docs on docs.typo3.org.
 
-   .. code-block:: rest
+    ..  code-block:: rest
 
-      `anchor text <url>`__
+        `anchor text <url>`__
 
-   (with one or two underscores at the end, if in doubt, use two)
+    (with one or two underscores at the end, if in doubt, use two)
 
 :ref:`Cross-Referencing <cross-referencing>` (`:ref:`)
-   for linking to other sections of the same manual on docs.typo3.org with Intersphinx mechanism
+    for linking to other sections of the same manual on docs.typo3.org with Intersphinx mechanism
 
-   .. code-block:: rest
+    ..  code-block:: rest
 
-      :ref:`anchor text <link-target>`
+        :ref:`anchor text <link-target>`
 
 
 :ref:`Cross-Referencing <cross-referencing>` with intersphinx (`:ref:`)
-   for linking to other sections of a different manual on docs.typo3.org
+    for linking to other sections of a different manual on docs.typo3.org
 
-   If your link target is in another manual (for example "Getting Started Tutorial", you must
-   add the shortcut (here: `t3start`) for the other manual:
+    If your link target is in another manual (for example "Getting Started Tutorial", you must
+    add the shortcut (here: `t3start`) for the other manual:
 
-   .. code-block:: rest
+    ..  code-block:: rest
 
-      :ref:`anchor text <t3start:link-target>`
+        :ref:`anchor text <t3start:link-target>`
 
-   The shortcut must be defined in :ref:`settings-cfg`
+    The shortcut must be defined in :ref:`settings-cfg`
 
 
 Whenever you use the cross-referencing mechanism, you should create a
 :ref:`link target <explicit-link-targets>` for a section chapter,
 by adding a label before the section header::
 
-      .. _link-target:
+        ..  _link-target:
 
-      Headline
-      ========
+        Headline
+        ========
 
 
 How to create links is described in more detail in the next sections.
 
 :ref:`Preventing links <preventing-links>`
-   being automatically generated from simple URLs – mostly used in connection
-   with hypothetical domains.
+    being automatically generated from simple URLs – mostly used in connection
+    with hypothetical domains.
 
-   .. code-block:: rest
+    ..  code-block:: rest
 
-      :samp:`<url>`
+        :samp:`<url>`
 
 
 :ref:`Hypothetical domains <hypothetical-domains>`
-   are domains for use in URLs where the domain does not matter, but serves as a
-   placeholder. The TYPO3 documentation uses a defined set of them.
+    are domains for use in URLs where the domain does not matter, but serves as a
+    placeholder. The TYPO3 documentation uses a defined set of them.
 
-   .. code-block:: rest
+    ..  code-block:: rest
 
-      :samp:`https://example.org/news/`
+        :samp:`https://example.org/news/`
 
 
-.. index:: reST; External links
-.. _external-links:
+..  index:: reST; External links
+..  _external-links:
 
 External links
 ==============
 
-.. important::
+..  important::
 
-   Do not use this mechanism (external links) for links to sections of
-   the official documentation. Use the Intersphinx mechanism as described
-   in :ref:`intersphinx`. See :ref:`intersphinx-benefits` for an explanation
-   of why you should do this.
+    Do not use this mechanism (external links) for links to sections of
+    the official documentation. Use the Intersphinx mechanism as described
+    in :ref:`intersphinx`. See :ref:`intersphinx-benefits` for an explanation
+    of why you should do this.
 
 
 You can use one or more underscores (`_`) for the link. The difference is as follows:
@@ -102,8 +102,8 @@ For further explanation of the difference between these 2, please see
 If in doubt, just use 2 underscores as explained in the next section :ref:`external-links-anonymous`.
 
 
-.. index:: reST; Anonymous URL
-.. _external-links-anonymous:
+..  index:: reST; Anonymous URL
+..  _external-links-anonymous:
 
 External link as anonymous URL
 ------------------------------
@@ -113,7 +113,7 @@ Syntax
 
 ::
 
-   `Anchor text <URL>`__
+    `Anchor text <URL>`__
 
 *  There must always be a space between the anchor text and the URL
 
@@ -122,7 +122,7 @@ Example
 
 ::
 
-   `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
+    `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
 How it looks
@@ -131,8 +131,8 @@ How it looks
 `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
 
-.. index:: reST; Named references
-.. _external-links-named-reference:
+..  index:: reST; Named references
+..  _external-links-named-reference:
 
 External link as named reference
 --------------------------------
@@ -145,14 +145,14 @@ underscore instead of 2.
 
 ::
 
-   `Anchor text <URL>`_
+    `Anchor text <URL>`_
 
-*  There must always be a space between the anchor text and the URL
+*   There must always be a space between the anchor text and the URL
 
 
 
-.. index:: reST; Link targets
-.. _link-targets-explanation:
+..  index:: reST; Link targets
+..  _link-targets-explanation:
 
 Link targets
 ============
@@ -161,8 +161,8 @@ When using the :ref:`intersphinx` mechanism (as described in the next section), 
 will link to link targets.
 
 
-.. index:: reST; Link targets, explicit
-.. _explicit-link-targets:
+..  index:: reST; Link targets, explicit
+..  _explicit-link-targets:
 
 Explicit link targets (Labels for cross referencing)
 ----------------------------------------------------
@@ -171,27 +171,27 @@ You can define an explicit link target with a label for a section (or chapter):
 
 A section label of the name `columns-inline` is set::
 
-   .. _columns-inline:
+    ..  _columns-inline:
 
 
 Here, the link target *columns-inline* will be defined.
 
 *  Place the link target definition directly before the section header:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. _columns-inline:
+    ..  _columns-inline:
 
-   Inline columns
-   ==============
+    Inline columns
+    ==============
 
-*  You can define more than one link target definition (for example if
-   you want to keep some for historical reasons to not break links but
-   the name has changed considerably)
+*   You can define more than one link target definition (for example if
+    you want to keep some for historical reasons to not break links but
+    the name has changed considerably)
 
 
-.. index:: reST; Link targets, implicit
-.. _implicit-link-targets:
+..  index:: reST; Link targets, implicit
+..  _implicit-link-targets:
 
 Implicit link targets
 ---------------------
@@ -203,11 +203,11 @@ However, there are some disadvantages in using these, so we will not go into
 that further.
 
 
-.. index::
-   reST; Link targets, Cross referencing
-   reST roles; ref
-.. _intersphinx:
-.. _cross-referencing:
+..  index::
+    reST; Link targets, Cross referencing
+    reST roles; ref
+..  _intersphinx:
+..  _cross-referencing:
 
 Cross referencing (`:ref:`)
 ===========================
@@ -227,10 +227,10 @@ In the same manual
 
 A :ref:`section label <explicit-link-targets>` of the name `columns-inline` has been set somewhere::
 
-   .. _columns-inline:
+    ..  _columns-inline:
 
-   Inline Columns
-   ==============
+    Inline Columns
+    ==============
 
 
 You can then link to it like this **from the same manual**::
@@ -241,7 +241,7 @@ This will use the header of the section as anchor text.
 
 You can also explicitly set an anchor text::
 
-   :ref:`Inline columns <columns-inline>`
+    :ref:`Inline columns <columns-inline>`
 
 
 From one manual to another
@@ -255,27 +255,27 @@ Again, we want to link to the labels `columns-inline` and `This-is-ABC`.
 But since the labels are now in a different manuals, we
 need to prefix the names of that manuals:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   :ref:`t3tca:columns-inline`
-   :ref:`t3install:This-is-ABC`
+    :ref:`t3tca:columns-inline`
+    :ref:`t3install:This-is-ABC`
 
 
 The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file: .
 `This-is-ABC` is just an example wording.
 
-.. code-block:: none
+..  code-block:: none
 
-   t3tca         = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
-   t3install     = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
+    t3tca            = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
+    t3install      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
 
 
-.. important::
+..  important::
 
-   Check the Settings.cfg file for the manual you are working on to
-   make sure the manual shortcuts for intersphinx linking are available
-   in the section `[intersphinx_mapping]`.
-   You may need to remove the comment marker `#` at the beginning of the line.
+    Check the Settings.cfg file for the manual you are working on to
+    make sure the manual shortcuts for intersphinx linking are available
+    in the section `[intersphinx_mapping]`.
+    You may need to remove the comment marker `#` at the beginning of the line.
 
 
 This is called cross-referencing with the *intersphinx* mechanism.
@@ -292,11 +292,11 @@ Example 2: Specify anchor text
 If we want to control the anchor text ourselves, we can do so by
 writing:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   :ref:`this is our linktext <t3tca:columns-inline>`
+    :ref:`this is our linktext <t3tca:columns-inline>`
 
-.. _intersphinx-benefits:
+..  _intersphinx-benefits:
 
 Understanding the benefits
 --------------------------
@@ -309,19 +309,19 @@ Tips
 ----
 
 1. For convenience many manuals already have a :file:`objects.inv.json` where you can easily
-   see what link targets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/main/en-us/objects.inv.json
+    see what link targets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/main/en-us/objects.inv.json
 
 2. As an editor you should not change or remove labels once they have been published.
-   If you feel that a label (= link target) should be changed you should keep the old one
-   and add the new one on a separate line. You cannot know whether some other manual in
-   the world links to the label you would like to remove.
+    If you feel that a label (= link target) should be changed you should keep the old one
+    and add the new one on a separate line. You cannot know whether some other manual in
+    the world links to the label you would like to remove.
 
 3. You still CAN remove that label. The only problem that may arise is that foreign links
-   aren't generated any more.
+    aren't generated any more.
 
 
-.. index:: reST; Preventing links
-.. _preventing-links:
+..  index:: reST; Preventing links
+..  _preventing-links:
 
 Preventing links
 ================
@@ -336,9 +336,9 @@ to wrap the URL.
 
 For example:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
+    The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 is rendered like:
 
@@ -346,10 +346,10 @@ The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 To emphasize parts of the URL, use curly braces:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.org/<page-path>/{<page-name>}`.
+    The *route* is the "speaking URL" as a whole without the domain part,
+    for example :samp:`https://example.org/<page-path>/{<page-name>}`.
 
 is rendered like:
 
@@ -357,8 +357,8 @@ The *route* is the "speaking URL" as a whole without the domain part,
 for example :samp:`https://example.org/<page-path>/{<page-name>}`.
 
 
-.. index:: reST; Hypothetical domains
-.. _hypothetical-domains:
+..  index:: reST; Hypothetical domains
+..  _hypothetical-domains:
 
 Hypothetical domains
 ====================
@@ -390,17 +390,17 @@ above such as :samp:`https://staging.example.org` and
 
 For example:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   The class :php:`MailMessage` can be used to generate and send a mail without
-   using Fluid:
+    The class :php:`MailMessage` can be used to generate and send a mail without
+    using Fluid:
 
-   ::
+    ::
 
-      $mail = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Mail\MailMessage::class);
-      $mail
-         ->from(new Address('john.doe@example.org', 'John Doe'))
-         ->to(
-            new Address('receiver@example.com', 'Max Mustermann'),
-            new Address('other@example.net')
-         )
+        $mail = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Mail\MailMessage::class);
+        $mail
+            ->from(new Address('john.doe@example.org', 'John Doe'))
+            ->to(
+                new Address('receiver@example.com', 'Max Mustermann'),
+                new Address('other@example.net')
+            )

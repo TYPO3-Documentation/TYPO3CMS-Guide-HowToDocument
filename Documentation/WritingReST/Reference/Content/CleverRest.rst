@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Clever reST
-.. _Clever-reST:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: reST; Clever reST
+..  _Clever-reST:
 
 ===========
 Clever reST
@@ -14,24 +14,24 @@ Place 'List' in 'Empty List Item' in 'Definition Description'
 
 This is what we want to achieve:
 
-.. code-block:: html
+..  code-block:: html
 
-   <dl>
-      <dt>
-         Message
-      </dt>
-      <dd>
-         <ul>
-            <li>
-               <!-- WE DON'T WANT ANY OTHER TEXT HERE -->
-               <ul>
-                  <li>Hello</li>
-                  <li>World!</li>
-               </ul>
-            </li>
-         </ul>
-      </dd>
-   </dl>
+    <dl>
+        <dt>
+            Message
+        </dt>
+        <dd>
+            <ul>
+                <li>
+                    <!-- WE DON'T WANT ANY OTHER TEXT HERE -->
+                    <ul>
+                        <li>Hello</li>
+                        <li>World!</li>
+                    </ul>
+                </li>
+            </ul>
+        </dd>
+    </dl>
 
 **reST source:**
 
@@ -44,25 +44,25 @@ character would do. As usual the nested list is preceded by (at least) one empty
 line and it is indented. The empty lines 6 and 11 are optional and could be
 multiple empty lines:
 
-.. code-block:: rst
-   :linenos:
-   :emphasize-lines: 6,11
+..  code-block:: rst
+    :linenos:
+    :emphasize-lines: 6,11
 
-   Message
-      *
+    Message
+        *
 
-         +  Hello
-         +  World!
+            +  Hello
+            +  World!
 
-      *
+        *
 
-         +  Hello
-         +  World!
+            +  Hello
+            +  World!
 
-      *
+        *
 
-         +  Hello
-         +  World!
+            +  Hello
+            +  World!
 
 
 **Result:**
@@ -70,17 +70,17 @@ multiple empty lines:
 And this is how it looks like:
 
 Message
-   *
+    *
 
-      +  Hello
-      +  World!
+        +  Hello
+        +  World!
 
-   *
+    *
 
-      +  Hello
-      +  World!
+        +  Hello
+        +  World!
 
-   *
+    *
 
-      +  Hello
-      +  World!
+        +  Hello
+        +  World!

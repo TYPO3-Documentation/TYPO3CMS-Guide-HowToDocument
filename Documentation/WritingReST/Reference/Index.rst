@@ -3,9 +3,9 @@
 ..  index:: reST; Reference
 ..  _rest-reference:
 
-=======================
-reST & Sphinx reference
-=======================
+========================
+Reference: reST & Sphinx
+========================
 
 ..  toctree::
     :titlesonly:

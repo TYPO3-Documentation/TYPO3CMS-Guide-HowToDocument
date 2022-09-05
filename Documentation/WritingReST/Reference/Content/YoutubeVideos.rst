@@ -1,39 +1,39 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index::
-   reST; YouTube videos
-   reST directives; youtube
-.. _youtube-videos:
-.. _youtube:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index::
+    reST; YouTube videos
+    reST directives; youtube
+..  _youtube-videos:
+..  _youtube:
 
 ====================
 Embed YouTube videos
 ====================
 
-.. rst-class:: bignums
+..  rst-class:: bignums
 
 1. Get the YouTube id.
 
-   Example: The URL is :samp:`https://www.youtube.com/watch?v=rWkVS9qxBmg`.
+    Example: The URL is :samp:`https://www.youtube.com/watch?v=rWkVS9qxBmg`.
 
-   The id is the text after `v=` and up to the next `&` or the end of the
-   URL.
+    The id is the text after `v=` and up to the next `&` or the end of the
+    URL.
 
-   Here: `rWkVS9qxBmg`.
+    Here: `rWkVS9qxBmg`.
 
 2. Embed the Video using the id
 
 
-   .. code-block:: rest
+    ..  code-block:: rest
 
-      2018-01-19 by Mathias Schreiber
+        2018-01-19 by Mathias Schreiber
 
-      .. youtube:: wNxO-aXY5Yw
+        ..  youtube:: wNxO-aXY5Yw
 
-   How it looks:
+    How it looks:
 
 
-   2018-01-19 by Mathias Schreiber
+    2018-01-19 by Mathias Schreiber
 
-   .. youtube:: wNxO-aXY5Yw
+    ..  youtube:: wNxO-aXY5Yw
 

@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Tables
-.. _rest-tables:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: reST; Tables
+..  _rest-tables:
 
 ======
 Tables
@@ -10,24 +10,20 @@ Tables
 There are several ways to create tables in reST. Use what works best for your use case.
 
 
-.. index:: reST; Grid table
+..  index:: reST; Grid table
 
 Grid table
 ==========
 
+..  code-block:: rest
 
-.. code-block:: rest
-
-
-   +----------+----------+
-   | Header 1 | Header 2 |
-   +==========+==========+
-   | 1        | one      |
-   +----------+----------+
-   | 2        | two      |
-   +----------+----------+
-
-
+    +----------+----------+
+    | Header 1 | Header 2 |
+    +==========+==========+
+    | 1        | one      |
+    +----------+----------+
+    | 2        | two      |
+    +----------+----------+
 
 +----------+----------+
 | Header 1 | Header 2 |
@@ -44,20 +40,20 @@ You can use this `table generator <https://www.tablesgenerator.com/text_tables>`
 create a grid table.
 
 
-.. index:: reST; Simple table
+..  index:: reST; Simple table
 
 Simple table
 ============
 
 
-.. code-block:: rest
+..  code-block:: rest
 
-   ========  ========
-   Header 1  Header 2
-   ========  ========
-   1         one
-   2         two
-   ========  ========
+    ========  ========
+    Header 1  Header 2
+    ========  ========
+    1         one
+    2         two
+    ========  ========
 
 
 ========  ========
@@ -70,34 +66,34 @@ Header 1  Header 2
 http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
 
 
-.. index:: reST; CSV table
+..  index:: reST; CSV table
 
 CSV table
 =========
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. csv-table:: Numbers
-      :header: "Header 1", "Header 2"
-      :widths: 15, 15
+    ..  csv-table:: Numbers
+    :header: "Header 1", "Header 2"
+    :widths: 15, 15
 
-      1, "one"
-      2, "two"
+    1, "one"
+    2, "two"
 
 
-.. csv-table:: Numbers
-   :header: "Header 1", "Header 2"
-   :widths: 15, 15
+..  csv-table:: Numbers
+    :header: "Header 1", "Header 2"
+    :widths: 15, 15
 
-   1, "one"
-   2, "two"
+    1, "one"
+    2, "two"
 
 
 http://docutils.sourceforge.net/docs/ref/rst/directives.html#id4
 
 
-.. index::
-   reST directives; t3-field-list-table
+..  index::
+    reST directives; t3-field-list-table
 
 t3-field-list-table tables
 ==========================
@@ -107,33 +103,33 @@ template. If you want your .rst file to be correctly rendered on other
 platforms as well (for example GitHub), you should not use this.
 
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. t3-field-list-table::
-      :header-rows: 1
+    ..  t3-field-list-table::
+        :header-rows: 1
 
-      -  :Header1:   Header1
-         :Header2:   Header2
+        -   :Header1:   Header1
+            :Header2:   Header2
 
-      -  :Header1:   1
-         :Header2:   one
+        -   :Header1:   1
+            :Header2:   one
 
-      -  :Header1:   2
-         :Header2:   two
+        -   :Header1:   2
+            :Header2:   two
 
 
 
-.. t3-field-list-table::
-   :header-rows: 1
+..  t3-field-list-table::
+    :header-rows: 1
 
-   -  :Header1:   Header1
-      :Header2:   Header2
+    -   :Header1:   Header1
+        :Header2:   Header2
 
-   -  :Header1:   1
-      :Header2:   one
+    -   :Header1:   1
+        :Header2:   one
 
-   -  :Header1:   2
-      :Header2:   two
+    -   :Header1:   2
+        :Header2:   two
 
 
 Example: https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html

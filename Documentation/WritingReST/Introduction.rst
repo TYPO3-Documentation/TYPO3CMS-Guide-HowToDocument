@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
+..  include:: /Includes.rst.txt
+..  highlight:: rst
 
-.. _writing-rest-introduction:
+..  _writing-rest-introduction:
 
 ============
 Introduction
@@ -18,34 +18,34 @@ edit the source files using plain text and add reST markup where needed.
 
 For example to create section headers, you use underlines::
 
-   ========
-   Header 1
-   ========
+    ========
+    Header 1
+    ========
 
-   Header 1.1
-   ==========
+    Header 1.1
+    ==========
 
-   some text
+    some text
 
-   Header 1.1.1
-   ------------
+    Header 1.1.1
+    ------------
 
-   some more text
+    some more text
 
-   Header 1.2
-   ==========
+    Header 1.2
+    ==========
 
 
 This will create a header "Header 1" on level 1 and headers "Header 1.1"
 and "Header 1.2" on level 2 etc. The header level should reflect the structure
 of the content.
 
-.. code-block:: none
+..  code-block:: none
 
-   Header 1
-   |-> Header 1.1
-       |-> Header 1.1.1
-   |-> Header 1.2
+    Header 1
+    |-> Header 1.1
+         |-> Header 1.1.1
+    |-> Header 1.2
 
 On the page you are looking at now, "Introduction" is a level 1 header and "reST",
 "Sphinx" etc. are level 2 headers.
@@ -53,7 +53,7 @@ On the page you are looking at now, "Introduction" is a level 1 header and "reST
 The levels determine how the headers will be styled and also how they will be structured
 in the menu in the sidepanel.
 
-.. index:: ! Sphinx
+..  index:: ! Sphinx
 
 Sphinx
 ======
@@ -66,21 +66,21 @@ We will not go into the exact definition here. For now, all you need to know
 is that some of the markup you will be using is added on by Sphinx.
 This is the case for some additional directives such as:
 
-*  the :ref:`:ref: <intersphinx>` directive for cross-referencing
-*  the :ref:`toctree <rest-menu-hierachy>` directive for creating table of contents (=toc)
-   and menus
-*  the :ref:`code-block <codeblock-directive>` directive for creating code blocks with syntax
-   highlighting. `code-block` is a Sphinx directive, while `code`
-   is a (native) reStructuredText directive. We commonly use `code-block`,
-   not `code`.
+*   the :ref:`:ref: <intersphinx>` directive for cross-referencing
+*   the :ref:`toctree <rest-menu-hierachy>` directive for creating table of contents (=toc)
+    and menus
+*   the :ref:`code-block <codeblock-directive>` directive for creating code blocks with syntax
+    highlighting. `code-block` is a Sphinx directive, while `code`
+    is a (native) reStructuredText directive. We commonly use `code-block`,
+    not `code`.
 
 
 Additional information:
 
-*  `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__
-*  `What is the difference: reST, docutils, sphinx, readthedocs <https://coderwall.com/p/vemncg/what-is-the-difference-rest-docutils-sphinx-readthedocs>`__ (2016)
+*   `Sphinx Markup Constructs <https://www.sphinx-doc.org/en/1.6/markup/>`__
+*   `What is the difference: reST, docutils, sphinx, readthedocs <https://coderwall.com/p/vemncg/what-is-the-difference-rest-docutils-sphinx-readthedocs>`__ (2016)
 
-.. index:: reST; Rendering
+..  index:: reST; Rendering
 
 Rendering
 =========
@@ -91,8 +91,8 @@ source files change, they are rerendered.
 
 Our headline example from above will look like this:
 
-.. image:: /Images/rendered-headers.png
-   :class: with-shadow
+..  image:: /Images/rendered-headers.png
+    :class: with-shadow
 
 
 Looking at the source
@@ -104,12 +104,12 @@ at the source code by clicking on the :guilabel:`View source` at the top of a pa
 That way, you can see how it is done and compare the reST source with the
 rendered version.
 
-.. image:: /Images/view-page-source.png
-   :class: with-shadow
+..  image:: /Images/view-page-source.png
+    :class: with-shadow
 
 
-.. hint::
+..  hint::
 
-   Look at the source code of this page now.
+    Look at the source code of this page now.
 
 

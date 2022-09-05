@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Syntax
-.. _basic-rest-syntax:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: reST; Syntax
+..  _basic-rest-syntax:
 
 ==========================
 Basic reST & Sphinx syntax
@@ -11,7 +11,7 @@ The .rst files are written in reStructuredText (reST) format. They
 contain text with additional markup.
 
 
-.. index:: reST; Paragraphs
+..  index:: reST; Paragraphs
 
 Paragraphs
 ==========
@@ -19,28 +19,28 @@ Paragraphs
 New paragraphs in the output are created by an empty line
 between two paragraphs in your reST file::
 
-   This is a paragraph.
+    This is a paragraph.
 
-   This is another paragraph.
+    This is another paragraph.
 
 
-.. index:: reST; Comments
+..  index:: reST; Comments
 
 Comments
 ========
 
 Comments can be written like this::
 
-   .. this is a comment
-   .. with another line
+    ..  this is a comment
+    ..  with another line
 
 Or like this::
 
-   .. this is a comment
-      with another line
+    ..  this is a comment
+        with another line
 
 
-.. index:: reST; Indentation
+..  index:: reST; Indentation
 
 Indentation
 ===========
@@ -57,14 +57,14 @@ The following directive inserts an image in the rendered page. All lines beginni
 two must be indented to the same leve. The convention is to use 4 spaces for one
 level of indentation.
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. image:: someimage.png
-      :class: with-border with-shadow
-      :alt: Textual alternative to the image
+    ..  image:: someimage.png
+        :class: with-border with-shadow
+        :alt: Textual alternative to the image
 
 
-.. index:: reST; Escape characters
+..  index:: reST; Escape characters
 
 Escape characters
 =================
@@ -75,4 +75,4 @@ with its normal meaning, you must escape it with a prepended "\".
 For example surrounding text with "*" signs normally makes it show up in italics. By
 escaping the special characters "*" you make the stars normal text characters::
 
-   \*non-italic\*
+    \*non-italic\*
