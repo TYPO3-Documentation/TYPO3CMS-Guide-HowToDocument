@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Tabs
-.. _rest-tabs:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: reST; Tabs
+..  _rest-tabs:
 
 =====
 Tabs
@@ -16,63 +16,63 @@ and five code blocks, they could switch from Bash to Powershell instructions
 in the first code block, and all subsequent code blocks would also automatically
 switch to Powershell.
 
-.. tabs::
+..  tabs::
 
-   .. group-tab:: bash
+    ..  group-tab:: bash
 
-      .. code-block:: bash
-
-         composer create-project typo3/cms-base-distribution:^11 example-project-directory
-
-   .. group-tab:: powershell
-
-      .. code-block:: powershell
-
-         composer create-project "typo3/cms-base-distribution:^11" example-project-directory
-
-.. tabs::
-
-   .. group-tab:: bash
-
-      .. code-block:: bash
-
-         touch example-project-directory/public/FIRST_INSTALL
-
-   .. group-tab:: powershell
-
-      .. code-block:: powershell
-
-         echo $null >> public/FIRST_INSTALL
-
-.. code-block:: rst
-
-   .. tabs::
-
-      .. group-tab:: bash
-
-         .. code-block:: bash
+        ..  code-block:: bash
 
             composer create-project typo3/cms-base-distribution:^11 example-project-directory
 
-      .. group-tab:: powershell
+    ..  group-tab:: powershell
 
-         .. code-block:: powershell
+        ..  code-block:: powershell
 
             composer create-project "typo3/cms-base-distribution:^11" example-project-directory
 
-   .. tabs::
+..  tabs::
 
-      .. group-tab:: bash
+    ..  group-tab:: bash
 
-         .. code-block:: bash
+        ..  code-block:: bash
 
             touch example-project-directory/public/FIRST_INSTALL
 
-      .. group-tab:: powershell
+    ..  group-tab:: powershell
 
-         .. code-block:: powershell
+        ..  code-block:: powershell
 
             echo $null >> public/FIRST_INSTALL
+
+..  code-block:: rst
+
+    ..  tabs::
+
+        ..  group-tab:: bash
+
+            ..  code-block:: bash
+
+                composer create-project typo3/cms-base-distribution:^11 example-project-directory
+
+        ..  group-tab:: powershell
+
+            ..  code-block:: powershell
+
+                composer create-project "typo3/cms-base-distribution:^11" example-project-directory
+
+    ..  tabs::
+
+        ..  group-tab:: bash
+
+            ..  code-block:: bash
+
+                touch example-project-directory/public/FIRST_INSTALL
+
+        ..  group-tab:: powershell
+
+            ..  code-block:: powershell
+
+                echo $null >> public/FIRST_INSTALL
 
 As an example, tabs are used in the Getting Started Guide in the chapter
 :ref:`Installation <t3start:install>`.

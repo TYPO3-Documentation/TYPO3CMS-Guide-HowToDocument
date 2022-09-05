@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: reST; Comments
-.. _writing-rest-comments:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: reST; Comments
+..  _writing-rest-comments:
 
 ========
 Comments
@@ -9,8 +9,8 @@ Comments
 
 Parts of the text in reST source can be "commented out":
 
-   Any text which begins with an explicit markup start but doesn't
-   use the syntax of any of the constructs above, is a comment.
+    Any text which begins with an explicit markup start but doesn't
+    use the syntax of any of the constructs above, is a comment.
 
 See http://docutils.sourceforge.net/docs/user/rst/quickref.html#comments
 
@@ -22,26 +22,26 @@ Examples
 
 Example::
 
-   .. So here we have a comment.
-      It can spread over lines as
-      long as you keep the indentation.
+    ..  So here we have a comment.
+        It can spread over lines as
+        long as you keep the indentation.
 
 Example::
 
-   .. This text will not be shown,
-      but, for instance, in HTML might be
-      rendered as an HTML comment, if the html writer is set up for that.
+    ..  This text will not be shown,
+        but, for instance, in HTML might be
+        rendered as an HTML comment, if the html writer is set up for that.
 
 Example::
 
-   .. here we start an unordered list:
+    ..  here we start an unordered list:
 
-   -  one
+    *   one
 
-   -  two
+    *   two
 
-      .. this is another comment. Since it's within the list it is aligned
-         with 'two', which is the contents of the second list item
+        ..  this is another comment. Since it's within the list it is aligned
+            with 'two', which is the contents of the second list item
 
-   -  three
+    *   three
 

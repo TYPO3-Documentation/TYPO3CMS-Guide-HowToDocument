@@ -1,39 +1,39 @@
-.. This is a comment. It starts with 2 dots and a space
+..  This is a comment. It starts with 2 dots and a space
 
-.. -----------------------------------------------------------
-   include directive: Here, it includes the file
-   Includes.rst.txt. All files in the documentation project should
-   do this. Use correct path!
-   -----------------------------------------------------------
+..  -----------------------------------------------------------
+    include directive: Here, it includes the file
+    Includes.rst.txt. All files in the documentation project should
+    do this. Use correct path!
+    -----------------------------------------------------------
 
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. ------------------------------------------------------------------
-   highlight directive: sets the default language for code-blocks.
-   Usually, default is set to PHP in Includes.rst.txt. Here, we set it to
-   rst (for reStructuredText).
-   ------------------------------------------------------------------
+..  ------------------------------------------------------------------
+    highlight directive: sets the default language for code-blocks.
+    Usually, default is set to PHP in Includes.rst.txt. Here, we set it to
+    rst (for reStructuredText).
+    ------------------------------------------------------------------
 
-.. highlight:: rst
-
-
-.. ------------------------------------------------------------------------
-   header label:  You can use this to create
-   cross-references: To link to the next section, use :ref:`rest-cheat-sheet`
-   or :ref:`h2document:rest-cheat-sheet` from another manual
-   -------------------------------------------------------------------------
+..  highlight:: rst
 
 
-.. ---------------------------------------------------------
-   header: Use (over and) underline to mark a text as header
-   ---------------------------------------------------------
+..  ------------------------------------------------------------------------
+    header label:  You can use this to create
+    cross-references: To link to the next section, use :ref:`rest-cheat-sheet`
+    or :ref:`h2document:rest-cheat-sheet` from another manual
+    -------------------------------------------------------------------------
 
-.. index:: reST; Cheat sheet
-.. _rest-cheat-sheet:
 
-=========================
-reST & Sphinx cheat sheet
-=========================
+..  ---------------------------------------------------------
+    header: Use (over and) underline to mark a text as header
+    ---------------------------------------------------------
+
+..  index:: reST; Cheat sheet
+..  _rest-cheat-sheet:
+
+==========================
+Cheat sheet: reST & Sphinx
+==========================
 
 :ref:`Headlines <Headlines-and-sections>`
 =========================================
@@ -41,75 +41,75 @@ reST & Sphinx cheat sheet
 Every reST (.rst) file should use these underlining styles. In reST, you can use different
 styles in any order you want. These are our conventions for TYPO3 documentation.
 
-.. code-block:: rest
-   :linenos:
+..  code-block:: rest
+    :linenos:
 
-      ========
-      DocTitle
-      ========
+        ========
+        DocTitle
+        ========
 
-      Then use underlining only:
+        Then use underlining only:
 
-      .. _header1:
+        ..  _header1:
 
-      Header 1
-      ========
+        Header 1
+        ========
 
-      Header 1.1
-      ----------
+        Header 1.1
+        ----------
 
-      Header 1.1.1
-      ~~~~~~~~~~~~
+        Header 1.1.1
+        ~~~~~~~~~~~~
 
-      Header 1.1.1.1
-      """"""""""""""
+        Header 1.1.1.1
+        """"""""""""""
 
-*  line 1-3: This is the doc title. Every .rst file should have one.
-*  line 7: header label. This can be used for cross-referencing to this section::
+*   line 1-3: This is the doc title. Every .rst file should have one.
+*   line 7: header label. This can be used for cross-referencing to this section::
 
-    :ref:`header1`
+     :ref:`header1`
 
-*  9-10: Header level 1
-*  etc.
+*   9-10: Header level 1
+*   etc.
 
-.. seealso::
-   *  :ref:`Headlines-and-sections`
-   *  :ref:`explicit-link-targets`
+..  seealso::
+    *   :ref:`Headlines-and-sections`
+    *   :ref:`explicit-link-targets`
 
 
-.. _cheat-sheet-links:
+..  _cheat-sheet-links:
 
 :ref:`Links <how-to-document-hyperlinks>`
 =========================================
 
 
-.. index:: reST; External links
-.. _cheat-sheet-external-links:
+..  index:: reST; External links
+..  _cheat-sheet-external-links:
 
 External links
 --------------
 
 method 1::
 
-   `anchor text <URL>`__
+    `anchor text <URL>`__
 
-   Check out more information on `t3o <https://typo3.org>`__.
+    Check out more information on `t3o <https://typo3.org>`__.
 
 (with one or two underscores at the end, if in doubt, use two)
 
 method 2: "External Hyperlink Targets"::
 
-   Check out more information on t3o_
+    Check out more information on t3o_
 
-   _t3o: https://typo3.org
+    _t3o: https://typo3.org
 
 This may be more convenient if you use a link several times.
 
 
-.. index::
-   reST; Cross references
-   reST roles; ref
-.. _cheat-sheet-intersphinx:
+..  index::
+    reST; Cross references
+    reST roles; ref
+..  _cheat-sheet-intersphinx:
 
 Cross references
 ----------------
@@ -118,75 +118,75 @@ When linking within docs.typo3.org, you should use this method of cross-referenc
 
 Use it to link to a section in this manual::
 
-   :ref:`intersphinx`
+    :ref:`intersphinx`
 
 A section with the label **intersphinx** must exist! It is placed before the header::
 
-   .. _intersphinx:
+    ..  _intersphinx:
 
-   Intersphinx
-   ===========
+    Intersphinx
+    ===========
 
 Or, when cross-referencing to other manuals::
 
-   :ref:`shortcut:label`
+    :ref:`shortcut:label`
 
-   :ref:`h2document:intersphinx`
+:ref:`h2document:intersphinx`
 
 
 When you are linking to another manual, make sure the
 shortcut (here: "h2document") is included in :ref:`settings-cfg`::
 
-      [intersphinx_mapping]
+        [intersphinx_mapping]
 
-      h2document       = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html
-      ...
+        h2document         = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html
+        ...
 
 We use the same conventions for naming the shortcuts in :file:`Settings.cfg`,
 see :ref:`settings-cfg`. Not used manuals are commented out.
 
 
-.. tip::
+..  tip::
 
-   This is a cool feature, where reST & Sphinx shines: Even when a section is
-   moved to another page (which effectively changes the URL), the link will still work!
+    This is a cool feature, where reST & Sphinx shines: Even when a section is
+    moved to another page (which effectively changes the URL), the link will still work!
 
-.. t3-field-list-table::
-   :header-rows: 1
+..  t3-field-list-table::
+    :header-rows: 1
 
-   -  :Anchor:
-      :ThisManual:   Link to: Same manual
-      :OtherManual:  Link to: Other manual
+    -  :Anchor:
+        :ThisManual:    Link to: Same manual
+        :OtherManual:  Link to: Other manual
 
-   -  :Anchor:       **Explicit** anchor text
-      :ThisManual:   ``:ref:`Cross Referencing <intersphinx>```
-      :OtherManual:  ``:ref:`Cross Referencing <t3docwrite:intersphinx>```
+    -  :Anchor:         **Explicit** anchor text
+        :ThisManual:    ``:ref:`Cross Referencing <intersphinx>```
+        :OtherManual:  ``:ref:`Cross Referencing <t3docwrite:intersphinx>```
 
-   -  :Anchor:       **Automatic** anchor text
-      :ThisManual:   ``:ref:`intersphinx```
-      :OtherManual:  ``:ref:`t3docwrite:intersphinx```
+    -  :Anchor:         **Automatic** anchor text
+        :ThisManual:    ``:ref:`intersphinx```
+        :OtherManual:  ``:ref:`t3docwrite:intersphinx```
 
-.. index:: reST; Preventing links
-.. _cheat-sheet-preventing-links:
+..  index:: reST; Preventing links
+..  _cheat-sheet-preventing-links:
 
 Preventing links
 ----------------
 
 Prevent unintentional linking of simple URLs with the :code:`:samp:` directive:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
+    The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 and emphasize parts of the URL with curly braces:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   The *route* is the "speaking URL" as a whole without the domain part,
-   for example :samp:`https://example.org/{<path>}`.
+    The *route* is the "speaking URL" as a whole without the domain part,
+    for example :samp:`https://example.org/{<path>}`.
 
-.. index:: reST; Hypothetical domains
-.. _cheat-sheet-hypothetical-domains:
+..  index:: reST; Hypothetical domains
+..  _cheat-sheet-hypothetical-domains:
 
 Hypothetical domains
 --------------------
@@ -207,17 +207,17 @@ For further dummy domains use subdomains of the domains listed above such as
 -  :samp:`https://staging.example.org`
 -  :samp:`https://production.example.org`.
 
-.. seealso::
+..  seealso::
 
-   *  :ref:`link-targets-explanation` (labels)
-   *  :ref:`intersphinx`
-   *  :ref:`settings-cfg`
+    *   :ref:`link-targets-explanation` (labels)
+    *   :ref:`intersphinx`
+    *   :ref:`settings-cfg`
 
 
 
-.. index::
-   reST; Lists
-   reST; Bullet lists
+..  index::
+    reST; Lists
+    reST; Bullet lists
 
 :ref:`Lists <rest-lists>`
 =========================
@@ -226,32 +226,32 @@ For further dummy domains use subdomains of the domains listed above such as
 
 To create a bullet list:
 
-*  add a blank line before and after the list
-*  indent the list item text by 4 spaces - including the item sign
-*  to create a nested list:
+*   add a blank line before and after the list
+*   indent the list item text by 4 spaces - including the item sign
+*   to create a nested list:
 
-   *  indent the items by 4 spaces (left-align with parent item text)
-   *  apply rules of parent list (blank lines, item text indentation, ..)
+    *   indent the items by 4 spaces (left-align with parent item text)
+    *   apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   To create a bullet list:
+    To create a bullet list:
 
-   *  add a blank line before and after the list
-   *  indent the list item text by 4 spaces - including the item sign
-   *  to create a nested list:
+    *   add a blank line before and after the list
+    *   indent the list item text by 4 spaces - including the item sign
+    *   to create a nested list:
 
-      *  indent the items by 4 spaces (left-align with parent item text)
-      *  apply rules of parent list (blank lines, item text indentation, ..)
+        *   indent the items by 4 spaces (left-align with parent item text)
+        *   apply rules of parent list (blank lines, item text indentation, ..)
 
-   More text.
+    More text.
 
 
-.. index:: reST; Numbered lists
+..  index:: reST; Numbered lists
 
 :ref:`numbered-lists`
 =====================
@@ -264,65 +264,65 @@ To create a numbered list:
 #. indent the list item text by 4 spaces - including the item sign
 #. to create a nested list:
 
-   #. indent the items by 4 spaces (left-align with parent item text)
-   #. apply rules of parent list (blank lines, item text indentation, ..)
+    #. indent the items by 4 spaces (left-align with parent item text)
+    #. apply rules of parent list (blank lines, item text indentation, ..)
 
 More text.
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   To create a numbered list:
+    To create a numbered list:
 
-   #. add a blank line before and after the list
-   #. indent the list item text by 4 spaces - including the item sign
-   #. to create a nested list:
+    #. add a blank line before and after the list
+    #. indent the list item text by 4 spaces - including the item sign
+    #. to create a nested list:
 
-      #. indent the items by 4 spaces (left-align with parent item text)
-      #. apply rules of parent list (blank lines, item text indentation, ..)
+        #. indent the items by 4 spaces (left-align with parent item text)
+        #. apply rules of parent list (blank lines, item text indentation, ..)
 
-   More text.
+    More text.
 
 
-.. index:: reST; Code blocks
+..  index:: reST; Code blocks
 
 :ref:`Code Blocks <writing-rest-codeblocks-with-syntax-highlighting>`
 =====================================================================
 
-.. important::
+..  important::
 
-   Use syntactically correct code in your code blocks.
+    Use syntactically correct code in your code blocks.
 
 
-.. index:: reST directives; code-block
+..  index:: reST directives; code-block
 
 Code block directive
 --------------------
 
 **How it looks:**
 
-.. code-block:: php
+..  code-block:: php
 
-   $a = 'hello';
-   $b = 'something';
+    $a = 'hello';
+    $b = 'something';
 
 Source:
 
-.. code-block:: rest
-   :linenos:
+..  code-block:: rest
+    :linenos:
 
-   .. code-block:: php
+    ..  code-block:: php
 
-      $a = 'hello';
-      $b = 'something';
+        $a = 'hello';
+        $b = 'something';
 
 This uses the **directive** "code-block" (line 1)
 
-.. important::
+..  important::
 
-   Make sure to indent correctly. The lines of the code-block (line 3+)
-   must be indented (4 spaces).
+    Make sure to indent correctly. The lines of the code-block (line 3+)
+    must be indented (4 spaces).
 
 
 Literal Block (`::`)
@@ -336,13 +336,13 @@ followed by the code block.
 
 Assign the variable a::
 
-   $a = 'hello';
+    $a = 'hello';
 
 Source::
 
-   Assign the variable a::
+    Assign the variable a::
 
-      $a = 'hello';
+        $a = 'hello';
 
 
 Placeholders
@@ -360,7 +360,7 @@ Examples:
 For XML and HTML, use the comment tag :html:`<!-- placeholder-name -->`.
 
 
-.. index:: reST roles
+..  index:: reST roles
 
 :ref:`Inline code, text roles <text-roles>`
 ===========================================
@@ -376,18 +376,18 @@ For inline code or for other semantic markup of special texts, use text roles.
 
 Source:
 
-.. code-block:: rest
-   :linenos:
+..  code-block:: rest
+    :linenos:
 
-   :php:`$result = $a + 23;`
-   :typoscript:`lib.hello.value = Hello World!`
-   :file:`/etc/passwd`
-   :kbd:`ctrl` + :kbd:`s`
+    :php:`$result = $a + 23;`
+    :typoscript:`lib.hello.value = Hello World!`
+    :file:`/etc/passwd`
+    :kbd:`ctrl` + :kbd:`s`
 
 
-.. index::
-   reST; Bold
-   reST; Italic
+..  index::
+    reST; Bold
+    reST; Italic
 
 :ref:`Bold & italic <rest-bold-italic>`
 =======================================
@@ -398,66 +398,66 @@ Normal text, **bold text** and *italic text*.
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   Normal text, **bold text** and *italic text*.
+    Normal text, **bold text** and *italic text*.
 
 
-.. index::
-   reST; Images
-   reST directives; image
+..  index::
+    reST; Images
+    reST directives; image
 
 :ref:`Images <rest-images>`
 ===========================
 
 **How it looks:**
 
-.. image:: /Images/a4.jpg
-   :class: with-shadow
+..  image:: /Images/a4.jpg
+    :class: with-shadow
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. image:: /Images/a4.jpg
-      :class: with-shadow
+    ..  image:: /Images/a4.jpg
+        :class: with-shadow
 
 Another example:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. image:: /Images/a4.jpg
-      :class: with-shadow
-      :target: https://typo3.org
-      :alt: alt text
-      :width: 100px
+    ..  image:: /Images/a4.jpg
+        :class: with-shadow
+        :target: https://typo3.org
+        :alt: alt text
+        :width: 100px
 
-.. seealso::
+..  seealso::
 
-   *  :ref:`images`
+    *   :ref:`images`
 
 
-.. index::
-   reST; YouTube videos
-   reST directives; youtube
+..  index::
+    reST; YouTube videos
+    reST directives; youtube
 
 :ref:`YouTube videos <youtube>`
 ===============================
 
 **How it looks:**
 
-.. youtube:: wNxO-aXY5Yw
+..  youtube:: wNxO-aXY5Yw
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. youtube:: wNxO-aXY5Yw
+    ..  youtube:: wNxO-aXY5Yw
 
 
-.. index::
-   reST; Styled numbered lists
-   reST classes; bignums
+..  index::
+    reST; Styled numbered lists
+    reST classes; bignums
 
 :ref:`Styled numbered lists <big-nums>`
 =======================================
@@ -471,35 +471,35 @@ This is an example with a code block (:rst:`::`) embedded in the sections.
 
 **How it looks:**
 
-.. rst-class:: bignums
+..  rst-class:: bignums
 
-1. Embed an image
+1.  Embed an image
 
-   Source::
+    Source::
 
-      /Images/a4.jpg
-         :class: with-shadow
+        /Images/a4.jpg
+            :class: with-shadow
 
-2. Two
+2.  Two
 
-   Do something else ...
+    Do something else ...
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. rst-class:: bignums
+    ..  rst-class:: bignums
 
-   1. Embed an image
+    1.  Embed an image
 
-      Source::
+        Source::
 
-         .. image: some_image.png
-            :class: with-shadow
+            ..  image: some_image.png
+                :class: with-shadow
 
-   2. Two
+    2.  Two
 
-      Do something else ...
+        Do something else ...
 
 
 With Big Numbers XXL
@@ -507,35 +507,35 @@ With Big Numbers XXL
 
 **How it looks:**
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-1. Embed an image
+1.  Embed an image
 
-   Source::
+    Source::
 
-      /Images/a4.jpg
-         :class: with-shadow
+        /Images/a4.jpg
+            :class: with-shadow
 
-2. Two
+2.  Two
 
-   Do something else ...
+    Do something else ...
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. rst-class:: bignums-xxl
+    ..  rst-class:: bignums-xxl
 
-   1. Embed an image
+    1.  Embed an image
 
-      Source::
+        Source::
 
-         .. image: some_image.png
-            :class: with-shadow
+            ..  image: some_image.png
+                :class: with-shadow
 
-   2. Two
+    2.  Two
 
-      Do something else ...
+        Do something else ...
 
 
 :ref:`Configuration values <rest-confval>` (confval)
@@ -543,27 +543,27 @@ Source:
 
 **How it looks:**
 
-.. confval:: title
+..  confval:: title
 
-   :Required: true
-   :type: string or LLL reference
-   :Scope: Display
-   :Path: $GLOBALS > TCA > [table] > columns > [field]
+    :Required: true
+    :type: string or LLL reference
+    :Scope: Display
+    :Path: $GLOBALS > TCA > [table] > columns > [field]
 
-   The name of the field as shown in the form.
+    The name of the field as shown in the form.
 
 Source:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. confval:: title
+    ..  confval:: title
 
-      :Required: true
-      :type: string or LLL reference
-      :Scope: Display
-      :Path: $GLOBALS > TCA > [table] > columns > [field]
+        :Required: true
+        :type: string or LLL reference
+        :Scope: Display
+        :Path: $GLOBALS > TCA > [table] > columns > [field]
 
-      The name of the field as shown in the form.
+        The name of the field as shown in the form.
 
 
 :ref:`PHP domain <rest-phpdomain>`
@@ -571,66 +571,66 @@ Source:
 
 **How it looks:**
 
-.. php:namespace::  Vendor\MyExtension
+..  php:namespace::  Vendor\MyExtension
 
-.. php:class:: DateTime
+..  php:class:: DateTime
 
-   Datetime class
+    Datetime class
 
-   .. php:method:: setDate($year, $month, $day)
+    ..  php:method:: setDate($year, $month, $day)
 
-      Set the date.
+        Set the date.
 
-      :param int $year: The year.
-      :param int $month: The month.
-      :param int $day: The day.
-      :returns: Either false on failure, or the datetime object for method chaining.
+        :param int $year: The year.
+        :param int $month: The month.
+        :param int $day: The day.
+        :returns: Either false on failure, or the datetime object for method chaining.
 
 Source:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. php:namespace::  Vendor\MyExtension
+    ..  php:namespace::  Vendor\MyExtension
 
-   .. php:class:: DateTime
+    ..  php:class:: DateTime
 
-      Datetime class
+        Datetime class
 
-      .. php:method:: setDate($year, $month, $day)
+        ..  php:method:: setDate($year, $month, $day)
 
-         Set the date.
+            Set the date.
 
-         :param int $year: The year.
-         :param int $month: The month.
-         :param int $day: The day.
-         :returns: Either false on failure, or the datetime object for method chaining.
+            :param int $year: The year.
+            :param int $month: The month.
+            :param int $day: The day.
+            :returns: Either false on failure, or the datetime object for method chaining.
 
 
-.. index:: reST; Admonitions
+..  index:: reST; Admonitions
 
 :ref:`Tips, hints, important <rest-admonitions>` (Admonitions)
 ==============================================================
 
-.. ---------------------------------------------------------------
-   tip: This directive will display the following indented text as
-   text with a green box (as styled by our sphinx template).
-   ---------------------------------------------------------------
+..  ---------------------------------------------------------------
+    tip: This directive will display the following indented text as
+    text with a green box (as styled by our sphinx template).
+    ---------------------------------------------------------------
 
 **How it looks:**
 
-.. tip::
+..  tip::
 
-   To look at the reST source of this rendered page, scroll to the bottom
-   and click on "View page source".
+    To look at the reST source of this rendered page, scroll to the bottom
+    and click on "View page source".
 
 Source:
 
-   .. code-block:: rst
+    ..  code-block:: rst
 
-      .. tip::
+        ..  tip::
 
-         To look at the reST source of this rendered page, scroll to the bottom
-         and click on "View page source".
+            To look at the reST source of this rendered page, scroll to the bottom
+            and click on "View page source".
 
 
 :ref:`Cards <rest-cards>`
@@ -638,49 +638,49 @@ Source:
 
 **How it looks:**
 
-.. container:: row m-0 p-0
+..  container:: row m-0 p-0
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Pages <t3editors:pages>`
+                ..  rubric:: :ref:`Pages <t3editors:pages>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+                The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-         .. container:: card-footer pb-0
+            ..  container:: card-footer pb-0
 
-            .. rst-class:: horizbuttons-striking-m
+                ..  rst-class:: horizbuttons-striking-m
 
-            -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
+                -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
 
 Source:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. container:: row m-0 p-0
+    ..  container:: row m-0 p-0
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Pages <t3editors:pages>`
+                ..  rubric:: :ref:`Pages <t3editors:pages>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+                The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-         .. container:: card-footer pb-0
+            ..  container:: card-footer pb-0
 
-            .. rst-class:: horizbuttons-striking-m
+                ..  rst-class:: horizbuttons-striking-m
 
-            -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
+                -  `11 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
 
 
 :ref:`Tabs <rest-tabs>`
@@ -688,37 +688,37 @@ Source:
 
 **How it looks:**
 
-.. tabs::
+..  tabs::
 
-   .. group-tab:: bash
+    ..  group-tab:: bash
 
-      .. code-block:: bash
-
-         touch example-project-directory/public/FIRST_INSTALL
-
-   .. group-tab:: powershell
-
-      .. code-block:: powershell
-
-         echo $null >> public/FIRST_INSTALL
-
-Source:
-
-.. code-block:: rst
-
-   .. tabs::
-
-      .. group-tab:: bash
-
-         .. code-block:: bash
+        ..  code-block:: bash
 
             touch example-project-directory/public/FIRST_INSTALL
 
-      .. group-tab:: powershell
+    ..  group-tab:: powershell
 
-         .. code-block:: powershell
+        ..  code-block:: powershell
 
             echo $null >> public/FIRST_INSTALL
+
+Source:
+
+..  code-block:: rst
+
+    ..  tabs::
+
+        ..  group-tab:: bash
+
+            ..  code-block:: bash
+
+                touch example-project-directory/public/FIRST_INSTALL
+
+        ..  group-tab:: powershell
+
+            ..  code-block:: powershell
+
+                echo $null >> public/FIRST_INSTALL
 
 
 :ref:`Graphs <graphviz-graphs>`
@@ -726,63 +726,63 @@ Source:
 
 **How it looks:**
 
-.. graphviz::
+..  graphviz::
 
-   graph {
-      user [
-         shape=plaintext;
-         width=4;
-         label="User";
-         style="";
-      ]
-      view [
-         shape=box;
-         width=4;
-         label=<<B>View</B><BR/>Displaying the data>;
-      ]
-      controller [
-         shape=box;
-         width=4;
-         label=<<B>Controller</B><BR/>Control of functionality>;
-      ]
-      model [
-         shape=box;
-         width=4;
-         label=<<B>Model</B><BR/>Domain model and domain logic>;
-      ]
-      user -- view -- controller -- model;
-   }
-
-Source:
-
-.. code-block:: rest
-
-   .. graphviz::
-
-      graph {
-         user [
+    graph {
+        user [
             shape=plaintext;
             width=4;
             label="User";
             style="";
-         ]
-         view [
+        ]
+        view [
             shape=box;
             width=4;
             label=<<B>View</B><BR/>Displaying the data>;
-         ]
-         controller [
+        ]
+        controller [
             shape=box;
             width=4;
             label=<<B>Controller</B><BR/>Control of functionality>;
-         ]
-         model [
+        ]
+        model [
             shape=box;
             width=4;
             label=<<B>Model</B><BR/>Domain model and domain logic>;
-         ]
-         user -- view -- controller -- model;
-      }
+        ]
+        user -- view -- controller -- model;
+    }
+
+Source:
+
+..  code-block:: rest
+
+    ..  graphviz::
+
+        graph {
+            user [
+                shape=plaintext;
+                width=4;
+                label="User";
+                style="";
+            ]
+            view [
+                shape=box;
+                width=4;
+                label=<<B>View</B><BR/>Displaying the data>;
+            ]
+            controller [
+                shape=box;
+                width=4;
+                label=<<B>Controller</B><BR/>Control of functionality>;
+            ]
+            model [
+                shape=box;
+                width=4;
+                label=<<B>Model</B><BR/>Domain model and domain logic>;
+            ]
+            user -- view -- controller -- model;
+        }
 
 
 :ref:`Diagrams <plantuml-diagrams>`
@@ -790,33 +790,33 @@ Source:
 
 **How it looks:**
 
-.. uml::
+..  uml::
 
-   == Initialization ==
+    == Initialization ==
 
-   Alice -> Bob: Authentication Request
-   Bob --> Alice: Authentication Response
+    Alice -> Bob: Authentication Request
+    Bob --> Alice: Authentication Response
 
-   == Repetition ==
+    == Repetition ==
 
-   Alice -> Bob: Another authentication Request
-   Alice <-- Bob: another authentication Response
+    Alice -> Bob: Another authentication Request
+    Alice <-- Bob: another authentication Response
 
 Source:
 
-.. code-block:: rest
+..  code-block:: rest
 
-   .. uml::
+    ..  uml::
 
-      == Initialization ==
+        == Initialization ==
 
-      Alice -> Bob: Authentication Request
-      Bob --> Alice: Authentication Response
+        Alice -> Bob: Authentication Request
+        Bob --> Alice: Authentication Response
 
-      == Repetition ==
+        == Repetition ==
 
-      Alice -> Bob: Another authentication Request
-      Alice <-- Bob: another authentication Response
+        Alice -> Bob: Another authentication Request
+        Alice <-- Bob: another authentication Response
 
 
 :ref:`Sidebar <rest-sidebar>`
@@ -824,16 +824,16 @@ Source:
 
 Source / **How it looks**:
 
-.. sidebar:: reST content elements
+..  sidebar:: reST content elements
 
-   * :ref:`Cards <rest-cards>`
-   * :ref:`Tabs <rest-tabs>`
-   * :ref:`Configuration values <rest-confval>`
+    * :ref:`Cards <rest-cards>`
+    * :ref:`Tabs <rest-tabs>`
+    * :ref:`Configuration values <rest-confval>`
 
-.. code-block:: rst
+..  code-block:: rst
 
-   .. sidebar:: reST content elements
+    ..  sidebar:: reST content elements
 
-      * :ref:`Cards <rest-cards>`
-      * :ref:`Tabs <rest-tabs>`
-      * :ref:`Configuration values <rest-confval>`
+        * :ref:`Cards <rest-cards>`
+        * :ref:`Tabs <rest-tabs>`
+        * :ref:`Configuration values <rest-confval>`

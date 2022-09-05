@@ -1,8 +1,8 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index::
-   Menus; Content
-.. _content-menu:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index::
+    Menus; Content
+..  _content-menu:
 
 ============
 Content menu
@@ -12,25 +12,25 @@ You can display the titles of the current page as a content menu.
 
 The simplest content menu can be created like this::
 
-   .. contents::
-      :local:
+    ..  contents::
+        :local:
 
 Showing only a local content menu of all headlines, excluding the page header:
 
-.. contents::
-   :local:
+..  contents::
+    :local:
 
 You can also limit the levels and or give the contents menu a title::
 
-   .. contents:: Table of Contents
-      :local:
-      :depth: 1
+    ..  contents:: Table of Contents
+        :local:
+        :depth: 1
 
 To limit the header to a given depth:
 
-.. contents:: Table of Contents
-   :local:
-   :depth: 1
+..  contents:: Table of Contents
+    :local:
+    :depth: 1
 
 
 Topic 1
