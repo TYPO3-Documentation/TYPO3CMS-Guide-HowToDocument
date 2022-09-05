@@ -91,7 +91,7 @@ Read more: :ref:`migrate`
 If you see the following on the rendered page of your extension, it has not
 yet been rendered with the new mechanism:
 
-.. figure:: images/docs_deprecation.png
+.. figure:: /Images/docs_deprecation.png
    :class: with-shadow
    :alt: Deprecation message on rendered extension documentation page
 

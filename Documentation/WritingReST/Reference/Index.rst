@@ -12,5 +12,4 @@ reST & Sphinx reference
     :glob:
 
     */Index
-    *
 

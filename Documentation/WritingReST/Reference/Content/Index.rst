@@ -1,7 +1,6 @@
 ..  include:: /Includes.rst.txt
 ..  highlight:: rst
-..  _rest-menu:
-..  _rest-page-structure:
+..  _rest-content:
 
 ===================================
 Content styles and content elements

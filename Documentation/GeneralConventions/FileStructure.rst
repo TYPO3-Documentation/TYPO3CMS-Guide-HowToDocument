@@ -285,7 +285,7 @@ Table of contents
 The *table-of-contents* placeholder contains a rough table of contents (TOC),
 which - in combination with the abstract - should give the reader a quick
 overview. The TOC is built with the
-:doc:`toctree directive <WritingReST/MenuHierarchy>` as follows:
+:ref:`toctree directive <toctree>` as follows:
 
 ..  code-block:: rst
 
@@ -437,8 +437,8 @@ an almost empty file that is automatically filled by Sphinx. An index can be
 manually applied to each documentation location using the
 :rst:dir:`index directive <sphinx:index>`.
 In addition, some content elements automatically generate indexes, such as the
-:doc:`configuration values <WritingReST/Confval>` and
-:doc:`PHP domain <WritingReST/Phpdomain>` elements.
+:ref:`configuration values <rest-confval>` and
+:ref:`PHP domain <rest-phpdomain>` elements.
 
 ..  code-block:: rst
 
@@ -455,7 +455,7 @@ In addition, some content elements automatically generate indexes, such as the
 .. _settings-cfg:
 
 Settings: :file:`Documentation/Settings.cfg`
-----------------------------------
+--------------------------------------------
 
 This file contains the configuration for the Sphinx theme. The configuration
 values are used to fill placeholders in the theme. It consists of sections
@@ -744,10 +744,10 @@ Official TYPO3 manuals
     Project                    Links
     =========================  ==================================================
     TSconfig Reference (full)  `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig>`__ |
-                              `Settings.cfg <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Settings.cfg>`__ |
-                              `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Index.rst>`__ |
-                              `Includes.rst.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Includes.rst.txt>`__ |
-                              `Read online <https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/>`__
+                               `Settings.cfg <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Settings.cfg>`__ |
+                               `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Index.rst>`__ |
+                               `Includes.rst.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Includes.rst.txt>`__ |
+                               `Read online <https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/>`__
     =========================  ==================================================
 
 
@@ -763,10 +763,10 @@ TYPO3 system extension documentation
     Project                      Links
     ===========================  ================================================
     Import / Export (full)       `README.rst <https://github.com/TYPO3/typo3/tree/main/typo3/sysext/impexp>`__ |
-                                `Settings.cfg <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Settings.cfg>`__ |
-                                `Index.rst <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Index.rst>`__ |
-                                `Includes.rst.txt <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Includes.rst.txt>`__ |
-                                `Read online <https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/>`__
+                                 `Settings.cfg <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Settings.cfg>`__ |
+                                 `Index.rst <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Index.rst>`__ |
+                                 `Includes.rst.txt <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Includes.rst.txt>`__ |
+                                 `Read online <https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/>`__
     ===========================  ================================================
 
 
@@ -782,14 +782,14 @@ TYPO3 third-party extension documentation
     Project                   Links
     ========================  ===================================================
     Extension Builder (full)  `README.rst <https://github.com/FriendsOfTYPO3/extension_builder>`__ |
-                             `Settings.cfg <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Settings.cfg>`__ |
-                             `Index.rst <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Index.rst>`__ |
-                             `Includes.rst.txt <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Includes.rst.txt>`__ |
-                             `Read online <https://docs.typo3.org/p/friendsoftypo3/extension-builder/main/en-us/>`__
+                              `Settings.cfg <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Settings.cfg>`__ |
+                              `Index.rst <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Index.rst>`__ |
+                              `Includes.rst.txt <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Includes.rst.txt>`__ |
+                              `Read online <https://docs.typo3.org/p/friendsoftypo3/extension-builder/main/en-us/>`__
     ------------------------  ---------------------------------------------------
     Make (single)             `README.md <https://github.com/b13/make>`__ |
-                             `Settings.cfg <https://github.com/b13/make/blob/main/Documentation/Settings.cfg>`__ |
-                             `Read online <https://docs.typo3.org/p/b13/make/main/en-us/>`__
+                              `Settings.cfg <https://github.com/b13/make/blob/main/Documentation/Settings.cfg>`__ |
+                              `Read online <https://docs.typo3.org/p/b13/make/main/en-us/>`__
     ========================  ===================================================
 
 
@@ -805,13 +805,13 @@ PHP application documentation
     Project             Links
     ==================  =========================================================
     Surf (full)         `README.md <https://github.com/TYPO3/Surf>`__ |
-                       `Settings.cfg <https://github.com/TYPO3/Surf/blob/master/Documentation/Settings.cfg>`__ |
-                       `Index.rst <https://github.com/TYPO3/Surf/blob/master/Documentation/Index.rst>`__ |
-                       `Includes.txt <https://github.com/TYPO3/Surf/blob/master/Documentation/Includes.txt>`__ |
-                       `Read online <https://docs.typo3.org/other/typo3/surf/main/en-us/>`__
+                        `Settings.cfg <https://github.com/TYPO3/Surf/blob/master/Documentation/Settings.cfg>`__ |
+                        `Index.rst <https://github.com/TYPO3/Surf/blob/master/Documentation/Index.rst>`__ |
+                        `Includes.txt <https://github.com/TYPO3/Surf/blob/master/Documentation/Includes.txt>`__ |
+                        `Read online <https://docs.typo3.org/other/typo3/surf/main/en-us/>`__
     ------------------  ---------------------------------------------------------
     Tailor (single)     `README.md <https://github.com/TYPO3/tailor>`__ |
-                       `Read online <https://docs.typo3.org/other/typo3/tailor/main/en-us/>`__
+                        `Read online <https://docs.typo3.org/other/typo3/tailor/main/en-us/>`__
     ==================  =========================================================
 
 ..  seealso::
