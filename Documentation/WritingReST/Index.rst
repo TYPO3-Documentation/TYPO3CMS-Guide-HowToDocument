@@ -52,4 +52,4 @@ http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_
    BasicRestSyntax
    CommonPitfalls/Index
    CheatSheet
-   Reference
+   Reference/Index
