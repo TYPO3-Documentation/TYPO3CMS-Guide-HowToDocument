@@ -178,7 +178,7 @@ Cards with images
 
          .. container:: card-body
 
-            .. image:: /images/cards.png
+            .. image:: /Images/cards.png
                :alt: Cards, example output
                :class: with-shadow mb-2
 
@@ -195,7 +195,7 @@ Cards with images
 
          .. container:: card-body
 
-            .. image:: /images/tabs.png
+            .. image:: /Images/tabs.png
                :alt: Tabs, example output
                :class: with-shadow mb-2
 
@@ -215,7 +215,7 @@ Cards with images
 
             .. container:: card-body
 
-               .. image:: /images/cards.png
+               .. image:: /Images/cards.png
                   :alt: Cards, example output
                   :class: with-shadow mb-2
 
@@ -232,7 +232,7 @@ Cards with images
 
             .. container:: card-body
 
-               .. image:: /images/tabs.png
+               .. image:: /Images/tabs.png
                   :alt: Tabs, example output
                   :class: with-shadow mb-2
 

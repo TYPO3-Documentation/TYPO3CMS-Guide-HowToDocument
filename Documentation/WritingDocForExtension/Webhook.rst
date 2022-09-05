@@ -93,17 +93,17 @@ Add auto rendering for a repository via GitHub webhook in five steps:
 
 #. Go to "Settings" tab within the repository
 
-   .. figure:: /images/webhook/github/repository-start.png
+   .. figure:: /Images/webhook/github/repository-start.png
       :width: 932
 
 #. Go to "Webhooks" section within the repository settings
 
-   .. figure:: /images/webhook/github/settings-tab.png
+   .. figure:: /Images/webhook/github/settings-tab.png
       :width: 932
 
 #. Add webhook
 
-   .. figure:: /images/webhook/github/webhook-section.png
+   .. figure:: /Images/webhook/github/webhook-section.png
       :width: 932
 
 #. Fill in webhook configuration
@@ -120,14 +120,14 @@ Add auto rendering for a repository via GitHub webhook in five steps:
 
    #. Click on "Add webhook"
 
-   .. figure:: /images/webhook/github/webhook-add.png
+   .. figure:: /Images/webhook/github/webhook-add.png
       :width: 932
 
 #. Webhook was added
 
    GitHub should show a notice that creation of webhook was successful.
 
-   .. figure:: /images/webhook/github/webhook-added.png
+   .. figure:: /Images/webhook/github/webhook-added.png
       :width: 932
 
 #. Trigger webhook and visit to check request
@@ -139,7 +139,7 @@ Add auto rendering for a repository via GitHub webhook in five steps:
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
    branch ``main``. Or push to a new branch ``documentation-draft``.
 
-   .. figure:: /images/webhook/github/intercept-feedback.png
+   .. figure:: /Images/webhook/github/intercept-feedback.png
       :width: 932
 
 
@@ -155,17 +155,17 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 
 #. Go to "Settings" section within the repository
 
-   .. figure:: /images/webhook/bitbucket/cloud/repository-start.png
+   .. figure:: /Images/webhook/bitbucket/cloud/repository-start.png
       :width: 932
 
 #. Go to "Webhooks" section within the repository settings
 
-   .. figure:: /images/webhook/bitbucket/cloud/settings-tab.png
+   .. figure:: /Images/webhook/bitbucket/cloud/settings-tab.png
       :width: 932
 
 #. Add webhook
 
-   .. figure:: /images/webhook/bitbucket/cloud/webhook-section.png
+   .. figure:: /Images/webhook/bitbucket/cloud/webhook-section.png
       :width: 932
 
 #. Fill in webhook configuration
@@ -180,7 +180,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
 
    #. Click on "Save"
 
-   .. figure:: /images/webhook/bitbucket/cloud/webhook-add.png
+   .. figure:: /Images/webhook/bitbucket/cloud/webhook-add.png
       :width: 932
 
 #. Webhook was added
@@ -189,7 +189,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    creation of webhook was successful. Also the webhook should be shown in the
    list.
 
-   .. figure:: /images/webhook/bitbucket/cloud/webhook-added.png
+   .. figure:: /Images/webhook/bitbucket/cloud/webhook-added.png
       :width: 932
 
 #. Trigger webhook and visit to check request
@@ -200,7 +200,7 @@ Add auto rendering for a repository via Bitbucket webhook in five steps:
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
    branch ``main``. Or push to a new branch ``documentation-draft``.
 
-   .. figure:: /images/webhook/bitbucket/cloud/intercept-feedback.png
+   .. figure:: /Images/webhook/bitbucket/cloud/intercept-feedback.png
       :width: 932
 
 .. index::
@@ -217,7 +217,7 @@ Add auto rendering for a repository via GitLab webhook in four steps:
 
 #. Go to "Integrations" section within the repository
 
-   .. figure:: /images/webhook/gitlab/repository-start.png
+   .. figure:: /Images/webhook/gitlab/repository-start.png
       :width: 932
 
 #. Add webhook by filling in webhook configuration
@@ -228,14 +228,14 @@ Add auto rendering for a repository via GitLab webhook in four steps:
 
    #. Click on "Add webhook"
 
-   .. figure:: /images/webhook/gitlab/webhook-add.png
+   .. figure:: /Images/webhook/gitlab/webhook-add.png
       :width: 932
 
 #. Webhook was added
 
    The webhook should be shown in the list (scroll down).
 
-   .. figure:: /images/webhook/gitlab/webhook-added.png
+   .. figure:: /Images/webhook/gitlab/webhook-added.png
       :width: 932
 
 #. Trigger webhook and visit to check request
@@ -246,5 +246,5 @@ Add auto rendering for a repository via GitLab webhook in four steps:
    For the documentation to be rendered, the hook needs to be triggered: Either push to the
    branch ``main``. Or push to a new branch ``documentation-draft``.
 
-   .. figure:: /images/webhook/gitlab/intercept-feedback.png
+   .. figure:: /Images/webhook/gitlab/intercept-feedback.png
       :width: 932

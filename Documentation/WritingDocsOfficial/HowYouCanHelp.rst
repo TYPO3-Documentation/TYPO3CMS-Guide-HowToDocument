@@ -87,7 +87,7 @@ Here are some examples:
 *  :ref:`System Overview in "TYPO3 Explained" contains a diagram <overview>`
 
 
-.. figure:: ../images/diagram.png
+.. figure:: /Images/diagram.png
    :class: with-shadow
    :target: https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/RequestHandling/Index.html#typo3-implementation
 
