@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Spelling
 .. _content-styleguide:
 .. _spelling:

@@ -13,7 +13,7 @@ Bold, Italic etc.
 Bold
 ====
 
-::
+..  code-block:: rest
 
     This is normal text. **This is bold text**
 
@@ -27,7 +27,7 @@ This is normal text. **This is bold text**
 Italic
 ======
 
-::
+..  code-block:: rest
 
     This is normal text. *This is italic text.*
 

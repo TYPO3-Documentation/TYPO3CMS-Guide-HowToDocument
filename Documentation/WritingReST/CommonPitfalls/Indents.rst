@@ -16,7 +16,7 @@ Always indent correctly (4 spaces per level)
 Correct syntax
 --------------
 
-::
+..  code-block:: rest
 
    .. image:: /Images/a4.jpg
       :width: 100px
@@ -35,7 +35,7 @@ Incorrect syntax
 Here, `:width:` is indented with only 2 spaces. The image will not be
 rendered at all!
 
-::
+..  code-block:: rest
 
    .. image:: /Images/a4.jpg
       :width: 100px

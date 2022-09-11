@@ -14,14 +14,14 @@ at the bottom on this page.
 Correct syntax
 ==============
 
-::
+..  code-block:: rest
 
    `anchor text <url>`__
 
 
 Example:
 
-::
+..  code-block:: rest
 
    `T3O <https://typo3.org>`__
 
@@ -48,7 +48,7 @@ opening `<`.
 Wrong syntax
 ------------
 
-::
+..  code-block:: rest
 
    `T3O<https://typo3.org>`__
 
@@ -68,7 +68,7 @@ Missing `_` or `__` at the end:
 Wrong Syntax
 ------------
 
-::
+..  code-block:: rest
 
    `T3O <https://typo3.org>`
 
