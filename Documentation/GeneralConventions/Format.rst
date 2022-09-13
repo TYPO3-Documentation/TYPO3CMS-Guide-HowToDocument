@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Documentation; Formats
 .. _supported-formats:
 

@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: pair: Examples; Toctree
 .. _example-toctree:
 

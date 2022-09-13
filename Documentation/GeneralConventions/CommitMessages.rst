@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Git; Commit messages
 .. _general-conventions-commit-messages:
 

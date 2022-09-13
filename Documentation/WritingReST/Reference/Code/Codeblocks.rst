@@ -133,7 +133,6 @@ Examples
 A simple code block with syntax highlighting
 --------------------------------------------
 
-
 ..  tabs::
 
     ..  group-tab:: Source (rst)

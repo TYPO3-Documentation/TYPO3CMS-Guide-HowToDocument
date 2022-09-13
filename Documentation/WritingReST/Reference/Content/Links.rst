@@ -111,7 +111,7 @@ External link as anonymous URL
 Syntax
 ~~~~~~
 
-::
+..  code-block:: rest
 
     `Anchor text <URL>`__
 
@@ -120,7 +120,7 @@ Syntax
 Example
 ~~~~~~~
 
-::
+..  code-block:: rest
 
     `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
@@ -143,7 +143,7 @@ Syntax
 Same as :ref:`anonymous URL <external-links-anonymous>`, but with one
 underscore instead of 2.
 
-::
+..  code-block:: rest
 
     `Anchor text <URL>`_
 
@@ -395,7 +395,8 @@ For example:
     The class :php:`MailMessage` can be used to generate and send a mail without
     using Fluid:
 
-    ::
+
+    ..  code-block:: rest
 
         $mail = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Mail\MailMessage::class);
         $mail

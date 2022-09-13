@@ -1,21 +1,4 @@
-..  This is a comment. It starts with 2 dots and a space
-
-..  -----------------------------------------------------------
-    include directive: Here, it includes the file
-    Includes.rst.txt. All files in the documentation project should
-    do this. Use correct path!
-    -----------------------------------------------------------
-
 ..  include:: /Includes.rst.txt
-
-..  ------------------------------------------------------------------
-    highlight directive: sets the default language for code-blocks.
-    Usually, default is set to PHP in Includes.rst.txt. Here, we set it to
-    rst (for reStructuredText).
-    ------------------------------------------------------------------
-
-..  highlight:: rst
-
 
 ..  ------------------------------------------------------------------------
     header label:  You can use this to create
@@ -65,9 +48,11 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
         """"""""""""""
 
 *   line 1-3: This is the doc title. Every .rst file should have one.
-*   line 7: header label. This can be used for cross-referencing to this section::
+*   line 7: header label. This can be used for cross-referencing to this section:
 
-     :ref:`header1`
+    ..  code-block:: rest
+
+        :ref:`header1`
 
 *   9-10: Header level 1
 *   etc.
@@ -89,7 +74,9 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
 External links
 --------------
 
-method 1::
+method 1:
+
+..  code-block:: rest
 
     `anchor text <URL>`__
 
@@ -97,7 +84,9 @@ method 1::
 
 (with one or two underscores at the end, if in doubt, use two)
 
-method 2: "External Hyperlink Targets"::
+method 2: "External Hyperlink Targets":
+
+..  code-block:: rest
 
     Check out more information on t3o_
 
@@ -116,18 +105,24 @@ Cross references
 
 When linking within docs.typo3.org, you should use this method of cross-referencing.
 
-Use it to link to a section in this manual::
+Use it to link to a section in this manual:
+
+..  code-block:: rest
 
     :ref:`intersphinx`
 
-A section with the label **intersphinx** must exist! It is placed before the header::
+A section with the label **intersphinx** must exist! It is placed before the header:
+
+..  code-block:: rest
 
     ..  _intersphinx:
 
     Intersphinx
     ===========
 
-Or, when cross-referencing to other manuals::
+Or, when cross-referencing to other manuals:
+
+..  code-block:: rest
 
     :ref:`shortcut:label`
 
@@ -135,12 +130,14 @@ Or, when cross-referencing to other manuals::
 
 
 When you are linking to another manual, make sure the
-shortcut (here: "h2document") is included in :ref:`settings-cfg`::
+shortcut (here: "h2document") is included in :ref:`settings-cfg`:
 
-        [intersphinx_mapping]
+..  code-block:: none
 
-        h2document         = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html
-        ...
+    [intersphinx_mapping]
+
+    h2document         = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html
+    ...
 
 We use the same conventions for naming the shortcuts in :file:`Settings.cfg`,
 see :ref:`settings-cfg`. Not used manuals are commented out.
@@ -324,27 +321,6 @@ This uses the **directive** "code-block" (line 1)
     Make sure to indent correctly. The lines of the code-block (line 3+)
     must be indented (4 spaces).
 
-
-Literal Block (`::`)
---------------------
-
-Or, use the literal block markup `::` if PHP is already set as default
-with `highlight` directive and you want to combine a text with a colon,
-followed by the code block.
-
-**How it looks:**
-
-Assign the variable a::
-
-    $a = 'hello';
-
-Source::
-
-    Assign the variable a::
-
-        $a = 'hello';
-
-
 Placeholders
 ------------
 
@@ -492,7 +468,9 @@ Source:
 
     1.  Embed an image
 
-        Source::
+        Source:
+
+        ..  code-block:: rest
 
             ..  image: some_image.png
                 :class: with-shadow
@@ -511,7 +489,9 @@ With Big Numbers XXL
 
 1.  Embed an image
 
-    Source::
+    Source:
+
+    ..  code-block:: rest
 
         /Images/a4.jpg
             :class: with-shadow
@@ -528,7 +508,9 @@ Source:
 
     1.  Embed an image
 
-        Source::
+        Source:
+
+        ..  code-block:: rest
 
             ..  image: some_image.png
                 :class: with-shadow
