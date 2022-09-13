@@ -7,12 +7,10 @@
 Tables
 ======
 
-There are several ways to create tables in reST. Use what works best
-for your use case.
+There are several ways to create tables in reST.
 
-..  attention::
-    Avoid using large tables. Tables do not react responsive on different
-    screens.
+It is recommended that you do not use large tables as they are not
+responsive.
 
 ..  index:: reST; Grid table
 
