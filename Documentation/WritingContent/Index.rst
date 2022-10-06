@@ -7,8 +7,9 @@ How to write good content
 =========================
 
 
-*  Daniele Procida: `"What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
-   (May 19, 2017) - A very good blogpost about different kind of manuals.
+*  Divio: `"The documentation system" <https://documentation.divio.com/>`__, based on
+   Daniele Procida's 2017 blog post, "What nobody tells you about documentation".
+   It establishes four distinct categories of documentation content.
 
 .. figure:: /Images/content-types.png
    :class: with-shadow
