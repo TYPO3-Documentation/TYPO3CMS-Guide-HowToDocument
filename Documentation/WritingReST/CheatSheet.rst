@@ -598,7 +598,9 @@ Source:
     text with a green box (as styled by our sphinx template).
     ---------------------------------------------------------------
 
-**How "tip" looks like:**
+Visit :ref:`h2document:rest-admonitions` to see all allowed admonitions.
+
+**How it looks:**
 
 ..  tip::
 
@@ -610,38 +612,6 @@ Source:
     ..  code-block:: rst
 
         ..  tip::
-
-            To look at the reST source of this rendered page, scroll to the bottom
-            and click on "View page source".
-
-**How "hint" looks like:**
-
-..  hint::
-
-    To look at the reST source of this rendered page, scroll to the bottom
-    and click on "View page source".
-
-Source:
-
-    ..  code-block:: rst
-
-        ..  hint::
-
-            To look at the reST source of this rendered page, scroll to the bottom
-            and click on "View page source".
-
-**How "important" looks like:**
-
-..  important::
-
-    To look at the reST source of this rendered page, scroll to the bottom
-    and click on "View page source".
-
-Source:
-
-    ..  code-block:: rst
-
-        ..  important::
 
             To look at the reST source of this rendered page, scroll to the bottom
             and click on "View page source".
