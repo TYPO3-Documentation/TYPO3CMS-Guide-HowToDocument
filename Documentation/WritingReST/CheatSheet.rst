@@ -598,7 +598,7 @@ Source:
     text with a green box (as styled by our sphinx template).
     ---------------------------------------------------------------
 
-Visit :ref:`h2document:rest-admonitions` to see all allowed admonitions.
+Visit :ref:`h2document:rest-admonitions` to see the available admonitions.
 
 **How it looks:**
 
