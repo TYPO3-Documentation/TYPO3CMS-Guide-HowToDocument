@@ -602,17 +602,17 @@ Source:
 
 ..  tip::
 
-    To look at the reST source of this rendered page, scroll to the bottom
-    and click on "View page source".
+    To look at the reST source of this rendered page, scroll to the top
+    and click on :guilabel:`View source`.
 
 Source:
 
-    ..  code-block:: rst
+..  code-block:: rst
 
-        ..  tip::
+    ..  tip::
 
-            To look at the reST source of this rendered page, scroll to the bottom
-            and click on "View page source".
+        To look at the reST source of this rendered page, scroll to the bottom
+        and click on "View page source".
 
 
 :ref:`Cards <rest-cards>`
