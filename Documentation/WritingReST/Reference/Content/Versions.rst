@@ -30,7 +30,7 @@ Versionadded
     Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
     event dispatching system.
 
-For emphasis the directive can also be put into one of the
+For emphasis, the directive can also be placed into one of the
 :ref:`admonitions <rest-admonitions>`:
 
 
