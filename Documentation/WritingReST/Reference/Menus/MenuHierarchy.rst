@@ -28,7 +28,7 @@ General rules for using `..toctree::`
 
 ..  rst-class:: bignums
 
-1. Each .rst file should have a doctitle, for example:
+1.  Each .rst file should have a doctitle, for example:
 
     ..  code-block:: rest
 
@@ -54,11 +54,11 @@ The menu structure is not displayed as a table of contents on the current page (
 ..  code-block:: rest
     :linenos:
 
-        ..  toctree::
-            :hidden:
+    ..  toctree::
+        :hidden:
 
-            Introduction/Index
-            Configuration/Index
+        Introduction/Index
+        Configuration/Index
 
 
 Example: glob, not hidden, titlesonly
@@ -73,12 +73,11 @@ file) will be displayed (titlesonly).
 ..  code-block:: rest
     :linenos:
 
+    ..  toctree::
+        :glob:
+        :titlesonly:
 
-        ..  toctree::
-            :glob:
-            :titlesonly:
-
-            *
+        *
 
 Example: https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/Appendix/Index.html
 
