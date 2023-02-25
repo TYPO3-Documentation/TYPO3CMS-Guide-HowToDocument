@@ -2,6 +2,7 @@
     :caption: Example with placeholders
 
     .. include:: /Includes.rst.txt
+    ..  _start:
 
     =========
     <project>
