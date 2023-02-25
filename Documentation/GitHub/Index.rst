@@ -21,7 +21,7 @@ How to find a GitHub repository
 ===============================
 
 The source for every manual on docs.typo3.org (for example this manual :ref:`start` or
-:doc:`t3coreapi:Index`) is contained in a GitHub repository.
+:ref:`t3coreapi:start`) is contained in a GitHub repository.
 
 In the repository, you can find the source files, but also the issues and pull requests.
 

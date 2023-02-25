@@ -32,7 +32,7 @@ What is the TYPO3 documentation?
 TYPO3 documentation may be one of the following:
 
 *  It can be one of the `official manuals <https://docs.typo3.org/>`__
-   like :doc:`t3coreapi:Index`.
+   like :ref:`t3coreapi:start`.
 *  It can be the documentation of a
    `system extension <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__.
 *  It can be the documentation of a
@@ -100,7 +100,7 @@ Manual
 A "manual" in the context of TYPO3 documentation is being used to talk about
 one unit of documentation, which usually has it's own git repository (or is
 included in the git repository of an extension) and consists of one :file:`Documentation`
-folder. A "manual" can be a tutorial, such as the :doc:`t3start:Index`, a guide,
+folder. A "manual" can be a tutorial, such as the :ref:`t3start:start`, a guide,
 an extension manual or something else.
 
 

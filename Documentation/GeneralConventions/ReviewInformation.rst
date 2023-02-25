@@ -98,7 +98,7 @@ the review information on the start page, for example
 
 Examples:
 
-*  :doc:`t3start:Index`.
+*  :ref:`t3start:start`.
 
 
 .. index::
