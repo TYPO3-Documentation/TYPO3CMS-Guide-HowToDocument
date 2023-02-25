@@ -21,8 +21,8 @@ Workflow #1: "Edit on GitHub"
 2. Find a page that needs improving:
 
    For example, you may have found a misspelling in
-   the :doc:`t3start:Index` or you want to add some new content
-   to the :doc:`t3install:Index`.
+   the :ref:`t3start:start` or you want to add some new content
+   to the :ref:`t3install:start`.
 
 3. Edit the page on GitHub:
 

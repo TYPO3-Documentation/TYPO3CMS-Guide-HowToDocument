@@ -17,7 +17,7 @@ see :ref:`overview-of-types`.
    core (like system extension documentation and changelog), you would
    use Forge to report **issues**, using the category "Documentation":
    https://forge.typo3.org/projects/typo3cms-core/issues
-*  The :doc:`t3contribute:Index` explains the **contribution workflow** for the core.
+*  The :ref:`t3contribute:start` explains the **contribution workflow** for the core.
    For making a change to the documentation in the core, you would use the
    workflow explained in that guide (using Git and pushing to Gerrit).
 *  You can also test the change by :ref:`rendering locally <rendering-docs>`
