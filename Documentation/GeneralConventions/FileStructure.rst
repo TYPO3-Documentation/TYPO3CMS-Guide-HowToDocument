@@ -222,6 +222,13 @@ theme documentation.
 The placeholders of pattern `<name>` must be replaced manually by the author of
 the documentation:
 
+The startpage should contain an anchor target :rst:`..  _start:` above its
+document title. This way you can link to a documents start page by:
+
+..  code-block:: rst
+
+    See :ref:`TYPO3 Explained <t3coreapi:start>`.
+
 
 .. _index-rst-project:
 
