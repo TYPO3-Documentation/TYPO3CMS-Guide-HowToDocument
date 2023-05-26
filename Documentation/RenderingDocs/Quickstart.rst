@@ -35,11 +35,20 @@ Commands to render the documentation
 
 .. rst-class:: bignums-xxl
 
+#. Preparations
+
+   The docker image is not listed on dockerhub (hub.docker.com) anymore, therefor some perparations 
+   need to be done once
+   
+   .. code-block:: bash
+   
+      docker pull ghcr.io/t3docs/render-documentation:v3.0.dev30
+      docker tag ghcr.io/t3docs/render-documentation:v3.0.dev30 t3docs/render-documentation:develop
 
 #. Make dockrun_t3rd available in current terminal
 
    .. code-block:: bash
-
+      
       source <(docker run --rm t3docs/render-documentation show-shell-commands)
 
    .. tip::
