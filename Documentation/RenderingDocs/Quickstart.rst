@@ -38,7 +38,7 @@ Commands to render the documentation
 #. Preparations
 
    The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations 
-   need to be done once
+   need to be done once:
    
    .. code-block:: bash
    
