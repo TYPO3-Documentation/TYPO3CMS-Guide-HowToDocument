@@ -49,7 +49,7 @@ Commands to render the documentation
 
    .. code-block:: bash
       
-      source <(docker run --rm t3docs/render-documentation show-shell-commands)
+      source <(docker run --rm ghcr.io/t3docs/render-documentation:v3.0.dev30 show-shell-commands)
 
    .. tip::
 
