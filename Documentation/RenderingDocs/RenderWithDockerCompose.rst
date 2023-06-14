@@ -47,7 +47,7 @@ work fine on all platforms.
       version: '3'
       services:
         t3docmake:
-          image: t3docs/render-documentation:latest
+          image: ghcr.io/t3docs/render-documentation:latest
           command: makehtml
           volumes:
             - ./:/PROJECT:ro

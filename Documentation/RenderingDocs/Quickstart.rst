@@ -37,19 +37,26 @@ Commands to render the documentation
 
 #. Preparations
 
-   The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations 
+   The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations
    need to be done once:
-   
+
    .. code-block:: bash
-   
-      docker pull ghcr.io/t3docs/render-documentation:v3.0.dev30
-      docker tag ghcr.io/t3docs/render-documentation:v3.0.dev30 t3docs/render-documentation:develop
+
+      # pull 'latest' version from GitHub container repository
+      docker pull ghcr.io/t3docs/render-documentation
+
+      # The "real" tag is independent of the container repository,
+      # so let's just create that extra "real" and "generic" tag
+      docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
+
+      # verify it worked
+      docker run --rm t3docs/render-documentation --version
 
 #. Make dockrun_t3rd available in current terminal
 
    .. code-block:: bash
-      
-      source <(docker run --rm ghcr.io/t3docs/render-documentation:v3.0.dev30 show-shell-commands)
+
+      source <(docker run --rm ghcr.io/t3docs/render-documentation show-shell-commands)
 
    .. tip::
 
