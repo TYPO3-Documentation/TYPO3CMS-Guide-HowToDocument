@@ -27,19 +27,13 @@ Problems with `source < (docker run ...`
    source <(docker run --rm t3docs/render-documentation show-shell-commands)
    dockrun_t3rd makehtml
 
-If these commands do not work on your platform, use one of these instead:
+If these commands do not work on your platform, try this instead:
 
-.. rst-class:: bignums
+.. code-block:: bash
 
-#. :ref:`render-with-docker-compose`
-
-#. **or**
-
-   .. code-block:: bash
-
-      mkdir -p ~/bin
-      docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
-      source ~/bin/t3docs
+    mkdir -p ~/bin
+    docker run --rm t3docs/render-documentation show-shell-commands > ~/bin/t3docs
+    source ~/bin/t3docs
 
 
 .. _docker-troubleshoot-sample-output-ok:

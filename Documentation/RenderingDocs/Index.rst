@@ -1,75 +1,107 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 .. Index::
-   pair: Documentation; Rendering
-   Rendering; Locally
+    pair: Documentation; Rendering
+    Rendering; Locally
+    Rendering; Docker
+    Rendering; Commands
 .. _rendering-docs:
 .. _rendering-docs-quickstart:
+.. _render-documenation-with-docker:
+.. _render-documentation-with-docker:
+
 
 ===========================
 How to render documentation
 ===========================
 
-This chapter explains how to render a manual locally on your machine
+This page explains how to render a manual locally on your machine
 with Docker in order to test the rendering.
 
-It is recommended to do this if you edit locally before you publish your changes, because
-that way you will get a preview of how it is later rendered on the
-server.
+Run these commands in a terminal in the parent directory of the directory
+:file:`Documentation`. You should use a bash compatible shell, if possible.
 
-If you use Docker, you will use the same set of tools locally in Docker that are being used
-on the documentation server docs.typo3.org to render the documentation.
-
-Here, we will briefly also explain the other methods for rendering.
-
-.. important::
-
-   The method of using a starter project (sandbox) with an URL such as
-   `/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-056/` is now deprecated.
-   You can still find your existing starter project on GitHub (https://github.com/T3DocumentationStarter)
-   and render this locally.
-
-.. important::
-
-   Please note that the :ref:`Local Editing and Rendering with Docker <render-documenation-with-docker>`
-   is currently the **recommended and  fully supported** workflow.
-   If you edit on GitHub directly, GitHub preview should also be sufficient for making small changes.
+If you run into a problem while rendering, check :ref:`rendering-docs-troubleshooting`,
+`report an issue <https://github.com/t3docs/docker-render-documentation/issues/new>`__
+or :ref:`ask for help <get-help-on-writing-docs>`.
 
 
-.. rst-class:: bignums
+.. rst-class:: bignums-xxl
 
-   #. Render Documentation Locally Using Docker
+    #.  Install Docker: https://docs.docker.com/install/
 
-      *  :ref:`render-documenation-with-docker` (should work on Linux)
-      *  :ref:`render-with-docker-compose` (should work better on MacOS
-         or Windows, but is still being tested)
+    #.  Preparations
 
-   #. Preview on GitHub
+        The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations
+        need to be done once:
 
-      This method is useful if you are editing documentation directly on
-      GitHub
+       .. code-block:: bash
 
-      Please be aware that the preview on GitHub supports reST, but not the
-      additional sphinx markup, such as the *toctree* or the
-      :ref:`intersphinx <intersphinx>` linking. Because of this, the
-      preview is not to be recommended for major changes that involve
-      markup beyond basic reST markup.
+          # pull 'latest' version from GitHub container repository
+          docker pull ghcr.io/t3docs/render-documentation
 
-   #. Preview using documentation-draft
+          # The "real" tag is independent of the container repository,
+          # so let's just create that extra "real" and "generic" tag
+          docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
 
-      You can use the `documentation-draft` to get a preview for your extensions.
-      See :ref:`migrate-branches`.
+          # verify it worked
+          docker run --rm t3docs/render-documentation --version
 
-   #. Various Online or Local Tools for reST Rendering
+    #.  Make dockrun_t3rd available in current terminal
 
-      These have the same drawbacks as already noted for *Preview on GitHub*.
+        .. code-block:: bash
 
+            source <(docker run --rm ghcr.io/t3docs/render-documentation show-shell-commands)
+
+        This will run the Docker container, in order to make the command
+        `dockrun_t3rd` available in your current terminal. You must do this
+        again for every new terminal you open.
+
+        .. tip::
+
+            If this command does not work on your platform,
+            look at :ref:`render-troubleshooting-source`
+            for alternatives.
+
+    #.  Run dockrun_t3rd
+
+        .. code-block:: bash
+
+            dockrun_t3rd makehtml
+
+        This will automatically find the documentation in the
+        :file:`Documentation` subfolder. It will create a directory
+        :file:`Documentation-GENERATED-temp` and write the results there.
+
+    #.  Open generated documentation
+
+        Look at the output of the previous command to see where the
+        generated documentation is located or use one of these commands
+        to directly open the start page in a browser:
+
+        .. tabs::
+
+          .. group-tab:: Linux
+
+             .. code-block:: bash
+
+                xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
+          .. group-tab:: MacOS
+
+             .. code-block:: bash
+
+                open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+
+          .. group-tab:: Windows
+
+             .. code-block:: powershell
+
+                start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
 
 
 .. toctree::
    :hidden:
    :glob:
 
-   Quickstart
-   RenderWithDockerCompose
    Troubleshooting
