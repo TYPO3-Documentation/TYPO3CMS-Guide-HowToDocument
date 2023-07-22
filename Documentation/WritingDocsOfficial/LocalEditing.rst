@@ -89,9 +89,7 @@ the ability to experiment and preview your changes locally before submitting the
 
    Render your changes with Docker to preview them locally:
 
-   *  :ref:`render-documenation-with-docker` (works best on Linux)
-   *  :ref:`render-with-docker-compose` (should work better on MacOS
-      and Windows, but is still in development)
+   *  :ref:`render-documenation-with-docker`
 
 8. Commit
 
