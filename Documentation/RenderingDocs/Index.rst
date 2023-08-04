@@ -35,7 +35,7 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
         The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations
         need to be done once:
 
-        .. code-block:: bash
+        ..  code-block:: bash
 
             # pull 'latest' version from GitHub container repository
             docker pull ghcr.io/t3docs/render-documentation
