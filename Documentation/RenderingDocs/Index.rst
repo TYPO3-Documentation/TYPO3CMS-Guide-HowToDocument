@@ -35,17 +35,17 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
         The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations
         need to be done once:
 
-       .. code-block:: bash
+        .. code-block:: bash
 
-          # pull 'latest' version from GitHub container repository
-          docker pull ghcr.io/t3docs/render-documentation
+            # pull 'latest' version from GitHub container repository
+            docker pull ghcr.io/t3docs/render-documentation
 
-          # The "real" tag is independent of the container repository,
-          # so let's just create that extra "real" and "generic" tag
-          docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
+            # The "real" tag is independent of the container repository,
+            # so let's just create that extra "real" and "generic" tag
+            docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
 
-          # verify it worked
-          docker run --rm t3docs/render-documentation --version
+            # verify it worked
+            docker run --rm t3docs/render-documentation --version
 
     #.  Make dockrun_t3rd available in current terminal
 
