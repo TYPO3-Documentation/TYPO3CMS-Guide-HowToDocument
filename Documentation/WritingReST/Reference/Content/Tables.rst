@@ -91,7 +91,7 @@ CSV table
     2, "two"
 
 
-http://docutils.sourceforge.net/docs/ref/rst/directives.html#id4
+https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table-1
 
 
 ..  index::
