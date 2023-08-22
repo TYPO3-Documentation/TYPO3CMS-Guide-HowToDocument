@@ -76,11 +76,11 @@ CSV table
 ..  code-block:: rest
 
     ..  csv-table:: Numbers
-    :header: "Header 1", "Header 2"
-    :widths: 15, 15
+        :header: "Header 1", "Header 2"
+        :widths: 15, 15
 
-    1, "one"
-    2, "two"
+        1, "one"
+        2, "two"
 
 
 ..  csv-table:: Numbers
@@ -91,7 +91,7 @@ CSV table
     2, "two"
 
 
-http://docutils.sourceforge.net/docs/ref/rst/directives.html#id4
+https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table-1
 
 
 ..  index::
