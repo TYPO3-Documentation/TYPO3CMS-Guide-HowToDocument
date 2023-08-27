@@ -12,7 +12,7 @@ Embed YouTube videos
 
 ..  rst-class:: bignums
 
-1. Get the YouTube id.
+1.  Get the YouTube id.
 
     Example: The URL is :samp:`https://www.youtube.com/watch?v=rWkVS9qxBmg`.
 
@@ -21,7 +21,7 @@ Embed YouTube videos
 
     Here: `rWkVS9qxBmg`.
 
-2. Embed the Video using the id
+2.  Embed the Video using the id
 
 
     ..  code-block:: rest
