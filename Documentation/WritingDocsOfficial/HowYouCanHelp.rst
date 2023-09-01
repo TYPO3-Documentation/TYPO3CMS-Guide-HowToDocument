@@ -135,8 +135,6 @@ See :ref:`youtube-videos` for information on how to do this.
 Review Manuals
 ==============
 
-*--* **new**, *added August 9, 2019*
-
 Pick a manual and start reviewing it.
 If you find something that needs fixing or something is missing, either fix it or write an
 issue for it, if you cannot make the changes yourself.
@@ -147,18 +145,6 @@ issue for it, if you cannot make the changes yourself.
    in a manual. Please focus your
    efforts mostly on the latest `main` branch, to get that up to date and ready!
 
-You can for example start with:
-
-*  :ref:`t3extbasebook:start` : This currently needs some work in all branches. Check if the text
-   is up to date and technically correct. Also, the text needs to be shortened in some parts and
-   language improvements are necessary (grammar, style). For the `main` branch, you can
-   `check off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Book-ExtbaseFluid/issues/296>`__
-   once you have started reviewing. This makes it easier for other reviewers to just skip the parts
-   that are already ok.
-*  :ref:`t3coreapi:start`: The same applies as for :ref:`t3extbasebook:start` except that
-   "TYPO3 Explained" is generally in much better shape. Still, you can help by reviewing and
-   `checking off this review list <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues/537>`__
-
 .. tip::
 
    If you don't have write access to a GitHub repository (which is usually the case if you
@@ -166,7 +152,7 @@ You can for example start with:
    in the issue.
 
 Once you start and are confident that you can make progress, you may want to talk about
-your intentions in the #typo3-documentation Slack channel (as this is a bigger change).
+your intentions in the `#typo3-documentation` Slack channel (as this is a bigger change).
 You can also mention if you need help (because reviewing an entire manual can be quite
 too much to do for one person).
 
