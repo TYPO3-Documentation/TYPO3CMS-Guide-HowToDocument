@@ -21,7 +21,7 @@ Embed YouTube videos
 
     Here: `rWkVS9qxBmg`.
 
-2.  Embed the Video using the id
+2.  Embed the Video using the ID
 
 
     ..  code-block:: rest
