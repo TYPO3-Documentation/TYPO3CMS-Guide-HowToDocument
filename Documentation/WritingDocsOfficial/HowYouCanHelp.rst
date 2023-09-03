@@ -152,7 +152,7 @@ issue for it, if you cannot make the changes yourself.
    in the issue.
 
 Once you start and are confident that you can make progress, you may want to talk about
-your intentions in the `#typo3-documentation` Slack channel (as this is a bigger change).
+your intentions in the `#typo3-documentation <https://typo3.slack.com/app_redirect?channel=C028JEPJL>`__ Slack channel (as this is a bigger change).
 You can also mention if you need help (because reviewing an entire manual can be quite
 too much to do for one person).
 
