@@ -27,7 +27,7 @@ if the previous step was successful.
 
 .. rst-class:: bignums-xxl
 
-#. Add mandatory :file:`composer.json`, see :ref:`composer-json`
+#. Add mandatory :file:`composer.json`, see :ref:`t3coreapi:composer-json`
 
    This file is necessary, in order to determine required information, like
    vendor, package name and supported TYPO3 version.
