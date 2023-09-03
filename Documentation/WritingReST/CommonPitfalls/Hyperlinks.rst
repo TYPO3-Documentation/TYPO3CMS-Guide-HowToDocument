@@ -16,7 +16,7 @@ Correct syntax
 
 ..  code-block:: rest
 
-   `anchor text <url>`__
+    `anchor text <url>`__
 
 
 Example:
@@ -36,27 +36,15 @@ Common mistake #1: Missing space
 Make sure there is a space between the anchor text and the
 opening `<`.
 
-.. tip::
-
-   To test this yourself right now, click on "Edit on GitHub" in the top right corner
-   of this page, fix the errors, then use "Preview changes" to view the changes
-   (you need a GitHub account for this, if you do not
-   have an account, go to https://github.com/join).
-
-
 
 Wrong syntax
 ------------
 
 ..  code-block:: rest
 
-   `T3O<https://typo3.org>`__
+    Wrong: `T3O<https://typo3.org>`__
 
-
-How this looks:
-
-
-`T3O<https://typo3.org>`__
+    Correct: `T3O <https://typo3.org>`__
 
 
 Common mistake #2: Missing underscore (_)
@@ -70,13 +58,9 @@ Wrong Syntax
 
 ..  code-block:: rest
 
-   `T3O <https://typo3.org>`
+   Wrong: `T3O <https://typo3.org>`
 
-
-How this looks:
-
-
-`T3O <https://typo3.org>`
+   Correct: `T3O <https://typo3.org>`__
 
 
 .. _common-pitfalls-links-more-information:

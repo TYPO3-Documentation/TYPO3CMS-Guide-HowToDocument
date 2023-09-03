@@ -187,7 +187,7 @@ Terms
 How to use these terms:
 
 reStructuredText
-   Use :term:`reST` as abbreviation.
+   Use `reST` as abbreviation.
 
 reST
    `reStructuredText <https://docutils.sourceforge.io/rst.html>`__ is a 'Markup

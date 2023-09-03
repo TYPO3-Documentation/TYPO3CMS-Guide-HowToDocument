@@ -98,7 +98,7 @@ works different from the one from the :cobj-coa:`stdWrap` property of the
 The third entry of the configuration is used as label in the automatic Index
 entries (:ref:`genindex.rst <genindex-rst>`):
 
-..  image:: /Images/CustomConfigurationIndexEntries.png
+..  figure:: /Images/CustomConfigurationIndexEntries.png
 
     Automatic entries on the page :ref:`genindex.rst <genindex-rst>`.
 
