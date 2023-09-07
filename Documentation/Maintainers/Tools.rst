@@ -13,7 +13,7 @@ api.typo3.org
 Landing page
 ------------
 
-The landing page of https://api.typo3.org is automatically updated when this
+The landing page of https://api.typo3.org/ is automatically updated when this
 file is updated in GitHub:
 
 https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
