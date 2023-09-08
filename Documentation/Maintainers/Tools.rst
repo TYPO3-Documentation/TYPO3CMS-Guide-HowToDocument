@@ -3,9 +3,9 @@
 .. index:: Changes; Backporting
 .. _backport-changes:
 
-=====================
-Tools of the Doc Team
-=====================
+===============================
+Tools of the Documentation Team
+===============================
 
 api.typo3.org
 =============
