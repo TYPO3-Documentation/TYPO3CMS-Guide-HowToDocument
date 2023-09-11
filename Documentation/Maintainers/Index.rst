@@ -1,12 +1,13 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _maintainers:
+..  _maintainers:
 
 ===============
 For maintainers
 ===============
 
-.. toctree::
-   :maxdepth: 1
+..  toctree::
+    :maxdepth: 1
 
-   BackportChanges
+    BackportChanges
+    Tools
