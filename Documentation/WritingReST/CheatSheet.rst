@@ -348,6 +348,9 @@ For inline code or for other semantic markup of special texts, use text roles.
 #. :php:`$result = $a + 23;` (PHP snippet)
 #. :typoscript:`lib.hello.value = Hello World!` (TypoScript snippets)
 #. :file:`/etc/passwd` (file)
+#. :bash:`bin/typo3 cleanup:flexforms` (shell)
+#. :sql:`tt_content.pi_flexform` (SQL)
+#. :xml:`<TCEForms>`
 #. :kbd:`ctrl` + :kbd:`s` (keyboard strokes)
 
 Source:
