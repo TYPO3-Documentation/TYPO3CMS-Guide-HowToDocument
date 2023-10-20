@@ -350,7 +350,7 @@ For inline code or for other semantic markup of special texts, use text roles.
 #. :file:`/etc/passwd` (file)
 #. :bash:`bin/typo3 cleanup:flexforms` (shell)
 #. :sql:`tt_content.pi_flexform` (SQL)
-#. :xml:`<TCEForms>`
+#. :xml:`<TCEForms>` (XML)
 #. :kbd:`ctrl` + :kbd:`s` (keyboard strokes)
 
 Source:
@@ -361,6 +361,9 @@ Source:
     :php:`$result = $a + 23;`
     :typoscript:`lib.hello.value = Hello World!`
     :file:`/etc/passwd`
+    :bash:`bin/typo3 cleanup:flexforms` (shell)
+    :sql:`tt_content.pi_flexform` (SQL)
+    :xml:`<TCEForms>` (XML)
     :kbd:`ctrl` + :kbd:`s`
 
 
