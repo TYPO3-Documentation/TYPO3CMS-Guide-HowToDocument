@@ -123,7 +123,7 @@ With Big Numbers - Attention
 
     ..  rst-class:: bignums-attention
 
-    1. ONE One one bignums-attention
+    1.  ONE One one bignums-attention
 
         More ...
 
@@ -133,15 +133,15 @@ With Big Numbers - Attention
 
 ..  rst-class:: bignums-attention
 
-1. ONE One one bignums-attention
+1.  ONE One one bignums-attention
 
     More ...
 
-2. TWO Two two
+2.  TWO Two two
 
     More ...
 
-3. THREE Three three
+3.  THREE Three three
 
     More ...
 
@@ -234,7 +234,7 @@ Nested bignums-xxl > bignums > Normally Styled
 
 ..  rst-class:: bignums-xxl
 
-1. ONE One one bignums-xxl
+1.  ONE One one bignums-xxl
 
     This is the story of my life ...
 
@@ -264,7 +264,7 @@ More Examples of Nesting
 
 ..  rst-class:: bignums-xxl
 
-1. Prepare
+1.  Prepare
 
     ..  rst-class:: bignums-important
 
@@ -282,7 +282,7 @@ More Examples of Nesting
     #.  Stop everything else!
 
 
-2. Install
+2.  Install
 
     Now the actual stuff.
 
@@ -307,7 +307,7 @@ More Examples of Nesting
         #.  run installer
 
 
-3. Cleanup
+3.  Cleanup
 
     **BEWARE:**
 
@@ -318,7 +318,7 @@ More Examples of Nesting
     #.  Do not zzz!
 
 
-4. Be a happy user!
+4.  Be a happy user!
 
     ..  rst-class:: bignums-tip
 
