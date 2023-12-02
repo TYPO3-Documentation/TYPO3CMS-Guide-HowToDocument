@@ -56,9 +56,11 @@ be found in the subchapters.
 
 #. Link to the changelog
 
-   :ref:`link-to-changelog` describes how to link to the changelog::
+   :ref:`link-to-changelog` describes how to link to the changelog:
 
-      :doc:`ext_core:Changelog/10.0/Feature-88770-PSR-14BasedEventDispatcher`
+   .. code-block:: rest
+
+      :ref:`ext_core:feature-101544-1691063522`
 
 
 #. Coding guidelines for headers

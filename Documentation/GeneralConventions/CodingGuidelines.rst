@@ -222,30 +222,33 @@ For more information, see the open issue:
 *  `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
 
 
-.. index::
-   reST; Link to changelog
-   reST roles; doc
-.. _link-to-changelog:
+..  index::
+    reST; Link to changelog
+    reST roles; doc
+..  _link-to-changelog:
 
 Link to changelog
 =================
 
-Linking to the changelog should not be necessary if all necessary information has been transferred
-to the documentation, but it is not discouraged either.
+Linking to the :doc:`changelog <ext_core:Index>` should not be necessary, if all
+relevant information has been transferred to the documentation, but it is not
+discouraged either.
 
-The changelog often does not have a title label, so you cannot easily link to it with `:ref:`.
+The changelog has a title anchor, so you can easily link to it with `:ref:`.
 
-You can use the method described in `How to link to a changelog <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/110>`__:
+..  code-block:: rest
 
-.. code-block:: rest
+    :ref:`ext_core:feature-101544-1691063522`
 
-   :doc:`ext_core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
+which outputs the link:
 
-For this to work, ext_core must be defined in :file:`Settings.cfg`:
+:ref:`ext_core:feature-101544-1691063522`
 
-.. code-block:: none
+For this to work, `ext_core` must be defined in :file:`Settings.cfg`:
 
-   ext_core = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
+..  code-block:: ini
+
+    ext_core = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
 
 
 .. index::
