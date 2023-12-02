@@ -22,7 +22,7 @@ Workflow #1: "Edit on GitHub"
 
    For example, you may have found a misspelling in
    the :ref:`t3start:start` or you want to add some new content
-   to the :ref:`t3install:start`.
+   to the :ref:`t3upgrade:start`.
 
 3. Edit the page on GitHub:
 

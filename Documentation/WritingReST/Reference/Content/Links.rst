@@ -258,7 +258,7 @@ need to prefix the names of that manuals:
 ..  code-block:: rest
 
     :ref:`t3tca:columns-inline`
-    :ref:`t3install:This-is-ABC`
+    :ref:`t3upgrade:This-is-ABC`
 
 
 The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file: .
@@ -266,8 +266,8 @@ The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file: 
 
 ..  code-block:: none
 
-    t3tca            = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
-    t3install      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
+    t3tca          = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
+    t3upgrade      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
 
 
 ..  important::
