@@ -51,14 +51,16 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
 
         .. code-block:: bash
 
-            eval "$(docker run --rm t3docs/render-documentation:latest show-shell-commands)"
+            eval "$(docker run --rm t3docs/render-documentation show-shell-commands)"
 
-        This will run the Docker container and print out shell code that defines
-        a helper function named `dockrun_t3rd`. This function relieves you of the work of setting 
-        the volumes and rights correctly when running the container and provides a folder for the
-        results. Executing the code with `eval` defines the function for your current terminal. 
-        Either do this each time you open a new terminal or add the line to the startup script 
-        (`~/.bashrc`, `.zshrc`, …) of your shell.
+        This will run the Docker container and print out shell code. Once "eval-uated" 
+        the code defines a helper function named `dockrun_t3rd`. This function relieves 
+        you of the work of setting the volumes and rights correctly when running the 
+        container and ensures a folder for the rendering results is provided. Executing 
+        the code with `eval` defines the function for your current terminal. Don't forget
+        the quotes around everything that goes into eval. Either define the function each
+        time you open a new terminal window or add the line to the startup file of your
+        shell like `~/.bashrc` or `.zshrc`.
 
     #.  Run dockrun_t3rd
 
