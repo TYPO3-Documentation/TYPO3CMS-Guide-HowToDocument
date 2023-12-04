@@ -75,18 +75,18 @@ Further information:
 
 *  General section about reST CGL: :ref:`version-hints`
 
-.. index::
-   reST; Changelog links
-   reST roles; doc
+..  index::
+    reST; Changelog links
+    reST roles; doc
 
 Link to changelog
 =================
 
 How to link to the changelog is described in :ref:`link-to-changelog`.
 
-.. code-block:: rest
+..  code-block:: rest
 
-   :doc:`ext_core:Changelog/8.1/Deprecation-75625-DeprecatedCacheClearingOptions`
+    :ref:`ext_core:feature-101544-1691063522`
 
 For this to work, ext_core must be defined in :file:`Settings.cfg`
 
