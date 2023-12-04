@@ -47,21 +47,20 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
             # verify it worked
             docker run --rm t3docs/render-documentation --version
 
-    #.  Make dockrun_t3rd available in current terminal
+    #.  Make 'dockrun_t3rd' available in current terminal
 
         .. code-block:: bash
 
-            source <(docker run --rm ghcr.io/t3docs/render-documentation show-shell-commands)
+            eval "$(docker run --rm t3docs/render-documentation show-shell-commands)"
 
-        This will run the Docker container, in order to make the command
-        `dockrun_t3rd` available in your current terminal. You must do this
-        again for every new terminal you open.
-
-        .. tip::
-
-            If this command does not work on your platform,
-            look at :ref:`render-troubleshooting-source`
-            for alternatives.
+        This will run the Docker container and print out shell code. Once "eval-uated" 
+        the code defines a helper function named `dockrun_t3rd`. This function relieves 
+        you of the work of setting the volumes and rights correctly when running the 
+        container and ensures a folder for the rendering results is provided. Executing 
+        the code with `eval` defines the function for your current terminal. Don't forget
+        the quotes around everything that goes into eval. Either define the function each
+        time you open a new terminal window or add the line to the startup file of your
+        shell like `~/.bashrc` or `.zshrc`.
 
     #.  Run dockrun_t3rd
 
