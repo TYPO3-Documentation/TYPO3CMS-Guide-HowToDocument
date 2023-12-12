@@ -66,7 +66,9 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
 
         .. code-block:: bash
 
-            dockrun_t3rd makehtml
+            dockrun_vx.x.x makehtml
+
+        The version number must be replaced with the number from the return of the previous step.
 
         This will automatically find the documentation in the
         :file:`Documentation` subfolder. It will create a directory
