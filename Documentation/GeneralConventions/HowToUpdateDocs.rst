@@ -84,7 +84,7 @@ Link to changelog
 
 How to link to the changelog is described in :ref:`link-to-changelog`.
 
-..  code-block:: rest
+..  code-block:: rst
 
     :ref:`ext_core:feature-101544-1691063522`
 

@@ -64,7 +64,7 @@ Example 1: Scaled image with shadow and link target
     :class: with-shadow
     :scale: 50
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
     ..  image:: /Images/a4.jpg
@@ -102,7 +102,7 @@ Example 2: Image with caption
 
     This is the image caption
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
         ..  figure:: /Images/a4.jpg
@@ -127,7 +127,7 @@ Example 3: Image with fixed width
     :width: 100px
 
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
     ..  image:: /Images/a4.jpg
@@ -156,7 +156,7 @@ Some text ...  (will be displayed on the right of the image).
 ..  rst-class::  clear-both
 
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  image:: /Images/a4.jpg
         :alt: Left floating image

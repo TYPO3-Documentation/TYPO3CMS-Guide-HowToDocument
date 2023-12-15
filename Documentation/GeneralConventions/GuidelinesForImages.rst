@@ -79,7 +79,7 @@ Here are some :ref:`examples for screenshots <t3contribute:how-to-see-merge-conf
 
 
 
-.. code-block:: rest
+.. code-block:: rst
 
    .. image:: images/github-getting-started-raw.png
       :class: with-shadow

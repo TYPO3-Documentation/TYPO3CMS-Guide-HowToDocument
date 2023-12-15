@@ -77,7 +77,7 @@ information to the start page:
 :Status:
       Tested and reviewed for TYPO3 9.5.5 on April 11, 2019
 
-.. code-block:: rest
+.. code-block:: rst
 
    :Status:
          Tested and reviewed for TYPO3 9.5.5 on April 11, 2019
@@ -89,7 +89,7 @@ the review information on the start page, for example
 :Status:
       Last tested and reviewed for TYPO3 9.5.5 on April 11, 2019, some pages outdated
 
-.. code-block:: rest
+.. code-block:: rst
 
    :Status:
          Last tested and reviewed for TYPO3 9.5.5 on April 11, 2019, some pages outdated
@@ -119,7 +119,7 @@ cases where updating is not possible immediately.
 
    The information on this page is outdated!
 
-.. code-block:: rest
+.. code-block:: rst
 
    .. warning::
 
@@ -137,7 +137,7 @@ The "todo" directive will not get rendered by default.
 
 Examples of review information with todo:
 
-.. code-block:: rest
+.. code-block:: rst
 
    .. todo:: Needs review: Outdated (2019/5/15 TYPO3 9.5.5)
 

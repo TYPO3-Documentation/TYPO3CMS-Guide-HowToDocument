@@ -63,7 +63,7 @@ Undirected graph
         user -- view -- controller -- model;
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  graphviz::
         :caption: The MVC pattern divides the application into three global layers.
@@ -157,7 +157,7 @@ Directed graph
         list -> blog_entity [label="② Retrieve all blog posts";constraint=false];
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  graphviz::
         :caption: In this request, a list of blog posts is displayed.
@@ -270,7 +270,7 @@ Dot layout engine
         end [shape=Msquare];
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  graphviz::
 
@@ -337,7 +337,7 @@ Neato layout engine
         fontsize=20;
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  graphviz::
 
@@ -422,7 +422,7 @@ Fdp layout engine
         clusterC -- clusterB;
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  graphviz::
 

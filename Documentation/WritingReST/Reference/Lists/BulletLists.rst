@@ -43,7 +43,7 @@ Numbered lists:
 Example 1: List with sublist items
 ==================================
 
-.. code-block:: rest
+.. code-block:: rst
 
     *   item 1
     *   item 2 is a longer text with line breaks. We can format and
@@ -78,7 +78,7 @@ Example 2: List with sublist and error
     This example will not work as expected, because the extra lines
     for the sublist are missing.
 
-.. code-block:: rest
+.. code-block:: rst
 
     *   item 1
     *   item 2
@@ -106,7 +106,7 @@ Example 3: List with sublist and whitespace error
     If you only use one the sublist is interpreted like
     a citation.
 
-.. code-block:: rest
+.. code-block:: rst
 
     * item 1
     * item 2

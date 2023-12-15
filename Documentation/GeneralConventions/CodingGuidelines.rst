@@ -48,7 +48,7 @@ Whitespace and indentation
 
 Example:
 
-.. code-block:: rest
+.. code-block:: rst
   :linenos:
 
    .. image:: /Images/a4.jpg
@@ -236,7 +236,7 @@ discouraged either.
 
 The changelog has a title anchor, so you can easily link to it with `:ref:`.
 
-..  code-block:: rest
+..  code-block:: rst
 
     :ref:`ext_core:feature-101544-1691063522`
 
@@ -269,14 +269,14 @@ element or clicked one after the other, use *>* as separator and use
 
 Examples:
 
-.. code-block:: rest
+.. code-block:: rst
 
    Select :guilabel:`File > Open`
 
 How it looks:
    Select :guilabel:`File > Open`
 
-.. code-block:: rest
+.. code-block:: rst
 
    Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
 
@@ -296,7 +296,7 @@ When pointing out keyboard shortcuts or keystroke sequences, use
 
 Example:
 
-.. code-block:: rest
+.. code-block:: rst
 
    Press :kbd:`ctrl` + :kbd:`s`
 

@@ -38,7 +38,7 @@ Refer to :ref:`migrate-necessary-steps` in order to fix this issue.
 
 You must add the project title to your :file:`Settings.cfg`:
 
-.. code-block:: rest
+.. code-block:: rst
 
     [general]
 

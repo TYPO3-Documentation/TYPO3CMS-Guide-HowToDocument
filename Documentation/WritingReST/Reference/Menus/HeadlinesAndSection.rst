@@ -47,7 +47,7 @@ is split into "sections" instead. Those sections are identified by titles which
 Example
 =======
 
-..  code-block:: rest
+..  code-block:: rst
 
     ========
     DocTitle
@@ -84,7 +84,7 @@ may be longer, not shorter.
 Example 1: This Works
 ~~~~~~~~~~~~~~~~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
     =========
     Example 1
@@ -93,7 +93,7 @@ Example 1: This Works
 Example 2: This Works Too
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
     ==============
     Example 1
@@ -102,7 +102,7 @@ Example 2: This Works Too
 Example 3: This Does not Work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
     =======
     Example 1
