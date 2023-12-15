@@ -119,7 +119,7 @@ additional authors is automatically added to the commit.
 How to backport manually?
 =========================
 
-If you cherry-pick a commit locally, you can (optionally) use :shell:`-x` to
+If you cherry-pick a commit locally, you can (optionally) use :bash:`-x` to
 automatically insert information that this is a cherry-pick and
 the original commit ID.
 
