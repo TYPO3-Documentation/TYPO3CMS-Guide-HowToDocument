@@ -17,7 +17,7 @@ responsive.
 Grid table
 ==========
 
-..  code-block:: rest
+..  code-block:: rst
 
     +----------+----------+
     | Header 1 | Header 2 |
@@ -48,7 +48,7 @@ Simple table
 ============
 
 
-..  code-block:: rest
+..  code-block:: rst
 
     ========  ========
     Header 1  Header 2
@@ -73,7 +73,7 @@ http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
 CSV table
 =========
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  csv-table:: Numbers
         :header: "Header 1", "Header 2"
@@ -105,7 +105,7 @@ template. If you want your .rst file to be correctly rendered on other
 platforms as well (for example GitHub), you should not use this.
 
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  t3-field-list-table::
         :header-rows: 1

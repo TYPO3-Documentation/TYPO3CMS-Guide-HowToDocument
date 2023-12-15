@@ -18,6 +18,6 @@ menu somewhere. Sphinx will issue a warning if this isn’t the case.
     This will suppress the warning.
 
 
-..  code-block:: rest
+..  code-block:: rst
 
     :orphan:

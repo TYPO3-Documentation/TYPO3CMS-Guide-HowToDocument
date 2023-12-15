@@ -19,7 +19,7 @@ Examples
 See also
 --------
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  seealso::
         `Admonitions <http://docutils.sourceforge.net/0.7/docs/ref/rst/directives.html#admonitions>`__
@@ -33,7 +33,7 @@ See also
 Note
 ----
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  note::
         A note
@@ -47,7 +47,7 @@ Note
 Tip
 ---
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  tip::
         A tip
@@ -63,7 +63,7 @@ and **tip** is more commonly used in the documentation.
 Warning
 -------
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  warning::
         Some text pointing out something that people should be warned about.
@@ -80,7 +80,7 @@ severity of the warning must be stressed.
 Attention
 ---------
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  attention::
         A attention
