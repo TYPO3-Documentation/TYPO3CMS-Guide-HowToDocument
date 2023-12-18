@@ -256,35 +256,27 @@ Exceptions
 Traits
 ------
 
-..  php:namespace:: TYPO3\CMS\Core\Context
+..  php:namespace:: Psr\Log
 
-..  php:trait:: ContextAwareTrait
+..  php:trait:: LoggerAwareTrait
 
-    ..  php:attr:: $context
+    ..  php:attr:: $logger
 
-    ..  php:method:: setContext(Context $context)
+    ..  php:method:: setLogger(LoggerInterface $logger)
 
-        :param TYPO3\\CMS\\Core\\Context\\Context $context: The context
-
-    ..  php:method:: getContext()
-
-        :returntype: TYPO3\\CMS\\Core\\Context\\Context
+        :param Psr\\Log\\LoggerInterface $logger: The logger
 
 ..  code-block:: rst
 
-    ..  php:namespace:: TYPO3\CMS\Core\Context
+    ..  php:namespace:: Psr\Log
 
-    ..  php:trait:: ContextAwareTrait
+    ..  php:trait:: LoggerAwareTrait
 
-        ..  php:attr:: $context
+        ..  php:attr:: $logger
 
-        ..  php:method:: setContext(Context $context)
+        ..  php:method:: setLogger(LoggerInterface $logger)
 
-            :param TYPO3\\CMS\\Core\\Context\\Context $context: The context
-
-        ..  php:method:: getContext()
-
-            :returntype: TYPO3\\CMS\\Core\\Context\\Context
+            :param Psr\\Log\\LoggerInterface $logger: The logger
 
 ..  _rest-phpdomain-links:
 
