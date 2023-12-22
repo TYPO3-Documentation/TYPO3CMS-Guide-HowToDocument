@@ -17,6 +17,8 @@ To do
 
 *   Update :ref:`t3start:install` to reflect the new version upon installation.
 
+*   Update Composer version constraints on :ref:`t3coreapi:composer-json`.
+
 *   Add "-dev" links (like `13-dev`) to the links on the homepage:
 
     *   :ref:`t3home:getting-started`
