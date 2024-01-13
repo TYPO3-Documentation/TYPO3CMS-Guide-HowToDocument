@@ -21,7 +21,7 @@ throughout the docs is to to keep it the same length.
 Correct syntax
 ==============
 
-..  code-block:: rest
+..  code-block:: rst
 
    ================
    This Is a Header
@@ -39,7 +39,7 @@ Wrong syntax
 ============
 
 
-..  code-block:: rest
+..  code-block:: rst
 
    Another Header
    ------------

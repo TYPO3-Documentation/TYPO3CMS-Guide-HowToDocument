@@ -57,7 +57,7 @@ The following directive inserts an image in the rendered page. All lines beginni
 two must be indented to the same leve. The convention is to use 4 spaces for one
 level of indentation.
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  image:: someimage.png
         :class: with-border with-shadow

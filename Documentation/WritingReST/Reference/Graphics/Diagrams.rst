@@ -71,7 +71,7 @@ Activity diagram
     --> "Page.onDestroy()"
     -->(*)
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -158,7 +158,7 @@ Class diagram
         String password
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -225,7 +225,7 @@ Component diagram
     [Example 1] --> [Folder 3]
     [Folder 3] --> [Frame 4]
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -283,7 +283,7 @@ Deployment diagram
         }
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -366,7 +366,7 @@ rendering process of the TYPO3 documentation.
     php2 <--> mysql
     php2 <--> elastic
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -425,7 +425,7 @@ The latest icons can be integrated directly via remote url.
 
     DEV_TYPO3(typo3,"TYPO3",participant,orange)
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -453,7 +453,7 @@ Maths
     <latex>P(y|\mathbf{x}) \mbox{ or } f(\mathbf{x})+\epsilon</latex>
     end note
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -485,7 +485,7 @@ Misc
     You can use [[http://plantuml.com/start links in notes]] also.
     end note
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -528,7 +528,7 @@ Object diagram
     Object05 o-- "4" Object06
     Object07 ..  Object08 : some labels
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -569,7 +569,7 @@ Sequence diagram
     Alice -> Bob: Another authentication Request
     Alice <-- Bob: another authentication Response
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -612,7 +612,7 @@ State diagram
         }
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -662,7 +662,7 @@ Timing diagram
     +500 is ok
     @200 <-> @+150 : {150 ms}
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 
@@ -705,7 +705,7 @@ Use Case diagram
         (checkout) -- clerk
     }
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 

@@ -58,7 +58,7 @@ be found in the subchapters.
 
    :ref:`link-to-changelog` describes how to link to the changelog:
 
-   .. code-block:: rest
+   .. code-block:: rst
 
       :ref:`ext_core:feature-101544-1691063522`
 

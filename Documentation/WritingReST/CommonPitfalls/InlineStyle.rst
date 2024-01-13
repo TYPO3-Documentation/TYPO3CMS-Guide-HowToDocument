@@ -15,7 +15,7 @@ the markup and the styled text.
 Correct syntax
 --------------
 
-..  code-block:: rest
+..  code-block:: rst
 
    This is normal text. **This is bold text.**
 
@@ -28,7 +28,7 @@ This is normal text. **This is bold text.**
 Wrong syntax
 ------------
 
-..  code-block:: rest
+..  code-block:: rst
 
    This is normal text. ** This is bold text.**
 

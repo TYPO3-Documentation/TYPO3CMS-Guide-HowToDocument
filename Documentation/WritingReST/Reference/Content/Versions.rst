@@ -20,7 +20,7 @@ and semi-automatically be removed after one or two versions.
 Versionadded
 ============
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  versionadded:: 10.2
         Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
@@ -34,7 +34,7 @@ For emphasis, the directive can also be placed into one of the
 :ref:`admonitions <rest-admonitions>`:
 
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  tip::
         ..  versionadded:: 10.2
@@ -49,7 +49,7 @@ For emphasis, the directive can also be placed into one of the
 Deprecated
 ==========
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  deprecated:: 10.2
         The hook shown here is deprecated since TYPO3 10.2 - use a custom
@@ -62,7 +62,7 @@ Deprecated
 Versionchanged
 ==============
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  versionchanged:: 10.4.34
         The bug ... was fixed with version 10.4.23 ...
