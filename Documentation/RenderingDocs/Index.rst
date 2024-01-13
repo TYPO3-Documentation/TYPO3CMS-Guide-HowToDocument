@@ -24,7 +24,7 @@ manual with the following steps:
 
 #.  Clone the repository containing the documentation.
 
-#.  Navigate to the extension root, the directory which contains the
+#.  Navigate to the extension's root folder, the directory which contains the
     :file:`composer.json`.
 
 #.  Check if there is documentation to be rendered:
