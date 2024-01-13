@@ -24,7 +24,8 @@ manual with the following steps:
 
 #.  Clone the repository containing the documentation.
 
-#.  Navigate to the directory, which contains the :file:`composer.json`
+#.  Navigate to the extension root, the directory which contains the
+    :file:`composer.json`.
 
 #.  Check if there is documentation to be rendered:
 
@@ -61,19 +62,18 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             open "Documentation-GENERATED-temp/Index.html"
 
-Rendering extension documentation to docs.typo3.org
-===================================================
+Publishing extension documentation to docs.typo3.org
+====================================================
 
-For your documentation to be rendered to our server https://docs.typo3.org, your
+For your documentation to be published to https://docs.typo3.org, your
 TYPO3 extension has to have a valid :file:`composer.json` and either a folder
 called :file:`Documentation` with a :file:`Documentation/Index.rst` and
-a :file:`Documentation/guides.xml` or a :file:`README.rst` / :file:`README.md` on
-the level of your :file:`composer.json`.
+a :file:`Documentation/guides.xml` or a :file:`README.rst` / :file:`README.md`
+in the extensions root directory.
 
 The extension has to be publicly available on GitHub or GitLab. You have to
-introduce a :ref:`Webhook <webhook>` and the Documentation Team has to
-:ref:`approve <approval-intercept>` your first rendering request on a tool
-called "Intercept".
+establish a :ref:`Webhook <webhook>` and the Documentation Team has to
+:ref:`approve <approval-intercept>` your first rendering.
 
 Introduce automatic testing for extension documentation
 =======================================================
