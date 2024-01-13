@@ -10,97 +10,116 @@
 .. _render-documenation-with-docker:
 .. _render-documentation-with-docker:
 
+=========================================
+Render documentation with the TYPO3 theme
+=========================================
 
-===========================
-How to render documentation
-===========================
+..  contents::
 
-This page explains how to render a manual locally on your machine
-with Docker in order to test the rendering.
+Rendering the :file:`Documentation` folder locally with Docker
+==============================================================
 
-Run these commands in a terminal in the parent directory of the directory
-:file:`Documentation`. You should use a bash compatible shell, if possible.
+You can render the documentation of an official TYPO3 manual or a third party
+manual with the following steps:
 
-If you run into a problem while rendering, check :ref:`rendering-docs-troubleshooting`,
-`report an issue <https://github.com/t3docs/docker-render-documentation/issues/new>`__
-or :ref:`ask for help <get-help-on-writing-docs>`.
+#.  Clone the repository containing the documentation.
 
+#.  Navigate to the directory, which contains the :file:`composer.json`
 
-.. rst-class:: bignums-xxl
+#.  Check if there is documentation to be rendered:
 
-    #.  Install Docker: https://docs.docker.com/install/
+    A folder called :file:`Documentation` containing at least the files
+    :file:`Index.rst` and :file:`guides.xml`.
 
-    #.  Preparations
+#.  Choose your prefered method of rendering (See bellow):
 
-        The docker image is not listed on Docker Hub (hub.docker.com) anymore, therefore some preparations
-        need to be done once:
+Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
+
+.. tabs::
+
+    ..  group-tab:: Linux
 
         ..  code-block:: bash
 
-            # pull 'latest' version from GitHub container repository
-            docker pull ghcr.io/t3docs/render-documentation
+            mkdir -p Documentation-GENERATED-temp
+            docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            xdg-open "Documentation-GENERATED-temp/Index.html"
 
-            # The "real" tag is independent of the container repository,
-            # so let's just create that extra "real" and "generic" tag
-            docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
+    .. group-tab:: MacOS
 
-            # verify it worked
-            docker run --rm t3docs/render-documentation --version
+        ..  code-block:: bash
 
-    #.  Make 'dockrun_t3rd' available in current terminal
+            mkdir -p Documentation-GENERATED-temp
+            docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            open "Documentation-GENERATED-temp/Index.html"
 
-        .. code-block:: bash
+    ..  group-tab:: Windows
 
-            eval "$(docker run --rm t3docs/render-documentation show-shell-commands)"
+        ..  code-block:: powershell
 
-        This will run the Docker container and print out shell code. Once "eval-uated" 
-        the code defines a helper function named `dockrun_t3rd`. This function relieves 
-        you of the work of setting the volumes and rights correctly when running the 
-        container and ensures a folder for the rendering results is provided. Executing 
-        the code with `eval` defines the function for your current terminal. Don't forget
-        the quotes around everything that goes into eval. Either define the function each
-        time you open a new terminal window or add the line to the startup file of your
-        shell like `~/.bashrc` or `.zshrc`.
+            start "Documentation-GENERATED-temp/Index.html"
+            docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+            open "Documentation-GENERATED-temp/Index.html"
 
-    #.  Run dockrun_t3rd
+Rendering extension documentation to docs.typo3.org
+===================================================
 
-        .. code-block:: bash
+For your documentation to be rendered to our server https://docs.typo3.org, your
+TYPO3 extension has to have a valid :file:`composer.json` and either a folder
+called :file:`Documentation` with a :file:`Documentation/Index.rst` and
+a :file:`Documentation/guides.xml` or a :file:`README.rst` / :file:`README.md` on
+the level of your :file:`composer.json`.
 
-            dockrun_t3rd makehtml
+The extension has to be publicly available on GitHub or GitLab. You have to
+introduce a :ref:`Webhook <webhook>` and the Documentation Team has to
+:ref:`approve <approval-intercept>` your first rendering request on a tool
+called "Intercept".
 
-        This will automatically find the documentation in the
-        :file:`Documentation` subfolder. It will create a directory
-        :file:`Documentation-GENERATED-temp` and write the results there.
+Introduce automatic testing for extension documentation
+=======================================================
 
-    #.  Open generated documentation
+It is recommended to make sure your documentation always renders without
+warning. On GitHub or GitLab you can introduce actions that test your
+documentation automatically:
 
-        Look at the output of the previous command to see where the
-        generated documentation is located or use one of these commands
-        to directly open the start page in a browser:
+.. tabs::
 
-        .. tabs::
+    ..  group-tab:: GitHub
 
-          .. group-tab:: Linux
+        ..  code-block:: yaml
+            :caption: .github/workflows/documentation.yml
 
-             .. code-block:: bash
+            name: test documentation
 
-                xdg-open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+            on: [ push, pull_request ]
 
-          .. group-tab:: MacOS
+            jobs:
+              tests:
+                name: documentation
+                runs-on: ubuntu-latest
+                steps:
+                  - name: Checkout
+                    uses: actions/checkout@v4
 
-             .. code-block:: bash
+                  - name: Test if the documentation will render without warnings
+                    run: |
+                      mkdir -p Documentation-GENERATED-temp \
+                      && docker run --rm --pull always -v $(pwd):/project \
+                         ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
 
-                open "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+    .. group-tab:: GitLab
 
-          .. group-tab:: Windows
+        ..  code-block:: bash
+            :caption: .gitlab-ci.yml
 
-             .. code-block:: powershell
+            stages:
+              - test
 
-                start "Documentation-GENERATED-temp/Result/project/0.0.0/Index.html"
+            test_documentation:
+              stage: test
+              script:
+                - mkdir -p Documentation-GENERATED-temp
+                - docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
+              tags:
+                - docker
 
-
-.. toctree::
-   :hidden:
-   :glob:
-
-   Troubleshooting
