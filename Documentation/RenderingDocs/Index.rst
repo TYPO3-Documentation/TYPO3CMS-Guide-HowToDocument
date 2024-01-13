@@ -19,7 +19,7 @@ Render documentation with the TYPO3 theme
 Rendering the :file:`Documentation` folder locally with Docker
 ==============================================================
 
-You can render the documentation of an official TYPO3 manual or a third party
+You can render the documentation of an official TYPO3 manual or a third-party
 manual with the following steps:
 
 #.  Clone the repository containing the documentation.
