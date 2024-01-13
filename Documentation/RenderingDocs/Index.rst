@@ -31,7 +31,7 @@ manual with the following steps:
     A folder called :file:`Documentation` containing at least the files
     :file:`Index.rst` and :file:`guides.xml`.
 
-#.  Choose your prefered method of rendering (See bellow):
+#.  Choose your prefered method of rendering (See below):
 
 Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
