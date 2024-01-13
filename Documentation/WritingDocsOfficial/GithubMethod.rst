@@ -54,7 +54,7 @@ Workflow #1: "Edit on GitHub"
 
    Every page you edit is written in reST format, when it comes to making minor
    amendments no prior knowledge of editing .rst files is required. However, when you are
-   ready to make more advanced changes, you can :ref:`learn more about working with reST here.<rest-quick-start>`
+   ready to make more advanced changes, you can :ref:`learn more about working with reST here. <rest-quick-start>`
 
 7. Preview your changes:
 
