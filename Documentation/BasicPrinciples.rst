@@ -312,13 +312,7 @@ Examples for system extensions are:
 *  `ext:rte_ckeditor <https://docs.typo3.org/typo3cms/extensions/rte_ckeditor/>`__
 
 Note, that if your system has been installed with Composer, not all system extensions may exist
-in the system, if each system extension has been required separately as "subtree splitted packages"
-(not as `typo3/cms`). Since TYPO3 9, installation of "subtree splitted packages" is mandatory.
-
-For more information on subtree split, see
-
-*  `Usetypo3: The TYPO3 Subtree Split and Composer <https://usetypo3.com/typo3-subtree-split-and-composer.html>`__
-*  :ref:`Installation and Upgrade guide: Composer migration <composer-migration-require-subtree-packages>`
+in the system.
 
 
 .. index:: pair: System extensions; Documentation
