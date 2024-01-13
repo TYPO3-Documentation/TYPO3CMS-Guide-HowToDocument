@@ -58,9 +58,9 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
         ..  code-block:: powershell
 
-            start "Documentation-GENERATED-temp/Index.html"
+            New-Item -ItemType Directory -Force -Path ".\Documentation-GENERATED-temp"
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
-            open "Documentation-GENERATED-temp/Index.html"
+            start "Documentation-GENERATED-temp/Index.html"
 
 Publishing extension documentation to docs.typo3.org
 ====================================================
