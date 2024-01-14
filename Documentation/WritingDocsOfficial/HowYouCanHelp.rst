@@ -29,12 +29,57 @@ for a walkthrough.
 
 
 .. _how-you-can-help-fix-issues:
+.. _links-github-issues:
 
 Fix issues
 ==========
 
-See :ref:`links-github-issues`. As a new contributor, specifically look at issues
-with the label :ref:`good first issue <github-good-first-issue>`.
+Pick an issue for a topic you are familiar with and try to fix it. Some of the
+issues address a problem, some are enhancements where new text needs to be
+written.
+
+You can look at the open issues of a manual you are familiar with, pick one
+and fix the problem.
+
+For example:
+
+*  `Issues for this guide "Writing Documentation"
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+*  `Issues for "Getting Started Tutorial"
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
+
+
+.. _github-good-first-issue:
+.. _useful-links-for-contributors:
+
+Links to GitHub issues
+----------------------
+
+Here are some links to GitHub issues in `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
+
+.. important::
+
+   GitHub will show a 404 page if you are not logged in following these links!
+   So, remember to log in first!
+
+For new contributors:
+
+*  `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__ (Link to GitHub)
+
+For contributors:
+
+*  `All open, unassigned issues (without team, theme etc.) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
+
+For team members and advanced contributors:
+
+*  `All open issues
+   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (Link to GitHub)
+*  `All open, unassigned issues
+   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__ (Link to GitHub)
+
+The Docker image for rendering is in the organization **t3docs** (instead of TYPO3-Documentation):
+
+*  `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
 
 
 .. _how-you-can-help-review-pr:
@@ -42,11 +87,25 @@ with the label :ref:`good first issue <github-good-first-issue>`.
 Review pull requests
 ====================
 
-:ref:`Find an open pull request <github-pull-requests>` and review it.
-
 Some pull requests make changes in documentation describing an aspect
 of TYPO3 you may know well.
 Help in this area is very much appreciated!
+
+.. important::
+
+   GitHub will show a 404 page if you are not logged in following these links!
+   So, remember to log in first!
+
+
+Anyone is welcome to review open pull requests!
+
+In **TYPO3-Documentation**:
+
+*  `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-desc>`__ (Link to GitHub)
+
+In **t3docs** (Docker image):
+
+*  `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__ (Link to GitHub)
 
 
 .. _how-you-can-help-write-new-content:
