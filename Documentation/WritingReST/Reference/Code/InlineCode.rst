@@ -158,9 +158,7 @@ within sentences is *inline code*.
 *   is styled somewhat differently,
 *   has **no** syntax highlighting,
 *   does **not** need to be syntactically correct,
-*   can be compared to `<span>...</span>` tags in html,
-*   and is made up by self-defined names. For example, look at the :file:`/Includes.rst.txt`
-    file to see how `:php:` is defined.
+*   can be compared to `<span>...</span>` tags in html
 
 In contrast, *code-blocks*
 
@@ -178,15 +176,6 @@ Definition of text roles
 For all officials TYPO3 manuals `php` is set as default highlight
 language with the exception of the TypoScript manuals, where `typoscript` is
 the default.
-
-
-About the 'Includes.rst.txt' file
----------------------------------
-
-In general, the manual you are working on will already contain an
-:ref:`Includes.rst.txt <includes-rst-txt>` file. In that file, the text roles
-are defined.
-
 
 You need a custom text role?
 ----------------------------

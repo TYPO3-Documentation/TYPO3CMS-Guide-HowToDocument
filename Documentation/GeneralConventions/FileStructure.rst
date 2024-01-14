@@ -171,55 +171,6 @@ that:
 
         Maintainers/Index
 
-.. index:: File structure; Documentation/Includes.rst.txt, Includes.rst.txt
-.. _includes-rst-txt:
-
-Global rst settings: :file:`Documentation/Includes.rst.txt`
------------------------------------------------------------
-
-Default style configurations are bundled in a central
-Documentation/Includes.rst.txt file and included at the beginning of
-each reST file. An absolute file path should be passed to use the same include
-statement on every page, regardless of which folder level the reST file is in:
-
-..  code-block:: rst
-
-    ..  include:: /Includes.rst.txt
-
-Normally, the include directive is used with files with the extension *.txt*.
-To help your IDE associate reST syntax highlighting with the included files,
-we use the specific *.rst.txt* file extension.
-
-Typical style configurations in TYPO3 documentation are definitions of custom
-text roles that allow :ref:`inline code <Inline-Code>` to be written. This is a
-typical Includes.rst.txt that provides text roles for most programming and
-markup languages used in a TYPO3 project:
-
-..  tabs::
-
-    ..  group-tab:: With placeholders
-
-        ..  include:: /CodeSnippets/FileStructure/IncludesRstTxt.rst.txt
-
-    ..  group-tab:: Third party extension
-
-        ..  include:: /CodeSnippets/FileStructure/Examples/IncludesRstTxt.rst.txt
-
-    ..  group-tab:: System extension
-
-        ..  include:: /CodeSnippets/FileStructure/Dashboard/IncludesRstTxt.rst.txt
-
-    ..  group-tab:: Official manual
-
-        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IncludesRstTxt.rst.txt
-
-The text roles that have been assigned a specific class mimic the syntax
-highlighting of another language. This is done to avoid confusing the reader
-with too many different colors. For example, XML inline code may be semantically
-marked with `:xml:`, but under the hood it uses the same highlighting as
-`:html:`.
-
-
 .. index:: File structure; Documentation/Sitemap.rst, Sitemap.rst
 .. _sitemap-rst:
 
