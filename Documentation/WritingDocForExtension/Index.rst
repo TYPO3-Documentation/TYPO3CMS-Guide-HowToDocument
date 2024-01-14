@@ -109,6 +109,46 @@ Creating extension documentation using the sample manual
    That way others can report issues and assist you by creating change requests to help
    improve both the extensions documentation and the code.
 
+Version numbers
+===============
+
+docs.typo3.org does no longer show three level version numbers in form of ``Major.Minor.Patch``.
+Only the first two levels are shown ``Major.Minor``.
+
+This reduces the amount of documentation while keeping relevant information,
+as patch levels should not introduce breaking changes or new features.
+
+.. index:: Rendering; Branches
+.. _migrate-branches:
+.. _supported-branches:
+
+Supported branches
+==================
+
+The rendering supports two branches within repositories:
+
+``main`` / ``master``
+   Should contain the current development state, used for upcoming release.
+   Every push to these branches triggers a new rendering, available at
+   :samp:`https://docs.typo3.org/p/<vendor>/<package>/main/en-us/`.
+
+   Both branch names are supported, but result in the same URL.
+   Please use ``main``, ``master`` is only supported for backward compatibility.
+
+``documentation-draft``
+   Should contain a draft of the documentation.
+   Every push to this branch triggers a new rendering, available at
+   :samp:`https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/`
+   (same URL as main, except *main* is replaced by *draft*).
+
+
+   This is not indexed by search engines. This branch can be used to test
+   rendering before releasing a new version of an extension.
+
+   In order to test a different rendering, remove the branch, and create it
+   again.
+
+
 .. toctree::
    :maxdepth: 1
    :hidden:
