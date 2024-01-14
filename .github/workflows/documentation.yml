@@ -1,6 +1,12 @@
 name: test documentation
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches:
+      - documentation-draft
+  pull_request:
+    branches:
+      - documentation-draft
 
 jobs:
   tests:
