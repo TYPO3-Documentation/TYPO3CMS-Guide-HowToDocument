@@ -41,128 +41,26 @@ Further conventions are:
 Full documentation
 ==================
 
-This is the recommended setup and is commonly used in the official TYPO3 manuals
-and extension documentation.
+To render a complete documentation manual you need a folder called
+:file:`Documentation` with at least an entry point reStrutured Text file called
+:file:`Documentation\Index.rst` and a configuration file called
+:file:`Documentation\guides.xml`. Add more files as needed
 
-This structure splits the documentation for the VCS host (README.rst) and the
-Sphinx theme (Documentation/) and allows full use of a continuously expanded set
-of :ref:`custom content elements <rest-reference>`, like UML diagrams, which are
-only supported by the theme. This structure allows to add multiple pages to
-the documentation and build a full page tree.
-
-The Settings.cfg configuration file allows you to set theme variables, i.e. the
-project title, release version and the like.
-
-Of course, you can also use a README.md instead of a README.rst file as both
-markup languages are supported by the common VCS hosts.
+You can keep :file:`a README.md` or :file:`README.rst` file with basic
+information and a link to the published manual. These files will be commonly
+displayed on GitHub and GitLab.
 
 .. code-block:: none
 
    .
+   ├── composer.json
    ├── README.rst
    └── Documentation
-       ├── genindex.rst
-       ├── Includes.rst.txt
+       ├── About.rst
+       ├── guides.xml.rst
        ├── Index.rst
-       ├── Settings.cfg
        ├── Sitemap.rst
        └── ..
-
-
-.. index:: File structure; README.rst, README.rst
-.. _readme-rst:
-.. _about-file:
-
-Entry point: :file:`README.rst`
--------------------------------
-
-Full documentation contains both a README.rst and a Documentation/Index.rst
-file. To avoid redundancy in both places, the README.rst in this case usually
-contains only a summary and links to all aspects of the project, i.e. the VCS
-repository, the published documentation and - if available - the TYPO3 Extension
-Repository (TER) page to guide the reader to the next steps. This could be for
-example:
-
-..  tabs::
-
-    ..  group-tab:: With placeholders
-
-        ..  include:: /CodeSnippets/FileStructure/ReadmeRst.rst.txt
-
-    ..  group-tab:: Third party extension
-
-        ..  include:: /CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
-
-    ..  group-tab:: System extension
-
-        ..  include:: /CodeSnippets/FileStructure/Dashboard/IndexRst.rst.txt
-
-    ..  group-tab:: Official manual
-
-        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IndexRst.rst.txt
-
-    ..  group-tab:: Markdown
-
-        ..  include:: /CodeSnippets/FileStructure/ReadmeMd.rst.txt
-
-
-.. _readme-rst-badges:
-
-Badges
-^^^^^^
-
-Point out interesting statistics of your extension or package in the *badges*
-placeholder, which should include the latest release version, the total and
-monthly download rate and the supported TYPO3 versions:
-
-..  tabs::
-
-    ..  group-tab:: Rest
-
-        ..  include:: /CodeSnippets/FileStructure/Badges.rst.txt
-
-    ..  group-tab:: Markdown
-
-        ..  include:: /CodeSnippets/FileStructure/BadgesMd.rst.txt
-
-
-Remove this field if the project is no extension or package.
-
-
-.. _readme-rst-project:
-
-Project
-^^^^^^^
-
-The *project* placeholder contains the title of the project.
-
-Common values are in the official TYPO3 manuals
-
-#. `<Topic> Guide`, e.g. "Installation and Upgrade Guide",
-   for collections of articles on a specific topic
-#. `<Topic> Reference`, e.g. "TCA Reference",
-   for a complete encyclopedia
-#. `<Topic> Tutorial`, e.g. "Getting Started Tutorial",
-   for collections of tutorials on a specific topic
-
-and in TYPO3 system and third-party extensions
-
-*  `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`extbase\`\`" and
-   "TYPO3 extension \`\`mask\`\`".
-
-
-.. _readme-rst-abstract:
-
-Abstract
-^^^^^^^^
-
-The *abstract* placeholder contains a short and precise description of the
-project with as many keywords as possible in as few sentences as possible. It
-helps the decision maker to quickly decide whether the project is worth
-considering and whether or not to read the full documentation. It should be
-aligned with the abstract of Index.rst and - if available - the description
-fields of :file:`ext_emconf.php` and :file:`composer.json`.
-
 
 .. index:: File structure; Documentation/Index.rst, Index.rst
 .. _index-rst:
