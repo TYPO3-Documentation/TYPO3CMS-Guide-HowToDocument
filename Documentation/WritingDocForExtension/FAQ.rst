@@ -34,7 +34,7 @@ Why Does the Documentation not provide a title?
 .. image:: /Images/missing-title.png
    :class: with-shadow
 
-Refer to :ref:`migrate-necessary-steps` in order to fix this issue.
+Refer to :ref:`migrate` in order to fix this issue.
 
 You must add the project title to your :file:`Settings.cfg`:
 
@@ -65,7 +65,6 @@ How do I find my new rendered documentation?
 There are several possibilities:
 
 #. Search for the extension on https://docs.typo3.org/Home/Extensions.html.
-#. Or, create URL manually, see :ref:`migrate-url-structure`.
 #. Or, if it was just rerendered, the URL will be referenced from https://intercept.typo3.com/admin/docs/deployments.
    The column **Branch** contains the link.
 

@@ -182,7 +182,7 @@ Interfaces
         :param string $errorFile: Name of the file the error occurred in
         :param int $errorLine: Line number where the error occurred
         :returntype: bool
-        :throws: :php:class:`TYPO3\\CMS\\Core\\Error\\Exception`
+        :throws: :php:`TYPO3\CMS\Core\Error\Exception`
 
     ..  php:const:: ERROR_HANDLED
 
