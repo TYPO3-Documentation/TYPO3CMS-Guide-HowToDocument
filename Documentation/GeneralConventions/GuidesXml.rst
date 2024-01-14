@@ -8,8 +8,8 @@ This XML file contains meta information and configuration used during rendering
 of a manual.
 
 ..  hint::
-    If you are migrating from the legacy Sphinx based rendering and still have
-    a :file:`Documentation/settings.cfg` you can use an automatic migration
+    If you are migrating from the legacy Sphinx-based rendering and still have
+    a :file:`Documentation/Settings.cfg` you can use an automatic migration
     tool to :ref:`migrate the settings.cfg into a guides.xml <migrate_guides_xml>
 
 .. _settings-guides:
@@ -17,7 +17,7 @@ of a manual.
 The `<guides>` tag
 ==================
 
-Is used for configuration during parsing and rendering. Most available settings
+It is used for configuration during parsing and rendering. Most available settings
 are predefined in the rendering chain supplied by the
 :ref:`TYPO3 Rendering Container <rendering-docs>`.
 
@@ -32,7 +32,7 @@ Project title
 -------------
 
 The *project* property contains the title of the project and is displayed in the
-left sidebar (desktop) or the top (mobile) of the theme and in the title meta
+left sidebar (desktop) or the top (mobile) of the theme and in the title
 tag.
 
 For TYPO3 extensions we suggest to use the extension name in a readable
@@ -63,7 +63,7 @@ and mostly correspond to the version of the TYPO3 LTS or TYPO3 extension to
 which the documentation refers.
 
 The version is shown below the title in the theme's release switch and in the
-title meta tag, the release is not shown currently  - but it should be
+title tag, the release is not shown currently  - but it should be
 kept anyway to satisfy internal requirements.
 
 Normally both properties are set to the same value, either
