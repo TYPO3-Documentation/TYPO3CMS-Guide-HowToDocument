@@ -220,204 +220,25 @@ In addition, some content elements automatically generate indexes, such as the
 
 .. index:: File structure; Documentation/Settings.cfg, Settings.cfg
 .. _settings-cfg:
+.. _settings-guides-xml:
 
-Settings: :file:`Documentation/Settings.cfg`
+Settings: :file:`Documentation/guides.xml`
 --------------------------------------------
 
-This file contains the configuration for the Sphinx theme. The configuration
-values are used to fill placeholders in the theme. It consists of sections
-starting with a keyword in brackets, e.g. ``[general]``: Make sure that all
-properties are in the correct section!
+This file contains the metadata and configuration for the rendering with the
+TYPO3 theme.
 
-..  tabs::
+Read more about the :ref:`guides-xml`.
 
-    ..  group-tab:: With placeholders
+..  hint::
+    If you are migrating from the legacy Sphinx-based rendering and still have
+    a :file:`Documentation/Settings.cfg` you can use an automatic migration
+    tool to :ref:`migrate the settings.cfg into a guides.xml <migrate_guides_xml>`.
 
-        ..  include:: /CodeSnippets/FileStructure/SettingsCfg.rst.txt
+Example:
 
-        The placeholders of pattern `<name>` must be replaced manually by the author of
-        the documentation, and commented or set empty if not required.
-
-    ..  group-tab:: Third party extension
-
-        ..  include:: /CodeSnippets/FileStructure/Examples/SettingsCfg.rst.txt
-
-    ..  group-tab:: System extension
-
-        ..  include:: /CodeSnippets/FileStructure/Dashboard/SettingsCfg.rst.txt
-
-    ..  group-tab:: Official manual
-
-        ..  include:: /CodeSnippets/FileStructure/GettingStarted/SettingsCfg.rst.txt
-
-.. _settings-cfg-project:
-
-Project
-^^^^^^^
-
-The *project* property contains the title of the project and is displayed in the
-left sidebar (desktop) or the top (mobile) of the theme and in the title meta
-tag.
-
-Common values are in the official TYPO3 manuals
-
-#. `<Topic> Guide`, e.g. "Frontend Localization Guide",
-   for collections of articles on a specific topic
-#. `<Topic> Reference`, e.g. "TSconfig Reference",
-   for a complete encyclopedia
-#. `<Topic> Tutorial`, e.g. "Editors Tutorial",
-   for collections of tutorials on a specific topic
-
-and in TYPO3 extension documentations
-
-*  `<Topic>`, e.g. "Import / Export" or "Mask".
-
-
-.. _settings-cfg-version-and-release:
-
-Version and release
-^^^^^^^^^^^^^^^^^^^
-
-The properties *version* and *release* both contain the version of the manual
-and mostly correspond to the version of the TYPO3 LTS or TYPO3 extension to
-which the documentation refers.
-
-The version is shown below the title in the theme's release switch and in the
-title meta tag, the release is not shown currently  - but it should be
-kept anyway to satisfy internal requirements.
-
-Normally both properties are set to the same value, either
-
-*   `<major>.<minor>`, e.g. "11.5", or
-*   `<major>.<minor>.<fix>`, e.g. "11.5.1", or
-*   `main (development)`.
-
-For the release switch entries, only the major and minor versions are
-considered.
-
-
-.. _settings-cfg-copyright:
-
-Copyright
-^^^^^^^^^
-
-The *copyright* property contains the copyright claim of the project. It is
-displayed in the footer as "© Copyright <copyright>" and has in most use cases
-of the TYPO3 world the values:
-
-#.  `since <creation-year> by the TYPO3 contributors`,
-    for example "since 1999 by the TYPO3 contributors" (official TYPO3 manuals and TYPO3
-    system extensions)
-#.  `since <creation-year> by <vendor> & contributors`,
-    for example "since 1999 by dkd & contributors" (third-party TYPO3 extensions)
-
-
-.. _settings-cfg-github-workflow:
-
-GitHub workflow
-^^^^^^^^^^^^^^^
-
-The *github_repository* and *github_branch* properties must be set to provide
-the "Edit on GitHub" button, which allows the reader to jump from the currently
-viewed documentation directly to the associated GitHub repository and edit the
-page file.
-
-If the project is hosted on GitHub and public contributions are desired, these
-properties should be set accordingly:
-
-1.  `<user>/<repository>`, for example to "TYPO3-Documentation/TYPO3CMS-Reference-TCA"
-    or "FriendsOfTYPO3/extension_builder".
-2.  `<branch>`, for example on "main" or "10.x".
-
-
-.. _settings-cfg-footer-links:
-
-Footer links
-^^^^^^^^^^^^
-
-The *project_<topic>* properties provide all links with the name "<Topic>" in
-the footer of the documentation that guide the user to other aspects of the
-project than the documentation, for example to the project page in the TER:
-
-*   *project_home* is set to the homepage URL of the project. For official TYPO3
-    manuals this is the public base URL at docs.typo3.org, for public TYPO3
-    extensions this is the associated TER page or a custom project website, for
-    example
-
-    *  "\https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/" or
-    *  "\https://extensions.typo3.org/extension/news".
-
-*   *project_contact* is usually set to an email address or Slack channel URL of
-    the team behind the project, for example
-
-    *  "\mailto:documentation\@typo3.org" or
-    *  "\https://typo3.slack.com/archives/C028JEPJL".
-
-*   *project_repository* is set to the repository of the project's VCS, for
-    example
-
-    *  "\https://github.com/FriendsOfTYPO3/extension_builder".
-
-*   *project_issues* is set to the location where project issues are to be
-    created and edited, for example
-
-    *  "\https://github.com/FriendsOfTYPO3/extension_builder/issues".
-
-*   *project_discussions* is used in the rare case that project-related
-    discussions take place in locations other than those defined by the
-    project_contact and project_issues properties, for example
-
-    *  "\https://github.com/FriendsOfTYPO3/extension_builder/discussions".
-
-
-.. _settings-cfg-use-opensearch:
-
-Use OpenSearch
-^^^^^^^^^^^^^^
-
-If the *use_opensearch* property is set to the public URL of the documentation,
-Sphinx renders an OpenSearch description file of the documentation, which allows
-most browsers to treat the internal search of your documentation as a global
-search engine and include it in their search bar like any other search engine.
-This seems useful if your documentation is a large reference that is of high
-public interest and likely to be searched frequently by readers. Good examples
-of this are the PHP or TYPO3 Core references, for example
-"\https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/", while the
-TYPO3 extension documentations probably are not.
-
-
-.. _settings-cfg-intersphinx-mapping:
-
-Intersphinx mapping
-^^^^^^^^^^^^^^^^^^^
-
-The *[intersphinx_mapping]* section contains base URLs of public manuals for
-convenient and verified cross-referencing.
-
-For example, if you uncomment the *t3start* mapping in the Settings.cfg above,
-the :samp:`https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Extensions/Management.html`
-page can be referenced with
-
-..  code-block:: rst
-
-    :doc:`t3start:Extensions/Management`
-
-and the fragment :samp:`#install-extension-with-composer` on the same page with
-
-..  code-block:: rst
-
-    :ref:`t3start:install-extension-with-composer`
-
-The prerequisite is that the target manual is also compiled with Sphinx and
-provides an objects.inv file in the root of the documentation that
-contains all reference targets. Since this file is binary, the rendering
-toolchain provides a twin :file:`objects.inv.json` file that allows the reader
-to easily look up reference targets. An example of this is this
-`production objects.inv.json <https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/objects.inv.json>`__.
-
-If a target reference becomes unavailable during documentation rendering, for
-example if it has been permanently removed, a warning is issued and stored in
-the toolchain log file at :file:`Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt`.
+..  literalinclude:: _guides-simple.xml
+    :capition: Documentation/guides.xml
 
 
 .. index:: Single file documentation
