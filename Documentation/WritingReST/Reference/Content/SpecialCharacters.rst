@@ -113,7 +113,7 @@ Using U+2420 symbol for space
 Code
 ----
 
-..  code-block:: rest
+..  code-block:: rst
 
     *   ``:literal:`␠abc``` → :literal:`␠abc`
     *   ```␠abc``` → `␠abc`

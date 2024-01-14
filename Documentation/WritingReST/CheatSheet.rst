@@ -24,7 +24,7 @@ Cheat sheet: reST & Sphinx
 Every reST (.rst) file should use these underlining styles. In reST, you can use different
 styles in any order you want. These are our conventions for TYPO3 documentation.
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
         ========
@@ -50,7 +50,7 @@ styles in any order you want. These are our conventions for TYPO3 documentation.
 *   line 1-3: This is the doc title. Every .rst file should have one.
 *   line 7: header label. This can be used for cross-referencing to this section:
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         :ref:`header1`
 
@@ -76,7 +76,7 @@ External links
 
 method 1:
 
-..  code-block:: rest
+..  code-block:: rst
 
     `anchor text <URL>`__
 
@@ -86,7 +86,7 @@ method 1:
 
 method 2: "External Hyperlink Targets":
 
-..  code-block:: rest
+..  code-block:: rst
 
     Check out more information on t3o_
 
@@ -107,13 +107,13 @@ When linking within docs.typo3.org, you should use this method of cross-referenc
 
 Use it to link to a section in this manual:
 
-..  code-block:: rest
+..  code-block:: rst
 
     :ref:`intersphinx`
 
 A section with the label **intersphinx** must exist! It is placed before the header:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  _intersphinx:
 
@@ -122,7 +122,7 @@ A section with the label **intersphinx** must exist! It is placed before the hea
 
 Or, when cross-referencing to other manuals:
 
-..  code-block:: rest
+..  code-block:: rst
 
     :ref:`shortcut:label`
 
@@ -171,13 +171,13 @@ Preventing links
 
 Prevent unintentional linking of simple URLs with the :code:`:samp:` directive:
 
-..  code-block:: rest
+..  code-block:: rst
 
     The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 and emphasize parts of the URL with curly braces:
 
-..  code-block:: rest
+..  code-block:: rst
 
     The *route* is the "speaking URL" as a whole without the domain part,
     for example :samp:`https://example.org/{<path>}`.
@@ -234,7 +234,7 @@ More text.
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     To create a bullet list:
 
@@ -268,7 +268,7 @@ More text.
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     To create a numbered list:
 
@@ -306,7 +306,7 @@ Code block directive
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
     ..  code-block:: php
@@ -355,7 +355,7 @@ For inline code or for other semantic markup of special texts, use text roles.
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
     :php:`$result = $a + 23;`
@@ -380,7 +380,7 @@ Normal text, **bold text** and *italic text*.
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     Normal text, **bold text** and *italic text*.
 
@@ -399,14 +399,14 @@ Source:
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  image:: /Images/a4.jpg
         :class: with-shadow
 
 Another example:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  image:: /Images/a4.jpg
         :class: with-shadow
@@ -432,7 +432,7 @@ Another example:
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  youtube:: wNxO-aXY5Yw
 
@@ -468,7 +468,7 @@ This is an example with a code block (:rst:`::`) embedded in the sections.
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  rst-class:: bignums
 
@@ -476,7 +476,7 @@ Source:
 
         Source:
 
-        ..  code-block:: rest
+        ..  code-block:: rst
 
             ..  image: some_image.png
                 :class: with-shadow
@@ -497,7 +497,7 @@ With Big Numbers XXL
 
     Source:
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         /Images/a4.jpg
             :class: with-shadow
@@ -508,7 +508,7 @@ With Big Numbers XXL
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  rst-class:: bignums-xxl
 
@@ -516,7 +516,7 @@ Source:
 
         Source:
 
-        ..  code-block:: rest
+        ..  code-block:: rst
 
             ..  image: some_image.png
                 :class: with-shadow
@@ -745,7 +745,7 @@ Source:
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  graphviz::
 
@@ -794,7 +794,7 @@ Source:
 
 Source:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  uml::
 

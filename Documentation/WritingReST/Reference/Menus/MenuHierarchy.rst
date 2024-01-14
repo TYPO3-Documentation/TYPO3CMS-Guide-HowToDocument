@@ -30,7 +30,7 @@ General rules for using `..toctree::`
 
 1.  Each .rst file should have a doctitle, for example:
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         ==========
         Some Title
@@ -51,7 +51,7 @@ Example: hidden
 This will create a menu, using the header of Introduction/Index.rst and Configuration/Index.rst.
 The menu structure is not displayed as a table of contents on the current page ("hidden").
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
     ..  toctree::
@@ -70,7 +70,7 @@ meaning you do not need to explicitly write the file names. If new files are add
 the menu will be updated automatically. Only the doctitle (first header in
 file) will be displayed (titlesonly).
 
-..  code-block:: rest
+..  code-block:: rst
     :linenos:
 
     ..  toctree::

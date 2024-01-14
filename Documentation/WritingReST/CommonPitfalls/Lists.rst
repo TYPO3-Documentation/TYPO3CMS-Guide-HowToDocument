@@ -20,7 +20,7 @@ Correct syntax
 Example 1: Bullet list
 ~~~~~~~~~~~~~~~~~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
    this is some text
 
@@ -42,7 +42,7 @@ more text
 Example 2: List with sublist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
    this is some text
 
@@ -69,7 +69,7 @@ this is more text
 Wrong syntax
 ------------
 
-..  code-block:: rest
+..  code-block:: rst
 
    this is some text
    *  this is a list item

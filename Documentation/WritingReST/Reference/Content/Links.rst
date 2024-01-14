@@ -19,7 +19,7 @@ In Sphinx you can use several types of links:
 :ref:`external-links`
     for linking to other sources outside of the reST docs on docs.typo3.org.
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         `anchor text <url>`__
 
@@ -28,7 +28,7 @@ In Sphinx you can use several types of links:
 :ref:`Cross-Referencing <cross-referencing>` (`:ref:`)
     for linking to other sections of the same manual on docs.typo3.org with Intersphinx mechanism
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         :ref:`anchor text <link-target>`
 
@@ -39,7 +39,7 @@ In Sphinx you can use several types of links:
     If your link target is in another manual (for example "Getting Started Tutorial", you must
     add the shortcut (here: `t3start`) for the other manual:
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         :ref:`anchor text <t3start:link-target>`
 
@@ -62,7 +62,7 @@ How to create links is described in more detail in the next sections.
     being automatically generated from simple URLs – mostly used in connection
     with hypothetical domains.
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         :samp:`<url>`
 
@@ -71,7 +71,7 @@ How to create links is described in more detail in the next sections.
     are domains for use in URLs where the domain does not matter, but serves as a
     placeholder. The TYPO3 documentation uses a defined set of them.
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         :samp:`https://example.org/news/`
 
@@ -111,7 +111,7 @@ External link as anonymous URL
 Syntax
 ~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
     `Anchor text <URL>`__
 
@@ -120,7 +120,7 @@ Syntax
 Example
 ~~~~~~~
 
-..  code-block:: rest
+..  code-block:: rst
 
     `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
 
@@ -143,7 +143,7 @@ Syntax
 Same as :ref:`anonymous URL <external-links-anonymous>`, but with one
 underscore instead of 2.
 
-..  code-block:: rest
+..  code-block:: rst
 
     `Anchor text <URL>`_
 
@@ -178,7 +178,7 @@ Here, the link target *columns-inline* will be defined.
 
 *  Place the link target definition directly before the section header:
 
-..  code-block:: rest
+..  code-block:: rst
 
     ..  _columns-inline:
 
@@ -255,7 +255,7 @@ Again, we want to link to the labels `columns-inline` and `This-is-ABC`.
 But since the labels are now in a different manuals, we
 need to prefix the names of that manuals:
 
-..  code-block:: rest
+..  code-block:: rst
 
     :ref:`t3tca:columns-inline`
     :ref:`t3upgrade:This-is-ABC`
@@ -292,7 +292,7 @@ Example 2: Specify anchor text
 If we want to control the anchor text ourselves, we can do so by
 writing:
 
-..  code-block:: rest
+..  code-block:: rst
 
     :ref:`this is our linktext <t3tca:columns-inline>`
 
@@ -336,7 +336,7 @@ to wrap the URL.
 
 For example:
 
-..  code-block:: rest
+..  code-block:: rst
 
     The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
@@ -346,7 +346,7 @@ The TYPO3 backend can be accessed via :samp:`https://example.org/typo3` ..
 
 To emphasize parts of the URL, use curly braces:
 
-..  code-block:: rest
+..  code-block:: rst
 
     The *route* is the "speaking URL" as a whole without the domain part,
     for example :samp:`https://example.org/<page-path>/{<page-name>}`.
@@ -390,13 +390,13 @@ above such as :samp:`https://staging.example.org` and
 
 For example:
 
-..  code-block:: rest
+..  code-block:: rst
 
     The class :php:`MailMessage` can be used to generate and send a mail without
     using Fluid:
 
 
-    ..  code-block:: rest
+    ..  code-block:: rst
 
         $mail = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Mail\MailMessage::class);
         $mail
