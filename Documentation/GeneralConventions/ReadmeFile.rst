@@ -40,7 +40,7 @@ example:
 .. _readme-rst-badges:
 
 Badges
-^^^^^^
+======
 
 Point out interesting statistics of your extension or package in the *badges*
 placeholder, which should include the latest release version, the total and
