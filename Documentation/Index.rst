@@ -117,7 +117,6 @@ What's new in this guide?
    WritingContent/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
-   ToolsEditRest/Index
    RenderingDocs/Index
    GitHub/Index
 

@@ -61,8 +61,7 @@ Creating extension documentation using the sample manual
       :file:`Documentation-GENERATED-temp` to the Git repository. (*recommended*)
    *  An .editorconfig is useful, so the
       recommended :ref:`Coding Guidelines <format-rest-cgl>` will be used within
-      an editor or IDE. :ref:`phpstorm-editorconfig` contains further information
-      for PhpStorm users. (*recommended*)
+      an editor or IDE.
 
    .. code-block:: bash
 
