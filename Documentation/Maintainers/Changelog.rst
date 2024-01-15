@@ -116,7 +116,7 @@ New features in the changelog
 =============================
 
 When adding a new feature to the docs that is not yet availible in all supported
-TYPO3 versions, it can be helpfull to mark it with the :rst:`..  versionadded::`
+TYPO3 versions, it can be helpful to mark it with the :rst:`..  versionadded::`
 directive:
 
 ..  versionadded:: 13.0
