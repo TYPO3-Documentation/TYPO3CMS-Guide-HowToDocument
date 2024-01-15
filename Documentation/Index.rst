@@ -118,7 +118,6 @@ What's new in this guide?
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
    RenderingDocs/Index
-   GitHub/Index
 
 .. toctree::
    :hidden:
