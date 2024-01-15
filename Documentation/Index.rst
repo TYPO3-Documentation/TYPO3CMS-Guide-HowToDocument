@@ -142,4 +142,3 @@ What's new in this guide?
 
    Sitemap
    genindex
-   Appendix/Index
