@@ -10,5 +10,6 @@ For maintainers
     :maxdepth: 1
 
     BackportChanges
+    Changelog
     NewMajorCoreVersion
     Tools
