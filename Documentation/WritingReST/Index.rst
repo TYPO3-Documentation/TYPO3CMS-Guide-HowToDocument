@@ -21,9 +21,7 @@ the :ref:`writing-rest-introduction` and the general
 :ref:`format-rest-cgl` first.
 
 Also read :ref:`rest-common-pitfalls` in order to avoid common
-mistakes with the syntax or make sure to
-:ref:`setup your editor or IDE <tools-for-editing-rest>` correctly
-to detect and show errors in the syntax.
+mistakes with the syntax.
 
 You don't need to read the entire chapter, just lookup
 the section that is relevant for what you plan to do.
