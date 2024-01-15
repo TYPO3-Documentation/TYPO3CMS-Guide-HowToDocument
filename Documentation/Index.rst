@@ -125,7 +125,6 @@ What's new in this guide?
    :caption: ADVANCED
 
    HowToAddTranslation/Index
-   GeneralConventions/HowToUpdateDocs
    GeneralConventions/ReviewInformation
 
 .. toctree::
