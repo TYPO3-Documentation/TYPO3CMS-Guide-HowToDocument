@@ -34,7 +34,7 @@ their commit message to the issue, for example
 
     [FEATURE] Add ApplicationContext to TypoScript data
 
-    resolves: https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues/790
+    Resolves: https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues/790
     Releases: main
 
 See also: :ref:`general-conventions-commit-messages`.
