@@ -43,8 +43,8 @@ and fix the problem.
 
 For example:
 
-*  `Issues for this guide "Writing Documentation"
-   <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues>`__
+*  `Issues for "TYPO3 Explained"
+   <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues>`__
 *  `Issues for "Getting Started Tutorial"
    <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
