@@ -108,7 +108,6 @@ What's new in this guide?
    BasicPrinciples
    GeneralConventions/Index
    WritingReST/Index
-   UserRoundTrip
 
 .. toctree::
    :hidden:
