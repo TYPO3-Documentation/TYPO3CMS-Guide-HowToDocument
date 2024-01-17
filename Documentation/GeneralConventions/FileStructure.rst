@@ -29,7 +29,7 @@ In order for the documentation to be rendered, you need at least
 
 Further conventions are:
 
-*   reST files have the extension :file:`.rst'.
+*   :abbr:`reST (reStructured Text)` files have the extension :file:`.rst'.
 *   Markdown files have the extension :file:`.md'.
 *   Included reST files have the extension :file:`.rst.txt'.
 *   Use **CamelCase** for directory and file names,
