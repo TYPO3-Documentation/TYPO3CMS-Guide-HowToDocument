@@ -23,7 +23,7 @@ General
 
 In order for the documentation to be rendered, you need at least
 
-*   A valid :ref:`composer.json <t3coreapi/stable:files-composer-json>`
+*   A valid :ref:`composer.json <t3coreapi-stable:files-composer-json>`
 *   A documentation entry point either for a :ref:`multi-page manual <full-documentation>`
     or for the rendering of a :ref:`single README file <single-file-documentation>`.
 
