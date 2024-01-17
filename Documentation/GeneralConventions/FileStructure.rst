@@ -23,17 +23,23 @@ General
 
 In order for the documentation to be rendered, you need at least
 
-*   A valid :file:`composer.json`
+*   A valid :ref:`composer.json <t3coreapi/stable:files-composer-json>`
 *   A documentation entry point either for a :ref:`multi-page manual <full-documentation>`
     or for the rendering of a :ref:`single README file <single-file-documentation>`.
 
+The following rules are mandatory or your documentation will not render:
+
+*   :abbr:`reST (reStructured Text)` files MUST have the extension :file:`.rst'.
+*   Markdown files MUST have the extension :file:`.md'.
+
 Further conventions are:
 
-*   :abbr:`reST (reStructured Text)` files have the extension :file:`.rst'.
-*   Markdown files have the extension :file:`.md'.
-*   Included reST files have the extension :file:`.rst.txt'.
+*   :ref:`Included reST files <including-files>` SHOULD have the extension
+    :file:`.rst.txt'.
 *   Use **CamelCase** for directory and file names,
     for example: :file:`Documentation/GeneralConventions/FileStructure.rst`.
+*   Each directory SHOULD have a file called :file:`Index.rst` it is used as
+    fallback if a page is not found during switching versions.
 
 .. index:: Full documentation
 .. _full-documentation:
