@@ -24,7 +24,7 @@ General
 In order for the documentation to be rendered, you need at least
 
 *   A valid :file:`composer.json`
-*   A documentation entry point either for a :ref:`multi page manual <full-documentation>`
+*   A documentation entry point either for a :ref:`multi-page manual <full-documentation>`
     or for the rendering of a :ref:`single README file <single-file-documentation>`.
 
 Further conventions are:
