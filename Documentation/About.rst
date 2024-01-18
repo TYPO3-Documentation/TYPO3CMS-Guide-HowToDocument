@@ -26,7 +26,7 @@ Special thanks to Xavier Perseguers, who wrote some of the original texts
 in the retired TYPO3 Wiki and elsewhere. Some of the texts have been
 incorporated into this document or at least served as a basis.
 
-Further chapters like were added by Sybille Peters.
+Further chapters were added by Sybille Peters.
 
 A number of other people have helped by reviewing and refining the text
 and pointing out missing information. For more contributors, see the
