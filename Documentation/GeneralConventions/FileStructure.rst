@@ -8,16 +8,13 @@ File structure
 ==============
 
 This page explains the general file structure of a TYPO3 documentation that can
-be rendered with the :ref:`rendering toolchain <rendering-docs>`. The toolchain
-itself uses a `Sphinx theme <https://typo3-documentation.github.io/sphinx_typo3_theme/>`__
-for converting reStructuredText (reST) or Markdown to HTML.
+be rendered with the :ref:`rendering toolchain <rendering-docs>`.
 
 ..  contents:: Table of Contents:
     :backlinks: top
     :class: compact-list
     :depth: 2
     :local:
-
 
 .. _file-structure-general:
 
@@ -26,31 +23,23 @@ General
 
 In order for the documentation to be rendered, you need at least
 
-#.  an index file in one of the following locations in weighted order:
+*   A valid :ref:`composer.json <t3coreapi-stable:files-composer-json>`
+*   A documentation entry point either for a :ref:`multi-page manual <full-documentation>`
+    or for the rendering of a :ref:`single README file <single-file-documentation>`.
 
-    -  :file:`Documentation/Index.rst`
-    -  :file:`Documentation/index.rst`
-    -  :file:`Documentation/Index.md`
-    -  :file:`Documentation/index.md`
-    -  :file:`README.rst`
-    -  :file:`README.md`
+The following rules are mandatory or your documentation will not render:
 
-#.  and a theme configuration file under
-
-    - :file:`Documentation/Settings.cfg`.
+*   :abbr:`reST (reStructured Text)` files MUST have the extension :file:`.rst'.
+*   Markdown files MUST have the extension :file:`.md'.
 
 Further conventions are:
 
-*  reST files have the extension **.rst**.
-*  Markdown files have the extension **.md**.
-*  Included reST files have the extension **.rst.txt**.
-*  Use **CamelCase** for directory and file names,
-   for example: Documentation/GeneralConventions/FileStructure.rst.
-
-These conventions pave the way for the *full documentation* and the
-*single file documentation* style, the first being preferred for several
-reasons.
-
+*   :ref:`Included reST files <including-files>` SHOULD have the extension
+    :file:`.rst.txt'.
+*   Use **CamelCase** for directory and file names,
+    for example: :file:`Documentation/GeneralConventions/FileStructure.rst`.
+*   Each directory SHOULD have a file called :file:`Index.rst` it is used as
+    fallback if a page is not found during switching versions.
 
 .. index:: Full documentation
 .. _full-documentation:
@@ -99,7 +88,6 @@ contains only a summary and links to all aspects of the project, i.e. the VCS
 repository, the published documentation and - if available - the TYPO3 Extension
 Repository (TER) page to guide the reader to the next steps. This could be for
 example:
-
 
 ..  tabs::
 
