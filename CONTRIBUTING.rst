@@ -5,6 +5,15 @@ Contributing
 Information About Contributing to This Manual
 =============================================
 
+Local rendering
+---------------
+
+You can render this file locally if you have `Docker <https://www.docker.com/>`
+and `make <https://www.gnu.org/software/make/>` installed on your local
+machine::
+
+    make docs
+
 Create Issues
 -------------
 
@@ -21,10 +30,10 @@ Make changes (create pull requests)
   `rendered page <https://docs.typo3.org/typo3cms/HowToDocument/Index.html>`__,
   just click on "Edit me on GitHub".
 * Step-by-step walkthrough of making a change by `Editing Directly on GitHub
-  <https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/Index.html>`__ 
+  <https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/Index.html>`__
   (this requires only a browser)
 * Step-by-step walkthrough of `Local Editing and Rendering with Docker
-  <https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/LocalEditing.html>`__ 
+  <https://docs.typo3.org/typo3cms/HowToDocument/WritingDocsOfficial/LocalEditing.html>`__
   (this requires knowledge of Git and Docker)
 
 * See `Writing Documentation <https://docs.typo3.org/typo3cms/HowToDocument/>`__ for further
