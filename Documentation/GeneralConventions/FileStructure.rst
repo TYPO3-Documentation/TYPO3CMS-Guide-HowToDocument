@@ -63,7 +63,7 @@ displayed on GitHub and GitLab.
    ├── README.rst
    └── Documentation
        ├── About.rst
-       ├── guides.xml.rst
+       ├── guides.xml
        ├── Index.rst
        ├── Sitemap.rst
        └── ..
