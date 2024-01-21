@@ -53,7 +53,7 @@ To render a complete documentation manual you need a folder called
 :file:`Documentation\guides.xml`. Add more files as needed.
 
 You can keep a :file:`README.md` or :file:`README.rst` file with basic
-information and a link to the published manual. These files will be commonly
+information and a link to the published manual in the root folder of the extension. These files will be commonly
 displayed on GitHub and GitLab.
 
 .. code-block:: none
