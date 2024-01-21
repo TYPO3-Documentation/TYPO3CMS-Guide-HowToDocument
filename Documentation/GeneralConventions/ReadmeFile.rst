@@ -67,7 +67,7 @@ Project
 
 The *project* placeholder contains the title of the project.
 
-Common values are in the official TYPO3 manuals
+Common values are, for example, in the official TYPO3 manuals
 
 #. `<Topic> Guide`, e.g. "Installation and Upgrade Guide",
    for collections of articles on a specific topic
