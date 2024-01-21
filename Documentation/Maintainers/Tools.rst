@@ -1,7 +1,7 @@
 .. include:: /Includes.rst.txt
 .. highlight:: shell
 .. index:: Changes; Backporting
-.. _backport-changes:
+.. _tools_of_the_documentation_team:
 
 ===============================
 Tools of the Documentation Team
@@ -20,7 +20,7 @@ https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootRe
 
 As this is a pure HTML file, we currently keep the content in this rst file:
 https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/Home/ApiTypo3Org.rst
-locally render it, 
+locally render it,
 then update :file:`WebRootResources-api.typo3.org/index.html` with the
 rendered output.
 
