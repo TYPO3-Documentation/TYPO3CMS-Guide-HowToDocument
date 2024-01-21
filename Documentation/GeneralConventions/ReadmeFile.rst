@@ -85,7 +85,7 @@ and in TYPO3 system and third-party extensions
 .. _readme-rst-abstract:
 
 Abstract
-^^^^^^^^
+========
 
 The *abstract* placeholder contains a short and precise description of the
 project with as many keywords as possible in as few sentences as possible. It
