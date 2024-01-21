@@ -8,7 +8,7 @@ Information About Contributing to This Manual
 Local rendering
 ---------------
 
-You can render this file locally if you have `Docker <https://www.docker.com/>`
+You can render this manual locally if you have `Docker <https://www.docker.com/>`
 and `make <https://www.gnu.org/software/make/>` installed on your local
 machine::
 
