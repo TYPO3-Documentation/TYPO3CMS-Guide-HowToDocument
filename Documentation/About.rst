@@ -13,7 +13,7 @@ extensions <writing-doc-for-ext-start>`.
 Documentation written in :ref:`reStructured Text <rest-quick-start>` can be
 :ref:`rendered <rendering-docs>` using a TYPO3-specific theme and
 automatically deployed to
-`https://docs.typo3.org`__  by adding a :ref:`Webhook <webhook>`.
+https://docs.typo3.org  by adding a :ref:`Webhook <webhook>`.
 
 ..  _credits:
 
