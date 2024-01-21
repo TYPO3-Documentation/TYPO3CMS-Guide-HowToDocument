@@ -50,7 +50,7 @@ Full documentation
 To render a complete documentation manual you need a folder called
 :file:`Documentation` with at least a reStructured Text file as entry point named
 :file:`Documentation\Index.rst` and a configuration file called
-:file:`Documentation\guides.xml`. Add more files as needed
+:file:`Documentation\guides.xml`. Add more files as needed.
 
 You can keep :file:`a README.md` or :file:`README.rst` file with basic
 information and a link to the published manual. These files will be commonly
