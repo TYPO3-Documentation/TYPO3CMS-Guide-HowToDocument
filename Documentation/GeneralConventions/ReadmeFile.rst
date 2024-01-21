@@ -48,7 +48,7 @@ monthly download rate and the supported TYPO3 versions:
 
 ..  tabs::
 
-    ..  group-tab:: Rest
+    ..  group-tab:: reStructured Text
 
         ..  include:: /CodeSnippets/FileStructure/Badges.rst.txt
 
