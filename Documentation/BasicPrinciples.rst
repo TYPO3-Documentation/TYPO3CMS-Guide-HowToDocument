@@ -135,8 +135,6 @@ A guide is a manual.
 
 Guides offer advice on **how best to achieve a given task**. They are goal oriented.
 
-:ref:`Read more ... <writing-guide>`
-
 
 .. index::  TYPO3 documentation; Reference
 .. _doc-type-reference:

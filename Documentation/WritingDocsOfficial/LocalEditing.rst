@@ -63,7 +63,7 @@ the ability to experiment and preview your changes locally before submitting the
 
       #. Make sure the repository is up-to-date by pulling from upstream as described
          in :ref:`contribute-edit-locally-more-changes`.
-      #. Always branch from `main` (see also :ref:`tip-branches-main`).
+      #. Always branch from `main`.
          If you are checked in to a feature branch, switch back to `main`
          first:
 
