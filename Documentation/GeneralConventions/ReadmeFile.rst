@@ -8,7 +8,7 @@
 =======================================
 
 Full documentation contains both a :file:`README.rst` and a :file:`Documentation/Index.rst`
-file. To avoid redundancy in both places, the README.rst in this case usually
+file. To avoid redundancy in both places, the :file:`README.rst` in this case usually
 contains only a summary and links to all aspects of the project, i.e. the VCS
 repository, the published documentation and - if available - the TYPO3 Extension
 Repository (TER) page to guide the reader to the next steps. This could be for
