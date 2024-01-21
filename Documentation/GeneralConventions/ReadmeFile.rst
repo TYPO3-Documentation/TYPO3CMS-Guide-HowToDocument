@@ -63,7 +63,7 @@ Remove this field if the project is no extension or package.
 .. _readme-rst-project:
 
 Project
-^^^^^^^
+=======
 
 The *project* placeholder contains the title of the project.
 
