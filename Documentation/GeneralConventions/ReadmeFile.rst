@@ -43,7 +43,7 @@ Badges
 ======
 
 Point out interesting statistics of your extension or package in the *badges*
-placeholder, which should include the latest release version, the total and
+placeholder, which may include the latest release version, the total and
 monthly download rate and the supported TYPO3 versions:
 
 ..  tabs::
