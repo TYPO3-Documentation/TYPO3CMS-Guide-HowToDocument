@@ -62,7 +62,6 @@ displayed on GitHub and GitLab.
    ├── composer.json
    ├── README.rst
    └── Documentation
-       ├── About.rst
        ├── guides.xml
        ├── Index.rst
        ├── Sitemap.rst
