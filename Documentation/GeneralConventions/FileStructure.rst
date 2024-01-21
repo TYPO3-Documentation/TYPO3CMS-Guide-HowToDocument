@@ -651,31 +651,15 @@ the toolchain log file at :file:`Documentation-GENERATED-temp/Result/project/0.0
 .. index:: Single file documentation
 .. _single-file-documentation:
 
-Single file documentation
-=========================
+Single file documentation (README)
+==================================
 
-This setup is not recommended, but can be handy for those who want to publish
-their documentation on docs.typo3.org and want to keep their mono
-:file:`README.rst` documentation style for now.
+For third-party TYPO3 extensions that do not require extended documentation
+you can also publish a :file:`README.rst` or :file:`README.md` to
+https://docs.typo3.org/
 
-This structure allows the author to minimize effort by maintaining a single
-documentation file that is interpreted simultaneously by the VCS host
-and the Sphinx theme. On the other hand, the author only has
-the reduced set of content elements supported by the former, rather than using
-the theme's rich selection of :ref:`custom content elements <rest-reference>`.
-
-Of course, you can also use a :file:`README.md` instead of a :file:`README.rst`
-file if you prefer its syntax.
-
-.. code-block:: none
-
-   .
-   ├── README.rst
-   └── Documentation
-       └── Settings.cfg
-
-
-.. _single-file-documentation-readme-rst:
+For this workflow the :file:`README(.rst/.md)` MUST be situated in the
+extension's root folder. The :file:`Documentation/' folder can then be omitted.
 
 :file:`README.rst`
 ------------------
@@ -695,129 +679,3 @@ to the next steps, for example
     ..  group-tab:: Markdown
 
         ..  include:: /CodeSnippets/FileStructure/ReadmeMdStandalone.rst.txt
-
-
-For more details, see the explanation of :ref:`README.rst <readme-rst>` in the
-full documentation section.
-
-
-.. _single-file-documentation-settings-cfg:
-
-:file:`Documentation/Settings.cfg`
-----------------------------------
-
-This file contains the configuration for the Sphinx theme. See the explanation
-of :ref:`Settings.cfg <settings-cfg>` in the full documentation section for more
-details.
-
-.. note::
-
-   You can reduce the single file documentation even further by omitting the
-   Settings.cfg - which is even less recommended, but works. All Sphinx
-   theme variables will then fall back to their default values, e.g. the project
-   title will then be "The Project's Title" and the release version "0.0.0".
-
-
-.. _examples:
-
-Examples
-========
-
-These are some good examples of TYPO3 full and single file documentation in the
-wild.
-
-
-.. _examples-official-typo3-manuals:
-
-Official TYPO3 manuals
-----------------------
-
-..  table::
-    :widths: 25, 75
-
-    =========================  ==================================================
-    Project                    Links
-    =========================  ==================================================
-    TSconfig Reference (full)  `README.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig>`__ |
-                               `Settings.cfg <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Settings.cfg>`__ |
-                               `Index.rst <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Index.rst>`__ |
-                               `Includes.rst.txt <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/blob/main/Documentation/Includes.rst.txt>`__ |
-                               `Read online <https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/>`__
-    =========================  ==================================================
-
-
-.. _examples-typo3-system-extension-documentation:
-
-TYPO3 system extension documentation
-------------------------------------
-
-..  table::
-    :widths: 25, 75
-
-    ===========================  ================================================
-    Project                      Links
-    ===========================  ================================================
-    Import / Export (full)       `README.rst <https://github.com/TYPO3/typo3/tree/main/typo3/sysext/impexp>`__ |
-                                 `Settings.cfg <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Settings.cfg>`__ |
-                                 `Index.rst <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Index.rst>`__ |
-                                 `Includes.rst.txt <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/impexp/Documentation/Includes.rst.txt>`__ |
-                                 `Read online <https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/>`__
-    ===========================  ================================================
-
-
-.. _examples-typo3-third-party-extension-documentation:
-
-TYPO3 third-party extension documentation
------------------------------------------
-
-..  table::
-    :widths: 25, 75
-
-    ========================  ===================================================
-    Project                   Links
-    ========================  ===================================================
-    Extension Builder (full)  `README.rst <https://github.com/FriendsOfTYPO3/extension_builder>`__ |
-                              `Settings.cfg <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Settings.cfg>`__ |
-                              `Index.rst <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Index.rst>`__ |
-                              `Includes.rst.txt <https://github.com/FriendsOfTYPO3/extension_builder/blob/master/Documentation/Includes.rst.txt>`__ |
-                              `Read online <https://docs.typo3.org/p/friendsoftypo3/extension-builder/main/en-us/>`__
-    ------------------------  ---------------------------------------------------
-    Make (single)             `README.md <https://github.com/b13/make>`__ |
-                              `Settings.cfg <https://github.com/b13/make/blob/main/Documentation/Settings.cfg>`__ |
-                              `Read online <https://docs.typo3.org/p/b13/make/main/en-us/>`__
-    ========================  ===================================================
-
-
-.. _examples-php-application-documentation:
-
-PHP application documentation
------------------------------
-
-..  table::
-    :widths: 25, 75
-
-    ==================  =========================================================
-    Project             Links
-    ==================  =========================================================
-    Surf (full)         `README.md <https://github.com/TYPO3/Surf>`__ |
-                        `Settings.cfg <https://github.com/TYPO3/Surf/blob/master/Documentation/Settings.cfg>`__ |
-                        `Index.rst <https://github.com/TYPO3/Surf/blob/master/Documentation/Index.rst>`__ |
-                        `Includes.txt <https://github.com/TYPO3/Surf/blob/master/Documentation/Includes.txt>`__ |
-                        `Read online <https://docs.typo3.org/other/typo3/surf/main/en-us/>`__
-    ------------------  ---------------------------------------------------------
-    Tailor (single)     `README.md <https://github.com/TYPO3/tailor>`__ |
-                        `Read online <https://docs.typo3.org/other/typo3/tailor/main/en-us/>`__
-    ==================  =========================================================
-
-..  seealso::
-
-    Although it is possible to write every single line of a full documentation
-    from scratch, the TYPO3 community provides tools to support you:
-
-    *   A `sample manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-        is available to be immediately copied into your own extension.
-    *   The `Extension Builder <https://extensions.typo3.org/extension/extension_builder>`__
-        optionally generates a sample documentation together with the extension
-        skeleton.
-    *   TYPO3 Core developers use the `ReST Helper <https://forger.typo3.com/utilities/rst>`__
-        to kickoff a new TYPO3 changelog entry.
