@@ -20,7 +20,7 @@ example:
 
         ..  include:: /CodeSnippets/FileStructure/ReadmeRst.rst.txt
 
-    ..  group-tab:: Third party extension
+    ..  group-tab:: Third-party extension
 
         ..  include:: /CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
 
