@@ -52,7 +52,7 @@ To render a complete documentation manual you need a folder called
 :file:`Documentation\Index.rst` and a configuration file called
 :file:`Documentation\guides.xml`. Add more files as needed.
 
-You can keep :file:`a README.md` or :file:`README.rst` file with basic
+You can keep a :file:`README.md` or :file:`README.rst` file with basic
 information and a link to the published manual. These files will be commonly
 displayed on GitHub and GitLab.
 
