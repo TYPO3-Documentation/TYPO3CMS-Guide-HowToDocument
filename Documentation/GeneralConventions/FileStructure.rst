@@ -88,7 +88,7 @@ document title. This way you can link to a documents start page by:
 
 If your manual has more pages then this one it must contain a table of content
 directive called :rst:`..  toctree::`. The `toctree` on the start page
-defines which pages will be displayed in the menu on the left of the rendered
+defines which pages will be displayed in main navigation of the rendered
 manual.
 
 .. _index-rst-table-of-contents:
@@ -96,8 +96,8 @@ manual.
 Configure the menu - the toctree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `toctree` on the startpage can be hidden, it then only influences the menu
-on the left:
+The `toctree` on the startpage can be hidden, it then only influences the main
+navigation:
 
 ..  code-block:: rst
 
@@ -126,15 +126,15 @@ Or it can be inserted visibly into the start page to provide an entry point:
 
 For large pages it is advisable to limit the number of menu levels that will
 be displayed on the startpage by setting :rest:`:maxdepth:`. This will not
-limit the level of pages displayed in the menu on the left.
+limit the level of pages displayed in the main navigation.
 
 For more information on possible options on the `toctree` directive see
 chapter :ref:`Toctrees in the reST reference <toctree>`.
 
-It is possible to use more then one `toctree` directives on the start page.
+It is possible to use more then one `toctree` directive on the start page.
 Each `toctree` should have a :rst:`:caption:` in this case.
 
-The menu on the left will then be divided into sections labeled by those
+The main navigation will then be divided into sections labeled by those
 captions. The menu of the manual you are currently reading is an example for
 that:
 
