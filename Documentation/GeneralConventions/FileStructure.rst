@@ -79,14 +79,14 @@ point of the main documentation. It usually contains general information about
 the manual, a summary of its purpose and a table of contents that refers to
 further pages.
 
-The startpage should contain an anchor target :rst:`..  _start:` above its
+The start page should contain an anchor target :rst:`..  _start:` above its
 document title. This way you can link to a documents start page by:
 
 ..  code-block:: rst
 
     See :ref:`TYPO3 Explained <t3coreapi:start>`.
 
-If your manual has more pages then this one it must contain a table of content
+If your manual has more pages then this start page it must contain a table of content
 directive called :rst:`..  toctree::`. The `toctree` on the start page
 defines which pages will be displayed in main navigation of the rendered
 manual.
@@ -96,7 +96,7 @@ manual.
 Configure the menu - the toctree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `toctree` on the startpage can be hidden, it then only influences the main
+The `toctree` on the start page can be hidden, it then only influences the main
 navigation:
 
 ..  code-block:: rst
