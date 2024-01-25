@@ -143,7 +143,7 @@ that:
 
     ..  toctree::
         :hidden:
-        :caption: BASICS
+        :caption: Basics
 
         About
         HowToGetHelp
