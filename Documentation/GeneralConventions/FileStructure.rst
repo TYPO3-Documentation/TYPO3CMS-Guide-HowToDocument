@@ -74,7 +74,7 @@ displayed on GitHub and GitLab.
 Start page: :file:`Documentation/Index.rst`
 -------------------------------------------
 
-The documentation index file at :file:`Documentation/Index.rst` is the starting
+The documentation start page (:file:`Documentation/Index.rst`) is the entry
 point of the main documentation. It usually contains general information about
 the manual, a summary of its purpose and a table of contents that refers to
 further pages.
