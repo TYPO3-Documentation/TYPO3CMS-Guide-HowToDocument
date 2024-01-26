@@ -71,113 +71,46 @@ displayed on GitHub and GitLab.
 .. _index-rst:
 .. _start-file:
 
-Startpage: :file:`Documentation/Index.rst`
-------------------------------------------
+Start page: :file:`Documentation/Index.rst`
+-------------------------------------------
 
-The documentation index file at :file:`Documentation/Index.rst` is the starting
+The documentation start page (:file:`Documentation/Index.rst`) is the entry
 point of the main documentation. It usually contains general information about
 the manual, a summary of its purpose and a table of contents that refers to
-further pages. Besides these basic parts of this file, it includes - like any
-other reST file - the reST style file :file:`Includes.rst.txt`:
+further pages.
 
-..  tabs::
-
-    ..  group-tab:: With placeholders
-
-        ..  include:: /CodeSnippets/FileStructure/IndexRst.rst.txt
-
-    ..  group-tab:: Third party extension
-
-        ..  include:: /CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
-
-    ..  group-tab:: System extension
-
-        ..  include:: /CodeSnippets/FileStructure/Dashboard/IndexRst.rst.txt
-
-    ..  group-tab:: Official manual
-
-        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IndexRst.rst.txt
-
-All variables of the `|name|` pattern are automatically replaced by the Sphinx
-theme, partly from Settings.cfg, partly by internal calculations. For more
-information about all available variables, see the
-:doc:`Replacements <t3sphinxtest:Replacements/Index>` chapter of the Sphinx
-theme documentation.
-
-The placeholders of pattern `<name>` must be replaced manually by the author of
-the documentation:
-
-The startpage should contain an anchor target :rst:`..  _start:` above its
+The start page should contain an anchor target :rst:`..  _start:` above its
 document title. This way you can link to a documents start page by:
 
 ..  code-block:: rst
 
     See :ref:`TYPO3 Explained <t3coreapi:start>`.
 
-
-.. _index-rst-project:
-
-Project
-^^^^^^^
-
-The *project* placeholder corresponds best to the project property of
-Settings.cfg and - in case of a TYPO3 extension documentation - to the title
-field of :file:`ext_emconf.php`.
-
-
-.. _index-rst-extension-key:
-
-Extension key
-^^^^^^^^^^^^^
-
-The *extension-key* placeholder contains the TYPO3 extension key in case of a
-TYPO3 extension documentation.
-
-Remove this field if the project has no extension key.
-
-
-.. _index-rst-package-name:
-
-Package name
-^^^^^^^^^^^^
-
-The *package-name* placeholder contains the Composer package name of the
-project.
-
-Remove this field if the project is no installable package.
-
-
-.. _index-rst-author:
-
-Author
-^^^^^^
-
-The *author* placeholder best matches the copyright holders in the Settings.cfg
-copyright property, since the authors of an open source project are also
-copyright holders. It is also a good place to mention initiators and outstanding
-contributors.
-
-
-.. _index-rst-abstract:
-
-Abstract
-^^^^^^^^
-
-The *abstract* placeholder contains a short and precise description of the
-project. It should follow the abstract of :file:`README.rst` and - if
-available - the description fields of :file:`ext_emconf.php` and
-:file:`composer.json.`
-
+If your manual has more pages then this start page it must contain a table of content
+directive called :rst:`..  toctree::`. The `toctree` on the start page
+defines which pages will be displayed in main navigation of the rendered
+manual.
 
 .. _index-rst-table-of-contents:
 
-Table of contents
-^^^^^^^^^^^^^^^^^
+Configure the menu - the toctree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The *table-of-contents* placeholder contains a rough table of contents (TOC),
-which - in combination with the abstract - should give the reader a quick
-overview. The TOC is built with the
-:ref:`toctree directive <toctree>` as follows:
+The `toctree` on the start page can be hidden, it then only influences the main
+navigation:
+
+..  code-block:: rst
+
+    ..  toctree::
+        :hidden:
+
+        Introduction/Index
+        Installation/Index
+        Configuration/Index
+        Usage/Index
+        Contribution/Index
+
+Or it can be inserted visibly into the start page to provide an entry point:
 
 ..  code-block:: rst
 
@@ -191,61 +124,52 @@ overview. The TOC is built with the
         Usage/Index
         Contribution/Index
 
-The *maxdepth* property limits the depth of the page tree and *titlesonly*
-specifies that only the titles of the pages are displayed, no other headings.
-Both should emphasize the nature of an overview.
+For large pages it is advisable to limit the number of menu levels that will
+be displayed on the startpage by setting :rest:`:maxdepth:`. This will not
+limit the level of pages displayed in the main navigation.
 
-The pages in the body of the directive are included in the TOC, and TOCs in
-those pages are resolved recursively. The documentation author must edit the
-list and provide a reST document at each of these file paths, interpreting the
-file paths as relative to the current file.
+For more information on possible options on the `toctree` directive see
+chapter :ref:`Toctrees in the reST reference <toctree>`.
 
-In general, the file hierarchy should match the menu hierarchy, and a page must
-be placed at either :file:`<page-name>.rst` or :file:`<page-name>/Index.rst`
-- the latter if subpages exist or are expected. For example, the page of the
-menu path "Usage > TYPO3 Backend > Shop Dashboard" should be stored at:
+It is possible to use more then one `toctree` directive on the start page.
+Each `toctree` should have a :rst:`:caption:` in this case.
 
-.. code-block:: none
-
-   .
-   └── Documentation
-       └── Usage
-           └── Typo3Backend
-               └── ShopDashboard.rst
-
-or - if it has the subpage "Sell Widget" - at
-
-.. code-block:: none
-
-   .
-   └── Documentation
-       └── Usage
-           └── Typo3Backend
-               └── ShopDashboard
-                   ├── Index.rst
-                   └── SellWidget.rst
-
-
-.. _index-rst-meta-menu:
-
-Meta menu
-^^^^^^^^^
-
-The *meta-menu* placeholder builds a second menu that is not visible in the
-content area of the page, but only in the left sidebar (desktop) or toggle menu
-(mobile) - separate from the main menu. It contains links to functional pages,
-such as the :ref:`Sitemap.rst <sitemap-rst>` and the
-:ref:`genindex.rst <genindex-rst>`, which do not provide content specific to
-this documentation, as follows:
+The main navigation will then be divided into sections labeled by those
+captions. The menu of the manual you are currently reading is an example for
+that:
 
 ..  code-block:: rst
+    :caption: Documentation/Index.rst
 
     ..  toctree::
         :hidden:
+        :caption: Basics
 
-        Sitemap
-        genindex
+        About
+        HowToGetHelp
+        ...
 
+    .. toctree::
+        :hidden:
+        :caption: Howtos
+
+        WritingContent/Index
+        WritingDocForExtension/Index
+        ...
+
+    ..  toctree::
+        :hidden:
+        :caption: Advanced
+
+        HowToAddTranslation/Index
+        GeneralConventions/HowToUpdateDocs
+        GeneralConventions/ReviewInformation
+
+    ..  toctree::
+        :hidden:
+        :caption: Maintainers
+
+        Maintainers/Index
 
 .. index:: File structure; Documentation/Includes.rst.txt, Includes.rst.txt
 .. _includes-rst-txt:
