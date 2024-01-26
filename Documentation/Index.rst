@@ -137,4 +137,3 @@ What's new in this guide?
    :hidden:
 
    Sitemap
-   genindex
