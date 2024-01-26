@@ -48,27 +48,6 @@ return [
     ],
     [
         'action'=> 'createCodeSnippet',
-        'caption' => 'Documentation/Includes.rst.txt of the Getting Started tutorial',
-        'sourceFile'=> 'fileadmin/TYPO3CMS-Tutorial-GettingStarted/Documentation/Includes.rst.txt',
-        'targetFileName' => 'FileStructure/GettingStarted/IncludesRstTxt.rst.txt',
-        'language' => 'rst',
-    ],
-    [
-        'action'=> 'createCodeSnippet',
-        'caption' => 'Documentation/Includes.rst.txt of the Dashboard manual',
-        'sourceFile'=> 'typo3/sysext/dashboard/Documentation/Includes.rst.txt',
-        'targetFileName' => 'FileStructure/Dashboard/IncludesRstTxt.rst.txt',
-        'language' => 'rst',
-    ],
-    [
-        'action'=> 'createCodeSnippet',
-        'caption' => 'Documentation/Includes.rst.txt of the Examples extension manual',
-        'sourceFile'=> 'typo3conf/ext/examples/Documentation/Includes.rst.txt',
-        'targetFileName' => 'FileStructure/Examples/IncludesRstTxt.rst.txt',
-        'language' => 'rst',
-    ],
-    [
-        'action'=> 'createCodeSnippet',
         'caption' => 'Documentation/Settings.cfg of the Getting Started tutorial',
         'sourceFile'=> 'fileadmin/TYPO3CMS-Tutorial-GettingStarted/Documentation/Settings.cfg',
         'targetFileName' => 'FileStructure/GettingStarted/SettingsCfg.rst.txt',
