@@ -24,14 +24,14 @@ the ability to experiment and preview your changes locally before submitting the
     Visit `Join GitHub <https://github.com/join>`__ and create your account.
 
     Though not mandatory, the general convention in the TYPO3 community is
-    to set your GitHub name (*not* username) as your full name.
+    to set your GitHub name (*not* username) to your full name.
 
 2.  Find and fork the repository
 
     In the footer of the documentation you wish to make changes to,
     select the :guilabel:`Repository` link.
 
-    This will take you to the documentation's repository in GitHub.
+    This will take you to the documentation's repository on GitHub.
 
     From here, select the "Fork" button in the upper right corner of the page.
 
@@ -104,7 +104,7 @@ the ability to experiment and preview your changes locally before submitting the
 
     Write a short, meaningful commit message describing what changes you have made.
     See :ref:`general-conventions-commit-messages` for more information on how to
-    word your commit messages. Please also add links to resources which might be useful
+    phrase your commit messages. Please also add links to resources which might be useful
     for a reviewer to know (when appropriate).
 
 9.  Push changes
