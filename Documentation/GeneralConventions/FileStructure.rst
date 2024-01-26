@@ -151,7 +151,7 @@ that:
 
     .. toctree::
         :hidden:
-        :caption: HOWTOS
+        :caption: Howtos
 
         WritingContent/Index
         WritingDocForExtension/Index
