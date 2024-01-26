@@ -159,7 +159,7 @@ that:
 
     ..  toctree::
         :hidden:
-        :caption: ADVANCED
+        :caption: Advanced
 
         HowToAddTranslation/Index
         GeneralConventions/HowToUpdateDocs
