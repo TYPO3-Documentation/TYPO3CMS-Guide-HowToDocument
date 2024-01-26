@@ -7,7 +7,7 @@
 Workflow #2: Working locally on the documentation with GitHub
 =============================================================
 
-You can clone the Git repository with a manual to your computer and
+You can clone the Git repository of a manual to your computer and
 `preview the rendered result locally <rendering-docs>`.
 
 The official manuals of the documentation team can be found in the organization
@@ -31,7 +31,7 @@ the ability to experiment and preview your changes locally before submitting the
     In the footer of the documentation you wish to make changes to,
     select the :guilabel:`Repository` link.
 
-    This will take you to the documentations repository in GitHub.
+    This will take you to the documentation's repository in GitHub.
 
     From here, select the "Fork" button in the upper right corner of the page.
 
@@ -50,15 +50,15 @@ the ability to experiment and preview your changes locally before submitting the
         git clone https://github.com/<USERNAME>/<NAME OF REPOSITORY>.git
 
 
-4.  Setup Git Settings and SSH Key
+4.  Setup Git settings and SSH key
 
     For this, we refer to the general help on Git and GitHub:
 
     Setup `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
     and `email <https://help.github.com/en/articles/setting-your-commit-email-address-in-git>`__
-    (if not already setup in your global :file:`~/.gitconfig`).
+    (if not already setup in your global :file:`~/.gitconfig` file).
 
-    `Setup your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
+    `Setup your ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
 
 5.  Create a branch for your changes
 
@@ -66,9 +66,9 @@ the ability to experiment and preview your changes locally before submitting the
 
     If you did not just fork and clone but are instead using an old local version of this repository:
 
-    #. Make sure the repository is up-to-date by pulling from upstream as described
+    #.  Make sure the repository is up-to-date by pulling from upstream as described
         in :ref:`contribute-edit-locally-more-changes`.
-    #. Always branch from `main`.
+    #.  Always branch from `main`.
         If you are checked in to a feature branch, switch back to `main`
         first:
 
@@ -104,7 +104,8 @@ the ability to experiment and preview your changes locally before submitting the
 
     Write a short, meaningful commit message describing what changes you have made.
     See :ref:`general-conventions-commit-messages` for more information on how to
-    word your commit messages.
+    word your commit messages. Please also add links to resources which might be useful
+    for a reviewer to know (when appropriate).
 
 9.  Push changes
 
