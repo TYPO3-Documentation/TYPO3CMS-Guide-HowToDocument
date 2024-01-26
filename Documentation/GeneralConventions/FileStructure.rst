@@ -167,7 +167,7 @@ that:
 
     ..  toctree::
         :hidden:
-        :caption: MAINTAINERS
+        :caption: Maintainers
 
         Maintainers/Index
 
