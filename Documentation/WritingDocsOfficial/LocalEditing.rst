@@ -3,9 +3,9 @@
 .. index:: Official documentation; Local editing
 .. _docs-contribute-git-docker:
 
-=============================================================
-Workflow #2: Working locally on the documentation with GitHub
-=============================================================
+==========================================================
+Workflow #2: Working locally on the documentation with Git
+==========================================================
 
 You can clone the Git repository of a manual to your computer and
 `preview the rendered result locally <rendering-docs>`.
