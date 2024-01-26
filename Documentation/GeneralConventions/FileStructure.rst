@@ -178,7 +178,7 @@ Optional: :file:`Documentation/Sitemap.rst`
 -------------------------------------------
 
 The :file:`Sitemap.rst` contains the sitemap of the documentation.
-It is an almost empty file that is automatically filled by the Sphinx template.
+It is an almost empty file that is automatically filled during rendering.
 
 ..  code-block:: rst
 
@@ -191,31 +191,6 @@ It is an almost empty file that is automatically filled by the Sphinx template.
     =======
 
     .. The sitemap.html template will insert here the page tree automatically.
-
-
-.. index:: File structure; Documentation/genindex.rst, genindex.rst
-.. _genindex-rst:
-
-Optional: Automatic index: :file:`Documentation/genindex.rst`
--------------------------------------------------------------
-
-The genindex.rst shows a list of all indexes of the documentation pages. It is
-an almost empty file that is automatically filled by Sphinx. An index can be
-manually applied to each documentation location using the
-:rst:dir:`index directive <sphinx:index>`.
-In addition, some content elements automatically generate indexes, such as the
-:ref:`configuration values <rest-confval>` and
-:ref:`PHP domain <rest-phpdomain>` elements.
-
-..  code-block:: rst
-
-    .. include:: /Includes.rst.txt
-
-    =====
-    Index
-    =====
-
-    .. Sphinx will insert here the general index automatically.
 
 
 .. index:: File structure; Documentation/Settings.cfg, Settings.cfg
