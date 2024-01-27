@@ -87,7 +87,7 @@ the ability to experiment and preview your changes locally before submitting the
     Using your preferred IDE or editor you can now start making your changes.
 
     If you are not familiar with reST, you can visit the
-    :ref:`reST Introduction <writing-rest-introduction>` to help get you started
+    :ref:`reST Introduction <writing-rest-introduction>` to get started
     along with the :ref:`rest-cheat-sheet`.
 
 7.  Render the documentation
