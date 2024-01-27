@@ -64,7 +64,7 @@ the ability to experiment and preview your changes locally before submitting the
 
     .. important::
 
-        If you did not just fork and clone but are instead using an old local version of this repository:
+        If you did not just fork and clone, but are using instead an old local version of this repository:
 
     #.  Make sure the repository is up-to-date by pulling from upstream as described
         in :ref:`contribute-edit-locally-more-changes`.
