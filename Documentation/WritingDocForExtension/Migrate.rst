@@ -22,6 +22,8 @@ used. In the transition period we detect if a file called
 :file:`Documentation/guides.xml` is present and then switch to the new
 PHP-based rendering.
 
+..  _migrate_guides_xml:
+
 Create the settings file :file:`Documentation/guides.xml`
 =========================================================
 
