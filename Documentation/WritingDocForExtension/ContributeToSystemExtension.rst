@@ -1,39 +1,31 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index:: pair: Documentation; System extensions
-.. _contribute-to-system-extension:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index:: pair: Documentation; System extensions
+..  _contribute-to-system-extension:
 
 ===============================
 Contribute to system extensions
 ===============================
 
-The documentation for system extensions is maintained inside the TYPO3
-source code, so the contribution workflow is a little different.
+The documentation for system extensions is maintained in the TYPO3 Core mono
+repository on the Gerrit instance https://review.typo3.org/.
 
-*  When it comes to documentation that is contained within the
-   core (like system extension documentation and changelog), you would
-   use Forge to report **issues**, using the category "Documentation":
-   https://forge.typo3.org/projects/typo3cms-core/issues
-*  The :ref:`t3contribute:start` explains the **contribution workflow** for the core.
-   For making a change to the documentation in the core, you would use the
-   workflow explained in that guide (using Git and pushing to Gerrit).
-*  You can also test the change by :ref:`rendering locally <rendering-docs>`
-   as in any documentation patch, because all documentation uses a common
-   format and :ref:`file structure <file-structure>`
-   and can be rendered with the same Docker container.
+Follow the general :ref:`Core contribution workflow <t3contribute:start>`.
 
-.. tip::
+Changes to the documentation of system extensions can be :ref:`rendered locally
+<rendering-docs>`.
 
-   There is an easy shortcut for minor changes: You can use
-   the :ref:`Edit on GitHub method <docs-contribute-github-method>` for
-   minor changes to system extensions documentation and the changelog. Under the hood,
-   a patch will get created and pushed to Gerrit and you will find a
-   comment in your pull request with information about where to find your patch
-   on Gerrit.
+..  tip::
 
-   .. image:: /Images/github-gerrit.png
-      :class: with-shadow
-      :target: https://github.com/typo3/typo3/pull/172#issuecomment-494721296
+    There is an easy shortcut for minor changes: You can use
+    the :ref:`Edit on GitHub method <docs-contribute-github-method>` for
+    minor changes to system extensions documentation and the changelog.
+    A patch will get created and pushed to Gerrit. A comment to your pull
+    request on GitHub links you to the patch on gerrit
+
+    ..  image:: /Images/github-gerrit.png
+        :class: with-shadow
+        :target: https://github.com/typo3/typo3/pull/172#issuecomment-494721296
 
 See `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
 for a list of system extension documentation.
