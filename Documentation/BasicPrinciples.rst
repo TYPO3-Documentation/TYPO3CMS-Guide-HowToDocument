@@ -76,7 +76,7 @@ Extension manuals
 ------------------
 
 The documentation for a third-party extension is maintained within the
-source-code of that extension.
+source code of that extension.
 
 If :ref:`configured <tip-edit-me-on-github>`, contributors
 can also make changes via the :ref:`"Edit on GitHub" <docs-contribute-github-method>`.
