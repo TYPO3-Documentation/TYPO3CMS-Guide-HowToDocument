@@ -33,7 +33,7 @@ All of these examples have a few things in common:
 *   The documentation is rendered and found on https://docs.typo3.org/
 *   The documentation has a **common theme**, all pages look similar and use the same styles
 *   Most of the documentation can be directly **edited by the community**. For third-party
-    extensions, this depends on where and how the source-code is hosted and maintained.
+    extensions, this depends on where and how the source code is hosted and maintained.
 *   The source of the documentation is written (mostly) in reStructuredText (**reST**)
 
 ..  index:: Official TYPO3 manuals
