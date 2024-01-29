@@ -103,6 +103,27 @@ Further settings can be made in the XML tag
 The class attribute is mandatory, it references the extension that is used
 to render the documentation with the TYPO3 documentation theme.
 
+..  _preferred_typo3_version:
+
+Preferred TYPO3 Core version
+----------------------------
+
+You can set the preferred TYPO3 Core version. This version is used to determine
+the desired version for links to other manuals and system extensions.
+
+..  code-block:: xml
+    :caption: Documentation/guides.xml
+
+    <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               typo3-core-preferred="12.4" />
+
+If no preferred version is set it defaults to `stable`. Possible values are:
+
+`main`, `stable` (latest LTS), `oldstable` (old LTS) or an explicit LTS / eLTS
+version like `12.4` or `8.7`.
+
+..  todo: Link to interlink chapter once it is written
+
 .. _settings-guides-github-workflow:
 
 Configure the "Edit on GitHub" button
