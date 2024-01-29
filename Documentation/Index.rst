@@ -113,7 +113,6 @@ What's new in this guide?
    :hidden:
    :caption: HOWTOS
 
-   WritingContent/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
    RenderingDocs/Index
