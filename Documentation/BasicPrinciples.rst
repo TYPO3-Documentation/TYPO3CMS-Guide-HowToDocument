@@ -21,7 +21,7 @@ TYPO3 documentation may be one of the following:
 *   It can be the documentation of a
     `third-party extension <https://extensions.typo3.org/>`__.
 *   TYPO3 documentation can also be a :ref:`Changelog <ext-core:start>`
-    entry for the Core, for example a documenting breaking change or new feature.
+    entry for the Core, for example documenting a breaking change or a new feature.
 
 ..  _common-characteristics-typo3-docs:
 
