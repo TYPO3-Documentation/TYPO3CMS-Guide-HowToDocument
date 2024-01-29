@@ -119,8 +119,6 @@ learning, tutorials provide examples to illustrate the subjects they cover.
 They may not necessarily follow best-practices by the letter. They are
 designed to make it easier to get started.
 
-:ref:`Read more ... <writing-tutorial>`
-
 The definitions for tutorials, guides, explanations and references were taken from
 `Daniele Procida: What nobody tells you about documentation <https://www.divio.com/blog/documentation/>`__
 
