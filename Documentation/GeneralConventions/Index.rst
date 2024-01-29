@@ -92,19 +92,16 @@ be found in the subchapters.
 
    This will look like this: :guilabel:`Admin Tools > Extensions`
 
+..  toctree::
+    :caption: Table of contents
+    :maxdepth: 1
 
-
-
-**Table of contents**
-
-.. toctree::
-   :maxdepth: 1
-
-   ContentStyleGuide
-   Glossary
-   FileStructure
-   Format
-   CodingGuidelines
-   GuidelinesForImages
-   CommitMessages
-   Licenses
+    ContentStyleGuide
+    Glossary
+    FileStructure
+    GuidesXml
+    Format
+    CodingGuidelines
+    GuidelinesForImages
+    CommitMessages
+    Licenses

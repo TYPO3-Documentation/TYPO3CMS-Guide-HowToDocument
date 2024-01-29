@@ -1,11 +1,15 @@
 ..  _guides-xml:
 
-================================
-:file:`Documentation/guides.xml`
-================================
+===========================================
+Configuration of the rendering - guides.xml
+===========================================
 
 This XML file contains meta information and configuration used during rendering
 of a manual.
+
+..  contents:: Table of Contents:
+    :depth: 2
+    :local:
 
 Example:
 
