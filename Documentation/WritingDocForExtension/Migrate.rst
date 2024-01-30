@@ -51,9 +51,6 @@ Use our Docker container to render your documentation locally. Read more about
 Improve your documentation to render without warning
 ====================================================
 
-Have a look at :ref:`Common pitfalls <rest-common-pitfalls>` that might cause
-rendering warnings.
-
 If you believe you found a bug in the new PHP-based rendering, please open
 an `Issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 

@@ -58,7 +58,6 @@ Example 1: List with sublist items
 
 **How it looks:**
 
-
 *   item 1
 *   item 2 is a longer text with line breaks. We can format and
     indent like this
@@ -69,64 +68,6 @@ Example 1: List with sublist items
 
 *   item 4
 
+..  note::
 
-Example 2: List with sublist and error
-======================================
-
-.. important::
-
-    This example will not work as expected, because the extra lines
-    for the sublist are missing.
-
-.. code-block:: rst
-
-    *   item 1
-    *   item 2
-    *   item 3
-        *   subitem 3.1
-        *   subitem 3.2
-    *   item 4
-
-**How it looks:**
-
-*   item 1
-*   item 2
-*   item 3
-    *   subitem 3.1
-    *   subitem 3.2
-*   item 4
-
-
-Example 3: List with sublist and whitespace error
-=================================================
-
-.. important::
-
-    Each asterix `*` has to be followed by three spaces.
-    If you only use one the sublist is interpreted like
-    a citation.
-
-.. code-block:: rst
-
-    * item 1
-    * item 2
-    * item 3
-
-        * subitem 3.1
-        * subitem 3.2
-
-    * item 4
-
-**How it looks:**
-
-* item 1
-* item 2
-* item 3
-
-    * subitem 3.1
-    * subitem 3.2
-
-* item 4
-
-
-For more information on common errors, see :ref:`rest-common-pitfalls`.
+    Empty lines before and after the sublist are mandatory.

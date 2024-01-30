@@ -88,7 +88,6 @@ readthedocs::
 
    *  indenting is important
    *  new lines are important, for example before, after and between bullet lists
-   *  more, see :ref:`rest-common-pitfalls`
 
 *  some people simply hate it
 
