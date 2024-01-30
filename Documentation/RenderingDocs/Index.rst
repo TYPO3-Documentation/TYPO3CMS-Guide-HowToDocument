@@ -44,6 +44,10 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
             # so let's just create that extra "real" and "generic" tag
             docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
 
+            # At the moment the 'lastest' version is actually a renamed 'v3.2.1' version
+            # and as such refers to the 'v3.2.1' tag. So make that available too.
+            docker tag t3docs/render-documentation t3docs/render-documentation:v3.2.1
+
             # verify it worked
             docker run --rm t3docs/render-documentation --version
 
