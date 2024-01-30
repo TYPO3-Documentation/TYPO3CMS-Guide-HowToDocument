@@ -229,6 +229,9 @@ document title. This way you can link to a documents start page by:
 
     See :ref:`TYPO3 Explained <t3coreapi:start>`.
 
+..  hint::
+    Refer to https://typo3.org/project/licenses if you have questions about
+    what license to use for your documentation and or extension.
 
 .. _index-rst-project:
 

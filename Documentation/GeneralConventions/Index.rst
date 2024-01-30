@@ -102,4 +102,3 @@ be found in the subchapters.
     Format
     CodingGuidelines
     GuidelinesForImages
-    Licenses
