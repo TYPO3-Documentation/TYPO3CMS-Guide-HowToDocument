@@ -716,32 +716,19 @@ Source:
 **How it looks:**
 
 ..  uml::
+    :caption: Some Caption
 
-    == Initialization ==
-
-    Alice -> Bob: Authentication Request
-    Bob --> Alice: Authentication Response
-
-    == Repetition ==
-
-    Alice -> Bob: Another authentication Request
-    Alice <-- Bob: another authentication Response
+    class -> otherClass : message
 
 Source:
 
 ..  code-block:: rst
+    :caption: Documentation/SomeFile.rst
 
     ..  uml::
+        :caption: Some Caption
 
-        == Initialization ==
-
-        Alice -> Bob: Authentication Request
-        Bob --> Alice: Authentication Response
-
-        == Repetition ==
-
-        Alice -> Bob: Another authentication Request
-        Alice <-- Bob: another authentication Response
+        class -> otherClass : message
 
 
 :ref:`Sidebar <rest-sidebar>`
