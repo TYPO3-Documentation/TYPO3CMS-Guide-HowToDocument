@@ -32,7 +32,7 @@ This will be rendered as:
 
     class -> otherClass : message
 
-Include a plantuml file
+Include a PlantUML file
 =======================
 
 ..  code-block:: rst
