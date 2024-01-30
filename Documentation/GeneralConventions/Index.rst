@@ -99,7 +99,6 @@ be found in the subchapters.
     ContentStyleGuide
     Glossary
     FileStructure
-    GuidesXml
     Format
     CodingGuidelines
     GuidelinesForImages
