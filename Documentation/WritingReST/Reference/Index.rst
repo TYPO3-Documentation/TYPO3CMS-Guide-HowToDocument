@@ -3,9 +3,9 @@
 ..  index:: reST; Reference
 ..  _rest-reference:
 
-========================
-Reference: reST & Sphinx
-========================
+===========================
+Reference: reStructuredText
+===========================
 
 ..  toctree::
     :titlesonly:
