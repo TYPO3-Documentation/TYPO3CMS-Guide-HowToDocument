@@ -14,9 +14,9 @@
 ..  index:: reST; Cheat sheet
 ..  _rest-cheat-sheet:
 
-==========================
-Cheat sheet: reST & Sphinx
-==========================
+=============================
+Cheat sheet: reStructuredText
+=============================
 
 :ref:`Headlines <Headlines-and-sections>`
 =========================================
