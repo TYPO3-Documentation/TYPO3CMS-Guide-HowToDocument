@@ -1,49 +1,37 @@
-.. include:: /Includes.rst.txt
-.. highlight:: rst
-.. index::
-   ! reST
-   reStructuredText
-   see: reStructuredText; reST
-   ! Sphinx
-.. _Formatting-with-reST:
-.. _format-sphinx:
-.. _rest-quick-start:
+..  include:: /Includes.rst.txt
+..  highlight:: rst
+..  index::
+    reStructuredText
+    reST
+..  _Formatting-with-reST:
+..  _format-sphinx:
+..  _rest-quick-start:
 
-=========================
-reStructuredText & Sphinx
-=========================
+================
+reStructuredText
+================
 
-This chapter is an introduction and reference for writing documentation using reStructuredText
-(also referred to as reST) and Sphinx.
+This chapter is an introduction and reference for writing documentation using
+reStructuredText (also referred to as reST).
 
 It is recommended to read (or at least browse through)
 the :ref:`writing-rest-introduction` and the general
 :ref:`format-rest-cgl` first.
 
-You don't need to read the entire chapter, just lookup
-the section that is relevant for what you plan to do.
-
 Or, use the :ref:`rest-cheat-sheet`, which contains the most commonly used
 markup on one page.
 
-We won't be covering every reST markup that is
+We cannot cover every reST markup that is
 available. For more information, see other resources, such as:
-http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html
 
-.. tip::
+*   `reSTructuredText reference by Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`__
+*   `reSTructuredText introduction on docutils <https://docutils.sourceforge.io/rst.html>`__
+*   `reStructuredText Markup Specification <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html>`__
 
-   See the t3SphinxThemeRtd demo docs for more examples.
+..  toctree::
+    :hidden:
 
-   .. rst-class:: horizbuttons-striking-m
-
-   -  `➜ See the T3SphinxThemeRtd DemoDocs
-      <https://docs.typo3.org/typo3cms/drafts/github/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/Index.html>`__
-
-
-.. toctree::
-   :hidden:
-
-   Introduction
-   BasicRestSyntax
-   CheatSheet
-   Reference/Index
+    Introduction
+    BasicRestSyntax
+    CheatSheet
+    Reference/Index

@@ -3,11 +3,11 @@
 ..  index:: reST; Syntax
 ..  _basic-rest-syntax:
 
-==========================
-Basic reST & Sphinx syntax
-==========================
+=============================
+Basic reStructuredText syntax
+=============================
 
-The .rst files are written in reStructuredText (reST) format. They
+The `.rst` files are written in reStructuredText (reST) format. They
 contain text with additional markup.
 
 
