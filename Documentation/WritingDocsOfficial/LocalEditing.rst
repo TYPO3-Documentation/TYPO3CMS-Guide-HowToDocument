@@ -102,10 +102,7 @@ the ability to experiment and preview your changes locally before submitting the
 
         git commit -a
 
-    Write a short, meaningful commit message describing what changes you have made.
-    See :ref:`general-conventions-commit-messages` for more information on how to
-    phrase your commit messages. Please also add links to resources which might be useful
-    for a reviewer to know (when appropriate).
+   Write a short, meaningful commit message describing what changes you have made.
 
 9.  Push changes
 
