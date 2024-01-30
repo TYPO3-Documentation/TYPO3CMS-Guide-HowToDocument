@@ -37,8 +37,6 @@ their commit message to the issue, for example
     Resolves: https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues/790
     Releases: main
 
-See also: :ref:`general-conventions-commit-messages`.
-
 ..  index::
     Documentation; Deprecations
     reST directives; deprecated
