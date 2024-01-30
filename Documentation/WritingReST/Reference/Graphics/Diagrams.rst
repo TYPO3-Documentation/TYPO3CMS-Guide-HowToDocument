@@ -15,7 +15,7 @@ In order to render diagrams in the TYPO3 documentation,
 Embedded UML diagrams
 =====================
 
-Simple diagrams can be embedded directly into the reStructuredText mark up:
+Simple diagrams can be embedded directly into the reStructuredText markup:
 
 ..  code-block:: rst
     :caption: Documentation/SomeFile.rst
