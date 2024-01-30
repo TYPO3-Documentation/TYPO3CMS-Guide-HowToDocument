@@ -10,8 +10,7 @@ Backport changes
 Most of the time changes will be made to branch `main` and backported.
 
 When creating a pull request, it is possible to add a `Releases` line in the
-:ref:`commit message <general-conventions-commit-messages>`
-(as done in the Core):
+commit message (as done in the Core):
 
 ..  code-block:: text
 

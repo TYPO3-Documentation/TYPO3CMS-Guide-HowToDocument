@@ -103,5 +103,4 @@ be found in the subchapters.
     Format
     CodingGuidelines
     GuidelinesForImages
-    CommitMessages
     Licenses
