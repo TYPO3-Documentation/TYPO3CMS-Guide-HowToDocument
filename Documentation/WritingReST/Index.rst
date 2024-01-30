@@ -20,9 +20,6 @@ It is recommended to read (or at least browse through)
 the :ref:`writing-rest-introduction` and the general
 :ref:`format-rest-cgl` first.
 
-Also read :ref:`rest-common-pitfalls` in order to avoid common
-mistakes with the syntax.
-
 You don't need to read the entire chapter, just lookup
 the section that is relevant for what you plan to do.
 
@@ -48,6 +45,5 @@ http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_
 
    Introduction
    BasicRestSyntax
-   CommonPitfalls/Index
    CheatSheet
    Reference/Index

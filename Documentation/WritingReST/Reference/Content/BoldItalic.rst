@@ -35,14 +35,8 @@ How it looks:
 
 This is normal text. *This is italic text.*
 
-
-Possible Errors
-===============
-
-..  important::
-
-    Make sure there is no space between the markup and the styled text,
-    see :ref:`common-pitfalls-inline-style`.
+..  hint::
+    Make sure there is no space between the markup and the styled text.
 
 
 Additional Information
