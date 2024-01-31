@@ -44,6 +44,10 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
             # so let's just create that extra "real" and "generic" tag
             docker tag ghcr.io/t3docs/render-documentation t3docs/render-documentation
 
+            # At the moment the 'latest' version is actually a renamed 'v3.2.1' version
+            # and as such internally references 'v3.2.1'. So make that available too.
+            docker tag t3docs/render-documentation t3docs/render-documentation:v3.2.1
+
             # verify it worked
             docker run --rm t3docs/render-documentation --version
 
@@ -52,9 +56,11 @@ or :ref:`ask for help <get-help-on-writing-docs>`.
         .. code-block:: bash
 
             eval "$(docker run --rm t3docs/render-documentation show-shell-commands)"
+            alias dockrun_t3rd="dockrun_v3.2.1 $@"
 
         This will run the Docker container and print out shell code. Once "eval-uated" 
-        the code defines a helper function named `dockrun_t3rd`. This function relieves 
+        the code defines a helper function named `dockrun_v3.2.1`, which is
+        then also aliased as `dockrun_t3rd`. This function relieves
         you of the work of setting the volumes and rights correctly when running the 
         container and ensures a folder for the rendering results is provided. Executing 
         the code with `eval` defines the function for your current terminal. Don't forget
