@@ -15,7 +15,8 @@ The section describes the doings when a new major Core version is released
 To do
 =====
 
-*   Update :ref:`t3start:install` to reflect the new version upon installation.
+*   Update :ref:`t3start:install` and :ref:`t3start:legacyinstallation` to
+    reflect the new version upon installation.
 
 *   Add "-dev" links (like `13-dev`) to the links on the homepage:
 
