@@ -83,10 +83,10 @@ Attention
 ..  code-block:: rst
 
     ..  attention::
-        A attention
+        An attention
 
 ..  attention::
-    A attention
+    An attention
 
 
 More Information
