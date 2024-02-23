@@ -10,16 +10,15 @@
     <abstract>
 
     Installation
-    ------------
+    ============
     ..
 
     Configuration
-    -------------
+    =============
     ..
 
     Usage
-    -----
-
+    ======
     ..
 
     .. csv-table::
