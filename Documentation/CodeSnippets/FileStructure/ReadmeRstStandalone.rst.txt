@@ -3,17 +3,23 @@
 
     <badges>
 
-    # <project>
+    =========
+    <project>
+    =========
 
     <abstract>
 
-    ## Installation
+    Installation
+    ------------
     ..
 
-    ## Configuration
+    Configuration
+    -------------
     ..
 
-    ## Usage
+    Usage
+    -----
+
     ..
 
     .. csv-table::
