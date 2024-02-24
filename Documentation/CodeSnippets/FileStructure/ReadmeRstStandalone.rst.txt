@@ -21,7 +21,7 @@
     ======
     ..
 
-    .. csv-table::
+    ..  csv-table::
         :header: "", "URL"
 
         **Repository:**,        :samp:`https://{<vcs-repository>}`
