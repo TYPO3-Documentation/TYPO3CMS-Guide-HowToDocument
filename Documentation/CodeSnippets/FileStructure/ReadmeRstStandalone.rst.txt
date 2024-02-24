@@ -3,21 +3,28 @@
 
     <badges>
 
-    # <project>
+    =========
+    <project>
+    =========
 
     <abstract>
 
-    ## Installation
+    Installation
+    ============
     ..
 
-    ## Configuration
+    Configuration
+    =============
     ..
 
-    ## Usage
+    Usage
+    ======
     ..
 
-    |                  | URL                                                           |
-    |------------------|---------------------------------------------------------------|
-    | **Repository:**  | https://<vcs-repository>                                      |
-    | **Read online:** | https://docs.typo3.org/p/<package-name>/main/en-us/           |
-    | **TER:**         | https://extensions.typo3.org/extension/<extension-key>/       |
+    ..  csv-table::
+        :header: "", "URL"
+
+        **Repository:**,        :samp:`https://{<vcs-repository>}`
+        **Read online:**,       :samp:`https://docs.typo3.org/p/{<package-name>}/main/en-us/`
+        **TER:**,               :samp:`https://extensions.typo3.org/extension/{<extension-key>}/`
+
