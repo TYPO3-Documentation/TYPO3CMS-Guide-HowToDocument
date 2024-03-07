@@ -15,7 +15,7 @@ Migration: From Sphinx to PHP-based rendering
     Text rendering to try it out. The new rendering will become mandatory in
     August 2024.
 
-The main difference that concerns you is that the new PHP-base rendering
+The main difference that concerns you is that the new PHP-based rendering
 requires a file called :file:`Documentation/guides.xml` for configuration
 while in Sphinx rendering a file called :file:`Docuemtation/Settings.cfg` was
 used. In the transition period we detect if a file called
@@ -32,7 +32,8 @@ a migration tool. This tool can be used to automatically create a
 :file:`Documentation/guides.xml` from the information contained in your
 :file:`Documentation/Settings.cfg`.
 
-`Docker <https://docs.docker.com/install/>`__ needs to be installed on your
+`Docker <https://docs.docker.com/install/>`__ (or a drop-in replacement like
+`Podman <https://podman.io>`__) needs to be installed on your
 operating system for the tool to work:
 
 ..  code-block:: shell
