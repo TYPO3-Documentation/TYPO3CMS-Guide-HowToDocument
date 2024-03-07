@@ -49,6 +49,7 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
         ..  code-block:: bash
 
+            mkdir -p Documentation-GENERATED-temp
             docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             xdg-open "Documentation-GENERATED-temp/Index.html"
 
@@ -56,6 +57,7 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
         ..  code-block:: bash
 
+            mkdir -p Documentation-GENERATED-temp
             docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             open "Documentation-GENERATED-temp/Index.html"
 
@@ -63,6 +65,7 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
         ..  code-block:: powershell
 
+            New-Item -ItemType Directory -Force -Path ".\Documentation-GENERATED-temp"
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             start "Documentation-GENERATED-temp/Index.html"
 
