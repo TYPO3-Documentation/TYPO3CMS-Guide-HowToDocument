@@ -1,9 +1,9 @@
-.. include:: /Includes.rst.txt
-.. index::
-   Documentation; Migration
-   docs.typo3.org
-.. _migrate:
-.. _register-for-rendering:
+..  include:: /Includes.rst.txt
+..  index::
+    Documentation; Migration
+    docs.typo3.org
+..  _migrate:
+..  _register-for-rendering:
 
 =============================================
 Migration: From Sphinx to PHP-based rendering
@@ -17,7 +17,7 @@ Migration: From Sphinx to PHP-based rendering
 
 The main difference that concerns you is that the new PHP-base rendering
 requires a file called :file:`Documentation/guides.xml` for configuration
-while in Sphinx rendering a file called :file:`Docuemtation/Settings.cfg` was
+while in Sphinx rendering a file called :file:`Documentation/Settings.cfg` was
 used. In the transition period we detect if a file called
 :file:`Documentation/guides.xml` is present and then switch to the new
 PHP-based rendering.
@@ -32,15 +32,33 @@ a migration tool. This tool can be used to automatically create a
 :file:`Documentation/guides.xml` from the information contained in your
 :file:`Documentation/Settings.cfg`.
 
-`Docker <https://docs.docker.com/install/>`__ needs to be installed on your
+`Docker <https://docs.docker.com/install/>`__ (or a drop-in replacement like
+`Podman <https://podman.io>`__) needs to be installed on your
 operating system for the tool to work:
 
-..  code-block:: shell
+..  tabs::
 
-    docker run --rm --pull always \
-        -v $(pwd):/project \
-        -it ghcr.io/typo3-documentation/render-guides:latest \
-        migrate Documentation
+    ..  group-tab:: Docker
+
+        ..  code-block:: bash
+
+            docker run --rm --pull always \
+              -v $(pwd):/project \
+              -it ghcr.io/typo3-documentation/render-guides:latest \
+              migrate Documentation
+
+    .. group-tab:: Podman
+
+        ..  code-block:: bash
+
+            podman run --rm --pull always \
+              -v $(pwd):/project \
+              -it ghcr.io/typo3-documentation/render-guides:latest \
+              migrate Documentation
+
+
+The last parameter (:bash:`Documentation`) is the name of the directory, where your
+:file:`Settings.cfg` is currently placed in.
 
 Try out the rendering locally
 =============================
@@ -48,16 +66,188 @@ Try out the rendering locally
 Use our Docker container to render your documentation locally. Read more about
 :ref:`local rendering <rendering-docs>`.
 
-Improve your documentation to render without warning
-====================================================
+..  _migrate-detailed-steps:
 
-If you believe you found a bug in the new PHP-based rendering, please open
+Further steps to adapt to the new rendering
+===========================================
+
+You should perform the following tasks to conclude the migration to the
+new rendering tool:
+
+1. Improve your documentation to render without warning
+-------------------------------------------------------
+
+Rendering your documentation should not yield any warnings or errors.
+
+If you get error messages, often they refer to wrong indentation, missing
+interlinks, orphaned files or outdated ReST-identifiers.
+
+If you are unable to address a warning/error with changes in your documentation
+and if you believe you found a bug in the new PHP-based rendering, please open
 an `Issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 
-Recommended: Activate automatic testing
-=======================================
+2. Remove outdated files
+-----------------------------------
+
+After you have created the :file:`guides.xml` file, you can remove the old
+:file:`Settings.cfg` file.
+
+You can also delete the files :file:`genindex.rst` which was previously used
+to generate an index.
+
+The :file:`screenshots.json` is also no longer evaluated, so you can remove
+that optional file.
+
+3. Adapt :file:`Includes.rst.txt`
+---------------------------------
+
+The main documentation directory can contain a file :file:`Includes.rst.txt`
+to include any fixed text, which will be placed on every page of your rendered
+documentation.
+
+Previously it was also used to define a list of utilized directives/roles.
+
+You can either safely remove that file, or add your fixed text to it.
+
+Most official documentation uses this as the stub of the file:
+
+..  code-block:: text
+    :caption: /Documentation/Includes.rst.txt
+
+    ..  You can put central messages to display on all pages here
+
+4. Remove the entry `genindex` from :file:`Index.rst` (Index/Glossary)
+----------------------------------------------------------------------
+
+If you previously had a :file:`genindex.rst` file, this optional index
+(or glossary) was rendered as a page through an entry in the file :file:`Index.rst`
+like this:
+
+..  code-block:: text
+    :caption: /Documentation/Index.rst
+    :emphasize-lines: 17
+
+    **Table of Contents:**
+
+    .. toctree::
+       :maxdepth: 2
+       :titlesonly:
+
+       Introduction/Index
+       Installation/Index
+       Details/Index
+
+    .. Meta Menu
+
+    .. toctree::
+       :hidden:
+
+       Sitemap
+       genindex
+
+Remove the entry `genindex` from the list.
+
+..  hint::
+
+    See :ref:`migrate-glossary` for details about the future of the
+    index (glossary) generation.
+
+5. Prevent code-snippets with :file:`.rst` extension
+----------------------------------------------------
+
+All files ending in :file:`.rst` will be interpreted by the new rendering,
+and every file that is just a code snippet placed in an external file
+should be renamed to use a :file:`.rst.txt` extension instead.
+
+Recommendations
+===============
+
+The following list is not a requirement to utilize the new rendering, but
+follows "best practice" to make the most of your documentation project.
+
+..  _migrate-to-makefile:
+
+Add a :file:`Makefile` to your project
+--------------------------------------
+
+A :file:`Makefile` is a simple command line runner configuration file, which requires
+the utility `GNU make <https://www.gnu.org/software/make/manual/make.html>`_
+to be available on your Operating System.
+
+This allows you to perform shortcuts to render your documentation instead
+of typing a long :bash:`docker run...` or :bash:`podman run...` command:
+
+..  code-block:: shell
+
+    make docs
+
+For inspiration, check out the :file:`Makefile` of the main PHP-based rendering
+repository:
+
+https://github.com/TYPO3-Documentation/render-guides/blob/main/Makefile
+
+A small example :file:`Makefile`:
+
+..  literalinclude:: _Makefile
+    :caption: /Makefile
+
+..  _migrate-to-testing-workflow:
+
+Activate automatic testing in your project
+------------------------------------------
 
 It is recommended to use an automatic workflow on GitHub Or Gitlab to
 ensure the extension's documentation renders without warnings.
 
-..  todo: Add a link to the according chapter
+An example workflow on GitHub would be established via this file in
+:file:`.github/actions/documentation.yml`:
+
+..  code-block:: yaml
+    :caption: .github/actions/documentation.yml
+
+    name: Test documentation
+
+    on: [ push, pull_request ]
+
+    jobs:
+      tests:
+        name: Render documentation
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+
+          - name: Test if the documentation will render without warnings
+            run: |
+              mkdir -p Documentation-GENERATED-temp \
+              && docker run --rm --pull always -v $(pwd):/project \
+                 ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
+
+This creates a workflow entry `Test documentation`, so that on every push to your
+repository, and every pull request, the rendering is executed. A commit will then
+be rejected, if the rendering fails.
+
+..  _migrate-glossary:
+
+To be discussed: Index generation (glossary)
+============================================
+
+The Sphinx rendering allowed to utilize a syntax like the following to
+add indexes to your documentation:
+
+..  code-block::
+    :caption: `Documentation/Index.rst`
+
+    ..  index::
+        XLIFF; Files
+        File; XLIFF
+
+The automatically generated file :file:`genindex.html` would show a
+two-column layout of all indexes, with the pages that they were used on.
+
+The new PHP-based rendering does not (yet) support this indexing.
+
+The current recommendation is to only remove the :file:`genindex.rst` file
+from your documentation directory, but keep all the placed `..  index`
+directives. If at some point the automatic index-generation is re-introduced,
+your old indexes will be able to show up again.
