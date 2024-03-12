@@ -201,6 +201,19 @@ A small example :file:`Makefile`:
 ..  literalinclude:: _Makefile
     :caption: Makefile
 
+..  hint::
+
+    Makefile blocks need to be indented with a TAB character, not spaces.
+    If your project comes with a :ref:`editorconfig` definition for
+    code formatting, you should add the following:
+
+    ..  code-block:: text
+
+        [Makefile]
+        # Use tabs for indentation (Makefiles require tabs)
+        indent_style = tab
+
+
 ..  _migrate-to-testing-workflow:
 
 Activate automatic testing in your project
