@@ -101,9 +101,6 @@ new rendering tool:
     You can also delete the files :file:`genindex.rst` which was previously used
     to generate an index.
 
-    The :file:`screenshots.json` is also no longer evaluated, so you can remove
-    that optional file.
-
 3.  Adapt :file:`Includes.rst.txt`
 
     The main documentation directory can contain a file :file:`Includes.rst.txt`
