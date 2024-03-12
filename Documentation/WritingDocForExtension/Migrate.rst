@@ -77,99 +77,96 @@ Further steps to adapt to the new rendering
 You should perform the following tasks to conclude the migration to the
 new rendering tool:
 
-1. Improve your documentation to render without warning
--------------------------------------------------------
+..  rst-class:: bignums
 
-Rendering your documentation should not yield any warnings or errors.
+1.  Improve your documentation to render without warning
 
-If you get error messages, often they refer to wrong indentation, missing
-:ref:`interlinks <settings-guides-interlink-mapping>`, orphaned files or
-outdated ReST identifiers.
+    Rendering your documentation should not yield any warnings or errors.
 
-If you are unable to address a warning/error with changes in your documentation
-feel free to ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
+    If you get error messages, often they refer to wrong indentation, missing
+    :ref:`interlinks <settings-guides-interlink-mapping>`, orphaned files or
+    outdated ReST identifiers.
 
-If you believe you found a specific bug in the new PHP-based rendering, please open
-an `Issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
+    If you are unable to address a warning/error with changes in your documentation
+    feel free to ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
 
-2. Remove outdated files
------------------------------------
+    If you believe you found a specific bug in the new PHP-based rendering, please open
+    an `Issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 
-After you have created the :file:`guides.xml` file, you can remove the old
-:file:`Settings.cfg` file.
+2.  Remove outdated files
 
-You can also delete the files :file:`genindex.rst` which was previously used
-to generate an index.
+    After you have created the :file:`guides.xml` file, you can remove the old
+    :file:`Settings.cfg` file.
 
-The :file:`screenshots.json` is also no longer evaluated, so you can remove
-that optional file.
+    You can also delete the files :file:`genindex.rst` which was previously used
+    to generate an index.
 
-3. Adapt :file:`Includes.rst.txt`
----------------------------------
+    The :file:`screenshots.json` is also no longer evaluated, so you can remove
+    that optional file.
 
-The main documentation directory can contain a file :file:`Includes.rst.txt`
-to include any fixed text, which will be placed on every page of your rendered
-documentation.
+3.  Adapt :file:`Includes.rst.txt`
 
-Previously it was also used to define a list of utilized directives/roles.
+    The main documentation directory can contain a file :file:`Includes.rst.txt`
+    to include any fixed text, which will be placed on every page of your rendered
+    documentation.
 
-You can either remove that file, or add your fixed text to it. If you remove
-the file, remember to also remove all references pointing to that file, like:
+    Previously it was also used to define a list of utilized directives/roles.
 
-..  code-block:: text
-    :caption: Documentation/Index.rst
+    You can either remove that file, or add your fixed text to it. If you remove
+    the file, remember to also remove all references pointing to that file, like:
 
-    ..  include:: /Includes.rst.txt
+    ..  code-block:: text
+        :caption: Documentation/Index.rst
 
-Most official documentation uses this as the stub of the file:
+        ..  include:: /Includes.rst.txt
 
-..  code-block:: text
-    :caption: Documentation/Includes.rst.txt
+    Most official documentation uses this as the stub of the file:
 
-    ..  You can put central messages to display on all pages here
+    ..  code-block:: text
+        :caption: Documentation/Includes.rst.txt
 
-4. Remove the entry `genindex` from :file:`Index.rst` (Index/Glossary)
-----------------------------------------------------------------------
+        ..  You can put central messages to display on all pages here
 
-If you previously had a :file:`genindex.rst` file, this optional index
-(or glossary) was rendered as a page through an entry in the file :file:`Index.rst`
-like this:
+4.  Remove the entry `genindex` from :file:`Index.rst` (Index/Glossary)
 
-..  code-block:: text
-    :caption: Documentation/Index.rst
-    :emphasize-lines: 17
+    If you previously had a :file:`genindex.rst` file, this optional index
+    (or glossary) was rendered as a page through an entry in the file :file:`Index.rst`
+    like this:
 
-    **Table of Contents:**
+    ..  code-block:: text
+        :caption: Documentation/Index.rst
+        :emphasize-lines: 17
 
-    .. toctree::
-       :maxdepth: 2
-       :titlesonly:
+        **Table of Contents:**
 
-       Introduction/Index
-       Installation/Index
-       Details/Index
+        .. toctree::
+           :maxdepth: 2
+           :titlesonly:
 
-    .. Meta Menu
+           Introduction/Index
+           Installation/Index
+           Details/Index
 
-    .. toctree::
-       :hidden:
+        .. Meta Menu
 
-       Sitemap
-       genindex
+        .. toctree::
+           :hidden:
 
-Remove the entry `genindex` from the list.
+           Sitemap
+           genindex
 
-..  hint::
+    Remove the entry `genindex` from the list.
 
-    See :ref:`migrate-glossary` for details about the future of the
-    index (glossary) generation.
+    ..  hint::
 
-5. Prevent code snippets with :file:`.rst` extension
-----------------------------------------------------
+        See :ref:`migrate-glossary` for details about the future of the
+        index (glossary) generation.
 
-All files with the extension :file:`.rst` will be interpreted by the new rendering,
-and every file that is just a code snippet placed in an external file
-should be renamed to use a :file:`.rst.txt` extension instead.
+5.  Prevent code snippets with :file:`.rst` extension
+
+    All files with the extension :file:`.rst` will be interpreted by the new rendering,
+    and every file that is just a code snippet placed in an external file
+    should be renamed to use a :file:`.rst.txt` extension instead.
 
 Recommendations
 ===============
