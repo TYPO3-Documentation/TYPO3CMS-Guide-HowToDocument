@@ -152,10 +152,10 @@ Remove the entry `genindex` from the list.
     See :ref:`migrate-glossary` for details about the future of the
     index (glossary) generation.
 
-5. Prevent code-snippets with :file:`.rst` extension
+5. Prevent code snippets with :file:`.rst` extension
 ----------------------------------------------------
 
-All files ending in :file:`.rst` will be interpreted by the new rendering,
+All files with the extension :file:`.rst` will be interpreted by the new rendering,
 and every file that is just a code snippet placed in an external file
 should be renamed to use a :file:`.rst.txt` extension instead.
 
@@ -196,7 +196,7 @@ A small example :file:`Makefile`:
 Activate automatic testing in your project
 ------------------------------------------
 
-It is recommended to use an automatic workflow on GitHub Or Gitlab to
+It is recommended to use an automatic workflow on GitHub Or GitLab to
 ensure the extension's documentation renders without warnings.
 
 An example workflow on GitHub would be established via this file in
