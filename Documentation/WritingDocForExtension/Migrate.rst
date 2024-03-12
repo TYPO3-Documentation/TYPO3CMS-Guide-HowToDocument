@@ -60,6 +60,9 @@ operating system for the tool to work:
 The last parameter (:bash:`Documentation`) is the name of the directory, where your
 :file:`Settings.cfg` is currently placed in.
 
+After the migration is performed, you will see output about which settings were
+converted, if some old settings were discarded, or errors occurred.
+
 Try out the rendering locally
 =============================
 
@@ -80,10 +83,13 @@ new rendering tool:
 Rendering your documentation should not yield any warnings or errors.
 
 If you get error messages, often they refer to wrong indentation, missing
-interlinks, orphaned files or outdated ReST-identifiers.
+:ref:`interlinks <settings-guides-interlink-mapping>`, orphaned files or
+outdated ReST identifiers.
 
 If you are unable to address a warning/error with changes in your documentation
-and if you believe you found a bug in the new PHP-based rendering, please open
+feel free to ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
+
+If you believe you found a specific bug in the new PHP-based rendering, please open
 an `Issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 
 2. Remove outdated files
@@ -107,12 +113,18 @@ documentation.
 
 Previously it was also used to define a list of utilized directives/roles.
 
-You can either safely remove that file, or add your fixed text to it.
+You can either remove that file, or add your fixed text to it. If you remove
+the file, remember to also remove all references pointing to that file, like:
+
+..  code-block:: text
+    :caption: Documentation/Index.rst
+
+    ..  include:: /Includes.rst.txt
 
 Most official documentation uses this as the stub of the file:
 
 ..  code-block:: text
-    :caption: /Documentation/Includes.rst.txt
+    :caption: Documentation/Includes.rst.txt
 
     ..  You can put central messages to display on all pages here
 
@@ -124,7 +136,7 @@ If you previously had a :file:`genindex.rst` file, this optional index
 like this:
 
 ..  code-block:: text
-    :caption: /Documentation/Index.rst
+    :caption: Documentation/Index.rst
     :emphasize-lines: 17
 
     **Table of Contents:**
@@ -172,7 +184,8 @@ Add a :file:`Makefile` to your project
 
 A :file:`Makefile` is a simple command line runner configuration file, which requires
 the utility `GNU make <https://www.gnu.org/software/make/manual/make.html>`_
-to be available on your Operating System.
+to be available on your Unix-based Operating System (Linux, macOS, WSL on Windows
+for example).
 
 This allows you to perform shortcuts to render your documentation instead
 of typing a long :bash:`docker run...` or :bash:`podman run...` command:
@@ -189,7 +202,7 @@ https://github.com/TYPO3-Documentation/render-guides/blob/main/Makefile
 A small example :file:`Makefile`:
 
 ..  literalinclude:: _Makefile
-    :caption: /Makefile
+    :caption: Makefile
 
 ..  _migrate-to-testing-workflow:
 
@@ -202,30 +215,14 @@ ensure the extension's documentation renders without warnings.
 An example workflow on GitHub would be established via this file in
 :file:`.github/actions/documentation.yml`:
 
-..  code-block:: yaml
+..  literalinclude:: _documentation.yml
     :caption: .github/actions/documentation.yml
 
-    name: Test documentation
-
-    on: [ push, pull_request ]
-
-    jobs:
-      tests:
-        name: Render documentation
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v4
-
-          - name: Test if the documentation will render without warnings
-            run: |
-              mkdir -p Documentation-GENERATED-temp \
-              && docker run --rm --pull always -v $(pwd):/project \
-                 ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
 
 This creates a workflow entry `Test documentation`, so that on every push to your
 repository, and every pull request, the rendering is executed. A commit will then
-be rejected, if the rendering fails.
+not be possible, if the rendering fails. The workflow run will be marked with an error,
+and shown on pull requests.
 
 ..  _migrate-glossary:
 
@@ -236,7 +233,7 @@ The Sphinx rendering allowed to utilize a syntax like the following to
 add indexes to your documentation:
 
 ..  code-block::
-    :caption: `Documentation/Index.rst`
+    :caption: Documentation/Index.rst
 
     ..  index::
         XLIFF; Files
