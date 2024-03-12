@@ -1,4 +1,4 @@
-
+:orphan:
 .. index:: File structure; README.rst, README.rst
 .. _readme-rst:
 .. _about-file:
