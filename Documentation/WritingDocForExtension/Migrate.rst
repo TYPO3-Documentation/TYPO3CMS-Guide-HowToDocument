@@ -15,11 +15,11 @@ Migration: From Sphinx to PHP-based rendering
     Text rendering to try it out. The new rendering will become mandatory in
     August 2024.
 
-The main difference that concerns you is that the new PHP-base rendering
+The main difference that concerns you is that the PHP-based rendering
 requires a file called :file:`Documentation/guides.xml` for configuration
 while in Sphinx rendering a file called :file:`Documentation/Settings.cfg` was
 used. In the transition period we detect if a file called
-:file:`Documentation/guides.xml` is present and then switch to the new
+:file:`Documentation/guides.xml` is present and then switch to the
 PHP-based rendering.
 
 ..  _migrate_guides_xml:
@@ -27,7 +27,7 @@ PHP-based rendering.
 Create the settings file :file:`Documentation/guides.xml`
 =========================================================
 
-The Docker container for the new PHP-based rendering additionally contains
+The Docker container for the PHP-based rendering additionally contains
 a migration tool. This tool can be used to automatically create a
 :file:`Documentation/guides.xml` from the information contained in your
 :file:`Documentation/Settings.cfg`.
@@ -71,11 +71,11 @@ Use our Docker container to render your documentation locally. Read more about
 
 ..  _migrate-detailed-steps:
 
-Further steps to adapt to the new rendering
-===========================================
+Further steps to adapt to the PHP-based rendering
+=================================================
 
 You should perform the following tasks to conclude the migration to the
-new rendering tool:
+PHP-based rendering tool:
 
 ..  rst-class:: bignums
 
@@ -90,7 +90,7 @@ new rendering tool:
     If you are unable to address a warning/error with changes in your documentation
     feel free to ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
 
-    If you believe you found a specific bug in the new PHP-based rendering, please open
+    If you believe you found a specific bug in the PHP-based rendering, please open
     an `issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 
 2.  Remove outdated files
@@ -130,7 +130,7 @@ new rendering tool:
     (or glossary) was rendered as a page through an entry in the file :file:`Index.rst`
     like this:
 
-    ..  code-block:: text
+    ..  code-block:: diff
         :caption: Documentation/Index.rst
         :emphasize-lines: 17
 
@@ -150,7 +150,7 @@ new rendering tool:
            :hidden:
 
            Sitemap
-           genindex
+           -genindex
 
     Remove the entry `genindex` from the list.
 
@@ -161,14 +161,14 @@ new rendering tool:
 
 5.  Avoid code snippets with :file:`.rst` extension
 
-    All files with the extension :file:`.rst` will be interpreted by the new rendering,
-    and every file that is just a code snippet placed in an external file
+    All files with the extension :file:`.rst` will be interpreted by the PHP-based
+    rendering, and every file that is just a code snippet placed in an external file
     should be renamed to use a :file:`.rst.txt` extension instead.
 
 Recommendations
 ===============
 
-The following list is not a requirement to utilize the new rendering, but
+The following list is not a requirement to utilize the PHP-based rendering, but
 follows "best practice" to make the most of your documentation project.
 
 ..  _migrate-to-makefile:
@@ -249,7 +249,7 @@ add indexes to your documentation:
 The automatically generated file :file:`genindex.html` would show a
 two-column layout of all indexes, with the pages that they were used on.
 
-The new PHP-based rendering does not (yet) support this indexing.
+The PHP-based rendering does not (yet) support this indexing.
 
 The current recommendation is to only remove the :file:`genindex.rst` file
 from your documentation directory, but keep all the placed `..  index`
