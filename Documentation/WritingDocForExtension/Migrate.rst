@@ -132,25 +132,12 @@ PHP-based rendering tool:
 
     ..  code-block:: diff
         :caption: Documentation/Index.rst
-        :emphasize-lines: 17
 
-        **Table of Contents:**
+            .. toctree::
+               :hidden:
 
-        .. toctree::
-           :maxdepth: 2
-           :titlesonly:
-
-           Introduction/Index
-           Installation/Index
-           Details/Index
-
-        .. Meta Menu
-
-        .. toctree::
-           :hidden:
-
-           Sitemap
-           -genindex
+               Sitemap
+        -      genindex
 
     Remove the entry `genindex` from the list.
 
