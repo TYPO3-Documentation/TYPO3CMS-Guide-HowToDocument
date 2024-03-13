@@ -91,14 +91,14 @@ new rendering tool:
     feel free to ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
 
     If you believe you found a specific bug in the new PHP-based rendering, please open
-    an `Issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
+    an `issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 
 2.  Remove outdated files
 
-    After you have created the :file:`guides.xml` file, you can remove the old
+    After the :file:`guides.xml` file has been created, you can remove the old
     :file:`Settings.cfg` file.
 
-    You can also delete the files :file:`genindex.rst` which was previously used
+    You can also delete the :file:`genindex.rst` file which was previously used
     to generate an index.
 
 3.  Adapt :file:`Includes.rst.txt`
@@ -107,7 +107,7 @@ new rendering tool:
     to include any fixed text, which will be placed on every page of your rendered
     documentation.
 
-    Previously it was also used to define a list of utilized directives/roles.
+    Previously, it was also used to define a list of utilized directives/roles.
 
     You can either remove that file, or add your fixed text to it. If you remove
     the file, remember to also remove all references pointing to that file, like:
@@ -159,7 +159,7 @@ new rendering tool:
         See :ref:`migrate-glossary` for details about the future of the
         index (glossary) generation.
 
-5.  Prevent code snippets with :file:`.rst` extension
+5.  Avoid code snippets with :file:`.rst` extension
 
     All files with the extension :file:`.rst` will be interpreted by the new rendering,
     and every file that is just a code snippet placed in an external file
@@ -178,7 +178,7 @@ Add a :file:`Makefile` to your project
 
 A :file:`Makefile` is a simple command line runner configuration file, which requires
 the utility `GNU make <https://www.gnu.org/software/make/manual/make.html>`_
-to be available on your Unix-based Operating System (Linux, macOS, WSL on Windows
+to be available on your Unix-based operating system (Linux, macOS, WSL on Windows,
 for example).
 
 This allows you to perform shortcuts to render your documentation instead
@@ -253,5 +253,5 @@ The new PHP-based rendering does not (yet) support this indexing.
 
 The current recommendation is to only remove the :file:`genindex.rst` file
 from your documentation directory, but keep all the placed `..  index`
-directives. If at some point the automatic index-generation is re-introduced,
+directives. If at some point the automatic index generation is re-introduced,
 your old indexes will be able to show up again.
