@@ -79,7 +79,7 @@ PHP-based rendering tool:
 
 ..  rst-class:: bignums
 
-1.  Improve your documentation to render without warning
+#.  Improve your documentation to render without warning
 
     Rendering your documentation should not yield any warnings or errors.
 
@@ -93,7 +93,7 @@ PHP-based rendering tool:
     If you believe you found a specific bug in the PHP-based rendering, please open
     an `issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
 
-2.  Remove outdated files
+#.  Remove outdated files
 
     After the :file:`guides.xml` file has been created, you can remove the old
     :file:`Settings.cfg` file.
@@ -101,7 +101,7 @@ PHP-based rendering tool:
     You can also delete the :file:`genindex.rst` file which was previously used
     to generate an index.
 
-3.  Adapt :file:`Includes.rst.txt`
+#.  Adapt :file:`Includes.rst.txt`
 
     The main documentation directory can contain a file :file:`Includes.rst.txt`
     to include any fixed text, which will be placed on every page of your rendered
@@ -124,7 +124,7 @@ PHP-based rendering tool:
 
         ..  You can put central messages to display on all pages here
 
-4.  Remove the entry `genindex` from :file:`Index.rst` (Index/Glossary)
+#.  Remove the entry `genindex` from :file:`Index.rst` (Index/Glossary)
 
     If you previously had a :file:`genindex.rst` file, this optional index
     (or glossary) was rendered as a page through an entry in the file :file:`Index.rst`
@@ -133,11 +133,11 @@ PHP-based rendering tool:
     ..  code-block:: diff
         :caption: Documentation/Index.rst
 
-            .. toctree::
-               :hidden:
+         .. toctree::
+            :hidden:
 
-               Sitemap
-        -      genindex
+            Sitemap
+        -   genindex
 
     Remove the entry `genindex` from the list.
 
@@ -146,7 +146,7 @@ PHP-based rendering tool:
         See :ref:`migrate-glossary` for details about the future of the
         index (glossary) generation.
 
-5.  Avoid code snippets with :file:`.rst` extension
+#.  Avoid code snippets with :file:`.rst` extension
 
     All files with the extension :file:`.rst` will be interpreted by the PHP-based
     rendering, and every file that is just a code snippet placed in an external file
