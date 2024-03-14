@@ -32,11 +32,18 @@ manual with the following steps:
     A folder called :file:`Documentation` containing at least the files
     :file:`Index.rst` and :file:`guides.xml`.
 
-#.  Choose your prefered method of rendering (See below):
+#.  Choose your preferred method of rendering (See below):
 
 Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
-.. tabs::
+..  tip::
+
+    Did you know: Instead of the :bash:`docker` client you can also use
+    the lightweight drop-in replacement `Podman <https://podman.io/>`__ to run
+    the mentioned containers by replacing all :bash:`docker` commands in the
+    following steps with :bash:`podman`.
+
+..  tabs::
 
     ..  group-tab:: Linux
 
@@ -69,7 +76,7 @@ For your documentation to be published to https://docs.typo3.org, your
 TYPO3 extension has to have a valid :file:`composer.json` and either a folder
 called :file:`Documentation` with a :file:`Documentation/Index.rst` and
 a :file:`Documentation/guides.xml` or a :file:`README.rst` / :file:`README.md`
-in the extensions root directory.
+in the extension's root directory.
 
 The extension has to be publicly available on GitHub or GitLab. You have to
 establish a :ref:`Webhook <webhook>` and the Documentation Team has to
