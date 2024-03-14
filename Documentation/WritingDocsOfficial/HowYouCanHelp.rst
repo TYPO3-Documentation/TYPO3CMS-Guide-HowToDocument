@@ -172,8 +172,7 @@ the changes yourself.
 More information: :ref:`guidelines-for-reviewing`
 
 ..  tip::
-    Usually, there is
-    :ref:`one branch for each major TYPO3 version <t3home:usage-version-selector>`
+    Usually, there is one branch for each major TYPO3 version
     in a manual. Please focus your efforts mostly on the "main" branch, to get
     that up to date and ready! The Documentation Team will then check, if a
     backport to older versions makes sense.
