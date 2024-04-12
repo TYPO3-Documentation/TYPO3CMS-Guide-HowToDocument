@@ -220,6 +220,9 @@ Interlink mapping
 
 .. todo: describe interlink mapping more detailed
 
+A list of globally available Interlink (formerly "Intersphinx") repositories
+can be found in :ref:`Available default inventories <t3renderguides:available-default-inventories>`
+
 It is possible, though rarely needed to define custom interlink mappings:
 
 For example:
