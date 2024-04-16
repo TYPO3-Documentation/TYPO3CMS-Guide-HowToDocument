@@ -92,7 +92,7 @@ PHP-based rendering tool:
 
 #.  Manual modifications of the :file:`guides.yml`
 
-    You have to manually change the following: in the extension tag add the attribute
+    You have to manually change the following: in the :xml:`<extension>` tag add the attribute
 
         ..  code-block:: text
             :caption: Changes in your :file:`guides.yml`
