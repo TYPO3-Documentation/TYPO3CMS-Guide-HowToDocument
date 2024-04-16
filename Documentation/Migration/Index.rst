@@ -3,7 +3,6 @@
     Documentation; Migration
     docs.typo3.org
 ..  _migrate:
-..  _register-for-rendering:
 
 =============================================
 Migration: From Sphinx to PHP-based rendering
@@ -182,7 +181,7 @@ https://github.com/TYPO3-Documentation/render-guides/blob/main/Makefile
 
 A small example :file:`Makefile`:
 
-..  literalinclude:: _Makefile
+..  literalinclude:: /CodeSnippets/_Makefile
     :caption: Makefile
 
 ..  hint::
@@ -209,7 +208,7 @@ ensure the extension's documentation renders without warnings.
 An example workflow on GitHub would be established via this file in
 :file:`.github/actions/documentation.yml`:
 
-..  literalinclude:: _documentation.yml
+..  literalinclude:: /CodeSnippets/_documentation.yml
     :caption: .github/actions/documentation.yml
 
 

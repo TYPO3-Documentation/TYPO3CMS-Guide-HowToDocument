@@ -39,6 +39,20 @@ reST and Sphinx.
 
          .. rst-class:: card-header h3
 
+            .. rubric:: :ref:`Migration <migrate>`
+
+         .. container:: card-body
+
+            Migrate your documentation to the new, PHP-based reST rendering.
+
+.. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
             .. rubric:: `Extension Documentation <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/Index.html>`__
 
          .. container:: card-body
@@ -113,6 +127,7 @@ What's new in this guide?
    :hidden:
    :caption: HOWTOS
 
+   Migration/Index
    WritingDocForExtension/Index
    WritingDocsOfficial/Index
    RenderingDocs/Index
