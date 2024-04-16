@@ -266,7 +266,7 @@ Nested PHP domain components (php:class, php:interface, php:enum etc) are not su
     Found php:\Vendor\MyExtension\Interfaces\RequireJsModuleInterface inside
     \Vendor\MyExtension\Interfaces\AnotherImportantInterface {"rst-file":"Developer/Index.rst"} []
 
-The file :file:`Index.rst` in Documentation/Developer has a wrong indentation. A class must not belong to another class.
+The file :file:`Index.rst` in :file:`Documentation/Developer/` has a wrong indentation. A class must not belong to another class.
 Here is the wrong rst code.
 
 .. code-block:: rst
