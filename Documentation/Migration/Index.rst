@@ -254,6 +254,10 @@ In there we have to delete the line which contains
 
     * :ref:`h2document:rest-common-pitfalls`
 
+But whether we should delete the reference or not depends on the special case. In this case the whole section was removed.
+So here it is useful to delete the reference.
+We conclude: In general it depends on the case itself what the best solution is.
+
 ..  _migrate-nested-php-domain-components-not-supported:
 
 Nested PHP domain components (php:class, php:interface, php:enum etc) are not supported
@@ -289,9 +293,10 @@ Additionally regarding the name it has to be interfaces and not classes.
 Reference sitehandling-addinglanguages could not be resolved in LocalizedContent/Index {"rst-file":"LocalizedContent/Index"} []
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-The next step is to visit the old site, e.g. `https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/LocalizedContent/Index.html`.
-There we can search for `sitehandling-addinglanguages` in the rst code by clicking the button "`</>View Source`".
-Finding this:
+The next step is to visit the site which was rendered with the Sphinx rendering, in our example
+`https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/LocalizedContent/Index.html`.
+There we can search for `sitehandling-addinglanguages` in the restructured text code by clicking the button "`</> View Source`".
+We have found this:
 
 .. code-block:: rst
 
@@ -300,15 +305,23 @@ Finding this:
         behaviour in the site configuration, see
         :ref:`Adding Languages <sitehandling-addinglanguages>`.
 
+The link is leading to
+`https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/AddLanguages.html#sitehandling-addinglanguages`.
 We have to click the symbol next to the heading and copy the correct link
-which is the one for restructured text.
+which is the one for restructured text
 
 .. image:: /Images/get_link.png
     :class: with-shadow
     :width: 600px
 
+.. code-block:: rst
+
+    :ref:`Adding Languages <t3coreapi:sitehandling-addingLanguages>`
+
 You have to replace the correct link in e.g. :file:`Documentation/LocalizedContent/Index.rst` to
-fix the error.
+fix the error. Note: Since we already migrated the Frontend Localization Guide
+(`https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/LocalizedContent/Index.html`)
+to use the PHP based rendering you cannot find the state that we have shown above anymore.
 
 ..  _migrate-makefile-example-code:
 
