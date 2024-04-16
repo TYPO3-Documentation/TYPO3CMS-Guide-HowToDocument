@@ -99,7 +99,7 @@ PHP-based rendering tool:
 
             interlink-shortcode="vendor/ext_name"
 
-    This you can find in your composer.json under "name". E.g. :json:`friendsoftypo3/jumpurl`.
+    This you can find in your :file:`composer.json` under "name". E.g. :json:`friendsoftypo3/jumpurl`.
     We recommend to reformulate the code using the mac short cut `cmd + option/alt + l` and to
     use for every attribute one line.
 
