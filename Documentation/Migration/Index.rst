@@ -71,7 +71,7 @@ converted, if some old settings were discarded, or errors occurred. When you see
             * use_opensearch
 
 everything went well. They can be ignored since these files are usually files that
-not need to be converted. You now can safely delete :file:`Settings.cfg`. Also delete
+not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the git history. Also delete
 file :file:`genindex.rst` in your Documentation directory.
 
 Try out the rendering locally
