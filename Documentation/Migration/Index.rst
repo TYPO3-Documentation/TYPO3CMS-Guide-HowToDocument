@@ -225,7 +225,7 @@ Interlink inventory not found: HTTP/2 404
 
 Here you see that the link `https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us` is not found (404 page).
 We can now check via Google if there is another link to book Extbasefluid. We found this site `https://docs.typo3.org/m/typo3/book-extbasefluid/10.4/en-us/`
-We can find the hint: `This manual is no longer being maintained for TYPO3 versions 11.5 and above.`. This tells us that the developers stopped to update the
+We can find the hint: `This manual is no longer being maintained for TYPO3 versions 11.5 and above.`. This tells us that the Documentation Team abandoned this
 documentation. We can for example link to the last existing version. Which is 10.4. To do this we have to change the :file:`guides.xml`. Search for the
 
 .. code-block:: xml
