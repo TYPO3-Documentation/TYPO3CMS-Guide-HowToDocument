@@ -296,9 +296,9 @@ Finding this:
 .. code-block:: rst
 
     ..  tip::
-    For more information on how to add languages and configure their
-    behaviour in the site configuration, see
-    :ref:`Adding Languages <sitehandling-addinglanguages>`.
+        For more information on how to add languages and configure their
+        behaviour in the site configuration, see
+        :ref:`Adding Languages <sitehandling-addinglanguages>`.
 
 We have to click the symbol next to the heading and copy the correct link
 which is the one for restructured text.
