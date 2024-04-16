@@ -14,11 +14,11 @@ Migration: From Sphinx to PHP-based rendering
     Text rendering to try it out. The new rendering will become mandatory in
     August 2024.
 
-The main difference compared to the Sphinx rendering is that the PHP-based rendering
-requires a file called :file:`Documentation/guides.xml` for configuration.
-The Sphinx rendering required a file called :file:`Documentation/Settings.cfg`.
-In the transition period the process detects if a file called
-:file:`Documentation/guides.xml` is present and then automatically switches to the
+The main difference that concerns you is that the PHP-based rendering
+requires a file called :file:`Documentation/guides.xml` for configuration
+while in Sphinx rendering a file called :file:`Documentation/Settings.cfg` was
+used. In the transition period we detect if a file called
+:file:`Documentation/guides.xml` is present and then switch to the
 PHP-based rendering.
 
 ..  _migrate_guides_xml:
@@ -26,9 +26,9 @@ PHP-based rendering.
 Create the settings file :file:`Documentation/guides.xml`
 =========================================================
 
-The Docker container for the PHP-based rendering additionally consists out of
+The Docker container for the PHP-based rendering additionally contains
 a migration tool. This tool can be used to automatically create a
-:file:`Documentation/guides.xml` based on the information contained in your
+:file:`Documentation/guides.xml` from the information contained in your
 :file:`Documentation/Settings.cfg`.
 
 `Docker <https://docs.docker.com/install/>`__ (or a drop-in replacement like
@@ -59,25 +59,13 @@ operating system for the tool to work:
 The last parameter (:bash:`Documentation`) is the name of the directory, where your
 :file:`Settings.cfg` is currently placed in.
 
-After the migration is performed, you will see some output in the terminal about which settings were
-converted, if some old settings were discarded, or errors occurred. When you see this:
-
-    ..  code-block:: text
-        :caption: Output of the command
-
-        Note: Some of your settings could not be converted:
-            * html_theme_options
-            * project_discussions
-            * use_opensearch
-
-everything went well. They can be ignored since these files are usually files that
-not need to be converted. You now can safely delete :file:`Settings.cfg`. Also delete
-file :file:`genindex.rst` in your Documentation directory.
+After the migration is performed, you will see output about which settings were
+converted, if some old settings were discarded, or errors occurred.
 
 Try out the rendering locally
 =============================
 
-Use our Docker container to render your documentation locally. Read more about it in
+Use our Docker container to render your documentation locally. Read more about
 :ref:`local rendering <rendering-docs>`.
 
 ..  _migrate-detailed-steps:
@@ -89,20 +77,6 @@ You should perform the following tasks to conclude the migration to the
 PHP-based rendering tool:
 
 ..  rst-class:: bignums
-
-#.  Manual modifications of the :file:`guides.yml`
-
-    You have to manually change the following: in the extension tag add the attribute
-
-        ..  code-block:: text
-            :caption: Changes in your :file:`guides.yml`
-
-            interlink-shortcode="vendor/ext_name"
-
-    This you can find in your composer.json under "name". E.g. :json:`friendsoftypo3/jumpurl`.
-    We recommend to reformulate the code using the mac short cut `cmd + option/alt + l` and to
-    use for every attribute one line.
-
 
 #.  Improve your documentation to render without warning
 
@@ -200,121 +174,6 @@ of typing a long :bash:`docker run...` or :bash:`podman run...` command:
 
     make docs
 
-You should see something like this
-
-.. code-block:: text
-
-    Successfully placed 7 rendered HTML, SINGLEPAGE, and INTERLINK files into /project/Documentation-GENERATED-temp
-
-..  _migrate-possible-errors:
-
-Possible errors using `make docs`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We provide four example errors to guide you through the fixes.
-
-..  _migrate-interlink-inventory-not-found:
-
-Interlink inventory not found: HTTP/2 404
-"""""""""""""""""""""""""""""""""""""""""
-
-.. code-block:: text
-
-    [2024-03-13T12:22:50.661532+00:00] app.WARNING: Interlink inventory not found: HTTP/2 404
-    returned for "https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us/objects.inv.json". [] []
-
-Here you see that the link `https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us` is not found (404 page).
-We can now check via google if there is another link to book Extbasefluid. We found this site `https://docs.typo3.org/m/typo3/book-extbasefluid/10.4/en-us/`
-We can find the hint: `This manual is no longer being maintained for TYPO3 versions 11.5 and above.`. This tells us that the developers stopped to update the
-documentation. We can for example link to the last existing version. Which is 10.4. To do this we have to change the :file:`guides.xml`. Search for the
-
-.. code-block:: xml
-
-    <inventory id="t3extbasebook"
-           url="https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us/"
-    />
-
-and change `11.5` to `10.4`. Generate files again.
-
-
-..  _migrate-inventory-link-with-key-not-found:
-
-Inventory link with key ... not found
-"""""""""""""""""""""""""""""""""""""
-
-.. code-block:: text
-
-    [2024-03-13T12:26:40.940930+00:00] app.WARNING: Inventory link with key "h2document:rest-common-pitfalls"
-    (rest-common-pitfalls) not found.  {"rst-file":"GeneratedExtension/Index","type":"ref","targetRef
-
-We see already that we have to go to file :file:`GeneratedExtension/Index` in the directory "Documentation".
-In there we have to delete the line which contains
-
-.. code-block:: text
-
-    * :ref:`h2document:rest-common-pitfalls`
-
-..  _migrate-nested-php-domain-components-not-supported:
-
-Nested PHP domain components (php:class, php:interface, php:enum etc) are not supported
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. code-block:: text
-
-    [2024-03-25T13:26:11.600367+00:00] app.WARNING: Nested PHP domain components
-    (php:class, php:interface, php:enum etc) are not supported.
-    Found php:\Vendor\MyExtension\Interfaces\RequireJsModuleInterface inside
-    \Vendor\MyExtension\Interfaces\AnotherImportantInterface {"rst-file":"Developer/Index.rst"} []
-
-The file :file:`Index.rst` in Documentation/Developer has a wrong indentation. A class must not belong to another class.
-Here is the wrong rst code.
-
-.. code-block:: rst
-
-    ..  php:class:: AnotherImportantInterface
-
-    Used for ...
-
-    ..  php:class:: RequireJsModuleInterface
-
-    Widgets implementing this interface will add the provided RequireJS modules.
-    Those modules will be loaded in dashboard view if the widget is added at least once.
-
-Additionally regarding the name it has to be interfaces and not classes.
-`..  php:class:: ExampleInterface` has to be changed to `..  php:interface:: ExampleInterface`.
-
-
-..  _migrate-reference-could-not-be-resolved:
-
-Reference sitehandling-addinglanguages could not be resolved in LocalizedContent/Index {"rst-file":"LocalizedContent/Index"} []
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-The next step is to visit the old site, e.g. `https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/LocalizedContent/Index.html`.
-There we can search for `sitehandling-addinglanguages` in the rst code by clicking the button "`</>View Source`".
-Finding this:
-
-.. code-block:: rst
-
-    ..  tip::
-    For more information on how to add languages and configure their
-    behaviour in the site configuration, see
-    :ref:`Adding Languages <sitehandling-addinglanguages>`.
-
-We have to click the symbol next to the heading and copy the correct link
-which is the one for restructured text.
-
-.. image:: /Images/get_link.png
-    :class: with-shadow
-    :width: 600px
-
-You have to replace the correct link in e.g. :file:`Documentation/LocalizedContent/Index.rst` to
-fix the error.
-
-..  _migrate-makefile-example-code:
-
-Makefile example
-~~~~~~~~~~~~~~~~
-
 For inspiration, check out the :file:`Makefile` of the main PHP-based rendering
 repository:
 
@@ -347,10 +206,10 @@ It is recommended to use an automatic workflow on GitHub Or GitLab to
 ensure the extension's documentation renders without warnings.
 
 An example workflow on GitHub would be established via this file in
-:file:`.github/workflows/documentation.yml`:
+:file:`.github/actions/documentation.yml`:
 
 ..  literalinclude:: /CodeSnippets/_documentation.yml
-    :caption: .github/workflows/documentation.yml
+    :caption: .github/actions/documentation.yml
 
 
 This creates a workflow entry `Test documentation`, so that on every push to your
