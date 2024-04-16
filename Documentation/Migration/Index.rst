@@ -17,7 +17,7 @@ Migration: From Sphinx to PHP-based rendering
 The main difference compared to the Sphinx rendering is that the PHP-based rendering
 requires a file called :file:`Documentation/guides.xml` for configuration.
 The Sphinx rendering required a file called :file:`Documentation/Settings.cfg`.
-In the transition period the process detects if a file called
+In the transition period the GitHub action of the official rendering process detects if a file called
 :file:`Documentation/guides.xml` is present and then automatically switches to the
 PHP-based rendering.
 
