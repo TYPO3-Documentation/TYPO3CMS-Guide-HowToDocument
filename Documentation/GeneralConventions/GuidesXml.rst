@@ -51,6 +51,7 @@ Example: Use `typoscript` as default langauge for code-blocks
 
 ..  code-block:: xml
     :caption: EXT:my_extension/Documentation/guides.xml (excerpt)
+    :emphasize-lines: 4
 
     <?xml version="1.0" encoding="UTF-8"?>
     <guides xmlns="https://www.phpdoc.org/guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -81,10 +82,11 @@ Example: Limit the menu to 2 levels
 
 The changelog (documentation of the extension "core") contains several thousand
 pages. As very long lists of changelog entries in the menu are not helpful to
-the user and slow down the search
+the user and slow down the search.
 
 ..  code-block:: xml
     :caption: EXT:core/Documentation/guides.xml (excerpt)
+    :emphasize-lines: 4
 
     <?xml version="1.0" encoding="UTF-8"?>
     <guides xmlns="https://www.phpdoc.org/guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
