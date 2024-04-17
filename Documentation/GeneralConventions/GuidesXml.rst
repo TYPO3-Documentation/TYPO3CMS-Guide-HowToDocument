@@ -46,7 +46,7 @@ default-code-language
 
 ..  _settings-guides-default-code-language-example:
 
-Example: Use `typoscript` as default langauge for code-blocks
+Example: Use `typoscript` as default language for code-blocks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: xml
@@ -73,15 +73,15 @@ max-menu-depth
 
     Limits the main menu to a certain amount of levels. As level creation is
     one of the main bottle-necks that can slow down rendering it can be helpful
-    to the levels in the menu in some use cases.
+    to limit the levels in the menu in some use cases.
 
 ..  _settings-guides-max-menu-depth-example:
 
 Example: Limit the menu to 2 levels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The changelog (documentation of the extension "core") contains several thousand
-pages. As very long lists of changelog entries in the menu are not helpful to
+The changelog (documentation of the extension "core") consists of several thousands of
+pages. The reason is that very long lists of changelog entries in the menu are not helpful to
 the user and slow down the search.
 
 ..  code-block:: xml
