@@ -5,9 +5,20 @@
         links-are-relative="true"
         default-code-language="php"
 >
-  <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension" project-home="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/" project-contact="https://typo3.slack.com/archives/C028JEPJL" project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument" project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues" edit-on-github-branch="main" edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument"/>
-  <project title="Writing Documentation" release="main" version="main" copyright="since 2017 by the TYPO3 contributors"/>
-  <inventory id="t3home" url="https://docs.typo3.org/"/>
-  <inventory id="sphinx" url="https://www.sphinx-doc.org/en/master/"/>
-  <inventory id="t3sphinxtest" url="https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/"/>
+    <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               project-home="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/"
+               project-contact="https://typo3.slack.com/archives/C028JEPJL"
+               project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument"
+               project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues"
+               edit-on-github-branch="main"
+               edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument"
+               interlink-shortcode="h2document"
+               typo3-core-preferred="latest"
+    />
+    <project title="Writing Documentation" release="main" version="main"
+             copyright="since 2017 by the TYPO3 contributors"/>
+    <inventory id="t3home" url="https://docs.typo3.org/"/>
+    <inventory id="sphinx" url="https://www.sphinx-doc.org/en/master/"/>
+    <inventory id="t3sphinxtest" url="https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/"/>
+    <inventory id="h2document-sphinx" url="https://docs.typo3.org/m/typo3/docs-how-to-document/1.0/en-us/"/>
 </guides>

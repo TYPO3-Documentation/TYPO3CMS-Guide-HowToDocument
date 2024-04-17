@@ -1,1 +1,12 @@
 ..  You can put central messages to display on all pages here
+
+..  note::
+    This version of the guide covers the new PHP-based rendering of
+    Documentation with the TYPO3 Documentation theme.
+
+    If the project you are looking at has a file
+    :ref:`Documentation/guides.xml <guides-xml>` it is using the new rendering.
+
+    Otherwise, consider to :ref:`migrate <migrate>` the Documentation or head
+    over to the legacy version of this guide:
+    :ref:`How to document, Sphinx based <h2document-sphinx:start>`.
