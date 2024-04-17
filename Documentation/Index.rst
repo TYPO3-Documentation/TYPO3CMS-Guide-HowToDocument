@@ -95,24 +95,6 @@ reST and Sphinx.
 
             This chapter explains how you can about making changes to third-party extension documentation.
 
-Did you know?
-=============
-
--  2019-03-17 :ref:`tip-edit-me-on-github` (Extension Authors)
-
-:ref:`FAQ for extension authors ... <faq-for-extension-authors>`
-
-.. uncomment this, when there are new general tips
-   :ref:`More general Tips ... <Tip-of-the-day>` | :ref:`More tips for extension authors ... <tips-extension-authors>`
-
-
-What's new in this guide?
-=========================
-
--  :ref:`PlantUML-diagrams`
--  `Automatic screenshot generation <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
-
-
 .. toctree::
    :hidden:
    :caption: BASICS
