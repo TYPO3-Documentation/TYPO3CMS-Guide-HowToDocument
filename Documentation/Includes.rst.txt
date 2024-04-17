@@ -1,6 +1,11 @@
 .. More information about this file:
    https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#includes-rst-txt
 
+..  info::
+    This guide covers the legacy Sphinx-based documentation rendering.
+    For the new, PHP-based rendering switch to
+    :ref:`How to Document, PHP-based <h2document:start>`.
+
 .. ----------
 .. text roles
 .. ----------
