@@ -62,17 +62,17 @@ The last parameter (:bash:`Documentation`) is the name of the directory, where y
 After the migration is performed, you will see some output in the terminal about which settings were
 converted, if some old settings were discarded, or errors occurred. When you see this:
 
-    ..  code-block:: text
-        :caption: Output of the command
+..  code-block:: text
+    :caption: Output of the command
 
-        Note: Some of your settings could not be converted:
-            * html_theme_options
-            * project_discussions
-            * use_opensearch
+    Note: Some of your settings could not be converted:
+        * html_theme_options
+        * project_discussions
+        * use_opensearch
 
 everything went well. They can be ignored since these files are usually files that
-not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the git history. Also delete
-file :file:`genindex.rst` in your Documentation directory.
+not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the Git history. Also delete
+file :file:`genindex.rst` in your Documentation directory (if available).
 
 Try out the rendering locally
 =============================
@@ -97,11 +97,13 @@ PHP-based rendering tool:
         ..  code-block:: text
             :caption: Changes in your :file:`guides.yml`
 
-            interlink-shortcode="vendor/ext_name"
+            interlink-shortcode="my-vendor/my-extension"
 
-    This you can find in your :file:`composer.json` under "name". E.g. :json:`friendsoftypo3/jumpurl`.
-    We recommend to reformat the code using the mac short cut :kbd:`cmd + option/alt + l`,
-    or :kbd:`Ctrl + Alt + L` on windows/linux and to use for every attribute one line.
+    You can find the package name in your :file:`composer.json` file under "name".
+    For example, :json:`my-vendor/my-extension`.
+    We recommend to reformat the code, for example in PhpStorm, using the Mac shortcut
+    :kbd:`cmd (⌘)` + :kbd:`option/alt (⌥)` + :kbd:`L`, or :kbd:`Ctrl` + :kbd:`Alt` + :kbd:`L`
+    on Windows/Linux and to use for every attribute one line.
 
 
 #.  Improve your documentation to render without warning
@@ -226,7 +228,7 @@ Interlink inventory not found: HTTP/2 404
 Here you see that the link `https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us` is not found (404 page).
 We can now check via Google if there is another link to book Extbasefluid. We found this site `https://docs.typo3.org/m/typo3/book-extbasefluid/10.4/en-us/`
 We can find the hint: `This manual is no longer being maintained for TYPO3 versions 11.5 and above.`. This tells us that the Documentation Team abandoned this
-documentation. We can for example link to the last existing version. Which is 10.4. To do this we have to change the :file:`guides.xml`. Search for the
+manual. We can, for example, link to the last existing version. Which is 10.4. To do this we have to change the :file:`guides.xml`. Search for the
 
 .. code-block:: xml
 
@@ -234,7 +236,9 @@ documentation. We can for example link to the last existing version. Which is 10
            url="https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us/"
     />
 
-and change `11.5` to `10.4`. Generate files again.
+and change `11.5` to `10.4`. Generate files again. Keep in mind, that this is a
+workaround to avoid warnings temporarily. References to outdated manuals should be adjusted
+as soon as possible.
 
 
 ..  _migrate-inventory-link-with-key-not-found:
@@ -277,15 +281,15 @@ Here is the wrong rst code.
 
     ..  php:class:: AnotherImportantInterface
 
-    Used for ...
+        Used for ...
 
-    ..  php:class:: RequireJsModuleInterface
+        ..  php:class:: RequireJsModuleInterface
 
-    Widgets implementing this interface will add the provided RequireJS modules.
-    Those modules will be loaded in dashboard view if the widget is added at least once.
+        Widgets implementing this interface will add the provided RequireJS modules.
+        Those modules will be loaded in dashboard view if the widget is added at least once.
 
 Additionally regarding the name it has to be interfaces and not classes.
-`..  php:class:: ExampleInterface` has to be changed to `..  php:interface:: ExampleInterface`.
+:rst:`..  php:class:: ExampleInterface` has to be changed to :rst:`..  php:interface:: ExampleInterface`.
 
 
 ..  _migrate-reference-could-not-be-resolved:
@@ -318,10 +322,10 @@ which is the one for restructured text
 
     :ref:`Adding Languages <t3coreapi:sitehandling-addingLanguages>`
 
-You have to replace the correct link in e.g. :file:`Documentation/LocalizedContent/Index.rst` to
+You have to replace the correct link in, for example, :file:`Documentation/LocalizedContent/Index.rst` to
 fix the error. Note: Since we already migrated the Frontend Localization Guide
 (`https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/LocalizedContent/Index.html`)
-to use the PHP based rendering you cannot find the state that we have shown above anymore.
+to use the PHP-based rendering you cannot find the state that we have shown above anymore.
 
 ..  _migrate-makefile-example-code:
 
