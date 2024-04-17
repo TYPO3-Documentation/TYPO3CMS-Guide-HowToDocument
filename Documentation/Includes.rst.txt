@@ -4,7 +4,9 @@
 ..  info::
     This guide covers the legacy Sphinx-based documentation rendering.
     For the new, PHP-based rendering switch to
-    :ref:`How to Document, PHP-based <h2document:start>`.
+    :ref:`How to Document, PHP-based <h2document:start>`. If the project you are
+    viewing has no file `Documentation/guides.xml` it is still rendered in the
+    Sphinx-based rendering.
 
 .. ----------
 .. text roles
