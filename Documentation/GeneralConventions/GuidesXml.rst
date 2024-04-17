@@ -26,6 +26,7 @@ of a manual.
 The `<guides>` tag
 ==================
 
+The :xml:`<guides>` tag is the root tag of the :file:`Documentation/guides.xml`.
 It is used for general configuration during parsing and rendering.
 
 The following settings can be relevant for TYPO3 themed documentation:
@@ -104,6 +105,10 @@ Interlink mapping
 
 .. todo: describe interlink mapping more detailed
 
+The :xml:`<inventory>` tag is located directly in the :ref:`guides tag <settings-guides>`.
+There can be 0 or more :xml:`<inventory>` tags, each defines one interlink
+inventory.
+
 A list of globally available Interlink (formerly "Intersphinx") repositories
 can be found in :ref:`Available default inventories <t3renderguides:available-default-inventories>`
 
@@ -121,6 +126,9 @@ For example:
 
 The `<project>` tag
 ===================
+
+The :xml:`<project>` tag is located directly in the :ref:`guides tag <settings-guides>`.
+There can be 0 or 1 tag of that name.
 
 This tag can contain the following meta information:
 
@@ -226,8 +234,13 @@ Copyright
 TYPO3 Theme settings
 ====================
 
+The :xml:`<extension>` tag is located directly in the :ref:`guides tag <settings-guides>`.
+
 TYPO3 Theme specific settings can be made in the tag
 :xml:`<extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension">`.
+
+There can be 0 or more tags of that name, however only one :xml:`<extension>` tag
+should be defined for the TYPO3 documentation theme.
 
 The class attribute is mandatory, it references the extension that is used
 to render the documentation with the TYPO3 documentation theme.
