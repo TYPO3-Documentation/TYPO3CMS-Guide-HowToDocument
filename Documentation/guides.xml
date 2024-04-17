@@ -13,7 +13,7 @@
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument"
                interlink-shortcode="h2document"
-               typo3-core-preferred="latest"
+               typo3-core-preferred="stable"
     />
     <project title="Writing Documentation" release="main" version="main"
              copyright="since 2017 by the TYPO3 contributors"/>
