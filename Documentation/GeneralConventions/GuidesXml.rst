@@ -15,7 +15,7 @@ of a manual.
 ..  hint::
     If you are migrating from the legacy Sphinx-based rendering and still have
     a :file:`Documentation/Settings.cfg` you can use an automatic migration
-    tool to :ref:`migrate the settings.cfg into a guides.xml <migrate_guides_xml>
+    tool to :ref:`migrate the settings.cfg into a guides.xml <migrate_guides_xml>`
 
 ..  contents:: Table of Contents:
     :local:
