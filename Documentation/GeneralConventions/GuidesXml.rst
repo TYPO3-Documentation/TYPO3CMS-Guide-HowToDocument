@@ -206,7 +206,7 @@ Copyright
 ---------
 
 ..  confval:: copyright
-    :name: guides-project-title
+    :name: guides-project-copyright
     :type: string
 
     The *copyright* attribute contains the copyright claim of the project. It is
@@ -584,7 +584,7 @@ Example: Always link to the latest stable TYPO3 version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want your links to always go to the latest stable long time support version
-(LTS) of the TYPO3 Core, you can set :confval:`typo3-core-preferred` to stable.
+(LTS) of the TYPO3 Core, you can set :confval:`guides-extension-typo3-core-preferred` to stable.
 
 At the time of writing references to official manuals and Core extensions will
 be rendered to version 12.4. Once TYPO3 13LTS is released they will automatically
