@@ -10,10 +10,6 @@
 How to document an extension
 ============================
 
-..  hint::
-    If your extension does not have a file :file:`EXT:my_extension/Documentation/guides.xml`
-    you should :ref:`migrate to the new PHP-based rendering <migrate>`.
-
 This chapter explains how to write documentation for a new extension.
 
 This guide uses the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
