@@ -15,7 +15,7 @@ of a manual.
 ..  hint::
     If you are migrating from the legacy Sphinx-based rendering and still have
     a :file:`Documentation/Settings.cfg` you can use an automatic migration
-    tool to :ref:`migrate the settings.cfg into a guides.xml <migrate_guides_xml>`
+    tool to :ref:`migrate the Settings.cfg into a guides.xml <migrate_guides_xml>`
 
 ..  contents:: Table of Contents:
     :local:
@@ -106,7 +106,7 @@ Interlink mapping
 .. todo: describe interlink mapping more detailed
 
 The :xml:`<inventory>` tag is located directly in the :ref:`guides tag <settings-guides>`.
-There can be 0 or more :xml:`<inventory>` tags, each defines one interlink
+There can be 0 or more :xml:`<inventory>` tags, each defines one Interlink
 inventory.
 
 A list of globally available Interlink (formerly "Intersphinx") repositories
@@ -187,8 +187,8 @@ Version and release
     :type: string
 
     When documentation is rendered in the GitHub action for deployment onto
-    https://docs.typo3.org the version is set automatically to the extensions
-    version derived from the git tag. Setting the version in the
+    https://docs.typo3.org the version is set automatically to the extension's
+    version derived from the Git tag. Setting the version in the
     :file:`guides.xml` only affects local rendering.
 
     The attributes *version* and *release* both contain the version of the manual
@@ -205,7 +205,7 @@ Version and release
 
     release
         The full project version, used as the replacement for :rst:`|release|`
-        For example 13.0.0-dev.
+        For example 12.4.15-dev.
 
     If you do not need the separation provided between version and release,
     just set them both to the same value.
@@ -392,8 +392,8 @@ interlink-shortcode
     rendered with the TYPO3 theme. However they will only work if you follow
     these rules:
 
-    *   TYPO3 third party extensions: composer name, example: `georgringer/news`
-    *   System extensions: composer name, example: `typo3/cms-adminpanel`
+    *   TYPO3 third-party extensions: Composer name, example: `georgringer/news`
+    *   System extensions: Composer name, example: `typo3/cms-adminpanel`
     *   A shortcode supported by the theme:
         :ref:`Available default inventories <t3renderguides:available-default-inventories>`
 
@@ -491,7 +491,7 @@ project_discussions
 
 .. _settings-guides-project-links-example:
 
-Example: Project links for a third party extension
+Example: Project links for a third-party extension
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: xml
@@ -568,7 +568,7 @@ typo3-core-preferred
         :caption: Documentation/guides.xml
 
         <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
-                   typo3-core-preferred="12.4" />
+                   typo3-core-preferred="stable" />
 
     If no preferred version is set it defaults to `stable`. Possible values are:
 
@@ -602,7 +602,7 @@ If you want your links to always go to the latest stable long time support versi
 (LTS) of the TYPO3 Core, you can set :confval:`guides-extension-typo3-core-preferred` to stable.
 
 At the time of writing references to official manuals and Core extensions will
-be rendered to version 12.4. Once TYPO3 13LTS is released they will automatically
+be rendered to version 12.4. Once TYPO3 13 LTS is released they will automatically
 switch to the according version on next re-rendering.
 
 ..  code-block:: xml
