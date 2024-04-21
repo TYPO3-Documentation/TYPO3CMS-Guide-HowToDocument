@@ -7,129 +7,120 @@ Writing documentation
 =====================
 
 :Version:
-   |release|
+    |release|
 
 :Language:
-   en
+    en
 
 :Author:
-   TYPO3 contributors
+    TYPO3 contributors
 
 :License:
-   This document is published under the
-   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
-   license.
+    This document is published under the
+    `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__
+    license.
 
 :Rendered:
-   |today|
+    |today|
 
 ----
 
 This guide contains information about contributing to TYPO3 documentation,
 writing documentation for TYPO3 extensions and formatting with
-reST and Sphinx.
+reStructuredText (reST).
 
 ----
 
-.. container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: Migration
 
-      .. container:: card px-0 h-100
+        Migrate your documentation to the new, PHP-based reST rendering.
 
-         .. rst-class:: card-header h3
+        ..  card-footer:: :ref:`How to migrate to the new rendering <migrate>`
+            :button-style: btn btn-secondary stretched-link
 
-            .. rubric:: :ref:`Migration <migrate>`
 
-         .. container:: card-body
+    ..  card:: Cheat sheet: reStructuredText
 
-            Migrate your documentation to the new, PHP-based reST rendering.
+        Go tho the cheat sheet containing a quick overview on how to use reStructuredText.
 
-.. container:: row m-0 p-0
+        ..  card-footer:: :ref:`Go to the reST Cheat sheet <h2document:rest-cheat-sheet>`
+            :button-style: btn btn-secondary stretched-link
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: Edit on GitHub
 
-      .. container:: card px-0 h-100
+        This chapter explains how to apply quick changes to the documentation
+        you are reading by applying the "Edit on GitHub" workflow. All you
+        need is a GitHub account.
 
-         .. rst-class:: card-header h3
+        ..  card-footer:: :ref:`How to make quick fixes <h2document:docs-contribute-github-method>`
+            :button-style: btn btn-secondary stretched-link
 
-            .. rubric:: `Extension Documentation <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/Index.html>`__
+    ..  card:: Local rendering
 
-         .. container:: card-body
+        Using your local machine instead of editing documentation on GitHub has
+        many advantages, it includes the freedom to choose which IDE you make
+        your changes in and it also gives you the ability to experiment and
+        preview your changes locally before submitting them for approval.
 
-            This chapter explains how to write documentation for a new extension.
+        ..  card-footer:: :ref:`How to work locally with documentation <h2document:docs-contribute-git-docker>`
+            :button-style: btn btn-secondary stretched-link
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: Extension documentation
 
-      .. container:: card px-0 h-100
+        This chapter explains how to write documentation for a new extension.
 
-         .. rst-class:: card-header h3
+        ..  card-footer:: :ref:`How to document an extension <h2document:write-doc-extensions-intro>`
+            :button-style: btn btn-secondary stretched-link
 
-            .. rubric:: `TYPO3 Documentation <https://docs.typo3.org/>`__
+    ..  card:: System Extensions
 
-         .. container:: card-body
+        The chapter contains information on how you can make changes to system extension documentation.
 
-            Explains how you can contribute and help improve TYPO3's documentation.
+        ..  card-footer:: :ref:`How to document system extensions <h2document:contribute-to-system-extension>`
+            :button-style: btn btn-secondary stretched-link
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+..  toctree::
+    :hidden:
+    :caption: BASICS
 
-      .. container:: card px-0 h-100
+    About
+    HowToGetHelp
+    BasicPrinciples
+    GeneralConventions/Index
+    WritingReST/Index
 
-         .. rst-class:: card-header h3
+..  toctree::
+    :hidden:
+    :caption: HOWTOS
 
-            .. rubric:: `System Extensions <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToSystemExtension.html>`__
+    Migration/Index
+    WritingDocForExtension/Index
+    WritingDocsOfficial/Index
+    RenderingDocs/Index
 
-         .. container:: card-body
+..  toctree::
+    :hidden:
+    :caption: ADVANCED
 
-            The chapter contains information on how you can make changes to system extension documentation.
+    HowToAddTranslation/Index
+    GeneralConventions/ReviewInformation
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+..  toctree::
+    :hidden:
+    :caption: MAINTAINERS
 
-      .. container:: card px-0 h-100
+    Maintainers/Index
 
-         .. rst-class:: card-header h3
+..  Meta Menu
 
-            .. rubric:: `Third-party Extensions <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocForExtension/ContributeToThirdPartyExtension.html>`__
+..  toctree::
+    :hidden:
 
-         .. container:: card-body
-
-            This chapter explains how you can about making changes to third-party extension documentation.
-
-.. toctree::
-   :hidden:
-   :caption: BASICS
-
-   About
-   HowToGetHelp
-   BasicPrinciples
-   GeneralConventions/Index
-   WritingReST/Index
-
-.. toctree::
-   :hidden:
-   :caption: HOWTOS
-
-   Migration/Index
-   WritingDocForExtension/Index
-   WritingDocsOfficial/Index
-   RenderingDocs/Index
-
-.. toctree::
-   :hidden:
-   :caption: ADVANCED
-
-   HowToAddTranslation/Index
-   GeneralConventions/ReviewInformation
-
-.. toctree::
-   :hidden:
-   :caption: MAINTAINERS
-
-   Maintainers/Index
-
-.. Meta Menu
-
-.. toctree::
-   :hidden:
-
-   Sitemap
+    Sitemap
