@@ -9,231 +9,243 @@ Cards
 
 Cards are used to group content together and provide a brief introduction on a given subject.
 
+..  deprecated:: 0.2.40
+
+    Cards were previously created by using nested :rst:`.. container::`
+    directives with manually applied classes. The largest disadvantages were
+    a large number of nested blocks and having to apply many classes.
+
+    We discourage using containers for cards and suggest to switch to the
+    cards directive.
+
 Simple cards
 ============
 
-..  container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Concepts <t3start:Concepts>`
 
-        ..  container:: card px-0 h-100
+        Written for new users, this chapter introduces some of TYPO3s
+        core concepts including the backend, TYPO3s administration
+        interface.
 
-            ..  rst-class:: card-header h3
+    ..  card:: :ref:`System Requirements <t3start:System-Requirements>`
 
-                ..  rubric:: :ref:`Concepts <t3start:Concepts>`
-
-            ..  container:: card-body
-
-                Written for new users, this chapter introduces some of TYPO3s
-                core concepts including the backend, TYPO3s administration
-                interface.
-
-    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-        ..  container:: card px-0 h-100
-
-            ..  rst-class:: card-header h3
-
-                ..  rubric:: :ref:`System Requirements <t3start:System-Requirements>`
-
-            ..  container:: card-body
-
-                System requirements for the host operation system, including
-                its web server and database and how they should be configured
-                prior to installation.
+        System requirements for the host operation system, including
+        its web server and database and how they should be configured
+        prior to installation.
 
 ..  code-block:: rst
+    :caption: EXT:my_extension/Documentation/SomeChapter.rst
 
-    ..  container:: row m-0 p-0
+    ..  card-grid::
+        :columns: 1
+        :columns-md: 2
+        :gap: 4
+        :class: pb-4
+        :card-height: 100
 
-        ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+        ..  card:: :ref:`Concepts <t3start:Concepts>`
 
-            ..  container:: card px-0 h-100
+            Written for new users, this chapter introduces some of TYPO3s
+            core concepts including the backend, TYPO3s administration
+            interface.
 
-                ..  rst-class:: card-header h3
+        ..  card:: :ref:`System Requirements <t3start:System-Requirements>`
 
-                    ..  rubric:: :ref:`Concepts <t3start:Concepts>`
-
-                ..  container:: card-body
-
-                    Written for new users, this chapter introduces some of TYPO3s
-                    core concepts including the backend, TYPO3s administration
-                    interface.
-
-        ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-            ..  container:: card px-0 h-100
-
-                ..  rst-class:: card-header h3
-
-                    ..  rubric:: :ref:`System Requirements <t3start:System-Requirements>`
-
-                ..  container:: card-body
-
-                    System requirements for the host operation system, including
-                    its web server and database and how they should be configured
-                    prior to installation.
+            System requirements for the host operation system, including
+            it's web server and database and how they should be configured
+            prior to installation.
 
 Cards with buttons in the footer
 ================================
 
-..  container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Pages <t3editors:pages>`
 
-        ..  container:: card px-0 h-100
+        The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-            ..  rst-class:: card-header h3
+        ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
+            :button-style: btn btn-primary
 
-                ..  rubric:: :ref:`Pages <t3editors:pages>`
+    ..  card:: :ref:`Content <t3editors:content-elements>`
 
-            ..  container:: card-body
+        The Content Creation Guide shows how page content is created in the form of Content Elements.
 
-                The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+        ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
+            :button-style: btn btn-secondary
 
-            ..  container:: card-footer pb-0
+    ..  card:: :ref:`Pages <t3editors:pages>`
 
-                ..  rst-class:: horizbuttons-striking-m
+        The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-                *   `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__
-                *   `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
-                *   `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/Pages/Index.html>`__
+        ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__  `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/Pages/Index.html>`__
+            :button-style: btn btn-link
 
-    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Content <t3editors:content-elements>`
 
-        ..  container:: card px-0 h-100
+        The Content Creation Guide shows how page content is created in the form of Content Elements.
 
-            ..  rst-class:: card-header h3
+        ..  card-footer::
 
-                ..  rubric:: :ref:`Content <t3editors:content-elements>`
-
-            ..  container:: card-body
-
-                The Content Creation Guide shows how page content is created in the form of Content Elements.
-
-            ..  container:: card-footer pb-0
-
-                ..  rst-class:: horizbuttons-striking-m
+            ..  rst-class:: horizbuttons-striking-m
 
                 *   `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Index.html>`__
                 *   `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__
                 *   `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
 
+
+    ..  card:: Stretched link
+
+        The complete card can be linked if you use exactly one stretched link.
+
+        ..  card-footer:: :ref:`Read more <t3editors:content-elements>`
+            :button-style: btn btn-secondary stretched-link
+
 ..  code-block:: rst
+    :caption: EXT:my_extension/Documentation/SomeChapter.rst
 
-    ..  container:: row m-0 p-0
+    ..  card-grid::
+        :columns: 1
+        :columns-md: 2
+        :gap: 4
+        :class: pb-4
+        :card-height: 100
 
-        ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+        ..  card:: :ref:`Pages <t3editors:pages>`
 
-            ..  container:: card px-0 h-100
+            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-                ..  rst-class:: card-header h3
+            ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
+                :button-style: btn btn-primary
 
-                    ..  rubric:: :ref:`Pages <t3editors:pages>`
+        ..  card:: :ref:`Content <t3editors:content-elements>`
 
-                ..  container:: card-body
+            The Content Creation Guide shows how page content is created in the form of Content Elements.
 
-                    The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
+            ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
+                :button-style: btn btn-secondary
 
-                ..  container:: card-footer pb-0
+        ..  card:: :ref:`Pages <t3editors:pages>`
 
-                    ..  rst-class:: horizbuttons-striking-m
+            The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-                    *   `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__
-                    *   `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__
-                    *   `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/Pages/Index.html>`__
+            ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__  `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/Pages/Index.html>`__
+                :button-style: btn btn-link
 
-        ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+        ..  card:: :ref:`Content <t3editors:content-elements>`
 
-            ..  container:: card px-0 h-100
+            The Content Creation Guide shows how page content is created in the form of Content Elements.
 
-                ..  rst-class:: card-header h3
+            ..  card-footer::
 
-                    ..  rubric:: :ref:`Content <t3editors:content-elements>`
-
-                ..  container:: card-body
-
-                    The Content Creation Guide shows how page content is created in the form of Content Elements.
-
-                ..  container:: card-footer pb-0
-
-                    ..  rst-class:: horizbuttons-striking-m
+                ..  rst-class:: horizbuttons-striking-m
 
                     *   `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Index.html>`__
                     *   `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__
                     *   `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
 
+
+        ..  card:: Stretched link
+
+            The complete card can be linked if you use exactly one stretched link.
+
+            ..  card-footer:: :ref:`Read more <t3editors:content-elements>`
+                :button-style: btn btn-secondary stretched-link
+
+
 Cards with images
 =================
 
-..  container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Cards <rest-cards>`
 
-        ..  container:: card px-0 h-100
+        ..  card-image:: /Images/cards.png
+            :alt: Cards, example output
 
-            ..  rst-class:: card-header h3
+        Cards can be used to shortly introduce topics and generate
+        overview pages.
 
-                ..  rubric:: :ref:`Cards <rest-cards>`
+    ..  card:: :ref:`Tabs <rest-tabs>`
 
-            ..  container:: card-body
+        ..  card-image:: /Images/tabs.png
+            :alt: Tabs, example output
 
-                ..  image:: /Images/cards.png
-                    :alt: Cards, example output
-                    :class: with-shadow mb-2
+        Tabs can be used to present a topic from different perspectives.
 
-                Cards can be used to shortly introduce topics and generate
-                overview pages.
+    ..  card:: :ref:`Cards <rest-cards>`
 
-    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+        ..  card-image:: /Images/cards.png
+            :alt: Cards, example output
 
-        ..  container:: card px-0 h-100
+        Cards can be used to shortly introduce topics and generate
+        overview pages.
 
-            ..  rst-class:: card-header h3
 
-                ..  rubric:: :ref:`Tabs <rest-tabs>`
+    ..  card:: :ref:`Tabs <rest-tabs>`
 
-            ..  container:: card-body
+        ..  card-image:: /Images/tabs.png
+            :alt: Tabs, example output
+            :position: bottom
 
-                ..  image:: /Images/tabs.png
-                    :alt: Tabs, example output
-                    :class: with-shadow mb-2
+        This card has the image at the bottom
 
-                Tabs can be used to present a topic from different perspectives.
 
 ..  code-block:: rst
+    :caption: EXT:my_extension/Documentation/SomeChapter.rst
 
-    ..  container:: row m-0 p-0
+    ..  card-grid::
+        :columns: 1
+        :columns-md: 2
+        :gap: 4
+        :class: pb-4
+        :card-height: 100
 
-        ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+        ..  card:: :ref:`Cards <rest-cards>`
 
-            ..  container:: card px-0 h-100
+            ..  card-image:: /Images/cards.png
+                :alt: Cards, example output
 
-                ..  rst-class:: card-header h3
+            Cards can be used to shortly introduce topics and generate
+            overview pages.
 
-                    ..  rubric:: :ref:`Cards <rest-cards>`
+        ..  card:: :ref:`Tabs <rest-tabs>`
 
-                ..  container:: card-body
+            ..  card-image:: /Images/tabs.png
+                :alt: Tabs, example output
 
-                    ..  image:: /Images/cards.png
-                        :alt: Cards, example output
-                        :class: with-shadow mb-2
+            Tabs can be used to present a topic from different perspectives.
 
-                    Cards can be used to shortly introduce topics and generate
-                    overview pages.
+        ..  card:: :ref:`Cards <rest-cards>`
 
-        ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
+            ..  card-image:: /Images/cards.png
+                :alt: Cards, example output
 
-            ..  container:: card px-0 h-100
+            Cards can be used to shortly introduce topics and generate
+            overview pages.
 
-                ..  rst-class:: card-header h3
 
-                    ..  rubric:: :ref:`Tabs <rest-tabs>`
+        ..  card:: :ref:`Tabs <rest-tabs>`
 
-                ..  container:: card-body
+            ..  card-image:: /Images/tabs.png
+                :alt: Tabs, example output
+                :position: bottom
 
-                    ..  image:: /Images/tabs.png
-                        :alt: Tabs, example output
-                        :class: with-shadow mb-2
-
-                    Tabs can be used to present a topic from different perspectives.
+            This card has the image at the bottom
