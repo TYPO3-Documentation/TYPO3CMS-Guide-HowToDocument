@@ -11,7 +11,7 @@ Cards are used to group content together and provide a brief introduction on a g
 
 ..  deprecated:: 0.2.40
 
-    Cards where previously created by using nested :rst:`.. container::`
+    Cards were previously created by using nested :rst:`.. container::`
     directives with manually applied classes. The largest disadvantages were
     a large number of nested blocks and having to apply many classes.
 
@@ -59,7 +59,7 @@ Simple cards
         ..  card:: :ref:`System Requirements <t3start:System-Requirements>`
 
             System requirements for the host operation system, including
-            its web server and database and how they should be configured
+            it's web server and database and how they should be configured
             prior to installation.
 
 Cards with buttons in the footer
