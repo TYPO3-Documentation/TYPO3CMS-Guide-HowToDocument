@@ -1,80 +1,84 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index::
     reST; Hyperlinks
     reST; Cross referencing
     reST roles; ref
 ..  _how-to-document-hyperlinks:
 
-=========================
-Links & cross referencing
-=========================
+========================
+Links & cross references
+========================
 
+In reStructuredText (reST) there are multiple methods to define links to
+different targets. This text describes those most commonly used in TYPO3
+manuals.
 
-Quick Reference
-===============
+..  contents::
 
-In Sphinx you can use several types of links:
+..  _rest-reference:
+..  _intersphinx:
 
-:ref:`external-links`
-    for linking to other sources outside of the reST docs on docs.typo3.org.
+References to TYPO3 manuals
+===========================
 
-    ..  code-block:: rst
+You can link the following elements in any TYPO3 manual: Headlines,
+:ref:`confvals <rest-confval>` and :ref:`phpdomain definitions <rest-phpdomain>`.
+It is also possible to put an anchor almost anywhere and then link it.
 
-        `anchor text <url>`__
+When an element in a manual can be linked a link symbol will appear when you
+hover it:
 
-    (with one or two underscores at the end, if in doubt, use two)
+..  figure:: /Images/link-headlines.png
 
-:ref:`Cross-Referencing <cross-referencing>` (`:ref:`)
-    for linking to other sections of the same manual on docs.typo3.org with Intersphinx mechanism
+    Hover a headline to see it is linkable, then click the link symbol
 
-    ..  code-block:: rst
+After you click the link symbol you can copy the reST link from the modal that
+appears:
 
-        :ref:`anchor text <link-target>`
+..  figure:: /Images/link-headlines-box.png
 
+    Copy the reST reference
 
-:ref:`Cross-Referencing <cross-referencing>` with intersphinx (`:ref:`)
-    for linking to other sections of a different manual on docs.typo3.org
+The reST code of the reference looks like this:
 
-    If your link target is in another manual (for example "Getting Started Tutorial", you must
-    add the shortcut (here: `t3start`) for the other manual:
+..  code-block:: rst
+    :caption: Reference from another manual
 
-    ..  code-block:: rst
+    :ref:`Hide detail page in URL <georgringer/news:hideDetailPage>`
 
-        :ref:`anchor text <t3start:link-target>`
+A reference has the following syntax:
 
-    The shortcut must be defined in :ref:`settings-cfg`
+..  code-block:: plaintext
+    :caption: Syntax of a reST reference
 
+    :ref:`[link_text] <[interlink]:[anchor]>`
 
-Whenever you use the cross-referencing mechanism, you should create a
-:ref:`link target <explicit-link-targets>` for a section chapter,
-by adding a label before the section header::
+If you are linking within the same manual you can omit the `[interlink]:` part,
+including the colon.
 
-        ..  _link-target:
+..  code-block:: rst
+    :caption: Reference from inside the same manual
 
-        Headline
-        ========
+    :ref:`Hide detail page in URL <hideDetailPage>`
 
+If there is a warning box displayed, that the link has no anchor, you can
+still link to it using a doc-reference:
 
-How to create links is described in more detail in the next sections.
+..  figure:: /Images/link-headlines-box-warning.png
 
-:ref:`Preventing links <preventing-links>`
-    being automatically generated from simple URLs – mostly used in connection
-    with hypothetical domains.
+    Linking to a headline without an anchor
 
-    ..  code-block:: rst
+The link then looks like this in reST:
 
-        :samp:`<url>`
+..  code-block:: rst
 
+    :doc:`Some further explanations <georgringer/news:Tutorials/BestPractice/HideDetailPage/Index#some-further-explanations>`
 
-:ref:`Hypothetical domains <hypothetical-domains>`
-    are domains for use in URLs where the domain does not matter, but serves as a
-    placeholder. The TYPO3 documentation uses a defined set of them.
+However such a link would not work anymore if the section was moved to another
+page or if another section with the same headline was introduced.
 
-    ..  code-block:: rst
-
-        :samp:`https://example.org/news/`
-
+We suggest to make add a unique link anchors to the headline to be linked in this
+case. See section :ref:`Link anchors <link-targets-explanation>`.
 
 ..  index:: reST; External links
 ..  _external-links:
@@ -85,98 +89,66 @@ External links
 ..  important::
 
     Do not use this mechanism (external links) for links to sections of
-    the official documentation. Use the Intersphinx mechanism as described
-    in :ref:`intersphinx`. See :ref:`intersphinx-benefits` for an explanation
-    of why you should do this.
+    the TYPO3. Use references as described in the section above:
+    :ref:`References to TYPO3 manuals <rest-reference>`.
 
 
-You can use one or more underscores (`_`) for the link. The difference is as follows:
-
-*  One underscore creates a :ref:`named reference <external-links-named-reference>`
-*  Two underscores create an :ref:`anonymous URL <external-links-anonymous>`
-
-For further explanation of the difference between these 2, please see
-`Stackoverflow <https://stackoverflow.com/questions/27420317/restructured-text-rst-http-links-underscore-vs-use>`__.
-
-
-If in doubt, just use 2 underscores as explained in the next section :ref:`external-links-anonymous`.
-
-
-..  index:: reST; Anonymous URL
-..  _external-links-anonymous:
-
-External link as anonymous URL
-------------------------------
-
-Syntax
-~~~~~~
+An URL that is mentioned within a text is automatically linked:
 
 ..  code-block:: rst
 
-    `Anchor text <URL>`__
+    Lorem Ipsum Dolor https://example.org dolor sit
 
-*  There must always be a space between the anchor text and the URL
+The result looks like this:
 
-Example
-~~~~~~~
+Lorem Ipsum Dolor https://example.org dolor sit
 
-..  code-block:: rst
-
-    `Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
-
-
-How it looks
-~~~~~~~~~~~~
-
-`Sphinx hyperlinks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks>`__
-
-
-..  index:: reST; Named references
-..  _external-links-named-reference:
-
-External link as named reference
---------------------------------
-
-Syntax
-~~~~~~
-
-Same as :ref:`anonymous URL <external-links-anonymous>`, but with one
-underscore instead of 2.
+If you want to also give the URL a distinctive link text you can use the
+following syntax:
 
 ..  code-block:: rst
 
-    `Anchor text <URL>`_
+    Lorem Ipsum Dolor `Example Page <https://example.org>`__ dolor sit
 
-*   There must always be a space between the anchor text and the URL
+The result looks like this:
 
+Lorem Ipsum Dolor `Example Page <https://example.org>`__ dolor sit
 
+Sometimes links can get quite long and unruly to use within the text. You can
+use so called named links to separate the link definitions from the text:
+
+..  code-block:: rst
+
+    Lorem Ipsum Dolor `Example Page`_ dolor sit
+
+    .. _Example Page: https://example.org
+
+The result looks like this:
+
+Lorem Ipsum Dolor `Example Page`_ dolor sit
+
+.. _Example Page: https://example.org
 
 ..  index:: reST; Link targets
 ..  _link-targets-explanation:
-
-Link targets
-============
-
-When using the :ref:`intersphinx` mechanism (as described in the next section), you
-will link to link targets.
-
-
-..  index:: reST; Link targets, explicit
 ..  _explicit-link-targets:
 
-Explicit link targets (Labels for cross referencing)
-----------------------------------------------------
+Link anchors
+============
 
-You can define an explicit link target with a label for a section (or chapter):
+Link anchors assign a unique name to a headline and its section. These anchors
+can be used in internal references and references between TYPO3 manuals.
 
-A section label of the name `columns-inline` is set::
+As long as the anchor of a section stays the same the section can be moved to
+another page or the headline can be renamed and references will still go to the
+correct target.
 
-    ..  _columns-inline:
+You can define a link anchor with a label for a section.
 
+In the following example, the link target :rst:`columns-inline` is assigned
+to the section with the title "Inline columns".
 
-Here, the link target *columns-inline* will be defined.
-
-*  Place the link target definition directly before the section header:
+Place the link anchor definition directly before the section header:
 
 ..  code-block:: rst
 
@@ -184,141 +156,6 @@ Here, the link target *columns-inline* will be defined.
 
     Inline columns
     ==============
-
-*   You can define more than one link target definition (for example if
-    you want to keep some for historical reasons to not break links but
-    the name has changed considerably)
-
-
-..  index:: reST; Link targets, implicit
-..  _implicit-link-targets:
-
-Implicit link targets
----------------------
-
-For every section (or chapter), an implicit link target is created from the
-header.
-
-However, there are some disadvantages in using these, so we will not go into
-that further.
-
-
-..  index::
-    reST; Link targets, Cross referencing
-    reST roles; ref
-..  _intersphinx:
-..  _cross-referencing:
-
-Cross referencing (`:ref:`)
-===========================
-
-This section describes how to link to sections of the current or other
-manuals correctly.
-
-
-Additional information: See the `Sphinx documentation
-<https://www.sphinx-doc.org/en/1.6/markup/inline.html#cross-referencing-arbitrary-locations>`__.
-
-For an overview of the link types, see :ref:`cheat-sheet-intersphinx` in
-the "ReST & Sphinx Cheat Sheet".
-
-In the same manual
-------------------
-
-A :ref:`section label <explicit-link-targets>` of the name `columns-inline` has been set somewhere::
-
-    ..  _columns-inline:
-
-    Inline Columns
-    ==============
-
-
-You can then link to it like this **from the same manual**::
-
-  :ref:`columns-inline`
-
-This will use the header of the section as anchor text.
-
-You can also explicitly set an anchor text::
-
-    :ref:`Inline columns <columns-inline>`
-
-
-From one manual to another
---------------------------
-
-Example 1: Use text of headline as anchor text
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Again, we want to link to the labels `columns-inline` and `This-is-ABC`.
-
-But since the labels are now in a different manuals, we
-need to prefix the names of that manuals:
-
-..  code-block:: rst
-
-    :ref:`t3tca:columns-inline`
-    :ref:`t3upgrade:This-is-ABC`
-
-
-The name `t3tca` is the name we have given it in the :file:`Settings.cfg` file: .
-`This-is-ABC` is just an example wording.
-
-..  code-block:: none
-
-    t3tca          = https://docs.typo3.org/m/typo3/reference-tca/main/en-us/
-    t3upgrade      = https://docs.typo3.org/m/typo3/guide-installation/main/en-us/
-
-
-..  important::
-
-    Check the Settings.cfg file for the manual you are working on to
-    make sure the manual shortcuts for intersphinx linking are available
-    in the section `[intersphinx_mapping]`.
-    You may need to remove the comment marker `#` at the beginning of the line.
-
-
-This is called cross-referencing with the *intersphinx* mechanism.
-
-In this example, the linktext shown will be whatever the text
-of the headline is that follows the label *in the manual we link to*, in this case
-the TCA manual.
-
-
-Example 2: Specify anchor text
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-If we want to control the anchor text ourselves, we can do so by
-writing:
-
-..  code-block:: rst
-
-    :ref:`this is our linktext <t3tca:columns-inline>`
-
-..  _intersphinx-benefits:
-
-Understanding the benefits
---------------------------
-
-Imagine that the TCA manual has been restructured. Text and maybe urls changed, but the - purely -
-symbolic label has been kept. As a result the links (= intersphinx references) in foreign
-manuals will work again as soon they are rebuilt.
-
-Tips
-----
-
-1. For convenience many manuals already have a :file:`objects.inv.json` where you can easily
-    see what link targets are available. Example: https://docs.typo3.org/m/typo3/reference-tca/main/en-us/objects.inv.json
-
-2. As an editor you should not change or remove labels once they have been published.
-    If you feel that a label (= link target) should be changed you should keep the old one
-    and add the new one on a separate line. You cannot know whether some other manual in
-    the world links to the label you would like to remove.
-
-3. You still CAN remove that label. The only problem that may arise is that foreign links
-    aren't generated any more.
-
 
 ..  index:: reST; Preventing links
 ..  _preventing-links:
