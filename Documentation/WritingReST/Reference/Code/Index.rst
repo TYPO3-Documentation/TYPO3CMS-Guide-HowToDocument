@@ -1,7 +1,6 @@
 ..  include:: /Includes.rst.txt
 ..  highlight:: rst
-..  _rest-menu:
-..  _rest-page-structure:
+..  _rest-code:
 
 ==============================
 Code blocks and code structure

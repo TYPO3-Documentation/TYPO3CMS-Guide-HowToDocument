@@ -1,6 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _rest-menu:
-..  _rest-page-structure:
+..  _rest-images-diagrams:
 
 ===========================
 Graphs, images and diagrams
