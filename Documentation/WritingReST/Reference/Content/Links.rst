@@ -15,7 +15,7 @@ manuals.
 
 ..  contents::
 
-..  _rest-reference:
+..  _rest-ref:
 ..  _intersphinx:
 
 References to TYPO3 manuals

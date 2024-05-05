@@ -245,6 +245,9 @@ To emphasize changes that should be made:
 Show a directory tree
 ---------------------
 
+To display an expandable directory tree, use the
+:ref:`directive '.. directory-tree::' <writing-rest-directory-tree>`.
+
 ..  tabs::
 
     ..  group-tab:: Source (rst)
