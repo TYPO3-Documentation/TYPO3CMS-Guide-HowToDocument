@@ -130,13 +130,15 @@ Or, when cross-referencing to other manuals:
 
 
 When you are linking to another manual, make sure the
-shortcut (here: "h2document") is included in :ref:`settings-cfg`:
+shortcut (here: "h2document") is included in :ref:`settings-guides-xml`:
 
 ..  code-block:: none
 
     [intersphinx_mapping]
 
-    h2document         = https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html
+    <inventory id="h2document"
+                url="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html"
+    />
     ...
 
 We use the same conventions for naming the shortcuts in :file:`Settings.cfg`,
