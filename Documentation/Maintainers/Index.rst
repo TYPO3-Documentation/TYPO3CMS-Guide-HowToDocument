@@ -10,6 +10,7 @@ For maintainers
     :maxdepth: 1
 
     BackportChanges
+    FluidViewHelper
     Changelog
     NewMajorCoreVersion
     Tools
