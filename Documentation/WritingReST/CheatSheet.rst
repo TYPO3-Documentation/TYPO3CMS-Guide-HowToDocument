@@ -134,7 +134,6 @@ shortcut (here: "h2document") is included in :ref:`settings-guides-xml`:
 
 ..  code-block:: none
 
-    [intersphinx_mapping]
 
     <inventory id="h2document"
                 url="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Index.html"
