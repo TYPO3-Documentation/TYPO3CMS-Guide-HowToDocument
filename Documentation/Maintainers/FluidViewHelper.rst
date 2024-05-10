@@ -10,7 +10,7 @@ updated by changes to the according ViewHelper classes in the
 `TYPO3 Core <https://github.com/TYPO3/typo3>`__ and
 the package `Fluid Rendering Engine <https://github.com/TYPO3/Fluid>`__.
 
-Context changes need to be made in those two repositories. For contributions
+Changes in wording or arguments thus need to be made inside the relevant files of these two repositories. For contributions
 to the TYPO3 Core, follow the
 :ref:`TYPO3 Contribution Guide - Core Development <t3contribute:recommended-reading>`.
 
@@ -22,12 +22,12 @@ The Fluid ViewHelper schema generator
 
 The PHP files defining the ViewHelpers are transferred into :file:`schema.xsd`
 files. The package `fluid-schema-generator <https://github.com/TYPO3/Fluid.SchemaGenerator>`__
-is responsible for this step. So if information is already missing in the
-:file:`schema.xsd`, adjustments need to be made here. The information from the
-:file:`schema.xsd` files is also used by IDEs for context sensitive help in
+is responsible for this step, automatically executed via triggered GitHub actions. If information is missing in the
+:file:`schema.xsd`, adjustments need to be made in the PHP files. :file:`schema.xsd` files are considered "read-only" due to their auto-generated nature. The information from the
+:file:`schema.xsd` files can, if configured through plugins, also used by IDEs for context sensitive help in
 editors etc.
 
-You can regenerate the :file:`schema.xsd` files for local testing like this:
+You can generate the :file:`schema.xsd` files yourself for local testing, like this:
 
 ..  code-block:: bash
 
@@ -43,32 +43,32 @@ You can regenerate the :file:`schema.xsd` files for local testing like this:
     mkdir -p ../schemas/typo3/backend/latest
     ./bin/generateschema TYPO3\\\CMS\\\Backend > ../schemas/typo3/backend/latest/schema.xsd
 
-The TYPO3 Core will automatically install Fluid Rendering Engine in the version
-used by that Core version.
+The composer step will automatically require the Fluid Rendering Engine in the version
+used by the Core version you fetched via GIT (by default, `main`).
 
 ..  _fluid-viewhelper-reference-generation-rst:
 
-Generation of the reSTructured text files
+Generation of the reStructuredText files
 =========================================
 
-The :abbr:`rst (reSTructured text)` files get generated from the
+The :abbr:`rst (reStructuredText)` files get generated from the
 :file:`schema.xsd` files (See section
 :ref:`fluid-viewhelper-reference-generation-schema`) with the help of the
 following tool:
 `Fluid ViewHelper Documentation Generator <https://github.com/TYPO3-Documentation/fluid-documentation-generator>`.
 
-So if the desired information is contained in the :file:`schema.xsd` files but
-not the rst sources, the problem might have to be fixed here.
+If any of the ViewHelper source code documentation is only contained in the :file:`schema.xsd` files but
+not the generated standalone :file:`.rst` files, a bug in that generator may exist and needs adressing.
 
 ..  _fluid-viewhelper-reference-generation-html:
 
 Rendering the ViewHelper reference to HTML
 ==========================================
 
-The :abbr:`rst (reSTructured text)` files generated in step
+The :abbr:`rst (reStructuredText)` files generated in step
 :ref:`fluid-viewhelper-reference-generation-rst` will be saved by the
 :ref:`GitHub action <fluid-viewhelper-reference-generation-github-action>` into
-repository `Fluid ViewHelper Reference <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-ViewHelper>`.
+the repository `Fluid ViewHelper Reference <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-ViewHelper>`.
 
 In this repository all files not overridden by the
 `Fluid ViewHelper Documentation Generator <https://github.com/TYPO3-Documentation/fluid-documentation-generator>`
@@ -83,5 +83,6 @@ GitHub action "Fluid ViewHelper Documentation"
 
 All processes described above are combined for automatic execution as a GitHub
 action in the repository `t3docs-ci-deploy <https://github.com/TYPO3-Documentation/t3docs-ci-deploy>`__.
+It is triggered automatically once a day, or can be executed manually through the GitHub UI by the TYPO3 Documentation team.
 
-Watch for failed or stuck `Actions <https://github.com/TYPO3-Documentation/t3docs-ci-deploy/actions>`__.
+Maintainers needs to occasionally watch for failed or stuck `Workflow runs <https://github.com/TYPO3-Documentation/t3docs-ci-deploy/actions>`__.
