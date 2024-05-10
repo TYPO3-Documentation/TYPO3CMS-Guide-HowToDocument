@@ -14,7 +14,7 @@ The generated documentation specifically depends on the phpDoc-style inline
 comments on top of the ViewHelper classes as well as the configured arguments in their
 php:`initializeArguments()` method.
 
-Context changes need to be made in those two repositories. For contributions
+Changes in wording or arguments thus need to be made inside the relevant files of these two repositories. For contributions
 to the TYPO3 Core, follow the
 :ref:`TYPO3 Contribution Guide - Core Development <t3contribute:recommended-reading>`.
 
