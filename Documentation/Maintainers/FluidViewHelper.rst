@@ -10,7 +10,11 @@ updated by changes to the according ViewHelper classes in the
 `TYPO3 Core <https://github.com/TYPO3/typo3>`__ and
 the package `Fluid Rendering Engine <https://github.com/TYPO3/Fluid>`__.
 
-Changes in wording or arguments thus need to be made inside the relevant files of these two repositories. For contributions
+The generated documentation specifically depends on the phpDoc-style inline
+comments on top of the ViewHelper classes as well as the configured arguments in their
+php:`initializeArguments()` method.
+
+Context changes need to be made in those two repositories. For contributions
 to the TYPO3 Core, follow the
 :ref:`TYPO3 Contribution Guide - Core Development <t3contribute:recommended-reading>`.
 
@@ -33,7 +37,7 @@ You can generate the :file:`schema.xsd` files yourself for local testing, like t
 
     git clone git@github.com:typo3/typo3.git core
     cd core
-    composer require -o -n --no-progress typo3/fluid-schema-generator "^2.1"
+    composer require -o -n --no-progress typo3/fluid-schema-generator
     mkdir -p ../schemas/typo3fluid/fluid/latest
     ./bin/generateschema TYPO3Fluid\\\Fluid > ../schemas/typo3fluid/fluid/latest/schema.xsd
     mkdir -p ../schemas/typo3/core/latest
@@ -56,6 +60,16 @@ The :abbr:`rst (reStructuredText)` files get generated from the
 :ref:`fluid-viewhelper-reference-generation-schema`) with the help of the
 following tool:
 `Fluid ViewHelper Documentation Generator <https://github.com/TYPO3-Documentation/fluid-documentation-generator>`.
+
+Please note that the TYPO3 Core initially uses `reStructuredText` formatting
+inside the phpDoc comments already,  and this is passed on to the :file:`schema.xsd`
+files with exactly that formatting.
+IDEs may want to interpret  these schemas with expected HTML or MarkDown syntax,
+so you may see raw `reStructuredText` output in this case.
+The generated Documentation for `docs.typo3.org` takes care of
+transforming the generated  :file:`.rst` files to HTML, by utilizing the
+https://github.com/TYPO3-Documentation/render-guides project.
+
 
 If any of the ViewHelper source code documentation is only contained in the :file:`schema.xsd` files but
 not the generated standalone :file:`.rst` files, a bug in that generator may exist and needs adressing.
