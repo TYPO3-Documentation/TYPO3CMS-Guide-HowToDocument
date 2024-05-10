@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 
 ..  _docs-official-how-you-can-help:
 ..  _how-to-contribute:

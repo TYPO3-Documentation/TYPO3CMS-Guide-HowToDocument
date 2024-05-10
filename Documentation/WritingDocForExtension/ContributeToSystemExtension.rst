@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: pair: Documentation; System extensions
 .. _contribute-to-system-extension:
 

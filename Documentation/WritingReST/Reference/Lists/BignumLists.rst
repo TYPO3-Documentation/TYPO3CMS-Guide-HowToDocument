@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index::
     reST; Styled numbered sections
     reST classes; bignums
@@ -15,7 +14,9 @@ Styled numbered sections (bignums)
 With XXL Big Numbers
 ====================
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     ..  rst-class:: bignums-xxl
 
@@ -52,7 +53,9 @@ With XXL Big Numbers
 With Big Numbers
 ================
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     ..  rst-class:: bignums
 
@@ -89,7 +92,9 @@ With Big Numbers - Tip
 
 Uses the same color as background, that is used in a tip textblock.
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     ..  rst-class:: bignums-tip
 
@@ -118,8 +123,9 @@ Uses the same color as background, that is used in a tip textblock.
 With Big Numbers - Attention
 =============================
 
+*Source:* :
 
-*Source:* ::
+..  code-block:: rst
 
     ..  rst-class:: bignums-attention
 
@@ -151,7 +157,9 @@ With Big Numbers - Important
 ============================
 
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     ..  rst-class:: bignums-important
 
@@ -181,7 +189,9 @@ With Big Numbers - Important
 With Big Numbers - Warning
 ==========================
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     ..  rst-class:: bignums-warning
 
@@ -213,7 +223,9 @@ Nested bignums-xxl > bignums > Normally Styled
 ==============================================
 
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     ..  rst-class:: bignums-xxl
 
@@ -271,7 +283,9 @@ More Examples of Nesting
     #.  Check the requirements
 
         #.  Machine accessible?
-        #.  Is `abc` installed? Run::
+        #.  Is `abc` installed? Run:
+
+            ..  code-block:: rst
 
                 which abc
 

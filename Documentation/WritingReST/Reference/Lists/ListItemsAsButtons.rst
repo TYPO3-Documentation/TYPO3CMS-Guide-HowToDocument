@@ -1,6 +1,5 @@
 
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index:: reST; Buttons
 ..  _list-items-as-buttons:
 
@@ -25,7 +24,9 @@ the items of an unordered list appear as "buttons". To put this into
 action the `<ul>` tag needs to have one of the following (css-) classes.
 
 To assign a class place a `..  rst-class:: THENAME` right in front of
-the list like so::
+the list like so:
+
+..  code-block:: rst
 
     ..  rst-class:: horizbuttons-attention-m
 

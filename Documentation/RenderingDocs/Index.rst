@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. Index::
     pair: Documentation; Rendering
     Rendering; Locally

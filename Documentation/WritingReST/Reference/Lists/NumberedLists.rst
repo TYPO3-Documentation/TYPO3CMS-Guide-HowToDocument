@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index:: reST; Numbered lists
 ..  _numbered-lists:
 
@@ -8,7 +7,9 @@ Numbered lists
 ==============
 
 
-*Source:* ::
+*Source:* :
+
+..  code-block:: rst
 
     #.  abc
     #.  bcd

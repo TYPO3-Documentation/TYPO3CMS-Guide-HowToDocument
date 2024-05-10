@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: pair: Documentation; Third-party extensions
 .. _contribute-to-3rdparty-extension:
 

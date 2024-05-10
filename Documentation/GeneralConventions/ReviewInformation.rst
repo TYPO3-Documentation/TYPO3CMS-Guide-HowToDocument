@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: ! Reviewing manuals
 .. _guidelines-for-reviewing:
 

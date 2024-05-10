@@ -108,7 +108,6 @@ STAR
 Using U+2420 symbol for space
 =============================
 
-..  highlight:: rst
 
 Code
 ----

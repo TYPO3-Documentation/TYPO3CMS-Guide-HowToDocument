@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index::
     Menus; Content
 ..  _content-menu:
@@ -10,7 +9,9 @@ Content menu
 
 You can display the titles of the current page as a content menu.
 
-The simplest content menu can be created like this::
+The simplest content menu can be created like this:
+
+..  code-block:: rst
 
     ..  contents::
         :local:

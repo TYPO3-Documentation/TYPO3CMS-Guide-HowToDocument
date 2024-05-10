@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index::
     reST; Code blocks
     reST; syntax highlighting
@@ -490,11 +489,10 @@ You can change these code blocks like this:
     :caption: UpdateShorthandCode.diff
 
      The extension already contains some unit tests that extend `typo3/testing-framework`'s base
-    -unit test class in directory :file:`Tests/Unit/Hooks` (stripped)::
-    +unit test class:
-    +
-    +..  code-block:: php
-    +    :caption: <extension_key>/Tests/Unit/Hooks/DataHandlerFlushByTagHookTest.php
+    -unit test class in directory :file:`Tests/Unit/Hooks` (stripped):
+
+    ..  code-block:: php
+        :caption: <extension_key>/Tests/Unit/Hooks/DataHandlerFlushByTagHookTest.php
 
           <?php
           namespace Lolli\Enetcache\Tests\Unit\Hooks;

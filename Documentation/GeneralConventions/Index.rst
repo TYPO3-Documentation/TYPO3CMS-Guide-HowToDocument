@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Documentation; Content style guide
 .. _general-conventions:
 .. _conventions:
@@ -41,7 +40,9 @@ be found in the subchapters.
 #. Version hints
 
    :ref:`version-hints` describes how to add version hints for new sections
-   or chapters::
+   or chapters:
+
+   .. code-block:: rst
 
       .. deprecated:: 10.2
          The hook shown here is deprecated since TYPO3 10.2 - use a custom
@@ -65,7 +66,9 @@ be found in the subchapters.
 
 #. Coding guidelines for headers
 
-   Headline underline should follow :ref:`rest-cgl-headline-underlines`::
+   Headline underline should follow :ref:`rest-cgl-headline-underlines`
+
+   .. code-block:: rst
 
       =====
       Title
@@ -86,7 +89,9 @@ be found in the subchapters.
 
 #. Refer to elements in the GUI with :rst:`:guilabel:`
 
-   Example::
+   Example:
+
+   .. code-block:: rst
 
       :guilabel:`Admin Tools > Extensions`
 
