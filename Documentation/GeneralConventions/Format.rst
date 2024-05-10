@@ -57,14 +57,14 @@ If you’re encountering problems with the rendering of your markdown files, con
 reST vs. Markdown
 =================
 
-Victor Zverovich makes the comparison::
+Victor Zverovich makes the comparison:
 
    According to John Gruber, the inventor of Markdown, “Markdown’s syntax is intended for one
    purpose: to be used as a format for writing for the web.” and, in particular, it supports inline HTML.
    reStructuredText on the other hand is specifically designed for writing technical documentation.
 
 
-readthedocs::
+readthedocs:
 
    "It should be noted that Commonmark doesn’t support a lot of the concepts that RST lets you represent.
    In particular, there is no standardized way in Commonmark to represent inline or block levels constructs.

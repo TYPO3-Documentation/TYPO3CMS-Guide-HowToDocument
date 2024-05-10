@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: shell
 .. index:: Changes; Backporting
 .. _tools_of_the_documentation_team:
 

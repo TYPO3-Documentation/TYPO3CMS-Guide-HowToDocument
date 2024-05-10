@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index:: reST; Tabs
 ..  _rest-tabs:
 

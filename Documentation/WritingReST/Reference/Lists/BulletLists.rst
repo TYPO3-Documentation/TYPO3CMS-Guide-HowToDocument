@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 
 ..  index:: reST; Bullet lists
 ..  _rest-unordered-lists:

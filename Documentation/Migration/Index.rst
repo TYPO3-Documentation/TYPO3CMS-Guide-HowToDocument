@@ -383,7 +383,7 @@ To be discussed: Index generation (glossary)
 The Sphinx rendering allowed to utilize a syntax like the following to
 add indexes to your documentation:
 
-..  code-block::
+..  code-block:: plaintext
     :caption: Documentation/Index.rst
 
     ..  index::

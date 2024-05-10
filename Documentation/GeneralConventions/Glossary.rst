@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index::
    Spelling; Reference
    Preferred terms
@@ -14,8 +13,6 @@ Spelling, terms and glossary
 
 Spelling
 ========
-
-.. default-role:: guilabel
 
 Pick the spelling and recommended terms from this list.
 
@@ -177,10 +174,6 @@ W
 
 
 
-.. default-role:: php
-
-
-
 Terms
 =====
 
@@ -202,3 +195,5 @@ third party extension
 
 ViewHelper
    Our community agreed on this spelling.
+
+.. default-role:: code

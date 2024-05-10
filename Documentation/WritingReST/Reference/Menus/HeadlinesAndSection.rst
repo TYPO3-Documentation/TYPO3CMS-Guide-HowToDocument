@@ -1,6 +1,5 @@
 
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index::
     pair: reST; Headlines
     pair: reST; Titles
@@ -19,13 +18,17 @@ is split into "sections" instead. Those sections are identified by titles which
 
 1. Use underlining plus overlining with `===` for the first section title of a
     file. The first section title is the "document title" (**doctitle**) of that
-    file and will appear in the menu. Every .rst file should have a doctitle::
+    file and will appear in the menu. Every .rst file should have a doctitle:
+
+..  code-block:: rst
 
         ========
         DocTitle
         ========
 
-2. Then use underlining only::
+2. Then use underlining only:
+
+..  code-block:: rst
 
         1.  ==========  for the first  level
         2.  ----------  for the second level
@@ -34,7 +37,9 @@ is split into "sections" instead. Those sections are identified by titles which
 
 3. More levels will be rarely used. For sake of completeness here is the whole
     hierarchy the automatic conversion tools uses. Stick to this order if more
-    levels are needed::
+    levels are needed:
+
+..  code-block:: rst
 
         5.  ''''''''''
         6.  ^^^^^^^^^^

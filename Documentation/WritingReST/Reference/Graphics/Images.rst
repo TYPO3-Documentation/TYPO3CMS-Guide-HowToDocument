@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index:: pair: reST; Images
 ..  _how-to-document-images:
 ..  _rest-images:

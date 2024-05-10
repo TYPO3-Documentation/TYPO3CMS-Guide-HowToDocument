@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 
 ..  _writing-rest-introduction:
 
@@ -16,7 +15,9 @@ file ending of reST files is :file:`.rst`.
 reStructuredText is a markup language for writing documentation. You can
 edit the source files using plain text and add reST markup where needed.
 
-For example to create section headers, you use underlines::
+For example to create section headers, you use underlines:
+
+..  code-block:: rst
 
     ========
     Header 1

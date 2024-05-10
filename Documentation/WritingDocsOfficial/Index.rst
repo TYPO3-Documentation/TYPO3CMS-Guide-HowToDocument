@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Official documentation
 .. _contribute:
 .. _docs-contribute:

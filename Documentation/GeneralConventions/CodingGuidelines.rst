@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: pair: Coding guidelines; reST
 .. _format-rest-cgl:
 
@@ -156,9 +155,9 @@ Use the conventions as defined in :ref:`Headlines-and-sections`.
 
 This underlining is used **per (.rst) file**. It does not matter where in the toctree
 the file is. You always start with underlining for level 1 (title) in each
-file::
+file:
 
-
+..  code-block:: rst
 
    ========
    1. Title
@@ -200,19 +199,25 @@ file::
 How to add version hints
 ========================
 
-Example, how you can point out **deprecations**::
+Example, how you can point out **deprecations**:
+
+..  code-block:: rst
 
    .. deprecated:: 10.2
       The hook shown here is deprecated since TYPO3 10.2 - use a custom
       :ref:`PSR-15 middleware<request-handling>` instead.
 
-New **feature**::
+New **feature**:
+
+..  code-block:: rst
 
    .. versionadded:: 10.2
       Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
       event dispatching system.
 
-Changes::
+Changes:
+
+..  code-block:: rst
 
    .. versionchanged:: 2.3.1
       This feature was changed ...

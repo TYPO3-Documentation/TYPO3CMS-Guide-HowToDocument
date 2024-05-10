@@ -458,7 +458,9 @@ This is an example with a code block (:rst:`::`) embedded in the sections.
 
 1.  Embed an image
 
-    Source::
+    Source:
+
+    ..  code-block:: rst
 
         /Images/a4.jpg
             :class: with-shadow

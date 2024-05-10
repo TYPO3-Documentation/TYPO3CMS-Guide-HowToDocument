@@ -1,6 +1,5 @@
 
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index::
     reST; Inline code
 ..  _Inline-Code:
@@ -185,11 +184,15 @@ You need another 'language' to mark up inline?
 You are free to define additional text roles *in your project* or even
 *on an individual page* as you like. Make use of the `role directive
 <http://docutils.sourceforge.net/docs/ref/rst/directives.html#role>`__.
-Example: You want 'haskell'? Define that role as derivative of 'code'::
+Example: You want 'haskell'? Define that role as derivative of 'code':
+
+..  code-block:: rst
 
   ..  role:: haskell(code)
 
-You may then write::
+You may then write:
+
+..  code-block:: rst
 
     Here is some :haskell:`haskell inline code` in the sentence.
 

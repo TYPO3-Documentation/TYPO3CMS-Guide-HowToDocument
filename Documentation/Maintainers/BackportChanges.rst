@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: shell
 ..  index:: Changes; Backporting
 ..  _backport-changes:
 

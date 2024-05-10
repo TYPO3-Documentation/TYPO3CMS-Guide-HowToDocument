@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Documentation; Extension
 .. _writing-doc-for-ext-start:
 .. _how-to-start-docs-extension:

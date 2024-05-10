@@ -1,5 +1,4 @@
 ..  include:: /Includes.rst.txt
-..  highlight:: rst
 ..  index:: reST; Syntax
 ..  _basic-rest-syntax:
 
@@ -17,7 +16,9 @@ Paragraphs
 ==========
 
 New paragraphs in the output are created by an empty line
-between two paragraphs in your reST file::
+between two paragraphs in your reST file:
+
+..  code-block:: rst
 
     This is a paragraph.
 
@@ -29,12 +30,16 @@ between two paragraphs in your reST file::
 Comments
 ========
 
-Comments can be written like this::
+Comments can be written like this:
+
+..  code-block:: rst
 
     ..  this is a comment
     ..  with another line
 
-Or like this::
+Or like this:
+
+..  code-block:: rst
 
     ..  this is a comment
         with another line
@@ -73,6 +78,8 @@ If you want to use a character, which would create some special reST markup,
 with its normal meaning, you must escape it with a prepended "\".
 
 For example surrounding text with "*" signs normally makes it show up in italics. By
-escaping the special characters "*" you make the stars normal text characters::
+escaping the special characters "*" you make the stars normal text characters:
+
+..  code-block:: rst
 
     \*non-italic\*

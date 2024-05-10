@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: bash
 
 .. _reregister-versions:
 
@@ -17,7 +16,9 @@ The created branches can be pushed, to trigger the webhook.
 Once done, those branches can be removed again, to keep the repository clean.
 
 With a lot of versions release this task can get very tedious.
-To get over it in an efficient way, the following script can help with the task::
+To get over it in an efficient way, the following script can help with the task:
+
+.. code-block:: bash
 
    #!/bin/sh
 
@@ -40,7 +41,9 @@ To get over it in an efficient way, the following script can help with the task:
    rm -rf "/tmp/$EXTENSION"
 
 The script needs to be called with the repository name.
-If the script is saved with the name :file:`trigger_documentation_push.sh` this would be executed using this example::
+If the script is saved with the name :file:`trigger_documentation_push.sh` this would be executed using this example:
+
+.. code-block:: rst
 
    sh trigger_documentation_push.sh evoWeb/sf_register
 

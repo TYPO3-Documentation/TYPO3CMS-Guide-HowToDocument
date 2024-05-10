@@ -1,5 +1,4 @@
 .. include:: /Includes.rst.txt
-.. highlight:: rst
 .. index:: Official documentation; Local editing
 .. _docs-contribute-git-docker:
 
