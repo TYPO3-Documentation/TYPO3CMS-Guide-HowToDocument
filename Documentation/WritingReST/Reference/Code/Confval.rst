@@ -187,7 +187,7 @@ Confval-menu directive API
 The confval-menu directive has the following options:
 
 `:display:`
-    'table', 'list', 'tree': Different display forms, just try them out
+    `table`, `list`, `tree`: Different display forms, just try them out
 `:name:`
     Reserved by reStructuredText
 `:class:`
