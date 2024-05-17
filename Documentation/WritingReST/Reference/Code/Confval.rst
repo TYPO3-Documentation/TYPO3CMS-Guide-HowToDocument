@@ -159,7 +159,7 @@ the same page and want to list them in separate menus:
         Some Description
 
     ..  confval:: confval-2
-        :type: int
+        :type: string
         :default: 'Hello World'
 
         Some Description
