@@ -146,7 +146,7 @@ can be found on that page:
 
 
 If you use a confval menu together with nested confvals it will only list
-its child confvals. This is usefull if you have several groups of confvals on
+its child confvals. This is useful if you have several groups of confvals on
 the same page and want to list them in separate menues:
 
 ..  confval-menu::
