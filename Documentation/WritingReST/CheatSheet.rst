@@ -532,11 +532,13 @@ Source:
 :ref:`Configuration values <rest-confval>` (confval)
 ====================================================
 
+See also: :ref:`rest-confval`.
+
 **How it looks:**
 
 ..  confval:: title
-
-    :Required: true
+    :name: unique-title
+    :required: true
     :type: string or LLL reference
     :Scope: Display
     :Path: $GLOBALS > TCA > [table] > columns > [field]
@@ -548,8 +550,8 @@ Source:
 ..  code-block:: rst
 
     ..  confval:: title
-
-        :Required: true
+        :name: unique-title
+        :required: true
         :type: string or LLL reference
         :Scope: Display
         :Path: $GLOBALS > TCA > [table] > columns > [field]
