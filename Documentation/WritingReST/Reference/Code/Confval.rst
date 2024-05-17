@@ -53,7 +53,7 @@ Required configuration value
 
         The name of the field as shown in the form.
 
-Example: Configuration value with default value adn custom parameter
+Example: Configuration value with default value and custom parameter
 --------------------------------------------------------------------
 
 ..  confval:: fileCreateMask
