@@ -36,7 +36,11 @@ your convenience.
 
         ..  code-block:: bash
 
+            # in repositories with composer.lock in version control
+            composer install
+            
             # in repositories where the composer.lock is not in version control
+            # to prevent outdated packages due to a local composer.lock from earlier install-runs 
             composer update
 
 Then regenerate the code snippets. Official manuals should have a make command
