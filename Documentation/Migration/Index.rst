@@ -340,6 +340,7 @@ https://github.com/TYPO3-Documentation/render-guides/blob/main/Makefile
 A small example :file:`Makefile`:
 
 ..  literalinclude:: /CodeSnippets/_Makefile
+    :language: plaintext
     :caption: Makefile
 
 ..  hint::
