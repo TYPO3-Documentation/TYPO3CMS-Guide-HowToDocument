@@ -68,6 +68,8 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             start "Documentation-GENERATED-temp/Index.html"
 
+..  _rendering-wysiwyg:
+
 Rendering with more WYSIWYG-feeling (automatic re-rendering)
 ------------------------------------------------------------
 
