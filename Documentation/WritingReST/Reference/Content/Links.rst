@@ -129,6 +129,54 @@ Lorem Ipsum Dolor `Example Page`_ dolor sit
 
 .. _Example Page: https://example.org
 
+..  _linking-extensions:
+
+Linking extensions and composer packages
+========================================
+
+You can use the text role :rst:`:composer:` to create an infobox with information
+from and links to packagist. This way you can link to any TYPO3 extension
+that is also listed on packagist like :composer:`georgringer/news` and
+:composer:`b13/container`, any TYPO3 system extension like
+:composer:`typo3/cms-adminpanel` and any other Composer package like
+:composer:`typo3/testing-framework`:
+
+..  code-block:: rst
+
+    This way you can link to any TYPO3 extension
+    that is also listed on packagist like :composer:`georgringer/news` and
+    :composer:`b13/container`, any TYPO3 system extension like
+    :composer:`typo3/cms-adminpanel` and any other Composer package like
+    :composer:`typo3/testing-framework`:
+
+If you want to link to the TYPO3 Extension Repository (TER) you can use the
+text role :rst:`t3ext` instead and link extensions like :t3ext:`news` or
+system extensions like :t3ext:`adminpanel`:
+
+..  code-block:: rst
+
+    You can use the text role `t3ext` instead and link extensions like
+    :t3ext:`news` or system extensions like :t3ext:`adminpanel`:
+
+..  _linking-core-source:
+
+Linking source files of the TYPO3 Core
+======================================
+
+Any file within the TYPO3 Core can be linked using the text role :rst:`t3src`.
+
+You can link classes like the
+:t3src:`typo3/sysext/core/Classes/Pagination/SlidingWindowPagination.php`
+and any other file type like
+:t3src:`typo3/sysext/core/Resources/Private/Templates/ErrorPage/Error.html`.
+
+..  code-block:: rst
+
+    You can link classes like the
+    :t3src:`typo3/sysext/core/Classes/Pagination/SlidingWindowPagination.php`
+    and any other file type like
+    :t3src:`typo3/sysext/core/Resources/Private/Templates/ErrorPage/Error.html`.
+
 ..  index:: reST; Link targets
 ..  _link-targets-explanation:
 ..  _explicit-link-targets:
