@@ -73,6 +73,10 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 Rendering with more WYSIWYG-feeling (automatic re-rendering)
 ------------------------------------------------------------
 
+You want to write complex `reST` markup and directly see the
+rendered output, browser side-by-side with your editor? Then
+this section is for you!
+
 Often, especially in the later stages of creating documentation, you
 just edit small parts of the reST files, render the outcome manually
 and happily commit your changes.
