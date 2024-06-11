@@ -131,6 +131,7 @@ If you put the directive somewhere on the page it will list all confvals that
 can be found on that page:
 
 ..  confval-menu::
+    :name: confval-group-1
     :display: table
     :type:
     :default:
@@ -139,6 +140,7 @@ can be found on that page:
 ..  code-block:: rst
 
     ..  confval-menu::
+        :name: confval-group-1
         :display: table
         :type:
         :default:
@@ -150,6 +152,7 @@ its child confvals. This is useful if you have several groups of confvals on
 the same page and want to list them in separate menus:
 
 ..  confval-menu::
+    :name: confval-group-2
     :display: table
     :type:
 
@@ -167,6 +170,7 @@ the same page and want to list them in separate menus:
 ..  code-block:: rst
 
     ..  confval-menu::
+        :name: confval-group-2
         :display: table
         :type:
 
@@ -189,7 +193,7 @@ The confval-menu directive has the following options:
 `:display:`
     `table`, `list`, `tree`: Different display forms, just try them out
 `:name:`
-    Reserved by reStructuredText
+    A unique identifier for the confval menu for the "to top" button
 `:class:`
     Reserved by reStructuredText
 `:exclude-noindex:`
