@@ -163,7 +163,7 @@ system extensions like :t3ext:`adminpanel`:
 Linking source files of the TYPO3 Core
 ======================================
 
-Any file within the TYPO3 Core can be linked using the text role :rst:`t3src`.
+Any file within the TYPO3 Core can be linked to their source file on GitHub using the text role :rst:`t3src`.
 
 You can link classes like the
 :t3src:`typo3/sysext/core/Classes/Pagination/SlidingWindowPagination.php`
