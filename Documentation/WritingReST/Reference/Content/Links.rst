@@ -30,9 +30,9 @@ hover it:
 
 ..  figure:: /Images/link-headlines.png
 
-    Hover a headline to see it is linkable, then click the link symbol
+    Hover over a headline to see if it is linkable, then click the link icon
 
-After you click the link symbol you can copy the reST link from the modal that
+After you click the link icon you can copy the reST link from the modal that
 appears:
 
 ..  figure:: /Images/link-headlines-box.png
@@ -77,7 +77,7 @@ The link then looks like this in reST:
 However such a link would not work anymore if the section was moved to another
 page or if another section with the same headline was introduced.
 
-We suggest to make add a unique link anchors to the headline to be linked in this
+We suggest adding a unique link anchor to the headline to be linked to in this
 case. See section :ref:`Link anchors <link-targets-explanation>`.
 
 ..  index:: reST; External links
@@ -121,13 +121,13 @@ use so called named links to separate the link definitions from the text:
 
     Lorem Ipsum Dolor `Example Page`_ dolor sit
 
-    .. _Example Page: https://example.org
+    ..  _Example Page: https://example.org
 
 The result looks like this:
 
 Lorem Ipsum Dolor `Example Page`_ dolor sit
 
-.. _Example Page: https://example.org
+..  _Example Page: https://example.org
 
 ..  _linking-extensions:
 
@@ -147,7 +147,7 @@ that is also listed on Packagist like :composer:`georgringer/news` and
     that is also listed on packagist like :composer:`georgringer/news` and
     :composer:`b13/container`, any TYPO3 system extension like
     :composer:`typo3/cms-adminpanel` and any other Composer package like
-    :composer:`typo3/testing-framework`:
+    :composer:`typo3/testing-framework`
 
 If you want to link to the TYPO3 Extension Repository (TER) you can use the
 text role :rst:`t3ext` instead and link extensions like :t3ext:`news` or
@@ -156,14 +156,15 @@ system extensions like :t3ext:`adminpanel`:
 ..  code-block:: rst
 
     You can use the text role `t3ext` instead and link extensions like
-    :t3ext:`news` or system extensions like :t3ext:`adminpanel`:
+    :t3ext:`news` or system extensions like :t3ext:`adminpanel`
 
 ..  _linking-core-source:
 
 Linking source files of the TYPO3 Core
 ======================================
 
-Any file within the TYPO3 Core can be linked to their source file on GitHub using the text role :rst:`t3src`.
+Any file within the TYPO3 Core can be linked to their source file on GitHub using 
+the text role :rst:`t3src`.
 
 You can link classes like the
 :t3src:`typo3/sysext/core/Classes/Pagination/SlidingWindowPagination.php`
@@ -279,7 +280,6 @@ For example:
 
     The class :php:`MailMessage` can be used to generate and send a mail without
     using Fluid:
-
 
     ..  code-block:: rst
 
