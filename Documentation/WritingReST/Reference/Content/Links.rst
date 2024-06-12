@@ -135,7 +135,7 @@ Linking extensions and Composer packages
 ========================================
 
 You can use the text role :rst:`:composer:` to create an infobox with information
-from and links to packagist. This way you can link to any TYPO3 extension
+and links to Packagist. This way you can link to any TYPO3 extension
 that is also listed on packagist like :composer:`georgringer/news` and
 :composer:`b13/container`, any TYPO3 system extension like
 :composer:`typo3/cms-adminpanel` and any other Composer package like
