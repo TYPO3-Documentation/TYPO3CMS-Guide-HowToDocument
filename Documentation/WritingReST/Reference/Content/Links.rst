@@ -131,7 +131,7 @@ Lorem Ipsum Dolor `Example Page`_ dolor sit
 
 ..  _linking-extensions:
 
-Linking extensions and composer packages
+Linking extensions and Composer packages
 ========================================
 
 You can use the text role :rst:`:composer:` to create an infobox with information
