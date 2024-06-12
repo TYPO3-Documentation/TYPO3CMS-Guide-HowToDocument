@@ -68,6 +68,95 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
             start "Documentation-GENERATED-temp/Index.html"
 
+..  _rendering-wysiwyg:
+
+Rendering with more WYSIWYG-feeling (automatic re-rendering)
+------------------------------------------------------------
+
+You want to write complex `reST` markup and directly see the
+rendered output, browser side-by-side with your editor? Then
+this section is for you!
+
+Often, especially in the later stages of creating documentation, you
+just edit small parts of the reST files, render the outcome manually
+and happily commit your changes.
+
+However, in cases you write larger sections of text, you may want
+to get more immediate visual feedback on your changes, but do not
+want to manually trigger the rendering time and again.
+
+To make this easier, the project `garvinhicking/typo3-documentation-browsersync
+<https://github.com/garvinhicking/typo3-documentation-browsersync>`__
+has been created. This docker container solution provides an environment
+which permanently watches changes to any of the reST files and automatically
+triggers a re-rendering. The generated HTML output is then served with a
+local web server (vite-based) in which your browser automatically hot-reloads
+all changes and keeps the scroll position.
+
+This allows you to have a browser window next to your reST file editor
+to view progress.
+
+Since that whole environment is based on the official
+:ref:`TYPO3 documentation rendering container <t3renderguides:start>`
+and utilizes a docker container, it is simple to use. Also, all updates
+to the `render-guides` project are automatically merged into that
+project, so all bugfixes and new features of the PHP-based rendering always
+are in sync with this WYSIWYG-project, with a possibility of this becoming
+a regular TYPO3-documentation project (given positive feedback).
+
+The project itself has `documentation on the technical details
+<https://github.com/garvinhicking/typo3-documentation-browsersync/blob/main/README.md>`__
+but all you need is this docker/podman command:
+
+..  tabs::
+
+    ..  group-tab:: Linux
+
+        ..  code-block:: bash
+
+            docker run --rm -it --pull always \
+              -v "./Documentation:/project/Documentation" \
+              -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
+              -p 5173:5173 ghcr.io/garvinhicking/typo3-documentation-browsersync:latest
+            xdg-open "http://localhost:5173/Documentation-GENERATED-temp/Index.html"
+
+    .. group-tab:: MacOS
+
+        ..  code-block:: bash
+
+            docker run --rm -it --pull always \
+              -v "./Documentation:/project/Documentation" \
+              -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
+              -p 5173:5173 ghcr.io/garvinhicking/typo3-documentation-browsersync:latest
+            open "http://localhost:5173/Documentation-GENERATED-temp/Index.html"
+
+    ..  group-tab:: Windows
+
+        ..  code-block:: powershell
+
+            docker run --rm -it --pull always \
+              -v "./Documentation:/project/Documentation" \
+              -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
+              -p 5173:5173 ghcr.io/garvinhicking/typo3-documentation-browsersync:latest
+            start "http://localhost:5173/Documentation-GENERATED-temp/Index.html"
+
+The command above can also be added to your project's `Makefile` or
+you can create a bash alias like:
+
+..  code:: bash
+
+    alias render-wysiwyg="docker run --rm -it --pull always \
+                            -v './Documentation:/project/Documentation' \
+                            -v './Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp' \
+                            -p 5173:5173 ghcr.io/garvinhicking/typo3-documentation-browsersync:latest'"
+
+..  note::
+
+    If anything on your host operating system already utilizes the TCP port
+    `5173` you need to adapt that command to use another free TCP port for you,
+    and adapt the port in the web-browser URL.
+
+
 Publishing extension documentation to docs.typo3.org
 ====================================================
 
