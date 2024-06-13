@@ -125,7 +125,7 @@ P
 `PHP CS Fixer`,
 `PHP_CodeSniffer`,
 `PNG`,
-`PostgreSQL`,
+`PostgreSQL`
 
 Q
 
