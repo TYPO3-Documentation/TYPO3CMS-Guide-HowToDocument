@@ -119,6 +119,11 @@ O
 P
 
 `page TSconfig`,
+`PhpStorm`,
+`PHPStan`,
+`PHPUnit`,
+`PHP CS Fixer`,
+`PHP_CodeSniffer`,
 `PNG`,
 `PostgreSQL`
 
