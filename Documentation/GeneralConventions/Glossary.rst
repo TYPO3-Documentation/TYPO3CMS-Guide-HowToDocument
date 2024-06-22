@@ -36,13 +36,14 @@ C
 `command line`, run something at the command line,
 `command-line something`, run a command-line spell-checker,
 
+`Changelog`
+`checkbox`,
 `Composer`,
 `Core Team`, `TYPO3 Core Team`,
 `Core`, `TYPO3 Core`
 `cross-site scripting`,
 `Crowdin`,
 `CSV` (comma separated values),
-`checkbox`
 
 
 D
