@@ -23,6 +23,9 @@ No prior knowledge is required and support is always available for new contribut
 Once you have submitted your changes they won't be visible straight away. Someone in the Documentation Team
 will need to approve the changes first before they are published.
 
+More information on how your submissions ("PR"s, "Pull Requests") will receive
+feedback can be found in the chapter :ref:`review-policy`.
+
 **Workflows**
 
 There are two different ways in which you can make your changes before submitting them for approval.
