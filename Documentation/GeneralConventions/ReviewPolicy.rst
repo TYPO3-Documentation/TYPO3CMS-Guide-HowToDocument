@@ -40,7 +40,7 @@ the following:
     a pull request should only affect a single file or chapter, maybe even
     a section. Feel free to contribute multiple Pull Requests for multiple
     topics. This makes our review process quicker and easier.
-*   **Be open to feedback** our maintainers may have about the change,
+*   **Be open to feedback** that our maintainers may have about the change,
     and sometimes there will be questions or other comments that will help
     to finalize your contribution.
 *   Please **be patient for feedback** to your contribution. Our maintainers
