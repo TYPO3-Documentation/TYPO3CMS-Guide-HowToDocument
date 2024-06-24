@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: ! Review policy
-.. _review-policy:
+..  include:: /Includes.rst.txt
+..  index:: ! Review policy
+..  _review-policy:
 
 =============================================
 Policy for making and reviewing contributions
