@@ -14,7 +14,7 @@ With this document, we try to set up conventions and best practices.
 We welcome constructive feedback to this living document with suggestions
 to continuously improve our process.
 
-.. _review-policy-contributors:
+..  _review-policy-contributors:
 
 Policy for Contributors
 =======================
