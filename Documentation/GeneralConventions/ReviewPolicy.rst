@@ -137,7 +137,7 @@ After a Pull Request has been merged:
 *   Check if there were any **labels that require follow-up changes** to the
     Pull Request (like rework of wording, changing code snippets, adding
     screenshots). If applicable, a maintainer can either create the Pull
-    Request themself, or maybe ask contributors, if they want to follow up.
+    Request themself, or maybe ask contributors, if they want to create a follow-up.
 *   If a **backport** is needed, see :ref:`backport-changes` on how to perform this.
 *   The maintainer who merges a Pull Request can make a decision on the scope
     of the backport. If a backport is too hard or time-consuming to execute,
