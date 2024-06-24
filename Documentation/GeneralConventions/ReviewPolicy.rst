@@ -49,7 +49,7 @@ the following:
 If you are interested in the work of our maintainers, read on in the
 next section.
 
-.. _review-policy-maintainers:
+..  _review-policy-maintainers:
 
 Review policy for maintainers
 -----------------------------
