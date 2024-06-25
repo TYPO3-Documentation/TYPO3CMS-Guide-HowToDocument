@@ -157,21 +157,40 @@ Like picking "spaces or tabs" for intendation, or how to apply Uppercase Wording
 
 Here is a list of currently agreed stances:
 
+..  _review-policy-opinionated-sentencecase:
 *   We use "Sentence case" for all headlines, so only uppercase words at the
     beginning of a sentence, and following english language uppercasing rules,
     plus uppercase all special words found in our :ref:`Glossary <spelling-ref>`.
+
+..  _review-policy-opinionated-headlinelevel:
 *   Headline levels are used semantically/structurally, not visually. Their levels
     must follow logical rules and leave no levels out (for example, no headline of
     level 4 after a level 1 headline).
+
+
+..  _review-policy-opinionated-di:
 *   In PHP code examples, prefer Dependency Injection over `makeInstance` calls,
     whenever possible.
-*   PHP Coding Guidelines adhere to the PSR-2 standard, as described in the
-    :ref:`TYPO3 Coding Guidelines for PHP files <t3coreapi:cgl-general-requirements-for-php-files>`
+
+..  _review-policy-opinionated-cs:
+*   PHP Coding Guidelines adhere to a recent PSR/PER-CS standard, as described in the
+    :ref:`TYPO3 Coding Guidelines for PHP files <t3coreapi:cgl-general-requirements-for-php-files>`.
+    We may deviate from this in case of didactic or display reasons.
+
+..  _review-policy-opinionated-acronyms:
 *   When acronyms are used, the first usage of that in a chapter must always spell it out.
+
+..  _review-policy-opinionated-crosslink:
 *   Cross-link to other chapters when named specifically.
+
+..  _review-policy-opinionated-shortform:
 *   Always write "for example" instead of "e.g." or "i.e.", generally avoid abbreviations.
+
+..  _review-policy-opinionated-fqcn:
 *   When referencing PHP class names / object types, spell out their "Fully Qualified Class Name" (FQCN) on first use.
+
 *   See :ref:`format-rest-cgl` for coding guidelines of reST formatting.
+
 *   See :ref:`content-styleguide` for more spelling / writing rules.
 
 ..  _review-policy-todo:
