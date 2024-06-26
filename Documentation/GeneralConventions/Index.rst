@@ -101,6 +101,7 @@ be found in the subchapters.
     :caption: Table of contents
     :maxdepth: 1
 
+    ReviewPolicy
     ContentStyleGuide
     Glossary
     FileStructure

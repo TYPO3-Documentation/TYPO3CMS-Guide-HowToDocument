@@ -122,6 +122,9 @@ the ability to experiment and preview your changes locally before submitting the
     :ref:`ask for help <how-to-get-help>`. When your pull request is accepted,
     it will be merged. You will receive a notification email as soon as this happens.
 
+    More information on how your submissions ("PR"s, "Pull Requests") will receive
+    feedback can be found in the chapter :ref:`review-policy`.
+
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
 
@@ -198,7 +201,7 @@ For more information in this guide:
 
 *  :ref:`Formatting-with-reST`
 *  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/main/README.rst>`__
-
+*  :ref:`review-policy`
 
 For more information about GitHub see the help pages on GitHub or other
 resources, for example:
