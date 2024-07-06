@@ -9,6 +9,7 @@
                project-contact="https://typo3.slack.com/archives/C03TG7QJT"
                project-repository="https://github.com/georgringer/news"
                project-issues="https://github.com/georgringer/news/issues"
+               project-discussions="https://github.com/georgringer/news/discussions"
                edit-on-github-branch="main"
                edit-on-github="georgringer/news"
                typo3-core-preferred="11.5"
