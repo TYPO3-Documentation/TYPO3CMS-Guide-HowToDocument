@@ -14,7 +14,9 @@ Spelling, terms and glossary
 Spelling
 ========
 
-Pick the spelling and recommended terms from this list.
+This section defines how to spell certain trademark and product names.
+For a list of the TYPO3 terminology and their short descriptions,
+see :ref:`Spelling and TYPO3 Terminology <t3writing:1-spelling-and-typo3-terminology>`.
 
 
 A
@@ -32,15 +34,14 @@ B
 C
 
 `code sprint`,
-
 `command line`, run something at the command line,
 `command-line something`, run a command-line spell-checker,
-
-`Changelog`
+`Changelog`,
 `checkbox`,
 `Composer`,
 `Core Team`, `TYPO3 Core Team`,
-`Core`, `TYPO3 Core`
+`Core`, `TYPO3 Core`,
+`Core extension`,
 `cross-site scripting`,
 `Crowdin`,
 `CSV` (comma separated values),
@@ -49,10 +50,10 @@ C
 D
 
 `Data Processor`,
-`DBAL`
+`DBAL`,
 `Docker`,
 `Docker Compose`,
-`Doctrine`
+`Doctrine`,
 `Documentation Team`, `TYPO3 Documentation Team`,
 `DataHandler`,
 
@@ -62,7 +63,7 @@ E
 `Edit on GitHub`,
 `Edit on GitHub button`,
 `Edit on GitHub workflow`,
-`Extbase`
+`Extbase`,
 `Extension Manager`
 `extension`,
 
@@ -105,13 +106,13 @@ M
 `markup (the)`,
 `MariaDB`,
 `MySQL`,
-`MacOs`, outdated: Mac, `Mac OS X`,
+`macOS`, outdated: Mac, `Mac OS X`,
 `model-view-controller`,
 `MVC`,
 
 N
 
-`nginx`
+`nginx`,
 
 O
 
@@ -126,7 +127,7 @@ P
 `PHP CS Fixer`,
 `PHP_CodeSniffer`,
 `PNG`,
-`PostgreSQL`
+`PostgreSQL`,
 
 Q
 
@@ -135,16 +136,18 @@ Q
 
 R
 
-`reStructuredText`, `reST`, `richt text editor`, `RTE`
+`reStructuredText`, `reST`,
+`richt text editor`,
+`RTE`,
 
 
 S
 
 `sitepackage`,
-`Sphinx`
+`Sphinx`,
 `style guide (en)`, `Styleguide (de)`,
 `SVG`,
-`system extension`, not: 'sys extension', `core extension`
+`system extension` (not: 'sys extension'),
 
 
 T
@@ -162,7 +165,7 @@ T
 `TYPO3 Core Engine`,
 `TYPO3 Core Team`, `Core Team`,
 `TYPO3 Core Engine`,
-`TYPO3 v11`, `TYPO3 v11.5`, `TYPO3 v11 LTS`, `TYPO3 version 11`,
+`TYPO3 v12`, `TYPO3 v12.4`, `TYPO3 v12 LTS`, `TYPO3 version 12`,
 `TypoScript`,
 
 U
@@ -171,7 +174,7 @@ U
 
 V
 
-`ViewHelper`
+`ViewHelper`,
 
 W
 
@@ -190,7 +193,7 @@ reStructuredText
 
 reST
    `reStructuredText <https://docutils.sourceforge.io/rst.html>`__ is a 'Markup
-   Syntax and Parser Domponent of `Docutils
+   Syntax and Parser Component of `Docutils
    <https://docutils.sourceforge.io/index.html>`__'.
 
 TYPO3
