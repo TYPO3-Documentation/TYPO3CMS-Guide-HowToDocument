@@ -85,9 +85,9 @@ Creating extension documentation using the sample manual
 
    Complete the :file:`composer.json` as described in :ref:`t3coreapi:composer-json`.
 
-#. Populate Settings.cfg
+#. Populate guides.xml
 
-   Complete the :file:`Settings.cfg` as described in :ref:`settings-cfg`.
+   Complete the :file:`guides.xml` as described in :ref:`settings-guides-xml`.
 
 #. Render documentation
 
