@@ -8,62 +8,124 @@
 Including files
 ===============
 
+Includes can be used for two use cases in the documentation: Repeating text
+snippets used in several places or breaking up long pages into easier to edit
+subparts.
 
-*Recapitulation:* Each rst- or md-file will result in a url of its own. At parsing level
-these files are processed independently. Toctree directives are controlling the
-menu hierarchy of the contents. For each file intermediate results are stored
-and each file will be processed during build.
+Some documentation projects have the same snippet of text appear in several
+places. This text can be maintained once and included in many places.
 
-Some documentation projects have the same snippet of text appear in several places.
-In this case it may make sense to *include* text snippets. The `..  include::`
-directive does this. What you need to know about *including* files:
+In this case it may make sense to *include* text snippets. The `..  include:: someFile.rst.txt`
+directive does this.
+
+Files to be included **cannot** lie outside the :path:`Documentation` folder.
+They **may not** end on `.rst`. By convention they **should** end on `.rst.txt`.
+
+..  contents::
+    :caption: Table of contents
+
+..  _including-files-example-simple:
+
+Example of a simple include:
+============================
+
+Include the same text asking for contributions in all Events that do not
+have an example yet:
+
+..  code-block:: rst
+    :caption: Documentation/Events/Event1.rst
+
+    Example
+    =======
+
+    ..  include:: /_includes/EventsContributeNote.rst.txt
 
 
-..  _how-to-document-including-files-advantages:
+..  code-block:: rst
+    :caption: Documentation/Events/SomeOtherEvent.rst
 
-Advantages
+    Example
+    =======
+
+    ..  include:: /_includes/EventsContributeNote.rst.txt
+
+The file to be included:
+
+..  code-block:: rst
+    :caption: Documentation/_includes/EventsContributeNote.rst.txt
+
+    ..  note::
+        Currently, we do not have an example for this event. If you can provide a
+        useful one, please open an issue ...
+
+These rst definitions will be included in all places the include is used as if
+they had been written directly into the rst file. All markup is respected.
+
+
+..  _including-files-example-advanced:
+
+Example: Break up a large file into manageable pieces
+=====================================================
+
+In places like the TSconfig reference or TCA reference it is helpful to display
+all properties of an element on one page. However this gives the contributors
+very large rst files to maintain. Such files can be broken into pieces that
+contain only the definition and maybe example of one parameter each.
+
+..  code-block:: rst
+    :caption: Documentation/ColumnsConfig/Type/Category/Index.rst
+
+    Properties of the TCA column type `category`
+    ============================================
+
+    ..  confval-menu::
+        :display: table
+        :type:
+        :Scope:
+
+        ..  include:: _Properties/_Default.rst.txt
+            :show-buttons:
+
+        ..  include:: _Properties/_ExclusiveKeys.rst.txt
+            :show-buttons:
+
+        ..  include:: _Properties/_ForeignTable.rst.txt
+            :show-buttons:
+
+Each include file in turn contains the complete data for one property, for
+example:
+
+..  code-block:: rst
+    :caption: Documentation/ColumnsConfig/Type/Category/_Properties/_ExclusiveKeys.rst.txt
+
+    ..  _columns-category-properties-exclusivekeys:
+
+    ..  confval:: exclusiveKeys
+        :name: category-exclusiveKeys
+        :type: string (list of)
+
+        List of keys that exclude any other keys ...
+
+The option `:show-buttons:` display a special "Edit on GitHub" button only for
+the section contained within include:
+
+..  figure:: /Images/include-with-button.png
+
+    The edit on GitHub button of an included section
+
+
+..  _include-properties:
+
+Properties
 ==========
-#.  Includes are performed on a textual basis and therefore
-    processed in a very fast manner when the parent file is parsed.
 
-#.  Includes do not lead to intermediate results that need to be resolved during build.
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
 
+    ..  include:: _Include/_Content.rst.txt
+        :show-buttons:
 
-..  _how-to-document-including-files-disadvantages:
-
-Disadvantages
-=============
-#.  Since includes are treated as if the text had been written exactly
-    where the include is done the text needs to fit with respect to
-    the section levels.
-
-#.  You cannot see the source of included text when clicking on "Show source of the page".
-
-#.  The "Edit on GitHub" button cannot take you directly to the editing of included files.
-    It still can be done but needs much more knowledge about the GitHub interface.
-
-#.  When Sphinx reports warnings and errors the exact text location can be much harder to spot.
-
-
-..  _how-to-document-including-files-recommendations:
-
-Recommendations
-===============
-
-..  attention::
-
-    Includes can easily cause trouble. Think well before using them.
-
-..  important::
-
-    Do not use the file endings :file:`.rst` or :file:`.md` for include files
-    to prevent Sphinx from treating them as individual source files! In case
-    you have many include files this would lead to many warnings and slow down
-    the build process considerably. Use :file:`*.rst.txt`.
-    The ending :file:`.rst.txt` can be used in PhpStorm and :file:`.editorconfig`
-    to define a reST file type.
-
-..  warning::
-
-    You cannot include files from outside the :file:`Documentation/` folder.
-
+    ..  include:: _Include/_ShowButtons.rst.txt
+        :show-buttons:

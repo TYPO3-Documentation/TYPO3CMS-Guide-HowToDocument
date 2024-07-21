@@ -1,0 +1,14 @@
+..  confval:: [content]
+    :name: directive-include-content
+    :type: string, local file path, relative or absolute
+
+    Path to the file to be included. Can be relative or absolute.
+
+    ..  code-block:: rst
+
+        ..  include:: /some/absolute/path/_includes/_SomeFile.rst.txt
+
+        ..  include:: ../_includes/_SomeFile.rst.txt
+
+    The path is calculated starting from the :path:`Documentation` directory.
+    It is not possible to include files from different locations in an extension.
