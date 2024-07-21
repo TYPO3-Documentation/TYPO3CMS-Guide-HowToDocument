@@ -1,0 +1,16 @@
+..  confval:: :source:
+    :name: directive-viewhelper-source
+    :type: string, local file path, relative or absolute
+
+    Path to the source JSON file to be included. Can be relative or absolute.
+
+    ..  code-block:: rst
+
+        ..  viewhelper:: my.viewhelper
+            :source: /some/absolute/path/_includes/_my_viewhelper.json
+
+        ..  viewhelper:: my.viewhelper
+            :source: ../_includes/_my_viewhelper.json
+
+    The path is calculated starting from the :path:`Documentation` directory.
+    It is not possible to include files from different locations in an extension.

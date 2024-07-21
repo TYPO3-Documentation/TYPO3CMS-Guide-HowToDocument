@@ -1,0 +1,22 @@
+..  confval:: :sortBy:
+    :name: directive-viewhelper-sortBy
+    :type: string
+    :default: `name`
+
+    Ordering of the argument list.
+
+    name
+        Sort the arguments alphabetically by name
+
+    json
+        Sort the arguments in the order they appear in the JSON file.
+
+    ..  code-block:: rst
+
+        ..  typo3:viewhelper:: split
+            :source: resources/global_viewhelpers_demo.json
+            :sortBy: name
+
+        ..  typo3:viewhelper:: image
+            :source: resources/global_viewhelpers_demo.json
+            :sortBy: json

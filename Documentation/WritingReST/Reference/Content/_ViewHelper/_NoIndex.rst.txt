@@ -1,0 +1,9 @@
+..  confval:: :noindex:
+    :name: directive-viewhelper-noindex
+    :type: bool
+
+    If set the ViewHelper will only be displayed but cannot be linked and is not
+    added to any indexes. This is useful if the same ViewHelper should be
+    displayed in several places within the same document. In such a case there
+    would be a clash of identifiers and warnings in the rendering if `:noindex:`
+    is not set.

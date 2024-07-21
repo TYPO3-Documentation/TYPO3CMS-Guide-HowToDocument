@@ -1,0 +1,31 @@
+
+{
+  "namespace": "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers",
+  "viewHelpers": {
+    "split": {
+      "className": "TYPO3Fluid\\Fluid\\ViewHelpers\\SplitViewHelper",
+      "...": "..."
+    },
+    "link.external":{
+      "className": "TYPO3\\CMS\\Fluid\\ViewHelpers\\Link\\ExternalViewHelper",
+      "namespace": "TYPO3\\CMS\\Fluid\\ViewHelpers",
+      "name": "Link\\ExternalViewHelper",
+      "tagName": "link.external",
+      "documentation": "A ViewHelper for creating links to external targets.\n\nExamples\n========\n...",
+      "xmlNamespace": "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers",
+      "docTags": {},
+      "argumentDefinitions": {
+        "uri": {
+          "name": "uri",
+          "type": "string",
+          "description": "The URI that will be put in the href attribute of the rendered link tag",
+          "required": true,
+          "defaultValue": null,
+          "escape": null
+        }
+      },
+      "allowsArbitraryArguments": true
+    },
+    "...": "..."
+  }
+}
