@@ -74,11 +74,6 @@ everything went well. They can be ignored since these files are usually files th
 not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the Git history. Also delete
 file :file:`genindex.rst` in your Documentation directory (if available).
 
-Try out the rendering locally
-=============================
-
-Use our Docker container to render your documentation locally. Read more about it in
-:ref:`local rendering <rendering-docs>`.
 
 ..  _migrate-detailed-steps:
 
@@ -179,11 +174,20 @@ PHP-based rendering tool:
     rendering, and every file that is just a code snippet placed in an external file
     should be renamed to use a :file:`.rst.txt` extension instead.
 
-Recommendations
-===============
+
+Render your Documentation files locally
+=======================================
+
+Use our Docker container to render your documentation locally. Read more about it in
+:ref:`local rendering <rendering-docs>`.
 
 The following list is not a requirement to utilize the PHP-based rendering, but
 follows "best practice" to make the most of your documentation project.
+One of the most benefits is that it simplifies finding
+:ref:`errors <h2document:migrate-possible-errors>` in your rst code. 
+The :file:`Makefile` helps you to launch the local rendering described in :ref:`here <rendering-docs>`.
+You create the :file:`Makefile` in order to register the command shortcuts that you 
+would use to :ref:`render your Documentation locally <rendering-docs>`.
 
 ..  _migrate-to-makefile:
 
