@@ -72,7 +72,11 @@ converted, if some old settings were discarded, or errors occurred. When you see
 
 everything went well. They can be ignored since these files are usually files that
 not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the Git history. Also delete
-file :file:`genindex.rst` in your Documentation directory (if available).
+file :file:`genindex.rst` in your documentation directory (if available).
+
+While you could already jump in and render your docs directly
+(see :ref:`local rendering <rendering-docs>`), we suggest to clean up some other
+things first (:ref:`see <h2document:migrate-detailed-steps>`).
 
 
 ..  _migrate-detailed-steps:
@@ -184,10 +188,10 @@ Use our Docker container to render your documentation locally. Read more about i
 The following list is not a requirement to utilize the PHP-based rendering, but
 follows "best practice" to make the most of your documentation project.
 One of the biggest benefit is, that it simplifies finding
-:ref:`errors <h2document:migrate-possible-errors>` in your rst code. 
+:ref:`errors <h2document:migrate-possible-errors>` in your rst code.
 The :file:`Makefile` helps you to launch the local rendering described in :ref:`here <rendering-docs>`.
-You create the :file:`Makefile` in order to register the command shortcuts that you 
-would use to :ref:`render your Documentation locally <rendering-docs>`.
+You create the :file:`Makefile` in order to register the command shortcuts that you
+would use to :ref:`render your documentation locally <rendering-docs>`.
 
 ..  _migrate-to-makefile:
 
@@ -199,14 +203,15 @@ the utility `GNU make <https://www.gnu.org/software/make/manual/make.html>`_
 to be available on your Unix-based operating system (Linux, macOS, WSL on Windows,
 for example).
 
-This allows you to perform shortcuts to render your documentation instead
-of typing a long :bash:`docker run...` or :bash:`podman run...` command:
+This allows you to render your documentation by using
 
 ..  code-block:: shell
 
     make docs
 
-You should see something like this
+instead of typing a long :bash:`docker run...` or :bash:`podman run...` command.
+
+When rendering locally you should ideally see something like this
 
 .. code-block:: text
 
