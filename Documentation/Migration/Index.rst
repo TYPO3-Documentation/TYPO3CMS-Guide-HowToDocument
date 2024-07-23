@@ -72,7 +72,7 @@ converted, if some old settings were discarded, or errors occurred. When you see
 
 everything went well. They can be ignored since these files are usually files that
 not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the Git history. Also delete
-file :file:`genindex.rst` in your documentation directory (if available).
+file :file:`genindex.rst` in your :file:`Documentation/` directory (if available).
 
 While you could already jump in and render your documentation directly
 (see :ref:`local rendering <rendering-docs>`), we suggest to clean up the following other
