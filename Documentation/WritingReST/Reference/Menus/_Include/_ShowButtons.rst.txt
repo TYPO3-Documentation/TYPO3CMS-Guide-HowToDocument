@@ -1,0 +1,8 @@
+..  confval:: :show-buttons:
+    :name: directive-include-show-buttons
+    :type: string, local file path, relative or absolute
+
+    If set an edit on GitHub Button is displayed if the
+    :ref:`edit-on-github workflow <settings-guides-github-workflow>` is enabled
+    in the :ref:`guides.xml <guides-xml>`. In future other buttons might be
+    displayed if configured in the guides.xml.
