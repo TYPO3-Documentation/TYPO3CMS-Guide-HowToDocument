@@ -75,7 +75,7 @@ not need to be converted. You can now delete :file:`Settings.cfg`. If you ever s
 file :file:`genindex.rst` in your documentation directory (if available).
 
 While you could already jump in and render your documentation directly
-(see :ref:`local rendering <rendering-docs>`), we suggest to clean up some other
+(see :ref:`local rendering <rendering-docs>`), we suggest to clean up the following other
 things first (:ref:`see <h2document:migrate-detailed-steps>`).
 
 
