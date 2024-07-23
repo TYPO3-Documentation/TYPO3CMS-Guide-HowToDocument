@@ -191,7 +191,7 @@ One of the biggest benefit is, that it simplifies finding
 :ref:`errors <h2document:migrate-possible-errors>` in your reST syntax.
 The :file:`Makefile` helps you to launch the local rendering described in :ref:`here <rendering-docs>`.
 You create the :file:`Makefile` in order to register the command shortcuts that you
-would use to :ref:`render your documentation locally <rendering-docs>`.
+would use to :ref:`render your documentation locally <rendering-docs>` and also provide an entry point for further shortcuts (like testing).
 
 ..  _migrate-to-makefile:
 
