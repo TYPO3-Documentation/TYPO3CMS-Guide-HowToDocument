@@ -188,7 +188,7 @@ Use our Docker container to render your documentation locally. Read more about i
 The following list is not a requirement to utilize the PHP-based rendering, but
 follows "best practice" to make the most of your documentation project.
 One of the biggest benefit is, that it simplifies finding
-:ref:`errors <h2document:migrate-possible-errors>` in your rst code.
+:ref:`errors <h2document:migrate-possible-errors>` in your reST syntax.
 The :file:`Makefile` helps you to launch the local rendering described in :ref:`here <rendering-docs>`.
 You create the :file:`Makefile` in order to register the command shortcuts that you
 would use to :ref:`render your documentation locally <rendering-docs>`.
