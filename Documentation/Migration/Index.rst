@@ -74,7 +74,7 @@ everything went well. They can be ignored since these files are usually files th
 not need to be converted. You can now delete :file:`Settings.cfg`. If you ever should need it again it is still in the Git history. Also delete
 file :file:`genindex.rst` in your documentation directory (if available).
 
-While you could already jump in and render your docs directly
+While you could already jump in and render your documentation directly
 (see :ref:`local rendering <rendering-docs>`), we suggest to clean up some other
 things first (:ref:`see <h2document:migrate-detailed-steps>`).
 
