@@ -19,7 +19,10 @@ is split into "sections" instead. Those sections are identified by titles which
 1. Use underlining plus overlining with `===` for the first section title of a
     file. The first section title is the "document title" (**doctitle**) of that
     file and will appear in the menu. Every .rst file should have a title, each
-    title should have a :ref:`link-anchor`:
+    title should have a link anchor. In :ref:`link-anchor` we describe 
+    our recommended best way how to build a link anchor in the official 
+    TYPO3 documentation. Here you see a title and a link anchor in
+    action:
 
 ..  code-block:: rst
 
