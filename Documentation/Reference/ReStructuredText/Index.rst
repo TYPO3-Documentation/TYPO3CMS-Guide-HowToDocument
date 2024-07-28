@@ -1,10 +1,12 @@
+:navigation-title: reStructuredText
+
 ..  include:: /Includes.rst.txt
 ..  index:: reST; Reference
 ..  _rest-reference:
 
-===========================
-Reference: reStructuredText
-===========================
+==========================
+reStructuredText Reference
+==========================
 
 ..  toctree::
     :titlesonly:

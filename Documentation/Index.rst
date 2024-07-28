@@ -96,6 +96,15 @@ reStructuredText (reST).
     GeneralConventions/Index
     WritingReST/Index
 
+
+..  toctree::
+    :hidden:
+    :caption: REFERENCE
+    :glob:
+
+    Reference/*
+    Reference/ReStructuredText/Index
+
 ..  toctree::
     :hidden:
     :caption: HOWTOS

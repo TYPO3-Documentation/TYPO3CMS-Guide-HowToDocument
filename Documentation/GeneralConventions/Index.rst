@@ -104,8 +104,6 @@ be found in the subchapters.
     ReviewPolicy
     ContentStyleGuide
     Glossary
-    FileStructure
-    GuidesXml
     Format
     CodingGuidelines
     GuidelinesForImages
