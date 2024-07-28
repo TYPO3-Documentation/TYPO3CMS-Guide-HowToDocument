@@ -164,8 +164,10 @@ of a manual.
             <guides xmlns="https://www.phpdoc.org/guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
             >
-                <project title="News system" release="main (development)" version="main (development)"
-                         copyright="since 2010 by Georg Ringer &amp; Contributors"/>
+                <project title="News system"
+                         version="local"
+                         copyright="since 2010 by Georg Ringer &amp; Contributors"
+                />
             </guides>
 
         .. _settings-guides-version-and-release:
@@ -175,28 +177,17 @@ of a manual.
             :type: string
 
             When documentation is rendered in the GitHub action for deployment onto
-            https://docs.typo3.org the version is set automatically to the extension's
+            https://docs.typo3.org **the version is set automatically** to the extension's
             version derived from the Git tag. Setting the version in the
             :file:`guides.xml` only affects local rendering.
 
-            The attributes *version* and *release* both contain the version of the manual
-            and mostly correspond to the version of the TYPO3 LTS or TYPO3 extension to
-            which the documentation refers.
+        ..  confval:: release
+            :name: guides-project-release
+            :type: string
 
-            The version is shown below the title in the theme's release switch and in the
-            title meta tag, the release is not shown currently  - but it should be
-            kept anyway to satisfy internal requirements.
-
-            version
-                The major project version, used as the replacement for :rst:`|version|`.
-                For example this may be something like 12.4.
-
-            release
-                The full project version, used as the replacement for :rst:`|release|`
-                For example 12.4.15-dev.
-
-            If you do not need the separation provided between version and release,
-            just set them both to the same value.
+            You can set the `release` property to the release number of your
+            document and output this value using :rst:`|release|` within
+            your text if you desire to. Usually it is not used.
 
         .. _settings-guides-copyright:
 
