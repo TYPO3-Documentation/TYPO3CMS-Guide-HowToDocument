@@ -211,7 +211,7 @@ Link anchors should contain alphanumeric signs plus hyphen: (`[a-z][0-9][-]`).
 All other signs are automatically transformed by the symfony
 :php:`Symfony\Component\String\Slugger\AsciiSlugger`.
 
-A useful recipe is:
+A recommended recipe could be:
 
 #.  Duplicate the headline
 #.  Transform to lowercase
