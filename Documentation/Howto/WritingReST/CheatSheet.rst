@@ -3,7 +3,7 @@
 ..  ------------------------------------------------------------------------
     header label:  You can use this to create
     cross-references: To link to the next section, use :ref:`rest-cheat-sheet`
-    or :ref:`h2document:rest-cheat-sheet` from another manual
+    or :ref:`rest-cheat-sheet` from another manual
     -------------------------------------------------------------------------
 
 
@@ -126,7 +126,7 @@ Or, when cross-referencing to other manuals:
 
     :ref:`shortcut:label`
 
-:ref:`h2document:intersphinx`
+:ref:`intersphinx`
 
 
 When you are linking to another manual, make sure the
@@ -609,7 +609,7 @@ Source:
     text with a green box (as styled by our sphinx template).
     ---------------------------------------------------------------
 
-Visit :ref:`h2document:rest-admonitions` to see the available admonitions.
+Visit :ref:`rest-admonitions` to see the available admonitions.
 
 **How it looks:**
 

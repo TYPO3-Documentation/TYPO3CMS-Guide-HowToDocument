@@ -78,7 +78,7 @@ file :file:`genindex.rst` in your :file:`Documentation/` directory (if available
 
 While you could already jump in and render your documentation directly
 (see :ref:`local rendering <rendering-docs>`), we suggest to clean up the following other
-things first (:ref:`see <h2document:migrate-detailed-steps>`).
+things first (:ref:`see <migrate-detailed-steps>`).
 
 
 ..  _migrate-detailed-steps:
@@ -190,7 +190,7 @@ Use our Docker container to render your documentation locally. Read more about i
 The following list is not a requirement to utilize the PHP-based rendering, but
 follows "best practice" to make the most of your documentation project.
 One of the biggest benefits is, that this simplifies finding
-:ref:`errors <h2document:migrate-possible-errors>` in your reST syntax.
+:ref:`errors <migrate-possible-errors>` in your reST syntax.
 The :file:`Makefile` helps you to launch the local rendering described in :ref:`here <rendering-docs>`.
 You create the :file:`Makefile` in order to register the command shortcuts that you
 would use to :ref:`render your documentation locally <rendering-docs>` and also provide an entry point for further shortcuts (like testing).
@@ -259,7 +259,7 @@ Inventory link with key ... not found
 
 .. code-block:: text
 
-    [2024-03-13T12:26:40.940930+00:00] app.WARNING: Inventory link with key "h2document:rest-common-pitfalls"
+    [2024-03-13T12:26:40.940930+00:00] app.WARNING: Inventory link with key "rest-common-pitfalls"
     (rest-common-pitfalls) not found.  {"rst-file":"GeneratedExtension/Index","type":"ref","targetRef
 
 We see already that we have to go to file :file:`GeneratedExtension/Index` in the directory "Documentation".
@@ -267,7 +267,7 @@ In there we have to delete the line which contains
 
 .. code-block:: text
 
-    * :ref:`h2document:rest-common-pitfalls`
+    * :ref:`rest-common-pitfalls`
 
 But whether we should delete the reference or not depends on the special case. In this case the whole section was removed.
 So here it is useful to delete the reference.

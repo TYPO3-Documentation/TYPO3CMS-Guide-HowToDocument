@@ -179,6 +179,7 @@ and any other file type like
     :t3src:`typo3/sysext/core/Resources/Private/Templates/ErrorPage/Error.html`.
 
 ..  index:: reST; Link targets
+..  _link-anchor:
 ..  _link-targets-explanation:
 ..  _explicit-link-targets:
 
@@ -201,10 +202,26 @@ Place the link anchor definition directly before the section header:
 
 ..  code-block:: rst
 
-    ..  _columns-inline:
+    ..  _inline-columns:
 
     Inline columns
     ==============
+
+Link anchors should contain alphanumeric signs plus hyphen: (`[a-z][0-9][-]`).
+All other signs are automatically transformed by the symfony
+:php:`Symfony\Component\String\Slugger\AsciiSlugger`.
+
+A recommended recipe could be:
+
+#.  Duplicate the headline
+#.  Transform to lowercase
+#.  Replace all blanks by a hyphens `-`
+#.  Remove all non-alphanumeric characters or replace them by a hyphen `-`
+#.  Add `.. _` at the beginning.
+#.  Add `:` at the end.
+
+We are currently trying to let `Fractor support <https://github.com/andreaswolf/fractor/issues/206>`
+this and other transformations.
 
 ..  index:: reST; Preventing links
 ..  _preventing-links:
