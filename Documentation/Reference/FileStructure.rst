@@ -171,6 +171,9 @@ that:
 
         Maintainers/Index
 
+..  include:: _FileStructure/_Includes.rst.txt
+    :show-buttons:
+
 .. index:: File structure; Documentation/Sitemap.rst, Sitemap.rst
 .. _sitemap-rst:
 
