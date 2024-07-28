@@ -18,13 +18,16 @@ is split into "sections" instead. Those sections are identified by titles which
 
 1. Use underlining plus overlining with `===` for the first section title of a
     file. The first section title is the "document title" (**doctitle**) of that
-    file and will appear in the menu. Every .rst file should have a doctitle:
+    file and will appear in the menu. Every .rst file should have a title, each
+    title should have a :ref:`link-anchor`:
 
 ..  code-block:: rst
 
-        ========
-        DocTitle
-        ========
+        ..  _doc-title:
+
+        ==============
+        Document Title
+        ==============
 
 2. Then use underlining only:
 
@@ -54,23 +57,38 @@ Example
 
 ..  code-block:: rst
 
-    ========
-    DocTitle
-    ========
+
+    ..  _document-title:
+
+    ==============
+    Document Title
+    ==============
 
     About this document ...
 
+    ..  _topic-1:
+
     Topic 1
     =======
+
     Here we go.
+
+    ..  _subtopic-1-1:
 
     Subtopic 1.1
     ------------
+
     Here we dive deeper
+
+
+    ..  _subsubtopic-1-1-1:
 
     Subsubtopic 1.1.1
     ~~~~~~~~~~~~~~~~~
+
     And this is even more specific.
+
+    ..  _topic-2:
 
     Topic 2
     =======
@@ -83,45 +101,33 @@ Syntax
 Length of Underlines
 --------------------
 
-The length of the underlines must at least have the length of the text. It
-may be longer, not shorter.
+The length of the underlines **should** at have the length of the text. It
+**should not** be longer or shorter.
 
 Example 1: This Works
 ~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: rst
 
+    ..  _example-1:
+
     =========
     Example 1
     =========
 
-Example 2: This Works Too
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 2: These headlines work but do not abide to the coding guidelines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: rst
 
+    ..  _example-2:
+
     ==============
-    Example 1
+    Example 2
     ==============
 
-Example 3: This Does not Work
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-..  code-block:: rst
+    ..  _example-3:
 
     =======
-    Example 1
+    Example 3
     =======
-
-
-
-Additional Information
-======================
-
-*   **Docutils:** Read about `sections
-    <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections>`__
-    in the Docutils documentation for the most fundamental description.
-
-*   **Sphinx** is explaining `sections
-    <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`__
-    as well.
