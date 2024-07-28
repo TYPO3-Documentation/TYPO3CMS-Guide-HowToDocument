@@ -35,7 +35,7 @@ The following rules are mandatory or your documentation will not render:
 Further conventions are:
 
 *   :ref:`Included reST files <including-files>` SHOULD have the extension
-    :file:`.rst.txt'.
+    :file:`.rst.txt`.
 *   Use **CamelCase** for directory and file names,
     for example: :file:`Documentation/GeneralConventions/FileStructure.rst`.
 *   Each directory SHOULD have a file named :file:`Index.rst` it is used as
