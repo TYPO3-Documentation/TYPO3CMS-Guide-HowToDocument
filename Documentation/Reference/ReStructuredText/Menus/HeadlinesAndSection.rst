@@ -121,6 +121,8 @@ Example 1: This Works
 Example 2: These headlines work but do not abide to the coding guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Here we see how we should not do it. The underlines are too long or too short.
+
 ..  code-block:: rst
 
     ..  _example-2:
