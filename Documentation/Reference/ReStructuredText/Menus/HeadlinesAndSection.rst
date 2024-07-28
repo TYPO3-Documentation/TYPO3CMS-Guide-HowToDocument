@@ -130,6 +130,8 @@ Here we see how we should not do it. The underlines are too long or too short.
     ==============
     Example 2
     ==============
+    
+    # Underline too long
 
     ..  _example-3:
 
