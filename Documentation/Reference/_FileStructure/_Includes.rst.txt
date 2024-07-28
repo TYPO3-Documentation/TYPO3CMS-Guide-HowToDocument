@@ -1,0 +1,30 @@
+.. _includes-rst-txt:
+
+Optional: :file:`Documentation/Includes.rst.txt`
+------------------------------------------------
+
+The :file:`Includes.rst.txt` is optional for Extension documentation. We use
+it by convention in all official documentation.
+
+By default it only contains a comment:
+
+..  code-block:: rst
+    :caption: Documentation/Includes.rst.txt
+
+    ..  You can put central messages to display on all pages here
+
+In the official documentation we use it to mark outdated and eLTS versions:
+
+..  code-block:: rst
+    :caption: Documentation/Includes.rst.txt
+
+    ..  You can put central messages to display on all pages here
+
+    ..  attention::
+        TYPO3 v10 has reached end-of-life as of April 30th 2023 and
+        is no longer being maintained. [...]
+
+Before :ref:`migration <migrate>` to the new rendering it also contained
+configuration settings. All those have been moved to the
+:ref:`guides.xml <guides-xml>` or have been replaced by defaults in our theme
+implementation.
