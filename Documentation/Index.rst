@@ -50,7 +50,7 @@ reStructuredText (reST).
 
         Go tho the cheat sheet containing a quick overview on how to use reStructuredText.
 
-        ..  card-footer:: :ref:`Go to the reST Cheat sheet <h2document:rest-cheat-sheet>`
+        ..  card-footer:: :ref:`Go to the reST Cheat sheet <rest-cheat-sheet>`
             :button-style: btn btn-secondary stretched-link
 
     ..  card:: Edit on GitHub
@@ -59,7 +59,7 @@ reStructuredText (reST).
         you are reading by applying the "Edit on GitHub" workflow. All you
         need is a GitHub account.
 
-        ..  card-footer:: :ref:`How to make quick fixes <h2document:docs-contribute-github-method>`
+        ..  card-footer:: :ref:`How to make quick fixes <docs-contribute-github-method>`
             :button-style: btn btn-secondary stretched-link
 
     ..  card:: Local rendering
@@ -69,21 +69,21 @@ reStructuredText (reST).
         your changes in and it also gives you the ability to experiment and
         preview your changes locally before submitting them for approval.
 
-        ..  card-footer:: :ref:`How to work locally with documentation <h2document:docs-contribute-git-docker>`
+        ..  card-footer:: :ref:`How to work locally with documentation <docs-contribute-git-docker>`
             :button-style: btn btn-secondary stretched-link
 
     ..  card:: Extension documentation
 
         This chapter explains how to write documentation for a new extension.
 
-        ..  card-footer:: :ref:`How to document an extension <h2document:write-doc-extensions-intro>`
+        ..  card-footer:: :ref:`How to document an extension <write-doc-extensions-intro>`
             :button-style: btn btn-secondary stretched-link
 
     ..  card:: System Extensions
 
         The chapter contains information on how you can make changes to system extension documentation.
 
-        ..  card-footer:: :ref:`How to document system extensions <h2document:contribute-to-system-extension>`
+        ..  card-footer:: :ref:`How to document system extensions <contribute-to-system-extension>`
             :button-style: btn btn-secondary stretched-link
 
 ..  toctree::
