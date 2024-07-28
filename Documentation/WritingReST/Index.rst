@@ -33,4 +33,3 @@ available. For more information, see other resources, such as:
     Introduction
     BasicRestSyntax
     CheatSheet
-    Reference/Index
