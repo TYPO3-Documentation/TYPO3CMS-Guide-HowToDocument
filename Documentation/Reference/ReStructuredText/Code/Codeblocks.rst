@@ -369,14 +369,14 @@ code block.
         ..  code-block:: rst
             :caption: Documentation/SiteConfiguration/Index.rst
 
-            ..  literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
+            ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
                 :language: yaml
                 :emphasize-lines: 5,10-13
                 :linenos:
 
     ..  group-tab:: Output
 
-        ..  literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
+        ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
             :language: yaml
             :emphasize-lines: 5,10-13
             :linenos:
@@ -391,13 +391,13 @@ without having to create a diff file first:
         ..  code-block:: rst
             :caption: Documentation/SiteConfiguration/Index.rst
 
-            ..  literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
-                :diff: /CodeSnippets/LiteralIncludes/example_de.yaml
+            ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
+                :diff: /_CodeSnippets/LiteralIncludes/example_de.yaml
 
     ..  group-tab:: Output
 
-        ..  literalinclude:: /CodeSnippets/LiteralIncludes/example.yaml
-            :diff: /CodeSnippets/LiteralIncludes/example_de.yaml
+        ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
+            :diff: /_CodeSnippets/LiteralIncludes/example_de.yaml
 
 
 See also `literalinclude directive

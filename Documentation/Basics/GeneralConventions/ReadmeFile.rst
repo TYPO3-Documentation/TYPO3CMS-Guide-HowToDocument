@@ -18,23 +18,23 @@ example:
 
     ..  group-tab:: With placeholders
 
-        ..  include:: /CodeSnippets/FileStructure/ReadmeRst.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/ReadmeRst.rst.txt
 
     ..  group-tab:: Third-party extension
 
-        ..  include:: /CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
 
     ..  group-tab:: System extension
 
-        ..  include:: /CodeSnippets/FileStructure/Dashboard/IndexRst.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/Dashboard/IndexRst.rst.txt
 
     ..  group-tab:: Official manual
 
-        ..  include:: /CodeSnippets/FileStructure/GettingStarted/IndexRst.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/GettingStarted/IndexRst.rst.txt
 
     ..  group-tab:: Markdown
 
-        ..  include:: /CodeSnippets/FileStructure/ReadmeMd.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/ReadmeMd.rst.txt
 
 
 .. _readme-rst-badges:
@@ -50,11 +50,11 @@ monthly download rate and the supported TYPO3 versions:
 
     ..  group-tab:: reStructured Text
 
-        ..  include:: /CodeSnippets/FileStructure/Badges.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/Badges.rst.txt
 
     ..  group-tab:: Markdown
 
-        ..  include:: /CodeSnippets/FileStructure/BadgesMd.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/BadgesMd.rst.txt
 
 
 Remove this field if the project is no extension or package.

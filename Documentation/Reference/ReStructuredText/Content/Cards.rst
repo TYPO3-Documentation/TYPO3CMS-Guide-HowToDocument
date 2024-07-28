@@ -176,7 +176,7 @@ Cards with images
 
     ..  card:: :ref:`Cards <rest-cards>`
 
-        ..  card-image:: /Images/cards.png
+        ..  card-image:: /_Images/cards.png
             :alt: Cards, example output
 
         Cards can be used to shortly introduce topics and generate
@@ -184,14 +184,14 @@ Cards with images
 
     ..  card:: :ref:`Tabs <rest-tabs>`
 
-        ..  card-image:: /Images/tabs.png
+        ..  card-image:: /_Images/tabs.png
             :alt: Tabs, example output
 
         Tabs can be used to present a topic from different perspectives.
 
     ..  card:: :ref:`Cards <rest-cards>`
 
-        ..  card-image:: /Images/cards.png
+        ..  card-image:: /_Images/cards.png
             :alt: Cards, example output
 
         Cards can be used to shortly introduce topics and generate
@@ -200,7 +200,7 @@ Cards with images
 
     ..  card:: :ref:`Tabs <rest-tabs>`
 
-        ..  card-image:: /Images/tabs.png
+        ..  card-image:: /_Images/tabs.png
             :alt: Tabs, example output
             :position: bottom
 
@@ -219,7 +219,7 @@ Cards with images
 
         ..  card:: :ref:`Cards <rest-cards>`
 
-            ..  card-image:: /Images/cards.png
+            ..  card-image:: /_Images/cards.png
                 :alt: Cards, example output
 
             Cards can be used to shortly introduce topics and generate
@@ -227,14 +227,14 @@ Cards with images
 
         ..  card:: :ref:`Tabs <rest-tabs>`
 
-            ..  card-image:: /Images/tabs.png
+            ..  card-image:: /_Images/tabs.png
                 :alt: Tabs, example output
 
             Tabs can be used to present a topic from different perspectives.
 
         ..  card:: :ref:`Cards <rest-cards>`
 
-            ..  card-image:: /Images/cards.png
+            ..  card-image:: /_Images/cards.png
                 :alt: Cards, example output
 
             Cards can be used to shortly introduce topics and generate
@@ -243,7 +243,7 @@ Cards with images
 
         ..  card:: :ref:`Tabs <rest-tabs>`
 
-            ..  card-image:: /Images/tabs.png
+            ..  card-image:: /_Images/tabs.png
                 :alt: Tabs, example output
                 :position: bottom
 

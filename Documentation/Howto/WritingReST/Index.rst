@@ -1,3 +1,5 @@
+:navigation-title: Write ReST
+
 ..  include:: /Includes.rst.txt
 ..  index::
     reStructuredText

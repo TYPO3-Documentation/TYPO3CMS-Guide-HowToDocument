@@ -1,3 +1,5 @@
+:navigation-title: Edit on GitHub
+
 .. include:: /Includes.rst.txt
 .. index:: pair: Official documentation; "Edit on GitHub"
 .. _docs-contribute-github-method:
@@ -28,7 +30,7 @@ Workflow #1: "Edit on GitHub"
    At the top right of every page you will find an icon that says "Edit me on Github".
    Selecting this link will take you to that pages repository on GitHub.
 
-   .. image:: /Images/edit_me_on_github.png
+   .. image:: /_Images/edit_me_on_github.png
       :class: with-border with-shadow
 
 4. Fork the repository:
@@ -36,7 +38,7 @@ Workflow #1: "Edit on GitHub"
    Click on the green button to fork the repository. This will clone the repository
    into your GitHub account, ready for you to make your changes in your browser.
 
-   .. image:: /Images/github-edit-fork.png
+   .. image:: /_Images/github-edit-fork.png
       :class: with-border with-shadow
 
 5. Make your changes:
@@ -45,7 +47,7 @@ Workflow #1: "Edit on GitHub"
    The *"Indent mode: Spaces"* and *"Indent size: 4"*
    values should already be set - do not alter these.
 
-   .. image:: /Images/github-edit-window.png
+   .. image:: /_Images/github-edit-window.png
       :class: with-border with-shadow
 
 
@@ -61,7 +63,7 @@ Workflow #1: "Edit on GitHub"
 
    You can go back and make further changes at any time, select the Edit file tab to continue editing.
 
-   .. image:: /Images/github-edit-preview.png
+   .. image:: /_Images/github-edit-preview.png
       :class: with-border with-shadow
 
 8. Finalize your changes:
@@ -70,7 +72,7 @@ Workflow #1: "Edit on GitHub"
    a short (but meaningful) description that outlines the changes you have made and click "Propose
    file change"
 
-   .. image:: /Images/github-propose-file-changes.png
+   .. image:: /_Images/github-propose-file-changes.png
       :class: with-border with-shadow
 
 9. Create pull request:
@@ -78,12 +80,12 @@ Workflow #1: "Edit on GitHub"
    GitHub will show you an overview of your changes. If you are happy with
    them, select "Create pull request".
 
-   .. image:: /Images/github-comparing-changes.png
+   .. image:: /_Images/github-comparing-changes.png
       :class: with-border with-shadow
 
    Finally, create your pull request:
 
-   .. image:: /Images/github-create-pull-request2.png
+   .. image:: /_Images/github-create-pull-request2.png
       :class: with-border with-shadow
 
 10. You're done!
@@ -108,13 +110,13 @@ See `June 2018: Developer Appreciation Day
 for an example.
 
 
-.. image:: /Images/dad-with-image.png
+.. image:: /_Images/dad-with-image.png
    :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
    :class: with-border with-shadow
 
 Scroll down to "Improving documentation":
 
-.. image:: /Images/dad-improve-docs.png
+.. image:: /_Images/dad-improve-docs.png
    :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
    :class: with-border with-shadow
 

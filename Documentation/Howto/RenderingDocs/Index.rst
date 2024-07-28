@@ -1,3 +1,5 @@
+:navigation-title: Render
+
 .. include:: /Includes.rst.txt
 .. Index::
     pair: Documentation; Rendering

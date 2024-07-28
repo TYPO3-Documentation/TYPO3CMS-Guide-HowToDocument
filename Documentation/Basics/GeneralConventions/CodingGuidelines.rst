@@ -50,7 +50,7 @@ Example:
 .. code-block:: rst
   :linenos:
 
-   .. image:: /Images/a4.jpg
+   .. image:: /_Images/a4.jpg
       :alt: Left floating image
       :target: https://typo3.org
       :class: with-shadow

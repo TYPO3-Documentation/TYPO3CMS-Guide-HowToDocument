@@ -1,3 +1,5 @@
+:navigation-title: Contribute
+
 .. include:: /Includes.rst.txt
 .. index:: Official documentation
 .. _contribute:
@@ -50,9 +52,8 @@ There are two different ways in which you can make your changes before submittin
       :ref:`docs-contribute-git-docker`
 
 
-.. toctree::
-   :hidden:
+..  toctree::
+    :hidden:
+    :glob:
 
-   GithubMethod
-   LocalEditing
-   HowYouCanHelp
+    *

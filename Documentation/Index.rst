@@ -90,11 +90,10 @@ reStructuredText (reST).
     :hidden:
     :caption: BASICS
 
-    About
-    HowToGetHelp
-    BasicPrinciples
-    GeneralConventions/Index
-    WritingReST/Index
+    Basics/About
+    Basics/HowToGetHelp
+    Basics/BasicPrinciples
+    Basics/GeneralConventions/Index
 
 
 ..  toctree::
@@ -109,17 +108,15 @@ reStructuredText (reST).
     :hidden:
     :caption: HOWTOS
 
-    Migration/Index
-    WritingDocForExtension/Index
-    WritingDocsOfficial/Index
-    RenderingDocs/Index
+    Howto/*
+    Howto/*/Index
 
 ..  toctree::
     :hidden:
     :caption: ADVANCED
 
-    HowToAddTranslation/Index
-    GeneralConventions/ReviewInformation
+    Advanced/HowToAddTranslation/Index
+    Advanced/ReviewInformation
 
 ..  toctree::
     :hidden:
