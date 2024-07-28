@@ -124,13 +124,13 @@ To get the icons
 ----------------
 
 Either download the zipfile and extract it.
-You can find the download link on https://github.com/TYPO3-Documentation/Images,
+You can find the download link on https://github.com/TYPO3-Documentation/_Images,
 
 Or clone the repository:
 
 .. code-block:: bash
 
-   git clone https://github.com/TYPO3-Documentation/Images
+   git clone https://github.com/TYPO3-Documentation/_Images
 
 
 The icons will be in images/final/icons.
@@ -168,7 +168,7 @@ Examples
 
    SVG image with rectangles and numbers
 
-.. figure:: /Images/edit_me_on_github+shadow.svg
+.. figure:: /_Images/edit_me_on_github+shadow.svg
    :class: with-shadow
    :alt: Image with arrow
 

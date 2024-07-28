@@ -1,3 +1,5 @@
+:navigation-title: Migrate
+
 ..  include:: /Includes.rst.txt
 ..  index::
     Documentation; Migration
@@ -323,7 +325,7 @@ The link is leading to
 We have to click the symbol next to the heading and copy the correct link
 which is the one for restructured text
 
-.. image:: /Images/get_link.png
+.. image:: /_Images/get_link.png
     :class: with-shadow
     :width: 600px
 
@@ -348,7 +350,7 @@ https://github.com/TYPO3-Documentation/render-guides/blob/main/Makefile
 
 A small example :file:`Makefile`:
 
-..  literalinclude:: /CodeSnippets/_Makefile
+..  literalinclude:: /_CodeSnippets/_Makefile
     :language: plaintext
     :caption: Makefile
 
@@ -376,7 +378,7 @@ ensure the extension's documentation renders without warnings.
 An example workflow on GitHub would be established via this file in
 :file:`.github/workflows/documentation.yml`:
 
-..  literalinclude:: /CodeSnippets/_documentation.yml
+..  literalinclude:: /_CodeSnippets/_documentation.yml
     :caption: .github/workflows/documentation.yml
 
 

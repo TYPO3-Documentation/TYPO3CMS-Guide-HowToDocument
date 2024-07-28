@@ -363,7 +363,7 @@ of a manual.
             *   A shortcode supported by the theme:
                 :ref:`Available default inventories <t3renderguides:available-default-inventories>`
 
-        ..  figure:: /Images/ReferenceThisHeadlineDialog.png
+        ..  figure:: /_Images/ReferenceThisHeadlineDialog.png
             :alt: Reference a headline dialog showing the shortcode georgringer/news
 
             Reference a headline in the EXT:news manual

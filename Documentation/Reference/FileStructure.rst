@@ -242,8 +242,8 @@ to the next steps, for example
 
     ..  group-tab:: Rest
 
-        ..  include:: /CodeSnippets/FileStructure/ReadmeRstStandalone.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/ReadmeRstStandalone.rst.txt
 
     ..  group-tab:: Markdown
 
-        ..  include:: /CodeSnippets/FileStructure/ReadmeMdStandalone.rst.txt
+        ..  include:: /_CodeSnippets/FileStructure/ReadmeMdStandalone.rst.txt

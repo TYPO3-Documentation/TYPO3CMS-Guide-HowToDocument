@@ -28,14 +28,14 @@ It is also possible to put an anchor almost anywhere and then link it.
 When an element in a manual can be linked a link symbol will appear when you
 hover it:
 
-..  figure:: /Images/link-headlines.png
+..  figure:: /_Images/link-headlines.png
 
     Hover over a headline to see if it is linkable, then click the link icon
 
 After you click the link icon you can copy the reST link from the modal that
 appears:
 
-..  figure:: /Images/link-headlines-box.png
+..  figure:: /_Images/link-headlines-box.png
 
     Copy the reST reference
 
@@ -64,7 +64,7 @@ including the colon.
 If there is a warning box displayed, that the link has no anchor, you can
 still link to it using a doc-reference:
 
-..  figure:: /Images/link-headlines-box-warning.png
+..  figure:: /_Images/link-headlines-box-warning.png
 
     Linking to a headline without an anchor
 
@@ -163,7 +163,7 @@ system extensions like :t3ext:`adminpanel`:
 Linking source files of the TYPO3 Core
 ======================================
 
-Any file within the TYPO3 Core can be linked to their source file on GitHub using 
+Any file within the TYPO3 Core can be linked to their source file on GitHub using
 the text role :rst:`t3src`.
 
 You can link classes like the

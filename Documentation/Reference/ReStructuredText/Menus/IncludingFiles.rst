@@ -109,7 +109,7 @@ example:
 The option `:show-buttons:` display a special "Edit on GitHub" button only for
 the section contained within include:
 
-..  figure:: /Images/include-with-button.png
+..  figure:: /_Images/include-with-button.png
 
     The edit on GitHub button of an included section
 

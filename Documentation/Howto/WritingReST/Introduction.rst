@@ -92,7 +92,7 @@ source files change, they are rerendered.
 
 Our headline example from above will look like this:
 
-..  image:: /Images/rendered-headers.png
+..  image:: /_Images/rendered-headers.png
     :class: with-shadow
 
 
@@ -105,7 +105,7 @@ at the source code by clicking on the :guilabel:`View source` at the top of a pa
 That way, you can see how it is done and compare the reST source with the
 rendered version.
 
-..  image:: /Images/view-page-source.png
+..  image:: /_Images/view-page-source.png
     :class: with-shadow
 
 

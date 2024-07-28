@@ -1,3 +1,5 @@
+:navigation-title: Document extensions
+
 .. include:: /Includes.rst.txt
 .. index:: Documentation; Extension
 .. _writing-doc-for-ext-start:

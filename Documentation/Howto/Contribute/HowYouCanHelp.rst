@@ -1,3 +1,5 @@
+:navigation-title: Help
+
 ..  include:: /Includes.rst.txt
 
 ..  _docs-official-how-you-can-help:
@@ -130,7 +132,7 @@ Here are some examples:
 
 *   :ref:`Check out sequence diagram on new page about request handling <t3coreapi:request-handling>`
 
-    ..  figure:: /Images/diagram.png
+    ..  figure:: /_Images/diagram.png
         :alt: Example of a sequence diagram about request handling
         :class: with-shadow
 

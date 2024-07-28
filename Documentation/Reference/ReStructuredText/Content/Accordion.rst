@@ -162,7 +162,7 @@ Accordion with complex content
         :name: headingThree3
         :header-level: 3
 
-        .. image:: /Images/q150_ffffff.png
+        .. image:: /_Images/q150_ffffff.png
            :alt: Image with background color #ffffff
            :class: with-border with-shadow
 
@@ -203,6 +203,6 @@ Accordion with complex content
             :name: headingThree3
             :header-level: 3
 
-            .. image:: /Images/q150_ffffff.png
+            .. image:: /_Images/q150_ffffff.png
                :alt: Image with background color #ffffff
                :class: with-border with-shadow

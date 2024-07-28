@@ -57,7 +57,7 @@ Examples
 Example 1: Scaled image with shadow and link target
 ---------------------------------------------------
 
-..  image:: /Images/a4.jpg
+..  image:: /_Images/a4.jpg
     :alt: Left floating image
     :target: https://typo3.org
     :class: with-shadow
@@ -66,7 +66,7 @@ Example 1: Scaled image with shadow and link target
 ..  code-block:: rst
     :linenos:
 
-    ..  image:: /Images/a4.jpg
+    ..  image:: /_Images/a4.jpg
         :alt: some image
         :target: https://typo3.org
         :class: with-shadow
@@ -93,7 +93,7 @@ Example 1: Scaled image with shadow and link target
 Example 2: Image with caption
 -----------------------------
 
-..  figure:: /Images/a4.jpg
+..  figure:: /_Images/a4.jpg
     :alt: Left floating image
     :target: https://typo3.org
     :class: with-shadow
@@ -104,7 +104,7 @@ Example 2: Image with caption
 ..  code-block:: rst
     :linenos:
 
-        ..  figure:: /Images/a4.jpg
+        ..  figure:: /_Images/a4.jpg
             :alt: some image
             :target: https://typo3.org
             :class: with-shadow
@@ -119,7 +119,7 @@ Example 2: Image with caption
 Example 3: Image with fixed width
 ---------------------------------
 
-..  image:: /Images/a4.jpg
+..  image:: /_Images/a4.jpg
     :alt: Left floating image
     :target: https://typo3.org
     :class: with-shadow
@@ -129,7 +129,7 @@ Example 3: Image with fixed width
 ..  code-block:: rst
     :linenos:
 
-    ..  image:: /Images/a4.jpg
+    ..  image:: /_Images/a4.jpg
         :alt: some image
         :target: https://typo3.org
         :class: with-shadow
@@ -145,7 +145,7 @@ Example 3: Image with fixed width
 Example 4: Image with float-left
 --------------------------------
 
-..  image:: /Images/a4.jpg
+..  image:: /_Images/a4.jpg
     :alt: Left floating image
     :target: https://typo3.org
     :class: with-shadow float-left
@@ -157,7 +157,7 @@ Some text ...  (will be displayed on the right of the image).
 
 ..  code-block:: rst
 
-    ..  image:: /Images/a4.jpg
+    ..  image:: /_Images/a4.jpg
         :alt: Left floating image
         :target: https://typo3.org
         :class: with-shadow float-left
@@ -177,5 +177,5 @@ Some text ...  (will be displayed on the right of the image).
 Example 5: Image with border
 ----------------------------
 
-..  image:: /Images/a4.jpg
+..  image:: /_Images/a4.jpg
     :class: with-border

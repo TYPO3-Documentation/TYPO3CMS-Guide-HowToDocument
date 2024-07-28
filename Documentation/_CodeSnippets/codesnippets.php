@@ -1,7 +1,7 @@
 <?php
 
 // https://github.com/TYPO3-Documentation/t3docs-codesnippets
-// ddev exec vendor/bin/typo3  restructured_api_tools:php_domain public/fileadmin/TYPO3CMS-Guide-HowToDocument/Documentation/CodeSnippets/
+// ddev exec vendor/bin/typo3  restructured_api_tools:php_domain public/fileadmin/TYPO3CMS-Guide-HowToDocument/Documentation/_CodeSnippets/
 
 return [
     [
