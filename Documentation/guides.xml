@@ -11,6 +11,7 @@
                project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues"
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument"
+               report-issue="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/new/choose"
                interlink-shortcode="h2document"
                typo3-core-preferred="stable"
     />
