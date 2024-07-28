@@ -104,7 +104,7 @@ Syntax
 Length of Underlines
 --------------------
 
-The length of the underlines **should** at have the length of the text. It
+The length of the underlines **should** have the same length like the text. It
 **should not** be longer or shorter.
 
 Example 1: This Works
