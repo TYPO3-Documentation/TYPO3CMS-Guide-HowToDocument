@@ -492,7 +492,7 @@ of a manual.
         ..  confval:: report_issue
             :name: guides-extension-report-issue
             :type: string
-            :Default: value of :confval:`project_issues`
+            :Default: value of :confval:`guides-extension-project-issues`
 
             `none`
                 Disable the "Report issue" button
