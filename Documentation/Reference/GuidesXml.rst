@@ -489,6 +489,25 @@ of a manual.
                 />
             </guides>
 
+        ..  confval:: report_issue
+            :name: guides-extension-report-issue
+            :type: string
+            :Default: value of :confval:`guides-extension-project-issues`
+
+            `none`
+                Disable the "Report issue" button
+            `/SomePath/MyIssueReport`
+                Link to this page in your documentation.
+            `https://github.com/MyVendor/MyProject/issues/new`
+                Open issue on GitHub
+            `https://gitlab.com/myvendor/myproject/-/issues/new`
+                Open issue on GitLab
+            `https://forge.typo3.org/projects/typo3cms-core/issues/new`
+                Open issue on Forge (System extensions only)
+
+            For security reasons arbitrary URLs are not allowed. If you use
+            a private Gitlab or another issue tool, Make an internal page and
+            link it like `/SomePath/MyIssueReport`.
 
         ..  _settings-guides-preferred_typo3_version:
 
