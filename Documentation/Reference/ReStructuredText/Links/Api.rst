@@ -60,7 +60,7 @@ Links to the API with the short class name
 ==========================================
 
 Using the text role `php-short` you can display the short name of the class
-or interface withing the text. Other then that it works just like the
+or interface within the text. Other then that it works just like the
 :ref:`:php: <links-api-fqn>` text role.
 
 ..  literalinclude:: _ApiShort.rst.txt
