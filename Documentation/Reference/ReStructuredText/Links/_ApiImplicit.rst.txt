@@ -1,0 +1,15 @@
+..  Implicit links using the :php: text role:
+
+*   :php:`\TYPO3\CMS\Adminpanel\Controller\AjaxController`
+*   :php:`\TYPO3\CMS\Core\Http\Dispatcher`
+*   :php:`\TYPO3\CMS\Adminpanel\ModuleApi\ContentProviderInterface`
+*   :php:`\TYPO3\CMS\Backend\Search\LiveSearch\SearchDemand\DemandPropertyName`
+*   :php:`\TYPO3\CMS\Backend\Form\Behavior\OnFieldChangeTrait`
+*   :php:`\Psr\Log\LoggerInterface`
+*   :php:`\TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper`
+*   :php:`\MyVendor\MyExtension\FooBar`
+*   :php:`\Foo\Bar\Something`
+
+..  prevent help text being displayed
+
+`This\Is\No\Class`
