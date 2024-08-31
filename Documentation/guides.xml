@@ -13,7 +13,7 @@
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument"
                report-issue="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/new/choose"
                interlink-shortcode="h2document"
-               typo3-core-preferred="stable"
+               typo3-core-preferred="main"
     />
     <project title="Writing Documentation" release="main" version="main"
              copyright="since 2017 by the TYPO3 contributors"/>
