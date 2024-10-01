@@ -178,7 +178,7 @@ documentation automatically:
                     run: |
                       mkdir -p Documentation-GENERATED-temp \
                       && docker run --rm --pull always -v $(pwd):/project \
-                         ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
+                         ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --minimal-test
 
     .. group-tab:: GitLab
 
@@ -192,7 +192,7 @@ documentation automatically:
               stage: test
               script:
                 - mkdir -p Documentation-GENERATED-temp
-                - docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
+                - docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --minimal-test
               tags:
                 - docker
 
