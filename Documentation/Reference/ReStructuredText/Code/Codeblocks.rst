@@ -319,25 +319,6 @@ Use syntactically correct code
                         ...
                     );
 
-..  index:: reST directives; highlight
-..  _writing-rest-codeblocks-highlight-directive:
-..  _codeblocks-highlight-directive:
-
-Highlight directive
-===================
-
-You can set the default language with the `highlight` directive. All following
-code blocks will use the language as specified in the `highlight` directive for
-syntax highlighting.
-
-This language works as fall back for the outdated code blocks that do not
-specify the desired language.
-
-For TYPO3 we have adopted the convention that each reStructuredText source file
-imports the :file:`Documentation/Includes.rst.txt` file at the top. And in the
-included file - in general - we set PHP as default language for highlighting.
-Exception: In the TypoScript manuals we are using `typoscript` as default.
-
 ..  index:: reST; Languages
 ..  _writing-rest-codeblocks-available-languages:
 ..  _writing-rest-codeblocks-available-lexers:
@@ -469,9 +450,7 @@ We recommend that you always write the language name after the code block direct
 This makes it easier for first time contributors to adjust or copy-paste code
 blocks. For historic reasons there are code blocks without an explicit language.
 
-If you do not explicitly set the language, the default language (as set with
-the :ref:`codeblocks-highlight-directive`) is used. If no highlight directive
-was used, the default set in :file:`Documentation/Includes.rst.txt` is used.
+If you do not explicitly set the language, the default language (PHP) is used.
 
 In the past a simplified shorthand directive was widely used: A sentence ending
 with two double colon :rst:`::`, followed by a new line and an indented
