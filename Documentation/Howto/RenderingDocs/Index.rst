@@ -190,9 +190,10 @@ documentation automatically:
 
             test_documentation:
               stage: test
+              image:
+                name: ghcr.io/typo3-documentation/render-guides:latest
+                entrypoint: [""]
               script:
                 - mkdir -p Documentation-GENERATED-temp
-                - docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --minimal-test
-              tags:
-                - docker
+                - /opt/guides/entrypoint.sh --config=Documentation --no-progress --minimal-test
 
