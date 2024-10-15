@@ -202,7 +202,7 @@ More information
 For more information in this guide:
 
 *  :ref:`Formatting-with-reST`
-*  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/main/README.rst>`__
+*  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
 *  :ref:`review-policy`
 
 For more information about GitHub see the help pages on GitHub or other
