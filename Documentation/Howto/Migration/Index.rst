@@ -91,12 +91,12 @@ PHP-based rendering tool:
 
 ..  rst-class:: bignums
 
-#.  Manual modifications of the :file:`guides.yml`
+#.  Manual modifications of the :file:`guides.xml`
 
     You have to manually change the following: in the :xml:`<extension>` tag add the attribute
 
         ..  code-block:: text
-            :caption: Changes in your :file:`guides.yml`
+            :caption: Changes in your :file:`guides.xml`
 
             interlink-shortcode="my-vendor/my-extension"
 
