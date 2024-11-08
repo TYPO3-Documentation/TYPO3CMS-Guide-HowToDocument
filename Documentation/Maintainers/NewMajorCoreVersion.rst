@@ -7,10 +7,10 @@ New major Core version is released
 
 ..  note::
     This document is not complete and will be updated with the release of
-    TYPO3 v13.0.
+    TYPO3 v14.0.
 
 The section describes the doings when a new major Core version is released
-(like version 13.0).
+(like version 14.0).
 
 To do
 =====
@@ -20,11 +20,11 @@ To do
     *   :ref:`t3start:install`
     *   :ref:`t3start:legacyinstallation`
     *   :ref:`t3start:installation-ddev-tutorial`
-    *   :ref:`t3install:upgradecore`
+    *   :ref:`t3coreapi:upgrading`
 
     to reflect the new version upon installation/upgrade.
 
-*   Add "-dev" links (like `13-dev`) to the links on the homepage:
+*   Add "-dev" links (like `14-dev`) to the links on the homepage:
 
     *   :ref:`t3home:getting-started`
     *   :ref:`t3home:creatingmanagingcontent`
