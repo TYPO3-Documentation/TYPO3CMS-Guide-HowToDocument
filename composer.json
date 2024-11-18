@@ -4,6 +4,6 @@
     "description": "Writing documentation",
     "license": "OPL-1.0",
     "require": {
-      "typo3/cms-core": "^11.5"
+      "typo3/cms-core": "^13.4"
     }
 }
