@@ -42,7 +42,7 @@ Guidelines for screenshots
 *   If you need an example site package use :composer:`t3docs/site-package`.
 *   If you need example data use :composer:`t3docs/site-package-data`
 *   As personalized usernames are considered best practice always use username
-    "kasper"
+    "j.doe"
 *   Do not install third party extensions unless what you want to demonstrate
     requires one. If possible use one of the extensions from vendor `typo3` or
     `t3docs`.
