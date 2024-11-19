@@ -39,7 +39,7 @@ Guidelines for screenshots
 *   Unless you want to demonstrate features of certain system extensions use
     a default installation as described in Getting Started:
     :ref:`Installing TYPO3 with DDEV <t3start:installation-ddev-tutorial>`.
-*   If you need an example site package use :composer:`t3docs/site-package.
+*   If you need an example site package use :composer:`t3docs/site-package`.
 *   If you need example data use :composer:`t3docs/site-package-data`
 *   As personalized usernames are considered best practice always use username
     "kasper"
@@ -62,5 +62,5 @@ You will often see a screenshot where additional graphic elements have been adde
 documentation. These additional graphic elements may be boxes, numbers or arrows.
 
 *   Use sufficient contrast to ensure additional graphic elements are visible
-    across devices and for as many readers as possible, even if the do not see
+    across devices and for as many readers as possible, even if they do not see
     a difference between red and green.
