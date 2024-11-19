@@ -15,8 +15,11 @@
                interlink-shortcode="h2document"
                typo3-core-preferred="main"
     />
-    <project title="Writing Documentation" release="main" version="main"
-             copyright="since 2017 by the TYPO3 contributors"/>
+    <project
+            title="How to Document"
+            release="main"
+            version="main"
+            copyright="since 2017 by the TYPO3 contributors"/>
     <inventory id="t3home" url="https://docs.typo3.org/"/>
     <inventory id="sphinx" url="https://www.sphinx-doc.org/en/master/"/>
     <inventory id="t3sphinxtest" url="https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/"/>
