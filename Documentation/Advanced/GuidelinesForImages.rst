@@ -11,7 +11,7 @@ Guidelines for creating images
 
 Read here how to embed an image into ReST: :ref:`Images <h2document:images>`.
 
-For accessibility reasons always use provide an alt text.
+For accessibility reasons always provide an alt text.
 
 .. _guidelines-for-images-formats:
 
