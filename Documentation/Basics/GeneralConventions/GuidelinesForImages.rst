@@ -124,13 +124,13 @@ To get the icons
 ----------------
 
 Either download the zipfile and extract it.
-You can find the download link on https://github.com/TYPO3-Documentation/_Images,
+You can find the download link on https://github.com/TYPO3-Documentation/Images,
 
 Or clone the repository:
 
 .. code-block:: bash
 
-   git clone https://github.com/TYPO3-Documentation/_Images
+   git clone https://github.com/TYPO3-Documentation/Images
 
 
 The icons will be in images/final/icons.
