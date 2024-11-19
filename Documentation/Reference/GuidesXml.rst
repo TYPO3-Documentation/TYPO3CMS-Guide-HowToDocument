@@ -361,18 +361,18 @@ of a manual.
 
         .. _settings-guides-project-links:
 
-        ..  confval:: project_*
+        ..  confval:: project-*
             :name: guides-extension-project-links
 
-            The *project_<topic>* attributes provide all links with the name "<Topic>" in
+            The *project-<topic>* attributes provide all links with the name "<Topic>" in
             the footer of the documentation that guide the user to other aspects of the
             project than the documentation, for example to the project page in the
             TYPO3 Extension Repository (TER):
 
-        .. _settings-guides-project_home:
+        .. _settings-guides-project-home:
 
-        ..  confval:: project_home
-            :name: guides-extension-project_home
+        ..  confval:: project-home
+            :name: guides-extension-project-home
             :type: string
 
             is set to the homepage URL of the project. For official TYPO3
@@ -383,9 +383,9 @@ of a manual.
             *  `https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/` or
             *  `https://extensions.typo3.org/extension/news`.
 
-        .. _settings-guides-project_contact:
+        .. _settings-guides-project-contact:
 
-        ..  confval:: project_contact
+        ..  confval:: project-contact
             :name: guides-extension-project-contact
             :type: string
 
@@ -395,10 +395,10 @@ of a manual.
             *  `mailto:documentation\@typo3.org` or
             *  `https://typo3.slack.com/archives/C028JEPJL`.
 
-        .. _settings-guides-project_repository:
+        .. _settings-guides-project-repository:
 
-        ..  confval:: project_repository
-            :name: guides-extension-project_repository
+        ..  confval:: project-repository
+            :name: guides-extension-project-repository
             :type: string
 
             is set to the repository of the project's VCS, for
@@ -406,9 +406,9 @@ of a manual.
 
             *  `https://github.com/FriendsOfTYPO3/extension_builder`.
 
-        .. _settings-guides-project_issues:
+        .. _settings-guides-project-issues:
 
-        ..  confval:: project_issues
+        ..  confval:: project-issues
             :name: guides-extension-project-issues
             :type: string
 
@@ -418,15 +418,15 @@ of a manual.
             *  `https://github.com/FriendsOfTYPO3/extension_builder/issues`
 
 
-        .. _settings-guides-project_discussions:
+        .. _settings-guides-project-discussions:
 
-        ..  confval:: project_discussions
+        ..  confval:: project-discussions
             :name: guides-extension-project-discussions
             :type: string
 
             is used in the rare case that project-related
             discussions take place in locations other than those defined by the
-            project_contact and project_issues attributes, for example
+            project-contact and project-issues attributes, for example
 
             *  `https://github.com/FriendsOfTYPO3/extension_builder/discussions`.
 
@@ -489,7 +489,7 @@ of a manual.
                 />
             </guides>
 
-        ..  confval:: report_issue
+        ..  confval:: report-issue
             :name: guides-extension-report-issue
             :type: string
             :Default: value of :confval:`guides-extension-project-issues`
