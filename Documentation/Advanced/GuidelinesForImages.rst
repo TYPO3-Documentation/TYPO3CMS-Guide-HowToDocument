@@ -62,5 +62,5 @@ You will often see a screenshot where additional graphic elements have been adde
 documentation. These additional graphic elements may be boxes, numbers or arrows.
 
 *   Use sufficient contrast to ensure additional graphic elements are visible
-    across devices and for as many readers as possible, even if they do not see
-    a difference between red and green.
+    across devices and for as many readers as possible, even if they have
+    color vision differences.
