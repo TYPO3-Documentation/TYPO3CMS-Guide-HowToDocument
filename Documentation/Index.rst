@@ -1,9 +1,10 @@
+:navigation-title: How to Document
 .. include:: /Includes.rst.txt
 ..  _start:
 .. index:: ! Writing documentation
 
 =====================
-Writing documentation
+How to Document TYPO3
 =====================
 
 :Version:
