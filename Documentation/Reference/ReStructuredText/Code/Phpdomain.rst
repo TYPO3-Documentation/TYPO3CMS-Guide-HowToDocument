@@ -7,9 +7,13 @@ PHP domain
 ==========
 
 In order to describe PHP code in TYPO3's documentation,
-the Sphinx extension `sphinxcontrib-phpdomain
-<https://pypi.org/project/sphinxcontrib-phpdomain/>`__
-is integrated into the rendering process.
+our toolchain has an integrated extension inspired by the
+`PHP domain<https://pypi.org/project/sphinxcontrib-phpdomain/>`__
+of the Sphinx project.
+
+The source code of the PHP domain extension is located on GitHub:
+
+https://github.com/TYPO3-Documentation/guides-php-domain
 
 ..  _rest-phpdomain-quick-example:
 

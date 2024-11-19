@@ -21,14 +21,14 @@ reST
    the the Guides, Tutorials, "TYPO3 Explained", Reference,
    the Changelog and system extensions.
 
-The rendering chain and tools are built and optimized to process reST markup. Please
-go ahead and use that format.
+The rendering chain and tools are built and optimized to process reST markup. We
+recommend using this format for your documentation. As reST is more feature-rich,
+and you will benefit from the advanced features of the TYPO3 documentation toolchain.
 
 The file ending of reST files is .rst.
 
-The tool `pandoc` can convert existing markdown file into reST format.
-Do this once and you are in line with the TYPO3 conventions.
-
+When you started your documentation in markdown, you can convert it to reST using
+our migration tool.
 
 .. index::
    Documentation; Markdown
@@ -38,17 +38,13 @@ Do this once and you are in line with the TYPO3 conventions.
 Markdown
 ========
 
-Currently, you can also use markdown for your (extension) documentation.
+However we do highly recommend using reST for your documentation, we also support markdown for
+your (extension) documentation. The file ending of markdown files is .md.
 
-One problem with markdown is that there are many dialects. Since a while there is a standard **commonmark**.
-At https://readthedocs.org people are trying to make commonmark available.
-See http://blog.readthedocs.com/adding-markdown-support/ for the details.
-Without doing lots of investigations we have implemented the same solution for TYPO3 documentation as well.
-
-This means that our rendering tools detect markdown files as well. They have .md as file ending.
-
-If you’re encountering problems with the rendering of your markdown files, consider switching to reST.
-
+Our toolchain supports the `commonmark dialect of markdown <https://commonmark.org/>`__.
+This is a standardized version of markdown. We do not support other markdown dialects, although
+they might work. We cannot guarantee that they will work in the future.
+You can consult our Markdown reference for more information.
 
 .. index::
    reST; vs. Markdown

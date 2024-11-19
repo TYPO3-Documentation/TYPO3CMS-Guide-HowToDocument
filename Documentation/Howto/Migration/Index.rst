@@ -12,9 +12,12 @@ Migration: From Sphinx to PHP-based rendering
 
 ..  note::
 
-    Since the beginning of 2024 you can switch to the new, PHP-based reStructured
-    Text rendering to try it out. The new rendering will become mandatory in
-    August 2024.
+    Since November 2024 the official documentation rendering process has been
+    switched to a PHP-based rendering. When your documentation was configured
+    with Sphinx, the rendering process will be automatically switched to the
+    PHP-based rendering. The automatic migration will work for most cases, but
+    some manual adjustments might be necessary. This guide will help you to
+    migrate your documentation to the new rendering process.
 
 The main difference compared to the Sphinx rendering is that the PHP-based rendering
 requires a file called :file:`Documentation/guides.xml` for configuration.

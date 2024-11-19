@@ -30,9 +30,8 @@ Generated API per version
 -------------------------
 
 The content per version https://api.typo3.org/main, https://api.typo3.org/12.4
-etc is generated with Doxygen. A Doxygen Docker image is maintained by the
-TYPO3 GmbH in this repository:
-https://github.com/TYPO3GmbH/doxygenapi
+etc is generated with phpDocumentor. The theme is defined in this repository:
+https://github.com/TYPO3-Documentation/render-guides/tree/main/packages/typo3-api
 
 The rendering is triggered by this workflow which we in the documentation team
 can change:
