@@ -39,7 +39,7 @@ Guidelines for screenshots
 *   Unless you want to demonstrate features of certain system extensions use
     a default installation as described in Getting Started:
     :ref:`Installing TYPO3 with DDEV <t3start:installation-ddev-tutorial>`.
-*   If you need an example site package use :composer:`t3docs/site-package`.
+*   If you need an example site package use `t3docs/site-package`.
 *   If you need example data use :composer:`t3docs/site-package-data`
 *   As personalized usernames are considered best practice always use username
     "j.doe"
