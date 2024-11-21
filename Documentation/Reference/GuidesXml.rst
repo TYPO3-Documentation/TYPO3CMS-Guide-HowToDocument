@@ -533,7 +533,7 @@ of a manual.
         ..  rubric:: Example: Set the preferred TYPO3 Core version to 11.5
 
         At the time of writing the extension :t3ext:`news` is compatible with TYPO3 v11.5
-        and v12.4. When :ref:`referencing <cheat-sheet-intersphinx>` Core manuals or
+        and v12.4. When :ref:`referencing <rest-cheat-sheet-links>` Core manuals or
         extensions, we want the links to go automatically to version 11.5 of that
         reference or core extension. Therefore we set the preferred TYPO3 Core version
         to that value:

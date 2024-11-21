@@ -4,139 +4,100 @@
     pair: reST; Headlines
     pair: reST; Titles
     pair: reST; Sections
-..  _Headlines-and-sections:
+..  _headlines-and-sections:
 
 ======================
-Headlines and sections
+Headlines and Anchors
 ======================
 
-reStructuredText (reST) does not exactly have the notion of "headlines". Text
-is split into "sections" instead. Those sections are identified by titles which
-- in the end - appear as headlines as we know them.
 
-**TYPO3** uses these conventions.
+..  contents::
 
-1. Use underlining plus overlining with `===` for the first section title of a
-    file. The first section title is the "document title" (**doctitle**) of that
-    file and will appear in the menu. Every .rst file should have a title, each
-    title should have a link anchor. In :ref:`link-anchor` we describe 
-    our recommended best way how to build a link anchor in the official 
-    TYPO3 documentation. Here you see a title and a link anchor in
-    action:
+Each reST document must have a title. It is overlined and underlined like this:
 
 ..  code-block:: rst
 
-        ..  _doc-title:
+    ..  _rest-cheat-sheet:
 
-        ==============
-        Document Title
-        ==============
+    =============================
+    Cheat sheet: reStructuredText
+    =============================
 
-2. Then use underlining only:
+The anchor is used for permalinks. It should be lowercase with dashes between
+words. During rendering special signs are converted into dashes and all letters changed to
+lowercase if you ignore this.
 
-..  code-block:: rst
+Use headers to divide your document into sections. Start with h2:
 
-        1.  ==========  for the first  level
-        2.  ----------  for the second level
-        3.  ~~~~~~~~~~  for the third  level
-        4.  """"""""""  for the fourth level
-
-3. More levels will be rarely used. For sake of completeness here is the whole
-    hierarchy the automatic conversion tools uses. Stick to this order if more
-    levels are needed:
+By convention we use the following underlines:
 
 ..  code-block:: rst
 
-        5.  ''''''''''
-        6.  ^^^^^^^^^^
-        7.  ##########
-        8.  **********
-        9.  $$$$$$$$$$
-        10. ``````````
-        plus:  +;.,_/%&!  in that order
+    ..  _h2-headline:
 
-Example
-=======
+    H2 Headline
+    ===========
 
-..  code-block:: rst
+    ..  _h3-headline:
 
+    H3 Headline
+    -----------
 
-    ..  _document-title:
+    ..  _h4-headline:
 
-    ==============
-    Document Title
-    ==============
+    H4 Headline
+    ~~~~~~~~~~~
 
-    About this document ...
+    ..  _h5-headline:
 
-    ..  _topic-1:
+    H5 Headline
+    """""""""""
 
-    Topic 1
-    =======
+    ..  _h6-headline:
 
-    Here we go.
+    H6 Headline
+    '''''''''''
 
-    ..  _subtopic-1-1:
+    ..  _another-h2-headline:
 
-    Subtopic 1.1
-    ------------
+    Another H2 Headline
+    ===================
 
-    Here we dive deeper
+They look like this:
 
+..  _h2-headline:
 
-    ..  _subsubtopic-1-1-1:
+H2 Headline
+===========
 
-    Subsubtopic 1.1.1
-    ~~~~~~~~~~~~~~~~~
+..  _h3-headline:
 
-    And this is even more specific.
+H3 Headline
+-----------
 
-    ..  _topic-2:
+..  _h4-headline:
 
-    Topic 2
-    =======
-    ...
+H4 Headline
+~~~~~~~~~~~
 
+..  _h5-headline:
 
-Syntax
-======
+H5 Headline
+"""""""""""
 
-Length of Underlines
---------------------
+..  _h6-headline:
 
-The length of the underlines **should** have the same length like the text. It
-**should not** be longer or shorter.
+H6 Headline
+'''''''''''
 
-Example 1: This Works
-~~~~~~~~~~~~~~~~~~~~~
+..  _syntax-headlines:
 
-..  code-block:: rst
+Syntax of headlines
+===================
 
-    ..  _example-1:
+The underlining special signs should be as long as the line but this is not
+enforced.
 
-    =========
-    Example 1
-    =========
+Each headline should have an anchor. Otherwise permalinking does not work.
 
-Example 2: These headlines work but do not abide to the coding guidelines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Here we see how we should not do it. The underlines are too long or too short.
-
-..  code-block:: rst
-
-    ..  _example-2:
-
-    ==============
-    Example 2
-    ==============
-    
-    # Underline too long
-
-    ..  _example-3:
-
-    =======
-    Example 3
-    =======
-    
-    # Underline too short
+Keep anchors unless a concept is completely removed.
