@@ -1,0 +1,10 @@
+:orphan:
+
+======
+Basics
+======
+
+..  menu::
+    :glob:
+
+    *
