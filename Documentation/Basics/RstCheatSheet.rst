@@ -181,13 +181,13 @@ Inline text roles
 
     *italic text*, **bold text**, `general code` :typoscript:`page = PAGE`
     :php:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent` :guilabel:`Web > Page`
-    :composer:`typo3/cms-typo3`
+    :composer:`typo3/cms-seo`
 
 Looks like this:
 
 *italic text*, **bold text**, `general code` :typoscript:`page = PAGE`
 :php:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent` :guilabel:`Web > Page`
-:composer:`typo3/cms-typo3`
+:composer:`typo3/cms-seo`
 
 More: :ref:`rest-bold-italic`.
 
