@@ -35,7 +35,7 @@ Further conventions are:
     :file:`.rst.txt`.
 *   Use **CamelCase** for directory and file names,
     for example: :file:`Documentation/GeneralConventions/FileStructure.rst`.
-*   Each directory **should** have a file named :file:`Index.rst` it is used as
+*   Each directory **shall** have a file named :file:`Index.rst` it is used as
     fallback if a page is not found during switching versions.
 *   Code examples to be included should start with an underscore, for example
     :file:`_Services.yaml`.
