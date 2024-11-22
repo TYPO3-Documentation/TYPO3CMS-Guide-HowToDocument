@@ -7,6 +7,26 @@
 Spelling
 ========
 
+..  contents::
+
+Title capitalization
+====================
+
+Use :ref:`sentence case <spelling-title-case>` - this means the title and
+headers will be capitalized like normal sentences. The first word
+is always capitalized and the rest is spelled as they would in
+"normal text".
+
+This is different from "TYPO3 content style guide" which capitalizes
+more words in the title. Capitalization in the documentation is still
+inconsistent currently, so you cannot rely on existing pages to show
+the correct convention.
+
+Spelling
+========
+
+Use common spelling for American English. Some specific TYPO3 terms
+have a special spelling. See :ref:`spelling-ref`
 
 General information
 ===================

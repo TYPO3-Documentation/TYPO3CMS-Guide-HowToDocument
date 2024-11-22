@@ -55,8 +55,8 @@ All of these examples have a few things in common:
 *  The source of the documentation is written (mostly) in reStructuredText (**reST**)
 *  All documentation is rendered using the **same rendering toolchain**. All documentation
    can be rendered locally, with the officially supported Docker image.
-*  The documentation source files adhere to :ref:`general-conventions` and
-   share a **common structure** (for example all documentation files in a
+*  The documentation source files adhere to :ref:`file-structure`
+   (for example all documentation files in a
    :file:`Documentation` subdirectory).
 *  Due to the conventions, the rendering of documentation can be automated and
    every documentation project only requires a minimum of setup.

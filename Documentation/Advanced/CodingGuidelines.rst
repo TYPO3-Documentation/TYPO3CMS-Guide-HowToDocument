@@ -194,7 +194,6 @@ file:
    reST directives; deprecated
    reST directives; versionadded
    reST directives; versionchanged
-.. _version-hints:
 
 How to add version hints
 ========================

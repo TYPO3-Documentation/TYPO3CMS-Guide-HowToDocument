@@ -146,9 +146,6 @@ Here are some examples:
 Replace outdated images and screenshots
 =======================================
 
-Replace outdated images, for example, in the :ref:`t3tsconfig:start`
-reference.
-
 Look at :ref:`how-to-document-images` for information about how to
 embed images with reST.
 
@@ -169,8 +166,6 @@ Review manuals
 Pick a manual and start reviewing it. If you find something that needs fixing or
 something is missing, either fix it or write an issue for it, if you cannot make
 the changes yourself.
-
-More information: :ref:`guidelines-for-reviewing`
 
 ..  tip::
     Usually, there is one branch for each major TYPO3 version

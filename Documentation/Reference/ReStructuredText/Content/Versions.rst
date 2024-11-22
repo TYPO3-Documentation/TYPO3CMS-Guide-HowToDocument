@@ -1,6 +1,7 @@
 ..  include:: /Includes.rst.txt
 ..  index:: reST; Versions
 ..  _rest-versions:
+.. _version-hints:
 
 ========
 Versions
@@ -10,12 +11,6 @@ We have 3 directives to mark versions in the manuals.
 
 The incentive is that information which is important for migration can be marked
 and semi-automatically be removed after one or two versions.
-
-..  seealso::
-
-    *   :ref:`update-docs`
-    *   :ref:`version-hints`
-    *   `The version directives in the Sphinx Docu <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-versionadded>`__
 
 Versionadded
 ============
