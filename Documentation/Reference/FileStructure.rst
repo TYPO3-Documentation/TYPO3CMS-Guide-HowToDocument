@@ -1,7 +1,6 @@
-.. include:: /Includes.rst.txt
-
-.. index:: File structure
-.. _file-structure:
+..  include:: /Includes.rst.txt
+..  index:: File structure
+..  _file-structure:
 
 ==============
 File structure
@@ -12,40 +11,39 @@ be rendered with the :ref:`rendering toolchain <rendering-docs>`.
 
 ..  contents:: Table of Contents:
     :backlinks: top
-    :class: compact-list
     :depth: 2
-    :local:
 
-.. _file-structure-general:
+..  _file-structure-general:
 
-General
-=======
+Prerequisites for rendering documentation to docs.typo3.org
+===========================================================
 
 In order for the documentation to be rendered, you need at least
 
 *   A valid :ref:`composer.json <t3coreapi-stable:files-composer-json>`
-*   A documentation entry point either for a :ref:`multi-page manual <full-documentation>`
-    or for the rendering of a :ref:`single README file <single-file-documentation>`.
 
-The following rules are mandatory or your documentation will not render:
+And one of the following files:
 
-*   :abbr:`reST (reStructured Text)` files MUST have the extension :file:`.rst'.
-*   Markdown files MUST have the extension :file:`.md'.
+*   Documentation/Index.rst (:ref:`full-documentation`)
+*   Documentation/Index.md (:ref:`full-documentation-md`)
+*   README.rst (:ref:`single-file-documentation`)
+*   README.md (:ref:`single-file-documentation`)
 
 Further conventions are:
 
-*   :ref:`Included reST files <including-files>` SHOULD have the extension
+*   :ref:`Included reST files <including-files>` **should** have the extension
     :file:`.rst.txt`.
 *   Use **CamelCase** for directory and file names,
     for example: :file:`Documentation/GeneralConventions/FileStructure.rst`.
-*   Each directory SHOULD have a file named :file:`Index.rst` it is used as
+*   Each directory **shall** have a file named :file:`Index.rst` it is used as
     fallback if a page is not found during switching versions.
+*   Code examples to be included should start with an underscore, for example
+    :file:`_Services.yaml`.
 
-.. index:: Full documentation
-.. _full-documentation:
+..  _full-documentation:
 
-Full documentation
-==================
+Full documentation in reST
+==========================
 
 To render a complete documentation manual you need a folder called
 :file:`Documentation` with at least a reStructured Text file as entry point named
@@ -53,23 +51,25 @@ To render a complete documentation manual you need a folder called
 :file:`Documentation\guides.xml`. Add more files as needed.
 
 You can keep a :file:`README.md` or :file:`README.rst` file with basic
-information and a link to the published manual in the root folder of the extension. These files will be commonly
-displayed on GitHub and GitLab.
+information and a link to the published manual in the root folder of the
+extension. These files will be commonly displayed on GitHub and GitLab.
 
-.. code-block:: none
+..  directory-tree::
+    :level: 2
+    :show-file-icons: true
 
-   .
-   ├── composer.json
-   ├── README.rst
-   └── Documentation
-       ├── guides.xml
-       ├── Index.rst
-       ├── Sitemap.rst
-       └── ..
+    *   composer.json
+    *   README.rst
+    *   Documentation
 
-.. index:: File structure; Documentation/Index.rst, Index.rst
-.. _index-rst:
-.. _start-file:
+        *   guides.xml
+        *   Index.rst
+        *   Sitemap.rst
+        *   ...
+
+..  index:: File structure; Documentation/Index.rst, Index.rst
+..  _index-rst:
+..  _start-file:
 
 Start page: :file:`Documentation/Index.rst`
 -------------------------------------------
@@ -91,7 +91,7 @@ directive called :rst:`..  toctree::`. The `toctree` on the start page
 defines which pages will be displayed in main navigation of the rendered
 manual.
 
-.. _index-rst-table-of-contents:
+..  _index-rst-table-of-contents:
 
 Configure the menu - the toctree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -149,7 +149,7 @@ that:
         HowToGetHelp
         ...
 
-    .. toctree::
+    ..  toctree::
         :hidden:
         :caption: Howtos
 
@@ -174,8 +174,8 @@ that:
 ..  include:: _FileStructure/_Includes.rst.txt
     :show-buttons:
 
-.. index:: File structure; Documentation/Sitemap.rst, Sitemap.rst
-.. _sitemap-rst:
+..  index:: File structure; Documentation/Sitemap.rst, Sitemap.rst
+..  _sitemap-rst:
 
 Optional: :file:`Documentation/Sitemap.rst`
 -------------------------------------------
@@ -187,18 +187,18 @@ It is an almost empty file that is automatically filled during rendering.
 
     :template: sitemap.html
 
-    .. include:: /Includes.rst.txt
+    ..  include:: /Includes.rst.txt
 
     =======
     Sitemap
     =======
 
-    .. The sitemap.html template will insert here the page tree automatically.
+    ..  The sitemap.html template will insert here the page tree automatically.
 
 
-.. index:: File structure; Documentation/Settings.cfg, Settings.cfg
-.. _settings-cfg:
-.. _settings-guides-xml:
+..  index:: File structure; Documentation/Settings.cfg, Settings.cfg
+..  _settings-cfg:
+..  _settings-guides-xml:
 
 Settings: :file:`Documentation/guides.xml`
 --------------------------------------------
@@ -218,9 +218,30 @@ Example:
 ..  literalinclude:: _guides-simple.xml
     :capition: Documentation/guides.xml
 
+..  _full-documentation-md:
 
-.. index:: Single file documentation
-.. _single-file-documentation:
+Full documentation in reST markdown
+===================================
+
+The TYPO3 documentation rendering pipeline supports rendering of CommonMark
+Markdown plus a few additional constructs like tables.
+
+The main entry point for Markdown documentation **must** be
+:file:`Documentation/Index.md`. Each folder in the `Documentation` directory
+**should** contain a file called :file:`Index.md` if it contains Markdown at all.
+
+..  literalinclude:: _snippets/_guides-md.xml
+    :linenos:
+    :emphasize-lines: 6-8
+
+Lines 6-8 are different from reST documents.
+
+*   line 6: Set the input format to Markdown (md)
+*   line 7-8: Automatically create a menu with all Markdown files and folders
+    found. Folders must have a :file:`Index.md` to be added.
+
+..  index:: Single file documentation
+..  _single-file-documentation:
 
 Single file documentation (README)
 ==================================
@@ -231,9 +252,6 @@ https://docs.typo3.org/
 
 For this workflow the :file:`README(.rst/.md)` MUST be situated in the
 extension's root folder. The :file:`Documentation/' folder can then be omitted.
-
-:file:`README.rst`
-------------------
 
 For single file documentation, the :file:`README.rst` contains the entire
 documentation.
