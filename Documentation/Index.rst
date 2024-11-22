@@ -94,7 +94,6 @@ reStructuredText (reST).
     Basics/About
     Basics/HowToGetHelp
     Basics/BasicPrinciples
-    Basics/GeneralConventions/Index
     Basics/RstCheatSheet
 
 
@@ -117,8 +116,7 @@ reStructuredText (reST).
     :hidden:
     :caption: ADVANCED
 
-    Advanced/HowToAddTranslation/Index
-    Advanced/ReviewInformation
+    Advanced/Index
 
 ..  toctree::
     :hidden:

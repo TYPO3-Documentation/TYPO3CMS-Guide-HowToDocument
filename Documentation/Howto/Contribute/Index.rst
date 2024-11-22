@@ -13,7 +13,7 @@ Contribute to the TYPO3 documentation
 .. sidebar:: Quicklinks
 
    * :ref:`reStructuredText cheatsheet <rest-cheat-sheet>`
-   * :ref:`Conventions <conventions>`
+   * :ref:`File structure <file-structure>`
    * :ref:`Render with Docker <rendering-docs>`
    * :ref:`Typical tasks <docs-official-how-you-can-help>`
    * `Open issues <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (a GitHub account is required)
