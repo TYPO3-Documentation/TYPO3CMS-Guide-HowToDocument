@@ -91,11 +91,9 @@ reStructuredText (reST).
     :hidden:
     :caption: BASICS
 
-    Basics/About
-    Basics/HowToGetHelp
-    Basics/BasicPrinciples
+    Basics/Index
     Basics/RstCheatSheet
-
+    Basics/Rendering
 
 ..  toctree::
     :hidden:
@@ -109,7 +107,8 @@ reStructuredText (reST).
     :hidden:
     :caption: HOWTOS
 
-    Howto/*
+    Howto/EditOnGithub
+    Howto/EditLocal
     Howto/*/Index
 
 ..  toctree::

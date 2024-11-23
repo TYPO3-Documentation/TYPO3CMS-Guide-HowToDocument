@@ -7,7 +7,6 @@
     Rendering; Docker
     Rendering; Commands
 .. _rendering-docs:
-.. _rendering-docs-quickstart:
 .. _render-documenation-with-docker:
 .. _render-documentation-with-docker:
 

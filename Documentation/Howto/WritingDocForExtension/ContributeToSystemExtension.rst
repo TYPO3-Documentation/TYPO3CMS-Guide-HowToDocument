@@ -9,9 +9,6 @@ Contribute to system extensions
 The documentation for system extensions is maintained inside the TYPO3
 source code, so the contribution workflow is a little different.
 
-For more information about the various contribution workflows,
-see :ref:`overview-of-types`.
-
 *  When it comes to documentation that is contained within the
    core (like system extension documentation and changelog), you would
    use Forge to report **issues**, using the category "Documentation":
