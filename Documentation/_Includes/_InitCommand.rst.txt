@@ -1,0 +1,4 @@
+..  code-block:: bash
+    :caption: Execute in extension root, the directory that contains your extensions composer.json
+
+    docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest init

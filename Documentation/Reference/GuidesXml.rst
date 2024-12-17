@@ -9,19 +9,33 @@ Configuration of the rendering - guides.xml
 This XML file contains meta information and configuration used during rendering
 of a manual.
 
-..  rubric:: Example:
-
 ..  literalinclude:: _guides-simple.xml
     :caption: Documentation/guides.xml
+
+..  contents:: Table of Contents:
+    :local:
+
+..  _guides-xml-init:
+
+Init new guides.xml
+===================
+
+If you start a new documentation guide, for example in a TYPO3 extension, use the
+`init` command:
+
+..  include:: /_Includes/_InitCommand.rst.txt
+
+And follow the interactive question.
 
 ..  hint::
     If you are migrating from the legacy Sphinx-based rendering and still have
     a :file:`Documentation/Settings.cfg` you can use an automatic migration
     tool to :ref:`migrate the Settings.cfg into a guides.xml <migrate_guides_xml>`
 
-..  contents:: Table of Contents:
-    :local:
+..  _guides-xml-api:
 
+guides.xml API
+==============
 
 ..  confval-menu::
     :display: tree
