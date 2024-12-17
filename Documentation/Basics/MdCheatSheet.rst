@@ -3,9 +3,12 @@
 
 ..  _md-cheat-sheet:
 
-======================================================================
-Markdown Cheat sheet: Using Commonmark Markdown in TYPO3 Documentation
-======================================================================
+====================
+Markdown Cheat sheet
+====================
+
+See commonly used Commonmark Markdown Syntax in the
+TYPO3 Documentation Theme:
 
 ..  contents:: Cheat Sheet
 
