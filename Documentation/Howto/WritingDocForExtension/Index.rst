@@ -3,9 +3,7 @@
 .. include:: /Includes.rst.txt
 .. index:: Documentation; Extension
 .. _writing-doc-for-ext-start:
-.. _how-to-start-docs-extension:
 .. _extension-documentation-files:
-.. _write-doc-extensions-intro:
 
 ============================
 How to document an extension
@@ -16,97 +14,49 @@ This chapter explains how to write documentation for a new extension.
 This guide uses the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
 as a template for starting out.
 
+.. _write-doc-extensions-intro-rendering:
+
 Rendering the documentation locally
------------------------------------
+===================================
 
-Docker is required to run the rendering toolchain locally. By rendering the documentation this way, proofreading and
-checking for typos and testing links can be carried out before the documentation is committed. The
-:ref:`render-documenation-with-docker` has more information on how this toolchain is set up and configured.
+Use the following Docker command to render your documentation guide locally:
 
-Using the documentation-draft branch to preview changes
--------------------------------------------------------
+..  include:: /_Includes/_LocalRendering.rst.txt
 
-Alternatively, a `documentation-draft` branch can be created in the documentation repository.
-Once committed, this will render the documentation and make it available publicly, but it will only be visible
-when the "draft" drop-down is selected when viewing the rendered documentation. Documentation under the draft branch will not be indexed
-by search engines. Visit the :ref:`supported-branches` section for more information.
+The :ref:`render-documenation-with-docker` has more information.
 
-Creating extension documentation using the sample manual
---------------------------------------------------------
+.. _how-to-start-docs-extension:
 
-.. rst-class:: bignums-xxl
+Use the init command to create the Documentation folder
+=======================================================
 
-#. Clone the sample extension manual
+The following Docker command helps you to create some basic documentation
+including the required configuration file :file:`Documentation/guides.xml`:
 
-   In a temporary directory, clone the GitHub project
-   `sample extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
+..  include:: /_Includes/_InitCommand.rst.txt
 
-   .. code-block:: bash
+The command creates a folder :path:`Documentation` in the directory it is called
+from. This should be the root directory of your extension containing the
+`composer.json <https://docs.typo3.org/permalink/t3coreapi:files-composer-json>`_.
 
-      git clone https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual.git
+Follow the interactive dialoge. We suggest to use the option ReStructuredText (rst)
+as this format provides the full power of the TYPO3 documentation theme. Using
+Markdown (md) is an option for simple and quick one page documentation.
 
-   Copy the entire :file:`Documentation` directory, so that it
-   is a subdirectory located within your extension, for example:
+If your extension offers a main `Site set <https://docs.typo3.org/permalink/t3coreapi:site-sets>`_
+enter its name and path when prompted. This will regenerate ready to use
+documentation about configuration for you. If you have more then one set you
+can document the other sets manually. If you have no set, you need to write
+the chapter your self.
 
-   .. code-block:: bash
+Make changes and try :ref:`rendering <rendering-docs>` the new documentation.
 
-      cp -r TYPO3CMS-Example-ExtensionManual/Documentation <my-extension-directory>/
-
-#. Add or modify additional files
-
-   *  Make sure :ref:`t3coreapi:composer-json` is up to date. (*required*)
-   *  Make sure :ref:`settings-cfg` is up to date. (*required*)
-   *  A .gitignore is useful, in order to
-      prevent accidentally committing the generated documentation in
-      :file:`Documentation-GENERATED-temp` to the Git repository. (*recommended*)
-   *  An .editorconfig is useful, so the
-      recommended :ref:`Coding Guidelines <format-rest-cgl>` will be used within
-      an editor or IDE.
-
-   .. code-block:: bash
-
-      # cp .gitignore (make sure you don't accidentally overwrite existing one though!)
-      cp -n TYPO3CMS-Example-ExtensionManual/.gitignore <my-extension-directory>/.gitignore
-      # cp .editorconfig (make sure you don't accidentally overwrite existing one though!)
-      cp -n TYPO3CMS-Example-ExtensionManual/.editorconfig <my-extension-directory>/.editorconfig
-
-   If you plan to host your extension on a public repository, consider
-   adding a CONTRIBUTING.rst
-   and :ref:`README.rst <readme-rst>` to help guide any future
-   contributors.
-
-
-#. Start adding documentation
-
-   Now it's time to start adding content. Reviewing existing guides can help you structure your own documentation.
-   The `news extension <https://docs.typo3.org/p/georgringer/news/main/en-us/Index.html>`__ is a strong example of how extension
-   documentation should be written and structured.
-
-#. Populate composer.json
-
-   Complete the :file:`composer.json` as described in :ref:`t3coreapi:composer-json`.
-
-#. Populate guides.xml
-
-   Complete the :file:`guides.xml` as described in :ref:`settings-guides-xml`.
-
-#. Render documentation
-
-   Before publishing changes, make sure the documentation is rendered correctly, either
-   by :ref:`rendering it locally <render-documenation-with-docker>` or by using the :ref:`draft branch <migrate-branches>`
-   to preview the changes.
-
-#. Publish when ready
-
-   The documentation needs to be :ref:`made publicly available <t3coreapi:publish-extension>`.
-
-   In order to trigger the documentation rendering process, a :ref:`webhook needs to be added <webhook>`.
-
-.. tip::
-
-   Consider hosting your extension repository on either GitHub, Bitbucket or GitLab.
-   That way others can report issues and assist you by creating change requests to help
-   improve both the extensions documentation and the code.
+To publish your documentation to https://docs.typo3.org
+a :ref:`webhook needs to be added <webhook>` on GitHub, Bitbucket or GitLab.
+A member of the Documentation Team has to approve your new documentation guide
+for publishing. In case the Team has questions, please follow the thread
+generated for your extension in the `TYPO3 slack organization <https://typo3.org/community/meet/chat-slack>`_
+in channel `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`_.
 
 Version numbers
 ===============
