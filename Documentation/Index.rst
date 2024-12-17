@@ -95,6 +95,7 @@ reStructuredText (reST).
     Basics/HowToGetHelp
     Basics/BasicPrinciples
     Basics/RstCheatSheet
+    Basics/MdCheatSheet
 
 
 ..  toctree::

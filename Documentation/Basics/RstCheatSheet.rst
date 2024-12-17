@@ -72,14 +72,16 @@ They then look like this:
 
 ..  code-block:: rst
 
-    :ref:`Cheat sheet: reStructuredText <h2document:rest-cheat-sheet>`
+    `ReST Cheat sheet <https://docs.typo3.org/permalink/h2document:rest-cheat-sheet>`_
+
+Permalinks are automatically checked and resolved during rendering.
 
 External links can be copied into the document they will be auto detected. Or
 the standard reST Syntax can be used:
 
 ..  code-block:: rst
 
-    See also https://www.typo3.org or `the TER <https://extensions.typo3.org>`.
+    See also https://www.typo3.org or `the TER <https://extensions.typo3.org>`_.
 
 There are special links for composer packages and PHP classes (linking to the API):
 
