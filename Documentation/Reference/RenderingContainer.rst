@@ -11,4 +11,14 @@ contains the :path:`Documentation` folder:
 
 ..  include:: /_Includes/_LocalRendering.rst.txt
 
-..  todo: Document rendering container options here
+..  _init-command:
+
+The init command
+================
+
+Use the `init` command to start writing TYPO3 documentation.
+
+..  include:: /_Includes/_InitCommand.rst.txt
+
+This command creates a `guides.xml <https://docs.typo3.org/permalink/h2document:guides-xml>`_
+configuration file and some example pages in folder :path:`Documentation`.
