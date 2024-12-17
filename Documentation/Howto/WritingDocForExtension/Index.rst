@@ -4,6 +4,7 @@
 .. index:: Documentation; Extension
 .. _writing-doc-for-ext-start:
 .. _extension-documentation-files:
+.. _write-doc-extensions-intro:
 
 ============================
 How to document an extension
