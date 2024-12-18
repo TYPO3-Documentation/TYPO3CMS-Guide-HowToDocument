@@ -414,3 +414,9 @@ The current recommendation is to only remove the :file:`genindex.rst` file
 from your documentation directory, but keep all the placed `..  index`
 directives. If at some point the automatic index generation is re-introduced,
 your old indexes will be able to show up again.
+
+..  toctree::
+    :hidden:
+    :glob:
+
+    *
