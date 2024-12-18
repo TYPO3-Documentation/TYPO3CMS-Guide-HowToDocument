@@ -4,7 +4,7 @@
 ..  index::
     Documentation; Migration
     docs.typo3.org
-..  _migrate_markdown_to_rest:
+..  _migrate-markdown-to-rest:
 
 =============================================
 Migration: Markdown to reStructuredText (ReST)
@@ -23,6 +23,7 @@ The TYPO3 documentation toolchain supports both formats.
     This guide assumes you have already set up the TYPO3 documentation toolchain.
     If you haven't, please follow the instructions in the :ref:`rendering-docs` guide.
 
+..  _migrate-markdown-to-rest-conversion:
 
 Converting Markdown to ReST
 ===========================
