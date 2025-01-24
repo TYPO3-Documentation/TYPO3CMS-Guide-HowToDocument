@@ -138,8 +138,6 @@ Here are some examples:
 
         Example of a sequence diagram about request handling
 
-*  :ref:`System overview in "TYPO3 Explained" contains a diagram <t3coreapi:overview>`
-
 *  :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
 
 
