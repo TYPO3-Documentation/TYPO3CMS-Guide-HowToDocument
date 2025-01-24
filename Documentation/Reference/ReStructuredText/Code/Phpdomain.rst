@@ -105,12 +105,6 @@ Create a namespace once per document that becomes the link target:
 
     ..  php:namespace::  Vendor\Extension
 
-Reuse a namespace, but prevent it from becoming a link target:
-
-..  code-block:: rst
-
-    ..  php:currentnamespace:: Vendor\Extension
-
 ..  _rest-phpdomain-examples:
 
 Examples
