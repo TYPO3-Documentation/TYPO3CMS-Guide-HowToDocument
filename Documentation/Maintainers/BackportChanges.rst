@@ -148,13 +148,13 @@ This is how the commit might look like:
 If a merge conflict arises solve the merge conflict. Check the syntax in the
 modified and resulting HTML file with
 
-.. code-block:: shell
+..  code-block:: shell
 
     make docs
 
 If everything looks fine continue the cherry-pick with
 
-.. code-block:: shell
+..  code-block:: shell
 
     git cherry-pick --continue
 
