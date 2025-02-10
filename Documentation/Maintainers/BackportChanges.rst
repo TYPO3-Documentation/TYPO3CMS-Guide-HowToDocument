@@ -117,17 +117,22 @@ additional authors is automatically added to the commit.
 How to backport manually?
 =========================
 
+Look up the commit ID with
+
+..  code-block:: shell
+
+    git log
+
+Switch to the branch to which you would like to make a backport.
 If you cherry-pick a commit locally, you can (optionally) use :shell:`-x` to
 automatically insert information that this is a cherry-pick and
 the original commit ID.
 
-This makes the history clearer. Sometimes minor changes have
-to be done while backporting to fix merge conflicts.
+This makes the history clearer.
 
 ..  code-block:: shell
 
     git cherry-pick -x <commit-id>
-
 
 This is how the commit might look like:
 
@@ -139,3 +144,20 @@ This is how the commit might look like:
         [TASK] Subject
 
         (cherry picked from commit 609493dd8893cbac7ad78aa38a23e02d011bb0c2)
+
+If a merge conflict arises solve the merge conflict. Check the syntax in the
+modified and resulting HTML file with
+
+.. code-block:: shell
+
+    make docs
+
+If everything looks fine continue the cherry-pick with
+
+.. code-block:: shell
+
+    git cherry-pick --continue
+
+Push your changes.
+Check in the intercept to see if a new rendering has started. Once this is
+done, check the documentation to see if the backport worked as expected.
