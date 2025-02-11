@@ -89,7 +89,7 @@ To enable automatic documentation rendering using GitHub webhooks, follow these 
    .. figure:: /_Images/webhook/github/webhook-section.png
       :width: 932
 
-#. Configure the webhook settings:
+#.  Configure the webhook settings:
 
     *   **Payload URL**: `https://docs-hook.typo3.org`
     *   **Content type**: `application/json`
