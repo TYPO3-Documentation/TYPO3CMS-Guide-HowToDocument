@@ -84,7 +84,7 @@ To enable automatic documentation rendering using GitHub webhooks, follow these 
    .. figure:: /_Images/webhook/github/settings-tab.png
       :width: 932
 
-#. Click **Add webhook**.
+#.  Click **Add webhook**.
 
    .. figure:: /_Images/webhook/github/webhook-section.png
       :width: 932
