@@ -91,11 +91,11 @@ To enable automatic documentation rendering using GitHub webhooks, follow these 
 
 #. Configure the webhook settings:
 
-   - **Payload URL**: `https://docs-hook.typo3.org`
-   - **Content type**: `application/json`
-   - **SSL verification**: Enabled
-   - **Events**: `Just the push event`
-   - **Active**: Checked
+    *   **Payload URL**: `https://docs-hook.typo3.org`
+    *   **Content type**: `application/json`
+    *   **SSL verification**: Enabled
+    *   **Events**: `Just the push event`
+    *   **Active**: Checked
 
    Click **Add webhook**.
 
