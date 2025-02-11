@@ -55,7 +55,7 @@ To test the webhook integration, push changes to the `main` or `documentation-dr
 
 .. note::
 
-   Documentation rendering is triggered only for the version affected by the push event, not the entire repository. For example, a push event on branch `7.8` will render only that version.
+   Documentation rendering is triggered only for the version affected by the push event, not the entire repository. For example, a push event on branch `13.4` will render only that version.
 
 .. _webhook-legacy:
 
