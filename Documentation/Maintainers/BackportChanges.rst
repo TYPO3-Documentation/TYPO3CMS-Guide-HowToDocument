@@ -117,6 +117,12 @@ additional authors is automatically added to the commit.
 How to backport manually?
 =========================
 
+Please make sure that you are in the branch you have just pushed into.
+Preferably `main`:
+
+..  code-block:: shell
+    git checkout main
+
 Look up the commit ID with
 
 ..  code-block:: shell
@@ -145,8 +151,9 @@ This is how the commit might look like:
 
         (cherry picked from commit 609493dd8893cbac7ad78aa38a23e02d011bb0c2)
 
-If a merge conflict arises solve the merge conflict. Check the syntax in the
-modified and resulting HTML file with
+If a merge conflict arises solve the merge conflict within the Git related
+files like `rst` and `md`.
+For a visual confirmation you can now execute the building process again with:
 
 ..  code-block:: shell
 
