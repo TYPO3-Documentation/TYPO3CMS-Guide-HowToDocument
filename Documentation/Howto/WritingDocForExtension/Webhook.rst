@@ -104,7 +104,7 @@ To enable automatic documentation rendering using GitHub webhooks, follow these 
 
 #. Verify webhook creation.
 
-   GitHub will confirm that the webhook was successfully added.
+    GitHub will confirm that the webhook was successfully added.
 
    .. figure:: /_Images/webhook/github/webhook-added.png
       :width: 932
