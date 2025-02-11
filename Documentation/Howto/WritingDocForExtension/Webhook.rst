@@ -27,8 +27,8 @@ Before your documentation is rendered, the TYPO3 Documentation Team must approve
 
 For approval, ensure the following:
 
-#. The extension must be published in the TYPO3 Extension Repository (TER) under the same extension key specified in :ref:`composer.json <t3coreapi:composer-json>`.
-#. The Git repository should be referenced on the TER detail view page.
+#.  The extension must be published in the TYPO3 Extension Repository (TER) under the same extension key specified in :ref:`composer.json <t3coreapi:composer-json>`.
+#.  The Git repository should be referenced on the TER detail view page.
 
 These steps help prevent misuse of the infrastructure and ensure extension name consistency.
 
