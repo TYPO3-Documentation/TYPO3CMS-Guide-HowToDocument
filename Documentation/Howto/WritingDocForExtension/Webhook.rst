@@ -74,7 +74,7 @@ To enable automatic documentation rendering using GitHub webhooks, follow these 
 
 .. rst-class:: bignums-xxl
 
-#. Navigate to the repository's **Settings** tab.
+#.  Navigate to the repositories **Settings** tab.
 
    .. figure:: /_Images/webhook/github/repository-start.png
       :width: 932
