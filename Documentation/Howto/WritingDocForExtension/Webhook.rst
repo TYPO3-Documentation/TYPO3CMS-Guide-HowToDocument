@@ -97,21 +97,21 @@ To enable automatic documentation rendering using GitHub webhooks, follow these 
     *   **Events**: `Just the push event`
     *   **Active**: Checked
 
-   Click **Add webhook**.
+    Click **Add webhook**.
 
    .. figure:: /_Images/webhook/github/webhook-add.png
       :width: 932
 
-#. Verify webhook creation.
+#.  Verify webhook creation.
 
     GitHub will confirm that the webhook was successfully added.
 
    .. figure:: /_Images/webhook/github/webhook-added.png
       :width: 932
 
-#. Test the webhook.
+#.  Test the webhook.
 
-   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check the **Recent actions** section. Push a commit to `main` or `documentation-draft` to trigger the webhook.
+    Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check the **Recent actions** section. Push a commit to `main` or `documentation-draft` to trigger the webhook.
 
    .. figure:: /_Images/webhook/github/intercept-feedback.png
       :width: 932
@@ -124,50 +124,50 @@ Bitbucket Cloud
 
 To configure a webhook for a Bitbucket repository:
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-#. Open the repository **Settings**.
+#.  Open the repository **Settings**.
 
-   .. figure:: /_Images/webhook/bitbucket/cloud/repository-start.png
-      :width: 932
+    ..  figure:: /_Images/webhook/bitbucket/cloud/repository-start.png
+        :width: 932
 
-#. Go to the **Webhooks** section.
+#.  Go to the **Webhooks** section.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/settings-tab.png
       :width: 932
 
-#. Click **Add webhook**.
+#.  Click **Add webhook**.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/webhook-section.png
       :width: 932
 
-#. Configure the webhook:
+#.  Configure the webhook:
 
-   - **Title**: `TYPO3 Docs`
-   - **URL**: `https://docs-hook.typo3.org`
-   - **Active**: Checked
-   - **Triggers**: `Repository push`
+    *   **Title**: `TYPO3 Docs`
+    *   **URL**: `https://docs-hook.typo3.org`
+    *   **Active**: Checked
+    *   **Triggers**: `Repository push`
 
-   Click **Save**.
+    Click **Save**.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/webhook-add.png
       :width: 932
 
-#. Verify webhook creation.
+#.  Verify webhook creation.
 
-   Bitbucket will confirm webhook addition.
+    Bitbucket will confirm webhook addition.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/webhook-added.png
       :width: 932
 
-#. Test the webhook.
+#.  Test the webhook.
 
-   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check **Recent actions**. Push a commit to `main` or `documentation-draft` to trigger the webhook.
+    Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check **Recent actions**. Push a commit to `main` or `documentation-draft` to trigger the webhook.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/intercept-feedback.png
       :width: 932
 
-.. index:: Webhooks; GitLab
+..  index:: Webhooks; GitLab
 .. _webhook-gitlab:
 
 GitLab Cloud and Self-Hosted
@@ -192,7 +192,7 @@ To set up a GitLab webhook:
    .. figure:: /_Images/webhook/gitlab/webhook-add.png
       :width: 932
 
-#. Verify webhook creation.
+#.  Verify webhook creation.
 
    The webhook will appear in the list.
 
@@ -206,14 +206,14 @@ To set up a GitLab webhook:
    .. figure:: /_Images/webhook/gitlab/intercept-feedback.png
       :width: 932
 
-.. _webhook-testing:
+..  _webhook-testing:
 
 Testing Webhooks
 ================
 
 To test webhook configurations before integrating with TYPO3, use:
 
-- `Beeceptor <https://beeceptor.com/>`_ for quick API testing.
-- `Webhook.site <https://webhook.site/>`_ to inspect webhook payloads in real-time.
+*   `Beeceptor <https://beeceptor.com/>`_ for quick API testing.
+*   `Webhook.site <https://webhook.site/>`_ to inspect webhook payloads in real-time.
 
 These tools help debug webhook calls and ensure correct configuration before enabling documentation rendering.
