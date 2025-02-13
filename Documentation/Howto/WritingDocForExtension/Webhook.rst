@@ -6,10 +6,9 @@
 Webhook
 =======
 
-This section describes how to add webhooks for auto rendering to a repository.
+This section explains how to configure webhooks for automatic documentation rendering in a repository.
 
-The system supports Git as VCS (Version Control System),
-and the following hosts:
+TYPO3 documentation rendering supports Git as a Version Control System (VCS) and integrates with the following repository hosts:
 
 -  :ref:`webhook-github`
 -  :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
@@ -18,68 +17,52 @@ and the following hosts:
 .. contents:: Table of Contents
    :local:
 
-
 .. index:: Webhooks; Approval
 .. _approval-intercept:
 
 Approval
 ========
 
-In order to render documentation, the TYPO3 Documentation Team needs to approve
-each new extension when requesting rendering for the first time.
+Before your documentation is rendered, the TYPO3 Documentation Team must approve the repository the first time you request rendering.
 
-In order to approve an extension, the following things need to apply:
+For approval, ensure the following:
 
-#. The extension needs to be published in TER under the same extension key as
-   claimed by :ref:`composer.json <t3coreapi:composer-json>`.
+#.  The extension must be published in the TYPO3 Extension Repository (TER) under the same extension key specified in :ref:`composer.json <t3coreapi:composer-json>`.
+#.  The Git repository should be referenced on the TER detail view page.
 
-#. The Git Repository is referenced from TER detail view page.
+These steps help prevent misuse of the infrastructure and ensure extension name consistency.
 
-This is necessary to prevent misuse of the infrastructure and extension names.
-
-In case the approval takes too long,
-request the approval within the Slack channel
-`#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_.
-Registration for Slack is available at `my.typo3.org
-<https://my.typo3.org/index.php?id=35>`__.
+If the approval process takes too long, request approval via the Slack channel
+`#typo3-documentation <https://typo3.slack.com/messages/C028JEPJL>`_. Register for Slack at `my.typo3.org <https://my.typo3.org/index.php?id=35>`__.
 
 .. _foreign-setups:
 
 Foreign setups
 ==============
 
-In some cases one might use a different host than the one mentioned above.
-Or the file structure does not match the structure of an TYPO3 extension.
-
-In such cases a mirror to one of the supported hosts must be setup.
-Otherwise it is not possible to enable documentation rendering on docs.typo3.org.
+If your repository is hosted outside the supported platforms (GitHub, GitLab, Bitbucket) or its structure differs from a typical TYPO3 extension, you must create a mirror on a supported platform. Otherwise, automatic rendering will not be possible.
 
 .. _webhook-how-webhook-works:
 
 How webhooks work
 =================
 
-If it's your first time working with webhooks, take a look at `GitHub developer
-<https://developer.github.com/webhooks/>`_. The configuration below triggers
-rendering only on push events.
+If you are new to webhooks, refer to the `GitHub Webhooks Guide <https://developer.github.com/webhooks/>`_.
 
-In order to test the integration, a push to `main` branch or
-`documentation-draft` branch can be used, see :ref:`migrate-branches`.
+The webhook setup described below ensures that rendering is triggered only on push events.
+
+To test the webhook integration, push changes to the `main` or `documentation-draft` branch (see :ref:`migrate-branches`).
 
 .. note::
 
-   Documentation rendering is only triggered for versions affected by push event.
-   Not the whole repository will be rendered each time.
-   If a push event for branch 7.8 is triggered, only this version will be rendered.
+   Documentation rendering is triggered only for the version affected by the push event, not the entire repository. For example, a push event on branch `13.4` will render only that version.
 
 .. _webhook-legacy:
 
 Legacy webhook
 ==============
 
-If the repository already had a hook, this is considered deprecated. A
-compatibility layer is still in place, but will be removed in the future.
-
+If a webhook was previously configured, it may be using a deprecated method. A compatibility layer is still in place but will be removed in the future.
 
 .. index:: Webhooks; GitHub
 .. _webhook-github:
@@ -87,164 +70,150 @@ compatibility layer is still in place, but will be removed in the future.
 GitHub
 ======
 
-Add auto rendering for a repository via GitHub webhook in five steps:
+To enable automatic documentation rendering using GitHub webhooks, follow these steps:
 
 .. rst-class:: bignums-xxl
 
-#. Go to "Settings" tab within the repository
+#.  Navigate to the repositories **Settings** tab.
 
    .. figure:: /_Images/webhook/github/repository-start.png
       :width: 932
 
-#. Go to "Webhooks" section within the repository settings
+#.  Open the **Webhooks** section.
 
    .. figure:: /_Images/webhook/github/settings-tab.png
       :width: 932
 
-#. Add webhook
+#.  Click **Add webhook**.
 
    .. figure:: /_Images/webhook/github/webhook-section.png
       :width: 932
 
-#. Fill in webhook configuration
+#.  Configure the webhook settings:
 
-   #. Configure URL :samp:`https://docs-hook.typo3.org` for field "Payload URL".
+    *   **Payload URL**: `https://docs-hook.typo3.org`
+    *   **Content type**: `application/json`
+    *   **SSL verification**: Enabled
+    *   **Events**: `Just the push event`
+    *   **Active**: Checked
 
-   #. Select ``application/json`` as "Content type".
-
-   #. Enable "SSL verification".
-
-   #. Select ``Just the push event.`` for "Which events would you like to trigger this webhook?".
-
-   #. Enable "Active".
-
-   #. Click on "Add webhook"
+    Click **Add webhook**.
 
    .. figure:: /_Images/webhook/github/webhook-add.png
       :width: 932
 
-#. Webhook was added
+#.  Verify webhook creation.
 
-   GitHub should show a notice that creation of webhook was successful.
+    GitHub will confirm that the webhook was successfully added.
 
    .. figure:: /_Images/webhook/github/webhook-added.png
       :width: 932
 
-#. Trigger webhook and visit to check request
+#.  Test the webhook.
 
-   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
-   check "Recent actions" (scroll down). The repository should have created a
-   "Docs hook ping from github repository".
-
-   For the documentation to be rendered, the hook needs to be triggered: Either push to the
-   branch ``main``. Or push to a new branch ``documentation-draft``.
+    Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check the **Recent actions** section. Push a commit to `main` or `documentation-draft` to trigger the webhook.
 
    .. figure:: /_Images/webhook/github/intercept-feedback.png
       :width: 932
 
-
 .. index:: Webhooks; Bitbucket
 .. _webhook-bitbucket-cloud:
 
-Bitbucket cloud
+Bitbucket Cloud
 ===============
 
-Add auto rendering for a repository via Bitbucket webhook in five steps:
+To configure a webhook for a Bitbucket repository:
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-#. Go to "Settings" section within the repository
+#.  Open the repository **Settings**.
 
-   .. figure:: /_Images/webhook/bitbucket/cloud/repository-start.png
-      :width: 932
+    ..  figure:: /_Images/webhook/bitbucket/cloud/repository-start.png
+        :width: 932
 
-#. Go to "Webhooks" section within the repository settings
+#.  Go to the **Webhooks** section.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/settings-tab.png
       :width: 932
 
-#. Add webhook
+#.  Click **Add webhook**.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/webhook-section.png
       :width: 932
 
-#. Fill in webhook configuration
+#.  Configure the webhook:
 
-   #. Choose a title for this hook: for example "TYPO3 Docs".
+    *   **Title**: `TYPO3 Docs`
+    *   **URL**: `https://docs-hook.typo3.org`
+    *   **Active**: Checked
+    *   **Triggers**: `Repository push`
 
-   #. Fill URL field with :samp:`https://docs-hook.typo3.org`.
-
-   #. Enable "Active" Status.
-
-   #. Select ``Repository push`` for "Triggers".
-
-   #. Click on "Save"
+    Click **Save**.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/webhook-add.png
       :width: 932
 
-#. Webhook was added
+#.  Verify webhook creation.
 
-   Bitbucket should show a notice, which disappears after some seconds, that
-   creation of webhook was successful. Also the webhook should be shown in the
-   list.
+    Bitbucket will confirm webhook addition.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/webhook-added.png
       :width: 932
 
-#. Trigger webhook and visit to check request
+#.  Test the webhook.
 
-   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
-   check "Recent actions" (scroll down).
-
-   For the documentation to be rendered, the hook needs to be triggered: Either push to the
-   branch ``main``. Or push to a new branch ``documentation-draft``.
+    Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check **Recent actions**. Push a commit to `main` or `documentation-draft` to trigger the webhook.
 
    .. figure:: /_Images/webhook/bitbucket/cloud/intercept-feedback.png
       :width: 932
 
-.. index::
-   Webhooks; GitLab cloud
-   Webhooks; GitLab self-hosted
+..  index:: Webhooks; GitLab
 .. _webhook-gitlab:
 
-GitLab cloud and GitLab self-hosted
-===================================
+GitLab Cloud and Self-Hosted
+============================
 
-Add auto rendering for a repository via GitLab webhook in four steps:
+To set up a GitLab webhook:
 
 .. rst-class:: bignums-xxl
 
-#. Go to "Integrations" section within the repository
+#. Open the **Integrations** section of the repository.
 
    .. figure:: /_Images/webhook/gitlab/repository-start.png
       :width: 932
 
-#. Add webhook by filling in webhook configuration
+#. Add a webhook with the following settings:
 
-   #. Fill URL field with :samp:`https://docs-hook.typo3.org`.
+   - **URL**: `https://docs-hook.typo3.org`
+   - **Triggers**: `Push events` and `Tag push events`
 
-   #. Select ``Push events`` and ``Tag push events`` for "Trigger".
-
-   #. Click on "Add webhook"
+   Click **Add webhook**.
 
    .. figure:: /_Images/webhook/gitlab/webhook-add.png
       :width: 932
 
-#. Webhook was added
+#.  Verify webhook creation.
 
-   The webhook should be shown in the list (scroll down).
+   The webhook will appear in the list.
 
    .. figure:: /_Images/webhook/gitlab/webhook-added.png
       :width: 932
 
-#. Trigger webhook and visit to check request
+#. Test the webhook.
 
-   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and
-   check "Recent actions" (scroll down).
-
-   For the documentation to be rendered, the hook needs to be triggered: Either push to the
-   branch ``main``. Or push to a new branch ``documentation-draft``.
+   Visit `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_ and check **Recent actions**. Push a commit to `main` or `documentation-draft` to trigger the webhook.
 
    .. figure:: /_Images/webhook/gitlab/intercept-feedback.png
       :width: 932
+
+..  _webhook-testing:
+
+Testing Webhooks
+================
+
+To test webhook configurations before integrating with TYPO3, use:
+
+*   `Beeceptor <https://beeceptor.com/>`_ for quick API testing.
+*   `Webhook.site <https://webhook.site/>`_ to inspect webhook payloads in real-time.
+
+These tools help debug webhook calls and ensure correct configuration before enabling documentation rendering.
