@@ -1,0 +1,17 @@
+:navigation-title: Introduction
+
+..  include:: /Includes.rst.txt
+..  _introduction:
+
+=====================
+Introduction to MyExt
+=====================
+
+This extension provides a simple way to display weather data.
+
+*   It fetches data from an external API and processes it in a way that allows
+    it to be cached and reused efficiently throughout the TYPO3 site.
+*   The results are cached for performance.
+*   You can configure the output in the backend.
+
+This extension is compatible with TYPO3 v12 and above.

@@ -1,0 +1,24 @@
+:navigation-title: Installation
+
+..  include:: /Includes.rst.txt
+..  _installation:
+
+========================================
+Installation and usage of this extension
+========================================
+
+You can install the extension like this:
+
+..  code-block:: bash
+
+    composer install myvendor/my-extension
+
+..  _config:
+
+Create a configuration file
+===========================
+
+If you want to see a more complete configuration, refer to the example below:
+
+..  literalinclude:: _codesnippets/_config.yaml
+    :caption: EXT:my_ext/Configuration/MyConfig/config.yaml
