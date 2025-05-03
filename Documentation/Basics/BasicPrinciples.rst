@@ -4,6 +4,8 @@
 ..  _basic-principles:
 ..  _whats-typo3-documentation:
 ..  _common-characteristics-typo3-docs:
+..  _about:
+..  _credits:
 
 =================
 Basic principles
@@ -70,3 +72,23 @@ We provide a Docker command to get started with documenting an extension:
 ..  include:: /_Includes/_InitCommand.rst.txt
 
 See also `How to document an extension <https://docs.typo3.org/permalink/h2document:write-doc-extensions-intro>`_.
+
+.. _how-to-get-help:
+.. _slack:
+.. _help:
+.. _contact-us:
+.. _get-help-on-writing-docs:
+
+Help and support
+================
+
+Need help with TYPO3 documentation? Join the TYPO3 Slack workspace and post your
+question in the **#typo3-documentation** channel.
+
+To register, visit:
+https://my.typo3.org/index.php?id=35
+
+For general TYPO3 support, see https://typo3.org/help/.
+
+You can also contact the Documentation Team by email:
+`documentation@typo3.org <mailto:documentation@typo3.org>`__
