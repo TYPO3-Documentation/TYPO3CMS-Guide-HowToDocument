@@ -91,8 +91,6 @@ reStructuredText (reST).
     :hidden:
     :caption: BASICS
 
-    Basics/About
-    Basics/HowToGetHelp
     Basics/BasicPrinciples
     Basics/RstCheatSheet
     Basics/MdCheatSheet
