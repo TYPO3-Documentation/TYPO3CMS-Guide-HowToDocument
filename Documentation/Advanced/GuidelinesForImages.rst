@@ -9,9 +9,11 @@
 Guidelines for creating images
 ==============================
 
-Read here how to embed an image into ReST: :ref:`Images <h2document:images>`.
+For accessibility reasons **always** provide an alt text:
 
-For accessibility reasons always provide an alt text.
+..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
+
+More option for embedding images into ReST: :ref:`Images <h2document:images>`.
 
 ..  _guidelines-for-images-formats:
 
@@ -22,6 +24,7 @@ Image formats
    and SVG for vector graphics images. In any case, you can use .png.
 
 ..  _guidelines-for-images-screenshot:
+..  _automatic-screenshots:
 
 Guidelines for screenshots
 ==========================
@@ -61,7 +64,6 @@ We have a ready to use TYPO3 project that you can run in GitHub Codespaces
 or locally on DDEV to make screenshots:
 
 `Ready to use Project for screenshots <https://github.com/TYPO3-Documentation/site-introduction/blob/main/Readme.md>`_
-
 
 ..  _guidelines-for-images-screenshot-with-grafics:
 

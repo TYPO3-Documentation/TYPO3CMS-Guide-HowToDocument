@@ -142,12 +142,7 @@ confval menues: :ref:`rest-confval`.
 Figures and Images
 ==================
 
-..  code-block:: rst
-
-    ..  figure:: /_Images/a4.jpg
-        :alt: some image
-
-    The caption of the image
+..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
 
 *   :ref:`Images in reST <h2document:images>`
 *   :ref:`Guidelines for creating images <h2document:guidelines-for-images>`

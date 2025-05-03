@@ -11,10 +11,7 @@ PlantUML diagrams
 In order to render diagrams in the TYPO3 documentation,
 `PlantUML <https://plantuml.com/>`_ is integrated into the rendering process.
 
-Embedded UML diagrams
-=====================
-
-Simple diagrams can be embedded directly into the reStructuredText markup:
+Basic diagrams can be embedded directly into the reStructuredText markup:
 
 ..  code-block:: rst
     :caption: Documentation/SomeFile.rst
@@ -30,6 +27,8 @@ This will be rendered as:
     :caption: Some Caption
 
     class -> otherClass : message
+
+..  _PlantUML-diagrams-included:
 
 Include a PlantUML file
 =======================

@@ -1,47 +1,40 @@
+:navigation-title: Images
+
 ..  include:: /Includes.rst.txt
 ..  index:: pair: reST; Images
 ..  _how-to-document-images:
-..  _rest-images:
 ..  _images:
 
-======
-Images
-======
+==================================
+Using images in ReST documentation
+==================================
 
-..  index:: automatic screenshot generation
-..  _automatic-screenshots:
+You can use the `The example screenshot project <https://docs.typo3.org/permalink/h2document:screenshot-project>`_.
+It already follows most of the rules stated below. There has been no automatic
+screenshot tool since TYPO3 v11 as it proved to be to complicated to maintain.
 
-Automatic screenshot generation
-===============================
+..  attention::
 
-See the `README in the t3docs-screenshots <https://github.com/TYPO3-Documentation/t3docs-screenshots/blob/main/README.rst>`__
-for more information on automating screenshot generation.
+    For official and Core manuals please follow the
+    `Guidelines for creating images <https://docs.typo3.org/permalink/h2document:guidelines-for-images>`_.
 
-..  index:: reST directives; image
+..  _rest-images:
 
-How to use images
-=================
+Images and figures in Rest
+==========================
 
-Use the `..  image::` directive with additional parameters.
+We recommend to use the `..  figure::` directive. It works just like
+`..  image::` save that you can add a descriptive text as content.
 
-Use `..  figure::` if you want to add a caption to your image.
-You can use the same parameters in figure that are defined for image.
+Always use the parameter `:alt:` to add a descriptive text for visually impaired
+and search engine / artificial intelligence bots scanning our docs.
 
-The
-additional parameters must be indented one level (add 4 spaces to indent).
+Example:
 
-Recommended parameters for images:
+..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
 
-*   `:class: with-shadow`
+Optional parameters for images and figures:
 
-Alternatively, a border can be defined:
-
-*   `:class: with-border`
-
-
-Optional parameters for images:
-
-*   `:alt:` : alt text
 *   `:target:` link target
 *   `:width:` : width of image, use for example px (for example `:width: 100px`
 *   `:scale:` : scale images, for example `:scale: 65`
@@ -49,13 +42,10 @@ Optional parameters for images:
 Additional parameters can be found on the docutils page `reStructuredText Directives
 <http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__
 
-Examples
-========
-
-..  index:: reST; Image scaling
+..  _image-scaled:
 
 Example 1: Scaled image with shadow and link target
----------------------------------------------------
+===================================================
 
 ..  image:: /_Images/a4.jpg
     :alt: Left floating image
@@ -66,37 +56,20 @@ Example 1: Scaled image with shadow and link target
 ..  code-block:: rst
     :linenos:
 
-    ..  image:: /_Images/a4.jpg
+    ..  figure:: /_Images/a4.jpg
         :alt: some image
         :target: https://typo3.org
         :class: with-shadow
         :scale: 50
 
+..  _image-caption:
 
-**line 1:**
-    image directive with path
-
-**line 2:**
-    alt-Text
-
-**line 3:**
-    link target
-
-**line 4:**
-    use a shadow on the image
-
-
-..  index::
-    reST directives; figure
-    reST; Image caption
-
-Example 2: Image with caption
------------------------------
+Example 2: Image with caption and fixed width
+=============================================
 
 ..  figure:: /_Images/a4.jpg
     :alt: Left floating image
     :target: https://typo3.org
-    :class: with-shadow
     :width: 100px
 
     This is the image caption
@@ -107,75 +80,6 @@ Example 2: Image with caption
         ..  figure:: /_Images/a4.jpg
             :alt: some image
             :target: https://typo3.org
-            :class: with-shadow
             :width: 100px
 
             This is the image caption
-
-**line 5:**
-    width of image
-
-
-Example 3: Image with fixed width
----------------------------------
-
-..  image:: /_Images/a4.jpg
-    :alt: Left floating image
-    :target: https://typo3.org
-    :class: with-shadow
-    :width: 100px
-
-
-..  code-block:: rst
-    :linenos:
-
-    ..  image:: /_Images/a4.jpg
-        :alt: some image
-        :target: https://typo3.org
-        :class: with-shadow
-        :width: 100px
-
-**line 5:**
-    width of image
-
-
-..  index:: reST; Image floating
-
-
-Example 4: Image with float-left
---------------------------------
-
-..  image:: /_Images/a4.jpg
-    :alt: Left floating image
-    :target: https://typo3.org
-    :class: with-shadow float-left
-
-Some text ...  (will be displayed on the right of the image).
-
-..  rst-class::  clear-both
-
-
-..  code-block:: rst
-
-    ..  image:: /_Images/a4.jpg
-        :alt: Left floating image
-        :target: https://typo3.org
-        :class: with-shadow float-left
-
-    Some text ...  (will be displayed on the right of the image)
-
-    ..  rst-class::  clear-both
-
-
-..  hint::
-
-    When using float-left, make sure the text is suitable for
-    wrapping around images. Here, we use `..  rst-class:: clear-both`
-    to reset the floating and start on the left again.
-
-
-Example 5: Image with border
-----------------------------
-
-..  image:: /_Images/a4.jpg
-    :class: with-border
