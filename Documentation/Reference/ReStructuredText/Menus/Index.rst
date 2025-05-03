@@ -2,12 +2,15 @@
 ..  _rest-menu:
 ..  _rest-page-structure:
 
-========================
-Menus and page structure
-========================
+=================
+Menus and headers
+=================
 
 ..  toctree::
     :titlesonly:
     :glob:
 
+    HeadlinesAndSection
+    MenuHierarchy
+    ContentMenu
     *

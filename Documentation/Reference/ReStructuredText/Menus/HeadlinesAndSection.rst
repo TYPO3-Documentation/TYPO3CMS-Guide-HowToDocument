@@ -1,3 +1,4 @@
+:navigation-title: Headlines
 
 ..  include:: /Includes.rst.txt
 ..  index::
@@ -7,11 +8,8 @@
 ..  _headlines-and-sections:
 
 ======================
-Headlines and Anchors
+Headlines and anchors
 ======================
-
-
-..  contents::
 
 Each reST document must have a title. It is overlined and underlined like this:
 
@@ -31,17 +29,11 @@ Use headers to divide your document into sections. Start with h2:
 
 By convention we use the following underlines:
 
+..  literalinclude:: /_CodeSnippets/_Headers.rst.txt
+
+Further headline levels are possible:
+
 ..  code-block:: rst
-
-    ..  _h2-headline:
-
-    H2 Headline
-    ===========
-
-    ..  _h3-headline:
-
-    H3 Headline
-    -----------
 
     ..  _h4-headline:
 
@@ -100,4 +92,6 @@ enforced.
 
 Each headline should have an anchor. Otherwise permalinking does not work.
 
-Keep anchors unless a concept is completely removed.
+In the official docs recommend to never delete an anchor. If a concept is
+removed without substitute, move the anchor to a special page when and why the
+concept was removed.

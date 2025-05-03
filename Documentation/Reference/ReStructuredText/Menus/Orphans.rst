@@ -1,3 +1,5 @@
+:navigation-title: Orphans
+
 ..  include:: /Includes.rst.txt
 
 ..  index:: pair: reST; Orphaned pages
@@ -7,9 +9,8 @@
 Orphaned pages
 ==============
 
-
 Usually it is desired to have each and every .rst- file appear in the
-menu somewhere. Sphinx will issue a warning if this isn’t the case.
+menu somewhere. The rendering tool issues warnings if a file is not included.
 
 ..  hint::
 
