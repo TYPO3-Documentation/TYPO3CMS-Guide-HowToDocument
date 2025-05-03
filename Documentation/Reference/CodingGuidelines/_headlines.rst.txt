@@ -1,0 +1,32 @@
+:navigation-title: Headline levels
+
+..  include:: /Includes.rst.txt
+..  _headline-levels:
+
+=======================
+Headline levels in ReST
+=======================
+
+This example demonstrates the correct use of headline levels in TYPO3
+documentation.
+
+..  _headline-level-2:
+
+Level 2 headline
+================
+
+This is the first content section under the main title.
+
+..  _headline-level-3:
+
+Level 3 headline
+----------------
+
+This subsection provides more detailed information.
+
+..  _headline-level-4:
+
+Level 4 headline
+~~~~~~~~~~~~~~~~
+
+This is a lower-level note or detail under the level 3 headline.

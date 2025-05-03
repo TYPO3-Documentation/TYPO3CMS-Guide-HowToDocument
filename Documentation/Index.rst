@@ -103,6 +103,7 @@ reStructuredText (reST).
 
     Reference/*
     Reference/ReStructuredText/Index
+    Reference/CodingGuidelines/Index
 
 ..  toctree::
     :hidden:
