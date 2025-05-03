@@ -1,0 +1,4 @@
+..  figure:: /_Images/a4.jpg
+    :alt: some image
+
+    This is the image caption
