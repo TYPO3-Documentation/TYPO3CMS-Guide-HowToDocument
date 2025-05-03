@@ -40,6 +40,8 @@ Rendering
 Rendering converts `.rst` source files into styled HTML output. You can preview
 docs locally using the official Docker container:
 
+..  include:: /_Includes/_LocalRendering.rst.txt
+
 ..  _contribution-matrix:
 
 Contributing to official documentation
@@ -61,7 +63,8 @@ Documenting your own extension
 To document your TYPO3 extension, create a :file:`Documentation` folder in your
 extension and add `.rst` files following the standard structure.
 
-If your extension is hosted on GitHub and correctly configured, contributors
-can use the :guilabel:`Edit on GitHub` button to propose changes.
+We provide a Docker command to get started with documenting an extension:
 
-See :ref:`how-to-start-docs-extension` to get started with the recommended setup.
+..  include:: /_Includes/_InitCommand.rst.txt
+
+See also `How to document an extension <https://docs.typo3.org/permalink/h2document:write-doc-extensions-intro>`_.
