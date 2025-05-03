@@ -56,8 +56,7 @@ Rules headlines
 *   Each headline should have a unique anchor so that permalinks to the headline
     can be generated.
 
-..  literalinclude:: _headlines.rst.txt
-    :caption: Documentation/HeaderDemo.rst
+..  literalinclude:: /_CodeSnippets/_Headers.rst.txt
 
 See `Headlines and Anchors <https://docs.typo3.org/permalink/h2document:headlines-and-sections>`_
 for more headline levels.

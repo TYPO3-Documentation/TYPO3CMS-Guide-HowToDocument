@@ -18,27 +18,7 @@ Headlines and Anchors
 
 Each reST document must have a title. It is overlined and underlined like this:
 
-..  code-block:: rst
-
-    ..  _rest-cheat-sheet:
-
-    =============================
-    Cheat sheet: reStructuredText
-    =============================
-
-    Some text.
-
-    ..  _h2-headline:
-
-    H2 Headline
-    ===========
-
-    Lorem Ipsum
-
-    ..  _h3-headline:
-
-    H3 Headline
-    -----------
+..  literalinclude:: /_CodeSnippets/_Headers.rst.txt
 
 There are more :ref:`levels of headlines <headlines-and-sections>`
 

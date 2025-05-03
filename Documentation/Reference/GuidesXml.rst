@@ -108,6 +108,13 @@ guides.xml API
                 <!-- [...] -->
             </guides>
 
+        ..  confval:: automatic-menu
+            :name: guides-automatic-menu
+            :type: boolean
+            :Default: `false`
+
+            If this option is set to true, an :ref:`alphabetical menu is
+            automatically created <menu-automatic>`.
 
     .. _settings-guides-interlink-mapping:
 
