@@ -13,6 +13,8 @@ TYPO3 documentation is written in **reStructuredText (reST)** and rendered to
 HTML using a shared toolchain. Most documentation is hosted on
 https://docs.typo3.org and follows a common structure and style.
 
+..  contents:: Table of content
+
 ..  _documentation-types:
 ..  _doc-type-tutorial:
 ..  _doc-type-guide:
