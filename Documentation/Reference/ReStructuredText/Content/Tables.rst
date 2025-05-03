@@ -133,6 +133,3 @@ platforms as well (for example GitHub), you should not use this.
         :Header2:   two
 
 
-Example: https://docs.typo3.org/typo3cms/GuidesAndTutorials/Index.html
-
-
