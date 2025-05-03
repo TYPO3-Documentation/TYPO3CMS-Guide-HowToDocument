@@ -1,9 +1,9 @@
-.. include:: /Includes.rst.txt
-.. index::
-   ! Images
-   Screenshots
-   see: Screenshots; Images
-.. _guidelines-for-images:
+..  include:: /Includes.rst.txt
+..  index::
+    ! Images
+    Screenshots
+    see: Screenshots; Images
+..  _guidelines-for-images:
 
 ==============================
 Guidelines for creating images
@@ -13,24 +13,23 @@ Read here how to embed an image into ReST: :ref:`Images <h2document:images>`.
 
 For accessibility reasons always provide an alt text.
 
-.. _guidelines-for-images-formats:
+..  _guidelines-for-images-formats:
 
 Image formats
--------------
+=============
 
 *  It is recommended to use PNG for bitmaps (for example screenshots, photographs)
    and SVG for vector graphics images. In any case, you can use .png.
 
-
-.. _guidelines-for-images-screenshot:
+..  _guidelines-for-images-screenshot:
 
 Guidelines for screenshots
 ==========================
 
 ..  note::
-    We do not have an automatic screenshot tool working with current TYPO3
-    versions at the moment. The automatic screenshot tool we were working on
-    never worked beyond TYPO3 11 LTS.
+    You can use the `The example screenshot project <https://docs.typo3.org/permalink/h2document:screenshot-project>`_.
+    It already follows most of the rules stated below. There has been no automatic
+    screenshot tool since TYPO3 v11 as it proved to be to complicated to maintain.
 
 *   Before adding a screenshot consider if one is necessary. Each new screenshot
     requires maintenance.
@@ -53,7 +52,18 @@ Guidelines for screenshots
 *   When reviewing screenshots take into consideration that taking screenshots
     is a lot of effort.
 
-.. _guidelines-for-images-screenshot-with-grafics:
+..  _screenshot-project:
+
+The example screenshot project
+==============================
+
+We have a ready to use TYPO3 project that you can run in GitHub Codespaces
+or locally on DDEV to make screenshots:
+
+`Ready to use Project for screenshots <https://github.com/TYPO3-Documentation/site-introduction/blob/main/Readme.md>`_
+
+
+..  _guidelines-for-images-screenshot-with-grafics:
 
 Guidelines for screenshots with graphics elements
 =================================================
