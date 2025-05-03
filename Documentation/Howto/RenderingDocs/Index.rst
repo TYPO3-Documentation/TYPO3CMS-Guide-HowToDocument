@@ -8,14 +8,26 @@
     Rendering; Commands
 .. _rendering-docs:
 .. _rendering-docs-quickstart:
-.. _render-documenation-with-docker:
-.. _render-documentation-with-docker:
 
 =========================================
 Render documentation with the TYPO3 theme
 =========================================
 
+You can render documentation by executing the following command in the folder
+that contains the :path:`Documentation` folder:
+
+..  include:: /_Includes/_LocalRendering.rst.txt
+
+The official manuals commonly contain a make file. You
+can use the short command:
+
+..  code-block::
+
+    make docs
+
 ..  contents::
+
+..  _render-documentation-with-docker:
 
 Rendering the :file:`Documentation` folder locally with Docker
 ==============================================================
@@ -134,6 +146,7 @@ you can create a bash alias like:
     `5173` you need to adapt that command to use another free TCP port for you,
     and adapt the port in the web-browser URL.
 
+..  _publish-documentation:
 
 Publishing extension documentation to docs.typo3.org
 ====================================================
@@ -147,6 +160,9 @@ in the extension's root directory.
 The extension has to be publicly available on GitHub or GitLab. You have to
 establish a :ref:`Webhook <webhook>` and the Documentation Team has to
 :ref:`approve <approval-intercept>` your first rendering.
+
+
+..  _test-documentation:
 
 Introduce automatic testing for extension documentation
 =======================================================

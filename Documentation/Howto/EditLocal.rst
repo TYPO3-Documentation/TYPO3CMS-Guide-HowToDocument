@@ -90,7 +90,7 @@ the ability to experiment and preview your changes locally before submitting the
 
    Render your changes with Docker to preview them locally:
 
-   *  :ref:`render-documenation-with-docker`
+   *  :ref:`render-documentation-with-docker`
 
 8. Commit
 
