@@ -362,25 +362,6 @@ code block.
             :emphasize-lines: 5,10-13
             :linenos:
 
-Literal includes can even be used to render the difference between files,
-without having to create a diff file first:
-
-..  tabs::
-
-    ..  group-tab:: Source (rst)
-
-        ..  code-block:: rst
-            :caption: Documentation/SiteConfiguration/Index.rst
-
-            ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
-                :diff: /_CodeSnippets/LiteralIncludes/example_de.yaml
-
-    ..  group-tab:: Output
-
-        ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
-            :diff: /_CodeSnippets/LiteralIncludes/example_de.yaml
-
-
 See also `literalinclude directive
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
 
