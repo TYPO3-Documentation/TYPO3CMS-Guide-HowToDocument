@@ -121,6 +121,6 @@ Examples:
 
 ..  code-block:: bash
 
-    docker exec -it typo3-screenshots ./vendor/bin/typo3 help
+    docker exec -it typo3-screenshots ./vendor/bin/typo3 list
     docker exec -it typo3-screenshots ./vendor/bin/typo3 extension:setup
     docker exec -it typo3-screenshots ./vendor/bin/typo3 language:update
