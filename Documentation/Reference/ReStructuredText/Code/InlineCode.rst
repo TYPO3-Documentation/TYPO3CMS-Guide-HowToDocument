@@ -9,12 +9,12 @@ Inline code with or without overlays
 
 ..  hint::
 
-    Too much inline code can make the information on a page highly
+    Too much inline code can make the information on a page
     unreadable. If this is the case, consider using
     `Code blocks with syntax highlighting <https://docs.typo3.org/permalink/h2document:writing-rest-codeblocks-with-syntax-highlighting>`_.
 
-Any text within single or double backtics is printed as inline code. Double
-backtics allow the use of unescaped backtics within the code:
+Any text inside single or double backticks is printed as inline code. Double
+backticks allow unescaped backticks to be used in the code:
 
 ..  tabs::
 
@@ -26,7 +26,7 @@ backtics allow the use of unescaped backtics within the code:
 
         ..  literalinclude:: _snippets/_inline-code.rst.txt
 
-By convention we use single backtics unless double are needed.
+By convention single backticks are used unless double are needed.
 
 ..  _inline-code-language:
 
@@ -34,8 +34,8 @@ Code roles with language information and overlay
 ================================================
 
 You can also use text roles with one of the predefined languages to display more
-information to the user. For the most common languages we have some automatic
-detection to provide more context for the user.
+information to the user. For the most common languages, automatic
+detection provides more context for the user.
 
 ..  tabs::
 
