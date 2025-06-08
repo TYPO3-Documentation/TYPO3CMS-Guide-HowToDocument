@@ -129,7 +129,7 @@ Each `.rst` file that is included in the menu **must** have a page title and
 should have a short
 `navigation title <https://docs.typo3.org/permalink/h2document:navigation-title>`_.
 
-..  literalinclude:: _CodeSnippets/_page.rst.txt
+..  literalinclude:: _Include/_page.rst.txt
     :caption: Documentation/Introduction.rst
 
 If a page should not be included in the menu it must be marked as `:orphan:` in

@@ -1,0 +1,11 @@
+:navigation-title: Main menu
+
+..  include:: /Includes.rst.txt
+..  _rest-menu-hierachy:
+
+=========================================
+Main menu of a TYPO3 documentation manual
+=========================================
+
+A manual consisting of more then one page should have a menu displayed on the
+left side of each page.
