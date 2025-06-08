@@ -85,7 +85,7 @@ terminal.
 ..  _screenshot-composer:
 
 Installing additional extensions with Composer
-=============================================
+==============================================
 
 Once inside the container (via :ref:`screenshot-ssh`), you can install TYPO3
 extensions using Composer. For example:
