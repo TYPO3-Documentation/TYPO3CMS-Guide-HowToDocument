@@ -101,9 +101,13 @@ reStructuredText (reST).
     :caption: REFERENCE
     :glob:
 
-    Reference/*
     Reference/ReStructuredText/Index
     Reference/CodingGuidelines/Index
+    Reference/FileStructure
+    Reference/GuidesXml
+    Reference/RenderingContainer
+    Reference/ScreenshotContainer/Index
+    Reference/*
 
 ..  toctree::
     :hidden:
