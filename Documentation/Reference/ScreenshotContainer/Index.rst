@@ -16,7 +16,7 @@ for the official documentation, which already follows out
 ..  seealso::
 
     *   `Guidelines for screenshots in the official documentation <https://docs.typo3.org/permalink/h2document:automatic-screenshots>`_
-    *   `linawolf/typo3-screenshots <https://hub.docker.com/repository/docker/linawolf/typo3-screenshots/general>`_
+    *   `linawolf/typo3-screenshots <https://hub.docker.com/r/linawolf/typo3-screenshots>`_
     *   `Ready to use Project for Screenshots (GitHub) <https://github.com/TYPO3-Documentation/site-introduction>`_
 
 ..  _screenshot-quick:
