@@ -1,13 +1,15 @@
+:navigation-title: Bold, Italic etc.
+
 ..  include:: /Includes.rst.txt
-..  index:: reST; Font styles
 ..  _rest-bold-italic:
 
-=================
-Bold, Italic etc.
-=================
+=======================================
+Basic inline markup (bold, italic etc.)
+=======================================
 
+..  contents:: Table of contents
 
-..  index:: reST; Bold
+..  _rest-bold:
 
 Bold
 ====
@@ -20,8 +22,7 @@ How it looks:
 
 This is normal text. **This is bold text**
 
-
-..  index:: reST; Italic
+..  _rest-italic:
 
 Italic
 ======
@@ -36,10 +37,3 @@ This is normal text. *This is italic text.*
 
 ..  hint::
     Make sure there is no space between the markup and the styled text.
-
-
-Additional Information
-======================
-
-*   `Text syntax: bold, italic, verbatim and special characters
-    <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html#text-syntax-bold-italic-verbatim-and-special-characters>`__

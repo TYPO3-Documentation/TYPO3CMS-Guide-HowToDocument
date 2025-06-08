@@ -1,0 +1,9 @@
+*   :abbr:`LIFO (last-in, first-out)`
+*   :path:`public/fileadmin`
+*   :file:`config/system/settings.php`
+*   :guilabel:`Web > Pages`
+*   Press :kbd:`ctrl` + :kbd:`s`
+*   :composer:`typo3/cms-core`, :composer:`georgringer/news`
+*   See also :issue:`102056` or :issue:`This issue <99508>` for forge issues
+*   :t3ext:`fal_securedownload` or :t3ext:`EXT:news`, :t3ext:`news <EXT:news>`
+*   :t3src:`backend/Configuration/Backend/Routes.php`
