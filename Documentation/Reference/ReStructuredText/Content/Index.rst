@@ -1,9 +1,11 @@
+:navigation-title: Directives
+
 ..  include:: /Includes.rst.txt
 ..  _rest-content:
 
-===================================
-Content styles and content elements
-===================================
+==================================
+Directives (reST Content elements)
+==================================
 
 ..  toctree::
     :titlesonly:

@@ -1,3 +1,5 @@
+:navigation-title: Code blocks
+
 ..  include:: /Includes.rst.txt
 ..  index::
     reST; Code blocks
@@ -8,10 +10,11 @@
 Code blocks with syntax highlighting
 ====================================
 
+..  contents:: Table of contents
 
 ..  _codeblock-quick-reference:
 
-Quick Reference
+Quick reference
 ===============
 
 A code block consists of a `code-block` directive and the actual code indented
