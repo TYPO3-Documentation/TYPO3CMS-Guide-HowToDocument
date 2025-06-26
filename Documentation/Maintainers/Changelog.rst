@@ -17,7 +17,7 @@ entry is created or edited, for example:
     instead.
 
 Each Core change affecting the changelog automatically creates an
-`Issue in the repository Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`.
+:ref:`Issue in the repository Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`.
 New issues here should be treated with priority.
 
 .. index:: pair: Updates; Commit messages
