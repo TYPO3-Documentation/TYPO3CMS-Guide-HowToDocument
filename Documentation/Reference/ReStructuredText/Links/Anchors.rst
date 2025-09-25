@@ -19,7 +19,7 @@ correct target.
 
 You can define a link anchor with a label for a section.
 
-In the following example, the link target :rst:`columns-inline` is assigned
+In the following example, the link target :rst:`inline-columns` is assigned
 to the section with the title "Inline columns".
 
 Place the link anchor definition directly before the section header:
