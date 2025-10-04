@@ -63,7 +63,7 @@ The example screenshot project
 We have a ready to use TYPO3 project that you can run in GitHub Codespaces
 or locally on DDEV to make screenshots:
 
-`Ready to use Project for screenshots <https://github.com/TYPO3-Documentation/site-introduction/blob/main/Readme.md>`_
+`Ready to use Project for screenshots <https://github.com/TYPO3-Documentation/site-introduction/blob/main/README.md>`_
 
 ..  _guidelines-for-images-screenshot-with-grafics:
 
