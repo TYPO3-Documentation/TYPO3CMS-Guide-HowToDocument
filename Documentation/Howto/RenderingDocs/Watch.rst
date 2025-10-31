@@ -76,6 +76,31 @@ you can create a bash alias like:
     You can do this by changing the :bash:`-p` parameter, e.g. to
     :bash:`-p 8080:1337` to use TCP port `8080` on your host system.
 
+Docker compose
+==============
+
+If you are using `docker-compose <https://docs.docker.com/compose/>`_ to manage your
+development environment, you can add a service for the live rendering like this:
+
+..  code-block:: yaml
+    :caption: docker-compose.yml
+
+    services:
+      render-wysiwyg:
+        restart: "no"
+        image: ghcr.io/typo3-documentation/render-guides:latest
+        ports:
+          - "1337:1337"
+        volumes:
+          - ./Documentation:/project/Documentation
+          - ./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp
+        command: ["--config=Documentation", "--watch"]
+
+.. info::
+
+   Render guides was never optimized for long running services. You might need
+   to restart the container from time to time to free up resources.
+
 Limitations
 ===========
 
