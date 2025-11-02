@@ -96,10 +96,18 @@ development environment, you can add a service for the live rendering like this:
           - ./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp
         command: ["--config=Documentation", "--watch"]
 
-.. info::
+.. note::
 
    Render guides was never optimized for long running services. You might need
    to restart the container from time to time to free up resources.
+
+DDev
+====
+
+For integration with DDEV projects, a DDEV addon has been created at https://github.com/TYPO3-Documentation/ddev-typo3-docs.
+This can be used to automatically start the live documentation preview within the DDEV project at http://<yourproject>.ddev.site:1337/
+whenever you start that project, and can directly view and work on documentation alongside the project.
+In this environment, users do not even need to execute a manual `docker run` command anymore, and have full integration at hand.
 
 Limitations
 ===========
