@@ -40,3 +40,13 @@ https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workfl
 ..  attention::
     This workflow is running automatically for max 60 days then it has to be
     restarted manually
+
+Rendering the API locally
+-------------------------
+
+..  code-block: bash
+
+    git clone git@github.com:TYPO3-Documentation/render-guides.git
+    cd render-guides
+    make clone-typo3 # puts TYPO3 core into .Build/TYPO3
+    make api-docs # puts result into .phpdoc/build
