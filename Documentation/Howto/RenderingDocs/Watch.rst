@@ -101,7 +101,7 @@ development environment, you can add a service for the live rendering like this:
    Render guides was never optimized for long running services. You might need
    to restart the container from time to time to free up resources.
 
-DDev
+DDEV
 ====
 
 For integration with DDEV projects, a DDEV addon has been created at https://github.com/TYPO3-Documentation/ddev-typo3-docs.
