@@ -47,7 +47,8 @@ to view progress.
               -v "./Documentation:/project/Documentation" \
               -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
               -p 1337:1337 ghcr.io/typo3-documentation/render-guides:latest --config="Documentation" --watch
-            xdg-open "http://localhost:1337/Index.html"
+            open "http://localhost:1337/Index.html"
+
     ..  group-tab:: Windows
 
         ..  code-block:: powershell
@@ -56,7 +57,7 @@ to view progress.
               -v "./Documentation:/project/Documentation" \
               -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
               -p 1337:1337 ghcr.io/typo3-documentation/render-guides:latest --config="Documentation" --watch
-            xdg-open "http://localhost:1337/Index.html"
+            start "http://localhost:1337/Index.html"
 
 The command above can also be added to your project's `Makefile` or
 you can create a bash alias like:
