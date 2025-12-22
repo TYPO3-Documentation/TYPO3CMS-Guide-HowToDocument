@@ -213,8 +213,19 @@ Keyboard navigation
     *   :kbd:`Arrow keys` - Navigate between images (gallery mode)
     *   :kbd:`+` / :kbd:`-` - Zoom in/out (gallery mode)
 
-*   **Inline and Lens modes**: Mouse-based interaction, keyboard users can
-    open the full image in a new tab if needed
+*   **Inline zoom mode**: Full keyboard support
+
+    *   :kbd:`Tab` - Focus the image
+    *   :kbd:`+` / :kbd:`-` - Zoom in/out
+    *   :kbd:`Arrow keys` - Pan when zoomed
+    *   :kbd:`ESC` or :kbd:`0` - Reset zoom
+
+*   **Lens mode**: Keyboard activation supported
+
+    *   :kbd:`Tab` - Focus the image
+    *   :kbd:`Enter` or :kbd:`Space` - Toggle lens on/off
+    *   :kbd:`Arrow keys` - Move lens position
+    *   :kbd:`ESC` - Deactivate lens
 
 Screen reader support
 ~~~~~~~~~~~~~~~~~~~~~~
