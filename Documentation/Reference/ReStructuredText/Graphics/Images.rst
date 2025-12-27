@@ -89,6 +89,9 @@ Example 2: Image with caption and fixed width
 Image zoom and lightbox features
 =================================
 
+..  versionadded:: 0.2.0
+    The image zoom feature was introduced in render-guides version 0.2.0.
+
 The TYPO3 documentation theme provides built-in image zoom and lightbox
 features to enhance the viewing experience for images and figures. These
 features allow readers to view images in greater detail without leaving
@@ -150,6 +153,10 @@ The following options are available for the figure and image directives:
 `:zoom-indicator:`
     Whether to show the zoom indicator icon. Set to `false` to hide it.
     Default is `true` (shown).
+
+`:zoom-factor:`
+    Magnification factor for lens mode. Default is `2`. Higher values
+    provide stronger magnification. Only used with `:zoom: lens`.
 
 Usage examples
 --------------
