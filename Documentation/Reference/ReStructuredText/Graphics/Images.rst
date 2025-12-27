@@ -97,91 +97,109 @@ the documentation page.
 Available zoom modes
 --------------------
 
-The zoom functionality is controlled by adding a CSS class to your figure
-or image directive. The following zoom modes are available:
+The zoom functionality is controlled by the `:zoom:` option on figure
+and image directives. The following zoom modes are available:
 
 ..  rst-class:: dl-parameters
 
-:class:`zoom-lightbox` (default)
+`lightbox`
     Click to open the image in a full-screen overlay dialog. The lightbox
     provides a dark backdrop and centers the image. Click outside the image
-    or press ESC to close.
+    or press Escape to close. A zoom indicator icon appears on the image.
 
     **Use case**: Screenshots, diagrams, and any image that benefits from
-    full-screen viewing.
+    full-screen viewing. This is the recommended mode for most images.
 
-:class:`zoom-gallery`
+`gallery`
     Click to open the image in a gallery viewer with mouse wheel zoom
-    capabilities and navigation controls. Ideal for multiple related images.
+    and navigation between grouped images. Use the `:gallery:` option to
+    group related images together.
 
     **Use case**: Series of screenshots, step-by-step tutorials, or image
-    galleries.
+    collections that should be navigable together.
 
-:class:`zoom-inline`
+`inline`
     Enables scroll wheel zoom directly on the image without opening an
-    overlay. The image zooms in place within the documentation.
+    overlay. When zoomed, drag to pan. Double-click or press Escape to reset.
 
     **Use case**: Detailed diagrams or technical drawings that need frequent
-    zoom inspection.
+    zoom inspection without leaving context.
 
-:class:`zoom-lens`
+`lens`
     A magnifier lens follows the cursor when hovering over the image,
-    showing a zoomed view of the area under the cursor.
+    showing a zoomed view. A result panel appears beside the image with
+    the magnified area.
 
     **Use case**: High-resolution images with fine details, such as UI
     mockups or detailed screenshots.
 
-:class:`zoom-css-only`
-    A lightweight, JavaScript-free zoom that enlarges the image on hover
-    using only CSS. Provides basic zoom functionality without requiring
-    JavaScript.
+Directive options
+-----------------
 
-    **Use case**: Simple zoom needs, or when JavaScript-free fallback is
-    required.
+The following options are available for the figure and image directives:
+
+..  rst-class:: dl-parameters
+
+`:zoom:`
+    The zoom mode to use. One of: `lightbox`, `gallery`, `inline`, `lens`.
+
+`:gallery:`
+    Group name for gallery mode. Images with the same gallery name can be
+    navigated together. Only used with `:zoom: gallery`.
+
+`:zoom-indicator:`
+    Whether to show the zoom indicator icon. Set to `false` to hide it.
+    Default is `true` (shown).
 
 Usage examples
 --------------
 
-Example 3: Lightbox zoom (default)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 3: Lightbox zoom
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  figure:: /_Images/a4.jpg
     :alt: Example screenshot
-    :class: zoom-lightbox
+    :zoom: lightbox
+    :class: with-border with-shadow
 
     Click to open in lightbox. This is the recommended mode for most images.
 
 ..  code-block:: rst
-    :linenos:
 
     ..  figure:: /_Images/a4.jpg
         :alt: Example screenshot
-        :class: zoom-lightbox
+        :zoom: lightbox
+        :class: with-border with-shadow
 
         Click to open in lightbox.
 
-Example 4: Gallery mode with zoom
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 4: Gallery mode with grouped images
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: rst
-    :linenos:
 
-    ..  figure:: /_Images/screenshot.png
-        :alt: Configuration screen
-        :class: zoom-gallery
-        :width: 600px
+    ..  figure:: /_Images/step1.png
+        :alt: Step 1
+        :zoom: gallery
+        :gallery: tutorial
 
-        Opens in gallery mode with zoom controls and navigation.
+        First step of the tutorial.
+
+    ..  figure:: /_Images/step2.png
+        :alt: Step 2
+        :zoom: gallery
+        :gallery: tutorial
+
+        Second step - navigate with arrow keys.
 
 Example 5: Inline scroll-wheel zoom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: rst
-    :linenos:
 
     ..  figure:: /_Images/diagram.png
         :alt: Architecture diagram
-        :class: zoom-inline
+        :zoom: inline
 
         Use scroll wheel to zoom in/out directly on this image.
 
@@ -189,13 +207,24 @@ Example 6: Magnifier lens
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: rst
-    :linenos:
 
     ..  figure:: /_Images/detailed-ui.png
         :alt: User interface mockup
-        :class: zoom-lens
+        :zoom: lens
 
         Hover over the image to see a magnified view.
+
+Example 7: Hidden zoom indicator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  code-block:: rst
+
+    ..  figure:: /_Images/screenshot.png
+        :alt: Screenshot
+        :zoom: lightbox
+        :zoom-indicator: false
+
+        Lightbox without visible indicator icon.
 
 Accessibility considerations
 -----------------------------
@@ -207,46 +236,45 @@ Keyboard navigation
 
 *   **Lightbox and Gallery modes**: Full keyboard support
 
-    *   :kbd:`Tab` - Navigate between controls
+    *   :kbd:`Tab` - Navigate to image and controls
     *   :kbd:`Enter` or :kbd:`Space` - Open lightbox/gallery
-    *   :kbd:`ESC` - Close lightbox/gallery
-    *   :kbd:`Arrow keys` - Navigate between images (gallery mode)
-    *   :kbd:`+` / :kbd:`-` - Zoom in/out (gallery mode)
+    *   :kbd:`Escape` - Close lightbox/gallery
+    *   :kbd:`Arrow Left` / :kbd:`Arrow Right` - Navigate between images (gallery)
+    *   :kbd:`+` / :kbd:`-` - Zoom in/out (gallery)
 
 *   **Inline zoom mode**: Full keyboard support
 
     *   :kbd:`Tab` - Focus the image
     *   :kbd:`+` / :kbd:`-` - Zoom in/out
     *   :kbd:`Arrow keys` - Pan when zoomed
-    *   :kbd:`ESC` or :kbd:`0` - Reset zoom
+    *   :kbd:`Escape` or :kbd:`0` - Reset zoom
 
 *   **Lens mode**: Keyboard activation supported
 
     *   :kbd:`Tab` - Focus the image
     *   :kbd:`Enter` or :kbd:`Space` - Toggle lens on/off
     *   :kbd:`Arrow keys` - Move lens position
-    *   :kbd:`ESC` - Deactivate lens
+    *   :kbd:`Escape` - Deactivate lens
 
 Screen reader support
 ~~~~~~~~~~~~~~~~~~~~~~
 
 All zoom modes maintain proper ARIA attributes and provide descriptive
-labels for assistive technologies. Always use the `:alt:` parameter to
+labels for assistive technologies. Always use the `:alt:` option to
 provide descriptive alternative text for images.
 
-JavaScript-free fallback
-~~~~~~~~~~~~~~~~~~~~~~~~
+Reduced motion support
+~~~~~~~~~~~~~~~~~~~~~~~
 
-The `zoom-css-only` mode provides a lightweight alternative that works
-without JavaScript, ensuring accessibility for users with JavaScript
-disabled or in restricted environments.
+The zoom functionality respects the `prefers-reduced-motion` media query.
+When reduced motion is preferred, transitions and animations are disabled.
 
 Best practices
 --------------
 
 *   Always include descriptive `:alt:` text for accessibility
-*   Use `zoom-lightbox` as the default for most images
-*   Consider `zoom-gallery` for related images that tell a story
-*   Use `zoom-inline` for technical diagrams that need frequent inspection
-*   Specify image width with `:width:` to prevent layout shifts
+*   Use `lightbox` as the default for most images
+*   Use `:gallery:` to group related images for navigation
+*   Use `inline` for technical diagrams that need frequent inspection
+*   Combine with `:class: with-border with-shadow` for better visual presentation
 *   Test zoom functionality with keyboard navigation
