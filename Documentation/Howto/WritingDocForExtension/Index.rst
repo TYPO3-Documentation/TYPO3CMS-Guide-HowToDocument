@@ -24,14 +24,14 @@ Use the following Docker command to render your documentation guide locally:
 
 ..  include:: /_Includes/_LocalRendering.rst.txt
 
-The :ref:`render-documentation-with-docker` has more information.
+See :ref:`render-documentation-with-docker` for more information.
 
 .. _how-to-start-docs-extension:
 
 Use the init command to create the Documentation folder
 =======================================================
 
-The following Docker command helps you to create some basic documentation
+The following Docker command creates some basic documentation
 including the required configuration file :file:`Documentation/guides.xml`:
 
 ..  include:: /_Includes/_InitCommand.rst.txt
@@ -40,7 +40,7 @@ The command creates a folder :path:`Documentation` in the directory it is called
 from. This should be the root directory of your extension containing the
 `composer.json <https://docs.typo3.org/permalink/t3coreapi:files-composer-json>`_.
 
-Follow the interactive dialoge. We suggest to use the option ReStructuredText (rst)
+Follow the interactive dialog. We suggest to use the option ReStructuredText (rst)
 as this format provides the full power of the TYPO3 documentation theme. Using
 Markdown (md) is an option for simple and quick one page documentation.
 
@@ -48,7 +48,7 @@ If your extension offers a main `Site set <https://docs.typo3.org/permalink/t3co
 enter its name and path when prompted. This will regenerate ready to use
 documentation about configuration for you. If you have more then one set you
 can document the other sets manually. If you have no set, you need to write
-the chapter your self.
+the chapter yourself.
 
 Make changes and try :ref:`rendering <rendering-docs>` the new documentation.
 
