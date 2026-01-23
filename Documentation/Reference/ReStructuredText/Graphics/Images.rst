@@ -38,6 +38,7 @@ Optional parameters for images and figures:
 *   `:target:` link target
 *   `:width:` : width of image, use for example px (for example `:width: 100px`
 *   `:scale:` : scale images, for example `:scale: 65`
+*   `:zoom:` : enable zoom functionality (see :ref:`image-zoom`)
 
 Additional parameters can be found on the docutils page `reStructuredText Directives
 <http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__
@@ -52,6 +53,7 @@ Example 1: Scaled image with shadow and link target
     :target: https://typo3.org
     :class: with-shadow
     :scale: 50
+    :zoom: lightbox
 
 ..  code-block:: rst
     :linenos:
@@ -61,6 +63,7 @@ Example 1: Scaled image with shadow and link target
         :target: https://typo3.org
         :class: with-shadow
         :scale: 50
+        :zoom: lightbox
 
 ..  _image-caption:
 
@@ -71,6 +74,7 @@ Example 2: Image with caption and fixed width
     :alt: Left floating image
     :target: https://typo3.org
     :width: 100px
+    :zoom: lightbox
 
     This is the image caption
 
@@ -81,6 +85,7 @@ Example 2: Image with caption and fixed width
             :alt: some image
             :target: https://typo3.org
             :width: 100px
+            :zoom: lightbox
 
             This is the image caption
 
