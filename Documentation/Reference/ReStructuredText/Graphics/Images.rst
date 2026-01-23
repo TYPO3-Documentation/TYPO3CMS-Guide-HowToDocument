@@ -89,8 +89,8 @@ Example 2: Image with caption and fixed width
 Image zoom and lightbox features
 =================================
 
-..  versionadded:: 0.2.0
-    The image zoom feature was introduced in render-guides version 0.2.0.
+..  versionadded:: 0.36.0
+    The image zoom feature was introduced in render-guides version 0.36.0.
 
 The TYPO3 documentation theme provides built-in image zoom and lightbox
 features to enhance the viewing experience for images and figures. These
