@@ -32,7 +32,7 @@ And one of the following files:
 Further conventions are:
 
 *   :ref:`Included reST files <including-files>` **should** have the extension
-    :file:`.rst.txt`.
+    :file:`.rst`.
 *   Use **CamelCase** for directory and file names,
     for example: :file:`Documentation/GeneralConventions/FileStructure.rst`.
 *   Each directory **shall** have a file named :file:`Index.rst` it is used as
