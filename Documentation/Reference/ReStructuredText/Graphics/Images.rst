@@ -53,7 +53,6 @@ Example 1: Scaled image with shadow and link target
     :target: https://typo3.org
     :class: with-shadow
     :scale: 50
-    :zoom: lightbox
 
 ..  code-block:: rst
     :linenos:
@@ -63,7 +62,6 @@ Example 1: Scaled image with shadow and link target
         :target: https://typo3.org
         :class: with-shadow
         :scale: 50
-        :zoom: lightbox
 
 ..  _image-caption:
 
@@ -72,7 +70,6 @@ Example 2: Image with caption and fixed width
 
 ..  figure:: /_Images/a4.jpg
     :alt: Left floating image
-    :target: https://typo3.org
     :width: 100px
     :zoom: lightbox
 
@@ -83,7 +80,6 @@ Example 2: Image with caption and fixed width
 
         ..  figure:: /_Images/a4.jpg
             :alt: some image
-            :target: https://typo3.org
             :width: 100px
             :zoom: lightbox
 
