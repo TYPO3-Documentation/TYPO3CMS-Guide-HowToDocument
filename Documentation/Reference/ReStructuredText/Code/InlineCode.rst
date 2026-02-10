@@ -33,7 +33,7 @@ By convention single backticks are used unless double are needed.
 Code roles with language information and overlay
 ================================================
 
-You can also use text roles with one of the predefined languages to display more
+You can also use `text roles <text-roles>`_ with one of the predefined languages to display more
 information to the user. For the most common languages, automatic
 detection provides more context for the user.
 
