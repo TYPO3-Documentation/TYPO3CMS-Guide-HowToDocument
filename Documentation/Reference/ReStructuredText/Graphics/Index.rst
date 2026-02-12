@@ -20,7 +20,8 @@ You can also use `Embedded PlantUML diagrams <https://docs.typo3.org/permalink/h
 
 ..  toctree::
     :titlesonly:
-    :glob:
 
     Images
-    *
+    ImageZoom
+    ImageAlignment
+    Diagrams
