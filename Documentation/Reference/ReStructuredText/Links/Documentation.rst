@@ -12,7 +12,7 @@ You can link the following elements in any TYPO3 manual: Headlines,
 :ref:`confvals <rest-confval>` and :ref:`phpdomain definitions <rest-phpdomain>`.
 It is also possible to put an anchor almost anywhere and then link it.
 
-When an element in a manual can be linked a link symbol will appear when you
+When an element in a manual can be linked as permalink a link symbol will appear when you
 hover it:
 
 ..  figure:: /_Images/link-headlines.png
@@ -25,6 +25,17 @@ appears:
 ..  figure:: /_Images/link-headlines-box.png
 
     Copy the reST reference
+
+When a link to an element in a manual is required outside of permalinks, then an inventory key needs to be used.
+See :ref:`Inventory Keys <t3renderguides:InterlinkRepositories>` .
+
+reST code with interlink to a TYPO3 official manual:
+
+..  code-block:: rst
+    :caption: Reference to the TYPO3 Explained manual's chapter "Settings and Configuration"
+
+    :ref:`Settings and Configuration of TYPO3 websites <t3coreapi/configuration-glossary>`
+
 
 The reST code of the reference looks like this:
 
