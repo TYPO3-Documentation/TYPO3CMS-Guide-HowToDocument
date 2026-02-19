@@ -28,16 +28,16 @@ If you are missing documentation for some extension versions we have a
 
 .. rst-class:: panel panel-default
 
-The repository got moved and is no longer rendered
+The repository was moved and is no longer rendered
 ==================================================
 
 This can be fixed by following these steps:
 
-#. Inform us within the TYPO3 Slack channel `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`__
-#. The docs team (we) need to remove your existing documentation.
-#. The new repository needs to be registered. You can do that, but we can do as well if we know the new URL.
-#. The docs team (we) need to approve the new repository.
-#. You can re generate existing versions following: `Reregister versions <reregister-versions>`_
+#. Inform us (the `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__) in the `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`__ Slack channel
+#. We will remove your existing documentation.
+#. You need to register the new repository. Or inform us of the new URL and we can do this for you.
+#. We will approve the new repository.
+#. You can regenerate existing versions of the documentation by following: `Reregister versions <reregister-versions>`_
 
 .. rst-class:: panel panel-default
 
