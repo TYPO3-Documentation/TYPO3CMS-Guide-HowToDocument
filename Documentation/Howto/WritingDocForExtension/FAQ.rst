@@ -28,6 +28,9 @@ If you are missing documentation for some extension versions we have a
 
 .. rst-class:: panel panel-default
 
+
+.. _faq-for-extension-authors-moved:
+
 The repository was moved and is no longer rendered
 ==================================================
 
