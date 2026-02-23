@@ -63,12 +63,13 @@ the standard reST Syntax can be used:
 
     See also https://www.typo3.org or `the TER <https://extensions.typo3.org>`_.
 
-There are special links for composer packages and PHP classes (linking to the API):
+There are special links for composer packages and PHP classes (linking to the API) in FQN and short class name:
 
 ..  code-block:: rst
 
     Install :composer:`typo3/cms-seo` to listen to event
-    :php:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent`.
+    :php:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent`
+    (in short: :php-short:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent`)
 
 There is a dedicated chapter on links and references in reST: :ref:`links`.
 
