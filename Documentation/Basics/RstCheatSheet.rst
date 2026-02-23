@@ -198,20 +198,19 @@ Escape characters
 If you want to use a character that would normally create reST markup,
 you must escape it with a prepended backslash (``\``).
 
-For example, surrounding text with ``*`` normally makes it show up in italics.
-By escaping the ``*`` you make them normal text characters:
-
 ..  code-block:: rst
 
-    \*non-italic\*
-
-Other common cases:
-
-..  code-block:: rst
-
+    \*not italic\*
     \`not a text role\`
-    \_not_a_reference
+    \_not\_a\_reference
     \\literal backslash
+
+Looks like this:
+
+| \*not italic\*
+| \`not a text role\`
+| \_not\_a\_reference
+| \\literal backslash
 
 ..  note::
     Inside :ref:`code blocks <writing-rest-codeblocks-with-syntax-highlighting>`
