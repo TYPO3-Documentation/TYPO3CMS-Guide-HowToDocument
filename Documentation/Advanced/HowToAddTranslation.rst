@@ -32,10 +32,10 @@ wind up on the corresponding translated page.
          Documentation
          └──  Localization.de_DE
               ├── Index.rst
-              └── Settings.cfg
+              └── guides.xml
 
 
-#. Update the file :ref:`settings-cfg`.
+#. Update the file :ref:`guides-xml`.
 
 #. Translate the texts
 
