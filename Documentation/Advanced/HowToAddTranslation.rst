@@ -35,7 +35,7 @@ wind up on the corresponding translated page.
               └── guides.xml
 
 
-#. Update the file :ref:`guides-xml`.
+#. Update the file `Documentation/guides.xml <https://docs.typo3.org/permalink/h2document:settings-guides-xml>`_.
 
 #. Translate the texts
 
