@@ -32,10 +32,10 @@ wind up on the corresponding translated page.
          Documentation
          └──  Localization.de_DE
               ├── Index.rst
-              └── Settings.cfg
+              └── guides.xml
 
 
-#. Update the file :ref:`settings-cfg`.
+#. Update the file `Documentation/guides.xml <https://docs.typo3.org/permalink/h2document:settings-guides-xml>`_.
 
 #. Translate the texts
 
