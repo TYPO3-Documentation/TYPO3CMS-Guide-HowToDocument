@@ -195,12 +195,24 @@ Or like this:
 Escape characters
 =================
 
-If you want to use a character, which would create some special reST markup,
-with its normal meaning, you must escape it with a prepended :rst:`\`.
-
-For example surrounding text with "*" signs normally makes it show up in italics. By
-escaping the special characters "*" you make the stars normal text characters:
+If you want to use a character that would normally create reST markup,
+you must escape it with a prepended backslash (``\``).
 
 ..  code-block:: rst
 
-    \*non-italic\*
+    \*not italic\*
+    \`not a text role\`
+    \_not\_a\_reference
+    \\literal backslash
+
+Looks like this:
+
+| \*not italic\*
+| \`not a text role\`
+| \_not\_a\_reference
+| \\literal backslash
+
+..  note::
+    Inside :ref:`code blocks <writing-rest-codeblocks-with-syntax-highlighting>`
+    and inline code (backticks), escaping is not needed — content is displayed
+    literally.
