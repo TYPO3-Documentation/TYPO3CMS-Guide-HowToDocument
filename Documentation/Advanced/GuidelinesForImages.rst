@@ -48,7 +48,7 @@ Guidelines for screenshots
 *   Do not install third party extensions unless what you want to demonstrate
     requires one. If possible use one of the extensions from vendor `typo3` or
     `t3docs`.
-*   use PNG format (.png file ending)
+*   use PNG or AVIF format (.png or .avif file ending)
 *   If you take a screenshot of a full page it should have 1400 x 1050 px
 *   Use only parts of a full page when possible, the flatter the screenshot the
     less room it takes.
