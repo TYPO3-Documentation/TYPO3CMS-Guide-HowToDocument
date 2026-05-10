@@ -5,7 +5,7 @@
 New major Core version is released
 ==================================
 
-..  content::
+..  contents::
 
 
 ..  _new-major-core-versions-api:
