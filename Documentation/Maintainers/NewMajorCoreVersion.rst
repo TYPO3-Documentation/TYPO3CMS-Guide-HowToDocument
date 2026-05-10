@@ -5,31 +5,18 @@
 New major Core version is released
 ==================================
 
-..  note::
-    This document is not complete and will be updated with the release of
-    TYPO3 v14.0.
+..  contents::
 
-The section describes the doings when a new major Core version is released
-(like version 14.0).
 
-To do
-=====
+..  _new-major-core-versions-api:
 
-*   Update
+Update api.typo3.org for a new major version
+============================================
 
-    *   :ref:`t3start:install`
-    *   :ref:`t3start:legacyinstallation`
-    *   :ref:`t3start:installation-ddev-tutorial`
-    *   :ref:`t3coreapi:upgrading`
-
-    to reflect the new version upon installation/upgrade.
-
-*   Add "-dev" links (like `14-dev`) to the links on the homepage:
-
-    *   :ref:`t3home:getting-started`
-    *   :ref:`t3home:creatingmanagingcontent`
-    *   :ref:`t3home:templating`
-    *   :ref:`t3home:configuringTYPO3`
-    *   :ref:`t3home:upgrading-typo3`
-    *   :ref:`t3home:references`
-    *   :ref:`t3home:System-Extensions`
+*  Add the new TYPO3 LTS version for rendering into 
+   https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workflows/api-typo3-org.yml#L13
+*  Add the new TYPO3 Version to the sidebar of api.typo3.org: 
+   https://github.com/TYPO3-Documentation/render-guides/blob/main/packages/typo3-api/template/components/sidebar.html.twig#L9
+*  Trigger rendering of the api, by triggering above workflow
+*  Add the new version to the api.typo3.org startpage: https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
+*  Add the new Version to the main Menu: http://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/_mainMenu.rst.txt
