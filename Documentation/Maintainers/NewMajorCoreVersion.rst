@@ -13,9 +13,9 @@ Create branches for the new LTS version in all versioned official repositories
 This includes all manuals in the "All Documentation" menu with version hints,
 excluding the System extension manuals. The System extension manuals will
 receive their new versions automatically via webhook in the release. This might
-take a few days, though.
+take a few days.
 
-*   Create a new branch called, for example, `14.3`.
+*   Create a new branch. `14.3` in this example.
 *   Limit the composer.json to that version. For example `"typo3/cms-core": "^14.3"`
     instead of `"typo3/cms-core": "dev-main as 14.3"` and make sure `composer update`
     works.
@@ -30,8 +30,8 @@ take a few days, though.
                  copyright="since 2012 by the TYPO3 contributors"
         />
 
-**After all the new LTS branches have been created and rendered** for all repositories
-revisit the guides.xml in all new LTS branches and raise the preferred typo3 version:
+**After all the new LTS branches have been created and rendered** for all repositories,
+revisit the guides.xml in all new LTS branches and raise to the preferred typo3 version:
 
 ..  code-block:: xml
     :caption: Documentation/guides.xml
@@ -83,7 +83,7 @@ Update the start page docs.typo3.org for a new major version
     https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/_mainMenu.rst.txt
     Remove the versions that are now ELTS.
 *   Add the new API version to the main menu
-*   Require the latest LTS version in the
+*   Require the latest LTS version in
     https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/composer.json
 
 ..  _new-major-core-versions-api:
@@ -95,7 +95,7 @@ Update api.typo3.org for a new major version
    https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workflows/api-typo3-org.yml#L13
 *  Add the new TYPO3 version to the sidebar of api.typo3.org:
    https://github.com/TYPO3-Documentation/render-guides/blob/main/packages/typo3-api/template/components/sidebar.html.twig#L9
-*  Trigger rendering of the API by running the workflow mentioned above
+*  Trigger rendering of the API by running the workflow above
 *  Add the new version to the api.typo3.org start page: https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
 *  Add the new version to the main menu: http://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/_mainMenu.rst.txt
 
@@ -115,6 +115,6 @@ for an example.
 Make the new LTS version the preferred result in the docs search
 ================================================================
 
-Require the newly created version of `t3docs/typo3-version-handling`, which was
-created by the renderguides release in https://github.com/TYPO3-Documentation/t3docs-search-indexer
+Require the newly created version of `t3docs/typo3-version-handling`
+(created by the renderguides release in https://github.com/TYPO3-Documentation/t3docs-search-indexer)
 and make a new release of the search.
