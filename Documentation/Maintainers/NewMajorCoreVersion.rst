@@ -107,7 +107,8 @@ Set the "stable" version for links to the new LTS version in renderguides
 You should only do this after all versioned repositories exist in the new LTS
 version and have been rendered; otherwise, rendering links will fail in all
 manuals that are newly rendered. Then create a new renderguides release by
-creating a tag for the version.
+creating a tag for the version. See https://github.com/TYPO3-Documentation/render-guides/pull/1246
+for an example.
 
 ..  _new-major-core-versions-search:
 
