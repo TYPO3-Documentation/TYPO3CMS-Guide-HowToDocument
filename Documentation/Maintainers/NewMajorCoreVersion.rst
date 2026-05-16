@@ -1,3 +1,5 @@
+:navigation-title: New major Core version
+
 ..  include:: /Includes.rst.txt
 ..  _new-major-core-versions:
 
@@ -64,12 +66,12 @@ new eLTS versions of all repositories:
     :caption: Documentation/Includes.rst.txt
 
     ..  You can put central messages to display on all pages here
-    
+
     ..  attention::
         TYPO3 v12 has reached end-of-life as of April 30th 2026 and
         is no longer being maintained. Use the version switcher on the top
         left of this page to select documentation for a supported version of TYPO3.
-    
+
         Need more time before upgrading?
         You can purchase Extended Long Term Support (ELTS) for TYPO3 v12 here:
         `TYPO3 ELTS <https://typo3.com/services/extended-support-elts>`__.
