@@ -1,0 +1,13 @@
+name: Check and Fix Whitespace on Schedule
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  fix-whitespace:
+    uses: TYPO3-Documentation/.github/.github/workflows/reusable-apply-precommit.yml@6cdf90e700f7c32376aa2cb2d96a201b67c77ed2
+    secrets:
+      APP_CLIENT_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
