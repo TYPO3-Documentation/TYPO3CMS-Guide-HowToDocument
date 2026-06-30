@@ -44,6 +44,11 @@ Follow the interactive dialog. We suggest to use the option ReStructuredText (rs
 as this format provides the full power of the TYPO3 documentation theme. Using
 Markdown (md) is an option for simple and quick one page documentation.
 
+..  note::
+    The first line of the guides.xml file can lead to rendering problems on the
+    server, so it is best to delete it. The file should start with a `<guides`
+    tag and not an `<?xml` tag.
+
 If your extension offers a main `Site set <https://docs.typo3.org/permalink/t3coreapi:site-sets>`_
 enter its name and path when prompted. This will regenerate ready to use
 documentation about configuration for you. If you have more then one set you
