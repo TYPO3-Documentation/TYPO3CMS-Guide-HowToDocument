@@ -53,7 +53,8 @@ the chapter yourself.
 Make changes and try :ref:`rendering <rendering-docs>` the new documentation.
 
 To publish your documentation to https://docs.typo3.org
-a :ref:`webhook needs to be added <webhook>` on GitHub, Bitbucket or GitLab.
+a :ref:`webhook needs to be added <webhook>` on GitHub, Bitbucket, GitLab,
+Forgejo or Gitea.
 A member of the Documentation Team has to approve your new documentation guide
 for publishing. In case the Team has questions, please follow the thread
 generated for your extension in the `TYPO3 slack organization <https://typo3.org/community/meet/chat-slack>`_
