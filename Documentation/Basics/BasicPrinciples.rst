@@ -73,11 +73,11 @@ We provide a Docker command to get started with documenting an extension:
 
 See also `How to document an extension <https://docs.typo3.org/permalink/h2document:write-doc-extensions-intro>`_.
 
-.. _how-to-get-help:
-.. _slack:
-.. _help:
-.. _contact-us:
-.. _get-help-on-writing-docs:
+..  _how-to-get-help:
+..  _slack:
+..  _help:
+..  _contact-us:
+..  _get-help-on-writing-docs:
 
 Help and support
 ================

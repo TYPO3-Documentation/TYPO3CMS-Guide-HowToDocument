@@ -1,7 +1,7 @@
 ..  include:: /Includes.rst.txt
 ..  index:: reST; Versions
 ..  _rest-versions:
-.. _version-hints:
+..  _version-hints:
 
 ========
 Versions

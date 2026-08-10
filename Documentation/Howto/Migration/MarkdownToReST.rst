@@ -41,7 +41,7 @@ We will use ``Documentation-Migrated`` as the output directory.
             mkdir -p Documentation-Migrated
             docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --theme=rst --output-format=rst --output Documentation-Migrated
 
-    .. group-tab:: MacOS
+    ..  group-tab:: MacOS
 
         ..  code-block:: bash
 

@@ -11,9 +11,9 @@ at the top of a page for quick navigation:
 
 ..  sidebar:: reST content elements
 
-    * :ref:`Cards <rest-cards>`
-    * :ref:`Tabs <rest-tabs>`
-    * :ref:`Configuration values <rest-confval>`
+    *   :ref:`Cards <rest-cards>`
+    *   :ref:`Tabs <rest-tabs>`
+    *   :ref:`Configuration values <rest-confval>`
 
 ..  code-block:: rst
 

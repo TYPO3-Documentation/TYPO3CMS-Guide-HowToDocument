@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: pair: Documentation; Third-party extensions
-.. _contribute-to-3rdparty-extension:
+..  include:: /Includes.rst.txt
+..  index:: pair: Documentation; Third-party extensions
+..  _contribute-to-3rdparty-extension:
 
 ====================================
 Contribute to third-party extensions
@@ -24,7 +24,7 @@ it is usually not required to write an issue. You can just submit a pull request
 (PR) directly.
 
 
-.. _contribute-to-3rdparty-extension-find-the-source:
+..  _contribute-to-3rdparty-extension-find-the-source:
 
 Find the Source
 ===============
@@ -50,34 +50,34 @@ project is not filled out and this link is missing. Then, you can use Method 2.
 Method 2: Find the Source on https://extensions.typo3.org
 ---------------------------------------------------------
 
-.. rst-class:: bignums
+..  rst-class:: bignums
 
-   1. Go to the `extension repository <https://extensions.typo3.org/>`__
+    1.  Go to the `extension repository <https://extensions.typo3.org/>`__
 
-   2. In the search box, enter the name or extension key
+    2.  In the search box, enter the name or extension key
 
-   3. Select the extension
+    3.  Select the extension
 
 
-      .. image:: /_Images/ter_news2.png
-         :alt: Link: Show manual
-         :target: https://extensions.typo3.org/?L=0&id=1&tx_solr%5Bq%5D=news
-         :class: with-shadow
-         :width: 600px
+        ..  image:: /_Images/ter_news2.png
+            :alt: Link: Show manual
+            :target: https://extensions.typo3.org/?L=0&id=1&tx_solr%5Bq%5D=news
+            :class: with-shadow
+            :width: 600px
 
-   4. Click take a look in the code
+    4.  Click take a look in the code
 
-      .. image:: /_Images/take-a-look-in-the-code.png
-         :alt: Link: Take a look in the code
-         :target: https://github.com/georgringer/news
-         :class: with-shadow
+        ..  image:: /_Images/take-a-look-in-the-code.png
+            :alt: Link: Take a look in the code
+            :target: https://github.com/georgringer/news
+            :class: with-shadow
 
 You cannot find system extensions (extensions that are maintained in
 the core) on https://extensions.typo3.org. System extensions are for
 example indexed_search, form, impexp, etc.
 
 
-.. index:: Third-party extensions; Find the manual
+..  index:: Third-party extensions; Find the manual
 
 Find the rendered manual
 ========================
@@ -93,29 +93,29 @@ Go to:
 Method 2: Find rendered manual on https://extensions.typo3.org
 --------------------------------------------------------------
 
-.. rst-class:: bignums
+..  rst-class:: bignums
 
-   1. Go to the `Extension repository <https://extensions.typo3.org/>`__
+    1.  Go to the `Extension repository <https://extensions.typo3.org/>`__
 
-   2. In the search box, enter the name or extension key
+    2.  In the search box, enter the name or extension key
 
-   3. Click on "Show Manual"
+    3.  Click on "Show Manual"
 
-      .. image:: /_Images/ter_news.png
-         :alt: Link: Show manual
-         :target: https://docs.typo3.org/typo3cms/extensions/news/
-         :class: with-shadow
-         :width: 600px
+        ..  image:: /_Images/ter_news.png
+            :alt: Link: Show manual
+            :target: https://docs.typo3.org/typo3cms/extensions/news/
+            :class: with-shadow
+            :width: 600px
 
-.. note::
+..  note::
 
-   You cannot find system extensions (extensions that are maintained in
-   the core) on https://extensions.typo3.org.
+    You cannot find system extensions (extensions that are maintained in
+    the core) on https://extensions.typo3.org.
 
 
-.. index::
-   Third-party extensions; Contribution guide
-   Files; CONTRIBUTING.md
+..  index::
+    Third-party extensions; Contribution guide
+    Files; CONTRIBUTING.md
 
 Follow the contribution guide
 =============================
@@ -126,9 +126,9 @@ help pages to check for `conventions for contribution guides
 
 In the GitHub repository, you should find a file like:
 
-*  CONTRIBUTING.md
-*  .github/CONTRIBUTING.md
-*  etc.
+*   CONTRIBUTING.md
+*   .github/CONTRIBUTING.md
+*   etc.
 
 If no contribution guide exists, follow the general conventions for TYPO3 documentation
 and conventions for creating pull requests on GitHub or contact the author.

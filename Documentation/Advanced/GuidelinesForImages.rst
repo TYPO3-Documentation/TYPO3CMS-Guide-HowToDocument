@@ -20,8 +20,8 @@ More optional parameters for embedding images into ReST: :ref:`Images <h2documen
 Image formats
 =============
 
-*  It is recommended to use PNG for bitmaps (for example screenshots, photographs)
-   and SVG for vector graphics images. In any case, you can use :file:`.png`.
+*   It is recommended to use PNG for bitmaps (for example screenshots, photographs)
+    and SVG for vector graphics images. In any case, you can use :file:`.png`.
 
 ..  _guidelines-for-images-screenshot:
 ..  _automatic-screenshots:

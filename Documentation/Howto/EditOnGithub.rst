@@ -1,92 +1,92 @@
 :navigation-title: Edit on GitHub
 
-.. include:: /Includes.rst.txt
-.. index:: pair: Official documentation; "Edit on GitHub"
-.. _docs-contribute-github-method:
+..  include:: /Includes.rst.txt
+..  index:: pair: Official documentation; "Edit on GitHub"
+..  _docs-contribute-github-method:
 
 ================================
 Workflow #1: "Edit on GitHub"
 ================================
 
-.. youtube:: wNxO-aXY5Yw
+..  youtube:: wNxO-aXY5Yw
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-1. Create a GitHub account:
+1.  Create a GitHub account:
 
-   Visit `Join GitHub <https://github.com/join>`__ and create your account.
+    Visit `Join GitHub <https://github.com/join>`__ and create your account.
 
-   Though not mandatory, the general convention in the TYPO3 community is
-   to set your GitHub name (*not* username) as your full name.
+    Though not mandatory, the general convention in the TYPO3 community is
+    to set your GitHub name (*not* username) as your full name.
 
-2. Find a page that needs improving:
+2.  Find a page that needs improving:
 
-   For example, you may have found a misspelling in
-   the :ref:`t3start:start` or you want to add some new content
-   to the :ref:`t3coreapi:upgrading`.
+    For example, you may have found a misspelling in
+    the :ref:`t3start:start` or you want to add some new content
+    to the :ref:`t3coreapi:upgrading`.
 
-3. Edit the page on GitHub:
+3.  Edit the page on GitHub:
 
-   At the top right of every page you will find an icon that says "Edit on Github".
-   Selecting this link will take you to that pages repository on GitHub.
+    At the top right of every page you will find an icon that says "Edit on Github".
+    Selecting this link will take you to that pages repository on GitHub.
 
-   .. image:: /_Images/edit_me_on_github.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/edit_me_on_github.png
+        :class: with-border with-shadow
 
-4. Fork the repository:
+4.  Fork the repository:
 
-   Click on the green button to fork the repository. This will clone the repository
-   into your GitHub account, ready for you to make your changes in your browser.
+    Click on the green button to fork the repository. This will clone the repository
+    into your GitHub account, ready for you to make your changes in your browser.
 
-   .. image:: /_Images/github-edit-fork.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/github-edit-fork.png
+        :class: with-border with-shadow
 
-5. Make your changes:
+5.  Make your changes:
 
-   You will be presented with a window where you can make your changes.
-   The *"Indent mode: Spaces"* and *"Indent size: 4"*
-   values should already be set - do not alter these.
+    You will be presented with a window where you can make your changes.
+    The *"Indent mode: Spaces"* and *"Indent size: 4"*
+    values should already be set - do not alter these.
 
-   .. image:: /_Images/github-edit-window.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/github-edit-window.png
+        :class: with-border with-shadow
 
 
-6. Working with reST files:
+6.  Working with reST files:
 
-   Every page you edit is written in reST format, when it comes to making minor
-   amendments no prior knowledge of editing .rst files is required. However, when you are
-   ready to make more advanced changes, you can :ref:`learn more about working with reST here. <rest-quick-start>`
+    Every page you edit is written in reST format, when it comes to making minor
+    amendments no prior knowledge of editing .rst files is required. However, when you are
+    ready to make more advanced changes, you can :ref:`learn more about working with reST here. <rest-quick-start>`
 
-7. Preview your changes:
+7.  Preview your changes:
 
-   Select "Preview changes" to see what your changes will look like once they are published.
+    Select "Preview changes" to see what your changes will look like once they are published.
 
-   You can go back and make further changes at any time, select the Edit file tab to continue editing.
+    You can go back and make further changes at any time, select the Edit file tab to continue editing.
 
-   .. image:: /_Images/github-edit-preview.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/github-edit-preview.png
+        :class: with-border with-shadow
 
-8. Finalize your changes:
+8.  Finalize your changes:
 
-   When you are ready, scroll down to the bottom of the page. Add
-   a short (but meaningful) description that outlines the changes you have made and click "Propose
-   file change"
+    When you are ready, scroll down to the bottom of the page. Add
+    a short (but meaningful) description that outlines the changes you have made and click "Propose
+    file change"
 
-   .. image:: /_Images/github-propose-file-changes.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/github-propose-file-changes.png
+        :class: with-border with-shadow
 
-9. Create pull request:
+9.  Create pull request:
 
-   GitHub will show you an overview of your changes. If you are happy with
-   them, select "Create pull request".
+    GitHub will show you an overview of your changes. If you are happy with
+    them, select "Create pull request".
 
-   .. image:: /_Images/github-comparing-changes.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/github-comparing-changes.png
+        :class: with-border with-shadow
 
-   Finally, create your pull request:
+    Finally, create your pull request:
 
-   .. image:: /_Images/github-create-pull-request2.png
-      :class: with-border with-shadow
+    ..  image:: /_Images/github-create-pull-request2.png
+        :class: with-border with-shadow
 
 10. You're done!
 
@@ -110,18 +110,18 @@ See `June 2018: Developer Appreciation Day
 for an example.
 
 
-.. image:: /_Images/dad-with-image.png
-   :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
-   :class: with-border with-shadow
+..  image:: /_Images/dad-with-image.png
+    :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
+    :class: with-border with-shadow
 
 Scroll down to "Improving documentation":
 
-.. image:: /_Images/dad-improve-docs.png
-   :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
-   :class: with-border with-shadow
+..  image:: /_Images/dad-improve-docs.png
+    :target: https://typo3.com/blog/june-2018-developer-appreciation-day-dad/?utm_medium=TYPO3%2BBlog&utm_source=Blog%2BPost%2B-%2BJune%2B2018%3A%2BDeveloper%2BAppreciation%2BDay%2B%28DAD%29
+    :class: with-border with-shadow
 
 
 Next Steps
 ==========
 
-*  Look at :ref:`docs-official-how-you-can-help` for more ways to contribute
+*   Look at :ref:`docs-official-how-you-can-help` for more ways to contribute

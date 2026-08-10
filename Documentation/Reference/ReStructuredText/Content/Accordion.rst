@@ -120,19 +120,19 @@ Accordion with complex content
         :name: headingOne3
         :header-level: 3
 
-        .. tabs::
+        ..  tabs::
 
-           .. tab:: Apples
+            ..  tab:: Apples
 
-              Apples are green, or sometimes red.
+                Apples are green, or sometimes red.
 
-           .. tab:: Pears
+            ..  tab:: Pears
 
-              Pears are green.
+                Pears are green.
 
-           .. tab:: Oranges
+            ..  tab:: Oranges
 
-              Oranges are orange.
+                Oranges are orange.
 
     ..  accordion-item:: Accordion Item #2
         :name: headingTwo3
@@ -162,9 +162,9 @@ Accordion with complex content
         :name: headingThree3
         :header-level: 3
 
-        .. image:: /_Images/q150_ffffff.png
-           :alt: Image with background color #ffffff
-           :class: with-border with-shadow
+        ..  image:: /_Images/q150_ffffff.png
+            :alt: Image with background color #ffffff
+            :class: with-border with-shadow
 
 ..  code-block:: rst
     :caption: EXT:my_extension/Documentation/SomeFile.rst

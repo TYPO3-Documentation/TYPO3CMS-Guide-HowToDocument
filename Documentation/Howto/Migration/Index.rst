@@ -51,7 +51,7 @@ operating system for the tool to work:
               -it ghcr.io/typo3-documentation/render-guides:latest \
               migrate Documentation
 
-    .. group-tab:: Podman
+    ..  group-tab:: Podman
 
         ..  code-block:: bash
 
@@ -218,7 +218,7 @@ instead of typing a long :bash:`docker run...` or :bash:`podman run...` command.
 
 When rendering locally you should ideally see something like this
 
-.. code-block:: text
+..  code-block:: text
 
     Successfully placed 7 rendered HTML, SINGLEPAGE, and INTERLINK files into /project/Documentation-GENERATED-temp
 
@@ -234,7 +234,7 @@ We provide four example errors to guide you through the fixes.
 Interlink inventory not found: HTTP/2 404
 """""""""""""""""""""""""""""""""""""""""
 
-.. code-block:: text
+..  code-block:: text
 
     [2024-03-13T12:22:50.661532+00:00] app.WARNING: Interlink inventory not found: HTTP/2 404
     returned for "https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us/objects.inv.json". [] []
@@ -244,7 +244,7 @@ We can now check via Google if there is another link to book Extbasefluid. We fo
 We can find the hint: `This manual is no longer being maintained for TYPO3 versions 11.5 and above.`. This tells us that the Documentation Team abandoned this
 manual. We can, for example, link to the last existing version. Which is 10.4. To do this we have to change the :file:`guides.xml`. Search for the
 
-.. code-block:: xml
+..  code-block:: xml
 
     <inventory id="t3extbasebook"
            url="https://docs.typo3.org/m/typo3/book-extbasefluid/11.5/en-us/"
@@ -260,7 +260,7 @@ as soon as possible.
 Inventory link with key ... not found
 """""""""""""""""""""""""""""""""""""
 
-.. code-block:: text
+..  code-block:: text
 
     [2024-03-13T12:26:40.940930+00:00] app.WARNING: Inventory link with key "rest-common-pitfalls"
     (rest-common-pitfalls) not found.  {"rst-file":"GeneratedExtension/Index","type":"ref","targetRef
@@ -268,7 +268,7 @@ Inventory link with key ... not found
 We see already that we have to go to file :file:`GeneratedExtension/Index` in the directory "Documentation".
 In there we have to delete the line which contains
 
-.. code-block:: text
+..  code-block:: text
 
     * :ref:`rest-common-pitfalls`
 
@@ -281,7 +281,7 @@ We conclude: In general it depends on the case itself what the best solution is.
 Nested PHP domain components (php:class, php:interface, php:enum etc) are not supported
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. code-block:: text
+..  code-block:: text
 
     [2024-03-25T13:26:11.600367+00:00] app.WARNING: Nested PHP domain components
     (php:class, php:interface, php:enum etc) are not supported.
@@ -291,7 +291,7 @@ Nested PHP domain components (php:class, php:interface, php:enum etc) are not su
 The file :file:`Index.rst` in :file:`Documentation/Developer/` has a wrong indentation. A class must not belong to another class.
 Here is the wrong rst code.
 
-.. code-block:: rst
+..  code-block:: rst
 
     ..  php:class:: AnotherImportantInterface
 
@@ -316,7 +316,7 @@ The next step is to visit the site which was rendered with the Sphinx rendering,
 There we can search for `sitehandling-addinglanguages` in the restructured text code by clicking the button "`</> View Source`".
 We have found this:
 
-.. code-block:: rst
+..  code-block:: rst
 
     ..  tip::
         For more information on how to add languages and configure their
@@ -328,11 +328,11 @@ The link is leading to
 We have to click the symbol next to the heading and copy the correct link
 which is the one for restructured text
 
-.. image:: /_Images/get_link.png
+..  image:: /_Images/get_link.png
     :class: with-shadow
     :width: 600px
 
-.. code-block:: rst
+..  code-block:: rst
 
     :ref:`Adding Languages <t3coreapi:sitehandling-addingLanguages>`
 

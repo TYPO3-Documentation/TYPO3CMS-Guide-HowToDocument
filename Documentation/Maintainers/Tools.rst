@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: Changes; Backporting
-.. _tools-of-the-documentation-team:
+..  include:: /Includes.rst.txt
+..  index:: Changes; Backporting
+..  _tools-of-the-documentation-team:
 
 ===============================
 Tools of the Documentation Team
@@ -8,7 +8,7 @@ Tools of the Documentation Team
 
 ..  contents:: Table of contents
 
-.. _tools-of-the-documentation-team-search-indexer:
+..  _tools-of-the-documentation-team-search-indexer:
 
 Search indexer
 ==============
@@ -29,12 +29,12 @@ The assets for the search result page can be updated by setting the latest
 renderguides version in https://github.com/TYPO3-Documentation/t3docs-search-indexer/blob/main/config/services.yaml#L19
 ff.
 
-.. _tools-of-the-documentation-team-api:
+..  _tools-of-the-documentation-team-api:
 
 api.typo3.org
 =============
 
-.. _tools-of-the-documentation-team-api-landing:
+..  _tools-of-the-documentation-team-api-landing:
 
 Landing page
 ------------
@@ -53,7 +53,7 @@ rendered output.
 The workflow responsible for replacing the landing page is
 https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/.github/workflows/apihome.yml
 
-.. _tools-of-the-documentation-team-api-landing-generation:
+..  _tools-of-the-documentation-team-api-landing-generation:
 
 Generated API per version
 -------------------------

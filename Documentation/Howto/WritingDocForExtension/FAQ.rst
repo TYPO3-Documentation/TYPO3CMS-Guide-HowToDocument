@@ -1,13 +1,13 @@
-.. include:: /Includes.rst.txt
-.. index:: Extension manuals; FAQ
-.. _faq-for-extension-authors:
-.. _tips-extension-authors:
+..  include:: /Includes.rst.txt
+..  index:: Extension manuals; FAQ
+..  _faq-for-extension-authors:
+..  _tips-extension-authors:
 
 ===
 FAQ
 ===
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 Where is the link to my documentation in the TYPO3 extension repository?
 ========================================================================
@@ -18,7 +18,7 @@ Long answer: the documentation of all extensions is exposed by an API which is c
 
 Finally the TER will only link to documentation with a matching version, so make sure that there actually is a documentation version for each of your extension version. See :ref:`reregister-versions` to publish documentation for already released versions.
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 I am missing some documentation for extension versions
 ======================================================
@@ -26,35 +26,35 @@ I am missing some documentation for extension versions
 If you are missing documentation for some extension versions we have a
 :ref:`workaround <reregister-versions>` to fix that.
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 
-.. _faq-for-extension-authors-moved:
+..  _faq-for-extension-authors-moved:
 
 The repository was moved and is no longer rendered
 ==================================================
 
 This can be fixed by following these steps:
 
-#. Inform us (the `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__) in the `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`__ Slack channel
-#. We will remove your existing documentation.
-#. You need to register the new repository. Or inform us of the new URL and we can do this for you.
-#. We will approve the new repository.
-#. You can regenerate existing versions of the documentation by following: `Reregister versions <reregister-versions>`_
+#.  Inform us (the `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__) in the `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`__ Slack channel
+#.  We will remove your existing documentation.
+#.  You need to register the new repository. Or inform us of the new URL and we can do this for you.
+#.  We will approve the new repository.
+#.  You can regenerate existing versions of the documentation by following: `Reregister versions <reregister-versions>`_
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 Why Does the Documentation not provide a title?
 ===============================================
 
-.. image:: /_Images/missing-title.png
-   :class: with-shadow
+..  image:: /_Images/missing-title.png
+    :class: with-shadow
 
 Refer to :ref:`migrate` in order to fix this issue.
 
 You must add the project title to your :file:`Settings.cfg`:
 
-.. code-block:: rst
+..  code-block:: rst
 
     [general]
 
@@ -73,19 +73,19 @@ You must add the project title to your :file:`Settings.cfg`:
 :ref:`settings-cfg` provides detail information.
 
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 How do I find my new rendered documentation?
 ============================================
 
 There are several possibilities:
 
-#. Search for the extension on https://docs.typo3.org/Home/Extensions.html.
-#. Or, if it was just rerendered, the URL will be referenced from https://intercept.typo3.com/admin/docs/deployments.
-   The column **Branch** contains the link.
+#.  Search for the extension on https://docs.typo3.org/Home/Extensions.html.
+#.  Or, if it was just rerendered, the URL will be referenced from https://intercept.typo3.com/admin/docs/deployments.
+    The column **Branch** contains the link.
 
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 Is it possible to highjack extension documentation?
 ===================================================
@@ -107,7 +107,7 @@ approve of this. This way, misuse is prevented.
 See :ref:`webhook` for more information.
 
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 Is there a way to manually trigger documentation rendering aside from a Git repository push?
 ============================================================================================
@@ -121,7 +121,7 @@ you can add a repository manually without the hook. Nevertheless we strongly
 recommend the usage of the webhook.
 
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 Is the documentation independent of the TER?
 ============================================
@@ -137,7 +137,7 @@ need to fire the webhook from GitHub/GitLab/Bitbucket to trigger the
 documentation rendering.
 
 
-.. rst-class:: panel panel-default
+..  rst-class:: panel panel-default
 
 Should I add a link to the documentation in TER?
 ================================================
@@ -148,8 +148,8 @@ Only use "external documentation" if your documentation is hosted
 somewhere else (not on docs.typo3.org).
 
 
-.. rst-class:: panel panel-default
-.. _faq-can-i-use-a-readmerst-or-readmemd-instead:
+..  rst-class:: panel panel-default
+..  _faq-can-i-use-a-readmerst-or-readmemd-instead:
 
 Can I use a README.rst (or README.md) instead?
 ==============================================
@@ -162,16 +162,16 @@ folder. This means I have to maintain 2 documentations. Or not?
 
 **Answer:** No. You have these 2 options:
 
-#. Use a :file:`README.rst` (or .md) **and** a :file:`Documentation/Index.rst` (for example).
-   This is done in our official manuals. The :file:`README.rst` is not used as documentation,
-   it is used as an :ref:`about the repo file <about-file>`. The README is mostly
-   used to direct users who come via GitHub (or Gitlab, Bitbucket etc.) to the rendered
-   documentation on docs.typo3.org
+#.  Use a :file:`README.rst` (or .md) **and** a :file:`Documentation/Index.rst` (for example).
+    This is done in our official manuals. The :file:`README.rst` is not used as documentation,
+    it is used as an :ref:`about the repo file <about-file>`. The README is mostly
+    used to direct users who come via GitHub (or Gitlab, Bitbucket etc.) to the rendered
+    documentation on docs.typo3.org
 
-#. Or, use :file:`README.rst` (or .md) as main documentation (:ref:`start-file`) and
-   put everything in the :file:`README.rst`. The :file:`Documentation/Settings.cfg` file
-   must also exist, but that is all that needs to be in the `Documentation`
-   directory.
+#.  Or, use :file:`README.rst` (or .md) as main documentation (:ref:`start-file`) and
+    put everything in the :file:`README.rst`. The :file:`Documentation/Settings.cfg` file
+    must also exist, but that is all that needs to be in the `Documentation`
+    directory.
 
 Actually, you have more options, but we do not want to make things too complicated.
 
@@ -181,9 +181,9 @@ We recommend: Use method 1) for extensive documentation with several chapters,
 use method 2) for minimal documentation which can be maintained in one file.
 
 
-.. rst-class:: panel panel-default
-.. index:: "Edit on GitHub" button
-.. _tip-edit-me-on-github:
+..  rst-class:: panel panel-default
+..  index:: "Edit on GitHub" button
+..  _tip-edit-me-on-github:
 
 How do I get an "Edit on GitHub" button?
 ========================================
@@ -191,11 +191,11 @@ How do I get an "Edit on GitHub" button?
 Why might you want an "Edit on GitHub" button on the rendered pages
 of your extension documentation?
 
-.. figure:: /_Images/edit_me_on_github+shadow.svg
-   :class: with-shadow
-   :alt: "Edit on GitHub" button
+..  figure:: /_Images/edit_me_on_github+shadow.svg
+    :class: with-shadow
+    :alt: "Edit on GitHub" button
 
-   "Edit on GitHub" button
+    "Edit on GitHub" button
 
 It makes it easier to contribute to the documentation!
 
@@ -203,13 +203,13 @@ It makes it easier to contribute to the documentation!
 
 Just add this to your :ref:`settings-cfg` and customize it:
 
-.. code-block:: none
+..  code-block:: none
 
-   [html_theme_options]
+    [html_theme_options]
 
-   # "Edit on GitHub" button
-   github_repository = TYPO3-Console/TYPO3-Console
-   github_branch     = main
+    # "Edit on GitHub" button
+    github_repository = TYPO3-Console/TYPO3-Console
+    github_branch     = main
 
 If you used the `sample extension <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
 and followed the steps in :ref:`how-to-start-docs-extension`, you should actually already have this.
@@ -218,8 +218,8 @@ Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_con
 extension for a working example.
 
 
-.. rst-class:: panel panel-default
-.. _tip-link-to-issues:
+..  rst-class:: panel panel-default
+..  _tip-link-to-issues:
 
 How can I link to my issues?
 ============================
@@ -230,11 +230,11 @@ reading your extension documentation on docs.typo3.org?
 
 Add `project_issues` to your :ref:`settings-cfg`:
 
-.. code-block:: none
+..  code-block:: none
 
-   [html_theme_options]
+    [html_theme_options]
 
-   project_issues = https://github.com/<user>/<extension-key>/issues
+    project_issues = https://github.com/<user>/<extension-key>/issues
 
 Replace `<user>` and `<extension-key>` with your username and extension key
 or replace entire URL with URL to your issues.

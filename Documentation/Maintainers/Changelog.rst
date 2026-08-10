@@ -1,9 +1,9 @@
-.. include:: /Includes.rst.txt
-.. index::
-   Documentation; Update
-   Documentation; New releases
-.. _howto-update-docs:
-.. _update-docs:
+..  include:: /Includes.rst.txt
+..  index::
+    Documentation; Update
+    Documentation; New releases
+..  _howto-update-docs:
+..  _update-docs:
 
 ===================================
 Apply changelog entries to the docs
@@ -20,7 +20,7 @@ Each Core change affecting the changelog automatically creates an
 `Issue in the repository Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`_.
 New issues here should be treated with priority.
 
-.. index:: pair: Updates; Commit messages
+..  index:: pair: Updates; Commit messages
 
 Commit messages
 ===============
@@ -63,7 +63,7 @@ change in the next major version. We can then just remove the deprecated section
 Using the correct directive will help the documentation team to find and remove
 deprecation hints in later versions.
 
-.. index::
+..  index::
     Documentation; Breaking changes
     reST directives; versionchanged
 ..  _changelog-breaking-changes:
@@ -105,8 +105,8 @@ info box:
 Using the correct directive will help us to track down and remove these hints
 in later versions.
 
-.. index::
-   reST directives; versionadded
+..  index::
+    reST directives; versionadded
 ..  _changelog-feature:
 
 New features in the changelog

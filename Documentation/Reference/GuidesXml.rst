@@ -40,7 +40,7 @@ guides.xml API
 ..  confval-menu::
     :display: tree
 
-    .. _settings-guides:
+    ..  _settings-guides:
 
     ..  confval:: <guides>
         :name: guides
@@ -116,7 +116,7 @@ guides.xml API
             If this option is set to true, an :ref:`alphabetical menu is
             automatically created <menu-automatic>`.
 
-    .. _settings-guides-interlink-mapping:
+    ..  _settings-guides-interlink-mapping:
 
     ..  confval:: <inventory>
         :name: inventory
@@ -138,7 +138,7 @@ guides.xml API
             <inventory id="sphinx" url="https://www.sphinx-doc.org/en/master/"/>
 
 
-    .. _settings-guides-project:
+    ..  _settings-guides-project:
 
     ..  confval:: <project>
         :name: project
@@ -148,7 +148,7 @@ guides.xml API
 
         This tag can contain the following meta information:
 
-        .. _settings-guides-project-title:
+        ..  _settings-guides-project-title:
 
         ..  confval:: title
             :name: guides-project-title
@@ -167,14 +167,14 @@ guides.xml API
 
             Common values are in the official TYPO3 manuals
 
-            #. `<Topic> Guide`, e.g. "Frontend Localization Guide",
-               for collections of articles on a specific topic
-            #. `<Topic> Reference`, e.g. "TSconfig Reference",
-               for a complete reference
-            #. `<Topic> Tutorial`, e.g. "Editors Tutorial",
-               for collections of tutorials on a specific topic
+            #.  `<Topic> Guide`, e.g. "Frontend Localization Guide",
+                for collections of articles on a specific topic
+            #.  `<Topic> Reference`, e.g. "TSconfig Reference",
+                for a complete reference
+            #.  `<Topic> Tutorial`, e.g. "Editors Tutorial",
+                for collections of tutorials on a specific topic
 
-        .. _settings-guides-project-title-example:
+        ..  _settings-guides-project-title-example:
 
         ..  rubric:: Example: Set the title of a project, including version, release and copyright
 
@@ -191,7 +191,7 @@ guides.xml API
                 />
             </guides>
 
-        .. _settings-guides-version-and-release:
+        ..  _settings-guides-version-and-release:
 
         ..  confval:: version
             :name: guides-project-version
@@ -210,7 +210,7 @@ guides.xml API
             document and output this value using :rst:`|release|` within
             your text if you desire to. Usually it is not used.
 
-        .. _settings-guides-copyright:
+        ..  _settings-guides-copyright:
 
         ..  confval:: copyright
             :name: guides-project-copyright
@@ -226,7 +226,7 @@ guides.xml API
             #.  `since <creation-year> by <vendor> & contributors`,
                 for example "since 1999 by John Doe & contributors" (third-party TYPO3 extensions)
 
-    .. _settings-guides-theme:
+    ..  _settings-guides-theme:
 
     ..  confval:: <extension>
         :name: extension
@@ -242,7 +242,7 @@ guides.xml API
         The class attribute is mandatory, it references the extension that is used
         to render the documentation with the TYPO3 documentation theme.
 
-        .. _settings-guides-github-workflow:
+        ..  _settings-guides-github-workflow:
 
         ..  confval:: edit-on-github-*
             :name: guides-extension-edit-on-github-workflow
@@ -355,7 +355,7 @@ guides.xml API
                 />
             </guides>
 
-        .. _settings-guides-interlink-shortcode:
+        ..  _settings-guides-interlink-shortcode:
 
         ..  confval:: interlink-shortcode
             :name: guides-extension-interlink-shortcode
@@ -380,7 +380,7 @@ guides.xml API
 
             Reference a headline in the EXT:news manual
 
-        .. _settings-guides-project-links:
+        ..  _settings-guides-project-links:
 
         ..  confval:: project-*
             :name: guides-extension-project-links
@@ -390,7 +390,7 @@ guides.xml API
             project than the documentation, for example to the project page in the
             TYPO3 Extension Repository (TER):
 
-        .. _settings-guides-project-home:
+        ..  _settings-guides-project-home:
 
         ..  confval:: project-home
             :name: guides-extension-project-home
@@ -401,10 +401,10 @@ guides.xml API
             extensions this is the associated TER page or a custom project website, for
             example
 
-            *  `https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/` or
-            *  `https://extensions.typo3.org/extension/news`.
+            *   `https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/` or
+            *   `https://extensions.typo3.org/extension/news`.
 
-        .. _settings-guides-project-contact:
+        ..  _settings-guides-project-contact:
 
         ..  confval:: project-contact
             :name: guides-extension-project-contact
@@ -413,10 +413,10 @@ guides.xml API
             is usually set to an email address or Slack channel URL of
             the team behind the project, for example
 
-            *  `mailto:documentation\@typo3.org` or
-            *  `https://typo3.slack.com/archives/C028JEPJL`.
+            *   `mailto:documentation\@typo3.org` or
+            *   `https://typo3.slack.com/archives/C028JEPJL`.
 
-        .. _settings-guides-project-repository:
+        ..  _settings-guides-project-repository:
 
         ..  confval:: project-repository
             :name: guides-extension-project-repository
@@ -425,9 +425,9 @@ guides.xml API
             is set to the repository of the project's VCS, for
             example
 
-            *  `https://github.com/FriendsOfTYPO3/extension_builder`.
+            *   `https://github.com/FriendsOfTYPO3/extension_builder`.
 
-        .. _settings-guides-project-issues:
+        ..  _settings-guides-project-issues:
 
         ..  confval:: project-issues
             :name: guides-extension-project-issues
@@ -436,10 +436,10 @@ guides.xml API
             is set to the location where project issues are to be
             created and edited, for example
 
-            *  `https://github.com/FriendsOfTYPO3/extension_builder/issues`
+            *   `https://github.com/FriendsOfTYPO3/extension_builder/issues`
 
 
-        .. _settings-guides-project-discussions:
+        ..  _settings-guides-project-discussions:
 
         ..  confval:: project-discussions
             :name: guides-extension-project-discussions
@@ -449,10 +449,10 @@ guides.xml API
             discussions take place in locations other than those defined by the
             project-contact and project-issues attributes, for example
 
-            *  `https://github.com/FriendsOfTYPO3/extension_builder/discussions`.
+            *   `https://github.com/FriendsOfTYPO3/extension_builder/discussions`.
 
 
-        .. _settings-guides-project-links-example:
+        ..  _settings-guides-project-links-example:
 
         ..  rubric:: Example: Project links for a third-party extension
 
@@ -471,7 +471,7 @@ guides.xml API
             />
             </guides>
 
-        .. _settings-guides-project-links-core-example:
+        ..  _settings-guides-project-links-core-example:
 
         ..  rubric:: Example: Project links for a system extension
 
@@ -491,7 +491,7 @@ guides.xml API
             </guides>
 
 
-        .. _settings-guides-project-links-reference-example:
+        ..  _settings-guides-project-links-reference-example:
 
         ..  rubric:: Example: Project links for a reference or guide
 

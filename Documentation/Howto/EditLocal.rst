@@ -1,8 +1,8 @@
 :navigation-title: Edit Locally
 
-.. include:: /Includes.rst.txt
-.. index:: Official documentation; Local editing
-.. _docs-contribute-git-docker:
+..  include:: /Includes.rst.txt
+..  index:: Official documentation; Local editing
+..  _docs-contribute-git-docker:
 
 ======================================================
 Workflow #2: "Local editing and rendering with Docker"
@@ -12,101 +12,101 @@ Using your local machine instead of editing documentation on GitHub has many adv
 the freedom to choose which IDE you make your changes in and it also gives you
 the ability to experiment and preview your changes locally before submitting them for approval.
 
-.. rst-class:: bignums-xxl
+..  rst-class:: bignums-xxl
 
-1. Create a GitHub account:
+1.  Create a GitHub account:
 
-   Visit `Join GitHub <https://github.com/join>`__ and create your account.
+    Visit `Join GitHub <https://github.com/join>`__ and create your account.
 
-   Though not mandatory, the general convention in the TYPO3 community is
-   to set your GitHub name (*not* username) as your full name.
+    Though not mandatory, the general convention in the TYPO3 community is
+    to set your GitHub name (*not* username) as your full name.
 
-2. Find and fork the repository
+2.  Find and fork the repository
 
-   In the footer of the documentation you wish to make changes to,
-   select the :guilabel:`Repository` link.
+    In the footer of the documentation you wish to make changes to,
+    select the :guilabel:`Repository` link.
 
-   This will take you to the documentations repository in GitHub.
+    This will take you to the documentations repository in GitHub.
 
-   From here, select the "Fork" button in the upper right corner of the page.
+    From here, select the "Fork" button in the upper right corner of the page.
 
-   .. image:: /_Images/github-fork.png
-      :class: with-shadow
+    ..  image:: /_Images/github-fork.png
+        :class: with-shadow
 
-3. Clone the forked repository
+3.  Clone the forked repository
 
-   Clone the **forked repository from your workspace** (select *Clone or
-   download* to copy the URL).
+    Clone the **forked repository from your workspace** (select *Clone or
+    download* to copy the URL).
 
-   In your terminal:
+    In your terminal:
 
-   .. code-block:: bash
+    ..  code-block:: bash
 
-      git clone https://github.com/<USERNAME>/<NAME OF REPOSITORY>.git
-
-
-4. Setup Git Settings and SSH Key
-
-   For this, we refer to the general help on Git and GitHub:
-
-   Setup `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
-   and `email <https://help.github.com/en/articles/setting-your-commit-email-address-in-git>`__
-   (if not already setup in your global :file:`~/.gitconfig`).
-
-   `Setup your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
-
-5. Create a branch for your changes
+        git clone https://github.com/<USERNAME>/<NAME OF REPOSITORY>.git
 
 
-   .. important::
+4.  Setup Git Settings and SSH Key
 
-      If you did not just fork and clone but are instead using an old local version of this repository:
+    For this, we refer to the general help on Git and GitHub:
 
-      #. Make sure the repository is up-to-date by pulling from upstream as described
-         in :ref:`contribute-edit-locally-more-changes`.
-      #. Always branch from `main`.
-         If you are checked in to a feature branch, switch back to `main`
-         first:
+    Setup `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
+    and `email <https://help.github.com/en/articles/setting-your-commit-email-address-in-git>`__
+    (if not already setup in your global :file:`~/.gitconfig`).
 
-         .. code-block:: bash
+    `Setup your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
 
-            git checkout main
+5.  Create a branch for your changes
 
-   For example, create the branch `feature/changes-in-cgl`:
 
-   .. code-block:: bash
+    ..  important::
 
-      git checkout -b feature/changes-in-cgl
+        If you did not just fork and clone but are instead using an old local version of this repository:
 
-6. Make your changes
+        #.  Make sure the repository is up-to-date by pulling from upstream as described
+            in :ref:`contribute-edit-locally-more-changes`.
+        #.  Always branch from `main`.
+            If you are checked in to a feature branch, switch back to `main`
+            first:
 
-   Using your preferred IDE or editor you can now start making your changes.
+            ..  code-block:: bash
 
-   If you are not familiar with reST, you can visit the
-   :ref:`reST Introduction <writing-rest-introduction>` to help get you started
-   along with the :ref:`rest-cheat-sheet`.
+                git checkout main
 
-7. Render the documentation
+    For example, create the branch `feature/changes-in-cgl`:
 
-   Render your changes with Docker to preview them locally:
+    ..  code-block:: bash
 
-   *  :ref:`render-documentation-with-docker`
+        git checkout -b feature/changes-in-cgl
 
-8. Commit
+6.  Make your changes
 
-   .. code-block:: bash
+    Using your preferred IDE or editor you can now start making your changes.
 
-      git commit -a
+    If you are not familiar with reST, you can visit the
+    :ref:`reST Introduction <writing-rest-introduction>` to help get you started
+    along with the :ref:`rest-cheat-sheet`.
 
-   Write a short, meaningful commit message describing what changes you have made.
+7.  Render the documentation
 
-9. Push changes
+    Render your changes with Docker to preview them locally:
 
-   .. code-block:: bash
+    *   :ref:`render-documentation-with-docker`
 
-      git push origin changes-in-cgl
+8.  Commit
 
-   This will push the change to your forked repository.
+    ..  code-block:: bash
+
+        git commit -a
+
+    Write a short, meaningful commit message describing what changes you have made.
+
+9.  Push changes
+
+    ..  code-block:: bash
+
+        git push origin changes-in-cgl
+
+    This will push the change to your forked repository.
 
 10. Create Pull request
 
@@ -133,11 +133,11 @@ the ability to experiment and preview your changes locally before submitting the
 Next steps
 ==========
 
-*  Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
+*   Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
 
 
-.. index:: Official documentation; Fork up-to date
-.. _contribute-edit-locally-more-changes:
+..  index:: Official documentation; Fork up-to date
+..  _contribute-edit-locally-more-changes:
 
 Keeping your local fork up-to date
 ==================================
@@ -159,15 +159,15 @@ You local repository is based on the forked repository in your workspace.
 
 For example,
 
-*  URL of fork:  `git@github.com:<your username>/TYPO3CMS-Guide-HowToDocument.git`
-*  original URL: `git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
+*   URL of fork:  `git@github.com:<your username>/TYPO3CMS-Guide-HowToDocument.git`
+*   original URL: `git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git`
 
 So, running the following will not get the latest changes:
 
 
-.. code-block:: bash
+..  code-block:: bash
 
-   git pull origin main
+    git pull origin main
 
 because origin points to your fork.
 
@@ -177,10 +177,10 @@ Do it now
 
 You must now do the following:
 
-.. code-block:: bash
+..  code-block:: bash
 
-   git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
-   git pull upstream main
+    git remote add upstream git@github.com:TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
+    git pull upstream main
 
 
 Replace the URI with the correct URI for the original repository, not your fork!
@@ -188,9 +188,9 @@ Replace the URI with the correct URI for the original repository, not your fork!
 The URL for upstream has now been written to :file:`.git/config` in your local repository,
 so next time it is enough to do:
 
-.. code-block:: bash
+..  code-block:: bash
 
-   git pull upstream main
+    git pull upstream main
 
 
 Now, continue with step 5 (create branch) in the first section of this page.
@@ -201,17 +201,17 @@ More information
 
 For more information in this guide:
 
-*  :ref:`Formatting-with-reST`
-*  `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/main/README.rst>`__
-*  :ref:`review-policy`
+*   :ref:`Formatting-with-reST`
+*   `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/main/README.rst>`__
+*   :ref:`review-policy`
 
 For more information about GitHub see the help pages on GitHub or other
 resources, for example:
 
-*  `Creating a pull request from a fork
-   <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
-*  `How to Create a Pull Request on GitHub
-   <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
-*  `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
+*   `Creating a pull request from a fork
+    <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`__
+*   `How to Create a Pull Request on GitHub
+    <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
+*   `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
 
 

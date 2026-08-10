@@ -1,25 +1,25 @@
-.. include:: /Includes.rst.txt
-.. index:: Documentation; Formats
-.. _supported-formats:
+..  include:: /Includes.rst.txt
+..  index:: Documentation; Formats
+..  _supported-formats:
 
 ========================
 Formats (reST, Markdown)
 ========================
 
 
-.. index::
-   Documentation; reST
-   reST
-.. _formats-rest:
+..  index::
+    Documentation; reST
+    reST
+..  _formats-rest:
 
 reST
 ====
 
-.. important::
+..  important::
 
-   The entire official documentation uses reST only. This includes
-   the the Guides, Tutorials, "TYPO3 Explained", Reference,
-   the Changelog and system extensions.
+    The entire official documentation uses reST only. This includes
+    the the Guides, Tutorials, "TYPO3 Explained", Reference,
+    the Changelog and system extensions.
 
 The rendering chain and tools are built and optimized to process reST markup. We
 recommend using this format for your documentation. As reST is more feature-rich,
@@ -30,10 +30,10 @@ The file ending of reST files is .rst.
 When you started your documentation in markdown, you can convert it to reST using
 our migration tool.
 
-.. index::
-   Documentation; Markdown
-   Markdown
-.. _formats-markdown:
+..  index::
+    Documentation; Markdown
+    Markdown
+..  _formats-markdown:
 
 Markdown
 ========
@@ -46,9 +46,9 @@ This is a standardized version of markdown. We do not support other markdown dia
 they might work. We cannot guarantee that they will work in the future.
 You can consult our Markdown reference for more information.
 
-.. index::
-   reST; vs. Markdown
-   Markdown; vs. reST
+..  index::
+    reST; vs. Markdown
+    Markdown; vs. reST
 
 reST vs. Markdown
 =================
@@ -73,41 +73,41 @@ readthedocs:
 
 `+`
 
-*  extendable
-*  semantic markup
-*  cross-references across manuals (links still work if text is moved - unless moved to a different manual)
-*  richer feature set
+*   extendable
+*   semantic markup
+*   cross-references across manuals (links still work if text is moved - unless moved to a different manual)
+*   richer feature set
 
 `-`
 
-*  Syntax may be unusual and rendering breaks if not done correctly, for example
+*   Syntax may be unusual and rendering breaks if not done correctly, for example
 
-   *  indenting is important
-   *  new lines are important, for example before, after and between bullet lists
+    *   indenting is important
+    *   new lines are important, for example before, after and between bullet lists
 
-*  some people simply hate it
+*   some people simply hate it
 
 **Markdown**
 
 `+`
 
-*  in general better tool support
-*  widely supported
-*  syntax is (mostly) simpler and easier to read
+*   in general better tool support
+*   widely supported
+*   syntax is (mostly) simpler and easier to read
 
 `-`
 
-*  various flavors (unless **commonmark** is used)
-*  less features
+*   various flavors (unless **commonmark** is used)
+*   less features
 
 
 Additional information
 ----------------------
 
 
-*  Eli Bendersky: `"reStructuredText vs. Markdown for technical documentation"
-   <https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/>`__ (February 24, 2017)
-*  Victor Zverovich: `"reStructuredText vs Markdown for documentation" <https://www.zverovich.net/2016/06/16/rst-vs-markdown.html>`__ (2016)
-*  Eric Holscher: `"Why You Shouldn’t Use “Markdown” for Documentation"
-   <https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/>`__ (March 15, 2016)
-*  Eric Holscher: `Read the Docs & Sphinx now support Commonmark <https://blog.readthedocs.com/adding-markdown-support/>`__ (2015)
+*   Eli Bendersky: `"reStructuredText vs. Markdown for technical documentation"
+    <https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/>`__ (February 24, 2017)
+*   Victor Zverovich: `"reStructuredText vs Markdown for documentation" <https://www.zverovich.net/2016/06/16/rst-vs-markdown.html>`__ (2016)
+*   Eric Holscher: `"Why You Shouldn’t Use “Markdown” for Documentation"
+    <https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/>`__ (March 15, 2016)
+*   Eric Holscher: `Read the Docs & Sphinx now support Commonmark <https://blog.readthedocs.com/adding-markdown-support/>`__ (2015)

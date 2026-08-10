@@ -39,7 +39,7 @@ to view progress.
               -p 1337:1337 ghcr.io/typo3-documentation/render-guides:latest --config="Documentation" --watch
             xdg-open "http://localhost:1337/Index.html"
 
-    .. group-tab:: MacOS
+    ..  group-tab:: MacOS
 
         ..  code-block:: bash
 
@@ -97,10 +97,10 @@ development environment, you can add a service for the live rendering like this:
           - ./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp
         command: ["--config=Documentation", "--watch"]
 
-.. note::
+..  note::
 
-   Render guides was never optimized for long running services. You might need
-   to restart the container from time to time to free up resources.
+    Render guides was never optimized for long running services. You might need
+    to restart the container from time to time to free up resources.
 
 DDEV
 ====
@@ -117,12 +117,12 @@ Not all changes in the source files can be detected automatically, or will
 impact the rendered output immediately. In such cases, a manual re-rendering
 is required. Examples are:
 
-* Changes in :file:`guides.xml`
-* New added files
-* Menu changes
-* Moving files
+*   Changes in :file:`guides.xml`
+*   New added files
+*   Menu changes
+*   Moving files
 
-.. note::
+..  note::
 
     Please be aware that some editors (like e.g. `VIM`) create temporary files
     when opening files for editing. This will not be detected as a change to the

@@ -1,7 +1,7 @@
 :orphan:
-.. index:: File structure; README.rst, README.rst
-.. _readme-rst:
-.. _about-file:
+..  index:: File structure; README.rst, README.rst
+..  _readme-rst:
+..  _about-file:
 
 =======================================
 :file:`README.rst` or :file:`README.md`
@@ -37,7 +37,7 @@ example:
         ..  include:: /_CodeSnippets/FileStructure/ReadmeMd.rst.txt
 
 
-.. _readme-rst-badges:
+..  _readme-rst-badges:
 
 Badges
 ======
@@ -60,7 +60,7 @@ monthly download rate and the supported TYPO3 versions:
 Remove this field if the project is no extension or package.
 
 
-.. _readme-rst-project:
+..  _readme-rst-project:
 
 Project
 =======
@@ -69,20 +69,20 @@ The *project* placeholder contains the title of the project.
 
 Common values are, for example, in the official TYPO3 manuals
 
-#. `<Topic> Guide`, e.g. "Installation and Upgrade Guide",
-   for collections of articles on a specific topic
-#. `<Topic> Reference`, e.g. "TCA Reference",
-   for a complete encyclopedia
-#. `<Topic> Tutorial`, e.g. "Getting Started Tutorial",
-   for collections of tutorials on a specific topic
+#.  `<Topic> Guide`, e.g. "Installation and Upgrade Guide",
+    for collections of articles on a specific topic
+#.  `<Topic> Reference`, e.g. "TCA Reference",
+    for a complete encyclopedia
+#.  `<Topic> Tutorial`, e.g. "Getting Started Tutorial",
+    for collections of tutorials on a specific topic
 
 and in TYPO3 system and third-party extensions
 
-*  `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`extbase\`\`" and
-   "TYPO3 extension \`\`mask\`\`".
+*   `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`extbase\`\`" and
+    "TYPO3 extension \`\`mask\`\`".
 
 
-.. _readme-rst-abstract:
+..  _readme-rst-abstract:
 
 Abstract
 ========
