@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: pair: Coding guidelines; reST
-.. _format-rest-cgl:
+..  include:: /Includes.rst.txt
+..  index:: pair: Coding guidelines; reST
+..  _format-rest-cgl:
 
 ================================
 Coding guidelines for reST files
@@ -10,73 +10,72 @@ Basic formatting rules
 ======================
 
 
-.. index::
-   reST; Encoding
-   reST; Utf-8
+..  index::
+    reST; Encoding
+    reST; Utf-8
 
 Encoding
 --------
 
-*  use utf-8
+*   use utf-8
 
 
-.. index::
-   reST; Whitespace
-   reST; Indentation
-.. _cgl-indenting:
+..  index::
+    reST; Whitespace
+    reST; Indentation
+..  _cgl-indenting:
 
 Whitespace and indentation
 --------------------------
 
-.. important::
+..  important::
 
-   Always use indentation levels correctly. Your code may not
-   be rendered as expected if you do not.
+    Always use indentation levels correctly. Your code may not
+    be rendered as expected if you do not.
 
-*  remove white space from the end of lines (= no trailing tabs or spaces)
-*  don't use tabs
-*  one indentation level consists of **four spaces**
-*  code examples use four spaces as indentation level as well
-
-.. note::
-
-   Currently, the documentation is not always indented consistently.
-   In some manuals, an indentation level of 3 spaces was used instead.
-   We currently recommend to use what has been used on the page you
-   are currently editing.
+*   remove white space from the end of lines (= no trailing tabs or spaces)
+*   don't use tabs
+*   one indentation level consists of **four spaces**
+*   code examples use four spaces as indentation level as well
+*   directive and hyperlink target markers use two spaces after ``..``,
+    e.g. ``..  note::`` or ``..  _label:``
+*   list markers are followed by enough spaces to line up item text at a
+    4-space column: 3 spaces after a single-character marker (``*``, ``-``),
+    2 spaces after a two-character enumerator (``#.``, ``1.``), 1 space
+    after longer enumerators (``10.``)
 
 Example:
 
-.. code-block:: rst
-  :linenos:
+..  code-block:: rst
+    :linenos:
 
-   .. image:: /_Images/a4.jpg
-      :alt: Left floating image
-      :target: https://typo3.org
-      :class: with-shadow
-
-
-*  lines 2-4 must be indented one level (4 spaces)
+    ..  image:: /_Images/a4.jpg
+        :alt: Left floating image
+        :target: https://typo3.org
+        :class: with-shadow
 
 
-.. index:: reST; Line length
+*   lines 2-4 must be indented one level (4 spaces)
+
+
+..  index:: reST; Line length
 
 Line length
 -----------
 
-*  Keep lines shorter than 80 characters.
-*  if in doubt about the length: use short lines!
+*   Keep lines shorter than 80 characters.
+*   if in doubt about the length: use short lines!
 
-   *  That way reST is readable as source as well
-   *  Files can be easily edited directly on GitHub
-   *  Files can be compared in a diff view
+    *   That way reST is readable as source as well
+    *   Files can be easily edited directly on GitHub
+    *   Files can be compared in a diff view
 
 
-.. index::
-   .editorconfig
-   Files; .editorconfig
+..  index::
+    .editorconfig
+    Files; .editorconfig
 
-.. _editorconfig:
+..  _editorconfig:
 
 .editorconfig
 -------------
@@ -90,43 +89,43 @@ is explained on the `Editorconfig <http://EditorConfig.org>`__ page.
 
 Sample contents of :file:`.editorconfig`
 
-.. code-block:: bash
-   :linenos:
+..  code-block:: bash
+    :linenos:
 
-   # EditorConfig is awesome: http://EditorConfig.org
+    # EditorConfig is awesome: http://EditorConfig.org
 
-   # top-most EditorConfig file? false = no!
-   root = false
+    # top-most EditorConfig file? false = no!
+    root = false
 
-   [{*.rst,*.rst.txt}]
-   charset = utf-8
-   end_of_line = lf
-   insert_final_newline = true
-   trim_trailing_whitespace = true
-   indent_style = space
-   indent_size = 4
-   max_line_length = 80
+    [{*.rst,*.rst.txt}]
+    charset = utf-8
+    end_of_line = lf
+    insert_final_newline = true
+    trim_trailing_whitespace = true
+    indent_style = space
+    indent_size = 4
+    max_line_length = 80
 
-   # MD-Files
-   [*.md]
-   charset = utf-8
-   end_of_line = lf
-   insert_final_newline = true
-   trim_trailing_whitespace = true
-   indent_style = space
-   indent_size = 4
-   max_line_length = 80
+    # MD-Files
+    [*.md]
+    charset = utf-8
+    end_of_line = lf
+    insert_final_newline = true
+    trim_trailing_whitespace = true
+    indent_style = space
+    indent_size = 4
+    max_line_length = 80
 
 
 This sample .editorconfig will instruct your editor / IDE to:
 
-*  use utf8 as encoding (line 7)
-*  use spaces instead of tabs (line 11)
-*  use 4 spaces for indenting (line 12)
-*  remove trailing whitespace (line 10)
+*   use utf8 as encoding (line 7)
+*   use spaces instead of tabs (line 11)
+*   use 4 spaces for indenting (line 12)
+*   remove trailing whitespace (line 10)
 
 
-.. index:: reST; Special characters
+..  index:: reST; Special characters
 
 Special characters
 ------------------
@@ -134,12 +133,12 @@ Special characters
 The only way to include "special" characters is to use them directly
 
 
-.. index::
-   reST; Headlines
-   reST; Headers
-   reST; Titles
-   reST; Underlining
-.. _rest-cgl-headline-underlines:
+..  index::
+    reST; Headlines
+    reST; Headers
+    reST; Titles
+    reST; Underlining
+..  _rest-cgl-headline-underlines:
 
 Headline underlining
 ====================
@@ -159,41 +158,41 @@ file:
 
 ..  code-block:: rst
 
-   ========
-   1. Title
-   ========
+    ========
+    1. Title
+    ========
 
-   2. Header Level 1
-   =================
+    2. Header Level 1
+    =================
 
-   3. Header Level 2
-   -----------------
+    3. Header Level 2
+    -----------------
 
-   4. Header Level 3
-   ~~~~~~~~~~~~~~~~~
+    4. Header Level 3
+    ~~~~~~~~~~~~~~~~~
 
-   5. Header Level 4
-   """""""""""""""""
+    5. Header Level 4
+    """""""""""""""""
 
-   6. Header Level 5
-   '''''''''''''''''
+    6. Header Level 5
+    '''''''''''''''''
 
-   7. Header Level 6
-   ^^^^^^^^^^^^^^^^^
+    7. Header Level 6
+    ^^^^^^^^^^^^^^^^^
 
-   8. Header Level 7
-   #################
+    8. Header Level 7
+    #################
 
-   etc.
+    etc.
 
-.. index::
-   reST; Version hints
-   reST; Deprecations
-   reST; Feature
-   reST; Changes
-   reST directives; deprecated
-   reST directives; versionadded
-   reST directives; versionchanged
+..  index::
+    reST; Version hints
+    reST; Deprecations
+    reST; Feature
+    reST; Changes
+    reST directives; deprecated
+    reST directives; versionadded
+    reST directives; versionchanged
 
 How to add version hints
 ========================
@@ -202,28 +201,28 @@ Example, how you can point out **deprecations**:
 
 ..  code-block:: rst
 
-   .. deprecated:: 10.2
-      The hook shown here is deprecated since TYPO3 10.2 - use a custom
-      :ref:`PSR-15 middleware<request-handling>` instead.
+    .. deprecated:: 10.2
+       The hook shown here is deprecated since TYPO3 10.2 - use a custom
+       :ref:`PSR-15 middleware<request-handling>` instead.
 
 New **feature**:
 
 ..  code-block:: rst
 
-   .. versionadded:: 10.2
-      Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
-      event dispatching system.
+    .. versionadded:: 10.2
+       Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
+       event dispatching system.
 
 Changes:
 
 ..  code-block:: rst
 
-   .. versionchanged:: 2.3.1
-      This feature was changed ...
+    .. versionchanged:: 2.3.1
+       This feature was changed ...
 
 For more information, see the open issue:
 
-*  `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
+*   `Should we display version hints <https://github.com/TYPO3-Documentation/T3DocTeam/issues/14>`__
 
 
 ..  index::
@@ -255,10 +254,10 @@ For this to work, `ext_core` must be defined in :file:`Settings.cfg`:
     ext_core = https://docs.typo3.org/c/typo3/cms-core/main/en-us/
 
 
-.. index::
-   reST; GUI elements
-   reST roles; guilabel
-.. _rest-refer-to-gui-elements:
+..  index::
+    reST; GUI elements
+    reST roles; guilabel
+..  _rest-refer-to-gui-elements:
 
 Referring to GUI elements
 =========================
@@ -267,30 +266,30 @@ If you describe something that needs to be selected from a menu or other GUI
 element or clicked one after the other, use *>* as separator and use
 :ref:`text role guilabel <text-roles>`.
 
-.. important::
+..  important::
 
-   Use the spelling of the word as used in the GUI!
+    Use the spelling of the word as used in the GUI!
 
 Examples:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   Select :guilabel:`File > Open`
-
-How it looks:
-   Select :guilabel:`File > Open`
-
-.. code-block:: rst
-
-   Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
+    Select :guilabel:`File > Open`
 
 How it looks:
-   Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
+    Select :guilabel:`File > Open`
+
+..  code-block:: rst
+
+    Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
+
+How it looks:
+    Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
 
 
-.. index::
-   reST; Keystrokes
-   reST roles; kbd
+..  index::
+    reST; Keystrokes
+    reST roles; kbd
 
 Refering to keystrokes
 ======================
@@ -300,9 +299,9 @@ When pointing out keyboard shortcuts or keystroke sequences, use
 
 Example:
 
-.. code-block:: rst
+..  code-block:: rst
 
-   Press :kbd:`ctrl` + :kbd:`s`
+    Press :kbd:`ctrl` + :kbd:`s`
 
 How it looks:
-   Press :kbd:`ctrl` + :kbd:`s`
+    Press :kbd:`ctrl` + :kbd:`s`

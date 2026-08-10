@@ -50,9 +50,9 @@ The TYPO3 documentation uses a defined set of dummy domains when describing URLs
 where the domain name does not matter, but serves as a placeholder. The defined
 set is
 
-1. :samp:`https://example.org`
-2. :samp:`https://example.com`
-3. :samp:`https://example.net`
+1.  :samp:`https://example.org`
+2.  :samp:`https://example.com`
+3.  :samp:`https://example.net`
 
 – in this order: :samp:`https://example.org` as the preferred domain, and
 :samp:`https://example.com` and :samp:`https://example.net` as alternatives if
@@ -65,7 +65,7 @@ TYPO3 Association is owning the TYPO3 GmbH.
 
 For explicit mention of the local development context it uses
 
-4. :samp:`https://example.localhost`.
+4.  :samp:`https://example.localhost`.
 
 If you need additional dummy domains, use subdomains of the domains listed
 above such as :samp:`https://staging.example.org` and

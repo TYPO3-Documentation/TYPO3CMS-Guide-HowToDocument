@@ -29,8 +29,8 @@ button and make the change yourself. See :ref:`docs-contribute-github-method`
 for a walkthrough.
 
 
-.. _how-you-can-help-fix-issues:
-.. _links-github-issues:
+..  _how-you-can-help-fix-issues:
+..  _links-github-issues:
 
 Fix issues
 ==========
@@ -44,46 +44,46 @@ and fix the problem.
 
 For example:
 
-*  `Issues for "TYPO3 Explained"
-   <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues>`__
-*  `Issues for "Getting Started Tutorial"
-   <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
+*   `Issues for "TYPO3 Explained"
+    <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi/issues>`__
+*   `Issues for "Getting Started Tutorial"
+    <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-GettingStarted/issues>`__
 
 
-.. _github-good-first-issue:
-.. _useful-links-for-contributors:
+..  _github-good-first-issue:
+..  _useful-links-for-contributors:
 
 Links to GitHub issues
 ----------------------
 
 Here are some links to GitHub issues in `TYPO3-Documentation <https://github.com/TYPO3-Documentation>`__.
 
-.. important::
+..  important::
 
-   GitHub will show a 404 page if you are not logged in following these links!
-   So, remember to log in first!
+    GitHub will show a 404 page if you are not logged in following these links!
+    So, remember to log in first!
 
 For new contributors:
 
-*  `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__ (Link to GitHub)
+*   `Good first issues <https://github.com/issues?q=is%3Aopen%20is%3Aissue%20label%3A%22good%20first%20issue%22%20archived%3Afalse%20user%3ATYPO3-Documentation>`__ (Link to GitHub)
 
 For contributors:
 
-*  `All open, unassigned issues (without team, theme etc.) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
+*   `All open, unassigned issues (without team, theme etc.) <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+-repo%3ATYPO3-Documentation%2FT3DocTeam+-repo%3ATYPO3-Documentation%2Ft3SphinxThemeRtd+-repo%3ATYPO3-Documentation%2FTYPO3CMS-Guide-HowToDocument+no%3Aassignee>`__ (Link to GitHub)
 
 For team members and advanced contributors:
 
-*  `All open issues
-   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (Link to GitHub)
-*  `All open, unassigned issues
-   <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__ (Link to GitHub)
+*   `All open issues
+    <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation>`__ (Link to GitHub)
+*   `All open, unassigned issues
+    <https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3ATYPO3-Documentation+no%3Aassignee>`__ (Link to GitHub)
 
 The Docker image for rendering is in the organization **t3docs** (instead of TYPO3-Documentation):
 
-*  `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
+*   `All open issues in t3docs <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3At3docs>`__ (Link to GitHub)
 
 
-.. _how-you-can-help-review-pr:
+..  _how-you-can-help-review-pr:
 
 Review pull requests
 ====================
@@ -92,32 +92,32 @@ Some pull requests make changes in documentation describing an aspect
 of TYPO3 you may know well.
 Help in this area is very much appreciated!
 
-.. important::
+..  important::
 
-   GitHub will show a 404 page if you are not logged in following these links!
-   So, remember to log in first!
+    GitHub will show a 404 page if you are not logged in following these links!
+    So, remember to log in first!
 
 
 Anyone is welcome to review open pull requests!
 
 In **TYPO3-Documentation**:
 
-*  `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-desc>`__ (Link to GitHub)
+*   `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3ATYPO3-Documentation+sort%3Acreated-desc>`__ (Link to GitHub)
 
 In **t3docs** (Docker image):
 
-*  `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__ (Link to GitHub)
+*   `Open pull requests <https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+org%3At3docs+sort%3Acreated-asc>`__ (Link to GitHub)
 
 
-.. _how-you-can-help-write-new-content:
+..  _how-you-can-help-write-new-content:
 
 Write new content
 =================
 
-*  :ref:`Write missing content <links-github-issues>`.
+*   :ref:`Write missing content <links-github-issues>`.
 
 
-.. _how-you-can-help-add-diagrams:
+..  _how-you-can-help-add-diagrams:
 
 Add diagrams
 ============
@@ -138,7 +138,7 @@ Here are some examples:
 
         Example of a sequence diagram about request handling
 
-*  :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
+*   :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
 
 
 Replace outdated images and screenshots
@@ -156,7 +156,7 @@ Add some new YouTube videos from the `TYPO3 YouTube channel`_.
 See :ref:`youtube-videos` for information on how to do this.
 
 
-.. _how-you-can-help-review-manuals:
+..  _how-you-can-help-review-manuals:
 
 Review manuals
 ==============
@@ -203,7 +203,7 @@ Thank others for their contributions (for example on `Slack`_, `Mastodon`_ or
 personally).
 
 
-.. _contribute-what-social-media:
+..  _contribute-what-social-media:
 
 Spread the word
 ===============
@@ -229,7 +229,7 @@ are some ideas to get you started:
 *   What advice can you give others?
 
 
-.. _how-you-can-help-new-content:
+..  _how-you-can-help-new-content:
 
 Make suggestions for new content
 ================================
@@ -243,7 +243,7 @@ If this is the case, raise the question in the `#typo3-documentation`_ channel
 on `Slack`_.
 
 
-.. _how-you-can-help-changelog:
+..  _how-you-can-help-changelog:
 
 Add information from the changelog
 ==================================
@@ -258,7 +258,7 @@ Regardless of this, if you find something missing, you can add it yourself. Or
 ask in the `#typo3-documentation`_ Slack channel, if you can help out.
 
 
-.. _how-you-can-help-check-spelling:
+..  _how-you-can-help-check-spelling:
 
 Check spelling
 ==============

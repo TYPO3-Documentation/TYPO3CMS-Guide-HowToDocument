@@ -1,10 +1,10 @@
 :navigation-title: Document extensions
 
-.. include:: /Includes.rst.txt
-.. index:: Documentation; Extension
-.. _writing-doc-for-ext-start:
-.. _extension-documentation-files:
-.. _write-doc-extensions-intro:
+..  include:: /Includes.rst.txt
+..  index:: Documentation; Extension
+..  _writing-doc-for-ext-start:
+..  _extension-documentation-files:
+..  _write-doc-extensions-intro:
 
 ============================
 How to document an extension
@@ -15,7 +15,7 @@ This chapter explains how to write documentation for a new extension.
 This guide uses the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
 as a template for starting out.
 
-.. _write-doc-extensions-intro-rendering:
+..  _write-doc-extensions-intro-rendering:
 
 Rendering the documentation locally
 ===================================
@@ -26,7 +26,7 @@ Use the following Docker command to render your documentation guide locally:
 
 See :ref:`render-documentation-with-docker` for more information.
 
-.. _how-to-start-docs-extension:
+..  _how-to-start-docs-extension:
 
 Use the init command to create the Documentation folder
 =======================================================
@@ -68,9 +68,9 @@ Only the first two levels are shown ``Major.Minor``.
 This reduces the amount of documentation while keeping relevant information,
 as patch levels should not introduce breaking changes or new features.
 
-.. index:: Rendering; Branches
-.. _migrate-branches:
-.. _supported-branches:
+..  index:: Rendering; Branches
+..  _migrate-branches:
+..  _supported-branches:
 
 Supported branches
 ==================
@@ -78,33 +78,33 @@ Supported branches
 The rendering supports two branches within repositories:
 
 ``main`` / ``master``
-   Should contain the current development state, used for upcoming release.
-   Every push to these branches triggers a new rendering, available at
-   :samp:`https://docs.typo3.org/p/<vendor>/<package>/main/en-us/`.
+    Should contain the current development state, used for upcoming release.
+    Every push to these branches triggers a new rendering, available at
+    :samp:`https://docs.typo3.org/p/<vendor>/<package>/main/en-us/`.
 
-   Both branch names are supported, but result in the same URL.
-   Please use ``main``, ``master`` is only supported for backward compatibility.
+    Both branch names are supported, but result in the same URL.
+    Please use ``main``, ``master`` is only supported for backward compatibility.
 
 ``documentation-draft``
-   Should contain a draft of the documentation.
-   Every push to this branch triggers a new rendering, available at
-   :samp:`https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/`
-   (same URL as main, except *main* is replaced by *draft*).
+    Should contain a draft of the documentation.
+    Every push to this branch triggers a new rendering, available at
+    :samp:`https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/`
+    (same URL as main, except *main* is replaced by *draft*).
 
 
-   This is not indexed by search engines. This branch can be used to test
-   rendering before releasing a new version of an extension.
+    This is not indexed by search engines. This branch can be used to test
+    rendering before releasing a new version of an extension.
 
-   In order to test a different rendering, remove the branch, and create it
-   again.
+    In order to test a different rendering, remove the branch, and create it
+    again.
 
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
+..  toctree::
+    :maxdepth: 1
+    :hidden:
 
-   Webhook
-   ReregisterVersions
-   FAQ
-   ContributeToSystemExtension
-   ContributeToThirdPartyExtension
+    Webhook
+    ReregisterVersions
+    FAQ
+    ContributeToSystemExtension
+    ContributeToThirdPartyExtension

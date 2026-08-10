@@ -93,13 +93,13 @@ Update the start page docs.typo3.org for a new major version
 Update api.typo3.org for a new major version
 ============================================
 
-*  Add the new TYPO3 LTS version for rendering into
-   https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workflows/api-typo3-org.yml#L13
-*  Add the new TYPO3 version to the sidebar of api.typo3.org:
-   https://github.com/TYPO3-Documentation/render-guides/blob/main/packages/typo3-api/template/components/sidebar.html.twig#L9
-*  Trigger rendering of the API by running the workflow above
-*  Add the new version to the api.typo3.org start page: https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
-*  Add the new version to the main menu: http://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/_mainMenu.rst.txt
+*   Add the new TYPO3 LTS version for rendering into
+    https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workflows/api-typo3-org.yml#L13
+*   Add the new TYPO3 version to the sidebar of api.typo3.org:
+    https://github.com/TYPO3-Documentation/render-guides/blob/main/packages/typo3-api/template/components/sidebar.html.twig#L9
+*   Trigger rendering of the API by running the workflow above
+*   Add the new version to the api.typo3.org start page: https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
+*   Add the new version to the main menu: http://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/_mainMenu.rst.txt
 
 ..  _new-major-core-versions-renderguides:
 

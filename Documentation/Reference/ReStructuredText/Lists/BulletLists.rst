@@ -37,12 +37,12 @@ Numbered lists:
     <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists>`__
 
 
-.. index:: reST; Bullet list with sublist
+..  index:: reST; Bullet list with sublist
 
 Example 1: List with sublist items
 ==================================
 
-.. code-block:: rst
+..  code-block:: rst
 
     *   item 1
     *   item 2 is a longer text with line breaks. We can format and

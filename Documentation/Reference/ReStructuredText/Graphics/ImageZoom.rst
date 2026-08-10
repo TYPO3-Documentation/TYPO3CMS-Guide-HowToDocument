@@ -15,7 +15,7 @@ features to enhance the viewing experience for images and figures. These
 features allow readers to view images in greater detail without leaving
 the documentation page.
 
-.. _image-zoom-modes:
+..  _image-zoom-modes:
 
 Available zoom modes
 ====================
@@ -56,7 +56,7 @@ and image directives. The following zoom modes are available:
     **Use case**: High-resolution images with fine details, such as UI
     mockups or detailed screenshots.
 
-.. _image-zoom-options:
+..  _image-zoom-options:
 
 Directive options
 =================
@@ -80,12 +80,12 @@ The following options are available for the figure and image directives:
     Magnification factor for lens mode. Default is `2`. Higher values
     provide stronger magnification. Only used with `:zoom: lens`.
 
-.. _image-zoom-examples:
+..  _image-zoom-examples:
 
 Usage examples
 ==============
 
-.. _image-zoom-example-3:
+..  _image-zoom-example-3:
 
 Example 3: Lightbox zoom
 -------------------------
@@ -106,7 +106,7 @@ Example 3: Lightbox zoom
 
         Click to open in lightbox.
 
-.. _image-zoom-example-4:
+..  _image-zoom-example-4:
 
 Example 4: Gallery mode with grouped images
 --------------------------------------------
@@ -127,7 +127,7 @@ Example 4: Gallery mode with grouped images
 
         Second step - navigate with arrow keys.
 
-.. _image-zoom-example-5:
+..  _image-zoom-example-5:
 
 Example 5: Inline scroll-wheel zoom
 ------------------------------------
@@ -140,7 +140,7 @@ Example 5: Inline scroll-wheel zoom
 
         Use scroll wheel to zoom in/out directly on this image.
 
-.. _image-zoom-example-6:
+..  _image-zoom-example-6:
 
 Example 6: Magnifier lens
 --------------------------
@@ -153,7 +153,7 @@ Example 6: Magnifier lens
 
         Hover over the image to see a magnified view.
 
-.. _image-zoom-example-7:
+..  _image-zoom-example-7:
 
 Example 7: Hidden zoom indicator
 ---------------------------------
@@ -167,14 +167,14 @@ Example 7: Hidden zoom indicator
 
         Lightbox without visible indicator icon.
 
-.. _image-zoom-accessibility:
+..  _image-zoom-accessibility:
 
 Accessibility considerations
 =============================
 
 All zoom modes are designed with accessibility in mind:
 
-.. _image-zoom-keyboard:
+..  _image-zoom-keyboard:
 
 Keyboard navigation
 -------------------
@@ -201,7 +201,7 @@ Keyboard navigation
     *   :kbd:`Arrow keys` - Move lens position
     *   :kbd:`Escape` - Deactivate lens
 
-.. _image-zoom-screen-reader:
+..  _image-zoom-screen-reader:
 
 Screen reader support
 ---------------------
@@ -210,7 +210,7 @@ All zoom modes maintain proper ARIA attributes and provide descriptive
 labels for assistive technologies. Always use the `:alt:` option to
 provide descriptive alternative text for images.
 
-.. _image-zoom-reduced-motion:
+..  _image-zoom-reduced-motion:
 
 Reduced motion support
 ----------------------
@@ -218,7 +218,7 @@ Reduced motion support
 The zoom functionality respects the `prefers-reduced-motion` media query.
 When reduced motion is preferred, transitions and animations are disabled.
 
-.. _image-zoom-best-practices:
+..  _image-zoom-best-practices:
 
 Best practices
 ==============

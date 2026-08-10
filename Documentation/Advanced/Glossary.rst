@@ -1,11 +1,11 @@
-.. include:: /Includes.rst.txt
-.. index::
-   Spelling; Reference
-   Preferred terms
-   Glossary
-.. _preferred-terms:
-.. _spelling-ref:
-.. _spelling-ref-this-guide:
+..  include:: /Includes.rst.txt
+..  index::
+    Spelling; Reference
+    Preferred terms
+    Glossary
+..  _preferred-terms:
+..  _spelling-ref:
+..  _spelling-ref-this-guide:
 
 ============================
 Spelling, terms and glossary
@@ -195,57 +195,57 @@ Terms
 How to use these terms:
 
 Backend Users
-   Written as a proper noun when referring to the TYPO3 backend module for
-   managing backend user accounts and groups, found at
-   :guilabel:`System > Backend Users`. Before the module reorganization in
-   TYPO3 v14, it was listed under "Admin Tools". Lowercase "backend user"
-   still applies when talking about the user accounts themselves, not the
-   module.
+    Written as a proper noun when referring to the TYPO3 backend module for
+    managing backend user accounts and groups, found at
+    :guilabel:`System > Backend Users`. Before the module reorganization in
+    TYPO3 v14, it was listed under "Admin Tools". Lowercase "backend user"
+    still applies when talking about the user accounts themselves, not the
+    module.
 
 Changelog
-   The collection of per-release Core documentation entries (Breaking
-   Change, Feature, Deprecation, Important) published for each TYPO3 Core
-   version. Also referenced as "Core Changelog". Linked from upgrade
-   guides across many TYPO3 documentation repositories, not just this one.
+    The collection of per-release Core documentation entries (Breaking
+    Change, Feature, Deprecation, Important) published for each TYPO3 Core
+    version. Also referenced as "Core Changelog". Linked from upgrade
+    guides across many TYPO3 documentation repositories, not just this one.
 
 Classic mode
-   A TYPO3 installation mode where the full source tree, including the
-   TYPO3 Core and all extensions, lives inside the web root. Contrast with
-   Composer mode, where dependencies are managed by Composer outside the
-   web root.
+    A TYPO3 installation mode where the full source tree, including the
+    TYPO3 Core and all extensions, lives inside the web root. Contrast with
+    Composer mode, where dependencies are managed by Composer outside the
+    web root.
 
 DB Check
-   Written as a proper noun when referring to the TYPO3 backend module
-   (provided by :composer:`typo3/cms-lowlevel`) for checking database
-   consistency and integrity, found at :guilabel:`System > DB Check`.
+    Written as a proper noun when referring to the TYPO3 backend module
+    (provided by :composer:`typo3/cms-lowlevel`) for checking database
+    consistency and integrity, found at :guilabel:`System > DB Check`.
 
 Fluid Styled Content
-   The name of the TYPO3 system extension
-   (:composer:`typo3/cms-fluid-styled-content`) that provides the default
-   Fluid-based rendering for content elements. Also used adjectivally, for
-   example "Fluid-Styled Content templates".
+    The name of the TYPO3 system extension
+    (:composer:`typo3/cms-fluid-styled-content`) that provides the default
+    Fluid-based rendering for content elements. Also used adjectivally, for
+    example "Fluid-Styled Content templates".
 
 Records
-   Written as a proper noun when referring to the :guilabel:`Contents >
-   Records` backend module, used to find or create records independently
-   of their page context. Lowercase "records" still applies when talking
-   about database records in general, not the module.
+    Written as a proper noun when referring to the :guilabel:`Contents >
+    Records` backend module, used to find or create records independently
+    of their page context. Lowercase "records" still applies when talking
+    about database records in general, not the module.
 
 reStructuredText
-   Use `reST` as abbreviation.
+    Use `reST` as abbreviation.
 
 reST
-   `reStructuredText <https://docutils.sourceforge.io/rst.html>`__ is a 'Markup
-   Syntax and Parser Component of `Docutils
-   <https://docutils.sourceforge.io/index.html>`__'.
+    `reStructuredText <https://docutils.sourceforge.io/rst.html>`__ is a 'Markup
+    Syntax and Parser Component of `Docutils
+    <https://docutils.sourceforge.io/index.html>`__'.
 
 TYPO3
-   Always and everywhere written with capital letters.
+    Always and everywhere written with capital letters.
 
 third party extension
-   Do not write "3rd party extension".
+    Do not write "3rd party extension".
 
 ViewHelper
-   Our community agreed on this spelling.
+    Our community agreed on this spelling.
 
-.. default-role:: code
+..  default-role:: code

@@ -1,13 +1,13 @@
 :navigation-title: Render
 
-.. include:: /Includes.rst.txt
-.. Index::
+..  include:: /Includes.rst.txt
+..  Index::
     pair: Documentation; Rendering
     Rendering; Locally
     Rendering; Docker
     Rendering; Commands
-.. _rendering-docs:
-.. _rendering-docs-quickstart:
+..  _rendering-docs:
+..  _rendering-docs-quickstart:
 
 =========================================
 Render documentation with the TYPO3 theme
@@ -81,7 +81,7 @@ It is recommended to make sure your documentation always renders without
 warning. On GitHub or GitLab you can introduce actions that test your
 documentation automatically:
 
-.. tabs::
+..  tabs::
 
     ..  group-tab:: GitHub
 
@@ -106,7 +106,7 @@ documentation automatically:
                       && docker run --rm --pull always -v $(pwd):/project \
                          ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --minimal-test
 
-    .. group-tab:: GitLab
+    ..  group-tab:: GitLab
 
         ..  code-block:: bash
             :caption: .gitlab-ci.yml
@@ -123,8 +123,8 @@ documentation automatically:
                 - mkdir -p Documentation-GENERATED-temp
                 - /opt/guides/entrypoint.sh --config=Documentation --no-progress --minimal-test
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
+..  toctree::
+    :maxdepth: 1
+    :hidden:
 
-    Watch
+     Watch

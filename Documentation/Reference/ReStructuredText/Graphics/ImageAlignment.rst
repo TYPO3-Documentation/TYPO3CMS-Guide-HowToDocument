@@ -27,7 +27,7 @@ There are two ways to apply floating:
 Both approaches produce the same visual result. Use whichever fits your
 preference.
 
-.. _image-float-css-classes:
+..  _image-float-css-classes:
 
 Float with CSS classes
 ======================
@@ -45,7 +45,7 @@ these with other classes such as ``with-shadow`` or ``with-border``:
 
     Surrounding text will wrap to the right of the image.
 
-.. _image-float-align-option:
+..  _image-float-align-option:
 
 Align option
 ============
@@ -66,7 +66,7 @@ as the CSS classes:
 
 Using ``:align: center`` centers the figure without any text wrapping.
 
-.. _image-float-clearing:
+..  _image-float-clearing:
 
 Clearing floats
 ===============
@@ -92,7 +92,7 @@ floats:
 The ``..  rst-class:: clear-both`` directive applies the CSS ``clear: both``
 property to the next element, forcing it below any floated content.
 
-.. _image-float-responsive:
+..  _image-float-responsive:
 
 Responsive behavior
 ===================
@@ -101,7 +101,7 @@ Floated images automatically switch to full-width block display on small
 screens (below 576px). This ensures readable text on mobile devices
 without horizontal scrolling.
 
-.. _image-float-example-8:
+..  _image-float-example-8:
 
 Example 8: Figure floated left
 ------------------------------
@@ -134,7 +134,7 @@ Typesetting requires one or more fonts.
 
     ..  rst-class:: clear-both
 
-.. _image-float-example-9:
+..  _image-float-example-9:
 
 Example 9: Figure aligned right
 --------------------------------
@@ -167,7 +167,7 @@ Typesetting requires one or more fonts.
 
     ..  rst-class:: clear-both
 
-.. _image-float-example-10:
+..  _image-float-example-10:
 
 Example 10: Image floated left with shadow
 -------------------------------------------
@@ -196,7 +196,7 @@ Typesetting requires one or more fonts.
 
     ..  rst-class:: clear-both
 
-.. _image-float-best-practices:
+..  _image-float-best-practices:
 
 Best practices for floating
 ============================
