@@ -18,10 +18,10 @@ displayed as a standalone block.
 
 There are two ways to apply floating:
 
-1.  **CSS classes** ``:class: float-left`` or ``:class: float-right`` — works on
-    both ``..  image::`` and ``..  figure::`` directives.
-2.  The ``:align:`` **option** — ``:align: left``, ``:align: right``, or ``:align: center``
-    — works on ``..  figure::`` directives (internally mapped to the same CSS
+1.  **CSS classes** :rst:`:class: float-left` or :rst:`:class: float-right` — works on
+    both :rst:`..  image::` and :rst:`..  figure::` directives.
+2.  The :rst:`:align:` **option** — :rst:`:align: left`, :rst:`:align: right`, or :rst:`:align: center`
+    — works on :rst:`..  figure::` directives (internally mapped to the same CSS
     classes).
 
 Both approaches produce the same visual result. Use whichever fits your
@@ -32,8 +32,8 @@ preference.
 Float with CSS classes
 ======================
 
-Add ``float-left`` or ``float-right`` to the ``:class:`` option. You can combine
-these with other classes such as ``with-shadow`` or ``with-border``:
+Add :rst:`float-left` or :rst:`float-right` to the :rst:`:class:` option. You can combine
+these with other classes such as :rst:`with-shadow` or :rst:`with-border`:
 
 ..  code-block:: rst
 
@@ -50,8 +50,8 @@ these with other classes such as ``with-shadow`` or ``with-border``:
 Align option
 ============
 
-The ``:align:`` option on ``..  figure::`` directives supports ``left``, ``right``,
-and ``center``. Values ``left`` and ``right`` produce the same floating behavior
+The :rst:`:align:` option on :rst:`..  figure::` directives supports :rst:`left`, :rst:`right`,
+and :rst:`center`. Values :rst:`left` and :rst:`right` produce the same floating behavior
 as the CSS classes:
 
 ..  code-block:: rst
@@ -64,7 +64,7 @@ as the CSS classes:
 
     Surrounding text will wrap to the left of the image.
 
-Using ``:align: center`` centers the figure without any text wrapping.
+Using :rst:`:align: center` centers the figure without any text wrapping.
 
 ..  _image-float-clearing:
 
@@ -72,7 +72,7 @@ Clearing floats
 ===============
 
 After a floated image, you may want subsequent content to appear below the
-image rather than wrapping around it. Use the ``clear-both`` class to clear
+image rather than wrapping around it. Use the :rst:`clear-both` class to clear
 floats:
 
 ..  code-block:: rst
@@ -89,7 +89,7 @@ floats:
 
     This text appears below the image.
 
-The ``..  rst-class:: clear-both`` directive applies the CSS ``clear: both``
+The :rst:`..  rst-class:: clear-both` directive applies the CSS `clear: both`
 property to the next element, forcing it below any floated content.
 
 ..  _image-float-responsive:
@@ -144,7 +144,7 @@ Example 9: figure aligned right
     :align: right
     :width: 150px
 
-    A figure aligned right via ``:align:``
+    A figure aligned right via :rst:`:align:`
 
 Typesetting is the composition of text by means of arranging physical types
 or the digital equivalents. Stored letters and other symbols are retrieved
@@ -201,11 +201,11 @@ Typesetting requires one or more fonts.
 Best practices for floating
 ===========================
 
-*   Always use ``..  rst-class:: clear-both`` after floated content to prevent
+*   Always use :rst:`..  rst-class:: clear-both` after floated content to prevent
     layout issues with subsequent sections
-*   Set an explicit ``:width:`` on floated images to control how much space
+*   Set an explicit :rst:`:width:` on floated images to control how much space
     text has to wrap around
 *   Floated figures are limited to 50% of the page width to ensure readability
-*   Prefer ``:align:`` on figures for cleaner RST syntax; use ``:class:`` when you
-    need to combine float with other classes like ``with-shadow``
+*   Prefer :rst:`:align:` on figures for cleaner RST syntax; use :rst:`:class:` when you
+    need to combine float with other classes like :rst:`with-shadow`
 *   Test on narrow viewports to verify the responsive behavior
