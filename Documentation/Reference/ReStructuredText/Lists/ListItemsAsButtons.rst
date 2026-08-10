@@ -16,6 +16,8 @@ List items as buttons
     is already used in the Sphinx-Python-domain.
 
 
+..  _list-items-as-buttons-work:
+
 How does it work?
 =================
 
@@ -37,8 +39,12 @@ the list like so:
 
 ..  index:: reST classes; horizbuttons
 
+..  _list-items-as-buttons-available-styles:
+
 Available styles
 ================
+
+..  _list-items-as-buttons-available-styles-horizbuttons-attention-m:
 
 horizbuttons-attention-m
 ------------------------
@@ -52,6 +58,8 @@ Like admonition *attention* (blue)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-important-m:
+
 horizbuttons-important-m
 ------------------------
 
@@ -63,6 +71,8 @@ Like admonitions *error*, *important* (yellow)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-note-m:
 
 horizbuttons-note-m
 -------------------
@@ -76,6 +86,8 @@ Like admonitions *generic*, *note*, *see also* (neutral, grey)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-primary-m:
+
 horizbuttons-primary-m
 -----------------------
 
@@ -87,6 +99,8 @@ Use the primary = key color (TYPO3 orange)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-striking-m:
 
 horizbuttons-striking-m
 -----------------------
@@ -100,6 +114,8 @@ Shall be very striking and unusual, something to not be be overseen.
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-tip-m:
+
 horizbuttons-tip-m
 ------------------
 
@@ -111,6 +127,8 @@ Like admonitions *hint*, *tip* (green)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-warning-m:
 
 horizbuttons-warning-m
 ----------------------
@@ -124,6 +142,8 @@ Like admonitions *caution*, *danger*, *warning* (red)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-attention-xxl:
+
 horizbuttons-attention-xxl
 --------------------------
 
@@ -135,6 +155,8 @@ Like admonition *attention* (blue)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-important-xxl:
 
 horizbuttons-important-xxl
 --------------------------
@@ -148,6 +170,8 @@ Like admonitions *error*, *important* (yellow)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-note-xxl:
+
 horizbuttons-note-xxl
 ---------------------
 
@@ -159,6 +183,8 @@ Like admonitions *generic*, *note*, *see also* (neutral, grey)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-primary-xxl:
 
 horizbuttons-primary-xxl
 ------------------------
@@ -172,6 +198,8 @@ Use the primary = key color (TYPO3 orange)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-striking-xxl:
+
 horizbuttons-striking-xxl
 -------------------------
 
@@ -183,6 +211,8 @@ Shall be very striking and unusual, something to not be be overseen.
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-tip-xxl:
 
 horizbuttons-tip-xxl
 --------------------
@@ -196,6 +226,8 @@ Like admonitions *hint*, *tip* (green)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-warning-xxl:
+
 horizbuttons-warning-xxl
 ------------------------
 
@@ -207,6 +239,8 @@ Like admonitions *caution*, *danger*, *warning* (red)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-attention-xxxl:
 
 horizbuttons-attention-xxxl
 ---------------------------
@@ -220,6 +254,8 @@ Like admonition *attention* (blue)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-important-xxxl:
+
 horizbuttons-important-xxxl
 ---------------------------
 
@@ -231,6 +267,8 @@ Like admonitions *error*, *important* (yellow)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-note-xxxl:
 
 horizbuttons-note-xxxl
 ----------------------
@@ -244,6 +282,8 @@ Like admonitions *generic*, *note*, *see also* (neutral, grey)
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-primary-xxxl:
+
 horizbuttons-primary-xxxl
 -------------------------
 
@@ -255,6 +295,8 @@ Use the primary = key color (TYPO3 orange)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-striking-xxxl:
 
 horizbuttons-striking-xxxl
 --------------------------
@@ -268,6 +310,8 @@ Shall be very striking and unusual, something to not be be overseen.
 *   three `with link <#>`__
 
 
+..  _list-items-as-buttons-available-styles-horizbuttons-tip-xxxl:
+
 horizbuttons-tip-xxxl
 ---------------------
 
@@ -279,6 +323,8 @@ Like admonitions *hint*, *tip* (green)
 *   two
 *   three `with link <#>`__
 
+
+..  _list-items-as-buttons-available-styles-horizbuttons-warning-xxxl:
 
 horizbuttons-warning-xxxl
 -------------------------

@@ -77,6 +77,8 @@ you can create a bash alias like:
     You can do this by changing the :bash:`-p` parameter, e.g. to
     :bash:`-p 8080:1337` to use TCP port `8080` on your host system.
 
+..  _rendering-wysiwyg-docker-compose:
+
 Docker compose
 ==============
 
@@ -102,6 +104,8 @@ development environment, you can add a service for the live rendering like this:
     Render guides was never optimized for long running services. You might need
     to restart the container from time to time to free up resources.
 
+..  _rendering-wysiwyg-ddev:
+
 DDEV
 ====
 
@@ -109,6 +113,8 @@ For integration with DDEV projects, a DDEV addon has been created at https://git
 This can be used to automatically start the live documentation preview within the DDEV project at http://<yourproject>.ddev.site:1337/
 whenever you start that project, and can directly view and work on documentation alongside the project.
 In this environment, users do not even need to execute a manual `docker run` command anymore, and have full integration at hand.
+
+..  _rendering-wysiwyg-limitations:
 
 Limitations
 ===========

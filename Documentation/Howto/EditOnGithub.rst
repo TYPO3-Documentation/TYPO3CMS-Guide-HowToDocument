@@ -121,6 +121,8 @@ Scroll down to "Improving documentation":
     :class: with-border with-shadow
 
 
+..  _docs-contribute-github-method-next-steps:
+
 Next Steps
 ==========
 

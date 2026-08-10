@@ -9,6 +9,8 @@ Branching of the docs for a new major LTS version
 
 ..  contents::
 
+..  _new-major-core-versions-create-branches-new:
+
 Create branches for the new LTS version in all versioned official repositories
 ==============================================================================
 

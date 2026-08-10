@@ -34,6 +34,8 @@ each context.
 Examples
 ========
 
+..  _rest-confval-examples-required-configuration-value:
+
 Required configuration value
 ----------------------------
 
@@ -52,6 +54,8 @@ Required configuration value
         :type: string or LLL reference
 
         The name of the field as shown in the form.
+
+..  _rest-confval-examples-example-configuration-value:
 
 Example: Configuration value with default value and custom parameter
 --------------------------------------------------------------------
@@ -73,6 +77,8 @@ Example: Configuration value with default value and custom parameter
         :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['fileCreateMask']`
 
         File mode mask for Unix file systems (when files are uploaded/created).
+
+..  _rest-confval-confval-directive-api:
 
 Confval directive API
 =====================
@@ -121,6 +127,8 @@ All other attributes are output the way they are written:
         :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['fileCreateMask']`
 
         Lorem Ipsum Dolor sit
+
+..  _rest-confval-confval-menu:
 
 Confval menu
 ============
@@ -184,6 +192,8 @@ the same page and want to list them in separate menus:
             :default: 'Hello World'
 
             Some Description
+
+..  _rest-confval-confval-menu-directive:
 
 Confval-menu directive API
 ==========================

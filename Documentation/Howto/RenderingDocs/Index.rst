@@ -58,6 +58,8 @@ Make sure that `Docker <https://www.docker.com/>`__ is installed on your system.
 
 ..  include:: /_Includes/_LocalRendering.rst.txt
 
+..  _rendering-docs-publishing-extension-documentation:
+
 Publishing extension documentation to docs.typo3.org
 ====================================================
 

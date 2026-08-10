@@ -7,11 +7,15 @@ Definition lists
 ================
 
 
+..  _styled-definition-lists-list-style-dl:
+
 List style "dl-parameters"
 ==========================
 
 This list style is used in TYPO3 documentation to style the explanation
 and description of parameters. The general markup we use is that of a "definition list".
+
+..  _styled-definition-lists-list-style-dl-example-1-extra:
 
 Example 1: No Extra Styling
 ---------------------------
@@ -46,6 +50,8 @@ This markup works but isn't very readable due to the lack of styling.
 
 
 ..  index:: reST class; dl-parameters
+
+..  _styled-definition-lists-list-style-dl-example-2-nicely:
 
 Example 2: Nicely Styled
 ------------------------
@@ -119,6 +125,8 @@ Sphinx already comes with standard text roles 'emphasis' and 'strong'. 'aspect'
 and 'sep' inherit their properties and are further specialized.
 
 
+
+..  _styled-definition-lists-list-style-dl-example-3-nicely:
 
 Example 3: Nicely styled through labels interfere
 -------------------------------------------------

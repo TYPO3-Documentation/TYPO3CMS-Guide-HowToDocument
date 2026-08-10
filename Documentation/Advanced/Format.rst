@@ -50,6 +50,8 @@ You can consult our Markdown reference for more information.
     reST; vs. Markdown
     Markdown; vs. reST
 
+..  _supported-formats-rest-vs-markdown:
+
 reST vs. Markdown
 =================
 
@@ -100,6 +102,8 @@ readthedocs:
 *   various flavors (unless **commonmark** is used)
 *   less features
 
+
+..  _supported-formats-rest-vs-markdown-additional-information:
 
 Additional information
 ----------------------

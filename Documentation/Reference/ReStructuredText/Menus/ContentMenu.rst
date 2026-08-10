@@ -34,20 +34,28 @@ To limit the header to a given depth:
     :depth: 1
 
 
+..  _content-menu-topic-1:
+
 Topic 1
 =======
 
 Here we go.
+
+..  _content-menu-topic-1-subtopic-1-1:
 
 Subtopic 1.1
 ------------
 
 Here we dive deeper
 
+..  _content-menu-topic-1-subtopic-1-1-subsubtopic-1-1:
+
 Subsubtopic 1.1.1
 ~~~~~~~~~~~~~~~~~
 
 And this is even more specific.
+
+..  _content-menu-topic-2:
 
 Topic 2
 =======
@@ -55,11 +63,15 @@ Topic 2
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
+..  _content-menu-topic-2-subtopic-2-1:
+
 Subtopic 2.1
 ------------
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+..  _content-menu-topic-2-subtopic-2-2:
 
 Subtopic 2.2
 ------------
@@ -67,6 +79,8 @@ Subtopic 2.2
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+..  _content-menu-topic-2-subtopic-2-2-subsubtopic-2-2:
 
 Subsubtopic 2.2.1
 ~~~~~~~~~~~~~~~~~

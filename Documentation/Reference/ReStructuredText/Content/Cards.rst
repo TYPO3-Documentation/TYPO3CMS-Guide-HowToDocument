@@ -17,6 +17,8 @@ Cards are used to group content together and provide a brief introduction on a g
     We discourage using containers for cards and suggest to switch to the
     cards directive.
 
+..  _rest-cards-simple-cards:
+
 Simple cards
 ============
 
@@ -60,6 +62,8 @@ Simple cards
             System requirements for the host operation system, including
             it's web server and database and how they should be configured
             prior to installation.
+
+..  _rest-cards-cards-buttons-footer:
 
 Cards with buttons in the footer
 ================================
@@ -163,6 +167,8 @@ Cards with buttons in the footer
             ..  card-footer:: :ref:`Read more <t3editors:content-elements>`
                 :button-style: btn btn-secondary stretched-link
 
+
+..  _rest-cards-cards-images:
 
 Cards with images
 =================

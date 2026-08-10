@@ -12,6 +12,8 @@ We have 3 directives to mark versions in the manuals.
 The incentive is that information which is important for migration can be marked
 and semi-automatically be removed after one or two versions.
 
+..  _rest-versions-versionadded:
+
 Versionadded
 ============
 
@@ -41,6 +43,8 @@ For emphasis, the directive can also be placed into one of the
         Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
         event dispatching system.
 
+..  _rest-versions-deprecated:
+
 Deprecated
 ==========
 
@@ -53,6 +57,8 @@ Deprecated
 ..  deprecated:: 10.2
     The hook shown here is deprecated since TYPO3 10.2 - use a custom
     PSR-15 middleware instead.
+
+..  _rest-versions-versionchanged:
 
 Versionchanged
 ==============

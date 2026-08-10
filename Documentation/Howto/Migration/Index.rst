@@ -184,6 +184,8 @@ PHP-based rendering tool:
     should be renamed to use a :file:`.rst.txt` extension instead.
 
 
+..  _migrate-render-documentation-files:
+
 Render your Documentation files locally
 =======================================
 

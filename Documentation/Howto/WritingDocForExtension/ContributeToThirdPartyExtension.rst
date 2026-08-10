@@ -37,6 +37,8 @@ mentioned in :ref:`file-structure-general`.
 To find the repository, use one of these methods:
 
 
+..  _contribute-to-3rdparty-extension-find-the-source-method-1:
+
 Method 1: Find the Source on docs.typo3.org
 -------------------------------------------
 
@@ -46,6 +48,8 @@ in the footer.
 Sometimes the metadata in Settings.cfg in a Documentation
 project is not filled out and this link is missing. Then, you can use Method 2.
 
+
+..  _contribute-to-3rdparty-extension-find-the-source-method-2:
 
 Method 2: Find the Source on https://extensions.typo3.org
 ---------------------------------------------------------
@@ -79,16 +83,22 @@ example indexed_search, form, impexp, etc.
 
 ..  index:: Third-party extensions; Find the manual
 
+..  _contribute-to-3rdparty-extension-find-rendered-manual:
+
 Find the rendered manual
 ========================
 
 You can also find the rendered documentation:
+
+..  _contribute-to-3rdparty-extension-find-rendered-manual-method-1:
 
 Method 1: Find rendered manual on docs.typo3.org
 ------------------------------------------------
 
 Go to:
 `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
+
+..  _contribute-to-3rdparty-extension-find-rendered-manual-method-2:
 
 Method 2: Find rendered manual on https://extensions.typo3.org
 --------------------------------------------------------------
@@ -116,6 +126,8 @@ Method 2: Find rendered manual on https://extensions.typo3.org
 ..  index::
     Third-party extensions; Contribution guide
     Files; CONTRIBUTING.md
+
+..  _contribute-to-3rdparty-extension-follow-contribution-guide:
 
 Follow the contribution guide
 =============================
