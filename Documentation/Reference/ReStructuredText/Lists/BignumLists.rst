@@ -87,6 +87,8 @@ With Big Numbers
 
 
 
+..  _styled-numbered-lists-big-numbers-tip:
+
 With Big Numbers - Tip
 ======================
 
@@ -119,6 +121,8 @@ Uses the same color as background, that is used in a tip textblock.
 
     More ...
 
+
+..  _styled-numbered-lists-big-numbers-attention:
 
 With Big Numbers - Attention
 =============================
@@ -153,6 +157,8 @@ With Big Numbers - Attention
 
 
 
+..  _styled-numbered-lists-big-numbers-important:
+
 With Big Numbers - Important
 ============================
 
@@ -186,6 +192,8 @@ With Big Numbers - Important
 
 
 
+..  _styled-numbered-lists-big-numbers-warning:
+
 With Big Numbers - Warning
 ==========================
 
@@ -218,6 +226,8 @@ With Big Numbers - Warning
     More ...
 
 
+
+..  _styled-numbered-lists-nested-bignums-xxl:
 
 Nested bignums-xxl > bignums > Normally Styled
 ==============================================
@@ -268,6 +278,8 @@ Nested bignums-xxl > bignums > Normally Styled
         Oh dear, ...
 
 
+
+..  _styled-numbered-lists-examples-nesting:
 
 More Examples of Nesting
 ========================

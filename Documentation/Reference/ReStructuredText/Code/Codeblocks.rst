@@ -129,8 +129,12 @@ will fail.
     See also the official
     `sphinx documentation on code-blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`__.
 
+..  _writing-rest-codeblocks-with-syntax-highlighting-examples:
+
 Examples
 ========
+
+..  _writing-rest-codeblocks-with-syntax-highlighting-examples-simple-code:
 
 A simple code block with syntax highlighting
 --------------------------------------------
@@ -167,6 +171,8 @@ A simple code block with syntax highlighting
                  'Configuration/TypoScript',
                  'Site Package'
             );
+
+..  _writing-rest-codeblocks-with-syntax-highlighting-examples-code-block:
 
 Code block with line numbers and highlighting of one line
 ---------------------------------------------------------
@@ -209,6 +215,8 @@ Code block with line numbers and highlighting of one line
                  'Site Package'
             );
 
+..  _writing-rest-codeblocks-with-syntax-highlighting-examples-code-blocks:
+
 Use code blocks containing diffs
 --------------------------------
 
@@ -243,6 +251,8 @@ To emphasize changes that should be made:
     You can use diff tools such as the
     `bartlweb diff file generator <https://tools.bartlweb.net/diff/>`__. Make
     sure to use the type :code:`unified context`
+
+..  _writing-rest-codeblocks-with-syntax-highlighting-examples-show-directory:
 
 Show a directory tree
 ---------------------
@@ -335,6 +345,8 @@ and a :rst:`literalinclude` directive.
 ..  guides:codeblock-languages::
 
 
+..  _writing-rest-codeblocks-with-syntax-highlighting-literalinclude:
+
 Literalinclude
 ==============
 
@@ -420,6 +432,8 @@ In the XML and HTML markup languages, which make extensive use of angle
 brackets, the comment tag :html:`<!-- placeholder-name -->` is used to insert
 placeholders. A `<placeholder-name>` looks like a regular element and would lead to confusion.
 
+
+..  _writing-rest-codeblocks-with-syntax-highlighting-outdated-code:
 
 Outdated code block formats
 ===========================

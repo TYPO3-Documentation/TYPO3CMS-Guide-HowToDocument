@@ -22,6 +22,8 @@ New issues here should be treated with priority.
 
 ..  index:: pair: Updates; Commit messages
 
+..  _howto-update-docs-commit-messages:
+
 Commit messages
 ===============
 

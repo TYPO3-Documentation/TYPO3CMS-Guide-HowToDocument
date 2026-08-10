@@ -11,6 +11,8 @@
 Spelling, terms and glossary
 ============================
 
+..  _preferred-terms-spelling:
+
 Spelling
 ========
 
@@ -188,6 +190,8 @@ W
 `windows`, `modal windows`,
 
 
+
+..  _preferred-terms-terms:
 
 Terms
 =====

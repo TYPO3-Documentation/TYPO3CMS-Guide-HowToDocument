@@ -9,6 +9,8 @@ FAQ
 
 ..  rst-class:: panel panel-default
 
+..  _faq-for-extension-authors-where-link-my:
+
 Where is the link to my documentation in the TYPO3 extension repository?
 ========================================================================
 
@@ -19,6 +21,8 @@ Long answer: the documentation of all extensions is exposed by an API which is c
 Finally the TER will only link to documentation with a matching version, so make sure that there actually is a documentation version for each of your extension version. See :ref:`reregister-versions` to publish documentation for already released versions.
 
 ..  rst-class:: panel panel-default
+
+..  _faq-for-extension-authors-i-am-missing:
 
 I am missing some documentation for extension versions
 ======================================================
@@ -43,6 +47,8 @@ This can be fixed by following these steps:
 #.  You can regenerate existing versions of the documentation by following: `Reregister versions <reregister-versions>`_
 
 ..  rst-class:: panel panel-default
+
+..  _faq-for-extension-authors-why-documentation-provide:
 
 Why Does the Documentation not provide a title?
 ===============================================
@@ -75,6 +81,8 @@ You must add the project title to your :file:`Settings.cfg`:
 
 ..  rst-class:: panel panel-default
 
+..  _faq-for-extension-authors-i-find-my:
+
 How do I find my new rendered documentation?
 ============================================
 
@@ -86,6 +94,8 @@ There are several possibilities:
 
 
 ..  rst-class:: panel panel-default
+
+..  _faq-for-extension-authors-possible-highjack-extension:
 
 Is it possible to highjack extension documentation?
 ===================================================
@@ -109,6 +119,8 @@ See :ref:`webhook` for more information.
 
 ..  rst-class:: panel panel-default
 
+..  _faq-for-extension-authors-way-manually-trigger:
+
 Is there a way to manually trigger documentation rendering aside from a Git repository push?
 ============================================================================================
 
@@ -122,6 +134,8 @@ recommend the usage of the webhook.
 
 
 ..  rst-class:: panel panel-default
+
+..  _faq-for-extension-authors-documentation-independent-ter:
 
 Is the documentation independent of the TER?
 ============================================
@@ -138,6 +152,8 @@ documentation rendering.
 
 
 ..  rst-class:: panel panel-default
+
+..  _faq-for-extension-authors-should-i-add:
 
 Should I add a link to the documentation in TER?
 ================================================
@@ -243,6 +259,8 @@ A link to the Issues will then be available footer section.
 
 Example extension: `news <https://docs.typo3.org/typo3cms/extensions/news/>`__
 
+
+..  _faq-for-extension-authors-further-questions:
 
 Further Questions?
 ==================

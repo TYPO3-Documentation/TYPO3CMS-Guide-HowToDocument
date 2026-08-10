@@ -64,6 +64,8 @@ for publishing. In case the Team has questions, please follow the thread
 generated for your extension in the `TYPO3 slack organization <https://typo3.org/community/meet/chat-slack>`_
 in channel `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`_.
 
+..  _writing-doc-for-ext-start-version-numbers:
+
 Version numbers
 ===============
 

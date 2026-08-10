@@ -39,6 +39,8 @@ Numbered lists:
 
 ..  index:: reST; Bullet list with sublist
 
+..  _rest-unordered-lists-example-1-list:
+
 Example 1: List with sublist items
 ==================================
 

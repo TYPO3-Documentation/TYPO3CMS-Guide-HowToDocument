@@ -6,6 +6,8 @@
 Coding guidelines for reST files
 ================================
 
+..  _format-rest-cgl-basic-formatting-rules:
+
 Basic formatting rules
 ======================
 
@@ -13,6 +15,8 @@ Basic formatting rules
 ..  index::
     reST; Encoding
     reST; Utf-8
+
+..  _format-rest-cgl-basic-formatting-rules-encoding:
 
 Encoding
 --------
@@ -59,6 +63,8 @@ Example:
 
 
 ..  index:: reST; Line length
+
+..  _format-rest-cgl-basic-formatting-rules-line-length:
 
 Line length
 -----------
@@ -127,6 +133,8 @@ This sample .editorconfig will instruct your editor / IDE to:
 
 ..  index:: reST; Special characters
 
+..  _format-rest-cgl-basic-formatting-rules-special-characters:
+
 Special characters
 ------------------
 
@@ -193,6 +201,8 @@ file:
     reST directives; deprecated
     reST directives; versionadded
     reST directives; versionchanged
+
+..  _format-rest-cgl-add-version-hints:
 
 How to add version hints
 ========================
@@ -290,6 +300,8 @@ How it looks:
 ..  index::
     reST; Keystrokes
     reST roles; kbd
+
+..  _format-rest-cgl-refering-keystrokes:
 
 Refering to keystrokes
 ======================

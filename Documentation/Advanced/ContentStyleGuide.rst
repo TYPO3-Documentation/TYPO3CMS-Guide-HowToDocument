@@ -9,6 +9,8 @@ Spelling
 
 ..  contents::
 
+..  _content-styleguide-title-capitalization:
+
 Title capitalization
 ====================
 
@@ -22,11 +24,15 @@ more words in the title. Capitalization in the documentation is still
 inconsistent currently, so you cannot rely on existing pages to show
 the correct convention.
 
+..  _content-styleguide-spelling:
+
 Spelling
 ========
 
 Use common spelling for American English. Some specific TYPO3 terms
 have a special spelling. See :ref:`spelling-ref`
+
+..  _content-styleguide-general-information:
 
 General information
 ===================
@@ -280,6 +286,8 @@ The same goes for **Docker**, **Composer**, etc.
 
 ..  index:: Spelling; Preferred terms
 
+..  _content-styleguide-spelling-preferred-terms:
+
 Spelling & preferred terms reference
 ====================================
 
@@ -287,6 +295,8 @@ The content was moved to :ref:`spelling-ref`.
 
 
 ..  index:: Spelling; Resources
+
+..  _content-styleguide-used-resources:
 
 Used resources
 ==============

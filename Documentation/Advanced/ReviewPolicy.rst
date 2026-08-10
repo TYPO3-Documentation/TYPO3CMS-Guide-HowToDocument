@@ -71,6 +71,8 @@ The review process should have the **same standard** for anyone of the
 maintainer team performing the review, and every member of the team
 should feel good when **making decisions** on what and how to give feedback on.
 
+..  _review-policy-maintainers-basic-work-contributions:
+
 Basic work on contributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -97,6 +99,8 @@ Basic work on contributions
     *   **Fix mistakes in reST markup** (indentation, wrong directives, missing headers,
         wrong or missing linebreaks, wrong or bad links/references, ...) - see
         :ref:`format-rest-cgl`.
+
+..  _review-policy-maintainers-workflow-follow-ups:
 
 Workflow and follow-ups to contributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

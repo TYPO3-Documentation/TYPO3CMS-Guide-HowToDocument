@@ -62,6 +62,8 @@ Accordion
 
             Placeholder content for this accordion [..]
 
+..  _rest-accordion-accordion-closed:
+
 Accordion all closed
 ====================
 
@@ -109,6 +111,8 @@ Accordion all closed
             :header-level: 3
 
              Let's imagine this being filled with some actual content.
+
+..  _rest-accordion-accordion-complex-content:
 
 Accordion with complex content
 ==============================

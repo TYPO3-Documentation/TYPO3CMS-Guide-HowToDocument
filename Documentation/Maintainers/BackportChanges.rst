@@ -21,6 +21,8 @@ backported.
 
 Here are some tips and conventions:
 
+..  _backport-changes-community-user-should:
+
 Community user: What should I do if I found an error in the documentation that applies to several versions?
 ===========================================================================================================
 
@@ -46,6 +48,8 @@ request for the back versions.
     only be backported to the latest LTS release.
 
 
+..  _backport-changes-merger-pull-request:
+
 Merger: The pull request needs to be backported, what should I do?
 ==================================================================
 
@@ -57,6 +61,8 @@ add the corresponding labels :guilabel:`backport 12.4` and
 :guilabel:`backport 11.5`. The labels will trigger an automatic backport once
 the current pull request is merged or the label is added to an already merged
 pull request.
+
+..  _backport-changes-automatic-backports-work:
 
 How do automatic backports work
 ===============================
@@ -71,6 +77,8 @@ the backport. This pull request can be approved and merged manually.
 If the backport fails, a comment will be added to the original pull request. The
 label :guilabel:`backport failed` will be added to the original pull request and
 manual cherry-picking is required.
+
+..  _backport-changes-version:
 
 Up to which version?
 ====================
@@ -89,6 +97,8 @@ There may be reasons to do this differently:
 
 
 ..  index:: GitHub; Squash and merge
+
+..  _backport-changes-merge:
 
 How to merge?
 =============
@@ -113,6 +123,8 @@ additional authors is automatically added to the commit.
 
 
 ..  index:: GitHub; Backport
+
+..  _backport-changes-backport-manually:
 
 How to backport manually?
 =========================

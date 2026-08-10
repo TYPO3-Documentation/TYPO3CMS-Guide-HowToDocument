@@ -13,6 +13,8 @@ responsive.
 
 ..  index:: reST; Grid table
 
+..  _rest-tables-grid-table:
+
 Grid table
 ==========
 
@@ -43,6 +45,8 @@ create a grid table.
 
 ..  index:: reST; Simple table
 
+..  _rest-tables-simple-table:
+
 Simple table
 ============
 
@@ -68,6 +72,8 @@ http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
 
 
 ..  index:: reST; CSV table
+
+..  _rest-tables-csv-table:
 
 CSV table
 =========
@@ -95,6 +101,8 @@ https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table-1
 
 ..  index::
     reST directives; t3-field-list-table
+
+..  _rest-tables-t3-field-list:
 
 t3-field-list-table tables
 ==========================

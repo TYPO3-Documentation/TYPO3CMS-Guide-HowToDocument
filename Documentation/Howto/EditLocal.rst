@@ -130,6 +130,8 @@ the ability to experiment and preview your changes locally before submitting the
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
 
+..  _docs-contribute-git-docker-next-steps:
+
 Next steps
 ==========
 
@@ -141,6 +143,8 @@ Next steps
 
 Keeping your local fork up-to date
 ==================================
+
+..  _contribute-edit-locally-more-changes-explanation:
 
 Explanation
 -----------
@@ -172,6 +176,8 @@ So, running the following will not get the latest changes:
 because origin points to your fork.
 
 
+..  _contribute-edit-locally-more-changes-now:
+
 Do it now
 ---------
 
@@ -195,6 +201,8 @@ so next time it is enough to do:
 
 Now, continue with step 5 (create branch) in the first section of this page.
 
+
+..  _docs-contribute-git-docker-information:
 
 More information
 ================

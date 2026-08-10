@@ -20,6 +20,8 @@ very much appreciated.
     bothers you the most.
 
 
+..  _docs-official-how-you-can-help-make-minor-changes:
+
 Make minor changes
 ==================
 
@@ -141,12 +143,16 @@ Here are some examples:
 *   :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
 
 
+..  _docs-official-how-you-can-help-replace-outdated-images:
+
 Replace outdated images and screenshots
 =======================================
 
 Look at :ref:`how-to-document-images` for information about how to
 embed images with reST.
 
+
+..  _docs-official-how-you-can-help-add-youtube-videos:
 
 Add YouTube videos
 ==================
@@ -188,6 +194,8 @@ an entire manual can be quite too much to do for one person).
     and you get feedback more quickly.
 
 
+..  _docs-official-how-you-can-help-teach:
+
 Teach
 =====
 
@@ -195,6 +203,8 @@ If you are already familiar with the workflow, you can help others to get
 started. Whenever you are at a `TYPO3 event`_ (sprint, barcamp, etc.), on
 `StackOverflow`_ or in a `Slack`_ channel and someone finds something missing or
 a problem in the documentation, help them make the necessary changes themselves.
+
+..  _docs-official-how-you-can-help-motivate:
 
 Motivate
 ========
@@ -216,6 +226,8 @@ Remind people, that everyone can contribute!
 Write on `Mastodon`_ (hashtag: `#TYPO3`). Additionally, you can use `#T3Docs`,
 `#T3Contribute`, and mention `@documentation@typo3.social`_.
 
+
+..  _docs-official-how-you-can-help-blog-contributions:
 
 Blog about your contributions
 =============================
@@ -266,6 +278,8 @@ Check spelling
 Check spelling for consistency. For example, compare spelling of title
 and headlines to the rules outlined in the :ref:`spelling` chapter.
 
+
+..  _docs-official-how-you-can-help-ideas:
 
 More ideas?
 ===========

@@ -1,6 +1,8 @@
 ..  include:: /Includes.rst.txt
 ..  index:: reST; Special characters
 
+..  _reference-re-structured-text-content-special-characters:
+
 ==================
 Special characters
 ==================
@@ -14,6 +16,8 @@ utf-8.
 
 Keep in mind that while you CAN use any Unicode character not all of them will
 be displayed. In general fonts contain glyphs for common characters only.
+
+..  _reference-re-structured-text-content-special-characters-lists-characters:
 
 Some lists of characters
 ========================
@@ -105,9 +109,13 @@ STAR
     :sep:`|`
 
 
+..  _reference-re-structured-text-content-special-characters-u-2420:
+
 Using U+2420 symbol for space
 =============================
 
+
+..  _reference-re-structured-text-content-special-characters-u-2420-code:
 
 Code
 ----
@@ -117,6 +125,8 @@ Code
     *   ``:literal:`␠abc``` → :literal:`␠abc`
     *   ```␠abc``` → `␠abc`
     *   \`\`␠abc\`\` → ``␠abc``
+
+..  _reference-re-structured-text-content-special-characters-u-2420-result:
 
 Result
 ------
