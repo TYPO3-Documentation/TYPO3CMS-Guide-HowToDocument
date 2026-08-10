@@ -28,8 +28,8 @@ See :ref:`render-documentation-with-docker` for more information.
 
 ..  _how-to-start-docs-extension:
 
-Use the init command to create the Documentation folder
-=======================================================
+Use the init command to create the `Documentation` folder
+=========================================================
 
 The following Docker command creates some basic documentation
 including the required configuration file :file:`Documentation/guides.xml`:

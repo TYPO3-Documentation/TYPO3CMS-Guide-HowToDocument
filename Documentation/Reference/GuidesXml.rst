@@ -2,9 +2,9 @@
 
 ..  _guides-xml:
 
-===========================================
-Configuration of the rendering - guides.xml
-===========================================
+=============================================
+Configuration of the rendering - `guides.xml`
+=============================================
 
 This XML file contains meta information and configuration used during rendering
 of a manual.
@@ -17,8 +17,8 @@ of a manual.
 
 ..  _guides-xml-init:
 
-Init new guides.xml
-===================
+Init new `guides.xml`
+=====================
 
 If you start a new documentation guide, for example in a TYPO3 extension, use the
 `init` command:
@@ -34,8 +34,8 @@ And follow the interactive question.
 
 ..  _guides-xml-api:
 
-guides.xml API
-==============
+`guides.xml` API
+================
 
 ..  confval-menu::
     :display: tree

@@ -23,7 +23,7 @@ Here are some tips and conventions:
 
 ..  _backport-changes-community-user-should:
 
-Community user: What should I do if I found an error in the documentation that applies to several versions?
+Community user: what should I do if I found an error in the documentation that applies to several versions?
 ===========================================================================================================
 
 Apply your changes to the latest version you have verified your change
@@ -50,7 +50,7 @@ request for the back versions.
 
 ..  _backport-changes-merger-pull-request:
 
-Merger: The pull request needs to be backported, what should I do?
+Merger: the pull request needs to be backported, what should I do?
 ==================================================================
 
 When the pull request needs to be backported, add labels for all needed versions

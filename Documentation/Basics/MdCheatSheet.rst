@@ -4,7 +4,7 @@
 ..  _md-cheat-sheet:
 
 ====================
-Markdown Cheat sheet
+Markdown cheat sheet
 ====================
 
 See commonly used Commonmark Markdown Syntax in the
@@ -14,7 +14,7 @@ TYPO3 Documentation Theme:
 
 ..  _md-cheat-sheet-headlines-anchors:
 
-Headlines and Anchors
+Headlines and anchors
 =====================
 
 Each document must have a title of level 1. You can use headers of additional
@@ -78,7 +78,7 @@ Use the standard Markdown syntax for code blocks:
 
 ..  _md-cheat-sheet-images:
 
-Figures and Images
+Figures and images
 ==================
 
 ..  code-block:: md

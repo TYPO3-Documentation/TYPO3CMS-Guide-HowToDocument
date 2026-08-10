@@ -138,7 +138,7 @@ these steps:
 ..  index:: Webhooks; Bitbucket
 ..  _webhook-bitbucket-cloud:
 
-Bitbucket Cloud
+Bitbucket cloud
 ===============
 
 To configure a webhook for a Bitbucket repository:
@@ -191,7 +191,7 @@ To configure a webhook for a Bitbucket repository:
 ..  index:: Webhooks; GitLab
 ..  _webhook-gitlab:
 
-GitLab Cloud and Self-Hosted
+GitLab cloud and Self-Hosted
 ============================
 
 To set up a GitLab webhook:
@@ -231,7 +231,7 @@ To set up a GitLab webhook:
 
 ..  _webhook-testing:
 
-Testing Webhooks
+Testing webhooks
 ================
 
 To test webhook configurations before integrating with TYPO3, use:

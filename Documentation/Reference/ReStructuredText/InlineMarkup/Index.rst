@@ -4,7 +4,7 @@
 ..  _rest-inline-markup:
 
 ====================================
-Inline Markup in TYPO3 Documentation
+Inline markup in TYPO3 documentation
 ====================================
 
 In general we support any inline markup in reStructuredText that was previously

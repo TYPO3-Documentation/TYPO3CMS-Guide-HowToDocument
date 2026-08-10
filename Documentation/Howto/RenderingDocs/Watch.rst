@@ -79,7 +79,7 @@ you can create a bash alias like:
 
 ..  _rendering-wysiwyg-docker-compose:
 
-Docker compose
+Docker Compose
 ==============
 
 If you are using `docker-compose <https://docs.docker.com/compose/>`_ to manage your

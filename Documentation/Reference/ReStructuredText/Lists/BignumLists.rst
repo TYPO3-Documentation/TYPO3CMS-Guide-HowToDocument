@@ -11,7 +11,7 @@ Styled numbered sections (bignums)
 
 ..  _big-nums-xxl:
 
-With XXL Big Numbers
+With XXL big numbers
 ====================
 
 *Source:* :
@@ -50,7 +50,7 @@ With XXL Big Numbers
 
 ..  _big-nums:
 
-With Big Numbers
+With big numbers
 ================
 
 *Source:* :
@@ -89,7 +89,7 @@ With Big Numbers
 
 ..  _styled-numbered-lists-big-numbers-tip:
 
-With Big Numbers - Tip
+With big numbers - tip
 ======================
 
 Uses the same color as background, that is used in a tip textblock.
@@ -124,8 +124,8 @@ Uses the same color as background, that is used in a tip textblock.
 
 ..  _styled-numbered-lists-big-numbers-attention:
 
-With Big Numbers - Attention
-=============================
+With big numbers - attention
+============================
 
 *Source:* :
 
@@ -159,7 +159,7 @@ With Big Numbers - Attention
 
 ..  _styled-numbered-lists-big-numbers-important:
 
-With Big Numbers - Important
+With big numbers - important
 ============================
 
 
@@ -194,7 +194,7 @@ With Big Numbers - Important
 
 ..  _styled-numbered-lists-big-numbers-warning:
 
-With Big Numbers - Warning
+With big numbers - warning
 ==========================
 
 *Source:* :
@@ -229,8 +229,8 @@ With Big Numbers - Warning
 
 ..  _styled-numbered-lists-nested-bignums-xxl:
 
-Nested bignums-xxl > bignums > Normally Styled
-==============================================
+Nested `bignums-xxl` > `bignums` > normally styled
+==================================================
 
 
 *Source:* :
@@ -281,7 +281,7 @@ Nested bignums-xxl > bignums > Normally Styled
 
 ..  _styled-numbered-lists-examples-nesting:
 
-More Examples of Nesting
+More examples of nesting
 ========================
 
 ..  highlight:: shell

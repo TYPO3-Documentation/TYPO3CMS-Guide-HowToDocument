@@ -104,8 +104,8 @@ https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table-1
 
 ..  _rest-tables-t3-field-list:
 
-t3-field-list-table tables
-==========================
+`t3-field-list-table` tables
+============================
 
 `t3-field-list-table` is a custom directive, created by the t3SphinxThemeRtd
 template. If you want your .rst file to be correctly rendered on other

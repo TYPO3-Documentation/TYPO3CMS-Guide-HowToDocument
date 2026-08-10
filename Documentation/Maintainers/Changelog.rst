@@ -6,7 +6,7 @@
 ..  _update-docs:
 
 ===================================
-Apply changelog entries to the docs
+Apply Changelog entries to the docs
 ===================================
 
 Whenever a change to the TYPO3 Core potentially affects the users a changelog
@@ -43,7 +43,7 @@ their commit message to the issue, for example
     reST directives; deprecated
 ..  _changelog-deprecations:
 
-Deprecations in the changelog
+Deprecations in the Changelog
 =============================
 
 All information about deprecations should be marked with the :rst:`..  deprecated::`
@@ -70,7 +70,7 @@ deprecation hints in later versions.
     reST directives; versionchanged
 ..  _changelog-breaking-changes:
 
-Breaking changes in the changelog
+Breaking changes in the Changelog
 =================================
 
 Ideally a breaking change was prepared by a :ref:`deprecation <changelog-deprecations>`
@@ -111,7 +111,7 @@ in later versions.
     reST directives; versionadded
 ..  _changelog-feature:
 
-New features in the changelog
+New features in the Changelog
 =============================
 
 When adding a new feature to the docs that is not yet availible in all supported

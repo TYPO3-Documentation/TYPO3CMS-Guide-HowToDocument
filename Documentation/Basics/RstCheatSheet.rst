@@ -6,14 +6,14 @@
 ..  _rest-cheat-sheet:
 
 ===============================================================
-ReST Cheat sheet: Using reStructuredText in TYPO3 Documentation
+reST cheat sheet: using reStructuredText in TYPO3 documentation
 ===============================================================
 
 ..  contents:: Cheat Sheet
 
 ..  _rest-cheat-sheet-headlines-anchors:
 
-Headlines and Anchors
+Headlines and anchors
 =====================
 
 Each reST document must have a title. It is overlined and underlined like this:
@@ -122,7 +122,7 @@ confval menues: :ref:`rest-confval`.
 
 ..  _rest-cheat-sheet-images:
 
-Figures and Images
+Figures and images
 ==================
 
 ..  literalinclude:: /_CodeSnippets/_Figure.rts.txt

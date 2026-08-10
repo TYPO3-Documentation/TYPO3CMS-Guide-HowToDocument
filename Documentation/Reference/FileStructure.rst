@@ -15,8 +15,8 @@ be rendered with the :ref:`rendering toolchain <rendering-docs>`.
 
 ..  _file-structure-general:
 
-Prerequisites for rendering documentation to docs.typo3.org
-===========================================================
+Prerequisites for rendering documentation to `docs.typo3.org`
+=============================================================
 
 In order for the documentation to be rendered, you need at least
 
@@ -201,7 +201,7 @@ It is an almost empty file that is automatically filled during rendering.
 ..  _settings-guides-xml:
 
 Settings: :file:`Documentation/guides.xml`
---------------------------------------------
+------------------------------------------
 
 This file contains the metadata and configuration for the rendering with the
 TYPO3 theme.
@@ -220,7 +220,7 @@ Example:
 
 ..  _full-documentation-md:
 
-Full documentation in reST markdown
+Full documentation in reST Markdown
 ===================================
 
 The TYPO3 documentation rendering pipeline supports rendering of CommonMark

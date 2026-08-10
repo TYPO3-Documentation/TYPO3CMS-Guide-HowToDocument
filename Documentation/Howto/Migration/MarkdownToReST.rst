@@ -6,9 +6,9 @@
     docs.typo3.org
 ..  _migrate-markdown-to-rest:
 
-=============================================
-Migration: Markdown to reStructuredText (ReST)
-=============================================
+==============================================
+Migration: Markdown to reStructuredText (reST)
+==============================================
 
 Markdown is very popular and widely used for documentation. However, ReST is more powerful and flexible.
 The TYPO3 documentation toolchain contains a lot of features that are only available with ReST.
@@ -25,7 +25,7 @@ The TYPO3 documentation toolchain supports both formats.
 
 ..  _migrate-markdown-to-rest-conversion:
 
-Converting Markdown to ReST
+Converting Markdown to reST
 ===========================
 
 The first step is to convert the Markdown files to ReST. This can be done using

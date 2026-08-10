@@ -257,7 +257,7 @@ on `Slack`_.
 
 ..  _how-you-can-help-changelog:
 
-Add information from the changelog
+Add information from the Changelog
 ==================================
 
 Each new or changed changelog from the TYPO3 Core creates an issue in the

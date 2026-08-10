@@ -3,7 +3,7 @@
 ..  _navigation-title:
 
 =================================================
-Navigation title: A page title displayed in menus
+Navigation title: a page title displayed in menus
 =================================================
 
 It is possible to define a different, usually shorter, title for a page to be

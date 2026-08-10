@@ -7,7 +7,7 @@
 ..  _migrate:
 
 =============================================
-Migration: From Sphinx to PHP-based rendering
+Migration: from Sphinx to PHP-based rendering
 =============================================
 
 ..  note::
@@ -186,7 +186,7 @@ PHP-based rendering tool:
 
 ..  _migrate-render-documentation-files:
 
-Render your Documentation files locally
+Render your documentation files locally
 =======================================
 
 Use our Docker container to render your documentation locally. Read more about it in
@@ -394,7 +394,7 @@ and shown on pull requests.
 
 ..  _migrate-glossary:
 
-To be discussed: Index generation (glossary)
+To be discussed: index generation (glossary)
 ============================================
 
 The Sphinx rendering allowed to utilize a syntax like the following to

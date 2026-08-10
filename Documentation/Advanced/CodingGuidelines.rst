@@ -83,8 +83,8 @@ Line length
 
 ..  _editorconfig:
 
-.editorconfig
--------------
+`.editorconfig`
+---------------
 
 
 Most of our documentation projects contain an .editorconfig file.
@@ -240,7 +240,7 @@ For more information, see the open issue:
     reST roles; doc
 ..  _link-to-changelog:
 
-Link to changelog
+Link to Changelog
 =================
 
 Linking to the :doc:`changelog <ext_core:Index>` should not be necessary, if all

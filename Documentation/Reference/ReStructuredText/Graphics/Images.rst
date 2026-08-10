@@ -6,7 +6,7 @@
 ..  _images:
 
 ==================================
-Using images in ReST documentation
+Using images in reST documentation
 ==================================
 
 You can use the `The example screenshot project <https://docs.typo3.org/permalink/h2document:screenshot-project>`_.
@@ -20,7 +20,7 @@ screenshot tool since TYPO3 v11 as it proved to be to complicated to maintain.
 
 ..  _rest-images:
 
-Images and figures in Rest
+Images and figures in reST
 ==========================
 
 We recommend to use the `..  figure::` directive. It works just like
@@ -49,7 +49,7 @@ Additional parameters can be found on the docutils page `reStructuredText Direct
 
 ..  _image-scaled:
 
-Example 1: Scaled image with shadow and link target
+Example 1: scaled image with shadow and link target
 ===================================================
 
 ..  image:: /_Images/a4.jpg
@@ -69,7 +69,7 @@ Example 1: Scaled image with shadow and link target
 
 ..  _image-caption:
 
-Example 2: Image with caption and fixed width
+Example 2: image with caption and fixed width
 =============================================
 
 ..  figure:: /_Images/a4.jpg

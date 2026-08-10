@@ -5,7 +5,7 @@
 ..  _docs-contribute-git-docker:
 
 ======================================================
-Workflow #2: "Local editing and rendering with Docker"
+Workflow #2: "local editing and rendering with Docker"
 ======================================================
 
 Using your local machine instead of editing documentation on GitHub has many advantages, it includes

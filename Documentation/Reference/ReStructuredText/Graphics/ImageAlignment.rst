@@ -3,9 +3,9 @@
 ..  include:: /Includes.rst.txt
 ..  _image-float-alignment:
 
-==========================================
+=======================================
 Image and figure floating and alignment
-==========================================
+=======================================
 
 ..  versionadded:: 0.37.0
     Float and alignment support for images and figures was introduced in
@@ -103,7 +103,7 @@ without horizontal scrolling.
 
 ..  _image-float-example-8:
 
-Example 8: Figure floated left
+Example 8: figure floated left
 ------------------------------
 
 ..  figure:: /_Images/a4.jpg
@@ -136,8 +136,8 @@ Typesetting requires one or more fonts.
 
 ..  _image-float-example-9:
 
-Example 9: Figure aligned right
---------------------------------
+Example 9: figure aligned right
+-------------------------------
 
 ..  figure:: /_Images/a4.jpg
     :alt: Example figure aligned right
@@ -169,8 +169,8 @@ Typesetting requires one or more fonts.
 
 ..  _image-float-example-10:
 
-Example 10: Image floated left with shadow
--------------------------------------------
+Example 10: image floated left with shadow
+------------------------------------------
 
 ..  image:: /_Images/a4.jpg
     :alt: Example image floated left
@@ -199,7 +199,7 @@ Typesetting requires one or more fonts.
 ..  _image-float-best-practices:
 
 Best practices for floating
-============================
+===========================
 
 *   Always use ``..  rst-class:: clear-both`` after floated content to prevent
     layout issues with subsequent sections

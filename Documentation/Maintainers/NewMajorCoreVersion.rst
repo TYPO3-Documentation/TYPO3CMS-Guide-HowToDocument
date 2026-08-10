@@ -80,8 +80,8 @@ new eLTS versions of all repositories:
 
 ..  _new-major-core-versions-startpage:
 
-Update the start page docs.typo3.org for a new major version
-============================================================
+Update the start page `docs.typo3.org` for a new major version
+==============================================================
 
 *   Add the new major version to the main menu:
     https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/_mainMenu.rst.txt
@@ -92,8 +92,8 @@ Update the start page docs.typo3.org for a new major version
 
 ..  _new-major-core-versions-api:
 
-Update api.typo3.org for a new major version
-============================================
+Update `api.typo3.org` for a new major version
+==============================================
 
 *   Add the new TYPO3 LTS version for rendering into
     https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workflows/api-typo3-org.yml#L13

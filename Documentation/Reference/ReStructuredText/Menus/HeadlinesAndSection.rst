@@ -7,9 +7,9 @@
     pair: reST; Sections
 ..  _headlines-and-sections:
 
-======================
+=====================
 Headlines and anchors
-======================
+=====================
 
 Each reST document must have a title. It is overlined and underlined like this:
 
@@ -59,27 +59,27 @@ They look like this:
 
 ..  _h2-headline:
 
-H2 Headline
+H2 headline
 ===========
 
 ..  _h3-headline:
 
-H3 Headline
+H3 headline
 -----------
 
 ..  _h4-headline:
 
-H4 Headline
+H4 headline
 ~~~~~~~~~~~
 
 ..  _h5-headline:
 
-H5 Headline
+H5 headline
 """""""""""
 
 ..  _h6-headline:
 
-H6 Headline
+H6 headline
 '''''''''''
 
 ..  _syntax-headlines:

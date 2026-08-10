@@ -4,7 +4,7 @@
 ..  _rest-content:
 
 ==================================
-Directives (reST Content elements)
+Directives (reST content elements)
 ==================================
 
 ..  toctree::

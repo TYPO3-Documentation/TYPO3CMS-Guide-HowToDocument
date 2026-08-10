@@ -31,8 +31,8 @@ ff.
 
 ..  _tools-of-the-documentation-team-api:
 
-api.typo3.org
-=============
+`api.typo3.org`
+===============
 
 ..  _tools-of-the-documentation-team-api-landing:
 

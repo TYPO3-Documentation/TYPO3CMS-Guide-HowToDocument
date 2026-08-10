@@ -3,7 +3,7 @@
 ..  _rest-admonitions:
 
 ===============================================
-Admonitions: Tip, Note, Warning, See also,  etc
+Admonitions: tip, note, warning, see also,  etc
 ===============================================
 
 The following directives are called Admonitions. You
@@ -102,7 +102,7 @@ Attention
 
 ..  _rest-admonitions-information:
 
-More Information
+More information
 ================
 
 The admonitions listed here are the most commonly used in the TYPO3 documentation.

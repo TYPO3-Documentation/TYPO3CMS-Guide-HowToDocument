@@ -48,7 +48,7 @@ the standard rendering process.
 
 ..  _fluid-viewhelper-reference-generation-github-action:
 
-GitHub action "Fluid ViewHelper Documentation"
+GitHub action "Fluid ViewHelper documentation"
 ==============================================
 
 All processes described above are combined for automatic execution as a GitHub

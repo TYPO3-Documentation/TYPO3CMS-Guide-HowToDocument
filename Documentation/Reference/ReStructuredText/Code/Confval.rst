@@ -4,9 +4,9 @@
     reST; Configuration values
 ..  _rest-confval:
 
-===============================
+==============================
 Configuration values (confval)
-===============================
+==============================
 
 The :rst:`confval` directive can be used to document configuration values
 in a structured way, independent of the programming language.
@@ -57,7 +57,7 @@ Required configuration value
 
 ..  _rest-confval-examples-example-configuration-value:
 
-Example: Configuration value with default value and custom parameter
+Example: configuration value with default value and custom parameter
 --------------------------------------------------------------------
 
 ..  confval:: fileCreateMask
