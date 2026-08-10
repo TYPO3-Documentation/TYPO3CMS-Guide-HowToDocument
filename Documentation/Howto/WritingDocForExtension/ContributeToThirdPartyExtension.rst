@@ -26,7 +26,7 @@ it is usually not required to write an issue. You can just submit a pull request
 
 ..  _contribute-to-3rdparty-extension-find-the-source:
 
-Find the Source
+Find the source
 ===============
 
 First, you need to find out where the source is maintained. Usually, this will
@@ -39,8 +39,8 @@ To find the repository, use one of these methods:
 
 ..  _contribute-to-3rdparty-extension-find-the-source-method-1:
 
-Method 1: Find the Source on docs.typo3.org
--------------------------------------------
+Method 1: find the source on `docs.typo3.org`
+---------------------------------------------
 
 In the page of the rendered docs for the extension, click on :guilabel:`Repository`
 in the footer.
@@ -51,8 +51,8 @@ project is not filled out and this link is missing. Then, you can use Method 2.
 
 ..  _contribute-to-3rdparty-extension-find-the-source-method-2:
 
-Method 2: Find the Source on https://extensions.typo3.org
----------------------------------------------------------
+Method 2: find the source on `https://extensions.typo3.org`
+-----------------------------------------------------------
 
 ..  rst-class:: bignums
 
@@ -92,16 +92,16 @@ You can also find the rendered documentation:
 
 ..  _contribute-to-3rdparty-extension-find-rendered-manual-method-1:
 
-Method 1: Find rendered manual on docs.typo3.org
-------------------------------------------------
+Method 1: find rendered manual on `docs.typo3.org`
+--------------------------------------------------
 
 Go to:
 `Extensions by extension key <https://docs.typo3.org/typo3cms/extensions/Index.html>`__
 
 ..  _contribute-to-3rdparty-extension-find-rendered-manual-method-2:
 
-Method 2: Find rendered manual on https://extensions.typo3.org
---------------------------------------------------------------
+Method 2: find rendered manual on `https://extensions.typo3.org`
+----------------------------------------------------------------
 
 ..  rst-class:: bignums
 

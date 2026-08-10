@@ -50,7 +50,7 @@ This can be fixed by following these steps:
 
 ..  _faq-for-extension-authors-why-documentation-provide:
 
-Why Does the Documentation not provide a title?
+Why does the documentation not provide a title?
 ===============================================
 
 ..  image:: /_Images/missing-title.png
@@ -167,8 +167,8 @@ somewhere else (not on docs.typo3.org).
 ..  rst-class:: panel panel-default
 ..  _faq-can-i-use-a-readmerst-or-readmemd-instead:
 
-Can I use a README.rst (or README.md) instead?
-==============================================
+Can I use a `README.rst` (or `README.md`) instead?
+==================================================
 
 GitHub (or Gitlab, bitbucket) etc. automatically render a :file:`README.rst` (or .md)
 on the repository homepage.
@@ -262,7 +262,7 @@ Example extension: `news <https://docs.typo3.org/typo3cms/extensions/news/>`__
 
 ..  _faq-for-extension-authors-further-questions:
 
-Further Questions?
+Further questions?
 ==================
 
 Get in touch with us, if you have problems, would like to ask questions or make suggestions.

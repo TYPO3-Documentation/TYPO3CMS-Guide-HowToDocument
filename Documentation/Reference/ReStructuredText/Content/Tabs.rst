@@ -2,9 +2,9 @@
 ..  index:: reST; Tabs
 ..  _rest-tabs:
 
-=====
+====
 Tabs
-=====
+====
 
 They provide a compact way to present a topic from different perspectives, with
 each perspective presented in a tab. When the reader changes tabs, this change

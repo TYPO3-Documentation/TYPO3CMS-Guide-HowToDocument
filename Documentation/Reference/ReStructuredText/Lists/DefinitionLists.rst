@@ -17,7 +17,7 @@ and description of parameters. The general markup we use is that of a "definitio
 
 ..  _styled-definition-lists-list-style-dl-example-1-extra:
 
-Example 1: No Extra Styling
+Example 1: no extra styling
 ---------------------------
 
 An example with a standard styling would look like this:
@@ -53,7 +53,7 @@ This markup works but isn't very readable due to the lack of styling.
 
 ..  _styled-definition-lists-list-style-dl-example-2-nicely:
 
-Example 2: Nicely Styled
+Example 2: nicely styled
 ------------------------
 
 Source::
@@ -128,7 +128,7 @@ and 'sep' inherit their properties and are further specialized.
 
 ..  _styled-definition-lists-list-style-dl-example-3-nicely:
 
-Example 3: Nicely styled through labels interfere
+Example 3: nicely styled through labels interfere
 -------------------------------------------------
 
 Let's say you want to place labels in front of each definition list

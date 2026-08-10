@@ -3,7 +3,7 @@
 ..  _viewhelper:
 
 =============================================
-Display Fluid ViewHelpers in ReStructuredText
+Display Fluid ViewHelpers in reStructuredText
 =============================================
 
 The special `..  typo3:viewhelper::` directive can be used to display the
@@ -20,7 +20,7 @@ on how to generate the input file.
 
 ..  _viewhelper-example:
 
-Example: Display a ViewHelper from a JSON include
+Example: display a ViewHelper from a JSON include
 =================================================
 
 ..  code-block:: rst

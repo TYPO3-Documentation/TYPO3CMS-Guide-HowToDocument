@@ -64,7 +64,7 @@ they had been written directly into the rst file. All markup is respected.
 
 ..  _including-files-example-advanced:
 
-Example: Break up a large file into manageable pieces
+Example: break up a large file into manageable pieces
 =====================================================
 
 In places like the TSconfig reference or TCA reference it is helpful to display

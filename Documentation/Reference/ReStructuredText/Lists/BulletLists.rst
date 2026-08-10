@@ -41,7 +41,7 @@ Numbered lists:
 
 ..  _rest-unordered-lists-example-1-list:
 
-Example 1: List with sublist items
+Example 1: list with sublist items
 ==================================
 
 ..  code-block:: rst

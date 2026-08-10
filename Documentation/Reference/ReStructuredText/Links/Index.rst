@@ -4,7 +4,7 @@
 ..  _how-to-document-hyperlinks:
 
 ==========================
-Links in ReStructured Text
+Links in ReStructured text
 ==========================
 
 

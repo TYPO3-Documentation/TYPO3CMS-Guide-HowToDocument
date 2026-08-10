@@ -4,9 +4,9 @@
 ..  index:: pair: Official documentation; "Edit on GitHub"
 ..  _docs-contribute-github-method:
 
-================================
+=============================
 Workflow #1: "Edit on GitHub"
-================================
+=============================
 
 ..  youtube:: wNxO-aXY5Yw
 
@@ -123,7 +123,7 @@ Scroll down to "Improving documentation":
 
 ..  _docs-contribute-github-method-next-steps:
 
-Next Steps
+Next steps
 ==========
 
 *   Look at :ref:`docs-official-how-you-can-help` for more ways to contribute

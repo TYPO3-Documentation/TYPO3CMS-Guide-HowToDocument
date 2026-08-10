@@ -7,9 +7,9 @@
 ..  _about:
 ..  _credits:
 
-=================
+================
 Basic principles
-=================
+================
 
 TYPO3 documentation is written in **reStructuredText (reST)** and rendered to
 HTML using a shared toolchain. Most documentation is hosted on

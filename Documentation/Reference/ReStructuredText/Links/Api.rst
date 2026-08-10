@@ -3,7 +3,7 @@
 ..  _links-api:
 
 ================================================
-API links: More information on TYPO3 PHP classes
+API links: more information on TYPO3 PHP classes
 ================================================
 
 At https://api.typo3.org/ all classes and interfaces of the
@@ -15,8 +15,8 @@ explicit links to these:
 
 ..  _links-api-explicit:
 
-Explicit links to api.typo3.org
-===============================
+Explicit links to `api.typo3.org`
+=================================
 
 ..  literalinclude:: _Api.rst.txt
 

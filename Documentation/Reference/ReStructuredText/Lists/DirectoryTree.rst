@@ -13,8 +13,8 @@ extensions or projects.
 
 ..  _writing-rest-directory-tree-example-basic:
 
-Example: A basic directory tree, two levels expanded
-=====================================================
+Example: a basic directory tree, two levels expanded
+====================================================
 
 ..  directory-tree::
     :level: 2
@@ -70,7 +70,7 @@ Example: A basic directory tree, two levels expanded
 
 ..  _writing-rest-directory-tree-example-empty-folders:
 
-Example: A page tree with empty folders
+Example: a page tree with empty folders
 =======================================
 
 ..  directory-tree::

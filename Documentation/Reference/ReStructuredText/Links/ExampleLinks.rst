@@ -4,9 +4,9 @@
 ..  index:: reST; Preventing links
 ..  _preventing-links:
 
-===========================
-Example domain: example.org
-===========================
+=============================
+Example domain: `example.org`
+=============================
 
 The renderer automatically converts simple URLs into links. This can be unintentional
 in certain contexts, for example when using a

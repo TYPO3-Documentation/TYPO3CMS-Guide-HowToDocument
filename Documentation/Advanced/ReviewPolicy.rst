@@ -16,7 +16,7 @@ to continuously improve our process.
 
 ..  _review-policy-contributors:
 
-Policy for Contributors
+Policy for contributors
 =======================
 
 As outlined in the chapter :ref:`docs-contribute`, contributors can

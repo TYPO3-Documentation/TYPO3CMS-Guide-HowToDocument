@@ -4,7 +4,7 @@
 ..  _screenshot-container:
 
 ==================================
-TYPO3 Screenshots Docker container
+TYPO3 screenshots Docker container
 ==================================
 
 We have prepared a Docker container that you can use to create screenshots

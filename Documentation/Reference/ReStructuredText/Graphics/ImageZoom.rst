@@ -3,9 +3,9 @@
 ..  include:: /Includes.rst.txt
 ..  _image-zoom:
 
-===================================
+================================
 Image zoom and lightbox features
-===================================
+================================
 
 ..  versionadded:: 0.36.0
     The image zoom feature was introduced in render-guides version 0.36.0.
@@ -87,8 +87,8 @@ Usage examples
 
 ..  _image-zoom-example-3:
 
-Example 3: Lightbox zoom
--------------------------
+Example 3: lightbox zoom
+------------------------
 
 ..  figure:: /_Images/a4.jpg
     :alt: Example screenshot
@@ -108,8 +108,8 @@ Example 3: Lightbox zoom
 
 ..  _image-zoom-example-4:
 
-Example 4: Gallery mode with grouped images
---------------------------------------------
+Example 4: gallery mode with grouped images
+-------------------------------------------
 
 ..  code-block:: rst
 
@@ -129,8 +129,8 @@ Example 4: Gallery mode with grouped images
 
 ..  _image-zoom-example-5:
 
-Example 5: Inline scroll-wheel zoom
-------------------------------------
+Example 5: inline scroll-wheel zoom
+-----------------------------------
 
 ..  code-block:: rst
 
@@ -142,8 +142,8 @@ Example 5: Inline scroll-wheel zoom
 
 ..  _image-zoom-example-6:
 
-Example 6: Magnifier lens
---------------------------
+Example 6: magnifier lens
+-------------------------
 
 ..  code-block:: rst
 
@@ -155,8 +155,8 @@ Example 6: Magnifier lens
 
 ..  _image-zoom-example-7:
 
-Example 7: Hidden zoom indicator
----------------------------------
+Example 7: hidden zoom indicator
+--------------------------------
 
 ..  code-block:: rst
 
@@ -170,7 +170,7 @@ Example 7: Hidden zoom indicator
 ..  _image-zoom-accessibility:
 
 Accessibility considerations
-=============================
+============================
 
 All zoom modes are designed with accessibility in mind:
 
