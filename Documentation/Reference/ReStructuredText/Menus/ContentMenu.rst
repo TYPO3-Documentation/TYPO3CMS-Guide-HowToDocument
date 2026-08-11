@@ -21,7 +21,9 @@ Showing only a local content menu of all headlines, excluding the page header:
 ..  contents::
     :local:
 
-You can also limit the levels and or give the contents menu a title::
+You can also limit the levels and or give the contents menu a title:
+
+..  code-block:: rst
 
     ..  contents:: Table of Contents
         :local:

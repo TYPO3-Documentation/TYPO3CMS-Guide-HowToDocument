@@ -21,19 +21,25 @@ line, taking the indentation level into account.
 Examples
 --------
 
-Example::
+Example:
+
+..  code-block:: rst
 
     ..  So here we have a comment.
         It can spread over lines as
         long as you keep the indentation.
 
-Example::
+Example:
+
+..  code-block:: rst
 
     ..  This text will not be shown,
         but, for instance, in HTML might be
         rendered as an HTML comment, if the html writer is set up for that.
 
-Example::
+Example:
+
+..  code-block:: rst
 
     ..  here we start an unordered list:
 
