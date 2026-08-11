@@ -78,8 +78,9 @@ Or you can create a bash alias like:
 ..  note::
 
     If your host operating system already utilizes the TCP port `1337`
+    you need to adapt that command to use another free TCP port. For this
     you can change the port number behind the :bash:`-p` parameter. To use
-    port `8080` the bash code looks like this: :bash:`-p 8080:1337`.
+    port `8080` the bash code needs to be adapted like this: :bash:`-p 8080:1337`.
 
     Also adapt the port in the URL. In the example above the server would be
     accessible via `http://localhost:8080` instead of `http://localhost:1337`.
@@ -89,11 +90,8 @@ Or you can create a bash alias like:
 Usage with Docker Compose
 =========================
 
-Docker Compose
-==============
-
 If you are using `docker-compose <https://docs.docker.com/compose/>`_ to manage your
-development environment, you can add a service for the live rendering like this:
+development environment, you can add a service for the automatic re-rendering like this:
 
 ..  code-block:: yaml
     :caption: docker-compose.yml
@@ -122,8 +120,8 @@ Usage with DDEV
 For integration with DDEV projects, a DDEV addon is available at
 https://github.com/TYPO3-Documentation/ddev-typo3-docs.
 
-This addon automatically starts the live documentation preview within
-your DDEV project at `http://<yourproject>.ddev.site:1337/`.
+When you start your DDEV project, this addon starts the automatic re-rendering
+of the documentation at `http://<yourproject>.ddev.site:1337/`.
 
 In this environment, users do not need to execute a manual `docker run` command.
 
@@ -132,14 +130,15 @@ In this environment, users do not need to execute a manual `docker run` command.
 Limitations
 ===========
 
-Some changes in the source files are not detected automatically:
+Not all changes in the source files can be detected automatically,
+or will impact the rendered output immediately:
 
 *   Changes in :file:`guides.xml`
 *   New added files
 *   Menu changes
 *   Moving files
 
-In such cases, a manual re-rendering is required.
+**In such cases, a manual re-rendering is required.**
 
 ..  note::
 
