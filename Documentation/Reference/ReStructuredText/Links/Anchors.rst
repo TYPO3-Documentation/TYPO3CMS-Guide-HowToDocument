@@ -46,3 +46,33 @@ A recommended recipe could be:
 
 We are currently trying to let `Fractor support <https://github.com/andreaswolf/fractor/issues/206>`
 this and other transformations.
+
+..  _anchor-persistence:
+
+Keeping anchors working
+=======================
+
+An anchor is a promise: once a page containing it has reached `main`, the
+anchor **must** keep working, even after the heading it was on is gone.
+Never just delete an anchor. What to do instead depends on why the content
+went away:
+
+*   **Restructured, but the concept still exists somewhere** — a subchapter
+    or example merged into, or moved under, a different heading: move the
+    anchor to the heading that now covers that content, even if it is now
+    less specific (for example the parent chapter).
+
+*   **The whole concept was removed** — a breaking change, or it is no
+    longer the recommended approach: move the anchor into a
+    :file:`Documentation/404.rst` page instead (create it if it does not
+    exist yet), and add a short entry explaining what happened. See
+    :ref:`redirects` for the full pattern, including a real example.
+
+This applies everywhere, not just to official TYPO3 documentation
+repositories — anyone linking to your docs, from a bookmark, a search
+result, or another page, is relying on the anchor still being there.
+
+Also watch for malformed anchor lines (the wrong number of leading dots, a
+missing trailing colon) — they silently fail to work as a permalink, and
+can render as broken, stray text on the page instead of an invisible link
+target.
