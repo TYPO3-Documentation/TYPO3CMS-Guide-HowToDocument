@@ -8,7 +8,7 @@ please follow them by hand and point reviewers here when in doubt.
 This file lives in the `TYPO3CMS-Guide-HowToDocument` repo (the "how to
 document" guide) since it's the natural shared home for cross-repo writing
 conventions. Other repos should reference it — via their own `CLAUDE.md` or
-similar — rather than duplicating it, adding only what's genuinely specific
+similar — rather than duplicating it, adding only what is genuinely specific
 to that repo (its own tooling, its own known problem areas, etc.).
 
 ## Inline roles
@@ -173,8 +173,8 @@ version actually needs to know about when upgrading. Pick the right one:
 - **`..  versionadded::`** — a concept came from a Core feature and isn't
   available in all currently-supported versions yet. State the version it
   was added in and link to the changelog entry.
-- **`..  versionchanged::`** — a concept was changed (behavior, signature,
-  configuration, ...) in a way worth calling out, in a version newer than
+- **`..  versionchanged::`** — a concept has changed (behavior, signature,
+  configuration, ...) in a way worth mentioning, in a version newer than
   the supported floor.
 - **`..  deprecated::`** — a concept still works but shouldn't be used
   anymore. Deprecated features can be removed in the very next version
@@ -245,7 +245,7 @@ instead: `:ref:`explicit title <some-anchor>``. Otherwise, renaming the
 target heading later (which is expected and encouraged, see "Headlines"
 above) can silently turn a grammatically correct sentence into a broken one
 at the point of use — the two are unrelated to each other and nobody editing
-the heading is likely to think to check every sentence that links to it.
+the heading is likely to check every sentence that links to it.
 
 ```rst
 Bad:  as described in :ref:`some-anchor`
@@ -256,8 +256,8 @@ Good: as described in the :ref:`extension-specific configuration
 ## Table of contents
 
 A page with several headlines should have a `..  contents::` directive (near
-the top, right after the intro text) so a reader can see and jump to its
-structure without scrolling. Use `:local:` so it doesn't also list the page
+the top, right after the intro text) so a reader can see and jump to it
+without scrolling. Use `:local:` so it doesn't also list the page
 title itself; add `:depth:` if the default nesting is too deep for the page.
 A short custom title (e.g. `..  contents:: Table of contents`) is fine but
 not required — a bare `..  contents::` is common too.

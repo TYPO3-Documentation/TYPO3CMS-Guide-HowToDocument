@@ -5,8 +5,8 @@ repositories (all repos under github.com/TYPO3-Documentation, rendered to
 docs.typo3.org), for use by AI coding assistants of any kind. It lives in
 `TYPO3CMS-Guide-HowToDocument` (the "how to document" guide) since that's
 the natural shared home for cross-repo guidance. A repo-specific agent
-instructions file should describe that repo's own purpose and point back
-here for the rest, adding only what's genuinely specific to it (its own
+instructions file should describe the repo's purpose and point back
+here for the rest, adding only what is genuinely specific to it (its own
 tooling, its own known problem areas, etc.) rather than duplicating this
 file.
 
@@ -17,14 +17,14 @@ See [STYLEGUIDE.md](STYLEGUIDE.md) for RST/writing conventions: `:php:` vs
 avoiding temporal language ("currently"/"now"), headline quality, and anchor
 (permalink) conventions.
 
-Before writing anything as fact — a class name, a method signature, whether
-something is deprecated, when something changed — verify it against the
-actual TYPO3 core source rather than relying on memory. Check whether your
+Before stating anything as a fact — a class name, a method signature, whether
+something is deprecated, whether something has changed — verify it against the
+current TYPO3 core source rather than relying on memory. Check whether your
 repo has TYPO3 core sources available locally (e.g. composer-installed
 packages under a vendor directory, often including their own
 `Documentation/Changelog/`) — that's usually the fastest way to check. For
 "when was X introduced/removed" questions, checking the real commit history
-on `github.com/TYPO3/typo3` (via `gh` or the GitHub API) beats guessing —
+on `github.com/TYPO3/typo3` (via `gh` or the GitHub API) is better than guessing —
 commit messages and changelog entries there are the actual source of truth.
 
 ## Git workflow — branch and push safety
@@ -62,7 +62,7 @@ up pushing straight to `main`. To make that impossible:
    separate PRs, build them as independent branches off `origin/main` rather
    than stacking one on the other. Expect a small rebase/conflict when one
    lands after the other — that's the normal cost of splitting for review,
-   not a sign something went wrong.
+   not a sign that something went wrong.
 
 ## Committing
 
