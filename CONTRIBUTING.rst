@@ -39,6 +39,23 @@ Make changes (create pull requests)
 * See `Writing Documentation <https://docs.typo3.org/typo3cms/HowToDocument/>`__ for further
   information
 
+Writing style
+-------------
+
+* `STYLEGUIDE.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/STYLEGUIDE.md>`__
+  collects general reST writing conventions shared across TYPO3
+  documentation repositories (inline role usage, code blocks, headlines,
+  anchors/permalinks, and more), distilled from real review corrections.
+  It lives here since this repository is the natural shared home for
+  cross-repo writing conventions; other repositories reference it instead
+  of duplicating it.
+* `AGENTS.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/AGENTS.md>`__
+  collects the equivalent shared guidance for AI coding assistants of any
+  kind working across these repositories (branch/push safety, commit
+  message conventions). `CLAUDE.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/CLAUDE.md>`__
+  is a short pointer to it, kept only because Claude Code specifically
+  looks for that filename.
+
 Get help
 --------
 
