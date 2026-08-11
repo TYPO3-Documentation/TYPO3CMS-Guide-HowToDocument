@@ -22,7 +22,9 @@ Example 1: no extra styling
 
 An example with a standard styling would look like this:
 
-Source::
+Source:
+
+..  code-block:: rst
 
     parameterAbc
         Condition: required, Type: string, Default: ''
@@ -56,7 +58,9 @@ This markup works but isn't very readable due to the lack of styling.
 Example 2: nicely styled
 ------------------------
 
-Source::
+Source:
+
+..  code-block:: rst
 
     ..  rst-class:: dl-parameters
 
@@ -138,7 +142,9 @@ intercept the list. Instead, many lists are created. This isn't
 a problem, if you repeat the 'rst-class' line.
 
 
-Source::
+Source:
+
+..  code-block:: rst
 
     ..  _label-parameterAbc:
     ..  rst-class:: dl-parameters
@@ -189,7 +195,9 @@ parameterBcd
 
 Link example:
 
-Source::
+Source:
+
+..  code-block:: rst
 
     Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
 
