@@ -42,19 +42,17 @@ Make changes (create pull requests)
 Writing style
 -------------
 
-* `STYLEGUIDE.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/STYLEGUIDE.md>`__
-  collects general reST writing conventions shared across TYPO3
-  documentation repositories (inline role usage, code blocks, headlines,
-  anchors/permalinks, and more), distilled from real review corrections.
-  It lives here since this repository is the natural shared home for
-  cross-repo writing conventions; other repositories reference it instead
-  of duplicating it.
+* Follow the conventions in `Documentation/Advanced/ContentStyleGuide.rst
+  <https://docs.typo3.org/permalink/h2document:content-styleguide>`__ and
+  `Documentation/Advanced/CodingGuidelines.rst
+  <https://docs.typo3.org/permalink/h2document:format-rest-cgl>`__.
 * `AGENTS.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/AGENTS.md>`__
-  collects the equivalent shared guidance for AI coding assistants of any
-  kind working across these repositories (branch/push safety, commit
-  message conventions). `CLAUDE.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/CLAUDE.md>`__
-  is a short pointer to it, kept only because Claude Code specifically
-  looks for that filename.
+  is a short entry point for AI coding assistants working in this
+  repository (structure, commands, rules), pointing back to the pages
+  above rather than duplicating them.
+  `CLAUDE.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/CLAUDE.md>`__
+  is a pointer to it, kept only because Claude Code specifically looks for
+  that filename.
 
 Get help
 --------
