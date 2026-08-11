@@ -30,7 +30,7 @@ Converting Markdown to reST
 
 The first step is to convert the Markdown files to ReST. This can be done using
 our rendering toolchain. This will convert the Markdown files to ReST format.
-We will use ``Documentation-Migrated`` as the output directory.
+We will use :file:`Documentation-Migrated` as the output directory.
 
 ..  tabs::
 
@@ -55,10 +55,10 @@ We will use ``Documentation-Migrated`` as the output directory.
             New-Item -ItemType Directory -Force -Path ".\Documentation-Migrated"
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --theme=rst --output-format=rst --output Documentation-Migrated
 
-Now we can copy the ``guides.xml`` from the original directory documentation directory to the new directory. And remove the
-option ``input-format="md"``. This will tell the rendering toolchain to use the ReST files instead of the Markdown files.
+Now we can copy the :file:`guides.xml` from the original directory documentation directory to the new directory. And remove the
+option `input-format="md"`. This will tell the rendering toolchain to use the ReST files instead of the Markdown files.
 
-Last step is to swap the directories. Rename the original directory to ``Documentation-Markdown`` and the new directory ``Documentation-Migrated`` to ``Documentation``.
+Last step is to swap the directories. Rename the original directory to :file:`Documentation-Markdown` and the new directory :file:`Documentation-Migrated` to :file:`Documentation`.
 
 The basic migration is now done. Some manual adjustments might be necessary, as the conversion is not perfect.
 

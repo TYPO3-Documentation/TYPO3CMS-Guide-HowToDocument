@@ -41,12 +41,12 @@ Whitespace and indentation
 *   don't use tabs
 *   one indentation level consists of **four spaces**
 *   code examples use four spaces as indentation level as well
-*   directive and hyperlink target markers use two spaces after ``..``,
-    e.g. ``..  note::`` or ``..  _label:``
+*   directive and hyperlink target markers use two spaces after :rst:`..`,
+    e.g. :rst:`..  note::` or :rst:`..  _label:`
 *   list markers are followed by enough spaces to line up item text at a
-    4-space column: 3 spaces after a single-character marker (``*``, ``-``),
-    2 spaces after a two-character enumerator (``#.``, ``1.``), 1 space
-    after longer enumerators (``10.``)
+    4-space column: 3 spaces after a single-character marker (:rst:`*`, :rst:`-`),
+    2 spaces after a two-character enumerator (:rst:`#.`, :rst:`1.`), 1 space
+    after longer enumerators (:rst:`10.`)
 
 Example:
 

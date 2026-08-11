@@ -196,7 +196,7 @@ Escape characters
 =================
 
 If you want to use a character that would normally create reST markup,
-you must escape it with a prepended backslash (``\``).
+you must escape it with a prepended backslash (:rst:`\\`).
 
 ..  code-block:: rst
 

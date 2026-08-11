@@ -69,8 +69,8 @@ in channel `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`_.
 Version numbers
 ===============
 
-docs.typo3.org does no longer show three level version numbers in form of ``Major.Minor.Patch``.
-Only the first two levels are shown ``Major.Minor``.
+docs.typo3.org does no longer show three level version numbers in form of `Major.Minor.Patch`.
+Only the first two levels are shown `Major.Minor`.
 
 This reduces the amount of documentation while keeping relevant information,
 as patch levels should not introduce breaking changes or new features.
@@ -84,15 +84,15 @@ Supported branches
 
 The rendering supports two branches within repositories:
 
-``main`` / ``master``
+`main` / `master`
     Should contain the current development state, used for upcoming release.
     Every push to these branches triggers a new rendering, available at
     :samp:`https://docs.typo3.org/p/<vendor>/<package>/main/en-us/`.
 
     Both branch names are supported, but result in the same URL.
-    Please use ``main``, ``master`` is only supported for backward compatibility.
+    Please use `main`, `master` is only supported for backward compatibility.
 
-``documentation-draft``
+`documentation-draft`
     Should contain a draft of the documentation.
     Every push to this branch triggers a new rendering, available at
     :samp:`https://docs.typo3.org/p/<vendor>/<package>/draft/en-us/`
