@@ -69,7 +69,8 @@ called :file:`Documentation` with a :file:`Documentation/Index.rst` and
 a :file:`Documentation/guides.xml` or a :file:`README.rst` / :file:`README.md`
 in the extension's root directory.
 
-The extension has to be publicly available on GitHub or GitLab. You have to
+The extension has to be publicly available on one of the
+:ref:`supported repository hosts <webhook>`. You have to
 establish a :ref:`Webhook <webhook>` and the Documentation Team has to
 :ref:`approve <approval-intercept>` your first rendering.
 
