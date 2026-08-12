@@ -1,31 +1,36 @@
-:navigation-title: Live rendering (WYSIWYG)
+:navigation-title: Automatic re-rendering (WYSIWYG)
 
 ..  _rendering-wysiwyg:
 ..  _live-rendering:
 
 ============================================================
-Rendering with more WYSIWYG-feeling (automatic re-rendering)
+Automatic re-rendering when writing documentation locally
 ============================================================
+In case you write complex `reST` markup you may want immediate visual
+feedback on your changes, without triggering the rendering manually every time.
 
-You want to write complex `reST` markup and directly see the
-rendered output, browser side-by-side with your editor? Then
-this section is for you!
+`render-guides` can serve the rendered documentation via a local web-server
+and automatically re-render the documentation when changes in the source files
+are detected.
 
-Often, especially in the later stages of creating documentation, you
-just edit small parts of the reST files, render the outcome manually
-and happily commit your changes.
+This enables a WYSIWYG-like editing experience with your editor
+and browser side-by-side.
 
-However, in cases you write larger sections of text, you may want
-to get more immediate visual feedback on your changes, but do not
-want to manually trigger the rendering time and again.
+..  contents::
 
-To make this easier, `render-guides` can serve the rendered documentation
-via a local web-server and automatically re-render the documentation
-when changes in the source files are detected. This gives you a more
-WYSIWYG-like experience when writing documentation.
+..  _rendering-wysiwyg-prerequisites:
 
-This allows you to have a browser window next to your reST file editor
-to view progress.
+Prerequisites
+=============
+
+Configure the rendering as described here: :ref:`render-documentation-with-docker`.
+
+The only thing that changes is the render command you use (see below).
+
+..  _rendering-wysiwyg-docker:
+
+Usage with Docker
+=================
 
 ..  tabs::
 
@@ -59,8 +64,9 @@ to view progress.
               -p 1337:1337 ghcr.io/typo3-documentation/render-guides:latest --config="Documentation" --watch
             start "http://localhost:1337/Index.html"
 
-The command above can also be added to your project's `Makefile` or
-you can create a bash alias like:
+The command above can also be added to your project's `Makefile`.
+
+Or you can create a bash alias like:
 
 ..  code:: bash
 
@@ -71,19 +77,21 @@ you can create a bash alias like:
 
 ..  note::
 
-    If anything on your host operating system already utilizes the TCP port
-    `1337` you need to adapt that command to use another free TCP port for you,
-    and adapt the port in the web-browser URL.
-    You can do this by changing the :bash:`-p` parameter, e.g. to
-    :bash:`-p 8080:1337` to use TCP port `8080` on your host system.
+    If your host operating system already utilizes the TCP port `1337`
+    you need to adapt that command to use another free TCP port. For this
+    you can change the port number behind the :bash:`-p` parameter. To use
+    port `8080` the bash code needs to be adapted like this: :bash:`-p 8080:1337`.
+
+    Also adapt the port in the URL. In the example above the server would be
+    accessible via `http://localhost:8080` instead of `http://localhost:1337`.
 
 ..  _rendering-wysiwyg-docker-compose:
 
-Docker Compose
-==============
+Usage with Docker Compose
+=========================
 
 If you are using `docker-compose <https://docs.docker.com/compose/>`_ to manage your
-development environment, you can add a service for the live rendering like this:
+development environment, you can add a service for the automatic re-rendering like this:
 
 ..  code-block:: yaml
     :caption: docker-compose.yml
@@ -101,35 +109,39 @@ development environment, you can add a service for the live rendering like this:
 
 ..  note::
 
-    Render guides was never optimized for long running services. You might need
+    `render-guides` was never optimized for long running services. You might need
     to restart the container from time to time to free up resources.
 
 ..  _rendering-wysiwyg-ddev:
 
-DDEV
-====
+Usage with DDEV
+===============
 
-For integration with DDEV projects, a DDEV addon has been created at https://github.com/TYPO3-Documentation/ddev-typo3-docs.
-This can be used to automatically start the live documentation preview within the DDEV project at http://<yourproject>.ddev.site:1337/
-whenever you start that project, and can directly view and work on documentation alongside the project.
-In this environment, users do not even need to execute a manual `docker run` command anymore, and have full integration at hand.
+For integration with DDEV projects, a DDEV addon is available at
+https://github.com/TYPO3-Documentation/ddev-typo3-docs.
+
+When you start your DDEV project, this addon starts the automatic re-rendering
+of the documentation at `http://<yourproject>.ddev.site:1337/`.
+
+In this environment, users do not need to execute a manual `docker run` command.
 
 ..  _rendering-wysiwyg-limitations:
 
 Limitations
 ===========
 
-Not all changes in the source files can be detected automatically, or will
-impact the rendered output immediately. In such cases, a manual re-rendering
-is required. Examples are:
+Not all changes in the source files can be detected automatically,
+or will impact the rendered output immediately:
 
 *   Changes in :file:`guides.xml`
 *   New added files
 *   Menu changes
 *   Moving files
 
+**In such cases, a manual re-rendering is required.**
+
 ..  note::
 
-    Please be aware that some editors (like e.g. `VIM`) create temporary files
-    when opening files for editing. This will not be detected as a change to the
+    Some editors (like `VIM`) create temporary files when opening files
+    for editing. This will not be detected as a change to the
     actual file and thus not trigger a re-rendering.
