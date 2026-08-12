@@ -39,6 +39,21 @@ Make changes (create pull requests)
 * See `Writing Documentation <https://docs.typo3.org/typo3cms/HowToDocument/>`__ for further
   information
 
+Writing style
+-------------
+
+* Follow the conventions in `Documentation/Advanced/ContentStyleGuide.rst
+  <https://docs.typo3.org/permalink/h2document:content-styleguide>`__ and
+  `Documentation/Advanced/CodingGuidelines.rst
+  <https://docs.typo3.org/permalink/h2document:format-rest-cgl>`__.
+* `AGENTS.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/AGENTS.md>`__
+  is a short entry point for AI coding assistants working in this
+  repository (structure, commands, rules), pointing back to the pages
+  above rather than duplicating them.
+  `CLAUDE.md <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/blob/main/CLAUDE.md>`__
+  is a pointer to it, kept only because Claude Code specifically looks for
+  that filename.
+
 Get help
 --------
 
