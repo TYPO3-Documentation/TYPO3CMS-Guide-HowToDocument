@@ -81,5 +81,5 @@ just moved.
 
 ..  important::
 
-    :file:`redirects.conf` is shared production infrastructure for all of
-    docs.typo3.org — a syntax error there takes the whole site down.
+    :file:`redirects.conf` is shared production infrastructure for the whole of
+    docs.typo3.org. A syntax error in this file will take the whole site down.
