@@ -328,3 +328,27 @@ We are currently working on the automatic generation of PHP domain syntax
 from PHP classes within the
 `TYPO3 Screenshots <https://github.com/TYPO3-Documentation/t3docs-screenshots/pull/234>`__
 tool.
+
+..  _rest-phpdomain-signature-limitations:
+
+Limitations of the method signature parser
+==========================================
+
+The signature parser does not understand all modern PHP type syntax. Nullable
+types (:php:`?string`) and union types (:php:`string|null`,
+:php:`string|array`) in the signature lead to build warnings or wrong output.
+
+Declare such types in the field list instead:
+
+..  code-block:: rst
+
+    ..  php:method:: retrieve(string $identifier)
+
+        Retrieve a value.
+
+        :param string $identifier: The identifier.
+        :returns: The stored value or `null` if not found.
+        :returntype: string|null
+
+For a nullable parameter, give it a default of `null` in the signature and
+document the type as `string|null` in the :rst:`:param:` field.
