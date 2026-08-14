@@ -52,3 +52,12 @@ Example:
 
     *   three
 
+..  _writing-rest-comments-todo:
+
+Open tasks (todo)
+-----------------
+
+The TYPO3 documentation renderer silently drops a :rst:`..  todo::`
+directive — its content never reaches the rendered page. Do not rely on it
+as a visible marker: resolve open tasks before merging, or write them as
+plain comments (dot-dot-blank) so they stay clearly author-only.
