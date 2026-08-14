@@ -12,6 +12,12 @@ We have 3 directives to mark versions in the manuals.
 The incentive is that information which is important for migration can be marked
 and semi-automatically be removed after one or two versions.
 
+..  note::
+    Only reference **released** TYPO3 versions. Do not use
+    :rst:`..  versionadded::` for planned or unreleased versions — announce
+    plans in running text, clearly marked as planned, instead. Release plans
+    change; published version directives stay.
+
 ..  _rest-versions-versionadded:
 
 Versionadded
