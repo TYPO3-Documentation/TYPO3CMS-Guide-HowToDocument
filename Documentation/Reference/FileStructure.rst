@@ -40,6 +40,12 @@ Further conventions are:
 *   Code examples to be included should start with an underscore, for example
     :file:`_Services.yaml`.
 
+..  note::
+    Do not place symbolic links inside the :path:`Documentation` folder. The
+    rendering walks the directory tree literally; a symlink (for example an
+    :file:`AGENTS.md` or :file:`CLAUDE.md` link created by AI tooling) breaks
+    the file walk and thereby the rendering.
+
 ..  _full-documentation:
 
 Full documentation in reST
