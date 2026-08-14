@@ -50,6 +50,14 @@ Guidelines for screenshots
     `t3docs`.
 *   Use PNG or AVIF format (:file:`.png` or :file:`.avif` file ending).
 *   If you take a screenshot of a full page it should have 1400 x 1050 px.
+*   Size the browser window to at least 1440 x 1050 px before taking backend
+    screenshots — narrow viewports collapse the module menu and truncate
+    table columns. Capture slightly wider than the 1400 px target, then crop.
+*   The content of a backend module is rendered inside an iframe that scrolls
+    internally. A "full page" screenshot (for example Playwright's
+    `fullPage: true`) captures only the outer frame and cuts off the lower
+    part of the module — to capture a tall module view, increase the height
+    of the viewport itself and take a normal screenshot.
 *   Use only parts of a full page when possible, the flatter the screenshot the
     less room it takes.
 *   When reviewing screenshots take into consideration that taking screenshots
