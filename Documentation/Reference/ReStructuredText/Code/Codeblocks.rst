@@ -377,6 +377,12 @@ code block.
             :emphasize-lines: 5,10-13
             :linenos:
 
+The directive can display parts of a file, for example with :rst:`:lines:`
+or — more robust against later edits — with the markers :rst:`:start-after:`
+and :rst:`:end-before:` around a named region. Store include-only files with
+a leading underscore (:file:`_Example.yaml`), as described in the
+:ref:`file structure conventions <file-structure>`.
+
 See also `literalinclude directive
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
 
