@@ -229,6 +229,24 @@ To set up a GitLab webhook:
     ..  figure:: /_Images/webhook/gitlab/intercept-feedback.png
         :width: 932
 
+..  _webhook-deliveries:
+
+Reading the webhook deliveries on GitHub
+========================================
+
+In the GitHub repository settings under :guilabel:`Webhooks > Recent
+Deliveries` every delivery shows the response of the documentation server:
+
+*   `200`: ping accepted.
+*   `204`: push accepted, a rendering was triggered.
+*   `412`: repository not approved yet — expected for the first test
+    delivery before the Documentation Team has approved the project.
+
+A branch push and a tag push are separate deliveries. When a new version does
+not appear on docs.typo3.org, check the delivery of the **tag** push — the
+branch push having succeeded says nothing about the tag. GitLab and Bitbucket
+show the corresponding information in their webhook edit views.
+
 ..  _webhook-testing:
 
 Testing webhooks
