@@ -336,11 +336,17 @@ Limitations of the method signature parser
 
 The restriction applies to the **return type** after the colon: it has to be a
 single word. A nullable type (:php:`?string`), a union type
-(:php:`string|null`), and a fully qualified class name (:php:`\Vendor\Thing`)
-are all rejected, and the whole signature is then reported as invalid.
+(:php:`string|null`), an intersection type (:php:`Countable&Traversable`) and a
+fully qualified class name (:php:`\Vendor\Thing`) are all rejected.
 
 Parameter types are not restricted — :php:`?string $identifier` and
-:php:`string|null $identifier` are accepted.
+:php:`string|null $identifier` are accepted, as are :php:`static`,
+:php:`array` and a missing return type.
+
+A rejected signature does not only produce a build warning. The whole text is
+then taken as the method name, so the parameters disappear, an empty
+:rst:`()` is rendered after it, and the anchor is built from the entire
+signature — which means cross references to that method cannot resolve.
 
 So leave a return type of that kind out of the signature and declare it in the
 field list:
