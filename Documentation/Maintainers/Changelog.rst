@@ -37,6 +37,8 @@ their commit message to the issue, for example
 
     Resolves: https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues/790
     Releases: main
+    Assisted-by: Claude Sonnet 5 <noreply@anthropic.com>
+    Signed-off-by: Jane Doe
 
 ..  index::
     Documentation; Deprecations

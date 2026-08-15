@@ -13,7 +13,7 @@ commit message (as done in the Core):
 
 ..  code-block:: text
 
-    Releases: main, 12.4
+    Releases: main, 14.3
 
 However, this is not enforced and not always done. In any case, it is
 up to the user merging a PR to decide how far the changes are to be
@@ -33,10 +33,12 @@ Leave a hint about which versions you have tested, for example:
 
 ..  code-block:: text
 
-    Verified this on 12.4 and 11.5, I suspect it will also still be the case on
+    Verified this on 14.3 and 13.4, I suspect it will also still be the case on
     main. Could someone verify this please?
 
-    Releases: main, 12.4, 11.5
+    Releases: main, 14.3, 13.4
+    Assisted-by: Claude Sonnet 5 <noreply@anthropic.com>
+    Signed-off-by: Jane Doe
 
 The backporting itself will be done by the maintainers of the Documentation Team.
 Sometimes automatic backporting is not possible due to changes in the documentation
