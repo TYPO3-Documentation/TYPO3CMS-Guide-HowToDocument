@@ -5,13 +5,3 @@
 
 Open the file saved to :file:`Documentation-GENERATED-temp/Index.html` in a
 browser of your choice.
-
-..  note::
-    The :bash:`--output` option is resolved **inside** the container. If it
-    points to a path that is not below the mounted volume
-    (:bash:`-v $(pwd):/project`), the rendered files are written to the
-    container's own file system and discarded when the container is removed —
-    while the command still reports that the files were placed successfully.
-    Either omit :bash:`--output` (default:
-    :file:`Documentation-GENERATED-temp`) or use a path below
-    :file:`/project`.
