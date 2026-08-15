@@ -334,21 +334,23 @@ tool.
 Limitations of the method signature parser
 ==========================================
 
-The signature parser does not understand all modern PHP type syntax. Nullable
-types (:php:`?string`) and union types (:php:`string|null`,
-:php:`string|array`) in the signature lead to build warnings or wrong output.
+The restriction applies to the **return type** after the colon: it has to be a
+single word. A nullable type (:php:`?string`), a union type
+(:php:`string|null`), and a fully qualified class name (:php:`\Vendor\Thing`)
+are all rejected, and the whole signature is then reported as invalid.
 
-Declare such types in the field list instead:
+Parameter types are not restricted — :php:`?string $identifier` and
+:php:`string|null $identifier` are accepted.
+
+So leave a return type of that kind out of the signature and declare it in the
+field list:
 
 ..  code-block:: rst
 
-    ..  php:method:: retrieve(string $identifier)
+    ..  php:method:: retrieve(?string $identifier)
 
         Retrieve a value.
 
         :param string $identifier: The identifier.
         :returns: The stored value or `null` if not found.
         :returntype: string|null
-
-For a nullable parameter, give it a default of `null` in the signature and
-document the type as `string|null` in the :rst:`:param:` field.
