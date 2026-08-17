@@ -52,3 +52,17 @@ Example:
 
     *   three
 
+..  _writing-rest-comments-todo:
+
+Open tasks (todo)
+-----------------
+
+Use :rst:`..  todo::` for notes addressed to other authors. Its content never
+reaches the rendered page, which is intended: a todo note is internal. It is
+the better choice over a plain comment, because ``todo::`` is a distinct string
+that can be searched for, while :rst:`..` alone also begins every directive and
+every anchor.
+
+The flip side is that nothing reminds you of it while reading the rendered
+page. Search for ``todo::`` before merging instead of expecting to notice an
+open task in a preview.
