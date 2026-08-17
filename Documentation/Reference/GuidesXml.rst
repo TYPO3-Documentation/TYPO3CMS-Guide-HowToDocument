@@ -50,6 +50,13 @@ And follow the interactive question.
 
         The following settings can be relevant for TYPO3 themed documentation:
 
+        ..  note::
+            The schema accepts a :xml:`theme` attribute on :xml:`<guides>`,
+            but TYPO3 documentation does not need it: the theme is loaded by
+            the :xml:`<extension class="...Typo3DocsThemeExtension">` tag. A
+            :xml:`<theme>` **child element** is invalid and aborts rendering
+            with `Invalid type for path guides.theme`.
+
         ..  _settings-guides-default-code-language:
 
         ..  confval:: default-code-language
@@ -136,6 +143,9 @@ And follow the interactive question.
             :caption: Documentation/guides.xml, excerpt
 
             <inventory id="sphinx" url="https://www.sphinx-doc.org/en/master/"/>
+
+        The :xml:`url` should end with a trailing slash (:xml:`.../en-us/`) —
+        without it, resolving the inventory can fail.
 
 
     ..  _settings-guides-project:
@@ -241,6 +251,12 @@ And follow the interactive question.
 
         The class attribute is mandatory, it references the extension that is used
         to render the documentation with the TYPO3 documentation theme.
+
+        ..  note::
+            If the :xml:`class` attribute (or the whole :xml:`<extension>`
+            tag) is missing, the documentation renders with the default
+            phpDocumentor layout instead of the TYPO3 theme. No error is
+            raised — the output just looks wrong.
 
         ..  _settings-guides-github-workflow:
 
