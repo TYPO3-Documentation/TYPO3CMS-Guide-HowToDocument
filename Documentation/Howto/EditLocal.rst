@@ -102,25 +102,26 @@ the ability to experiment and preview your changes locally before submitting the
     `[BUGFIX]` or `[FEATURE]` -- followed by a short, imperative summary,
     for example `[TASK] Document anchor persistence rule`.
 
-    Explain *why* the change is needed in the body. The diff already shows
-    what changed; the body should cover what the diff cannot.
+    Explain *why* the change is needed in the body of the commit. The diff
+    already shows what has changed. The commit body should cover what the diff
+    cannot.
 
-    End with a `Signed-off-by: Your Name` trailer. If you used AI assistance
-    for more than a basic spelling or grammar check, add an
+    End with a `Signed-off-by: Your Name` trailer. If you have used AI assistance
+    for more than basic spelling or grammar checks, add an
     `Assisted-by: <tool/model name> <contact>` trailer as well.
 
-    If the change is related to a changelog entry, mention that changelog
-    entry. If it is related to a Gerrit change that had no changelog entry,
-    mention that Gerrit change instead. If it is related to an issue,
+    If the change is related to a changelog entry, mention the changelog
+    entry. If it is related to a Gerrit change that does not have a changelog
+    entry, mention the Gerrit change instead. If it is related to an issue,
     mention the issue number. See :ref:`howto-update-docs-commit-messages`
     for an example.
 
-    If the manual has branches per version, add a line like
-    `Releases: main, 14.3` to note which versions your change applies to
-    (see :ref:`review-policy`). Backporting to those branches then happens
-    automatically (see :ref:`backport-changes`) -- manual backporting is
+    If the manual has version branches, add a line like
+    `Releases: main, 14.3` to note which version branches your change applies to
+    (see :ref:`review-policy`). Backporting to these branches will then happen
+    automatically (see :ref:`backport-changes`). Manual backporting is
     only needed if the automatic backport hits a conflict or the content
-    needs to be adjusted per version.
+    needs to be changed for a version.
 
 9.  Push changes
 
