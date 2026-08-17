@@ -55,6 +55,13 @@ We will use :file:`Documentation-Migrated` as the output directory.
             New-Item -ItemType Directory -Force -Path ".\Documentation-Migrated"
             docker run --rm --pull always -v ${PWD}:/project -it ghcr.io/typo3-documentation/render-guides:latest --theme=rst --output-format=rst --output Documentation-Migrated
 
+..  note::
+    :bash:`--output` is resolved inside the container, so the path has to stay
+    below the mounted volume (:bash:`-v $(pwd):/project`). A path outside it is
+    written to the container's own file system and disappears with the
+    container, while the command still reports the files as placed. The
+    relative :file:`Documentation-Migrated` above satisfies this.
+
 Now we can copy the :file:`guides.xml` from the original directory documentation directory to the new directory. And remove the
 option `input-format="md"`. This will tell the rendering toolchain to use the ReST files instead of the Markdown files.
 
