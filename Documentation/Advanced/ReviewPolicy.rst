@@ -29,7 +29,7 @@ the following:
 *   Please ensure that your Pull Request is **made against the appropriate
     version of the documentation**, usually against the `main` branch. If the
     changes you propose apply to specific versions of the documentation,
-    you can add a line like `Releases: main, 12.4, 11.5` to note any
+    you can add a line like `Releases: main, 14.3, 13.4` to note any
     Git branch that your change would apply to. If you are unsure,
     our maintainers will take care of it - this is just a step to make
     their work easier.
