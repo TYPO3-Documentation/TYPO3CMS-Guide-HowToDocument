@@ -272,9 +272,10 @@ For this to work, `ext_core` must be defined in :file:`Settings.cfg`:
 Referring to GUI elements
 =========================
 
-If you describe something that needs to be selected from a menu or other GUI
-element or clicked one after the other, use *>* as separator and use
-:ref:`text role guilabel <text-roles>`.
+Use :ref:`text role guilabel <text-roles>` for any label that is visible in
+the GUI: a backend module, a tab, a button, a field, or a menu entry. If you
+describe several of these being selected or clicked one after the other, use
+`>` as separator inside a single :rst:`:guilabel:`.
 
 ..  important::
 
@@ -295,6 +296,13 @@ How it looks:
 
 How it looks:
     Click on :guilabel:`ADMIN TOOLS > Extensions` in the backend.
+
+..  code-block:: rst
+
+    Manage extensions in the :guilabel:`Extension Manager` module.
+
+How it looks:
+    Manage extensions in the :guilabel:`Extension Manager` module.
 
 
 ..  index::

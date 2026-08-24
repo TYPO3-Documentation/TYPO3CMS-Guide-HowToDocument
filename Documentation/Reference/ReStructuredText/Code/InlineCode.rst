@@ -94,8 +94,11 @@ those cases a plain literal reads more honestly:
 
 *   When you are talking about a concept rather than naming a specific,
     resolvable class — for example "a PreviewRenderer" used generically,
-    not `\Vendor\Ext\PreviewRenderer` — a plain literal fits better, since
-    there is no single class the infobox could point to.
+    not `\\Vendor\\Ext\\PreviewRenderer` — a plain literal fits better,
+    since there is no single class the infobox could point to. Note the
+    doubled backslashes: unlike :rst:`:php:`, a plain literal drops a
+    single backslash instead of printing it — see
+    `Supported named inline text roles <https://docs.typo3.org/permalink/h2document:text-roles-backslash>`_.
 
 *   Headlines are the one place to leave roles out entirely, including
     :rst:`:php:`/:rst:`:php-short:` — use plain backticks there even for
