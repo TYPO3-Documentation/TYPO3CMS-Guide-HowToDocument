@@ -1,0 +1,7 @@
+[TASK] Add missing alt text for screenshots
+
+Screen reader users could not tell what the two new screenshots showed.
+Add descriptive alt text to both.
+
+Assisted-by: Claude Sonnet 5 <noreply@anthropic.com>
+Signed-off-by: Jane Doe

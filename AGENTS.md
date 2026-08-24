@@ -27,14 +27,13 @@ CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
    `Documentation/Reference/ReStructuredText/Links/Anchors.rst`.
 6. **Validate before committing** — run `make test-docs`.
 7. **Never commit or push without being asked.**
-8. **Commit message**: short body explaining why, ending with
-   `Assisted-by: <tool/model name> <contact>` and
-   `Signed-off-by: <actual committer name>` trailers. This repo has only
-   `main` (no LTS branches), so skip `Releases:`/`Resolves:`.
+8. **Commit message**: follow [Documentation/Advanced/CommitMessages.rst](Documentation/Advanced/CommitMessages.rst).
+   This repo has only `main` (no LTS branches), so skip `Releases:`/`Resolves:`.
 
 ## References
 
 - [CONTRIBUTING.rst](CONTRIBUTING.rst) — contribution workflow
+- [Documentation/Advanced/CommitMessages.rst](Documentation/Advanced/CommitMessages.rst) — commit message conventions
 - [Documentation/Advanced/ContentStyleGuide.rst](Documentation/Advanced/ContentStyleGuide.rst) — official writing style guide
 - [Documentation/Advanced/CodingGuidelines.rst](Documentation/Advanced/CodingGuidelines.rst) — reST formatting conventions
 - [Documentation/Reference/ReStructuredText/](Documentation/Reference/ReStructuredText/) — reST syntax reference (roles, directives, anchors, code blocks, ...)
