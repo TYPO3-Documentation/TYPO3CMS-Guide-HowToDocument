@@ -37,8 +37,9 @@ Leave a hint about which versions you have tested, for example:
     main. Could someone verify this please?
 
     Releases: main, 14.3, 13.4
-    Assisted-by: Claude Sonnet 5 <noreply@anthropic.com>
-    Signed-off-by: Jane Doe
+
+See :ref:`commit message conventions <commit-messages>` for the full
+picture.
 
 The backporting itself will be done by the maintainers of the Documentation Team.
 Sometimes automatic backporting is not possible due to changes in the documentation

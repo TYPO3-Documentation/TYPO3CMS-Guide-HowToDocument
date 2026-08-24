@@ -98,29 +98,13 @@ the ability to experiment and preview your changes locally before submitting the
 
         git commit -a
 
-    Prefix the summary line with the type of change -- `[TASK]`,
-    `[BUGFIX]` or `[FEATURE]` -- followed by a short, imperative summary,
-    for example `[TASK] Document anchor persistence rule`.
+    See :ref:`commit message conventions <commit-messages>` for how to
+    phrase the summary line and body, which trailers to add, and how to
+    reference related changes, for example:
 
-    Explain *why* the change is needed in the body. The diff already shows
-    what changed; the body should cover what the diff cannot.
-
-    End with a `Signed-off-by: Your Name` trailer. If you used AI assistance
-    for more than a basic spelling or grammar check, add an
-    `Assisted-by: <tool/model name> <contact>` trailer as well.
-
-    If the change is related to a changelog entry, mention that changelog
-    entry. If it is related to a Gerrit change that had no changelog entry,
-    mention that Gerrit change instead. If it is related to an issue,
-    mention the issue number. See :ref:`howto-update-docs-commit-messages`
-    for an example.
-
-    If the manual has branches per version, add a line like
-    `Releases: main, 14.3` to note which versions your change applies to
-    (see :ref:`review-policy`). Backporting to those branches then happens
-    automatically (see :ref:`backport-changes`) -- manual backporting is
-    only needed if the automatic backport hits a conflict or the content
-    needs to be adjusted per version.
+    ..  literalinclude:: /_CodeSnippets/_CommitMessageExample.txt
+        :caption: Example commit message
+        :language: text
 
 9.  Push changes
 

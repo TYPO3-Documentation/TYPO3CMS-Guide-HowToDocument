@@ -69,8 +69,9 @@ Workflow #1: "Edit on GitHub"
 8.  Finalize your changes:
 
     When you are ready, scroll down to the bottom of the page. Add
-    a short (but meaningful) description that outlines the changes you have made and click "Propose
-    file change"
+    a commit message that outlines the changes you have made -- see
+    :ref:`commit message conventions <commit-messages>` -- and click
+    "Propose file change"
 
     ..  image:: /_Images/github-propose-file-changes.png
         :class: with-border with-shadow
