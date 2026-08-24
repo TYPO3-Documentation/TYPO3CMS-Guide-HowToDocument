@@ -28,17 +28,12 @@ Commit messages
 ===============
 
 All changes that are related to such an issue should contain a reference in
-their commit message to the issue, for example
+their commit message to the issue (see :ref:`commit message conventions
+<commit-messages>` for the full picture), for example:
 
-..  code-block:: text
+..  literalinclude:: /_CodeSnippets/_ChangelogCommitMessageExample.txt
     :caption: Example commit message
-
-    [FEATURE] Add ApplicationContext to TypoScript data
-
-    Resolves: https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues/790
-    Releases: main
-    Assisted-by: Claude Sonnet 5 <noreply@anthropic.com>
-    Signed-off-by: Jane Doe
+    :language: text
 
 ..  index::
     Documentation; Deprecations
