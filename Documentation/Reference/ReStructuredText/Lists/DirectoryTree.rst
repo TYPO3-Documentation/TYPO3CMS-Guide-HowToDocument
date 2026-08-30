@@ -147,12 +147,22 @@ Example: a page tree with empty folders
 Properties
 ==========
 
+..  _writing-rest-directory-tree-properties-level:
+
+level
+-----
+
 ..  confval:: level
     :name: directory-tree-level
     :type: int
     :default: unlimited
 
     Limit the levels of the tree initially shown expanded.
+
+..  _writing-rest-directory-tree-properties-show-file-icons:
+
+show-file-icons
+---------------
 
 ..  confval:: show-file-icons
     :name: directory-tree-show-file-icons
