@@ -1,3 +1,5 @@
+:navigation-title: Changelog
+
 ..  include:: /Includes.rst.txt
 ..  index::
     Documentation; Update
@@ -26,6 +28,8 @@ Each Core change affecting the changelog automatically creates an
 `Issue in the repository Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`_.
 New issues here should be treated with priority.
 
+..  contents:: Table of contents
+
 ..  index:: pair: Updates; Commit messages
 
 ..  _howto-update-docs-commit-messages:
@@ -40,6 +44,78 @@ their commit message to the issue (see :ref:`commit message conventions
 ..  literalinclude:: /_CodeSnippets/_ChangelogCommitMessageExample.txt
     :caption: Example commit message
     :language: text
+
+..  index:: pair: Updates; Pull requests
+..  _howto-update-docs-one-pr-per-issue:
+
+One pull request per issue
+==========================
+
+Document each `Changelog-To-Doc issue
+<https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`__ in
+its own pull request, with a title matching the issue's own title. Do
+not bundle documentation for several issues into a single pull request,
+even if they touch the same page.
+
+This also makes reverts easier: if a feature gets reverted before
+release (see :ref:`Which TYPO3 versions were affected?
+<changelog-affected-versions>`), a self-contained pull request can be
+reverted cleanly, without pulling in unrelated documentation changes
+along with it.
+
+..  index:: pair: Changelog; TYPO3 versions
+..  _changelog-affected-versions:
+
+Which TYPO3 versions were affected?
+===================================
+
+Before writing the documentation, find out which TYPO3 version(s) the
+change actually shipped in - this decides which docs branch(es) to work
+on and which :ref:`Releases: trailer and backport labels
+<backport-changes>` to use.
+
+The source of truth is the changelog entry's own path in `typo3/typo3
+<https://github.com/TYPO3/typo3>`__, under
+:file:`Documentation/Changelog/<version>/`. That version is the earliest
+one the change shipped in - it then also applies to every later release,
+forward from that point on. For example:
+
+*   :file:`14.3.x/Important-110591-CustomColumnsInTheWorkspacesModule.rst`
+    was introduced after the initial 14.3 LTS release, so it first
+    appears in a later 14.3 patch release (14.3.22) and is also part
+    of 15.0.
+*   :file:`14.2/Feature-108975-AddConfigurationProviderForExtbaseClassConfiguration.rst`
+    was part of 14.2.0, and therefore also of 14.3.0 and 15.0.
+*   :file:`13.3/Feature-104878-IntroduceDashboardWidgetForPagesWithLatestChanges.rst`
+    was part of 13.3.0, 13.4.0, and every 14.x and 15.x release since.
+
+The version label(s) already on the Changelog-To-Doc issue itself (for
+example :guilabel:`14.2`) are a convenient shortcut - the issue is
+automatically labeled from that same path - but not the source of truth
+themselves.
+
+Do not rely only on the `Releases:` trailer of the Core commit the issue
+links to. While a change is being developed, the version it targets is
+often simply `main` - a dedicated branch for that version does not exist
+yet. The trailer, written at commit time, reflects that and may only say
+`main`, even though `main` later becomes that specific version, and
+further versions branch off from that same point afterwards.
+
+If you are documenting a feature that has not shipped yet - for example a
+feature planned for 15.0 before 15.0's first release - use that future
+version anyway, as decided on the roadmap. Documentation should be ready
+by the time a release ships, not written only afterwards.
+
+If such a feature is reverted before release, the changelog file gets
+deleted and a new Changelog-To-Doc issue is opened for the revert - use
+that to roll back the corresponding documentation change.
+
+You can also follow the issue's link to the change in `Gerrit
+<https://review.typo3.org>`__ (for example
+https://review.typo3.org/c/Packages/TYPO3.CMS/+/85987), open the
+:guilabel:`⋮` menu in the upper right corner and select
+:guilabel:`Included In` - it lists every version the change was ever
+included in.
 
 ..  index::
     Documentation; Deprecations
