@@ -147,7 +147,8 @@ TER (https://extensions.typo3.org) are two separate, independent entities.
 
 In theory you could have the documentation in GitHub (for example)
 and the extension (code) somewhere else (or not in Git at all). You just
-need to fire the webhook from GitHub/GitLab/Bitbucket to trigger the
+need to fire the webhook from one of the
+:ref:`supported repository hosts <webhook>` to trigger the
 documentation rendering.
 
 
