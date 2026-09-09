@@ -5,7 +5,54 @@
 Code snippet generation
 =======================
 
-..  todo: Document how to create additional code snippets
+..  _codesnippet-add-new:
+
+Add a code snippet for a new class
+==================================
+
+The API section of a manual page (for example a PSR-14 event page) is
+usually not written by hand: it is generated from the class's own PHP
+doc-comments and method signatures by `t3docs-codesnippets
+<https://github.com/TYPO3-Documentation/t3docs-codesnippets>`__, and then
+included into the page with:
+
+..  code-block:: rst
+
+    ..  include:: /CodeSnippets/Events/Core/SomeEvent.rst.txt
+
+To make the generator pick up a new class, register it in the manual's
+:file:`Documentation/CodeSnippets/Config/` tree. For events this is one PHP
+file per category, for example
+:file:`Documentation/CodeSnippets/Config/Api/Events/EventsCore.php` for
+:composer:`typo3/cms-core`, returning an array of entries:
+
+..  code-block:: php
+    :caption: Documentation/CodeSnippets/Config/Api/Events/EventsCore.php
+
+    [
+        'action' => 'createPhpClassDocs',
+        'class' => \TYPO3\CMS\Core\Routing\Event\AfterPageUriGeneratedEvent::class,
+        'targetFileName' => 'CodeSnippets/Events/Core/AfterPageUriGeneratedEvent.rst.txt',
+        'withCode' => false,
+    ],
+
+..  attention::
+    :file:`targetFileName` is flat per top-level category
+    (:file:`CodeSnippets/Events/Core/...`), regardless of any subfolder the
+    corresponding manual page itself lives in (for example
+    :file:`ApiOverview/Events/Events/Core/Routing/...`). Match the existing
+    files in the same category rather than mirroring the page's own path.
+
+If there is no config file for the class's category yet, create one
+following the pattern above and add it to that tree's :file:`All.php`
+aggregator so it is picked up.
+
+After adding the entry, run the class through the generator (see
+:ref:`Regenerate existing code snippets <codesnippet-regeneration>` below)
+to create the actual :file:`.rst.txt` file. If you cannot run the generator
+locally, you can write the file by hand in the same format so the page
+renders correctly in the meantime - the next real generator run will
+overwrite it with equivalent content, so this is not destructive.
 
 ..  _codesnippet-regeneration:
 
