@@ -54,7 +54,9 @@ They then look like this:
 
     `ReST Cheat sheet <https://docs.typo3.org/permalink/h2document:rest-cheat-sheet>`_
 
-Permalinks are automatically checked and resolved during rendering.
+Permalinks are resolved during rendering, but not every broken one is
+reported: see :ref:`Permalinks <permalinks>` for the three rules a
+hand-written permalink has to follow.
 
 External links can be copied into the document they will be auto detected. Or
 the standard reST Syntax can be used:
