@@ -14,7 +14,7 @@ CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
 ## Commands
 
 - `make docs` — render the manual locally with Docker
-- `make test-docs` — render in minimal-test mode; use this to validate any change before committing
+- `make test-docs` — render in minimal-test mode (the same validation CI runs); use this to validate any change before committing
 
 ## Rules
 
