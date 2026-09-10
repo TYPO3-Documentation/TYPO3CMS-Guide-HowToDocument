@@ -605,4 +605,3 @@ And follow the interactive question.
                  <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
                        typo3-core-preferred="stable"
             </guides>
-

@@ -227,5 +227,3 @@ resources, for example:
 *   `How to Create a Pull Request on GitHub
     <https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github>`__
 *   `Fork a repo <https://help.github.com/en/articles/fork-a-repo>`__
-
-

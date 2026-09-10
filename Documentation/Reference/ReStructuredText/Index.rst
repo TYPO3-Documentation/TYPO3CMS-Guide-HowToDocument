@@ -30,4 +30,3 @@ available. For more information, see other resources, such as:
     :glob:
 
     */Index
-
