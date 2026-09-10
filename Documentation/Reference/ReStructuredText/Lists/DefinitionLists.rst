@@ -208,4 +208,3 @@ Result:
 Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
 
 Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
-

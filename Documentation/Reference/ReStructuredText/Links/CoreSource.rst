@@ -21,4 +21,3 @@ and any other file type like
     :t3src:`typo3/sysext/core/Classes/Pagination/SlidingWindowPagination.php`
     and any other file type like
     :t3src:`typo3/sysext/core/Resources/Private/Templates/ErrorPage/Error.html`.
-

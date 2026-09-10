@@ -139,5 +139,3 @@ platforms as well (for example GitHub), you should not use this.
 
     -   :Header1:   2
         :Header2:   two
-
-

@@ -214,10 +214,10 @@ Here is a list of currently agreed stances:
 ..  _review-policy-opinionated-fqcn:
 *   When referencing PHP class names / object types, spell out their "Fully Qualified Class Name" (FQCN) on first use.
 
-..  
+..
 *   See :ref:`format-rest-cgl` for coding guidelines of reST formatting.
 
-..  
+..
 *   See :ref:`content-styleguide` for more spelling / writing rules.
 
 ..  _review-policy-todo:
@@ -249,4 +249,3 @@ A few things still need to be addressed:
     *   Exact prefixes for "Vendor" ("MyVendor"?) and Extensions ("MyExtension" or "MySitepackage"?)
 
     *   Remove redundancy between :ref:`review-policy-opinionated` and :ref:`content-styleguide` (split it up into "technical" and "grammar"?)
-

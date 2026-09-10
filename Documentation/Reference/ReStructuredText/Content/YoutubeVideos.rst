@@ -35,4 +35,3 @@ Embed YouTube videos
     2018-01-19 by Mathias Schreiber
 
     ..  youtube:: wNxO-aXY5Yw
-
