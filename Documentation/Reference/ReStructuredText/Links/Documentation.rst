@@ -66,3 +66,46 @@ page or if another section with the same headline was introduced.
 
 We suggest adding a unique link anchor to the headline to be linked to in this
 case. See section :ref:`Link anchors <link-targets-explanation>`.
+
+..  _permalinks:
+
+Permalinks
+==========
+
+The same modal also offers a permalink: a plain URL that resolves to the
+current location of the element.
+
+..  code-block:: rst
+    :caption: A permalink used as an external link
+
+    `Cache tags <https://docs.typo3.org/permalink/t3coreapi:caching-developer-cache-tags>`_
+
+Permalinks are the preferred way to link TYPO3 documentation. Unlike a reST
+reference, a permalink can be opened directly from the source file — in an
+editor, a diff or a review — without rendering the manual first, and it works
+outside reST as well, for example in a commit message or an issue.
+
+Copy permalinks from the modal rather than assembling them by hand. A permalink
+follows three rules that are easy to get wrong:
+
+#.  **The interlink shortcode is required.** It is needed even when the anchor
+    lives in the manual you are writing in:
+    `permalink/t3coreapi:dependency-injection` resolves,
+    `permalink/dependency-injection` does not.
+
+#.  **The manual is written with hyphens, not slashes.** This is where a
+    permalink differs from the reST reference above: :rst:`:ref:` uses
+    `friendsoftypo3/content-blocks:`, the permalink uses
+    `friendsoftypo3-content-blocks:`.
+
+#.  **Underscores in an anchor become hyphens.** The anchor
+    `..  _run_upgrade_wizard:` is published as `run-upgrade-wizard`, so only
+    `permalink/t3coreapi:run-upgrade-wizard` resolves.
+
+..  warning::
+    A wrong permalink can render without any warning and still return 404 for
+    readers. Rendering resolves the URL against the anchors it holds in memory,
+    while docs.typo3.org resolves it against the published inventory, in which
+    the keys are normalized. All three mistakes above therefore pass a
+    :bash:`make test-docs` run. See
+    `render-guides issue #1402 <https://github.com/TYPO3-Documentation/render-guides/issues/1402>`_.
