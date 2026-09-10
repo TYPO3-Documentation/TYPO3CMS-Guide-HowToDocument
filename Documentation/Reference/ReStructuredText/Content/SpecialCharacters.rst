@@ -23,7 +23,6 @@ Some lists of characters
 ========================
 
 ARROW
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=arrow&.submit=Suchen>`__
     :sep:`|` ⃪ ⃮ ⃯ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙
     ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨
     ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷
@@ -52,59 +51,48 @@ ARROW
     :sep:`|`
 
 BULLET
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=bullet&.submit=Suchen>`__
     :sep:`|` • ‣ ⁃ ⁌ ⁍ ∙ ◘ ◦ ☙ ❥ ❧ ⦾ ⦿ 🚅
     :sep:`|`
 
 CHECK
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=check&.submit=Suchen>`__
     :sep:`|` ☑ ✅ ✓ ✔
     :sep:`|`
 
 CIRCLED DIGIT
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+digit&.submit=Suchen>`__
     :sep:`|` ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨
     :sep:`|`
 
 CIRCLED LATIN
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=latin&.submit=Suchen>`__
     :sep:`|` ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ
     :sep:`|` ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ
     :sep:`|`
 
 CIRCLED NUMBER
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=circled+number&.submit=Suchen>`__
     :sep:`|` ⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲ ⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙ ㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴ ㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾ ㊿
     :sep:`|`
 
 DOUBLE CIRCLED DIGIT
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=double+circled+digit&.submit=Suchen>`__
     :sep:`|` ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽
     :sep:`|`
 
 NEGATIVE CIRCLED DIGIT
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+digit&.submit=Suchen>`__
     :sep:`|` ⓿ ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾
     :sep:`|`
 
 NEGATIVE CIRCLED NUMBER
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=negative+circled+number&.submit=Suchen>`__
     :sep:`|` ❿⓫⓬⓭⓮⓯⓰⓱⓲⓳ ⓴
     :sep:`|`
 
 QUOTATION
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=quotation&.submit=Suchen>`__
     :sep:`|` "«»―‘’‚‛“”„‟‹›❛❜❝❞❟❠❮❯〝〞〟＂
     :sep:`|` " « » ― ‘ ’ ‚ ‛ “ ” „ ‟ ‹ › ❛ ❜ ❝ ❞ ❟ ❠ ❮ ❯ 〝 〞 〟 ＂
     :sep:`|`
 
 PARENTHESIZED LATIN
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=PARENTHESIZED+latin&.submit=Suchen>`__
     :sep:`|` ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵
     :sep:`|`
 
 STAR
-    :sep:`|` `search <http://unicode-suche.de/unicode-namesearch.pl?term=star&.submit=Suchen>`__
     :sep:`|` ≛ ⋆ ⍟ ⍣ ★ ☆ ☪ ⚝ ✡ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ✴ ✵ ✶ ✷ ✸ ✹ ❂ ⭐ ⭑ ⭒ 🌟 🌠 🔯 ٭
     :sep:`|`
 
