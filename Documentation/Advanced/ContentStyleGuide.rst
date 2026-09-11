@@ -37,8 +37,10 @@ have a special spelling. See :ref:`spelling-ref`
 General information
 ===================
 
-The authoritative style guide for writing official text for TYPO3 is `The TYPO3 Writing Style Guide
-<https://typo3.org/community/teams/content/writing-style-guide/>`__ on typo3.org.
+The authoritative style guide for writing official text for TYPO3 is
+`The TYPO3 Writing Style Guide
+<https://docs.typo3.org/permalink/t3content:writing-style-guide>`__ in the
+TYPO3 documentation.
 
 ..  important::
 
