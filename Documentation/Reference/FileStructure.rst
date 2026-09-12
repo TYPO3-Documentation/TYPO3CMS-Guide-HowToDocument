@@ -222,7 +222,7 @@ Read more about the :ref:`guides-xml`.
 Example:
 
 ..  literalinclude:: _guides-simple.xml
-    :capition: Documentation/guides.xml
+    :caption: Documentation/guides.xml
 
 ..  _full-documentation-md:
 

@@ -25,7 +25,7 @@ is displayed.
 A navigation title can be defined as follows:
 
 ..  code-block:: rst
-    :capition: SomePage.rst
+    :caption: SomePage.rst
 
     :navigation-title: Navigation title
 
