@@ -129,6 +129,29 @@ will fail.
     See also the official
     `sphinx documentation on code-blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`__.
 
+..  _codeblocks-caption-excerpt:
+
+Captioning a part of a file
+---------------------------
+
+A caption names the file the code belongs in, so the reader knows where to put
+it. Add :rst:`(excerpt)` after the path when the block shows only a part of
+that file:
+
+..  code-block:: rst
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/Backend/Modules.php (excerpt)
+
+        'mymodule' => [
+            'parent' => 'content',
+        ],
+
+Use it whenever the block would not work on its own: a few keys out of a longer
+array, one method out of a class, the changed lines of a file that has more in
+it. Without the marker the caption reads as the whole file, and a reader who
+copies the block into a new file of that name loses everything around it.
+
 ..  _writing-rest-codeblocks-with-syntax-highlighting-examples:
 
 Examples
