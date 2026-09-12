@@ -44,9 +44,6 @@ A recommended recipe could be:
 #.  Add `.. _` at the beginning.
 #.  Add `:` at the end.
 
-We are currently trying to let `Fractor support <https://github.com/andreaswolf/fractor/issues/206>`
-this and other transformations.
-
 ..  _anchor-persistence:
 
 Keeping anchors working
