@@ -128,7 +128,7 @@ confval menues: :ref:`rest-confval`.
 Figures and images
 ==================
 
-..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
+..  literalinclude:: /_CodeSnippets/_Figure.rst.txt
     :caption: Documentation/MyDocs.rst
 
 *   :ref:`Images in reST <h2document:images>`
