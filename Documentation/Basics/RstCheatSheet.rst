@@ -19,6 +19,7 @@ Headlines and anchors
 Each reST document must have a title. It is overlined and underlined like this:
 
 ..  literalinclude:: /_CodeSnippets/_Headers.rst.txt
+    :caption: Documentation/MyDocs.rst
 
 There are more :ref:`levels of headlines <headlines-and-sections>`
 
@@ -128,6 +129,7 @@ Figures and images
 ==================
 
 ..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
+    :caption: Documentation/MyDocs.rst
 
 *   :ref:`Images in reST <h2document:images>`
 *   :ref:`Guidelines for creating images <h2document:guidelines-for-images>`

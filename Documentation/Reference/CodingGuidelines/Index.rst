@@ -57,6 +57,7 @@ Rules headlines
     can be generated.
 
 ..  literalinclude:: /_CodeSnippets/_Headers.rst.txt
+    :caption: Documentation/MyDocs.rst
 
 See `Headlines and Anchors <https://docs.typo3.org/permalink/h2document:headlines-and-sections>`_
 for more headline levels.

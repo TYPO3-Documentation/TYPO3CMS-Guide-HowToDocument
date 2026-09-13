@@ -8,6 +8,7 @@ Figures and diagrams
 You can upload images in any folder below `Documentation` and use it like that:
 
 ..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
+    :caption: Documentation/MyDocs.rst
 
 For details see `Using images in ReST documentation <https://docs.typo3.org/permalink/h2document:images>`_.
 

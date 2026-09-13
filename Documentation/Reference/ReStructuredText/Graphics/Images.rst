@@ -32,6 +32,7 @@ and search engine / artificial intelligence bots scanning our docs.
 Example:
 
 ..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
+    :caption: Documentation/MyDocs.rst
 
 Optional parameters for images and figures:
 
