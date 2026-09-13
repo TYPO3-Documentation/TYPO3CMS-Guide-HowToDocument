@@ -39,8 +39,12 @@ Whitespace and indentation
 
 *   remove white space from the end of lines (= no trailing tabs or spaces)
 *   don't use tabs
-*   one indentation level consists of **four spaces**
-*   code examples use four spaces as indentation level as well
+*   one indentation level of reST consists of **four spaces**
+*   code examples indent with **two spaces**, whatever the language they are
+    written in. An example that nests a few levels deep still has to fit the
+    line length below, and four spaces per level spends that budget on white
+    space. This is the one point where the documentation departs on purpose
+    from the indentation a language uses in a real project, PSR-12 included
 *   directive and hyperlink target markers use two spaces after :rst:`..`,
     e.g. :rst:`..  note::` or :rst:`..  _label:`
 *   list markers are followed by enough spaces to line up item text at a
@@ -93,42 +97,55 @@ Use this file to setup your editor / IDE correctly. With some, everything will
 just work automatically. With others, you will need to download a plugin. This
 is explained on the `Editorconfig <http://EditorConfig.org>`__ page.
 
-Sample contents of :file:`.editorconfig`
+The file below is the master copy. Every documentation repository uses it
+unchanged, so that a change of style is made in one place and copied out:
 
-..  code-block:: bash
+..  code-block:: ini
+    :caption: .editorconfig
     :linenos:
 
-    # EditorConfig is awesome: http://EditorConfig.org
+    # EditorConfig is awesome: https://EditorConfig.org
 
-    # top-most EditorConfig file? false = no!
-    root = false
+    # Master copy, used unchanged by every TYPO3 documentation repository:
+    # https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument
 
+    root = true
+
+    # Code examples indent two spaces, whatever the language, so that a nested
+    # example still fits the line length the prose around it is wrapped to
+    [*]
+    charset = utf-8
+    end_of_line = lf
+    indent_style = space
+    indent_size = 2
+    insert_final_newline = true
+    trim_trailing_whitespace = true
+
+    # reStructuredText is the exception: one indentation level is four spaces
     [{*.rst,*.rst.txt}]
-    charset = utf-8
-    end_of_line = lf
-    insert_final_newline = true
-    trim_trailing_whitespace = true
-    indent_style = space
     indent_size = 4
     max_line_length = 80
 
-    # MD-Files
     [*.md]
-    charset = utf-8
-    end_of_line = lf
-    insert_final_newline = true
-    trim_trailing_whitespace = true
-    indent_style = space
-    indent_size = 4
     max_line_length = 80
 
+    # Makefiles do not work without real tabs
+    [{Makefile,_Makefile,**.mk}]
+    indent_style = tab
 
-This sample .editorconfig will instruct your editor / IDE to:
+    # In a patch a leading or trailing space is content, not whitespace
+    [*.diff]
+    trim_trailing_whitespace = false
 
-*   use utf8 as encoding (line 7)
-*   use spaces instead of tabs (line 11)
-*   use 4 spaces for indenting (line 12)
-*   remove trailing whitespace (line 10)
+It instructs your editor / IDE to:
+
+*   use utf8 as encoding (line 11)
+*   use spaces instead of tabs (line 13)
+*   indent code examples with two spaces (line 14) and reST with four
+    (line 20)
+*   remove trailing whitespace (line 16)
+*   keep the tabs in a :file:`Makefile`, which does not work without them
+    (line 28)
 
 
 ..  index:: reST; Special characters
