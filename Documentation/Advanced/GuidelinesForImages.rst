@@ -11,7 +11,7 @@ Guidelines for creating images
 
 For accessibility reasons **always** provide an alt text:
 
-..  literalinclude:: /_CodeSnippets/_Figure.rts.txt
+..  literalinclude:: /_CodeSnippets/_Figure.rst.txt
     :caption: Documentation/MyDocs.rst
 
 More optional parameters for embedding images into ReST: :ref:`Images <h2document:images>`.
