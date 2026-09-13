@@ -19,6 +19,7 @@ Explicit links to `api.typo3.org`
 =================================
 
 ..  literalinclude:: _Api.rst.txt
+    :caption: Documentation/MyDocs.rst
 
 The links then look like this:
 
@@ -39,6 +40,7 @@ Implicit links have the advantage that they show more information about the
 class or interface in a popover while they still offer a link to the API.
 
 ..  literalinclude:: _ApiImplicit.rst.txt
+    :caption: Documentation/MyDocs.rst
 
 The links then look like this:
 
@@ -64,6 +66,7 @@ or interface within the text. Other then that it works just like the
 :ref:`:php: <links-api-fqn>` text role.
 
 ..  literalinclude:: _ApiShort.rst.txt
+    :caption: Documentation/MyDocs.rst
 
 The links then look like this:
 

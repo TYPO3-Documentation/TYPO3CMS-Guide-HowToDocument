@@ -237,6 +237,7 @@ The main entry point for Markdown documentation **must** be
 **should** contain a file called :file:`Index.md` if it contains Markdown at all.
 
 ..  literalinclude:: _snippets/_guides-md.xml
+    :caption: Documentation/guides.xml
     :linenos:
     :emphasize-lines: 6-8
 

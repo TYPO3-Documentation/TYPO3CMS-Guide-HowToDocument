@@ -30,6 +30,7 @@ Use headers to divide your document into sections. Start with h2:
 By convention we use the following underlines:
 
 ..  literalinclude:: /_CodeSnippets/_Headers.rst.txt
+    :caption: Documentation/MyDocs.rst
 
 Further headline levels are possible:
 
