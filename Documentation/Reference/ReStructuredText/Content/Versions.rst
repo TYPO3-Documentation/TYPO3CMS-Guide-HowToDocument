@@ -127,7 +127,7 @@ issue.
 ..  _rest-versions-changelog-option:
 
 Linking the changelog entry with :rst:`:changelog:`
-==================================================
+===================================================
 
 The examples above write the changelog permalink by hand into the
 directive body. The three directives also accept a :rst:`:changelog:`
@@ -148,7 +148,7 @@ copy the title and the URL. An entry that does not exist produces a build
 warning and the unresolved-reference marker instead of a link that leads
 nowhere, which a hand-written permalink cannot do.
 
-The option takes three forms:
+The entry can be addressed in three ways:
 
 ..  code-block:: rst
 
@@ -164,8 +164,8 @@ The option takes three forms:
     ..  versionchanged:: 2.1
         :changelog: #changes-2-1-0
 
-Where the resolved title does not describe the change -- an extension
-whose whole changelog page carries a single label, for instance -- give
+Where the resolved title does not describe the change - an extension
+whose whole changelog page carries a single label, for instance - give
 the text explicitly, in the same embedded form every other reference
 uses:
 
