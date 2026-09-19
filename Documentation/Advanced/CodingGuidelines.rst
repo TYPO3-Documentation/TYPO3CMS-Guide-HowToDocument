@@ -321,6 +321,21 @@ How it looks:
 How it looks:
     Manage extensions in the :guilabel:`Extension Manager` module.
 
+Only use :rst:`:guilabel:` for elements the reader can actually find in the
+GUI. Names that only exist in an example, such as a module the example
+registers, are no such labels: write them in italics instead. The strong
+highlighting of :rst:`:guilabel:` would make them stand out and suggest a real
+element of the backend.
+
+..  code-block:: rst
+
+    The example registers a *Conference* module with the submodules *Talks*
+    and *Speakers*.
+
+How it looks:
+    The example registers a *Conference* module with the submodules *Talks*
+    and *Speakers*.
+
 
 ..  index::
     reST; Keystrokes
