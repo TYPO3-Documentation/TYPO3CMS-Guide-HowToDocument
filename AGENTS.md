@@ -9,12 +9,21 @@ Documentation/                   # the actual manual (reST source, published to 
 ├── Reference/ReStructuredText/      # reST syntax reference (roles, directives, anchors, code blocks, ...)
 └── ...
 CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
+Build/ReviewAids/                # scripts that help review a change in any manual
 ```
 
 ## Commands
 
 - `make docs` — render the manual locally with Docker
 - `make test-docs` — render in minimal-test mode (the same validation CI runs); use this to validate any change before committing
+
+## Reviewing a change
+
+`Build/ReviewAids/` holds scripts that report what is worth a second look in
+a documentation change — in this repository or in any other manual, since the
+rules they check are the ones defined here. They report and never edit, and
+none of them is a test: see [Build/ReviewAids/README.md](Build/ReviewAids/README.md)
+for what each one is blind to before trusting a clean run.
 
 ## Rules
 
@@ -32,6 +41,7 @@ CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
 
 ## References
 
+- [Build/ReviewAids/README.md](Build/ReviewAids/README.md) — review aids, and why they are not tests
 - [CONTRIBUTING.rst](CONTRIBUTING.rst) — contribution workflow
 - [Documentation/Advanced/CommitMessages.rst](Documentation/Advanced/CommitMessages.rst) — commit message conventions
 - [Documentation/Advanced/ContentStyleGuide.rst](Documentation/Advanced/ContentStyleGuide.rst) — official writing style guide
