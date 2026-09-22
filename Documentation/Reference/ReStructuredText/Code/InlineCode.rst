@@ -73,6 +73,16 @@ those cases a plain literal reads more honestly:
 
         The `enablecolumns` key ...
 
+    The same applies to database table and column names such as
+    `tt_content` or `pid`. :rst:`:sql:` has nothing to resolve them to
+    either; its infobox only says "Code written in SQL". Keep
+    :rst:`:sql:` for actual SQL, such as a statement, a keyword like
+    :sql:`WHERE`, or a column type like :sql:`varchar(255)`:
+
+    ..  code-block:: rst
+
+        The `pid` column of the `pages` table ...
+
 *   When referencing a class, interface, or similar type on its own, pass
     the fully-qualified name (leading backslash, full namespace) to
     :rst:`:php-short:` rather than :rst:`:php:`. It still resolves the
