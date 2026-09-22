@@ -22,4 +22,4 @@ Numbered lists
 #.  bcd
 #.  cde
 
-See also :ref:`styled-numbered-lists`.
+See also :ref:`styled numbered sections (bignums) <styled-numbered-lists>`.

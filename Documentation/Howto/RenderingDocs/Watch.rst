@@ -23,7 +23,7 @@ and browser side-by-side.
 Prerequisites
 =============
 
-Configure the rendering as described here: :ref:`render-documentation-with-docker`.
+Configure the rendering as described in :ref:`rendering documentation locally with Docker <render-documentation-with-docker>`.
 
 The only thing that changes is the render command you use (see below).
 

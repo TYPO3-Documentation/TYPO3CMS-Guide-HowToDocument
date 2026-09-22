@@ -87,7 +87,7 @@ terminal.
 Installing additional extensions with Composer
 ==============================================
 
-Once inside the container (via :ref:`screenshot-ssh`), you can install TYPO3
+Once inside the container (via the :ref:`container shell <screenshot-ssh>`), you can install TYPO3
 extensions using Composer. For example:
 
 ..  code-block:: bash

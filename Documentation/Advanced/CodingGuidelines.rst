@@ -175,7 +175,7 @@ However, adhering to the standard for TYPO3 documentation makes it easier for
 other contributors to find their way around a file and pick the correct underlining
 for the header level.
 
-Use the conventions as defined in :ref:`Headlines-and-sections`.
+Use the :ref:`conventions for headlines <Headlines-and-sections>`.
 
 This underlining is used **per (.rst) file**. It does not matter where in the toctree
 the file is. You always start with underlining for level 1 (title) in each
@@ -268,11 +268,11 @@ The changelog has a title anchor, so you can easily link to it with `:ref:`.
 
 ..  code-block:: rst
 
-    :ref:`ext_core:feature-101544-1691063522`
+    :ref:`Feature #101544 <ext_core:feature-101544-1691063522>`
 
 which outputs the link:
 
-:ref:`ext_core:feature-101544-1691063522`
+:ref:`Feature #101544 <ext_core:feature-101544-1691063522>`
 
 For this to work, `ext_core` must be defined in :file:`Settings.cfg`:
 

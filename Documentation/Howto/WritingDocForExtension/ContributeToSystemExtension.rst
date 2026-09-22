@@ -10,13 +10,13 @@ The documentation for system extensions is maintained inside the TYPO3
 source code, so the contribution workflow is a little different.
 
 For more information about the various contribution workflows,
-see :ref:`overview-of-types`.
+see :ref:`types of documentation <overview-of-types>`.
 
 *   When it comes to documentation that is contained within the
     core (like system extension documentation and changelog), you would
     use Forge to report **issues**, using the category "Documentation":
     https://forge.typo3.org/projects/typo3cms-core/issues
-*   The :ref:`t3contribute:start` explains the **contribution workflow** for the core.
+*   The :ref:`TYPO3 Core Contribution Guide <t3contribute:start>` explains the **contribution workflow** for the core.
     For making a change to the documentation in the core, you would use the
     workflow explained in that guide (using Git and pushing to Gerrit).
 *   You can also test the change by :ref:`rendering locally <rendering-docs>`

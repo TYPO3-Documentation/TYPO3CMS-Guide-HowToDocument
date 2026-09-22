@@ -76,7 +76,7 @@ There are special links for composer packages (link to the package) and PHP clas
     :php:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent`
     :php-short:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent`
 
-There is a dedicated chapter on links and references in reST: :ref:`links`.
+There is a :ref:`dedicated chapter on links and references in reST <links>`.
 
 ..  _rest-cheat-sheet-code-blocks:
 
@@ -121,7 +121,7 @@ Configuration values can be defined like this:
         The name of the field as shown in the form.
 
 Configuration values can have custom properties and displayed in special
-confval menues: :ref:`rest-confval`.
+:ref:`confval menus <rest-confval>`.
 
 ..  _rest-cheat-sheet-images:
 
@@ -173,7 +173,7 @@ Looks like this:
 :php:`\TYPO3\CMS\Seo\Event\ModifyUrlForCanonicalTagEvent` :guilabel:`Web > Page`
 :composer:`typo3/cms-seo`
 
-More: :ref:`rest-bold-italic`.
+More: :ref:`basic inline markup <rest-bold-italic>`.
 
 ..  _rest-cheat-sheet-comments:
 

@@ -12,10 +12,10 @@ This chapter is an introduction and reference for writing documentation using
 reStructuredText (also referred to as reST).
 
 It is recommended to read (or at least browse through)
-the :ref:`writing-rest-introduction` and the general
-:ref:`format-rest-cgl` first.
+the :ref:`reST introduction <writing-rest-introduction>` and the general
+:ref:`reST coding guidelines <format-rest-cgl>` first.
 
-Or, use the :ref:`rest-cheat-sheet`, which contains the most commonly used
+Or, use the :ref:`reST cheat sheet <rest-cheat-sheet>`, which contains the most commonly used
 markup on one page.
 
 We cannot cover every reST markup that is

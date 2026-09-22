@@ -19,7 +19,7 @@ to continuously improve our process.
 Policy for contributors
 =======================
 
-As outlined in the chapter :ref:`docs-contribute`, contributors can
+As outlined in :ref:`how to contribute <docs-contribute>`, contributors can
 provide so called "Pull Requests" (PRs) to our manual repositories
 on GitHub.
 
@@ -98,7 +98,7 @@ Basic work on contributions
 
     *   **Fix mistakes in reST markup** (indentation, wrong directives, missing headers,
         wrong or missing linebreaks, wrong or bad links/references, ...) - see
-        :ref:`format-rest-cgl`.
+        the :ref:`reST coding guidelines <format-rest-cgl>`.
 
 ..  _review-policy-maintainers-workflow-follow-ups:
 
@@ -109,7 +109,7 @@ The following more specific checks to be fulfilled, before a Pull Request can be
 merged:
 
 *   Ensure the Pull Request is **made against the most recent applicable
-    version**. The usual workflow will allow :ref:`backport-changes` from the
+    version**. The usual workflow will allow :ref:`backporting changes <backport-changes>` from the
     latest to older versions. If this is not aligned, ask the contributor if
     a PR can be made against a different branch.
 
@@ -153,7 +153,7 @@ merged:
     like for example when to make PHP code "final" or what to make "private/protected".
     All of our manuals should ideally follow the same lead. Whenever we hit
     a debatable topic, we should try to find a common ground and document how we
-    decided to deal with this. These decisions are found in :ref:`review-policy-opinionated`.
+    decided to deal with this. These decisions are found in the :ref:`opinionated decisions <review-policy-opinionated>`.
 
 After a Pull Request has been merged:
 
@@ -162,7 +162,7 @@ After a Pull Request has been merged:
     screenshots). If applicable, a maintainer can either create the Pull
     Request themself, or maybe ask contributors, if they want to create a follow-up.
 
-*   If a **backport** is needed, see :ref:`backport-changes` on how to perform this.
+*   If a **backport** is needed, see :ref:`how to backport changes <backport-changes>`.
 
 *   The maintainer who merges a Pull Request can make a decision on the scope
     of the backport. If a backport is too hard or time-consuming to execute,
@@ -215,10 +215,10 @@ Here is a list of currently agreed stances:
 *   When referencing PHP class names / object types, spell out their "Fully Qualified Class Name" (FQCN) on first use.
 
 ..
-*   See :ref:`format-rest-cgl` for coding guidelines of reST formatting.
+*   See the :ref:`reST coding guidelines <format-rest-cgl>` for formatting.
 
 ..
-*   See :ref:`content-styleguide` for more spelling / writing rules.
+*   See the :ref:`content style guide <content-styleguide>` for more spelling / writing rules.
 
 ..  _review-policy-todo:
 
@@ -248,4 +248,4 @@ A few things still need to be addressed:
 
     *   Exact prefixes for "Vendor" ("MyVendor"?) and Extensions ("MyExtension" or "MySitepackage"?)
 
-    *   Remove redundancy between :ref:`review-policy-opinionated` and :ref:`content-styleguide` (split it up into "technical" and "grammar"?)
+    *   Remove redundancy between the :ref:`opinionated decisions <review-policy-opinionated>` and the :ref:`content style guide <content-styleguide>` (split it up into "technical" and "grammar"?)

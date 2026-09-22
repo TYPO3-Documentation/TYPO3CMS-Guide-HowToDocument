@@ -27,7 +27,7 @@ Make minor changes
 
 If you see a typo, a broken link, something is outdated or you can make
 improvements in any way, do not hesitate to click on :guilabel:`Edit on GitHub`
-button and make the change yourself. See :ref:`docs-contribute-github-method`
+button and make the change yourself. See the :ref:`"Edit on GitHub" workflow <docs-contribute-github-method>`
 for a walkthrough.
 
 
@@ -148,8 +148,7 @@ Here are some examples:
 Replace outdated images and screenshots
 =======================================
 
-Look at :ref:`how-to-document-images` for information about how to
-embed images with reST.
+See :ref:`how to embed images with reST <how-to-document-images>`.
 
 
 ..  _docs-official-how-you-can-help-add-youtube-videos:
@@ -159,7 +158,7 @@ Add YouTube videos
 
 Add some new YouTube videos from the `TYPO3 YouTube channel`_.
 
-See :ref:`youtube-videos` for information on how to do this.
+See :ref:`how to embed YouTube videos <youtube-videos>`.
 
 
 ..  _how-you-can-help-review-manuals:
@@ -276,7 +275,7 @@ Check spelling
 ==============
 
 Check spelling for consistency. For example, compare spelling of title
-and headlines to the rules outlined in the :ref:`spelling` chapter.
+and headlines to the :ref:`spelling rules <spelling>`.
 
 
 ..  _docs-official-how-you-can-help-ideas:

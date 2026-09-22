@@ -14,7 +14,7 @@ keep it running.
 
 ..  seealso::
     Contributors who want to improve a single ViewHelper page do not need any
-    of this. See :ref:`t3viewhelper:contribution` instead.
+    of this. See :ref:`how to contribute to the ViewHelper reference <t3viewhelper:contribution>` instead.
 
 ..  contents::
 

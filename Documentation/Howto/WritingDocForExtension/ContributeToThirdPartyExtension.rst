@@ -8,7 +8,7 @@ Contribute to third-party extensions
 
 This chapter addresses contributing to third party extension documentation.
 
-For system extensions, see :ref:`contribute-to-system-extension`.
+For system extensions, see :ref:`contributing to system extensions <contribute-to-system-extension>`.
 
 You can contribute to the documentation of any publicly available extension,
 if the repository is public (for example hosted on GitHub). This does not mean, the
@@ -32,7 +32,7 @@ Find the source
 First, you need to find out where the source is maintained. Usually, this will
 be a repository on GitHub. There, you can also check if documentation is already
 available. It should be a `Documentation` folder or one of the alternatives
-mentioned in :ref:`file-structure-general`.
+mentioned in the :ref:`prerequisites for rendering <file-structure-general>`.
 
 To find the repository, use one of these methods:
 

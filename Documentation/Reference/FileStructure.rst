@@ -24,10 +24,10 @@ In order for the documentation to be rendered, you need at least
 
 And one of the following files:
 
-*   Documentation/Index.rst (:ref:`full-documentation`)
-*   Documentation/Index.md (:ref:`full-documentation-md`)
-*   README.rst (:ref:`single-file-documentation`)
-*   README.md (:ref:`single-file-documentation`)
+*   Documentation/Index.rst (:ref:`full documentation in reST <full-documentation>`)
+*   Documentation/Index.md (:ref:`full documentation in Markdown <full-documentation-md>`)
+*   README.rst (:ref:`single file documentation <single-file-documentation>`)
+*   README.md (:ref:`single file documentation <single-file-documentation>`)
 
 Further conventions are:
 
@@ -212,7 +212,7 @@ Settings: :file:`Documentation/guides.xml`
 This file contains the metadata and configuration for the rendering with the
 TYPO3 theme.
 
-Read more about the :ref:`guides-xml`.
+Read more about :ref:`configuring the rendering in guides.xml <guides-xml>`.
 
 ..  hint::
     If you are migrating from the legacy Sphinx-based rendering and still have

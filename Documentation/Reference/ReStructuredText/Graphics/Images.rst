@@ -39,11 +39,11 @@ Optional parameters for images and figures:
 *   `:target:` link target
 *   `:width:` : width of image, use for example px (for example `:width: 100px`
 *   `:scale:` : scale images, for example `:scale: 65`
-*   `:zoom:` : enable zoom functionality (see :ref:`image-zoom`)
+*   `:zoom:` : enable zoom functionality (see :ref:`image zoom <image-zoom>`)
 *   `:class:` : CSS classes, for example `with-shadow`, `with-border`, `float-left`,
-    `float-right` (see :ref:`image-float-alignment`)
+    `float-right` (see :ref:`floating and alignment <image-float-alignment>`)
 *   `:align:` : alignment/float for figures: `left`, `right`, `center`
-    (see :ref:`image-float-alignment`)
+    (see :ref:`floating and alignment <image-float-alignment>`)
 
 Additional parameters can be found on the docutils page `reStructuredText Directives
 <http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image>`__

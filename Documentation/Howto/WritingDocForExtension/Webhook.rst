@@ -12,8 +12,8 @@ rendering in a repository.
 TYPO3 documentation rendering supports Git as a Version Control System (VCS)
 and integrates with the following repository hosts:
 
-*   :ref:`webhook-github`
-*   :ref:`webhook-bitbucket-cloud` and Bitbucket self-hosted
+*   :ref:`GitHub <webhook-github>`
+*   :ref:`Bitbucket Cloud <webhook-bitbucket-cloud>` and Bitbucket self-hosted
 *   :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
 
 ..  contents:: Table of Contents
@@ -64,7 +64,7 @@ The webhook setup described below ensures that rendering is triggered only on
 push events.
 
 To test the webhook integration, push changes to
-the `main` or `documentation-draft` branch (see :ref:`migrate-branches`).
+the `main` or `documentation-draft` branch (see :ref:`supported branches <migrate-branches>`).
 
 ..  note::
 

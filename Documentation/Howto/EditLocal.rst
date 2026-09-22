@@ -63,7 +63,7 @@ the ability to experiment and preview your changes locally before submitting the
         If you did not just fork and clone but are instead using an old local version of this repository:
 
         #.  Make sure the repository is up-to-date by pulling from upstream as described
-            in :ref:`contribute-edit-locally-more-changes`.
+            in :ref:`keeping your local fork up to date <contribute-edit-locally-more-changes>`.
         #.  Always branch from `main`.
             If you are checked in to a feature branch, switch back to `main`
             first:
@@ -84,13 +84,13 @@ the ability to experiment and preview your changes locally before submitting the
 
     If you are not familiar with reST, you can visit the
     :ref:`reST Introduction <writing-rest-introduction>` to help get you started
-    along with the :ref:`rest-cheat-sheet`.
+    along with the :ref:`reST cheat sheet <rest-cheat-sheet>`.
 
 7.  Render the documentation
 
     Render your changes with Docker to preview them locally:
 
-    *   :ref:`render-documentation-with-docker`
+    *   :ref:`Rendering documentation locally with Docker <render-documentation-with-docker>`
 
 8.  Commit
 
@@ -131,7 +131,7 @@ the ability to experiment and preview your changes locally before submitting the
     it will be merged. You will receive a notification email as soon as this happens.
 
     More information on how your submissions ("PR"s, "Pull Requests") will receive
-    feedback can be found in the chapter :ref:`review-policy`.
+    feedback can be found in the :ref:`review policy <review-policy>`.
 
 **Congratulations! You are now a contributor. Welcome and thank you!**
 
@@ -141,7 +141,7 @@ the ability to experiment and preview your changes locally before submitting the
 Next steps
 ==========
 
-*   Look at :ref:`docs-official-how-you-can-help` for more ways to contribute.
+*   Look at :ref:`how you can help <docs-official-how-you-can-help>` for more ways to contribute.
 
 
 ..  index:: Official documentation; Fork up-to date
@@ -215,9 +215,9 @@ More information
 
 For more information in this guide:
 
-*   :ref:`Formatting-with-reST`
+*   :ref:`reST cheat sheet <Formatting-with-reST>`
 *   `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
-*   :ref:`review-policy`
+*   :ref:`Review policy <review-policy>`
 
 For more information about GitHub see the help pages on GitHub or other
 resources, for example:
