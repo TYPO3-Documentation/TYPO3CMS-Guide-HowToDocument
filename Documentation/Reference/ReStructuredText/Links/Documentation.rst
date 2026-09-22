@@ -109,3 +109,38 @@ follows three rules that are easy to get wrong:
     the keys are normalized. All three mistakes above therefore pass a
     :bash:`make test-docs` run. See
     `render-guides issue #1402 <https://github.com/TYPO3-Documentation/render-guides/issues/1402>`_.
+
+..  _link-text:
+
+Always give a link text
+=======================
+
+Give every reference and every permalink its own link text, written to fit
+the sentence it appears in:
+
+..  code-block:: rst
+
+    To keep news URLs short, :ref:`hide the detail page <georgringer/news:hideDetailPage>`.
+
+    Tag the entries with
+    `cache tags <https://docs.typo3.org/permalink/t3coreapi:caching-developer-cache-tags>`_
+    so that they can be flushed together.
+
+A reference without a link text, such as
+``:ref:`georgringer/news:hideDetailPage```, uses the headline of the
+target section instead. This causes two problems:
+
+*   A headline is written as a title, not as part of your sentence.
+    "To keep news URLs short, Hide detail page in URL." does not read well,
+    and you cannot adapt the wording to the grammar around it.
+*   Headlines change. When a headline is renamed, its anchor
+    `stays the same <https://docs.typo3.org/permalink/h2document:anchor-persistence>`_,
+    so the link keeps working, but its text changes with the headline. The
+    link can then stop fitting your sentence, or stop saying what you meant,
+    without anybody touching your page.
+
+A permalink without a link text is worse: it shows the bare URL.
+
+The reST reference you copy from the link modal uses the headline of the
+target as its link text. Reword that text to fit your sentence before you
+use it.
