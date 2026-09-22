@@ -26,7 +26,7 @@ Once you have submitted your changes they won't be visible straight away. Someon
 will need to approve the changes first before they are published.
 
 More information on how your submissions ("PR"s, "Pull Requests") will receive
-feedback can be found in the chapter :ref:`review-policy`.
+feedback can be found in the :ref:`review policy <review-policy>`.
 
 **Workflows**
 
@@ -40,7 +40,7 @@ There are two different ways in which you can make your changes before submittin
 
         This workflow is ideal for making minor changes such as fixing grammatical errors and typos.
 
-        :ref:`docs-contribute-github-method`.
+        :ref:`Edit on GitHub <docs-contribute-github-method>`.
 
     2.  Edit locally and render with Docker
 
@@ -49,7 +49,7 @@ There are two different ways in which you can make your changes before submittin
         changes as it gives you greater control over what tools you use and
         it also allows you to test and view your changes locally before submitting them for approval.
 
-        :ref:`docs-contribute-git-docker`
+        :ref:`Edit locally and render with Docker <docs-contribute-git-docker>`
 
 
 ..  toctree::

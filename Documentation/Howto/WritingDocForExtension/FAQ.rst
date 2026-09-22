@@ -18,7 +18,7 @@ Short answer: it will take a few hours and up to a day until the documentation f
 
 Long answer: the documentation of all extensions is exposed by an API which is consumed by the TER through a TYPO3 Scheduler task. The TER first needs to pick up updates of extensions which by itself can take some time due to server and browser caches. Furthermore the search in the TER also needs some time to update its index.
 
-Finally the TER will only link to documentation with a matching version, so make sure that there actually is a documentation version for each of your extension version. See :ref:`reregister-versions` to publish documentation for already released versions.
+Finally the TER will only link to documentation with a matching version, so make sure that there actually is a documentation version for each of your extension version. See :ref:`how to reregister versions <reregister-versions>` to publish documentation for already released versions.
 
 ..  rst-class:: panel panel-default
 
@@ -56,7 +56,7 @@ Why does the documentation not provide a title?
 ..  image:: /_Images/missing-title.png
     :class: with-shadow
 
-Refer to :ref:`migrate` in order to fix this issue.
+Refer to the :ref:`migration guide <migrate>` in order to fix this issue.
 
 You must add the project title to your :file:`Settings.cfg`:
 
@@ -76,7 +76,7 @@ You must add the project title to your :file:`Settings.cfg`:
 
     release     = 2.0.0
 
-:ref:`settings-cfg` provides detail information.
+See :ref:`the settings in guides.xml <settings-cfg>` for details.
 
 
 ..  rst-class:: panel panel-default
@@ -114,7 +114,7 @@ with malicious intent or accidentally: The first time someone triggers documenta
 rendering for a specific `vendor/package` combination, the Documentation Team must
 approve of this. This way, misuse is prevented.
 
-See :ref:`webhook` for more information.
+See :ref:`how to set up the webhook <webhook>`.
 
 
 ..  rst-class:: panel panel-default
@@ -184,7 +184,7 @@ folder. This means I have to maintain 2 documentations. Or not?
     used to direct users who come via GitHub (or Gitlab, Bitbucket etc.) to the rendered
     documentation on docs.typo3.org
 
-#.  Or, use :file:`README.rst` (or .md) as main documentation (:ref:`start-file`) and
+#.  Or, use :file:`README.rst` (or .md) as main documentation (see :ref:`start page <start-file>`) and
     put everything in the :file:`README.rst`. The :file:`Documentation/Settings.cfg` file
     must also exist, but that is all that needs to be in the `Documentation`
     directory.
@@ -217,7 +217,7 @@ It makes it easier to contribute to the documentation!
 
 **How do you enable this?**
 
-Just add this to your :ref:`settings-cfg` and customize it:
+Just add this to your :ref:`guides.xml <settings-cfg>` and customize it:
 
 ..  code-block:: none
 
@@ -228,7 +228,7 @@ Just add this to your :ref:`settings-cfg` and customize it:
     github_branch     = main
 
 If you used the `sample extension <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-and followed the steps in :ref:`how-to-start-docs-extension`, you should actually already have this.
+and followed the :ref:`steps to create the Documentation folder <how-to-start-docs-extension>`, you should actually already have this.
 
 Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_console/>`__
 extension for a working example.
@@ -244,7 +244,7 @@ How can I link to my issues?
 Do you want contributors to find the issues for your extension easily when
 reading your extension documentation on docs.typo3.org?
 
-Add `project_issues` to your :ref:`settings-cfg`:
+Add `project_issues` to your :ref:`guides.xml <settings-cfg>`:
 
 ..  code-block:: none
 

@@ -22,8 +22,8 @@ Workflow #1: "Edit on GitHub"
 2.  Find a page that needs improving:
 
     For example, you may have found a misspelling in
-    the :ref:`t3start:start` or you want to add some new content
-    to the :ref:`t3coreapi:upgrading`.
+    the :ref:`Getting Started tutorial <t3start:start>` or you want to add some new content
+    to the :ref:`chapter on upgrading <t3coreapi:upgrading>`.
 
 3.  Edit the page on GitHub:
 
@@ -127,4 +127,4 @@ Scroll down to "Improving documentation":
 Next steps
 ==========
 
-*   Look at :ref:`docs-official-how-you-can-help` for more ways to contribute
+*   Look at :ref:`how you can help <docs-official-how-you-can-help>` for more ways to contribute

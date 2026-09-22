@@ -7,7 +7,7 @@ Reregister versions
 ===================
 
 If there are documentations for some extension version missing, they have to be announced to Intercept again.
-This can be achieved by triggering the :ref:`webhook` with the correct version number.
+This can be achieved by triggering the :ref:`webhook <webhook>` with the correct version number.
 Therefore please register webhook first, if it's not already done.
 
 As no new releases should be created, branches can be created for each existing release.
@@ -62,4 +62,4 @@ This will:
 #.  Deletes them locally
 
 All versions should now be queued for the extension.
-This can be checked as described at :ref:`webhook` last step.
+This can be checked as described in the last step of :ref:`setting up the webhook <webhook>`.

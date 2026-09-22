@@ -119,7 +119,7 @@ PHP-based rendering tool:
     outdated ReST identifiers.
 
     If you are unable to address a warning/error with changes in your documentation
-    feel free to ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
+    feel free to ask in Slack channel #typo3-documentation (see :ref:`how to get help <how-to-get-help>`).
 
     If you believe you found a specific bug in the PHP-based rendering, please open
     an `issue on GitHub <https://github.com/TYPO3-Documentation/render-guides/issues>`__.
@@ -174,7 +174,7 @@ PHP-based rendering tool:
 
     ..  hint::
 
-        See :ref:`migrate-glossary` for details about the future of the
+        See :ref:`this discussion <migrate-glossary>` for details about the future of the
         index (glossary) generation.
 
 #.  Avoid code snippets with :file:`.rst` extension
@@ -362,7 +362,7 @@ A small example :file:`Makefile`:
 ..  hint::
 
     Makefile blocks need to be indented with a TAB character, not spaces.
-    If your project comes with an :ref:`editorconfig` definition for
+    If your project comes with an :ref:`.editorconfig <editorconfig>` definition for
     code formatting, you should add the following:
 
     ..  code-block:: text

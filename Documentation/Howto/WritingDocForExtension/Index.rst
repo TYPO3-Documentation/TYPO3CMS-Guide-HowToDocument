@@ -24,7 +24,7 @@ Use the following Docker command to render your documentation guide locally:
 
 ..  include:: /_Includes/_LocalRendering.rst.txt
 
-See :ref:`render-documentation-with-docker` for more information.
+See :ref:`rendering documentation locally with Docker <render-documentation-with-docker>`.
 
 ..  _how-to-start-docs-extension:
 

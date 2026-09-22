@@ -30,7 +30,7 @@ Spelling
 ========
 
 Use common spelling for American English. Some specific TYPO3 terms
-have a special spelling. See :ref:`spelling-ref`
+have a special spelling. See the :ref:`spelling reference <spelling-ref>`.
 
 ..  _content-styleguide-general-information:
 
@@ -45,18 +45,18 @@ TYPO3 documentation.
 ..  important::
 
     We use different **title capitalization** from the content style guide, to ease contribution.
-    The main differences are explained below in :ref:`spelling-title-case`.
+    The main differences are explained below in the :ref:`rules for titles <spelling-title-case>`.
 
 This section aims to add some additional explanations and more examples for rules
 already defined in the style guide. It also explains how to apply the rules in
 the documentation (for example format with reST).
 
 Since the English language is not always specific and there may be more than one correct spelling
-for some words, we have added a :ref:`spelling-ref`. If something is not
+for some words, we have added a :ref:`spelling reference <spelling-ref>`. If something is not
 mentioned here specifically, use correct spelling in English language
 or rather American (US) language. Refer to the resources, which the style guide suggests, or use
 `Merriam Webster (https://m-w.com) <https://www.merriam-webster.com/>`__ as last resort.
-If in doubt, ask in Slack channel #typo3-documentation (see :ref:`how-to-get-help`).
+If in doubt, ask in Slack channel #typo3-documentation (see :ref:`how to get help <how-to-get-help>`).
 
 ..  index::
     pair: Spelling; Titles
@@ -87,7 +87,7 @@ This was changed on February 4, 2020 for the following reasons:
     to be corrected as they come in.
 *   Most of the documentation is spelled this way
 
-This means, the same rules as in :ref:`spelling-plain-text` apply to the titles.
+This means, the same :ref:`rules as for plain text <spelling-plain-text>` apply to the titles.
 
 For discussion, see `Title capitalization in the docs (revisited) <https://decisions.typo3.org/t/title-capitalization-in-the-docs-revisited/562>`__
 
@@ -101,7 +101,7 @@ Examples:
     This applies to **all headers** on a page, not just the top level header (title).
 
 In reST, headers are created by underlining / overlining with (`====`, `----`, etc.)
-as described in :ref:`Headlines-and-sections`:
+as described in :ref:`headlines and sections <Headlines-and-sections>`:
 
 ..  code-block:: rst
 
@@ -136,8 +136,8 @@ If the text refers to terms used in the GUI (for example a clickpath for selecti
 something from the menu is described), the spelling used in the GUI should be
 used, for example "*File > Open*" or "click on "*ADMIN TOOLS > Extensions*".
 
-See :ref:`rest-refer-to-gui-elements` for information about how to use reST
-markup for this.
+See :ref:`how to refer to GUI elements <rest-refer-to-gui-elements>` for
+information about how to use reST markup for this.
 
 
 ..  index:: Spelling; Plain text
@@ -167,7 +167,7 @@ All these spellings for backend are currently correct spellings (at least accord
     **In the TYPO3 context** we have defined **backend** to be the preferred spelling,
     as well as **sitepackage**.
 
-    If a spelling has been explicitly defined in the :ref:`spelling-ref`, please
+    If a spelling has been explicitly defined in the :ref:`spelling reference <spelling-ref>`, please
     use that spelling.
 
 How can you decide for yourself in other edge cases?
@@ -212,7 +212,7 @@ Exceptions for specific TYPO3 spellings
 ---------------------------------------
 
 There are some specific TYPO3 spellings like TypoScript, TSconfig, stdWrap, ViewHelper,
-TYPO3, etc. These should be used! See :ref:`spelling-ref` for more examples.
+TYPO3, etc. These should be used! See the :ref:`spelling reference <spelling-ref>` for more examples.
 
 
 ..  index:: Spelling; Source code
@@ -226,8 +226,8 @@ options etc, use the spelling that is used in the source code.
 
 Examples:
 
-*   function names in :ref:`t3coreapi:database-connection`
-*   configuration options in :ref:`t3coreapi:soft-references-default-parsers-substitute`
+*   function names in :ref:`the database connection API <t3coreapi:database-connection>`
+*   configuration options in :ref:`the default soft reference parsers <t3coreapi:soft-references-default-parsers-substitute>`
 
 
 ..  index::
@@ -280,7 +280,7 @@ Tools with executables
 Some tools have a program, which you can run. For example, **Git** has the command line
 tool `git`. When the documentation explicitly refers to the command `git`, its appropriate
 spelling is used, which is lowercase. In all other cases, we use capital
-spelling for Git, because it applies to the rules for :ref:`spelling-proper-names`.
+spelling for Git, because it applies to the rules for :ref:`proper names <spelling-proper-names>`.
 
 The same goes for **Docker**, **Composer**, etc.
 
@@ -293,7 +293,7 @@ The same goes for **Docker**, **Composer**, etc.
 Spelling & preferred terms reference
 ====================================
 
-The content was moved to :ref:`spelling-ref`.
+The content was moved to the :ref:`spelling reference <spelling-ref>`.
 
 
 ..  index:: Spelling; Resources

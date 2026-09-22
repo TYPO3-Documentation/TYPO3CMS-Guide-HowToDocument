@@ -31,7 +31,7 @@ Types of documentation
 
 Documentation may include:
 
-*   Official manuals (e.g. :ref:`t3coreapi:start`)
+*   Official manuals (e.g. :ref:`TYPO3 Explained <t3coreapi:start>`)
 *   System extension manuals
 *   Core changelog entries
 *   Third-party extension manuals
@@ -56,8 +56,8 @@ Everyone is welcome to contribute to TYPO3’s official documentation.
 Most manuals are hosted on GitHub. You can suggest changes directly by clicking
 :guilabel:`Edit on GitHub` on any page.
 
-For larger contributions or local editing, see the full guide at
-:ref:`docs-contribute`.
+For larger contributions or local editing, see the
+:ref:`full contribution guide <docs-contribute>`.
 
 ..  _doc-type-extension-manual:
 

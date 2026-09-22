@@ -21,7 +21,7 @@ The TYPO3 documentation toolchain supports both formats.
 ..  note::
 
     This guide assumes you have already set up the TYPO3 documentation toolchain.
-    If you haven't, please follow the instructions in the :ref:`rendering-docs` guide.
+    If you haven't, please follow the :ref:`instructions for rendering documentation <rendering-docs>`.
 
 ..  _migrate-markdown-to-rest-conversion:
 

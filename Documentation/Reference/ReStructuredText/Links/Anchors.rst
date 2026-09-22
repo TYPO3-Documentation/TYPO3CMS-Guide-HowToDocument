@@ -63,7 +63,7 @@ went away:
     longer the recommended approach: move the anchor into a
     :file:`Documentation/404.rst` page instead (create it if it does not
     exist yet), and add a short entry explaining what happened. See
-    :ref:`redirects` for the full pattern, including a real example.
+    :ref:`redirecting renamed or deleted pages <redirects>` for the full pattern, including a real example.
 
 This applies everywhere, not just to official TYPO3 documentation
 repositories — anyone linking to your docs, from a bookmark, a search
