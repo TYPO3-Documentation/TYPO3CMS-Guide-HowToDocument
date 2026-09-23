@@ -144,3 +144,45 @@ A permalink without a link text is worse: it shows the bare URL.
 The reST reference you copy from the link modal uses the headline of the
 target as its link text. Reword that text to fit your sentence before you
 use it.
+
+..  _check-link-text:
+
+Let the rendering check the link texts
+--------------------------------------
+
+A manual can have the rendering warn about every reference that has no link
+text of its own. Switch the check on with
+`check-link-text <https://docs.typo3.org/permalink/h2document:settings-guides-check-link-text>`_
+in :file:`Documentation/guides.xml`:
+
+..  code-block:: xml
+    :caption: Documentation/guides.xml
+
+    <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               check-link-text="true" />
+
+The check is off by default, because a warning fails a render with
+:bash:`--minimal-test` and most manuals still have references without a link
+text. Give the references of your manual a link text first, then switch it on
+so that the next one cannot slip in unnoticed.
+
+..  _check-link-text-page:
+
+Switching the check for a single page
+-------------------------------------
+
+A page can override the setting of its manual with a field above the title:
+
+..  code-block:: rst
+    :caption: Documentation/Reference/Menus/NavigationTitle.rst
+
+    :check-link-text: off
+
+    ================
+    Navigation title
+    ================
+
+Use `off` for a page that shows a reference without a link text on purpose,
+for example one that demonstrates what such a reference does. Use `on` while
+a manual is being cleaned up page by page and the setting of the manual is
+still off.

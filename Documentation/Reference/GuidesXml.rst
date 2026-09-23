@@ -605,3 +605,37 @@ And follow the interactive question.
                  <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
                        typo3-core-preferred="stable"
             </guides>
+
+        ..  _settings-guides-check-link-text:
+
+        ..  confval:: check-link-text
+            :name: guides-extension-check-link-text
+            :type: boolean
+            :Default: `false`
+
+            Warn about every reference that has no link text of its own, see
+            `Always give a link text <https://docs.typo3.org/permalink/h2document:link-text>`_.
+            A reference without one shows the title of its target, which rarely
+            fits the sentence around it and changes when that title is renamed.
+
+            ..  code-block:: xml
+                :caption: Documentation/guides.xml
+
+                <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+                           check-link-text="true" />
+
+            The check warns about ``:ref:`my-label``` and
+            ``:doc:`Some/Page```, and about a permalink URL written on its
+            own, which shows the title of its target as well. It does not warn
+            about roles that show the name they point to, such as
+            :rst:`:php:`, :rst:`:confval:` or :rst:`:t3ext:`, nor about the
+            :rst:`:changelog:` option of :rst:`versionadded` and its kind.
+
+            A warning fails a render with :bash:`--minimal-test`, which is what
+            the documentation pipeline runs, so switch the check on once the
+            references of your manual have a link text. The warning names the
+            file but not the line: a reference does not record where it was
+            written.
+
+            A single page can override the setting with the
+            `check-link-text page field <https://docs.typo3.org/permalink/h2document:check-link-text-page>`_.
