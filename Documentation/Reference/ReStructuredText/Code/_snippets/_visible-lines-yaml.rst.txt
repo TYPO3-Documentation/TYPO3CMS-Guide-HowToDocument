@@ -1,0 +1,20 @@
+..  code-block:: yaml
+    :caption: EXT:my_extension/Configuration/Services.yaml
+    :visible-lines: 9-11
+
+    services:
+      _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+      MyVendor\MyExtension\:
+        resource: '../Classes/*'
+
+      MyVendor\MyExtension\Service\GreeterService:
+        public: true
+
+      MyVendor\MyExtension\EventListener\MyListener:
+        tags:
+          - name: event.listener
+            identifier: 'my-extension/my-listener'
