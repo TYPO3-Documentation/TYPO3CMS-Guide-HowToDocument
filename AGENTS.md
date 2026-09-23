@@ -25,9 +25,12 @@ CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
    backtick; see `Documentation/Reference/ReStructuredText/Code/InlineCode.rst`.
 5. **Every headline needs a `..  _anchor:` target** directly above it; see
    `Documentation/Reference/ReStructuredText/Links/Anchors.rst`.
-6. **Validate before committing** — run `make test-docs`.
-7. **Never commit or push without being asked.**
-8. **Commit message**: follow [Documentation/Advanced/CommitMessages.rst](Documentation/Advanced/CommitMessages.rst).
+6. **Every reference needs its own link text** — `:ref:`text <anchor>``, never
+   `:ref:`anchor``; see
+   `Documentation/Reference/ReStructuredText/Links/Documentation.rst`.
+7. **Validate before committing** — run `make test-docs`.
+8. **Never commit or push without being asked.**
+9. **Commit message**: follow [Documentation/Advanced/CommitMessages.rst](Documentation/Advanced/CommitMessages.rst).
    This repo has only `main` (no LTS branches), so skip `Releases:`/`Resolves:`.
 
 ## References

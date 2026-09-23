@@ -14,6 +14,7 @@
                report-issue="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/issues/new/choose"
                interlink-shortcode="h2document"
                typo3-core-preferred="main"
+               check-link-text="true"
     />
     <project
             title="How to Document"

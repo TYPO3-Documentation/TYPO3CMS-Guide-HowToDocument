@@ -1,4 +1,5 @@
 :navigation-title: Navigation title
+:check-link-text: off
 
 ..  _navigation-title:
 
