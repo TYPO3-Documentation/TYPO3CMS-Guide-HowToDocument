@@ -1,4 +1,4 @@
-:navigation-title: Inline Code
+:navigation-title: Inline code
 
 ..  include:: /Includes.rst.txt
 ..  _inline-code:
@@ -32,9 +32,8 @@ code itself contains an unescaped backtick:
 Code roles with language information and an infobox
 ===================================================
 
-You can also use `text roles <https://docs.typo3.org/permalink/h2document:text-roles>`_ with one of the predefined languages to display more
-information to the user. For the most common languages, automatic
-detection provides more context for the user.
+You can also use `text roles <https://docs.typo3.org/permalink/h2document:text-roles>`_
+that name the language of the code:
 
 ..  tabs::
 
@@ -46,78 +45,142 @@ detection provides more context for the user.
 
         ..  literalinclude:: _snippets/_inline-code-languages.rst.txt
 
-All named inline code roles show an icon right after the code that opens
-an infobox with details about it — the language, and for a resolvable
-PHP class from the TYPO3 Core, its doc comment (if any) and a link to
-https://api.typo3.org. The code text itself stays plain, selectable text,
-so it can be copied directly instead of accidentally opening the infobox.
+Every code role shows an icon right after the code that opens an infobox.
+For most roles, the infobox only names the language, for example "Code
+written in SQL". Only :rst:`:php:` and :rst:`:php-short:` can tell the
+reader more, see
+`PHP classes and interfaces <https://docs.typo3.org/permalink/h2document:inline-code-php>`_.
+The code text itself stays plain, selectable text, so it can be copied
+directly instead of accidentally opening the infobox.
+
+Two text roles that are not code roles open an infobox as well:
+`:composer: <https://docs.typo3.org/permalink/h2document:linking-extensions>`_
+always does, with information from Packagist, and
+`:file: <https://docs.typo3.org/permalink/h2document:text-roles-file>`_
+only does for a file that the same manual documents with the
+:rst:`..  typo3:file::` directive.
+
+..  _inline-code-when-to-use-a-role:
+
+When to use a code role for inline code
+=======================================
+
+A code role labels its text as code in a language. Use one when the text
+is code in that language: a statement, an expression, a keyword, a type,
+or an identifier that the rendering can look up.
+
+Everything else is a plain literal in single backticks. On text that is not
+code, the language label and the infobox add nothing, and they promise
+information that is not there.
+
+..  _inline-code-keys-and-names:
+
+Plain literals for array keys, configuration keys and column names
+------------------------------------------------------------------
+
+A TCA key, `CType`, array key, or YAML configuration key looks like PHP
+because it is often written inside a PHP array, but the key itself is a
+string. Database table and column names such as `tt_content` or `pid` are
+often written next to SQL, but they are names, not SQL. Write all of them
+as plain literals:
+
+..  code-block:: rst
+
+    The `enablecolumns` key ...
+
+    The `pid` column of the `pages` table ...
+
+Keep :rst:`:sql:` for actual SQL, such as a statement, a keyword like
+:sql:`WHERE`, or a column type like :sql:`varchar(255)`.
+
+..  _inline-code-generic-class-names:
+
+Plain literals for class names used generically
+-----------------------------------------------
+
+When you talk about a kind of thing rather than one specific class, for
+example "a PreviewRenderer" used generically, there is nothing a role
+could resolve. Use a plain literal.
+
+A namespace in a plain literal needs doubled backslashes, for example
+`\\Vendor\\Ext\\PreviewRenderer`: unlike :rst:`:php:`, a plain literal
+drops a single backslash instead of printing it. See
+`Backslashes in text roles <https://docs.typo3.org/permalink/h2document:text-roles-backslash>`_.
+
+..  _inline-code-headlines:
+
+No code roles in headlines
+--------------------------
+
+Leave code roles out of headlines entirely, including :rst:`:php:` and
+:rst:`:php-short:`. Use a plain literal there, even for something that would
+get a role in body text:
+
+..  code-block:: rst
+
+    The `GeneralUtility` class
+    ==========================
+
+The text of a headline is reused in places that only show plain text: the
+menu, the page title in the browser, and a reference without its own link
+text. There, the role's styling and infobox are lost, and the text appears
+exactly as written in the source, a full namespace included.
 
 ..  _inline-code-php:
 
-`:php:` and `:php-short:`
-=========================
+PHP classes and interfaces with `:php:` and `:php-short:`
+=========================================================
 
-Use :rst:`:php:` and :rst:`:php-short:` when the text is a real,
-resolvable PHP identifier — a class, method, constant, or function — so
-the infobox can tell the reader something genuinely useful about it. If
-the tooling has nothing to resolve, the "PHP" tag and the infobox button
-are just noise, and worse, they promise a lookup that goes nowhere. In
-those cases a plain literal reads more honestly:
+These two roles resolve a PHP type, such as a class or an interface, and a
+member of one. Always pass the fully qualified name, including the leading
+backslash: the namespace is what the roles need to find the class. For a type
+of the TYPO3 Core, the infobox then shows its signature, the summary of its
+doc comment and a link to https://api.typo3.org. For any other type, for
+example one from Symfony, it can only say that the text is a class or
+interface name.
 
-*   A TCA key, `CType`, array key, or YAML config key looks like it lives
-    in PHP because it is often written inside a PHP array, but the key
-    itself is just a string, not an identifier the PHP domain can
-    resolve. Write it as a plain literal instead:
+:rst:`:php:` also recognizes a path in the global configuration, such as
+:php:`$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport']`, and explains
+`$GLOBALS['TYPO3_CONF_VARS']` in its infobox.
 
-    ..  code-block:: rst
+..  _inline-code-php-types:
 
-        The `enablecolumns` key ...
+Referencing a PHP class or interface with `:php-short:`
+-------------------------------------------------------
 
-    The same applies to database table and column names such as
-    `tt_content` or `pid`. :rst:`:sql:` has nothing to resolve them to
-    either; its infobox only says "Code written in SQL". Keep
-    :rst:`:sql:` for actual SQL, such as a statement, a keyword like
-    :sql:`WHERE`, or a column type like :sql:`varchar(255)`:
+Use :rst:`:php-short:`. It resolves the type from the fully qualified name
+but shows only the short name, which reads much better inline:
 
-    ..  code-block:: rst
+..  code-block:: rst
 
-        The `pid` column of the `pages` table ...
+    :php-short:`\TYPO3\CMS\Core\Security\ContentSecurityPolicy\Scope`
 
-*   When referencing a class, interface, or similar type on its own, pass
-    the fully-qualified name (leading backslash, full namespace) to
-    :rst:`:php-short:` rather than :rst:`:php:`. It still resolves the
-    infobox content from the FQCN, but displays only the short name,
-    which reads much better inline than the full namespace:
+:rst:`:php:` resolves the type the same way but prints the full namespace.
 
-    ..  code-block:: rst
+..  _inline-code-php-methods:
 
-        :php-short:`\TYPO3\CMS\Core\Security\ContentSecurityPolicy`
+Referencing a class member with `:php-short:`
+---------------------------------------------
 
-    As of this writing, :rst:`:php-short:` only resolves a bare type this
-    way, not a type combined with a method, such as `Scope::backend()`.
-    For those, use :rst:`:php:` with the full FQCN instead — it reads
-    longer, but it is the one that actually resolves:
+A method, property, constant or enum case resolves as well, as long as you
+write it after the fully qualified class, with `::` or `->`:
 
-    ..  code-block:: rst
+..  code-block:: rst
 
-        :php:`\TYPO3\CMS\Core\Security\ContentSecurityPolicy\Scope::backend()`
+    Create a scope with
+    :php-short:`\TYPO3\CMS\Core\Security\ContentSecurityPolicy\Scope::backend()`.
 
-*   When you are talking about a concept rather than naming a specific,
-    resolvable class — for example "a PreviewRenderer" used generically,
-    not `\\Vendor\\Ext\\PreviewRenderer` — a plain literal fits better,
-    since there is no single class the infobox could point to. Note the
-    doubled backslashes: unlike :rst:`:php:`, a plain literal drops a
-    single backslash instead of printing it — see
-    `Supported named inline text roles <https://docs.typo3.org/permalink/h2document:text-roles-backslash>`_.
+The text prints as :php-short:`\TYPO3\CMS\Core\Security\ContentSecurityPolicy\Scope::backend()`.
+The infobox names what the member is, for example "PHP function" for a
+method, "PHP property", "PHP constant" or "PHP enum case", and describes the
+class it belongs to; the link to https://api.typo3.org leads to the member on
+the page of its class.
 
-*   Headlines are the one place to leave roles out entirely, including
-    :rst:`:php:`/:rst:`:php-short:` — use plain backticks there even for
-    something that would get a role in body text. A role's code styling
-    and infobox button do not read well in a heading, and they disappear
-    wherever the heading's text gets reused as plain text elsewhere — for
-    example a bare :rst:`:ref:` to it falls back to unstyled text instead
-    of keeping the code formatting.
+A member written on its own, such as `Scope::backend()`, has nothing to
+resolve without its namespace. Introduce the class once with
+:rst:`:php-short:`, then write the bare member as a plain literal.
 
 ..  seealso::
 
+    *   `When to use a code role for inline code <https://docs.typo3.org/permalink/h2document:inline-code-when-to-use-a-role>`_
     *   `API links: More information on TYPO3 PHP classes <https://docs.typo3.org/permalink/h2document:links-api>`_
