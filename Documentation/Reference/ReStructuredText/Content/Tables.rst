@@ -107,9 +107,21 @@ https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-table-1
 `t3-field-list-table` tables
 ============================
 
-`t3-field-list-table` is a custom directive, created by the t3SphinxThemeRtd
-template. If you want your .rst file to be correctly rendered on other
-platforms as well (for example GitHub), you should not use this.
+`t3-field-list-table` is a custom directive of the TYPO3 rendering. If you
+want your .rst file to be correctly rendered on other platforms as well (for
+example GitHub), you should not use this.
+
+Each item of the list is one row, and the field names are the columns.
+:rst:`:header-rows:` says how many of the first items are header rows, as it
+does in a `list-table`: `1` for the usual single header row, `2` for two, and
+`0` for a table without a header. Without the option the first row is the
+header.
+
+..  note::
+    Before render-guides 0.44.0 the option was read but never used: the first
+    row was always the header. A table written with :rst:`:header-rows: 0` or
+    :rst:`:header-rows: 2` therefore changes its appearance once it is
+    rendered again.
 
 
 ..  code-block:: rst
