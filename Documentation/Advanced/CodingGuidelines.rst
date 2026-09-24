@@ -289,10 +289,10 @@ For this to work, `ext_core` must be defined in :file:`Settings.cfg`:
 Referring to GUI elements
 =========================
 
-Use :ref:`text role guilabel <text-roles>` for any label that is visible in
-the GUI: a backend module, a tab, a button, a field, or a menu entry. If you
-describe several of these being selected or clicked one after the other, use
-`>` as separator inside a single :rst:`:guilabel:`.
+Use :ref:`text role guilabel <text-roles>` for an element the reader acts on:
+a backend module, a tab, a button, a menu entry, a checkbox or an option to
+choose from a list. If you describe several of them being selected or clicked
+one after the other, use `>` as separator inside a single :rst:`:guilabel:`.
 
 ..  important::
 
@@ -320,6 +320,18 @@ How it looks:
 
 How it looks:
     Manage extensions in the :guilabel:`Extension Manager` module.
+
+A label that only names something is not such an element: the label of an
+input field, a column heading, or the state shown beside a record. Nobody
+clicks those, and :rst:`:guilabel:` would promise that they do. Write them in
+bold instead:
+
+..  code-block:: rst
+
+    Enter the address in **Email**, then click :guilabel:`Save`.
+
+How it looks:
+    Enter the address in **Email**, then click :guilabel:`Save`.
 
 Only use :rst:`:guilabel:` for elements the reader can actually find in the
 GUI. Names that only exist in an example, such as a module the example
