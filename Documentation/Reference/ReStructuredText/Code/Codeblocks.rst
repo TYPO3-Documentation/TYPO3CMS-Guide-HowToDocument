@@ -109,6 +109,7 @@ will fail.
             :linenos:
             :lineno-start: <start-number>
             :emphasize-lines: <emphasized-line-numbers>
+            :visible-lines: <visible-line-numbers>
             :name: <reference-label>
 
     :rst:`linenos`
@@ -121,10 +122,26 @@ will fail.
         <emphasized-line-numbers> contains a comma separated list of line numbers
         to be emphasized.
 
+    :rst:`visible-lines`
+        <visible-line-numbers> contains a comma separated list of line numbers
+        and ranges, for example `15-16, 24-35`, that stay visible. Every other
+        line is folded away behind a placeholder that opens it. `all` switches
+        the folding off. Unlike the options above, this one only works in the
+        TYPO3 rendering.
+
     :rst:`name`
         Set a <reference-label>. This label can be used to link from any given
         text to the specific code block. The name needs to be unique within one
         manual.
+
+    A PHP block folds its header on its own, without any option: the open tag,
+    the :php:`declare`, :php:`namespace` and :php:`use` statements, and the
+    comments and blank lines among them. It stays as it is when that header is
+    shorter than three lines, and an emphasized line is never folded.
+
+    Folding hides nothing from the reader who wants it: copying the block takes
+    every line, and so do the print view, the Markdown of the page and a
+    browser without JavaScript.
 
     See also the official
     `sphinx documentation on code-blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`__.
@@ -237,6 +254,46 @@ Code block with line numbers and highlighting of one line
                  'Configuration/TypoScript',
                  'Site Package'
             );
+
+..  _codeblocks-visible-lines:
+
+Folding lines in code blocks
+----------------------------
+
+The header of the file is folded on its own because the example is PHP.
+:rst:`:visible-lines:` names the lines to keep beyond it, here the method the
+example is about:
+
+..  tabs::
+
+    ..  group-tab:: Source (rst)
+
+        ..  literalinclude:: _snippets/_visible-lines.rst.txt
+            :caption: Documentation/MyDocs.rst
+
+    ..  group-tab:: Output
+
+        ..  include:: _snippets/_visible-lines.rst.txt
+
+In a language other than PHP nothing is folded until you say so. Here only
+the service the text is about stays visible, and the rest of the file folds
+away:
+
+..  tabs::
+
+    ..  group-tab:: Source (rst)
+
+        ..  literalinclude:: _snippets/_visible-lines-yaml.rst.txt
+            :caption: Documentation/MyDocs.rst
+
+    ..  group-tab:: Output
+
+        ..  include:: _snippets/_visible-lines-yaml.rst.txt
+
+Use it where a reader has to see the code in its file, but only a part of it
+is the point. Where the block works on its own, show that part alone and mark
+the caption as an excerpt, see
+`Captioning a part of a file <https://docs.typo3.org/permalink/h2document:codeblocks-caption-excerpt>`_.
 
 ..  _writing-rest-codeblocks-with-syntax-highlighting-examples-code-blocks:
 

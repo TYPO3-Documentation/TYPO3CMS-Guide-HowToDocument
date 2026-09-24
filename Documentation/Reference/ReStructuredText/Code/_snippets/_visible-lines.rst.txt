@@ -1,0 +1,21 @@
+..  code-block:: php
+    :caption: EXT:my_extension/Classes/EventListener/MyListener.php
+    :visible-lines: 12-17
+
+    <?php
+
+    declare(strict_types=1);
+
+    namespace MyVendor\MyExtension\EventListener;
+
+    use TYPO3\CMS\Core\Attribute\AsEventListener;
+    use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
+
+    final class MyListener
+    {
+        #[AsEventListener]
+        public function __invoke(AfterFileAddedEvent $event): void
+        {
+            // Your code here
+        }
+    }
