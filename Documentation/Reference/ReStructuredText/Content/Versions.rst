@@ -126,56 +126,31 @@ issue.
 
 ..  _rest-versions-changelog-option:
 
-Linking the changelog entry with :rst:`:changelog:`
-===================================================
+Linking the changelog entry with `:changelog:`
+==============================================
 
-The examples above write the changelog permalink by hand into the
-directive body. The three directives also accept a :rst:`:changelog:`
-option, which renders the link in the version badge itself and resolves
-the entry through the changelog inventory:
+The examples above write the permalink of the changelog entry by hand into
+the directive body. The three version directives also accept the
+:rst:`:changelog:` option. Use this option to link an entry of the TYPO3
+Core changelog. The value is the identifier of the entry, in the form
+`<type>-<issue>-<timestamp>`:
 
 ..  code-block:: rst
 
     ..  versionchanged:: 14.0
         :changelog: feature-107628-1729026000
 
-        Most modules have been moved from :guilabel:`System` to
+        Most modules moved from :guilabel:`System` to
         :guilabel:`Administration`.
 
-The link text is the title of the entry the option resolves to, so it
-reads the same as a hand-written permalink does today, without having to
-copy the title and the URL. An entry that does not exist produces a build
-warning and the unresolved-reference marker instead of a link that leads
-nowhere, which a hand-written permalink cannot do.
+..  versionchanged:: 14.0
+    :changelog: feature-107628-1729026000
 
-The entry can be addressed in three ways:
+    Most modules moved from :guilabel:`System` to
+    :guilabel:`Administration`.
 
-..  code-block:: rst
+The option puts the link into the version badge. The link text is the title
+of the changelog entry, so you do not copy the title and the URL by hand.
 
-    ..  TYPO3 Core: the changelog entry identifier on its own
-    ..  versionchanged:: 14.0
-        :changelog: feature-107628-1729026000
-
-    ..  Another manual: its interlink shortcode, then the entry anchor
-    ..  versionchanged:: 2.0
-        :changelog: acme/acme-blog:changes-2-0-0
-
-    ..  This manual's own changelog: the short "#anchor" form
-    ..  versionchanged:: 2.1
-        :changelog: #changes-2-1-0
-
-Where the resolved title does not describe the change - an extension
-whose whole changelog page carries a single label, for instance - give
-the text explicitly, in the same embedded form every other reference
-uses:
-
-..  code-block:: rst
-
-    ..  versionchanged:: 2.0
-        :changelog: Renaming the teaser field <acme/acme-blog:changelog>
-
-        The teaser field was renamed; see the changelog entry for the
-        migration.
-
-The entry itself is always a single token; only a text you supply may
-contain spaces.
+If the identifier does not match an entry, the rendering shows a warning.
+Check the identifier before you commit the change.
