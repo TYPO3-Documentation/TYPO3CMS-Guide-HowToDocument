@@ -78,8 +78,40 @@ If the automatic backport is successful, a new pull request will be created for
 the backport. This pull request can be approved and merged manually.
 
 If the backport fails, a comment will be added to the original pull request. The
-label :guilabel:`backport failed` will be added to the original pull request and
+label :guilabel:`backport-failed` will be added to the original pull request and
 manual cherry-picking is required.
+
+..  _backport-changes-labels:
+
+What the backport labels mean
+=============================
+
+:guilabel:`backport <version>`
+    Asks for a backport to that branch. The label triggers the automatic
+    backport when the pull request is merged, or as soon as it is added to an
+    already merged one.
+
+:guilabel:`backport-required`
+    A backport is still to be prepared or decided on.
+
+:guilabel:`backport-failed`
+    The automatic backport could not cherry-pick the change into that branch.
+    It has to be done by hand, see
+    `How to backport manually? <https://docs.typo3.org/permalink/h2document:backport-changes-backport-manually>`_.
+
+:guilabel:`backport-done`
+    The backport pull requests exist. The automatic backport sets this label as
+    soon as it has created them, and whoever backports by hand sets it as soon
+    as those pull requests are open. In neither case does it mean that they
+    have been merged.
+
+Because of the last one, the labels of a pull request do not tell you whether a
+change reached a branch. Ask the branch itself:
+
+..  code-block:: shell
+
+    git fetch origin
+    git log origin/14.3 --oneline --grep="part of the subject"
 
 ..  _backport-changes-version:
 
@@ -183,3 +215,8 @@ If everything looks fine continue the cherry-pick with
 Push your changes.
 Check in the intercept to see if a new rendering has started. Once this is
 done, check the documentation to see if the backport worked as expected.
+
+Swap :guilabel:`backport-failed` for :guilabel:`backport-done` on the original
+pull request as soon as your backport pull requests are open -- the automatic
+backport labels its own the same way, when it creates them rather than when
+they are merged.
