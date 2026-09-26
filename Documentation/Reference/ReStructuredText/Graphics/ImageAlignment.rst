@@ -18,47 +18,53 @@ displayed as a standalone block.
 
 There are two ways to apply floating:
 
-1.  **CSS classes** :rst:`:class: float-left` or :rst:`:class: float-right` — works on
-    both :rst:`..  image::` and :rst:`..  figure::` directives.
-2.  The :rst:`:align:` **option** — :rst:`:align: left`, :rst:`:align: right`, or :rst:`:align: center`
-    — works on :rst:`..  figure::` directives (internally mapped to the same CSS
-    classes).
+1.  The :rst:`:align:` **option** — :rst:`:align: left`, :rst:`:align: right`, or :rst:`:align: center`
+    — works on both :rst:`..  image::` and :rst:`..  figure::` directives.
+2.  **CSS classes** :rst:`:class: float-start` or :rst:`:class: float-end` — also works on
+    both directives.
 
-Both approaches produce the same visual result. Use whichever fits your
-preference.
+Both approaches produce the same visual result. Prefer :rst:`:align:`. Use the
+CSS classes where :rst:`:align:` cannot float an image, for example on a
+substitution image (:rst:`|name|`): docutils only accepts :rst:`top`,
+:rst:`middle` and :rst:`bottom` for :rst:`:align:` inside a substitution
+definition.
+
+The Bootstrap 4 class names :rst:`float-left` and :rst:`float-right` are
+deprecated. The renderer rewrites them to :rst:`float-start` and
+:rst:`float-end` and logs a warning.
 
 ..  _image-float-css-classes:
 
 Float with CSS classes
 ======================
 
-Add :rst:`float-left` or :rst:`float-right` to the :rst:`:class:` option. You can combine
+Add :rst:`float-start` or :rst:`float-end` to the :rst:`:class:` option. You can combine
 these with other classes such as :rst:`with-shadow` or :rst:`with-border`:
 
 ..  code-block:: rst
 
-    ..  figure:: /Images/MyImage.png
-        :alt: Description of the image
-        :class: float-left with-shadow
+    ..  |logo| image:: /Images/MyLogo.png
+        :alt: Description of the logo
+        :class: float-start with-shadow
 
-        Caption text here
-
-    Surrounding text will wrap to the right of the image.
+    |logo| Surrounding text will wrap to the right of the logo.
 
 ..  _image-float-align-option:
 
 Align option
 ============
 
-The :rst:`:align:` option on :rst:`..  figure::` directives supports :rst:`left`, :rst:`right`,
-and :rst:`center`. Values :rst:`left` and :rst:`right` produce the same floating behavior
-as the CSS classes:
+The :rst:`:align:` option on :rst:`..  image::` and :rst:`..  figure::` directives supports
+:rst:`left`, :rst:`right`, and :rst:`center`. Values :rst:`left` and :rst:`right` produce the
+same floating behavior as the CSS classes. Other classes such as :rst:`with-shadow`
+go into the :rst:`:class:` option next to it:
 
 ..  code-block:: rst
 
     ..  figure:: /Images/MyImage.png
         :alt: Description of the image
         :align: right
+        :class: with-shadow
 
         Caption text here
 
@@ -79,7 +85,7 @@ floats:
 
     ..  figure:: /Images/MyImage.png
         :alt: Description of the image
-        :class: float-left
+        :align: left
 
         Caption
 
@@ -108,7 +114,8 @@ Example 8: figure floated left
 
 ..  figure:: /_Images/a4.jpg
     :alt: Example figure floated left
-    :class: float-left with-shadow
+    :align: left
+    :class: with-shadow
     :width: 150px
 
     A figure floated to the left
@@ -124,7 +131,8 @@ Typesetting requires one or more fonts.
 
     ..  figure:: /_Images/a4.jpg
         :alt: Example figure floated left
-        :class: float-left with-shadow
+        :align: left
+        :class: with-shadow
         :width: 150px
 
         A figure floated to the left
@@ -174,7 +182,8 @@ Example 10: image floated left with shadow
 
 ..  image:: /_Images/a4.jpg
     :alt: Example image floated left
-    :class: float-left with-shadow
+    :align: left
+    :class: with-shadow
     :width: 150px
 
 Typesetting is the composition of text by means of arranging physical types
@@ -188,7 +197,8 @@ Typesetting requires one or more fonts.
 
     ..  image:: /_Images/a4.jpg
         :alt: Example image floated left
-        :class: float-left with-shadow
+        :align: left
+        :class: with-shadow
         :width: 150px
 
     Typesetting is the composition of text by means of arranging
@@ -206,6 +216,6 @@ Best practices for floating
 *   Set an explicit :rst:`:width:` on floated images to control how much space
     text has to wrap around
 *   Floated figures are limited to 50% of the page width to ensure readability
-*   Prefer :rst:`:align:` on figures for cleaner RST syntax; use :rst:`:class:` when you
-    need to combine float with other classes like :rst:`with-shadow`
+*   Prefer :rst:`:align:` for floating; add other classes like :rst:`with-shadow`
+    with :rst:`:class:` next to it
 *   Test on narrow viewports to verify the responsive behavior

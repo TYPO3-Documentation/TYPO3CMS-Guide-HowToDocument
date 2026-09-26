@@ -40,9 +40,9 @@ Optional parameters for images and figures:
 *   `:width:` : width of image, use for example px (for example `:width: 100px`
 *   `:scale:` : scale images, for example `:scale: 65`
 *   `:zoom:` : enable zoom functionality (see :ref:`image zoom <image-zoom>`)
-*   `:class:` : CSS classes, for example `with-shadow`, `with-border`, `float-left`,
-    `float-right` (see :ref:`floating and alignment <image-float-alignment>`)
-*   `:align:` : alignment/float for figures: `left`, `right`, `center`
+*   `:class:` : CSS classes, for example `with-shadow`, `with-border`, `float-start`,
+    `float-end` (see :ref:`floating and alignment <image-float-alignment>`)
+*   `:align:` : alignment/float for images and figures: `left`, `right`, `center`
     (see :ref:`floating and alignment <image-float-alignment>`)
 
 Additional parameters can be found on the docutils page `reStructuredText Directives
