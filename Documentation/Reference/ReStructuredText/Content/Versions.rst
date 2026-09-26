@@ -123,3 +123,34 @@ Find a changelog entry's permalink from its own
 `.. _<type>-<issue>-<timestamp>:` anchor, for example in the "Added files"
 section of the corresponding `Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc>`__
 issue.
+
+..  _rest-versions-changelog-option:
+
+Linking the changelog entry with `:changelog:`
+==============================================
+
+The examples above write the permalink of the changelog entry by hand into
+the directive body. The three version directives also accept the
+:rst:`:changelog:` option. Use this option to link an entry of the TYPO3
+Core changelog. The value is the identifier of the entry, in the form
+`<type>-<issue>-<timestamp>`:
+
+..  code-block:: rst
+
+    ..  versionchanged:: 14.0
+        :changelog: feature-107628-1729026000
+
+        Most modules moved from :guilabel:`System` to
+        :guilabel:`Administration`.
+
+..  versionchanged:: 14.0
+    :changelog: feature-107628-1729026000
+
+    Most modules moved from :guilabel:`System` to
+    :guilabel:`Administration`.
+
+The option puts the link into the version badge. The link text is the title
+of the changelog entry, so you do not copy the title and the URL by hand.
+
+If the identifier does not match an entry, the rendering shows a warning.
+Check the identifier before you commit the change.
