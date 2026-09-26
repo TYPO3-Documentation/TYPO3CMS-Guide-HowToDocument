@@ -217,6 +217,6 @@ Check in the intercept to see if a new rendering has started. Once this is
 done, check the documentation to see if the backport worked as expected.
 
 Swap :guilabel:`backport-failed` for :guilabel:`backport-done` on the original
-pull request as soon as your backport pull requests are open -- the automatic
+pull request as soon as your backport pull requests are open – the automatic
 backport labels its own the same way, when it creates them rather than when
 they are merged.
