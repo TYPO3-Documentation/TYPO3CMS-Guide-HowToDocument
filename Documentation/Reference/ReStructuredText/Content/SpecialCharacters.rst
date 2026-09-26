@@ -17,6 +17,23 @@ utf-8.
 Keep in mind that while you CAN use any Unicode character not all of them will
 be displayed. In general fonts contain glyphs for common characters only.
 
+..  _reference-re-structured-text-content-special-characters-dashes:
+
+Dashes are not translated
+=========================
+
+Write a dash as the character it is, `—` for an em dash or `–` for an en
+dash. The rendering passes `--` and `---` through as the hyphens you typed.
+Sphinx replaces them, because its `smartquotes
+<https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-smartquotes>`__
+setting is on by default and educates dashes along with quotes and ellipses.
+This rendering has no such transform, so both reach the reader unchanged.
+
+..  code-block:: rst
+
+    Prefix the summary line with the type of change — `[TASK]`, `[BUGFIX]`
+    or `[FEATURE]` — followed by a short, imperative summary.
+
 ..  _reference-re-structured-text-content-special-characters-lists-characters:
 
 Some lists of characters
