@@ -218,7 +218,7 @@ This allows you to render your documentation by using
 
 instead of typing a long :bash:`docker run...` or :bash:`podman run...` command.
 
-When rendering locally you should ideally see something like this
+When rendering locally you should ideally see something like this:
 
 ..  code-block:: text
 

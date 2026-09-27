@@ -168,9 +168,10 @@ Please make sure that you are in the branch you have just pushed into.
 Preferably `main`:
 
 ..  code-block:: shell
+
     git checkout main
 
-Look up the commit ID with
+Look up the commit ID with:
 
 ..  code-block:: shell
 
@@ -206,7 +207,7 @@ For a visual confirmation you can now execute the building process again with:
 
     make docs
 
-If everything looks fine continue the cherry-pick with
+If everything looks fine continue the cherry-pick with:
 
 ..  code-block:: shell
 
