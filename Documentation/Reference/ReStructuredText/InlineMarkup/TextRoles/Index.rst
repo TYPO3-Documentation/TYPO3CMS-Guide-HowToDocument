@@ -38,7 +38,7 @@ documentation that are not already covered on their own page.
         `\\Vendor\\Ext\\MyClass`     renders as: \Vendor\Ext\MyClass
 
     Double every backslash you want to keep. :rst:`:file:`, :rst:`:php:`
-    and :rst:`:php-short:` are exceptions -- they take the text verbatim,
+    and :rst:`:php-short:` are exceptions — they take the text verbatim,
     so a single backslash there already prints as-is. If you are not
     sure how a given role handles it, check the rendered output rather
     than assuming.

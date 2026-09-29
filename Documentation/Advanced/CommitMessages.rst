@@ -26,8 +26,8 @@ issue, mention it too:
 Format
 ======
 
-*   Prefix the summary line with the type of change -- `[TASK]`,
-    `[BUGFIX]` or `[FEATURE]` -- followed by a short, imperative summary.
+*   Prefix the summary line with the type of change — `[TASK]`,
+    `[BUGFIX]` or `[FEATURE]` — followed by a short, imperative summary.
 
 *   Explain *why* the change is needed in the body. The diff already shows
     what changed; the body should cover what the diff cannot.
@@ -45,6 +45,6 @@ Format
     `Releases: main, 14.3` to note which versions your change applies to
     (see :ref:`review policy <review-policy>`). Backporting to those
     branches then happens automatically (see :ref:`backport changes
-    <backport-changes>`) -- manual backporting is only needed if the
+    <backport-changes>`) — manual backporting is only needed if the
     automatic backport hits a conflict or the content needs to be
     adjusted per version.
