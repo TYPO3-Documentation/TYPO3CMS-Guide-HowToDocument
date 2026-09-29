@@ -16,48 +16,16 @@ text wraps around them. This is useful for inline illustrations, icons,
 or any image that should be embedded within a text flow rather than
 displayed as a standalone block.
 
-There are two ways to apply floating:
-
-1.  The :rst:`:align:` **option** — :rst:`:align: left`, :rst:`:align: right`, or :rst:`:align: center`
-    — works on both :rst:`..  image::` and :rst:`..  figure::` directives.
-2.  **CSS classes** :rst:`:class: float-start` or :rst:`:class: float-end` — also works on
-    both directives.
-
-Both approaches produce the same visual result. Prefer :rst:`:align:`. Use the
-CSS classes where :rst:`:align:` cannot float an image, for example on a
-substitution image (:rst:`|name|`): docutils only accepts :rst:`top`,
-:rst:`middle` and :rst:`bottom` for :rst:`:align:` inside a substitution
-definition.
-
-The Bootstrap 4 class names :rst:`float-left` and :rst:`float-right` are
-deprecated. The renderer rewrites them to :rst:`float-start` and
-:rst:`float-end` and logs a warning.
-
 ..  _image-float-css-classes:
-
-Float with CSS classes
-======================
-
-Add :rst:`float-start` or :rst:`float-end` to the :rst:`:class:` option. You can combine
-these with other classes such as :rst:`with-shadow` or :rst:`with-border`:
-
-..  code-block:: rst
-
-    ..  |logo| image:: /Images/MyLogo.png
-        :alt: Description of the logo
-        :class: float-start with-shadow
-
-    |logo| Surrounding text will wrap to the right of the logo.
-
 ..  _image-float-align-option:
 
 Align option
 ============
 
-The :rst:`:align:` option on :rst:`..  image::` and :rst:`..  figure::` directives supports
-:rst:`left`, :rst:`right`, and :rst:`center`. Values :rst:`left` and :rst:`right` produce the
-same floating behavior as the CSS classes. Other classes such as :rst:`with-shadow`
-go into the :rst:`:class:` option next to it:
+Use the :rst:`:align:` option to float an image or figure. It works on both
+:rst:`..  image::` and :rst:`..  figure::` directives and supports :rst:`left`,
+:rst:`right`, and :rst:`center`. Other classes such as :rst:`with-shadow` go
+into the :rst:`:class:` option next to it:
 
 ..  code-block:: rst
 
@@ -71,6 +39,11 @@ go into the :rst:`:class:` option next to it:
     Surrounding text will wrap to the left of the image.
 
 Using :rst:`:align: center` centers the figure without any text wrapping.
+
+The CSS classes :rst:`float-start` and :rst:`float-end` in :rst:`:class:` still
+float an image the same way. The Bootstrap 4 class names :rst:`float-left` and
+:rst:`float-right` are deprecated: the renderer rewrites them to
+:rst:`float-start` and :rst:`float-end` and logs a warning.
 
 ..  _image-float-clearing:
 
