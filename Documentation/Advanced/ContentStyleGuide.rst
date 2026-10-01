@@ -101,7 +101,7 @@ Examples:
     This applies to **all headers** on a page, not just the top level header (title).
 
 In reST, headers are created by underlining / overlining with (`====`, `----`, etc.)
-as described in :ref:`headlines and sections <Headlines-and-sections>`:
+as described in :ref:`headlines and sections <headlines-and-sections>`:
 
 ..  code-block:: rst
 

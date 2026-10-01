@@ -2,7 +2,7 @@
 ..  index::
     ! Diagrams
     Diagrams; PlantUML
-..  _PlantUML-diagrams:
+..  _plantuml-diagrams:
 
 =================
 PlantUML diagrams
@@ -28,7 +28,7 @@ This will be rendered as:
 
     class -> otherClass : message
 
-..  _PlantUML-diagrams-included:
+..  _plantuml-diagrams-included:
 
 Include a PlantUML file
 =======================

@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 ..  index:: reST; Definition lists
-..  _Styled-Definition-Lists:
+..  _styled-definition-lists:
 
 ================
 Definition lists
@@ -146,7 +146,7 @@ Source:
 
 ..  code-block:: rst
 
-    ..  _label-parameterAbc:
+    ..  _label-parameterabc:
     ..  rst-class:: dl-parameters
 
     parameterAbc
@@ -157,7 +157,7 @@ Source:
 
         Text describing parameterAbc ...
 
-    ..  _label-parameterBcd:
+    ..  _label-parameterbcd:
     ..  rst-class:: dl-parameters
 
     parameterBcd
@@ -171,7 +171,7 @@ Source:
 
 Rendering result:
 
-..  _label-parameterAbc:
+..  _label-parameterabc:
 ..  rst-class:: dl-parameters
 
 parameterAbc
@@ -182,7 +182,7 @@ parameterAbc
 
     Text describing parameterAbc ...
 
-..  _label-parameterBcd:
+..  _label-parameterbcd:
 ..  rst-class:: dl-parameters
 
 parameterBcd
@@ -199,12 +199,12 @@ Source:
 
 ..  code-block:: rst
 
-    Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
+    Here we link to :ref:`A link text for parameterAbc <label-parameterabc>`.
 
-    Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
+    Here we link to :ref:`A link text for parameterBcd <label-parameterabc>`.
 
 Result:
 
-Here we link to :ref:`A link text for parameterAbc <label-parameterAbc>`.
+Here we link to :ref:`A link text for parameterAbc <label-parameterabc>`.
 
-Here we link to :ref:`A link text for parameterBcd <label-parameterAbc>`.
+Here we link to :ref:`A link text for parameterBcd <label-parameterabc>`.

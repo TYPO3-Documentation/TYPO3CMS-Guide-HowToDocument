@@ -30,7 +30,7 @@ And follow the interactive question.
 ..  hint::
     If you are migrating from the legacy Sphinx-based rendering and still have
     a :file:`Documentation/Settings.cfg` you can use an automatic migration
-    tool to :ref:`migrate the Settings.cfg into a guides.xml <migrate_guides_xml>`
+    tool to :ref:`migrate the Settings.cfg into a guides.xml <migrate-guides-xml>`
 
 ..  _guides-xml-api:
 
@@ -546,7 +546,7 @@ And follow the interactive question.
             a private Gitlab or another issue tool, Make an internal page and
             link it like `/SomePath/MyIssueReport`.
 
-        ..  _settings-guides-preferred_typo3_version:
+        ..  _settings-guides-preferred-typo3-version:
 
         ..  confval:: typo3-core-preferred
             :name: guides-extension-typo3-core-preferred
