@@ -59,6 +59,10 @@ try to always add a `:caption:` with the path and name of the file where the exa
 Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
 in a code block.
 
+For code longer than about three lines in a programming or configuration
+language, prefer a file of its own included with
+`literalinclude <https://docs.typo3.org/permalink/h2document:writing-rest-codeblocks-with-syntax-highlighting-literalinclude>`_.
+
 Use :ref:`placeholders <codeblocks-placeholders>` in angle brackets
 (`<placeholder-name>`) to refer to a place in the code where the exact
 value is not important.
@@ -430,12 +434,22 @@ and a :rst:`literalinclude` directive.
 Literalinclude
 ==============
 
-A drawback of code blocks is that most editors cannot properly highlight or
-indent code within code blocks. The directive :rst:`literalinclude` enables you
-to store longer code blocks in an external file with the proper file extension.
+The directive :rst:`literalinclude` imports a file and displays its content as
+a code block.
 
-The :rst:`literalinclude` directive imports the file and displays its content as
-code block.
+When the code is longer than about three lines and written in a programming or
+configuration language, such as PHP, YAML, TypoScript or JavaScript, prefer
+:rst:`literalinclude` over :rst:`code-block`. Store the code in a file of its
+own with the proper file extension, for example in
+:path:`Documentation/_CodeSnippets/`, and include it from there:
+
+*   Linters and coding guideline checks can run on the file, so the example
+    stays free of syntax errors and follows the coding guidelines.
+*   You can work on the file in your IDE, with its highlighting, completion
+    and formatting. Most editors cannot do that for code inside a code block.
+
+Keep a :rst:`code-block` for a few lines, for shell commands, and for a
+fragment that would not be valid code in a file of its own.
 
 
 ..  tabs::
