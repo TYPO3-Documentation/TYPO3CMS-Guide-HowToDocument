@@ -7,3 +7,5 @@ rules. This file exists only because Claude Code specifically looks for
 One Claude-specific detail: in the commit message trailer format described
 in AGENTS.md, use `Assisted-by: Claude <model name> <noreply@anthropic.com>`
 — the actual model name you're running as, not a guess.
+
+@AGENTS.md
