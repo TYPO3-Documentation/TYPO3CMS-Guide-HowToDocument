@@ -113,7 +113,9 @@ will fail.
             :name: <reference-label>
 
     :rst:`linenos`
-        Show line numbers.
+        Show line numbers. Use it whenever the text refers to a line by its
+        number, so the reader can see that number instead of counting, see
+        `Referring to a line by its number <https://docs.typo3.org/permalink/h2document:codeblocks-line-numbers>`_.
 
     :rst:`lineno-start`
         Start line numbers with <start-number>.
@@ -294,6 +296,38 @@ Use it where a reader has to see the code in its file, but only a part of it
 is the point. Where the block works on its own, show that part alone and mark
 the caption as an excerpt, see
 `Captioning a part of a file <https://docs.typo3.org/permalink/h2document:codeblocks-caption-excerpt>`_.
+
+..  _codeblocks-line-numbers:
+
+Referring to a line by its number
+---------------------------------
+
+When the text refers to a line by its number, show the line numbers with
+:rst:`:linenos:` and use the number the reader sees beside the line. Do not
+count the lines yourself.
+
+The numbers count the lines of the source, one per line break. A folded line
+keeps its number, so the first visible line below is line 10, not line 1. A
+line too long for the screen wraps but is still one line.
+
+Emphasize the lines the text is about, so the reader finds them without
+counting:
+
+..  tabs::
+
+    ..  group-tab:: Source (rst)
+
+        ..  literalinclude:: _snippets/_line-numbers.rst.txt
+            :caption: Documentation/MyDocs.rst
+
+    ..  group-tab:: Output
+
+        ..  include:: _snippets/_line-numbers.rst.txt
+
+A line number goes out of date as soon as a line is added above it. Name what
+is in the line as well, like "the attribute in line 12", so the sentence still
+leads the reader to the right line, and check the numbers whenever you change
+the code.
 
 ..  _writing-rest-codeblocks-with-syntax-highlighting-examples-code-blocks:
 
