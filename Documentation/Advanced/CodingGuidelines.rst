@@ -175,7 +175,7 @@ However, adhering to the standard for TYPO3 documentation makes it easier for
 other contributors to find their way around a file and pick the correct underlining
 for the header level.
 
-Use the :ref:`conventions for headlines <Headlines-and-sections>`.
+Use the :ref:`conventions for headlines <headlines-and-sections>`.
 
 This underlining is used **per (.rst) file**. It does not matter where in the toctree
 the file is. You always start with underlining for level 1 (title) in each

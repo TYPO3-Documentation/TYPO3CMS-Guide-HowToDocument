@@ -215,7 +215,7 @@ More information
 
 For more information in this guide:
 
-*   :ref:`reST cheat sheet <Formatting-with-reST>`
+*   :ref:`reST cheat sheet <formatting-with-rest>`
 *   `Rendering Documentation With Docker <https://github.com/t3docs/docker-render-documentation/blob/master/README.rst>`__
 *   :ref:`Review policy <review-policy>`
 

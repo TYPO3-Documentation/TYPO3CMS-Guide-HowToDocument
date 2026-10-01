@@ -140,7 +140,7 @@ Here are some examples:
 
         Example of a sequence diagram about request handling
 
-*   :ref:`Get started with PlantUML diagrams <PlantUML-diagrams>`
+*   :ref:`Get started with PlantUML diagrams <plantuml-diagrams>`
 
 
 ..  _docs-official-how-you-can-help-replace-outdated-images:

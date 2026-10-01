@@ -1,7 +1,7 @@
 :navigation-title: ReST Cheat Sheet
 ..  include:: /Includes.rst.txt
 ..  _writing-rest-introduction:
-..  _Formatting-with-reST:
+..  _formatting-with-rest:
 ..  _rest-quick-start:
 ..  _rest-cheat-sheet:
 

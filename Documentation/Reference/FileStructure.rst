@@ -217,7 +217,7 @@ Read more about :ref:`configuring the rendering in guides.xml <guides-xml>`.
 ..  hint::
     If you are migrating from the legacy Sphinx-based rendering and still have
     a :file:`Documentation/Settings.cfg` you can use an automatic migration
-    tool to :ref:`migrate the settings.cfg into a guides.xml <migrate_guides_xml>`.
+    tool to :ref:`migrate the settings.cfg into a guides.xml <migrate-guides-xml>`.
 
 Example:
 

@@ -26,7 +26,7 @@ In the transition period the GitHub action of the official rendering process det
 :file:`Documentation/guides.xml` is present and then automatically switches to the
 PHP-based rendering.
 
-..  _migrate_guides_xml:
+..  _migrate-guides-xml:
 
 Create the settings file :file:`Documentation/guides.xml`
 =========================================================
