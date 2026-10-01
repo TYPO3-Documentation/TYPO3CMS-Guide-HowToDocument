@@ -32,6 +32,9 @@ CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
 8. **Never commit or push without being asked.**
 9. **Commit message**: follow [Documentation/Advanced/CommitMessages.rst](Documentation/Advanced/CommitMessages.rst).
    This repo has only `main` (no LTS branches), so skip `Releases:`/`Resolves:`.
+10. **Pull request**: the title is the commit's summary line and the
+    description is the commit body, trailers included, as plain wrapped text.
+    Add nothing else: no Markdown lists, no generated-by footer.
 
 ## References
 
