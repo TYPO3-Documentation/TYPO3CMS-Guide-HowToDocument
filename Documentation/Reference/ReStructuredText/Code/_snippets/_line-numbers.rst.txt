@@ -1,0 +1,25 @@
+..  code-block:: php
+    :caption: EXT:my_extension/Classes/EventListener/MyListener.php
+    :linenos:
+    :emphasize-lines: 12-13
+
+    <?php
+
+    declare(strict_types=1);
+
+    namespace MyVendor\MyExtension\EventListener;
+
+    use TYPO3\CMS\Core\Attribute\AsEventListener;
+    use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
+
+    final class MyListener
+    {
+      #[AsEventListener]
+      public function __invoke(AfterFileAddedEvent $event): void
+      {
+        // Your code here
+      }
+    }
+
+The attribute in line 12 registers the method as an event listener. The type
+of its argument in line 13 tells TYPO3 which event the method listens to.
