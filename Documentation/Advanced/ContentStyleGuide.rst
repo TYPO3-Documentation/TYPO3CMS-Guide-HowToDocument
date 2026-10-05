@@ -414,6 +414,30 @@ order, and a :ref:`bullet list <rest-unordered-lists>` for everything
 else.
 
 
+..  index:: Writing; Difficulty
+..  _content-styleguide-difficulty:
+
+Do not call a task easy
+=======================
+
+Do not use words that judge how difficult a task is for the reader, such
+as "easy", "simple", "simply", "just", "obviously", or "of course". A
+task that is easy for the author is often not easy for a beginner. A
+reader who struggles with an "easy" task feels frustrated, and may think
+the problem is them and not the text.
+
+Leave the word out, or state a fact that helps the reader plan instead.
+
+*   Correct: "Add the following line to the file."
+*   Wrong: "Simply add the following line to the file."
+*   Correct: "This takes about five minutes and needs no PHP knowledge."
+*   Wrong: "This is easy."
+
+This rule is about the difficulty for the reader. A fixed term or a name
+can still contain one of these words, for example the Simple Mail
+Transfer Protocol (SMTP).
+
+
 ..  index:: Spelling; Preferred terms
 
 ..  _content-styleguide-spelling-preferred-terms:
