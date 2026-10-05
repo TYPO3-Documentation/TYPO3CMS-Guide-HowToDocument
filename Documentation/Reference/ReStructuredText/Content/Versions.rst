@@ -158,3 +158,8 @@ of the changelog entry, so you do not copy the title and the URL by hand.
 
 If the identifier does not match an entry, the rendering shows a warning.
 Check the identifier before you commit the change.
+
+To say in which version a configuration value was added, changed,
+deprecated, or removed, do not put a version directive into the
+:rst:`confval`. Use the options of the :rst:`confval` instead, see
+`Versions of a configuration value <https://docs.typo3.org/permalink/h2document:rest-confval-versions>`_.
