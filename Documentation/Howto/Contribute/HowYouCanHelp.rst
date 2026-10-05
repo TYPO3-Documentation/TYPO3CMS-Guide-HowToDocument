@@ -179,7 +179,7 @@ the changes yourself.
 ..  tip::
     If you do not have write access to a GitHub repository (which is usually the
     case if you just started), you cannot check off the checkmarks in the review
-    list. In that case, just leave a comment in the issue.
+    list. In that case, leave a comment in the issue.
 
 Once you start and are confident that you can make progress, you may want to
 talk about your intentions in the `#typo3-documentation`_ Slack channel (as this

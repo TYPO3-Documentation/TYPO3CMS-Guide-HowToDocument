@@ -143,7 +143,7 @@ directive and the version of deprecation.
         See `Deprecation: #100307 - Various hooks related to authentication users <https://docs.typo3.org/permalink/changelog:deprecation-100307-1679924603>`_.
 
 In the ideal workflow a deprecation option will be removed with a breaking
-change in the next major version. We can then just remove the deprecated section.
+change in the next major version. We can then remove the deprecated section.
 
 Using the correct directive will help the documentation team to find and remove
 deprecation hints in later versions.
@@ -157,7 +157,7 @@ Breaking changes in the Changelog
 =================================
 
 Ideally a breaking change was prepared by a :ref:`deprecation <changelog-deprecations>`
-in the previous version. In this case we can just remove the deprecated section.
+in the previous version. In this case we can remove the deprecated section.
 
 When important concepts changed that might confuse the users we sometimes leave
 a :rst:`.. versionchanged::` directive to inform users where to head now.

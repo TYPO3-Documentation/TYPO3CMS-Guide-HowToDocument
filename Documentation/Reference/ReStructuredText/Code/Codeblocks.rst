@@ -540,7 +540,7 @@ or on the command line
 
 ..  code-block:: rst
 
-    Importing a TYPO3 dump file is as simple as running:
+    To import a TYPO3 dump file, run:
 
     ..  code-block:: bash
 

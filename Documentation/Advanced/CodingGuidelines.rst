@@ -93,8 +93,8 @@ Line length
 
 Most of our documentation projects contain an .editorconfig file.
 
-Use this file to setup your editor / IDE correctly. With some, everything will
-just work automatically. With others, you will need to download a plugin. This
+Use this file to setup your editor / IDE correctly. With some, everything
+works automatically. With others, you will need to download a plugin. This
 is explained on the `Editorconfig <http://EditorConfig.org>`__ page.
 
 The file below is the master copy. Every documentation repository uses it
@@ -264,7 +264,7 @@ Linking to the :doc:`changelog <ext_core:Index>` should not be necessary, if all
 relevant information has been transferred to the documentation, but it is not
 discouraged either.
 
-The changelog has a title anchor, so you can easily link to it with `:ref:`.
+The changelog has a title anchor, so you can link to it with `:ref:`.
 
 ..  code-block:: rst
 

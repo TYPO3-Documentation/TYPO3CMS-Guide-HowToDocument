@@ -26,7 +26,7 @@ see :ref:`types of documentation <overview-of-types>`.
 
 ..  tip::
 
-    There is an easy shortcut for minor changes: You can use
+    There is a shortcut for minor changes: You can use
     the :ref:`Edit on GitHub method <docs-contribute-github-method>` for
     minor changes to system extensions documentation and the changelog. Under the hood,
     a patch will get created and pushed to Gerrit and you will find a

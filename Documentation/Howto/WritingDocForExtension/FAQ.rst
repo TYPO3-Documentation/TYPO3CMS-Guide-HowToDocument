@@ -146,9 +146,8 @@ The documentation and the extension at
 TER (https://extensions.typo3.org) are two separate, independent entities.
 
 In theory you could have the documentation in GitHub (for example)
-and the extension (code) somewhere else (or not in Git at all). You just
-need to fire the webhook from GitHub/GitLab/Bitbucket to trigger the
-documentation rendering.
+and the extension (code) somewhere else (or not in Git at all). To trigger
+the documentation rendering, fire the webhook from GitHub/GitLab/Bitbucket.
 
 
 ..  rst-class:: panel panel-default
@@ -217,7 +216,7 @@ It makes it easier to contribute to the documentation!
 
 **How do you enable this?**
 
-Just add this to your :ref:`guides.xml <settings-cfg>` and customize it:
+Add this to your :ref:`guides.xml <settings-cfg>` and customize it:
 
 ..  code-block:: none
 
