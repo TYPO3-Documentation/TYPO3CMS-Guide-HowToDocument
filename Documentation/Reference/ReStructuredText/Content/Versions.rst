@@ -20,14 +20,16 @@ Versionadded
 ..  code-block:: rst
 
     ..  versionadded:: 10.0
-        Starting with TYPO3 10.0 hooks and signals have been replaced by a PSR-14 based
-        event dispatching system.
+        A PSR-14 based event dispatcher replaces hooks and signals.
         See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
 
+    TYPO3 dispatches events with a PSR-14 based event dispatcher.
+
 ..  versionadded:: 10.0
-    Starting with TYPO3 10.0 hooks and signals have been replaced by a PSR-14 based
-    event dispatching system.
+    A PSR-14 based event dispatcher replaces hooks and signals.
     See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
+
+TYPO3 dispatches events with a PSR-14 based event dispatcher.
 
 For emphasis, the directive can also be placed into one of the
 :ref:`admonitions <rest-admonitions>`:
@@ -37,14 +39,12 @@ For emphasis, the directive can also be placed into one of the
 
     ..  tip::
         ..  versionadded:: 10.0
-            Starting with TYPO3 10.0 hooks and signals have been replaced by a PSR-14 based
-            event dispatching system.
+            A PSR-14 based event dispatcher replaces hooks and signals.
             See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
 
 ..  tip::
     ..  versionadded:: 10.0
-        Starting with TYPO3 10.0 hooks and signals have been replaced by a PSR-14 based
-        event dispatching system.
+        A PSR-14 based event dispatcher replaces hooks and signals.
         See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
 
 ..  _rest-versions-deprecated:
@@ -93,11 +93,15 @@ information there that is meant to stay in the documentation permanently -
 how something works, how to use it - that belongs in the regular text
 around the directive instead.
 
-It is fine to put information in the directive body that is itself tied to
-the version transition and becomes obsolete once the directive is pruned:
-a link to the corresponding Core changelog entry, a link to a migration
-section, or a mention of what this replaces (for example, that an event
-replaces a previous hook).
+Put information into the directive body that is tied to the version
+transition and becomes obsolete once the directive is pruned:
+
+*   A link to the corresponding Core changelog entry.
+*   How to migrate, or a link to a migration section.
+*   What the new feature replaces, or what replaces a deprecated one. For
+    example, an event replaces a previous hook.
+*   What was different before a change. For example, "Before, the option
+    returned a path relative to the site root."
 
 ..  code-block:: rst
 
