@@ -338,7 +338,11 @@ the code.
 Use code blocks containing diffs
 --------------------------------
 
-To emphasize changes that should be made:
+If you have the file before and after the change, use
+`literalinclude with the option :diff: <https://docs.typo3.org/permalink/h2document:literalinclude-diff>`_
+instead of a diff that you write by hand.
+
+To show a change in a short fragment, write the diff in a code block:
 
 ..  tabs::
 
@@ -507,6 +511,47 @@ fragment that would not be valid code in a file of its own.
 
 See also `literalinclude directive
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
+
+..  _literalinclude-diff:
+
+Show the changes between two files
+----------------------------------
+
+To show how a file changes, keep the file as it was and the file as it is.
+Include the file as it is, and name the file as it was in the option
+:rst:`:diff:`. The block then shows the changes as a unified diff:
+
+..  tabs::
+
+    ..  group-tab:: Source (rst)
+
+        ..  code-block:: rst
+            :caption: Documentation/MyDocs.rst
+
+            ..  literalinclude:: /_CodeSnippets/LiteralIncludes/site-config-after.yaml
+                :diff: /_CodeSnippets/LiteralIncludes/site-config-before.yaml
+                :caption: config/sites/my-site/config.yaml
+
+    ..  group-tab:: Output
+
+        ..  literalinclude:: /_CodeSnippets/LiteralIncludes/site-config-after.yaml
+            :diff: /_CodeSnippets/LiteralIncludes/site-config-before.yaml
+            :caption: config/sites/my-site/config.yaml
+
+The block shows each changed line with one unchanged line above and below
+it. The headers of the diff and the other unchanged lines are folded. The
+reader can click a folded part to open it.
+
+The other options of :rst:`literalinclude` still work.
+:rst:`:emphasize-lines:` and :rst:`:visible-lines:` count the lines of the
+diff, not the lines of the file. Use :rst:`:visible-lines: all` to show the
+whole diff.
+
+If the two files are the same, the block shows the file without a diff, and
+the rendering reports a warning.
+
+Prefer :rst:`:diff:` over a diff that you write by hand: the two files can
+be checked like other code, and the diff always matches them.
 
 
 ..  _codeblocks-placeholders:
