@@ -32,6 +32,20 @@ Spelling
 Use common spelling for American English. Some specific TYPO3 terms
 have a special spelling. See the :ref:`spelling reference <spelling-ref>`.
 
+..  _content-styleguide-serial-comma:
+
+Use the serial comma
+====================
+
+In a list of three or more items, put a comma before the final "and" or
+"or". This is also called the Oxford comma:
+
+*   Correct: "pages, content elements, and files"
+*   Wrong: "pages, content elements and files"
+
+This applies to commit messages, pull request descriptions, and issue
+comments as well.
+
 ..  _content-styleguide-general-information:
 
 General information
