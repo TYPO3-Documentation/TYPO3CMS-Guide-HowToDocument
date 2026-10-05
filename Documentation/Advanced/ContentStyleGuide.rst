@@ -285,6 +285,120 @@ spelling for Git, because it applies to the rules for :ref:`proper names <spelli
 The same goes for **Docker**, **Composer**, etc.
 
 
+..  index:: Writing; Sentences
+..  _content-styleguide-sentences:
+
+Rules for sentences
+===================
+
+The following rules are taken from
+`ASD-STE100 Simplified Technical English <https://www.asd-ste100.org/>`__.
+They make a text easier to read, especially for readers whose first
+language is not English, and easier to translate. They are
+recommendations, not strict limits: break a rule if the text becomes
+clearer.
+
+..  _content-styleguide-sentences-one-term:
+
+Use one term for one thing
+--------------------------
+
+Use the same term for the same thing throughout a page. Do not switch to
+a synonym for variety: the reader assumes that a different word means a
+different thing. Use the terms of the :ref:`spelling reference
+<spelling-ref>` where it defines one.
+
+*   Correct: "Add the site set to your site. The site set then provides …"
+*   Wrong: "Add the site set to your site. The configuration package then
+    provides …"
+
+..  _content-styleguide-sentences-imperative:
+
+Write instructions in the imperative
+------------------------------------
+
+Write an instruction as a command, and give one instruction per
+sentence. Two actions go into one sentence only if the reader does them
+at the same time.
+
+*   Correct: "Open the file :file:`config/system/settings.php`. Add the
+    following line."
+*   Wrong: "The file :file:`config/system/settings.php` should be opened
+    and the following line can be added."
+
+..  _content-styleguide-sentences-condition-first:
+
+Put the condition first
+-----------------------
+
+If an instruction applies only under a condition, write the condition
+before the instruction. The reader then knows whether the instruction
+applies before they act on it.
+
+*   Correct: "If you use Composer, run the following command."
+*   Wrong: "Run the following command if you use Composer."
+
+..  _content-styleguide-sentences-active-voice:
+
+Use the active voice and simple tenses
+--------------------------------------
+
+Prefer the active voice: it says who does the action. Prefer the present
+tense, also for what TYPO3 does as a result of an action.
+
+*   Correct: "TYPO3 caches the page."
+*   Wrong: "The page will be cached."
+
+..  _content-styleguide-sentences-length:
+
+Keep sentences short
+--------------------
+
+Aim at no more than 20 words in a sentence of an instruction, and no
+more than 25 words in a sentence of a description. A longer sentence is
+a hint to split it into two.
+
+..  _content-styleguide-sentences-paragraphs:
+
+Keep paragraphs short and on one topic
+--------------------------------------
+
+Give each paragraph one topic. Aim at no more than six sentences in a
+paragraph.
+
+..  _content-styleguide-sentences-noun-clusters:
+
+Avoid long noun clusters
+------------------------
+
+Do not put more than three nouns in a row. Split a longer chain with
+prepositions.
+
+*   Correct: "the condition for the base variant of the site
+    configuration"
+*   Wrong: "the site configuration base variant condition"
+
+..  _content-styleguide-sentences-articles:
+
+Keep articles and short words
+-----------------------------
+
+Do not leave out articles ("a", "an", "the") or other short words to
+make a text shorter. A telegraphic style is harder to understand.
+
+*   Correct: "Click the :guilabel:`Save` button."
+*   Wrong: "Click :guilabel:`Save` button."
+
+..  _content-styleguide-sentences-lists:
+
+Use lists for steps and conditions
+----------------------------------
+
+If a text contains three or more steps or conditions, write them as a
+list. Use a :ref:`numbered list <numbered-lists>` for steps in a fixed
+order, and a :ref:`bullet list <rest-unordered-lists>` for everything
+else.
+
 
 ..  index:: Spelling; Preferred terms
 
@@ -310,6 +424,8 @@ In addition to the TYPO3 Content Style Guide, some other resources have been use
     Use consistent terminology
     <https://developer.rackspace.com/docs/style-guide/terminology/general-term-guidelines/use-consistent-terms/>`__
 *   `Microsoft style guide <https://docs.microsoft.com/de-de/style-guide/welcome/>`__
+*   `ASD-STE100 Simplified Technical English <https://www.asd-ste100.org/>`__,
+    for the :ref:`rules for sentences <content-styleguide-sentences>`
 
 Capitalization:
 
