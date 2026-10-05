@@ -2,6 +2,7 @@
 
 ..  include:: /Includes.rst.txt
 ..  _inline-code:
+..  _inline-code-headlines:
 
 =====================================
 Inline code with or without infoboxes
@@ -106,25 +107,6 @@ A namespace in a plain literal needs doubled backslashes, for example
 `\\Vendor\\Ext\\PreviewRenderer`: unlike :rst:`:php:`, a plain literal
 drops a single backslash instead of printing it. See
 `Backslashes in text roles <https://docs.typo3.org/permalink/h2document:text-roles-backslash>`_.
-
-..  _inline-code-headlines:
-
-No code roles in headlines
---------------------------
-
-Leave code roles out of headlines entirely, including :rst:`:php:` and
-:rst:`:php-short:`. Use a plain literal there, even for something that would
-get a role in body text:
-
-..  code-block:: rst
-
-    The `GeneralUtility` class
-    ==========================
-
-The text of a headline is reused in places that only show plain text: the
-menu, the page title in the browser, and a reference without its own link
-text. There, the role's styling and infobox are lost, and the text appears
-exactly as written in the source, a full namespace included.
 
 ..  _inline-code-php:
 
