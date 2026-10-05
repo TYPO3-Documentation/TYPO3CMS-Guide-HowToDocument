@@ -100,7 +100,8 @@ what a manual documents, which is the definitions alone.
 
 This is also what makes the difference between :rst:`:php:` and a plain
 literal visible from outside a page: a class written as a code role is found,
-a class written as ordinary text is not. See
+a class written as ordinary text is not. A namespace is not a class, and the
+class index does not list it. See
 `PHP classes and interfaces <https://docs.typo3.org/permalink/h2document:inline-code-php>`_.
 
 See
