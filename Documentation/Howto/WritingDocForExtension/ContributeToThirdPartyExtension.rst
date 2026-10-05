@@ -20,7 +20,7 @@ You can add issues or make changes via patches (for example pull requests on Git
 If you can make the change yourself, try to submit it as a patch instead of
 just writing an issue. It depends on the policy of the extension author
 (see contribution guide for specific repository, if available), but
-it is usually not required to write an issue. You can just submit a pull request
+it is usually not required to write an issue. You can submit a pull request
 (PR) directly.
 
 
