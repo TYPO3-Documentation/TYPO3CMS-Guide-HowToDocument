@@ -44,6 +44,7 @@ C
 `checkbox`,
 `Classic mode`,
 `Composer`,
+`Content Security Policy` (the W3C standard), the `content security policy` of a page, `CSP`,
 `Core Team`, `TYPO3 Core Team`,
 `Core`, `TYPO3 Core`,
 `Core extension`,
