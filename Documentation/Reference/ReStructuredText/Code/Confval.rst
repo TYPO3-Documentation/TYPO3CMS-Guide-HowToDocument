@@ -107,6 +107,10 @@ There are several reserved attributes:
 `noindex`
     Exclude from being able to be referenced and form indexes. Useful for
     confvals that should be repeatedly displayed in different locations.
+`:added:`, `:changed:`, `:deprecated:`, `:removed:`
+    The version in which the configuration value was added, changed,
+    deprecated, or removed. See
+    `Versions of a configuration value <https://docs.typo3.org/permalink/h2document:rest-confval-versions>`_.
 
 All other attributes are output the way they are written:
 
@@ -127,6 +131,46 @@ All other attributes are output the way they are written:
         :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['fileCreateMask']`
 
         Lorem Ipsum Dolor sit
+
+..  _rest-confval-versions:
+
+Versions of a configuration value
+=================================
+
+Use the options :rst:`:added:`, :rst:`:changed:`, :rst:`:deprecated:`, and
+:rst:`:removed:` to say in which version a configuration value was added,
+changed, deprecated, or removed. Each option takes a version, such as
+`14.0`. Optionally, put the changelog entry after the version, separated by
+a space:
+
+..  code-block:: rst
+
+    ..  confval:: is_static
+        :name: ctrl-is-static
+        :type: boolean
+        :removed: 14.0 breaking-106863-1749629371
+
+        Marks a table as one that holds static reference data.
+
+..  confval:: is_static
+    :name: ctrl-is-static
+    :type: boolean
+    :removed: 14.0 breaking-106863-1749629371
+
+    Marks a table as one that holds static reference data.
+
+Each option shows as a row in the list of fields of the configuration value.
+The changelog entry shows as a link, with the title of the entry as the link
+text. The changelog entry takes the same values as the option
+`:changelog: of a version directive <https://docs.typo3.org/permalink/h2document:rest-versions-changelog-option>`_.
+
+Inside a :rst:`confval`, use these options instead of a
+`version directive <https://docs.typo3.org/permalink/h2document:rest-versions>`_.
+The index of the configuration values reads the options, but it cannot read
+a directive in the description.
+
+If the value of an option does not start with a version, or the changelog
+entry does not exist, the rendering shows a warning.
 
 ..  _rest-confval-confval-menu:
 
