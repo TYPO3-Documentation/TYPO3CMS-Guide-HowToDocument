@@ -162,6 +162,35 @@ A member written on its own, such as `Scope::backend()`, has nothing to
 resolve without its namespace. Introduce the class once with
 :rst:`:php-short:`, then write the bare member as a plain literal.
 
+..  _inline-code-php-namespace:
+
+Referencing a PHP namespace with `:php-namespace:`
+-------------------------------------------------
+
+Use :rst:`:php-namespace:` for a namespace. Pass the fully qualified
+namespace, including the leading backslash:
+
+..  code-block:: rst
+
+    The classes of :php-namespace:`\TYPO3\CMS\Core\Http` handle requests
+    and responses.
+
+The text prints as :php-namespace:`\TYPO3\CMS\Core\Http`. The role always
+prints the full namespace, because the last segment alone says too little.
+The infobox calls it a PHP namespace. For a namespace of the TYPO3 Core, the
+infobox also links to the page of the namespace on https://api.typo3.org.
+The `class index <https://docs.typo3.org/permalink/h2document:rendered-artifacts-classes>`_
+does not list a namespace.
+
+:rst:`:php:` and :rst:`:php-short:` also recognize a namespace that the TYPO3
+API knows, and print it in full. A :php:`use` statement in a code example
+that imports such a namespace is recognized too.
+
+Some names are a class and a namespace at the same time, for example
+`\\TYPO3\\CMS\\Core\\Exception`. :rst:`:php:` and :rst:`:php-short:` treat
+such a name as the class. If you mean the namespace, use
+:rst:`:php-namespace:`.
+
 ..  seealso::
 
     *   `When to use a code role for inline code <https://docs.typo3.org/permalink/h2document:inline-code-when-to-use-a-role>`_

@@ -37,9 +37,10 @@ documentation that are not already covered on their own page.
         `\Vendor\Ext\MyClass`        renders as: VendorExtMyClass
         `\\Vendor\\Ext\\MyClass`     renders as: \Vendor\Ext\MyClass
 
-    Double every backslash you want to keep. :rst:`:file:`, :rst:`:php:`
-    and :rst:`:php-short:` are exceptions — they take the text verbatim,
-    so a single backslash there already prints as-is. If you are not
+    Double every backslash you want to keep. :rst:`:file:`, :rst:`:php:`,
+    :rst:`:php-short:`, and :rst:`:php-namespace:` are exceptions — they
+    take the text verbatim, so a single backslash there already prints
+    as-is. If you are not
     sure how a given role handles it, check the rendered output rather
     than assuming.
 
@@ -127,8 +128,8 @@ page to themselves rather than a short entry here:
     `Linking Composer packages and TYPO3 extensions <https://docs.typo3.org/permalink/h2document:linking-extensions>`_.
 *   :rst:`:t3src:` for linking source files of the TYPO3 Core — see
     `Linking source files of the TYPO3 Core <https://docs.typo3.org/permalink/h2document:linking-core-source>`_.
-*   :rst:`:php:`, :rst:`:php-short:`, :rst:`:typoscript:` and other code
-    roles with an infobox — see
+*   :rst:`:php:`, :rst:`:php-short:`, :rst:`:php-namespace:`,
+    :rst:`:typoscript:`, and other code roles with an infobox — see
     `Inline code with or without infoboxes <https://docs.typo3.org/permalink/h2document:inline-code>`_.
 
 ..  seealso::
