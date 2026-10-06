@@ -1,37 +1,127 @@
-:navigation-title: Documentation references
+:navigation-title: Documentation links
 ..  include:: /Includes.rst.txt
 
 ..  _rest-ref:
 ..  _intersphinx:
 
-=================================
-References to TYPO3 documentation
+============================
+Links to TYPO3 documentation
+============================
+
+You can link the following elements in any TYPO3 manual: headlines,
+:ref:`confvals <rest-confval>`, and
+:ref:`PHP domain definitions <rest-phpdomain>`.
+You can also put an :ref:`anchor <link-targets-explanation>` almost anywhere
+and link to it.
+
+There are two ways to write such a link:
+
+*   A :ref:`permalink <permalinks>`, written as a normal link with a URL. This
+    is the preferred way, also for links inside the same manual.
+*   A :ref:`reST reference <rest-ref-role>` with the :rst:`:ref:` text role.
+
+Both ways point to an anchor, not to a file. The link keeps working when the
+section moves to another page or its headline is renamed.
+
+..  contents:: Table of contents
+    :local:
+
+..  _link-modal:
+
+Copy the link from the link modal
 =================================
 
-You can link the following elements in any TYPO3 manual: Headlines,
-:ref:`confvals <rest-confval>` and :ref:`phpdomain definitions <rest-phpdomain>`.
-It is also possible to put an anchor almost anywhere and then link it.
-
-When an element in a manual can be linked a link symbol will appear when you
-hover it:
+When you hover over an element that can be linked, a link icon appears:
 
 ..  figure:: /_Images/link-headlines.png
 
     Hover over a headline to see if it is linkable, then click the link icon
 
-After you click the link icon you can copy the reST link from the modal that
-appears:
+Click the link icon. A modal opens that offers the permalink and the reST
+reference for this element:
 
 ..  figure:: /_Images/link-headlines-box.png
 
-    Copy the reST reference
+    Copy the permalink or the reST reference
 
-The reST code of the reference looks like this:
+Copy the link from this modal rather than assembling it by hand. Do not copy
+the URL from the address bar of your browser: it contains the version and the
+path of the page, and it breaks when the page is moved.
+
+..  _permalinks:
+
+Permalinks
+==========
+
+A permalink is a plain URL on docs.typo3.org. It names the manual and the
+anchor of the element, and it redirects to the current location of the
+element in the `main` version of the manual. Use it like any other
+:ref:`external link <external-links>`:
 
 ..  code-block:: rst
-    :caption: Reference from another manual
+    :caption: A permalink in reST
 
-    :ref:`Hide detail page in URL <georgringer/news:hideDetailPage>`
+    Tag the entries with
+    `cache tags <https://docs.typo3.org/permalink/t3coreapi:caching-developer-cache-tags>`_
+    so that they can be flushed together.
+
+A permalink has the following syntax:
+
+..  code-block:: plaintext
+    :caption: Syntax of a permalink
+
+    https://docs.typo3.org/permalink/[interlink]:[anchor]
+
+Permalinks are the preferred way to link TYPO3 documentation, for the
+following reasons:
+
+*   You can open a permalink directly from the source file, in an editor, a
+    diff, or a review. You do not have to render the manual first to see
+    where the link goes.
+*   The same link works in reST, in Markdown, in a commit message, in an
+    issue, and in a chat.
+*   The rendering turns a permalink into a direct link to its target. A
+    permalink into the same manual therefore does not leave the rendered
+    manual through a redirect.
+
+..  _permalinks-rules:
+
+Rules for permalinks
+--------------------
+
+If you write or change a permalink by hand, follow these three rules:
+
+#.  **The interlink shortcode is required.** It is needed even when the anchor
+    lives in the manual you are writing in:
+    `permalink/t3coreapi:dependency-injection` resolves,
+    `permalink/dependency-injection` does not.
+
+#.  **The manual is written with hyphens, not slashes.** This is where a
+    permalink differs from a reST reference: :rst:`:ref:` uses
+    `friendsoftypo3/content-blocks:`, the permalink uses
+    `friendsoftypo3-content-blocks:`.
+
+#.  **Underscores in an anchor become hyphens.** The anchor
+    `..  _run_upgrade_wizard:` is published as `run-upgrade-wizard`, so only
+    `permalink/t3coreapi:run-upgrade-wizard` resolves.
+
+The rendered page links to the right target even if you break one of these
+rules. The URL in the source file, however, returns 404 for everyone who opens
+it from there. Since render-guides 0.42.0, the rendering warns about all three
+mistakes, so :bash:`make test-docs` fails on them. See
+`render-guides issue #1402 <https://github.com/TYPO3-Documentation/render-guides/issues/1402>`_.
+
+..  _rest-ref-role:
+
+reST references
+===============
+
+A reST reference uses the :rst:`:ref:` text role:
+
+..  code-block:: rst
+    :caption: Reference to another manual
+
+    To keep news URLs short, :ref:`hide the detail page <georgringer/news:hideDetailPage>`.
 
 A reference has the following syntax:
 
@@ -40,16 +130,24 @@ A reference has the following syntax:
 
     :ref:`[link_text] <[interlink]:[anchor]>`
 
-If you are linking within the same manual you can omit the `[interlink]:` part,
-including the colon.
+If you link within the same manual, you can omit the `[interlink]:` part,
+including the colon:
 
 ..  code-block:: rst
-    :caption: Reference from inside the same manual
+    :caption: Reference inside the same manual
 
-    :ref:`Hide detail page in URL <hideDetailPage>`
+    To keep news URLs short, :ref:`hide the detail page <hideDetailPage>`.
 
-If there is a warning box displayed, that the link has no anchor, you can
-still link to it using a doc-reference:
+Many manuals contain reST references. They keep working, and you do not have
+to replace them with permalinks.
+
+..  _rest-doc-role:
+
+Headlines without an anchor
+===========================
+
+If the modal shows a warning that the headline has no anchor, it offers a
+:rst:`:doc:` link instead:
 
 ..  figure:: /_Images/link-headlines-box-warning.png
 
@@ -61,70 +159,30 @@ The link then looks like this in reST:
 
     :doc:`Some further explanations <georgringer/news:Tutorials/BestPractice/HideDetailPage/Index#some-further-explanations>`
 
-However such a link would not work anymore if the section was moved to another
-page or if another section with the same headline was introduced.
+Such a link points to a file and a headline, not to an anchor. It breaks when
+the section is moved to another page, and it can point to the wrong section
+when another section with the same headline is added.
 
-We suggest adding a unique link anchor to the headline to be linked to in this
-case. See section :ref:`Link anchors <link-targets-explanation>`.
-
-..  _permalinks:
-
-Permalinks
-==========
-
-The same modal also offers a permalink: a plain URL that resolves to the
-current location of the element.
-
-..  code-block:: rst
-    :caption: A permalink used as an external link
-
-    `Cache tags <https://docs.typo3.org/permalink/t3coreapi:caching-developer-cache-tags>`_
-
-Permalinks are the preferred way to link TYPO3 documentation. Unlike a reST
-reference, a permalink can be opened directly from the source file — in an
-editor, a diff or a review — without rendering the manual first, and it works
-outside reST as well, for example in a commit message or an issue.
-
-Copy permalinks from the modal rather than assembling them by hand. A permalink
-follows three rules that are easy to get wrong:
-
-#.  **The interlink shortcode is required.** It is needed even when the anchor
-    lives in the manual you are writing in:
-    `permalink/t3coreapi:dependency-injection` resolves,
-    `permalink/dependency-injection` does not.
-
-#.  **The manual is written with hyphens, not slashes.** This is where a
-    permalink differs from the reST reference above: :rst:`:ref:` uses
-    `friendsoftypo3/content-blocks:`, the permalink uses
-    `friendsoftypo3-content-blocks:`.
-
-#.  **Underscores in an anchor become hyphens.** The anchor
-    `..  _run_upgrade_wizard:` is published as `run-upgrade-wizard`, so only
-    `permalink/t3coreapi:run-upgrade-wizard` resolves.
-
-..  warning::
-    A wrong permalink can render without any warning and still return 404 for
-    readers. Rendering resolves the URL against the anchors it holds in memory,
-    while docs.typo3.org resolves it against the published inventory, in which
-    the keys are normalized. All three mistakes above therefore pass a
-    :bash:`make test-docs` run. See
-    `render-guides issue #1402 <https://github.com/TYPO3-Documentation/render-guides/issues/1402>`_.
+Add a unique anchor to the headline instead, and link to that anchor with a
+permalink. See section :ref:`Link anchors <link-targets-explanation>`.
 
 ..  _link-text:
 
 Always give a link text
 =======================
 
-Give every reference and every permalink its own link text, written to fit
+Give every permalink and every reference its own link text, written to fit
 the sentence it appears in:
 
 ..  code-block:: rst
 
-    To keep news URLs short, :ref:`hide the detail page <georgringer/news:hideDetailPage>`.
-
     Tag the entries with
     `cache tags <https://docs.typo3.org/permalink/t3coreapi:caching-developer-cache-tags>`_
     so that they can be flushed together.
+
+    To keep news URLs short, :ref:`hide the detail page <georgringer/news:hideDetailPage>`.
+
+A permalink without a link text shows the bare URL.
 
 A reference without a link text, such as
 ``:ref:`georgringer/news:hideDetailPage```, uses the headline of the
@@ -139,11 +197,8 @@ target section instead. This causes two problems:
     link can then stop fitting your sentence, or stop saying what you meant,
     without anybody touching your page.
 
-A permalink without a link text is worse: it shows the bare URL.
-
-The reST reference you copy from the link modal uses the headline of the
-target as its link text. Reword that text to fit your sentence before you
-use it.
+The link modal uses the headline of the target as the link text. Reword that
+text to fit your sentence before you use it.
 
 ..  _check-link-text:
 
