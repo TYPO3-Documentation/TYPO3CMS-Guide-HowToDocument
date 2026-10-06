@@ -37,16 +37,32 @@ When you hover over an element that can be linked, a link icon appears:
 
     Hover over a headline to see if it is linkable, then click the link icon
 
-Click the link icon. A modal opens that offers the permalink and the reST
-reference for this element:
+Click the link icon. A modal opens that offers the following for this
+element:
+
+*   The permalink itself.
+*   The current URL of the element.
+*   A link in reST, a link in Markdown, and a link in HTML. The reST and the
+    Markdown link use the permalink.
 
 ..  figure:: /_Images/link-headlines-box.png
 
-    Copy the permalink or the reST reference
+    Copy the link in reStructuredText (reST)
 
 Copy the link from this modal rather than assembling it by hand. Do not copy
-the URL from the address bar of your browser: it contains the version and the
-path of the page, and it breaks when the page is moved.
+the URL from the address bar of your browser, or the URL from the modal: it
+contains the version and the path of the page, and it breaks when the page is
+moved.
+
+The link in reST from the modal looks like this:
+
+..  code-block:: rst
+    :caption: Link copied from the link modal
+
+    `Hide detail page in URL <https://docs.typo3.org/permalink/georgringer-news:hidedetailpage>`_
+
+Reword the link text to fit your sentence, see
+:ref:`Always give a link text <link-text>`.
 
 ..  _permalinks:
 
@@ -138,33 +154,38 @@ including the colon:
 
     To keep news URLs short, :ref:`hide the detail page <hideDetailPage>`.
 
-Many manuals contain reST references. They keep working, and you do not have
-to replace them with permalinks.
+The link modal does not offer a reST reference. Many manuals contain reST
+references. They keep working, and you do not have to replace them with
+permalinks.
 
 ..  _rest-doc-role:
 
 Headlines without an anchor
 ===========================
 
-If the modal shows a warning that the headline has no anchor, it offers a
-:rst:`:doc:` link instead:
+If a headline has no anchor, the modal shows a warning and offers no
+permalink:
 
 ..  figure:: /_Images/link-headlines-box-warning.png
 
     Linking to a headline without an anchor
 
-The link then looks like this in reST:
+Do not use the links from the modal in this case. They point to a file and a
+headline, not to an anchor:
 
-..  code-block:: rst
-
-    :doc:`Some further explanations <georgringer/news:Tutorials/BestPractice/HideDetailPage/Index#some-further-explanations>`
-
-Such a link points to a file and a headline, not to an anchor. It breaks when
-the section is moved to another page, and it can point to the wrong section
-when another section with the same headline is added.
+*   The link in reST points to a file path, which the permalink route of
+    docs.typo3.org does not resolve. It returns 404 when it is opened from
+    the source.
+*   The other links break when the section is moved to another page, and
+    they can point to the wrong section when another section with the same
+    headline is added.
 
 Add a unique anchor to the headline instead, and link to that anchor with a
 permalink. See section :ref:`Link anchors <link-targets-explanation>`.
+
+A :rst:`:doc:` link to a page and a headline, such as
+``:doc:`Some further explanations <georgringer/news:Tutorials/BestPractice/HideDetailPage/Index#some-further-explanations>```,
+has the same problems.
 
 ..  _link-text:
 
