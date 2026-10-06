@@ -8,12 +8,11 @@
 External links
 ==============
 
-..  important::
+..  tip::
 
-    Do not use this mechanism (external links) for links to sections of
-    the TYPO3. Use references as described in the section above:
-    :ref:`References to TYPO3 manuals <rest-reference>`.
-
+    To link TYPO3 documentation, use a permalink with this syntax rather than
+    the URL from the address bar of your browser. See
+    :ref:`Permalinks <permalinks>`.
 
 An URL that is mentioned within a text is automatically linked:
 

@@ -25,8 +25,11 @@ CONTRIBUTING.rst                 # how to contribute (issues, branching, PRs)
    backtick; see `Documentation/Reference/ReStructuredText/Code/InlineCode.rst`.
 5. **Every headline needs a `..  _anchor:` target** directly above it; see
    `Documentation/Reference/ReStructuredText/Links/Anchors.rst`.
-6. **Every reference needs its own link text** — `:ref:`text <anchor>``, never
-   `:ref:`anchor``; see
+6. **Link TYPO3 documentation with permalinks**, also inside the same
+   manual: `` `link text <https://docs.typo3.org/permalink/<interlink>:<anchor>>`_ ``.
+   Do not suggest replacing a permalink with `:ref:`; existing `:ref:`
+   links can stay. Every link needs its own link text, never
+   `` :ref:`anchor` ``. See
    `Documentation/Reference/ReStructuredText/Links/Documentation.rst`.
 7. **Validate before committing** — run `make test-docs`.
 8. **Never commit or push without being asked.**
