@@ -96,9 +96,25 @@ following reasons:
     where the link goes.
 *   The same link works in reST, in Markdown, in a commit message, in an
     issue, and in a chat.
-*   The rendering turns a permalink into a direct link to its target. A
-    permalink into the same manual therefore does not leave the rendered
-    manual through a redirect.
+
+..  _permalinks-same-manual:
+
+Permalinks inside the same manual
+---------------------------------
+
+Use permalinks for links inside your own manual as well. Write them with
+the interlink shortcode of your manual, which is set with
+`interlink-shortcode <https://docs.typo3.org/permalink/h2document:settings-guides-interlink-shortcode>`_
+in :file:`Documentation/guides.xml`:
+
+..  code-block:: rst
+    :caption: A permalink from this guide to a page of this guide
+
+    Every headline needs an
+    `anchor <https://docs.typo3.org/permalink/h2document:link-targets-explanation>`_.
+
+The rendering turns such a permalink into a link to the page in the rendered
+manual, also in a local render with :bash:`make docs`.
 
 ..  _permalinks-rules:
 
