@@ -1,5 +1,7 @@
 :orphan:
 
+..  _basics:
+
 ======
 Basics
 ======
