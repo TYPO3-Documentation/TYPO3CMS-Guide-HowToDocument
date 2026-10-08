@@ -89,7 +89,7 @@ And follow the interactive question.
         ..  confval:: max-menu-depth
             :name: guides-max-menu-depth
             :type: integer
-            :Default: `PHP_INT_MAX`
+            :default: `PHP_INT_MAX`
 
             Limits the main menu to a certain amount of levels. As level creation is
             one of the main bottle-necks that can slow down rendering it can be helpful
@@ -118,7 +118,7 @@ And follow the interactive question.
         ..  confval:: automatic-menu
             :name: guides-automatic-menu
             :type: boolean
-            :Default: `false`
+            :default: `false`
 
             If this option is set to true, an :ref:`alphabetical menu is
             automatically created <menu-automatic>`.
@@ -290,8 +290,8 @@ And follow the interactive question.
         ..  confval:: edit-on-github
             :name: guides-extension-edit-on-github
             :type: string
-            :Sytanx: [GitHub Organiziation or user]/[Repository]
-            :Default: `""`
+            :Syntax: [GitHub organization or user]/[Repository]
+            :default: `""`
 
             If this configuration is set, a button "Edit on GitHub" is displayed on each
             page of the manual.
@@ -318,7 +318,7 @@ And follow the interactive question.
         ..  confval:: edit-on-github-branch
             :name: guides-extension-edit-on-github-branch
             :type: string
-            :Default: `main`
+            :default: `main`
 
             The branch that should be used for the "Edit on GitHub" button.
 
@@ -346,7 +346,7 @@ And follow the interactive question.
         ..  confval:: edit-on-github-directory
             :name: guides-extension-edit-on-github-directory
             :type: string
-            :Default: `Documentation`
+            :default: `Documentation`
 
             The directory in which the documentation can be found. The GitHub render
             action currently does not support using other directories
@@ -376,7 +376,7 @@ And follow the interactive question.
         ..  confval:: interlink-shortcode
             :name: guides-extension-interlink-shortcode
             :type: string
-            :Default: `somemanual`
+            :default: `somemanual`
 
             The interlink shortcode will be displayed in the "Reference this headline"
             dialog when users click on the link symbol beside a headline or other
@@ -529,7 +529,7 @@ And follow the interactive question.
         ..  confval:: report-issue
             :name: guides-extension-report-issue
             :type: string
-            :Default: value of :confval:`guides-extension-project-issues`
+            :default: value of :confval:`guides-extension-project-issues`
 
             `none`
                 Disable the "Report issue" button
@@ -551,7 +551,7 @@ And follow the interactive question.
         ..  confval:: typo3-core-preferred
             :name: guides-extension-typo3-core-preferred
             :type: string
-            :Default: `stable`
+            :default: `stable`
 
             You can set the preferred TYPO3 Core version. This version is used to determine
             the desired version for links to other manuals and system extensions.
@@ -611,7 +611,7 @@ And follow the interactive question.
         ..  confval:: check-link-text
             :name: guides-extension-check-link-text
             :type: boolean
-            :Default: `false`
+            :default: `false`
 
             Warn about every reference that has no link text of its own, see
             `Always give a link text <https://docs.typo3.org/permalink/h2document:link-text>`_.

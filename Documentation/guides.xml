@@ -15,6 +15,8 @@
                interlink-shortcode="h2document"
                typo3-core-preferred="main"
                check-link-text="true"
+               check-headline-anchors="true"
+               confval-fields="Path, Scope, Syntax, Some value, added, changed, deprecated, removed"
     />
     <project
             title="How to Document"
