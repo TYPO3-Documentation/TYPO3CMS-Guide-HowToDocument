@@ -163,3 +163,5 @@ To say in which version a configuration value was added, changed,
 deprecated, or removed, do not put a version directive into the
 :rst:`confval`. Use the options of the :rst:`confval` instead, see
 `Versions of a configuration value <https://docs.typo3.org/permalink/h2document:rest-confval-versions>`_.
+A version directive with text that is tied to the version transition, such
+as how to migrate, can stay in the description.

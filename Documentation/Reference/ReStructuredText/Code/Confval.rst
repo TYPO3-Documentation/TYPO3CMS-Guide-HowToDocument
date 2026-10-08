@@ -145,19 +145,23 @@ a space:
 
 ..  code-block:: rst
 
-    ..  confval:: is_static
-        :name: ctrl-is-static
-        :type: boolean
-        :removed: 14.0 breaking-106863-1749629371
+    ..  confval:: showSubmoduleOverview
+        :name: backend-module-showSubmoduleOverview
+        :type: bool
+        :default: false
+        :added: 14.0 feature-107712-1760548718
 
-        Marks a table as one that holds static reference data.
+        If true and if a module has submodules, the submodules that the
+        backend user has access to are displayed as a set of cards.
 
-..  confval:: is_static
-    :name: ctrl-is-static
-    :type: boolean
-    :removed: 14.0 breaking-106863-1749629371
+..  confval:: showSubmoduleOverview
+    :name: backend-module-showSubmoduleOverview
+    :type: bool
+    :default: false
+    :added: 14.0 feature-107712-1760548718
 
-    Marks a table as one that holds static reference data.
+    If true and if a module has submodules, the submodules that the
+    backend user has access to are displayed as a set of cards.
 
 Each option shows as a row in the list of fields of the configuration value.
 The changelog entry shows as a link, with the title of the entry as the link
@@ -168,6 +172,59 @@ Inside a :rst:`confval`, use these options instead of a
 `version directive <https://docs.typo3.org/permalink/h2document:rest-versions>`_.
 The index of the configuration values reads the options, but it cannot read
 a directive in the description.
+A version directive with text that is tied to the version transition, such
+as how to migrate, can stay in the description.
+
+A configuration value whose default changed, with a directive that says what
+the default was before. This text becomes obsolete once the directive is
+pruned, so it stays in the directive:
+
+..  code-block:: rst
+
+    ..  confval:: cache_period
+        :name: config-cache-period
+        :type: integer
+        :default: `31536000` *(= 365 days)*
+
+        ..  versionchanged:: 14.3.1
+            The default was raised from `86400` (24 hours) to `31536000`
+            (365 days). TYPO3 v14.3.0 and TYPO3 v13.4 and below use `86400`.
+
+        The number of seconds a page can remain in the cache.
+
+..  confval:: cache_period
+    :name: config-cache-period
+    :type: integer
+    :default: `31536000` *(= 365 days)*
+
+    ..  versionchanged:: 14.3.1
+        The default was raised from `86400` (24 hours) to `31536000`
+        (365 days). TYPO3 v14.3.0 and TYPO3 v13.4 and below use `86400`.
+
+    The number of seconds a page can remain in the cache.
+
+A configuration value that was removed is no longer described with the
+options that are still in use. Move its :rst:`confval` to the page that
+collects removed content, often the page shown for a link that is not found,
+and say there when it was removed:
+
+..  code-block:: rst
+
+    ..  confval:: maxDBListItems
+        :name: maxDBListItems
+        :type: integer
+        :removed: 14.0
+
+        Use the page TSconfig option `mod.web_list.itemsLimitSingleTable`
+        instead.
+
+..  confval:: maxDBListItems
+    :name: maxDBListItems
+    :type: integer
+    :removed: 14.0
+
+    Use the page TSconfig option `mod.web_list.itemsLimitSingleTable`
+    instead.
 
 If the value of an option does not start with a version, or the changelog
 entry does not exist, the rendering shows a warning.
