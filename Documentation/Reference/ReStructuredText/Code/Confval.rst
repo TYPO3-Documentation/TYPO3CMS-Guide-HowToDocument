@@ -111,6 +111,10 @@ There are several reserved attributes:
     The version in which the configuration value was added, changed,
     deprecated, or removed. See
     `Versions of a configuration value <https://docs.typo3.org/permalink/h2document:rest-confval-versions>`_.
+`:parent:`
+    The `:name:` of the configuration value that this one is a property
+    of. The box of the configuration value does not show it. See
+    `Properties of another configuration value <https://docs.typo3.org/permalink/h2document:rest-confval-parent>`_.
 
 All other attributes are output the way they are written:
 
@@ -294,6 +298,59 @@ the same page and want to list them in separate menus:
 
             Some Description
 
+..  _rest-confval-parent:
+
+Properties of another configuration value
+=========================================
+
+A configuration value can be a property of another one, for example the
+properties of the content object `TEXT` in the TypoScript reference. If you
+nest the confvals of the properties inside the confval of the object, they
+show as rubrics inside one large box.
+
+To keep each property under its own headline, set the option :rst:`:parent:`
+on the confval menu that lists the properties. Write the `:name:` of the
+parent confval, as in :rst:`:exclude:`:
+
+..  code-block:: rst
+
+    ..  confval-menu::
+        :display: table
+        :parent: cobj-text
+        :type:
+
+Every confval that the menu lists becomes a property of the confval
+`cobj-text`. The index of the configuration values, :file:`confvals.json`,
+contains `"parent": "confval-cobj-text"` for each of them.
+
+The menu does not list the parent confval itself. A page that documents an
+object and its properties side by side needs no :rst:`:exclude:` for the
+confval of the object.
+
+A second object on the same page is different. For example, the page of
+`USER` also documents `USER_INT`, and the menu lists it as a property of
+`USER`. Exclude its confval with :rst:`:exclude:`.
+
+A single confval can name its parent with its own option :rst:`:parent:`:
+
+..  code-block:: rst
+
+    ..  confval:: value
+        :name: text-value
+        :parent: cobj-text
+        :type: string
+
+        Text, which you want to output.
+
+If more than one source names a parent, the first of these wins:
+
+#.  The confval in which the confval is nested.
+#.  The option :rst:`:parent:` of the confval itself.
+#.  The option :rst:`:parent:` of the confval menu that lists it.
+
+If two confval menus with different parents list the same confval, it keeps
+the parent of the first menu, and the rendering shows a warning.
+
 ..  _rest-confval-confval-menu-directive:
 
 Confval-menu directive API
@@ -311,6 +368,10 @@ The confval-menu directive has the following options:
     Exclude all confvals that have the option `:noindex:`.
 `:exclude:`
     Comma separated list of all identifiers / titles of convals to be excluded.
+`:parent:`
+    The `:name:` of a confval. Every confval that the menu lists becomes a
+    property of it, and the menu does not list the confval itself. See
+    `Properties of another configuration value <https://docs.typo3.org/permalink/h2document:rest-confval-parent>`_.
 
 All other parameters can be used to trigger listing of the property of the exact
 same name.

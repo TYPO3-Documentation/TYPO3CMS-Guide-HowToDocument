@@ -48,9 +48,13 @@ that name the language of the code:
 
 Every code role shows an icon right after the code that opens an infobox.
 For most roles, the infobox only names the language, for example "Code
-written in SQL". Only :rst:`:php:` and :rst:`:php-short:` can tell the
-reader more, see
-`PHP classes and interfaces <https://docs.typo3.org/permalink/h2document:inline-code-php>`_.
+written in SQL". Some roles can tell the reader more:
+
+*   :rst:`:php:` and :rst:`:php-short:`, see
+    `PHP classes and interfaces <https://docs.typo3.org/permalink/h2document:inline-code-php>`_.
+*   :rst:`:typoscript:` and :rst:`:tsconfig:`, see
+    `TypoScript and TSconfig <https://docs.typo3.org/permalink/h2document:inline-code-typoscript>`_.
+
 The code text itself stays plain, selectable text, so it can be copied
 directly instead of accidentally opening the infobox.
 
@@ -190,6 +194,61 @@ Some names are a class and a namespace at the same time, for example
 `\\TYPO3\\CMS\\Core\\Exception`. :rst:`:php:` and :rst:`:php-short:` treat
 such a name as the class. If you mean the namespace, use
 :rst:`:php-namespace:`.
+
+..  _inline-code-typoscript:
+
+TypoScript and TSconfig with `:typoscript:` and `:tsconfig:`
+============================================================
+
+The infobox of :rst:`:typoscript:` and :rst:`:tsconfig:` says what the code
+is and links to its description. The rendering reads this from the
+configuration values of the
+`TypoScript reference <https://docs.typo3.org/permalink/t3tsref:start>`_.
+This works in every manual, in the version of the TypoScript reference
+that its interlinks use.
+
+The roles find the following:
+
+*   A full path to an option, for example :typoscript:`stdWrap.parseFunc`,
+    :typoscript:`page.includeJS`, or
+    :tsconfig:`options.pageTree.doktypesToShowInNewPageDragArea`.
+*   An object type, a function, or a top-level object on its own, for
+    example `USER`, `COA_INT`, `PAGE`, `stdWrap`, `typolink`, `config`, or
+    `module`.
+
+A name that several options share, such as `wrap` or `current`, gets no
+description. A wrong description is worse than none. Write the full path
+instead, for example :typoscript:`stdWrap.current` rather than `current`.
+
+..  _inline-code-typoscript-key:
+
+Naming the configuration value in angle brackets
+------------------------------------------------
+
+If the code alone does not tell which option it is, name the configuration
+value in angle brackets, as in :rst:`:confval:`:
+
+..  code-block:: rst
+
+    Use :typoscript:`current <t3tsref:stdwrap-current>` to ...
+
+The text prints as :typoscript:`current <t3tsref:stdwrap-current>`. The
+page shows only the code before the angle brackets.
+
+*   The key is the `:name:` of the
+    `confval <https://docs.typo3.org/permalink/h2document:rest-confval>`_.
+    Put an interlink key in front of it, such as `t3tsref:` or `t3coreapi:`,
+    for a configuration value of another manual. Without an interlink key,
+    the key names a configuration value of the same manual.
+*   Any configuration value works, not only a TypoScript one. For
+    example, you can name a TCA option.
+*   The text before the angle brackets must be a path or a name. The
+    rendering never reads code such as an HTML wrap, `<div> | </div>`, or
+    `<INCLUDE_TYPOSCRIPT: ...>` as a key.
+
+If the named manual does not document the key, the rendering shows a
+warning, and :bash:`make test-docs` fails. If the rendering cannot reach
+the manual, it shows no warning.
 
 ..  seealso::
 
