@@ -16,7 +16,7 @@
                typo3-core-preferred="main"
                check-link-text="true"
                check-headline-anchors="true"
-               confval-fields="Path, Scope, Syntax, Some value, added, changed, deprecated, removed"
+               confval-fields="Path, Scope, Syntax, Some value"
     />
     <project
             title="How to Document"

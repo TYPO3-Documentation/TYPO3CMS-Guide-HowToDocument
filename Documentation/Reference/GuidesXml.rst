@@ -639,3 +639,73 @@ And follow the interactive question.
 
             A single page can override the setting with the
             `check-link-text page field <https://docs.typo3.org/permalink/h2document:check-link-text-page>`_.
+
+        ..  _settings-guides-check-headline-anchors:
+
+        ..  confval:: check-headline-anchors
+            :name: guides-extension-check-headline-anchors
+            :type: boolean
+            :default: `false`
+
+            Warn about every headline without an anchor of its own, see
+            `Link anchors <https://docs.typo3.org/permalink/h2document:link-anchor>`_.
+            Only an anchor written before a headline gives it a permalink. The
+            id that the rendering derives from the headline works on the page
+            only, and it changes when the headline is reworded.
+
+            ..  code-block:: xml
+                :caption: Documentation/guides.xml
+
+                <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+                           check-headline-anchors="true" />
+
+            The page title counts as a headline as well. The warning names
+            the headline and the anchor to add, for example
+            :rst:`..  _some-section:`. A manual written in Markdown is not
+            checked, because a Markdown headline cannot have an anchor.
+
+            A warning fails a render with :bash:`--minimal-test`, so switch the
+            check on once the headlines of your manual have an anchor.
+
+            A single page can override the setting with a field above its
+            title, `:check-headline-anchors: off` or
+            `:check-headline-anchors: on`, the same way as the
+            `check-link-text page field <https://docs.typo3.org/permalink/h2document:check-link-text-page>`_.
+
+        ..  _settings-guides-confval-fields:
+
+        ..  confval:: confval-fields
+            :name: guides-extension-confval-fields
+            :type: string, comma-separated list
+            :default: empty, no check
+
+            The fields that the
+            `confvals <https://docs.typo3.org/permalink/h2document:rest-confval>`_
+            of your manual use, besides the fields that every manual can use.
+            If you set it, the rendering warns about every other field, for
+            example a misspelled one.
+
+            ..  code-block:: xml
+                :caption: Documentation/guides.xml
+
+                <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+                           confval-fields="Path, Scope, Syntax" />
+
+            Without the check, a field with a different spelling, such as
+            `:Default:` instead of `:default:`, does not cause a warning. It
+            shows on the page as a field of its own, and a confval-menu column
+            for it stays empty.
+
+            The following fields need no declaration:
+
+            *   The fields that the confval reads itself: `name`, `type`,
+                `default`, `required`, `noindex`, and `parent`.
+            *   The fields for the versions: `added`, `changed`, `deprecated`,
+                and `removed`.
+            *   The fields for the search: `searchFacet` and `searchKeywords`.
+
+            A field matches only with the exact spelling. If a field differs
+            from an allowed one only in case, spaces, hyphens, or
+            underscores, the warning names the spelling that was meant. A
+            confval-menu column for a field that is not allowed causes a
+            warning as well.
