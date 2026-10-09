@@ -108,6 +108,63 @@ See
 `Class index as JSON <https://docs.typo3.org/permalink/t3renderguides:classindexjson>`_
 for the format, which is still settling.
 
+..  _rendered-artifacts-confvals:
+
+The index of configuration values
+=================================
+
+..  code-block:: text
+
+    https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/confvals.json
+
+Published by a manual that documents
+`configuration values <https://docs.typo3.org/permalink/h2document:rest-confval>`_.
+Each one is listed by its anchor, with its name and the titles of the page
+and the sections above it. It also has the fields of the confval, the first
+paragraph of its description, and the confval that it is a property of.
+
+The titles tell apart configuration values with the same name. The TCA
+Reference, for example, documents `itemsProcFunc` once for each field type
+that has it. See
+`Confval index as JSON <https://docs.typo3.org/permalink/t3renderguides:confvalindexjson>`_
+for the format.
+
+..  _rendered-artifacts-viewhelpers:
+
+The index of ViewHelpers
+========================
+
+..  code-block:: text
+
+    https://docs.typo3.org/other/typo3/view-helper-reference/main/en-us/viewhelpers.json
+
+Published by a manual that documents Fluid ViewHelpers, in practice the
+Fluid ViewHelper Reference. Each ViewHelper is listed by the name that a
+template uses, such as `f:format.html`, with its documentation, its
+arguments, and its permalink. :rst:`:fluid:` reads this file to describe a
+ViewHelper. See
+`ViewHelper index as JSON <https://docs.typo3.org/permalink/t3renderguides:viewhelperindexjson>`_
+for the format.
+
+..  _rendered-artifacts-files:
+
+The file definitions
+====================
+
+..  code-block:: text
+
+    https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/files.json
+
+Published by a manual that defines files with :rst:`..  typo3:file::`, in
+practice TYPO3 Explained. Each definition has the paths of the file in a
+Composer-based and in a Classic mode installation, a short description, the
+regular expression that decides which paths match, and the page that
+describes the file. :rst:`:file:` in every other manual reads this file, see
+`:file: <https://docs.typo3.org/permalink/h2document:text-roles-file>`_.
+See
+`File definitions as JSON <https://docs.typo3.org/permalink/t3renderguides:filedefinitionsjson>`_
+for the format.
+
 ..  _rendered-artifacts-changelog:
 
 The changelog index
@@ -159,6 +216,58 @@ You can still make one locally, from your own sources:
 `--single-html` into :file:`singlehtml/Index.html`. Both render that one file
 and nothing else, which makes them a quick way to read or search a whole
 manual at once.
+
+..  _rendered-artifacts-sitemap:
+
+The sitemap
+===========
+
+..  code-block:: text
+
+    https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/sitemap.xml
+
+Published by every official manual and system extension. It lists every
+page that the table of contents leads to, at its address on
+docs.typo3.org. The docs homepage lists the sitemaps of the manuals in its
+menu in a sitemap index, for the version in development and the two latest
+LTS versions:
+
+..  code-block:: text
+
+    https://docs.typo3.org/h/typo3/docs-homepage/main/en-us/sitemap-index.xml
+
+See `Sitemaps <https://docs.typo3.org/permalink/t3renderguides:sitemaps>`_.
+
+..  _rendered-artifacts-llms-txt:
+
+The llms.txt of a manual
+========================
+
+..  code-block:: text
+
+    https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/llms.txt
+
+Every manual has an :file:`llms.txt` at its root, for language models and
+other machine clients. It names the title, the version, and the pattern of
+the permalinks of the manual, and the indexes above that the manual
+publishes. It then lists the pages that the table of contents leads to,
+nested as there, with links to their Markdown. See
+`llms.txt <https://docs.typo3.org/permalink/t3renderguides:llmstxt>`_.
+
+..  _rendered-artifacts-manuals:
+
+The list of manuals
+===================
+
+..  code-block:: text
+
+    https://docs.typo3.org/h/typo3/docs-homepage/main/en-us/manuals.json
+
+Published by the docs homepage only. It lists the manuals of its menu by
+their interlink shortcode, with their name and the base address of each
+version that the menu offers. Append the name of an index above to a base
+address to read that index of the manual. See
+`Manuals index as JSON <https://docs.typo3.org/permalink/t3renderguides:manualsindexjson>`_.
 
 ..  _rendered-artifacts-crawling:
 

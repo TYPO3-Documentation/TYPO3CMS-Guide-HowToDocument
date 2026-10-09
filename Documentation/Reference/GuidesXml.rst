@@ -391,6 +391,12 @@ And follow the interactive question.
             *   A shortcode supported by the theme:
                 :ref:`Available default inventories <t3renderguides:available-default-inventories>`
 
+            If a manual declares no interlink shortcode, the rendering
+            warns, and a render with :bash:`--minimal-test` fails. Such a
+            manual has no permalinks, and other manuals cannot link to it.
+            If a :file:`composer.json` is next to the documentation, the
+            warning names the shortcode to add.
+
         ..  figure:: /_Images/ReferenceThisHeadlineDialog.png
             :alt: Reference a headline dialog showing the shortcode georgringer/news
 

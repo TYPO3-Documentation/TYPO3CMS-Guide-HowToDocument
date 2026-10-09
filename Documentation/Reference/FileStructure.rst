@@ -56,6 +56,12 @@ To render a complete documentation manual you need a folder called
 :file:`Documentation\Index.rst` and a configuration file called
 :file:`Documentation\guides.xml`. Add more files as needed.
 
+Write :file:`Index.rst` with a capital `I`. docs.typo3.org opens a manual at
+:file:`Index.html`, so a manual that starts at :file:`index.rst` has no start
+page once it is deployed. The rendering warns about a lower-case
+:file:`index.rst` or :file:`index.md` at the start of a manual, and a
+render with :bash:`--minimal-test` fails.
+
 You can keep a :file:`README.md` or :file:`README.rst` file with basic
 information and a link to the published manual in the root folder of the
 extension. These files will be commonly displayed on GitHub and GitLab.
