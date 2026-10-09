@@ -180,24 +180,25 @@ Headlines without an anchor
 ===========================
 
 If a headline has no anchor, the modal shows a warning and offers no
-permalink:
+permalink. All its links, the one in reST included, use the URL of the page:
 
 ..  figure:: /_Images/link-headlines-box-warning.png
 
     Linking to a headline without an anchor
 
-Do not use the links from the modal in this case. They point to a file and a
-headline, not to an anchor:
-
-*   The link in reST points to a file path, which the permalink route of
-    docs.typo3.org does not resolve. It returns 404 when it is opened from
-    the source.
-*   The other links break when the section is moved to another page, and
-    they can point to the wrong section when another section with the same
-    headline is added.
+Do not use the links from the modal in this case. They point to a page and a
+headline, not to an anchor. They break when the section is moved to another
+page. They can point to the wrong section when another section with the same
+headline is added.
 
 Add a unique anchor to the headline instead, and link to that anchor with a
 permalink. See section :ref:`Link anchors <link-targets-explanation>`.
+
+Do not write a file path into a permalink either, such as
+`https://docs.typo3.org/permalink/georgringer-news:Tutorials/Index#some-section`.
+The permalink route of docs.typo3.org resolves anchors only, so such a link
+returns 404. The rendering warns about it and asks for the anchor of the
+headline.
 
 A :rst:`:doc:` link to a page and a headline, such as
 ``:doc:`Some further explanations <georgringer/news:Tutorials/BestPractice/HideDetailPage/Index#some-further-explanations>```,

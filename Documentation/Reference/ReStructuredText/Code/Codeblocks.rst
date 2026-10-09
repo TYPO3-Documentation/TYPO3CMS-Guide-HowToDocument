@@ -498,19 +498,71 @@ fragment that would not be valid code in a file of its own.
             :caption: Documentation/SiteConfiguration/Index.rst
 
             ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
-                :language: yaml
                 :emphasize-lines: 5,10-13
                 :linenos:
 
     ..  group-tab:: Output
 
         ..  literalinclude:: /_CodeSnippets/LiteralIncludes/example.yaml
-            :language: yaml
             :emphasize-lines: 5,10-13
             :linenos:
 
 See also `literalinclude directive
 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude>`__.
+
+..  _literalinclude-language:
+
+Language of the included file
+-----------------------------
+
+A :rst:`literalinclude` takes the language for the syntax highlighting from
+the name of the file. The example above needs no option :rst:`:language:`,
+because the file ends in :file:`.yaml`.
+
+The rendering looks at the name in this order:
+
+#.  The last extension, in any case, for example :file:`.php` or
+    :file:`.YAML`.
+#.  The extension before it, if the last one does not name a language.
+    :file:`Example.php.inc` is PHP, and :file:`services.yaml.dist` is YAML.
+#.  The name of the file, for a file without such an extension:
+    :file:`Dockerfile` and :file:`Makefile`. A leading underscore, as in
+    :file:`_Dockerfile`, does not count.
+
+A known last extension wins, so :file:`_Example.rst.txt` is plain text.
+
+=============  ==============================================
+Language       Extension or file name
+=============  ==============================================
+`apache`       `.htaccess`
+`bash`         `.bash`, `.env`, `.sh`, `.zsh`
+`css`          `.css`
+`diff`         `.diff`, `.patch`
+`dockerfile`   `Dockerfile`
+`html`         `.html`
+`ini`          `.ini`, `.toml`
+`javascript`   `.cjs`, `.js`, `.mjs`
+`json`         `.json`
+`less`         `.less`
+`makefile`     `Makefile`
+`markdown`     `.md`
+`php`          `.php`
+`plaintext`    `.csv`, `.txt`
+`python`       `.py`
+`rst`          `.rst`
+`scss`         `.scss`
+`sql`          `.sql`
+`twig`         `.twig`
+`typescript`   `.ts`
+`typoscript`   `.tsconfig`, `.typoscript`
+`xml`          `.svg`, `.xlf`, `.xliff`, `.xml`, `.xsd`
+`yaml`         `.yaml`, `.yml`
+=============  ==============================================
+
+If the name tells no language, the rendering shows the file as plain text
+and logs a warning. Set the language with :rst:`:language:` in this case.
+The option also wins over the name of the file, for example to highlight
+a :file:`.txt` file as TypoScript.
 
 ..  _literalinclude-diff:
 
