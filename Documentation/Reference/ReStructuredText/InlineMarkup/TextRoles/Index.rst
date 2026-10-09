@@ -94,6 +94,25 @@ rather than a single file.
 How it looks:
     Edit :file:`config/system/settings.php` to change the setting.
 
+If the file is defined with the directive :rst:`..  typo3:file::`, the role
+links to its description. A popup tells the reader where the file is in a
+Composer-based installation and in a Classic mode installation. The official
+manuals define their files in
+`TYPO3 Explained <https://docs.typo3.org/permalink/t3coreapi:start>`_, and
+the role finds those files in every manual, in the version that the
+interlinks of the manual use:
+
+..  code-block:: rst
+
+    Add the setting to :file:`config/sites/my-site/settings.yaml`.
+
+How it looks:
+    Add the setting to :file:`config/sites/my-site/settings.yaml`.
+
+Each definition decides with a regular expression which paths it matches.
+A file that neither the manual itself nor TYPO3 Explained defines, or a
+path that the expression does not match, prints as plain code.
+
 ..  index:: reST roles; issue
 ..  _text-roles-issue:
 

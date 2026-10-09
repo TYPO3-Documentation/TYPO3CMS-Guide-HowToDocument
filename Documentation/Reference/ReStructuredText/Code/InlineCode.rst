@@ -54,6 +54,8 @@ written in SQL". Some roles can tell the reader more:
     `PHP classes and interfaces <https://docs.typo3.org/permalink/h2document:inline-code-php>`_.
 *   :rst:`:typoscript:` and :rst:`:tsconfig:`, see
     `TypoScript and TSconfig <https://docs.typo3.org/permalink/h2document:inline-code-typoscript>`_.
+*   :rst:`:fluid:`, for a ViewHelper, see
+    `Fluid ViewHelpers <https://docs.typo3.org/permalink/h2document:inline-code-fluid>`_.
 
 The code text itself stays plain, selectable text, so it can be copied
 directly instead of accidentally opening the infobox.
@@ -62,8 +64,7 @@ Two text roles that are not code roles open an infobox as well:
 `:composer: <https://docs.typo3.org/permalink/h2document:linking-extensions>`_
 always does, with information from Packagist, and
 `:file: <https://docs.typo3.org/permalink/h2document:text-roles-file>`_
-only does for a file that the same manual documents with the
-:rst:`..  typo3:file::` directive.
+does for a file that TYPO3 Explained or the same manual defines.
 
 ..  _inline-code-when-to-use-a-role:
 
@@ -249,6 +250,41 @@ page shows only the code before the angle brackets.
 If the named manual does not document the key, the rendering shows a
 warning, and :bash:`make test-docs` fails. If the rendering cannot reach
 the manual, it shows no warning.
+
+..  _inline-code-fluid:
+
+Fluid ViewHelpers with `:fluid:`
+================================
+
+If the code of :rst:`:fluid:` starts with a ViewHelper, the infobox says
+what the ViewHelper does and links to its description. The code stays as
+you wrote it:
+
+..  code-block:: rst
+
+    Wrap the text in :fluid:`<f:format.html>{record.bodytext}</f:format.html>`.
+
+The text prints as
+:fluid:`<f:format.html>{record.bodytext}</f:format.html>`.
+
+The role finds a ViewHelper in any of these forms:
+
+*   As a tag, for example :fluid:`<f:format.html>` or
+    :fluid:`</f:format.html>`.
+*   As an inline call, for example :fluid:`{f:translate(key: 'title')}`.
+*   By its name alone, for example :fluid:`f:uri.image`.
+
+The rendering looks up the ViewHelper in the
+`Fluid ViewHelper Reference <https://docs.typo3.org/permalink/t3viewhelper:start>`_,
+in the version that the interlinks of your manual use. If your manual
+documents the ViewHelper itself, the infobox links to that description
+instead.
+
+The role does not find a ViewHelper that is not at the start of the code,
+such as in :fluid:`{record.bodytext -> f:format.html()}`. A ViewHelper that
+the reference does not document, such as one of your own extension, and
+Fluid that names no ViewHelper, such as :fluid:`{page.uid}`, stay Fluid
+code. The rendering shows no warning for them.
 
 ..  seealso::
 
