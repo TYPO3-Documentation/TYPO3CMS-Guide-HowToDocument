@@ -30,31 +30,33 @@ try to always add a `:caption:` with the path and name of the file where the exa
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
 
-            ..  code-block:: php
-                :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+            ..  code-block:: typoscript
+                :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
 
-                /**
-                 * Add default TypoScript (constants and setup)
-                 */
-                \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-                     'site_package',
-                     'Configuration/TypoScript',
-                     'Site Package'
-                );
+                page = PAGE
+                page {
+                  10 = PAGEVIEW
+                  10 {
+                    paths {
+                      100 = EXT:my_sitepackage/Resources/Private/PageView/
+                    }
+                  }
+                }
 
     ..  group-tab:: Output
 
-        ..  code-block:: php
-            :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+        ..  code-block:: typoscript
+            :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
 
-            /**
-             * Add default TypoScript (constants and setup)
-             */
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-                 'site_package',
-                 'Configuration/TypoScript',
-                 'Site Package'
-            );
+            page = PAGE
+            page {
+              10 = PAGEVIEW
+              10 {
+                paths {
+                  100 = EXT:my_sitepackage/Resources/Private/PageView/
+                }
+              }
+            }
 
 Always use :ref:`syntactically correct code <codeblocks-syntactically-correct>`
 in a code block.
@@ -192,31 +194,33 @@ A simple code block with syntax highlighting
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
 
-            ..  code-block:: php
-                :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+            ..  code-block:: typoscript
+                :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
 
-                /**
-                 * Add default TypoScript (constants and setup)
-                 */
-                \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-                     'site_package',
-                     'Configuration/TypoScript',
-                     'Site Package'
-                );
+                page = PAGE
+                page {
+                  10 = PAGEVIEW
+                  10 {
+                    paths {
+                      100 = EXT:my_sitepackage/Resources/Private/PageView/
+                    }
+                  }
+                }
 
     ..  group-tab:: Output
 
-        ..  code-block:: php
-            :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+        ..  code-block:: typoscript
+            :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
 
-            /**
-             * Add default TypoScript (constants and setup)
-             */
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-                 'site_package',
-                 'Configuration/TypoScript',
-                 'Site Package'
-            );
+            page = PAGE
+            page {
+              10 = PAGEVIEW
+              10 {
+                paths {
+                  100 = EXT:my_sitepackage/Resources/Private/PageView/
+                }
+              }
+            }
 
 ..  _writing-rest-codeblocks-with-syntax-highlighting-examples-code-block:
 
@@ -231,35 +235,37 @@ Code block with line numbers and highlighting of one line
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
 
-            ..  code-block:: php
-                :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+            ..  code-block:: typoscript
+                :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
                 :linenos:
-                :emphasize-lines: 4, 7
+                :emphasize-lines: 3, 6
 
-                /**
-                 * Add default TypoScript (constants and setup)
-                 */
-                \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-                     'site_package',
-                     'Configuration/TypoScript',
-                     'Site Package'
-                );
+                page = PAGE
+                page {
+                  10 = PAGEVIEW
+                  10 {
+                    paths {
+                      100 = EXT:my_sitepackage/Resources/Private/PageView/
+                    }
+                  }
+                }
 
     ..  group-tab:: Output
 
-        ..  code-block:: php
-            :caption: EXT:site_package/Configuration/TCA/Overrides/sys_template.php
+        ..  code-block:: typoscript
+            :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
             :linenos:
-            :emphasize-lines: 4, 7
+            :emphasize-lines: 3, 6
 
-            /**
-             * Add default TypoScript (constants and setup)
-             */
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-                 'site_package',
-                 'Configuration/TypoScript',
-                 'Site Package'
-            );
+            page = PAGE
+            page {
+              10 = PAGEVIEW
+              10 {
+                paths {
+                  100 = EXT:my_sitepackage/Resources/Private/PageView/
+                }
+              }
+            }
 
 ..  _codeblocks-visible-lines:
 
@@ -657,6 +663,40 @@ In the XML and HTML markup languages, which make extensive use of angle
 brackets, the comment tag :html:`<!-- placeholder-name -->` is used to insert
 placeholders. A `<placeholder-name>` looks like a regular element and would lead to confusion.
 
+
+
+..  _codeblocks-example-names:
+
+Example names for extensions and site packages
+==============================================
+
+A code example needs the name of the extension it belongs to, in the
+caption, in paths, and in namespaces. Use the same names in all manuals, so
+that a reader recognizes them:
+
+`my_sitepackage`
+    The site package of the example site. It contains what makes up the
+    theme and the output of the site: page templates, and the TypoScript and
+    TSconfig of the site. Paths start with `EXT:my_sitepackage/`, and the
+    namespace is `\\MyVendor\\MySitepackage\\`.
+
+`my_extension`
+    An extension that brings its own functionality, such as fields, tables,
+    and plugins. Paths start with `EXT:my_extension/`, and the namespace is
+    `\\MyVendor\\MyExtension\\`. Its tables and fields start with
+    `tx_myextension_`.
+
+..  code-block:: rst
+
+    ..  code-block:: typoscript
+        :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
+
+Some names look like these, but are real packages. Keep them as they are:
+the packages `t3docs/site-package` and `t3docs/site-package-data`, the
+repository `TYPO3-Documentation/site_package`, and `my_site_package`, the
+site package that the
+`site package tutorial <https://docs.typo3.org/permalink/t3sitepackage:start>`_
+builds.
 
 ..  _writing-rest-codeblocks-with-syntax-highlighting-outdated-code:
 
