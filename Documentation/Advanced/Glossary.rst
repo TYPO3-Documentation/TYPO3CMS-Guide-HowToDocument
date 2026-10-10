@@ -31,7 +31,7 @@ B
 
 `backend`,
 `backend user`,
-`Backend Users` (module),
+`Backend Users` (module, up to TYPO3 v13),
 `blog post`, `blogger`, `blogging`,
 
 
@@ -56,8 +56,9 @@ C
 D
 
 `Data Processor`,
+`Database` (module),
 `DBAL`,
-`DB Check` (module),
+`DB Check` (module, up to TYPO3 v13),
 `Docker`,
 `Docker Compose`,
 `Doctrine`,
@@ -180,6 +181,7 @@ T
 U
 
 `UNIX`,
+`Users` (module),
 
 V
 
@@ -200,12 +202,9 @@ Terms
 How to use these terms:
 
 Backend Users
-    Written as a proper noun when referring to the TYPO3 backend module for
-    managing backend user accounts and groups, found at
-    :guilabel:`System > Backend Users`. Before the module reorganization in
-    TYPO3 v14, it was listed under "Admin Tools". Lowercase "backend user"
-    still applies when talking about the user accounts themselves, not the
-    module.
+    The name of the module :guilabel:`Users` up to TYPO3 v13, found at
+    :guilabel:`System > Backend Users`. Use it only in documentation for
+    TYPO3 v13 and older.
 
 Changelog
     The collection of per-release Core documentation entries (Breaking
@@ -219,10 +218,17 @@ Classic mode
     Composer mode, where dependencies are managed by Composer outside the
     web root.
 
-DB Check
+Database
     Written as a proper noun when referring to the TYPO3 backend module
-    (provided by :composer:`typo3/cms-lowlevel`) for checking database
-    consistency and integrity, found at :guilabel:`System > DB Check`.
+    (provided by :composer:`typo3/cms-lowlevel`) for searching and querying
+    the database, found at :guilabel:`System > Database`. Lowercase
+    "database" still applies when talking about the database itself, not
+    the module.
+
+DB Check
+    The name of the module :guilabel:`Database` up to TYPO3 v13, found at
+    :guilabel:`System > DB Check`. Use it only in documentation for TYPO3
+    v13 and older.
 
 Fluid Styled Content
     The name of the TYPO3 system extension
@@ -231,7 +237,7 @@ Fluid Styled Content
     example "Fluid-Styled Content templates".
 
 Records
-    Written as a proper noun when referring to the :guilabel:`Contents >
+    Written as a proper noun when referring to the :guilabel:`Content >
     Records` backend module, used to find or create records independently
     of their page context. Lowercase "records" still applies when talking
     about database records in general, not the module.
@@ -249,6 +255,12 @@ TYPO3
 
 third party extension
     Do not write "3rd party extension".
+
+Users
+    Written as a proper noun when referring to the TYPO3 backend module for
+    managing backend user accounts and groups, found at
+    :guilabel:`Administration > Users`. Lowercase "backend user" still
+    applies when talking about the user accounts themselves, not the module.
 
 ViewHelper
     Our community agreed on this spelling.
