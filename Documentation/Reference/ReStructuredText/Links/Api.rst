@@ -49,8 +49,9 @@ The links then look like this:
 As you can see, only links to the namespace `/TYPO3/CMS` can be linked to the
 API. We do display general information about some other namespaces that are
 commonly used in TYPO3 development. Example namespaces should always start with
-`\MyVendor\`. Use `\MyVendor\MyExtension\` for extensions and
-`\MyVendor\MySitepackage\` for sitepackages.
+`\\MyVendor\\`. Use `\\MyVendor\\MyExtension\\` for extensions and
+`\\MyVendor\\MySitepackage\\` for sitepackages, see
+`Example names for extensions and site packages <https://docs.typo3.org/permalink/h2document:codeblocks-example-names>`_.
 
 Implicit links are always referring to your
 :confval:`guides-extension-typo3-core-preferred` as set in the
