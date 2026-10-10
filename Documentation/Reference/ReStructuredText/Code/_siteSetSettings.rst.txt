@@ -1,4 +1,4 @@
-..  typo3:site-set-settings:: PROJECT:/Configuration/Sets/MySet/settings.definitions.yaml
+..  typo3:site-set-settings:: PROJECT:/Configuration/Sets/Main/settings.definitions.yaml
     :name: my-set
     :type:
     :Label: max=30

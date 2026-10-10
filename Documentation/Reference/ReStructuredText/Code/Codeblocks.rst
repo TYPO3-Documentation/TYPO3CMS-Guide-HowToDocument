@@ -678,13 +678,22 @@ that a reader recognizes them:
     The site package of the example site. It contains what makes up the
     theme and the output of the site: page templates, and the TypoScript and
     TSconfig of the site. Paths start with `EXT:my_sitepackage/`, and the
-    namespace is `\\MyVendor\\MySitepackage\\`.
+    namespace is :php-namespace:`\MyVendor\MySitepackage`.
 
 `my_extension`
     An extension that brings its own functionality, such as fields, tables,
     and plugins. Paths start with `EXT:my_extension/`, and the namespace is
-    `\\MyVendor\\MyExtension\\`. Its tables and fields start with
+    :php-namespace:`\MyVendor\MyExtension`. Its tables and fields start with
     `tx_myextension_`.
+
+The main set of an extension or a site package is always in
+`Configuration/Sets/Main/`, for example
+`EXT:my_sitepackage/Configuration/Sets/Main/` and
+`EXT:my_extension/Configuration/Sets/Main/`. Only an additional set next to
+the main set gets a name of its own, one that says what it does, such as
+`Sets/RssFeed/`. Do not name the main set after the package or give it a
+generic name, such as `Sets/SitePackage/`, `Sets/MyExtension/`, or
+`Sets/MySet/`.
 
 ..  code-block:: rst
 
@@ -696,7 +705,8 @@ the packages `t3docs/site-package` and `t3docs/site-package-data`, the
 repository `TYPO3-Documentation/site_package`, and `my_site_package`, the
 site package that the
 `site package tutorial <https://docs.typo3.org/permalink/t3sitepackage:start>`_
-builds.
+builds. A real extension keeps the names of its sets as well, such as
+`Sets/Sitemap/` of :composer:`typo3/cms-seo`.
 
 ..  _writing-rest-codeblocks-with-syntax-highlighting-outdated-code:
 
