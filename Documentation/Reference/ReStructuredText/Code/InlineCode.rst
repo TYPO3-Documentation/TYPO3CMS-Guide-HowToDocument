@@ -170,7 +170,7 @@ resolve without its namespace. Introduce the class once with
 ..  _inline-code-php-namespace:
 
 Referencing a PHP namespace with `:php-namespace:`
--------------------------------------------------
+--------------------------------------------------
 
 Use :rst:`:php-namespace:` for a namespace. Pass the fully qualified
 namespace, including the leading backslash:
@@ -180,12 +180,25 @@ namespace, including the leading backslash:
     The classes of :php-namespace:`\TYPO3\CMS\Core\Http` handle requests
     and responses.
 
+Write the namespace without a trailing backslash. A backslash in front of
+the closing backtick escapes the backtick, and the role runs on into the
+text that follows.
+
 The text prints as :php-namespace:`\TYPO3\CMS\Core\Http`. The role always
 prints the full namespace, because the last segment alone says too little.
 The infobox calls it a PHP namespace. For a namespace of the TYPO3 Core, the
 infobox also links to the page of the namespace on https://api.typo3.org.
 The `class index <https://docs.typo3.org/permalink/h2document:rendered-artifacts-classes>`_
 does not list a namespace.
+
+A namespace that starts with :php-namespace:`\MyVendor` or
+:php-namespace:`\Vendor` is an example namespace. Its infobox asks the
+reader to replace it with their own vendor and namespace. See
+`Example names for extensions and site packages <https://docs.typo3.org/permalink/h2document:codeblocks-example-names>`_.
+
+The rendering does not check if a namespace exists. A misspelled namespace
+renders without a warning. If the infobox of a TYPO3 Core namespace has no
+link to the API, check the namespace for a typo.
 
 :rst:`:php:` and :rst:`:php-short:` also recognize a namespace that the TYPO3
 API knows, and print it in full. A :php:`use` statement in a code example

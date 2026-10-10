@@ -38,11 +38,14 @@ documentation that are not already covered on their own page.
         `\\Vendor\\Ext\\MyClass`     renders as: \Vendor\Ext\MyClass
 
     Double every backslash you want to keep. :rst:`:file:`, :rst:`:php:`,
-    :rst:`:php-short:`, and :rst:`:php-namespace:` are exceptions — they
-    take the text verbatim, so a single backslash there already prints
-    as-is. If you are not
-    sure how a given role handles it, check the rendered output rather
-    than assuming.
+    :rst:`:php-short:`, and :rst:`:php-namespace:` are exceptions. They
+    print a single backslash as it is.
+
+    In these four roles, the text must not end with a backslash. That
+    backslash escapes the closing backtick, and the role runs on into the
+    text that follows. Doubling it does not help, because these roles then
+    print both backslashes. If you are not sure how a given role handles
+    a backslash, check the rendered output.
 
 ..  index:: reST roles; abbr
 ..  _text-roles-abbr:
