@@ -153,7 +153,7 @@ R
 
 S
 
-`sitepackage`,
+`site package`,
 `Sphinx`,
 `style guide (en)`, `Styleguide (de)`,
 `SVG`,

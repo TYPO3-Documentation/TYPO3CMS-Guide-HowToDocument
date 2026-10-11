@@ -178,8 +178,8 @@ All these spellings for backend are currently correct spellings (at least accord
 
 ..  important::
 
-    **In the TYPO3 context** we have defined **backend** to be the preferred spelling,
-    as well as **sitepackage**.
+    **In the TYPO3 context** we have defined **backend** to be the preferred
+    spelling, and **site package** in two words.
 
     If a spelling has been explicitly defined in the :ref:`spelling reference <spelling-ref>`, please
     use that spelling.
