@@ -32,12 +32,12 @@ Simple cards
     ..  card:: :ref:`Concepts <t3start:Concepts>`
 
         Written for new users, this chapter introduces some of TYPO3s
-        core concepts including the backend, TYPO3s administration
+        core concepts including the backend, TYPO3's administration
         interface.
 
     ..  card:: :ref:`System Requirements <t3start:System-Requirements>`
 
-        System requirements for the host operation system, including
+        System requirements for the host operating system, including
         its web server and database and how they should be configured
         prior to installation.
 
@@ -54,13 +54,13 @@ Simple cards
         ..  card:: :ref:`Concepts <t3start:Concepts>`
 
             Written for new users, this chapter introduces some of TYPO3s
-            core concepts including the backend, TYPO3s administration
+            core concepts including the backend, TYPO3's administration
             interface.
 
         ..  card:: :ref:`System Requirements <t3start:System-Requirements>`
 
-            System requirements for the host operation system, including
-            it's web server and database and how they should be configured
+            System requirements for the host operating system, including
+            its web server and database and how they should be configured
             prior to installation.
 
 ..  _rest-cards-cards-buttons-footer:
@@ -79,7 +79,7 @@ Cards with buttons in the footer
 
         The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-        ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
+        ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/Pages/Index.html>`__
             :button-style: btn btn-primary
 
     ..  card:: :ref:`Content <t3editors:content-elements>`
@@ -130,7 +130,7 @@ Cards with buttons in the footer
 
             The Page Management Guide introduces TYPO3's Page Tree and explains how pages are created and managed.
 
-            ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/ContentElements/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/ContentElements/Index.html>`__
+            ..  card-footer:: `12-dev <https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html>`__ `11.5 <https://docs.typo3.org/m/typo3/tutorial-editors/11.5/en-us/Pages/Index.html>`__ `10.4 <https://docs.typo3.org/m/typo3/tutorial-editors/10.4/en-us/Pages/Index.html>`__
                 :button-style: btn btn-primary
 
         ..  card:: :ref:`Content <t3editors:content-elements>`

@@ -6,10 +6,10 @@
 
     ..  code-block:: rst
 
-        ..  viewhelper:: my.viewhelper
+        ..  typo3:viewhelper:: my.viewhelper
             :source: /some/absolute/path/_includes/_my_viewhelper.json
 
-        ..  viewhelper:: my.viewhelper
+        ..  typo3:viewhelper:: my.viewhelper
             :source: ../_includes/_my_viewhelper.json
 
     The path is calculated starting from the :path:`Documentation` directory.

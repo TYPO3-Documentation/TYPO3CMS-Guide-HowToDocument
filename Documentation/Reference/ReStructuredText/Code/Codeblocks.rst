@@ -224,8 +224,8 @@ A simple code block with syntax highlighting
 
 ..  _writing-rest-codeblocks-with-syntax-highlighting-examples-code-block:
 
-Code block with line numbers and highlighting of one line
----------------------------------------------------------
+Code block with line numbers and highlighted lines
+--------------------------------------------------
 
 
 ..  tabs::
@@ -726,7 +726,7 @@ blocks. For historic reasons there are code blocks without an explicit language.
 If you do not explicitly set the language, the default language (PHP) is used.
 
 In the past a simplified shorthand directive was widely used: A sentence ending
-with two double colon :rst:`::`, followed by a new line and an indented
+with a double colon :rst:`::`, followed by a new line and an indented
 block of code. This quick syntax has several drawbacks:
 
 *   It is confusing to developers who seldom contribute
@@ -740,11 +740,12 @@ You can change these code blocks like this:
 ..  code-block:: diff
     :caption: UpdateShorthandCode.diff
 
-     The extension already contains some unit tests that extend `typo3/testing-framework`'s base
-    -unit test class in directory :file:`Tests/Unit/Hooks` (stripped):
+     The extension already contains some unit tests that extend the base
+    -unit test class in directory :file:`Tests/Unit/Hooks` (stripped)::
+    +unit test class in directory :file:`Tests/Unit/Hooks` (stripped):
+    +
+    +..  code-block:: php
+    +    :caption: EXT:my_extension/Tests/Unit/Hooks/DataHandlerFlushByTagHookTest.php
 
-    ..  code-block:: php
-        :caption: <extension_key>/Tests/Unit/Hooks/DataHandlerFlushByTagHookTest.php
-
-          <?php
-          namespace Lolli\Enetcache\Tests\Unit\Hooks;
+         <?php
+         namespace MyVendor\MyExtension\Tests\Unit\Hooks;

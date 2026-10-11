@@ -38,22 +38,22 @@ Further headline levels are possible:
 
     ..  _h4-headline:
 
-    H4 Headline
+    H4 headline
     ~~~~~~~~~~~
 
     ..  _h5-headline:
 
-    H5 Headline
+    H5 headline
     """""""""""
 
     ..  _h6-headline:
 
-    H6 Headline
+    H6 headline
     '''''''''''
 
     ..  _another-h2-headline:
 
-    Another H2 Headline
+    Another H2 headline
     ===================
 
 They look like this:
@@ -88,11 +88,11 @@ H6 headline
 Syntax of headlines
 ===================
 
-The underlining special signs should be as long as the line but this is not
-enforced.
+Make the over- and underline as long as the headline. The rendering does not
+check this.
 
 Each headline should have an anchor. Otherwise permalinking does not work.
 
-In the official docs recommend to never delete an anchor. If a concept is
-removed without substitute, move the anchor to a special page when and why the
-concept was removed.
+Never delete an anchor. If a concept is removed without substitute, move the
+anchor to a special page that says when and why the concept was removed. See
+`Keeping anchors working <https://docs.typo3.org/permalink/h2document:anchor-persistence>`_.

@@ -57,9 +57,9 @@ Full documentation in reST
 ==========================
 
 To render a complete documentation manual you need a folder called
-:file:`Documentation` with at least a reStructured Text file as entry point named
-:file:`Documentation\Index.rst` and a configuration file called
-:file:`Documentation\guides.xml`. Add more files as needed.
+:file:`Documentation` with at least a reStructuredText file as entry point named
+:file:`Documentation/Index.rst` and a configuration file called
+:file:`Documentation/guides.xml`. Add more files as needed.
 
 Write :file:`Index.rst` with a capital `I`. docs.typo3.org opens a manual at
 :file:`Index.html`, so a manual that starts at :file:`index.rst` has no start
@@ -237,8 +237,8 @@ Example:
 
 ..  _full-documentation-md:
 
-Full documentation in reST Markdown
-===================================
+Full documentation in Markdown
+==============================
 
 The TYPO3 documentation rendering pipeline supports rendering of CommonMark
 Markdown plus a few additional constructs like tables.
@@ -269,7 +269,7 @@ you can also publish a :file:`README.rst` or :file:`README.md` to
 https://docs.typo3.org/
 
 For this workflow the :file:`README(.rst/.md)` MUST be situated in the
-extension's root folder. The :file:`Documentation/' folder can then be omitted.
+extension's root folder. The :file:`Documentation/` folder can then be omitted.
 
 For single file documentation, the :file:`README.rst` contains the entire
 documentation.

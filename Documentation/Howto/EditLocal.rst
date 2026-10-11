@@ -121,7 +121,7 @@ the ability to experiment and preview your changes locally before submitting the
 
     ..  code-block:: bash
 
-        git push origin changes-in-cgl
+        git push origin feature/changes-in-cgl
 
     This will push the change to your forked repository.
 

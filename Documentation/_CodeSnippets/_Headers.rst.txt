@@ -8,14 +8,14 @@ Some text.
 
 ..  _h2-headline:
 
-H2 Headline
+H2 headline
 ===========
 
 Lorem Ipsum
 
 ..  _h3-headline:
 
-H3 Headline
+H3 headline
 -----------
 
 Some more text

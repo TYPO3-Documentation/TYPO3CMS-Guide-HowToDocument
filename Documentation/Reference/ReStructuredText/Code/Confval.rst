@@ -104,7 +104,7 @@ There are several reserved attributes:
     The unique identifier, reserved internally by reStructuredText.
 `:class:`
     Reserved internally by reStructuredText.
-`noindex`
+`:noindex:`
     Exclude from being able to be referenced and form indexes. Useful for
     confvals that should be repeatedly displayed in different locations.
 `:added:`, `:changed:`, `:deprecated:`, `:removed:`
@@ -128,11 +128,11 @@ All other attributes are output the way they are written:
 
 ..  code-block:: rst
 
-    ..  confval:: fileCreateMask
+    ..  confval:: someSetting
         :name: some-unique-someSetting
         :type: string
-        :default: 0664
-        :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['fileCreateMask']`
+        :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['someSetting']`
+        :Some value: Lorem Ipsum
 
         Lorem Ipsum Dolor sit
 
@@ -293,7 +293,7 @@ the same page and want to list them in separate menus:
             Some Description
 
         ..  confval:: confval-2
-            :type: int
+            :type: string
             :default: 'Hello World'
 
             Some Description

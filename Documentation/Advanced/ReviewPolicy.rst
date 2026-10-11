@@ -125,7 +125,7 @@ merged:
     concerns are raised.
 
 *   If you feel the Pull Request contains **debatable or problematic parts**,
-    please **discuss this //internally//** in the documentation team (Slack channel
+    please **discuss this internally** in the Documentation Team (Slack channel
     `#documentation-team`). **Negative public feedback can be off-putting** and must only
     be raised after internal discussion, because this can reflect back to
     the TYPO3 project as a whole. Be encouraging in your feedback to give

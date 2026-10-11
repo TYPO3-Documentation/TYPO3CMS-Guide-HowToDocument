@@ -1,5 +1,5 @@
 ..  code-block:: rst
-    :caption: Documentation/README.rst
+    :caption: EXT:my_extension/README.rst
 
     ..  image:: https://poser.pugx.org/<package-name>/v/stable
         :alt: Latest Stable Version

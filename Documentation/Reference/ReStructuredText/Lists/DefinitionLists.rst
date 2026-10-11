@@ -201,10 +201,10 @@ Source:
 
     Here we link to :ref:`A link text for parameterAbc <label-parameterabc>`.
 
-    Here we link to :ref:`A link text for parameterBcd <label-parameterabc>`.
+    Here we link to :ref:`A link text for parameterBcd <label-parameterbcd>`.
 
 Result:
 
 Here we link to :ref:`A link text for parameterAbc <label-parameterabc>`.
 
-Here we link to :ref:`A link text for parameterBcd <label-parameterabc>`.
+Here we link to :ref:`A link text for parameterBcd <label-parameterbcd>`.
