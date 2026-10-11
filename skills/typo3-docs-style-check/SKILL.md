@@ -5,7 +5,8 @@ description: Check TYPO3 documentation (.rst files) against the current rules of
 
 Check the target `.rst` files (the ones the user names, or the files changed
 in the current git diff if none are named) against TYPO3-Documentation's
-actual, current style rules.
+actual, current style rules. A file that the user names is checked in full,
+as if all of it were new, also when it is not in a git repository.
 
 **Do not rely on memory or any cached summary of these rules — they change,
 and a stale rule is worse than no check at all.** Every time this skill
@@ -24,19 +25,27 @@ A page that the `typo3-docs-writing` skill already read in this task, from
 the same `origin/main` or the same download, does not need reading again.
 Read only the pages below that are still missing:
 
-*   `Documentation/Advanced/ContentStyleGuide.rst` — sentence case, spelling,
+*   `Documentation/Advanced/ContentStyleGuide.rst` — sentence case,
     capitalization, general prose rules. Always needed.
+*   `Documentation/Advanced/Glossary.rst` — how to spell names and terms.
+    Always needed. Report every word that the target files spell
+    differently from this page, also in headlines.
 *   `Documentation/Advanced/CodingGuidelines.rst` — reST formatting:
     indentation, `..` marker spacing, line length. Always needed.
 *   `Documentation/Reference/ReStructuredText/Code/InlineCode.rst` — single
     vs. double backticks, `:php:`/`:php-short:` usage. Read it when the
-    target files contain any inline code or roles.
-*   `Documentation/Reference/ReStructuredText/Links/Composer.rst` — prefer
-    `:composer:` over extension key/`EXT:` notation. Read it when the target
-    files name a TYPO3 extension.
+    target files contain inline code in backticks or a code role such as
+    `:php:`. `:guilabel:` and `:kbd:` are covered in `CodingGuidelines.rst`.
+*   `Documentation/Reference/ReStructuredText/Links/Composer.rst` — the
+    roles `:composer:` and `:t3ext:` that name and link an extension or a
+    Composer package. Read it when the target files name one, such as
+    TYPO3 Console or the news extension.
+*   `Documentation/Reference/ReStructuredText/Menus/HeadlinesAndSection.rst`
+    — headline levels, and over- and underlines as long as the headline.
+    Read it when the target files contain a headline.
 *   `Documentation/Reference/ReStructuredText/Links/Anchors.rst` — anchor
     naming and the never-remove-an-anchor rule. Read it when the target files
-    add, rename, or remove a headline.
+    contain a headline.
 *   `Documentation/Advanced/Redirects.rst` — required when a page is
     renamed or deleted. Read it when the diff includes a renamed/deleted
     `.rst` file.
@@ -49,6 +58,11 @@ Apply what you actually read to the target files. For each violation,
 report the file, line, the rule it breaks (quote the relevant sentence
 from the page you read), and the concrete fix. Group the report by file. If
 nothing is wrong, say so plainly — don't invent findings to seem useful.
+
+In a file from the git diff, report a violation in a line that the diff
+does not change in a separate group, "Already in the file, not in this
+change". Only the text that a change touches has to follow the rules, so
+these findings are for information. Do not ask for them to be fixed.
 
 This skill only reports; it does not edit files unless the user asks it to
 apply the fixes.
