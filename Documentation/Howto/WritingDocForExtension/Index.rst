@@ -64,6 +64,30 @@ for publishing. In case the Team has questions, please follow the thread
 generated for your extension in the `TYPO3 slack organization <https://typo3.org/community/meet/chat-slack>`_
 in channel `#typo3-documentation <https://typo3.slack.com/archives/C028JEPJL>`_.
 
+..  _write-doc-extensions-agents-md:
+
+Instructions for AI assistants
+==============================
+
+If you use an AI assistant to write the documentation, add a file
+:file:`AGENTS.md` to the root of your extension, beside the
+:file:`composer.json`. Most coding agents read this file by themselves when
+they start to work in the repository.
+
+Keep the file short, and link to the pages of this guide instead of copying
+their rules. Do not put the file or a link to it into the
+:path:`Documentation` folder, see
+`File structure <https://docs.typo3.org/permalink/h2document:file-structure>`_.
+
+The following file is an example for the extension `my_extension`. Adapt
+the structure, the commands, and the commit rules to your repository:
+
+..  literalinclude:: /_CodeSnippets/_AgentsMdExtension.md.inc
+    :caption: AGENTS.md
+
+See also
+`Write documentation with AI assistance <https://docs.typo3.org/permalink/h2document:ai-assistance>`_.
+
 ..  _writing-doc-for-ext-start-version-numbers:
 
 Version numbers
