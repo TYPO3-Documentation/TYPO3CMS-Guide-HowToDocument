@@ -28,6 +28,7 @@ We recommend to use the `..  figure::` directive. It works just like
 
 Always use the parameter `:alt:` to add a descriptive text for visually impaired
 and search engine / artificial intelligence bots scanning our docs.
+See `What the alt text must contain <https://docs.typo3.org/permalink/h2document:guidelines-for-images-alt-text>`_.
 
 Example:
 

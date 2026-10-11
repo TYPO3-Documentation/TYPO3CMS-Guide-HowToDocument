@@ -16,6 +16,63 @@ For accessibility reasons **always** provide an alt text:
 
 More optional parameters for embedding images into reST: :ref:`Images <h2document:images>`.
 
+..  _guidelines-for-images-alt-text:
+
+What the alt text must contain
+==============================
+
+The alt text says what the image shows. Name the messages, labels, and values
+that the text around the image relies on. A reader who cannot see the image
+depends on the alt text. So does an agent that would otherwise have to load
+the image to read it.
+
+A description of the kind of image is not enough:
+
+..  code-block:: rst
+    :caption: Wrong: the alt text names the kind of image only
+
+    ..  figure:: /Images/ErrorPage.png
+        :alt: Error page of a site without TypoScript
+
+Write the text that the image shows instead:
+
+..  code-block:: rst
+    :caption: Correct: the alt text holds the message of the image
+
+    ..  figure:: /Images/ErrorPage.png
+        :alt: Error page "500 Internal Server Error" with the reason "No site
+            configuration or TypoScript template record found!"
+
+The same applies to the output of code:
+
+..  code-block:: rst
+    :caption: Wrong and correct alt text for a debug output
+
+    :alt: Output of a SplitProcessor, including debug output
+
+    :alt: Dump of the variable urlParts with 10 parts: "https:", an empty
+        string, "docs.typo3.org", and the output that shows the parts
+        separated by slashes
+
+..  _guidelines-for-images-alt-text-length:
+
+Long alt texts
+--------------
+
+Never shorten an alt text to keep a line below 80 characters. Wrap it
+instead: continue the text on the next line, indented below :rst:`:alt:`.
+The rendering joins the lines into one alt text, as in the examples above.
+
+..  _guidelines-for-images-alt-text-update:
+
+Update the alt text with the image
+----------------------------------
+
+When you replace a screenshot, by hand or with a screenshot tool, compare the
+new image with its alt text. If the text in the image changed, such as a
+message, a menu item, a label, or the number of entries, update the alt text
+as well.
+
 ..  _guidelines-for-images-formats:
 
 Image formats
