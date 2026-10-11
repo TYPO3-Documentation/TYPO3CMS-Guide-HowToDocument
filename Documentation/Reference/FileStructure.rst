@@ -38,7 +38,12 @@ Further conventions are:
 *   Each directory **shall** have a file named :file:`Index.rst` it is used as
     fallback if a page is not found during switching versions.
 *   Code examples to be included should start with an underscore, for example
-    :file:`_Services.yaml`.
+    :file:`_Services.yaml`. The underscore marks the file as an example, so
+    that nobody mistakes it for real code of the project. In most file
+    lists, such as those of an editor or of GitHub, it also sorts the file
+    to the top of its directory, apart from the reST files. The same applies
+    to directories, for example :path:`_Images`. This is a convention only,
+    and no check enforces it.
 
 ..  note::
     Do not place symbolic links inside the :path:`Documentation` folder. The

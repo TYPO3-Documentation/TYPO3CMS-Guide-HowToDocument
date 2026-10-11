@@ -93,7 +93,9 @@ Short code blocks can be inserted directly into a reST file:
         defined('TYPO3') or die();
 
 Longer code blocks should be put into a file starting with an underscore and
-included:
+included. By convention, the underscore marks the file as an example, so
+that nobody mistakes it for real code. It also keeps the file apart from the
+reST files of its directory:
 
 ..  code-block:: rst
 
