@@ -86,6 +86,13 @@ the ability to experiment and preview your changes locally before submitting the
     :ref:`reST Introduction <writing-rest-introduction>` to help get you started
     along with the :ref:`reST cheat sheet <rest-cheat-sheet>`.
 
+    If you use an AI assistant, you can use the skill `typo3-docs-writing`
+    of this guide. It makes the assistant read the rules of this guide
+    before it writes, and check the result afterwards. Most assistants
+    also read the :file:`AGENTS.md` of the repository by themselves. To
+    install the skill, see
+    `Skills for TYPO3 documentation <https://docs.typo3.org/permalink/h2document:ai-assistance-skills>`_.
+
 7.  Render the documentation
 
     Render your changes with Docker to preview them locally:
@@ -105,6 +112,10 @@ the ability to experiment and preview your changes locally before submitting the
     ..  literalinclude:: /_CodeSnippets/_CommitMessageExample.txt
         :caption: Example commit message
         :language: text
+
+    If you used AI assistance for more than a basic spelling or grammar
+    check, add an `Assisted-by` trailer, see
+    `The commit message in official documentation <https://docs.typo3.org/permalink/h2document:ai-assistance-commit-message>`_.
 
 9.  Push changes
 
