@@ -69,8 +69,19 @@ names the anchor that holds the rule:
 
 *   Every headline has its own anchor directly above it, and its underline
     is as long as the headline (`link-anchor`, `rest-cgl-headline-underlines`).
+*   A new anchor starts with the anchor of the section it is in, such as
+    `migration-with-make` below `migration` (`link-anchor-new`). To add the
+    missing anchors of a manual, run
+    `python3 <this skill>/scripts/generate_anchors.py Documentation`. Check
+    the plan it prints, shorten each name it warns about, then run it again
+    with `--apply`. It never changes an existing anchor.
 *   Never delete an anchor. Move it to the heading that now covers the
     content, or to `404.rst` (`anchor-persistence`).
+*   Two labels that differ only in case, or in `_` and `-`, are the same
+    anchor, such as `Building` and `building`. When you respell one, do not
+    keep the old spelling beside it (`anchor-persistence-spelling`).
+    `scripts/find_missing_anchors.py` reports such pairs, headlines without
+    an anchor, and lines that look like a broken anchor.
 *   A renamed or deleted page needs a redirect (`redirects`).
 *   Link TYPO3 documentation with a permalink and a link text of its own,
     also inside the same manual. Do not replace an existing permalink with

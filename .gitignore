@@ -15,3 +15,6 @@
 .project
 .webprj
 nbproject
+
+# Python bytecode of the skill scripts
+__pycache__/
