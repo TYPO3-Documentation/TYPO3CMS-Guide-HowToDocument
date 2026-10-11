@@ -216,18 +216,16 @@ It makes it easier to contribute to the documentation!
 
 **How do you enable this?**
 
-Add this to your :ref:`guides.xml <settings-cfg>` and customize it:
+Set the attributes `edit-on-github` and `edit-on-github-branch` of the
+:xml:`<extension>` tag in your :file:`Documentation/guides.xml`. The
+following file of the news extension sets both. Open the folded lines to see
+the whole file:
 
-..  code-block:: none
+..  literalinclude:: /Reference/_guides-simple.xml
+    :caption: EXT:news/Documentation/guides.xml
+    :visible-lines: 7, 13-14, 17
 
-    [html_theme_options]
-
-    # "Edit on GitHub" button
-    github_repository = TYPO3-Console/TYPO3-Console
-    github_branch     = main
-
-Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_console/>`__
-extension for a working example.
+See `edit-on-github <https://docs.typo3.org/permalink/h2document:settings-guides-edit-on-github>`_.
 
 
 ..  rst-class:: panel panel-default
