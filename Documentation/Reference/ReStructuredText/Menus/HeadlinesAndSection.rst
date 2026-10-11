@@ -24,6 +24,8 @@ Each reST document must have a title. It is overlined and underlined like this:
 The anchor is used for permalinks. It should be lowercase with dashes between
 words. During rendering special signs are converted into dashes and all letters changed to
 lowercase if you ignore this.
+Start a new anchor with the anchor of its section, see
+`Naming a new anchor <https://docs.typo3.org/permalink/h2document:link-anchor-new>`_.
 
 Use headers to divide your document into sections. Start with h2:
 
