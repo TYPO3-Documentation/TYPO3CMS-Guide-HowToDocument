@@ -1,4 +1,5 @@
 ..  figure:: /_Images/a4.jpg
-    :alt: some image
+    :alt: A spiral staircase seen from above, with people walking up and
+        down the steps
 
     This is the image caption
