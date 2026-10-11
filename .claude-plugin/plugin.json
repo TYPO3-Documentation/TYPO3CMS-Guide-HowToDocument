@@ -1,0 +1,12 @@
+{
+  "name": "typo3-docs",
+  "displayName": "TYPO3 Docs",
+  "description": "Skills that make a session follow the current rules of the TYPO3 \"How to document\" guide when it writes or checks TYPO3 documentation.",
+  "version": "0.1.0",
+  "author": {
+    "name": "TYPO3 Documentation Team"
+  },
+  "homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument",
+  "repository": "https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument",
+  "keywords": ["typo3", "documentation", "rst", "style-guide"]
+}
