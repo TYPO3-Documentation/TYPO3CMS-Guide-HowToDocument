@@ -13,18 +13,30 @@ themselves. A rule from memory or from a summary is often out of date.
 
 ## 1. Find the guide and the repository rules
 
-Read the rules from the guide's `main` branch:
+Read the rules from the guide's `main` version. This skill names each page
+by its path without a file extension, such as `Advanced/ContentStyleGuide`.
 
-*   **A local checkout exists.** In the TYPO3 documentation workspace it is
-    `guide-h2d`, beside the other manuals. Confirm it with
-    `git -C <dir> remote get-url origin`. Run `git -C <dir> fetch -q origin`
-    and read with `git -C <dir> show origin/main:<path>`, so that a stale
-    local branch does not hide a newer rule.
-*   **No checkout.** Fetch the raw file from
-    `https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/main/<path>`.
+*   **Published Markdown, first choice.** docs.typo3.org publishes every page
+    of the guide as Markdown:
+    `https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/<page>.md`.
+    Included files and code examples are resolved in it. Each heading ends
+    in its anchor, so search for `{#anchor}`, for example
+    `## Use the serial comma {#content-styleguide-serial-comma}`.
+*   **reST source, fallback.** Read the source when the Markdown cannot be
+    fetched, when an anchor is missing from it, or when a rule changed on
+    `main` and is not published yet. The source of a page is
+    `Documentation/<page>.rst`. In a local checkout, in the TYPO3
+    documentation workspace `guide-h2d` beside the other manuals, confirm
+    it with `git -C <dir> remote get-url origin`. Run
+    `git -C <dir> fetch -q origin` and read with
+    `git -C <dir> show origin/main:Documentation/<page>.rst`. Without a
+    checkout, fetch
+    `https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/main/Documentation/<page>.rst`.
+    In the source, an anchor is the target line, such as
+    `..  _content-styleguide-serial-comma:`.
 
-To find a rule by its anchor, search for the target line, for example
-`git -C <dir> grep -n '_content-styleguide-serial-comma:' origin/main -- Documentation`.
+A heading with several anchors shows only one of them in the Markdown. If
+an anchor is not there, read the whole page or its reST source.
 
 If a page cannot be read, say so. Do not write from memory instead.
 
@@ -37,18 +49,18 @@ that repository.
 
 Always read these, every time:
 
-*   `Documentation/Advanced/ContentStyleGuide.rst`, at least the sections
+*   `Advanced/ContentStyleGuide`, at least the sections
     with the anchors `content-styleguide-serial-comma`,
     `content-styleguide-sentences` with all its subsections,
     `content-styleguide-difficulty`, and `spelling-ref-title`.
-*   `Documentation/Advanced/CodingGuidelines.rst`, the sections
+*   `Advanced/CodingGuidelines`, the sections
     `cgl-indenting`, `format-rest-cgl-basic-formatting-rules-line-length`,
     and `rest-cgl-headline-underlines`.
-*   `Documentation/Reference/ReStructuredText/Links/Anchors.rst`, the whole
+*   `Reference/ReStructuredText/Links/Anchors`, the whole
     page.
-*   `Documentation/Reference/ReStructuredText/Links/Documentation.rst`, the
+*   `Reference/ReStructuredText/Links/Documentation`, the
     sections `permalinks`, `permalinks-rules`, and `link-text`.
-*   `Documentation/Advanced/Glossary.rst`, the whole page. Its sections
+*   `Advanced/Glossary`, the whole page. Its sections
     `preferred-terms-spelling` and `preferred-terms-terms` define how to
     spell names and terms. Use the spelling from there, also in headlines.
 
@@ -137,6 +149,6 @@ checked.
 
 ## 5. Write the commit message
 
-Read `Documentation/Advanced/CommitMessages.rst` and the repository's own
+Read `Advanced/CommitMessages` and the repository's own
 `AGENTS.md`. The commit message, the pull request description, and any
 issue comment follow the writing rules of step 2 as well.
