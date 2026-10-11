@@ -147,7 +147,7 @@ R
 
 `Records` (module),
 `reStructuredText`, `reST`,
-`richt text editor`,
+`rich text editor`,
 `RTE`,
 
 
@@ -174,7 +174,6 @@ T
 `TYPO3 Core`, `Core`,
 `TYPO3 Core Engine`,
 `TYPO3 Core Team`, `Core Team`,
-`TYPO3 Core Engine`,
 `TYPO3 v12`, `TYPO3 v12.4`, `TYPO3 v12 LTS`, `TYPO3 version 12`,
 `TypoScript`,
 
