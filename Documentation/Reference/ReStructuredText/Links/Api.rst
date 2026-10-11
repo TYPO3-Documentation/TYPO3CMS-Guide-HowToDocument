@@ -50,7 +50,7 @@ As you can see, only classes in the namespace :php-namespace:`\TYPO3\CMS`
 link to the API. We do display general information about some other
 namespaces that are commonly used in TYPO3 development. Example namespaces should always start with
 :php-namespace:`\MyVendor`. Use :php-namespace:`\MyVendor\MyExtension` for
-extensions and :php-namespace:`\MyVendor\MySitepackage` for sitepackages, see
+extensions and :php-namespace:`\MyVendor\MySitepackage` for site packages, see
 `Example names for extensions and site packages <https://docs.typo3.org/permalink/h2document:codeblocks-example-names>`_.
 
 Implicit links are always referring to your
