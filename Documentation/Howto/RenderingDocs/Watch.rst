@@ -9,7 +9,7 @@ Automatic re-rendering when writing documentation locally
 In case you write complex `reST` markup you may want immediate visual
 feedback on your changes, without triggering the rendering manually every time.
 
-`render-guides` can serve the rendered documentation via a local web-server
+`render-guides` can serve the rendered documentation via a local web server
 and automatically re-render the documentation when changes in the source files
 are detected.
 
@@ -44,7 +44,7 @@ Usage with Docker
               -p 1337:1337 ghcr.io/typo3-documentation/render-guides:latest --config="Documentation" --watch
             xdg-open "http://localhost:1337/Index.html"
 
-    ..  group-tab:: MacOS
+    ..  group-tab:: macOS
 
         ..  code-block:: bash
 
@@ -90,7 +90,7 @@ Or you can create a bash alias like:
 Usage with Docker Compose
 =========================
 
-If you are using `docker-compose <https://docs.docker.com/compose/>`_ to manage your
+If you are using `Docker Compose <https://docs.docker.com/compose/>`_ to manage your
 development environment, you can add a service for the automatic re-rendering like this:
 
 ..  code-block:: yaml

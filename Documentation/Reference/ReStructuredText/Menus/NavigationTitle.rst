@@ -12,7 +12,7 @@ displayed in menus.
 
 While the title of a page is a very important tool to pass information to
 both the readers and search engines including our internal elastic search,
-elaborate titles usually take up to much space within the menu, the breadcrumb
+elaborate titles usually take up too much space within the menu, the breadcrumb
 etc.
 
 For example, the title of the page you are currently reading is quite long:

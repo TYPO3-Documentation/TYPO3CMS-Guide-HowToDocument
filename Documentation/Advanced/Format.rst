@@ -27,7 +27,7 @@ and you will benefit from the advanced features of the TYPO3 documentation toolc
 
 The file ending of reST files is .rst.
 
-When you started your documentation in markdown, you can convert it to reST using
+When you started your documentation in Markdown, you can convert it to reST using
 our migration tool.
 
 ..  index::
@@ -38,11 +38,11 @@ our migration tool.
 Markdown
 ========
 
-However we do highly recommend using reST for your documentation, we also support markdown for
-your (extension) documentation. The file ending of markdown files is .md.
+However we do highly recommend using reST for your documentation, we also support Markdown for
+your (extension) documentation. The file ending of Markdown files is .md.
 
-Our toolchain supports the `commonmark dialect of markdown <https://commonmark.org/>`__.
-This is a standardized version of markdown. We do not support other markdown dialects, although
+Our toolchain supports the `commonmark dialect of Markdown <https://commonmark.org/>`__.
+This is a standardized version of Markdown. We do not support other Markdown dialects, although
 they might work. We cannot guarantee that they will work in the future.
 You can consult our Markdown reference for more information.
 

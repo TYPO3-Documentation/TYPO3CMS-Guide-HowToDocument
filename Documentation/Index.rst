@@ -49,7 +49,7 @@ reStructuredText (reST).
 
     ..  card:: Cheat sheet: reStructuredText
 
-        Go tho the cheat sheet containing a quick overview on how to use reStructuredText.
+        Go to the cheat sheet containing a quick overview on how to use reStructuredText.
 
         ..  card-footer:: :ref:`Go to the reST Cheat sheet <rest-cheat-sheet>`
             :button-style: btn btn-secondary stretched-link

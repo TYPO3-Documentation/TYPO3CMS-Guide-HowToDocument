@@ -157,5 +157,5 @@ page to themselves rather than a short entry here:
 ..  seealso::
 
     *   `Basic inline markup (bold, italic etc.) <https://docs.typo3.org/permalink/h2document:rest-bold-italic>`_
-    *   `Links in ReStructured Text <https://docs.typo3.org/permalink/h2document:how-to-document-hyperlinks>`_
+    *   `Links in reStructuredText <https://docs.typo3.org/permalink/h2document:how-to-document-hyperlinks>`_
     *   `Docutils: Interpreted Text Roles <http://docutils.sourceforge.io/docs/ref/rst/roles.html>`_

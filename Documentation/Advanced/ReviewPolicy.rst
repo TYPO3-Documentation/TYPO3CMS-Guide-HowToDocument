@@ -20,7 +20,7 @@ Policy for contributors
 =======================
 
 As outlined in :ref:`how to contribute <docs-contribute>`, contributors can
-provide so called "Pull Requests" (PRs) to our manual repositories
+provide so-called "pull requests" (PRs) to our manual repositories
 on GitHub.
 
 When a Pull Request is made, we kindly ask contributors to note
@@ -179,7 +179,7 @@ After a Pull Request has been merged:
 =======================
 
 Some decisions can not be made objectively, there may be reasons against and for it.
-Like picking "spaces or tabs" for intendation, or how to apply Uppercase Wording.
+Like picking "spaces or tabs" for indentation, or how to apply Uppercase Wording.
 
 Here is a list of currently agreed stances:
 

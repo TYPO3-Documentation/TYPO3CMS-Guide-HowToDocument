@@ -14,7 +14,7 @@ For accessibility reasons **always** provide an alt text:
 ..  literalinclude:: /_CodeSnippets/_Figure.rst.txt
     :caption: Documentation/MyDocs.rst
 
-More optional parameters for embedding images into ReST: :ref:`Images <h2document:images>`.
+More optional parameters for embedding images into reST: :ref:`Images <h2document:images>`.
 
 ..  _guidelines-for-images-formats:
 

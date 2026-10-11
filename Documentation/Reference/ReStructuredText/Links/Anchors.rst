@@ -39,7 +39,7 @@ A recommended recipe could be:
 
 #.  Duplicate the headline
 #.  Transform to lowercase
-#.  Replace all blanks by a hyphens `-`
+#.  Replace all blanks with a hyphen `-`
 #.  Remove all non-alphanumeric characters or replace them by a hyphen `-`
 #.  Add `.. _` at the beginning.
 #.  Add `:` at the end.

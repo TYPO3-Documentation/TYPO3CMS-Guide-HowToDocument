@@ -67,7 +67,7 @@ the repository of that manual.
     git clone git@github.com:TYPO3-Documentation/TYPO3CMS-Reference-CoreApi.git
 
 
-Use composer to install all dependencies,
+Use Composer to install all dependencies,
 including dev-dependencies. In official manuals we have a make command for
 your convenience.
 

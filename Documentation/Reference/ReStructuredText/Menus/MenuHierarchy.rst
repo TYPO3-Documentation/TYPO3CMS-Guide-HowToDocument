@@ -8,7 +8,7 @@
 Main menu of a TYPO3 documentation manual
 =========================================
 
-A manual consisting of more then one page should have a menu displayed on the
+A manual consisting of more than one page should have a menu displayed on the
 left side of each page.
 
 There are different strategies to get such a menu:
@@ -61,7 +61,7 @@ have additional `.rst` files in sub directories, you need to add such a toctree
 to the `Index.rst` in the sub directory.
 
 If you use the `The init command <https://docs.typo3.org/permalink/h2document:init-command>`_
-to create a new ReST documentation we prepared such a menu for you.
+to create a new reST documentation we prepared such a menu for you.
 
 ..  _menu-manual:
 
@@ -86,7 +86,7 @@ cross-references and appear in menus and table of contents.
 
 If you do not want to display the menu in the place where the toctree is
 defined use the `:hidden:` option. The toctree will only be used to define
-the right hand menu then.
+the right-hand menu then.
 
 ..  code-block:: rst
     :linenos:
@@ -118,7 +118,7 @@ displayed.
 
 You can limit the number of submenu points to be displayed in the place the
 menu was entered by using option `:maxdepth:`. Neither option influences the
-right hand menu.
+right-hand menu.
 
 ..  _menu-rules:
 
@@ -136,6 +136,6 @@ If a page should not be included in the menu it must be marked as `:orphan:` in
 the first line. Orphaned pages are not included in semi-automatic menus with
 the `:glob:` option. See `Orphaned pages <https://docs.typo3.org/permalink/h2document:rest-orphans>`_.
 
-Each non orphaned page **must** be included in the menu **exactly once**.
+Each non-orphaned page **must** be included in the menu **exactly once**.
 Including the same page in multiple pages in the menu will cause warnings and
 might produce unexpected results.

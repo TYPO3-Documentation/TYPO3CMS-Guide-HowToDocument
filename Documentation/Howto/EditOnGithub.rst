@@ -27,8 +27,8 @@ Workflow #1: "Edit on GitHub"
 
 3.  Edit the page on GitHub:
 
-    At the top right of every page you will find an icon that says "Edit on Github".
-    Selecting this link will take you to that pages repository on GitHub.
+    At the top right of every page you will find an icon that says :guilabel:`Edit on GitHub`.
+    Selecting this link will take you to the repository of that page on GitHub.
 
     ..  image:: /_Images/edit_me_on_github.png
         :class: with-border with-shadow

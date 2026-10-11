@@ -20,7 +20,7 @@ example:
 
         ..  include:: /_CodeSnippets/FileStructure/ReadmeRst.rst.txt
 
-    ..  group-tab:: Third-party extension
+    ..  group-tab:: Third party extension
 
         ..  include:: /_CodeSnippets/FileStructure/Examples/IndexRst.rst.txt
 
@@ -48,7 +48,7 @@ monthly download rate and the supported TYPO3 versions:
 
 ..  tabs::
 
-    ..  group-tab:: reStructured Text
+    ..  group-tab:: reStructuredText
 
         ..  include:: /_CodeSnippets/FileStructure/Badges.rst.txt
 
@@ -76,7 +76,7 @@ Common values are, for example, in the official TYPO3 manuals
 #.  `<Topic> Tutorial`, e.g. "Getting Started Tutorial",
     for collections of tutorials on a specific topic
 
-and in TYPO3 system and third-party extensions
+and in TYPO3 system and third party extensions
 
 *   `TYPO3 extension <extension-key>`, e.g. "TYPO3 extension \`\`extbase\`\`" and
     "TYPO3 extension \`\`mask\`\`".

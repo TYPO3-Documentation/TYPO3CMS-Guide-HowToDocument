@@ -25,7 +25,7 @@ try to always add a `:caption:` with the path and name of the file where the exa
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
@@ -152,7 +152,7 @@ will fail.
     browser without JavaScript.
 
     See also the official
-    `sphinx documentation on code-blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`__.
+    `Sphinx documentation on code blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`__.
 
 ..  _codeblocks-caption-excerpt:
 
@@ -189,7 +189,7 @@ A simple code block with syntax highlighting
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
@@ -230,7 +230,7 @@ Code block with line numbers and highlighting of one line
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
@@ -278,7 +278,7 @@ example is about:
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  literalinclude:: _snippets/_visible-lines.rst.txt
             :caption: Documentation/MyDocs.rst
@@ -293,7 +293,7 @@ away:
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  literalinclude:: _snippets/_visible-lines-yaml.rst.txt
             :caption: Documentation/MyDocs.rst
@@ -325,7 +325,7 @@ counting:
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  literalinclude:: _snippets/_line-numbers.rst.txt
             :caption: Documentation/MyDocs.rst
@@ -352,7 +352,7 @@ To show a change in a short fragment, write the diff in a code block:
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
@@ -390,7 +390,7 @@ To display an expandable directory tree, use the
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
@@ -498,7 +498,7 @@ fragment that would not be valid code in a file of its own.
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/SiteConfiguration/Index.rst
@@ -581,7 +581,7 @@ Include the file as it is, and name the file as it was in the option
 
 ..  tabs::
 
-    ..  group-tab:: Source (rst)
+    ..  group-tab:: Source (reST)
 
         ..  code-block:: rst
             :caption: Documentation/MyDocs.rst
@@ -714,7 +714,7 @@ Outdated code block formats
 ===========================
 
 For historic reasons the :rst:`:caption:` option is missing in many code blocks.
-Try to add them whenever you touch the RST files. Do not add new code blocks
+Try to add them whenever you touch the reST files. Do not add new code blocks
 without a caption stating the file name. It is often very confusing for new
 developers where a certain code snippet should go. The recommended file name
 can help to clear this up.

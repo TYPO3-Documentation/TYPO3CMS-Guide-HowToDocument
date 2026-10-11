@@ -91,7 +91,7 @@ these steps:
 
 ..  rst-class:: bignums-xxl
 
-#.  Navigate to the repositories **Settings** tab.
+#.  Navigate to the :guilabel:`Settings` tab of the repository.
 
     ..  figure:: /_Images/webhook/github/repository-start.png
         :width: 932

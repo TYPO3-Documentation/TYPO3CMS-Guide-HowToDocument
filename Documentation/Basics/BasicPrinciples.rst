@@ -33,8 +33,8 @@ Documentation may include:
 
 *   Official manuals (e.g. :ref:`TYPO3 Explained <t3coreapi:start>`)
 *   System extension manuals
-*   Core changelog entries
-*   Third-party extension manuals
+*   Core Changelog entries
+*   Third party extension manuals
 
 ..  _whats-rendering:
 

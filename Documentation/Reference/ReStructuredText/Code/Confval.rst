@@ -66,7 +66,7 @@ Example: configuration value with default value and custom parameter
     :default: 0664
     :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['fileCreateMask']`
 
-    File mode mask for Unix file systems (when files are uploaded/created).
+    File mode mask for UNIX file systems (when files are uploaded/created).
 
 ..  code-block:: rst
 
@@ -76,7 +76,7 @@ Example: configuration value with default value and custom parameter
         :default: 0664
         :Path: :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['fileCreateMask']`
 
-        File mode mask for Unix file systems (when files are uploaded/created).
+        File mode mask for UNIX file systems (when files are uploaded/created).
 
 ..  _rest-confval-confval-directive-api:
 
@@ -367,7 +367,7 @@ The confval-menu directive has the following options:
 `:exclude-noindex:`
     Exclude all confvals that have the option `:noindex:`.
 `:exclude:`
-    Comma separated list of all identifiers / titles of convals to be excluded.
+    Comma separated list of all identifiers / titles of confvals to be excluded.
 `:parent:`
     The `:name:` of a confval. Every confval that the menu lists becomes a
     property of it, and the menu does not list the confval itself. See

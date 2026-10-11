@@ -72,7 +72,7 @@ E
 `Edit on GitHub button`,
 `Edit on GitHub workflow`,
 `Extbase`,
-`Extension Manager`
+`Extension Manager`,
 `extension`,
 
 

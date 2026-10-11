@@ -116,7 +116,7 @@ give the whole construct a nice styling.
 
 Attention:
 
-The text roles `ascpect` and `sep` (for separator) need to be defined. The usual
+The text roles `aspect` and `sep` (for separator) need to be defined. The usual
 way of defining them is by having these lines in the
 :file:`Documentation/Includes.rst.txt` file. Add these lines:
 
@@ -137,7 +137,7 @@ Example 3: nicely styled through labels interfere
 
 Let's say you want to place labels in front of each definition list
 item. This creates anchors you can link to symbolically with the
-Sphinx "instersphinx" procedure. A downside is that this will
+Sphinx "Intersphinx" procedure. A downside is that this will
 intercept the list. Instead, many lists are created. This isn't
 a problem, if you repeat the 'rst-class' line.
 

@@ -77,7 +77,7 @@ Like admonitions *error*, *important* (yellow)
 `horizbuttons-note-m`
 ---------------------
 
-Like admonitions *generic*, *note*, *see also* (neutral, grey)
+Like admonitions *generic*, *note*, *see also* (neutral, gray)
 
 ..  rst-class:: horizbuttons-note-m
 
@@ -105,7 +105,7 @@ Use the primary = key color (TYPO3 orange)
 `horizbuttons-striking-m`
 -------------------------
 
-Shall be very striking and unusual, something to not be be overseen.
+Shall be very striking and unusual, something to not be overlooked.
 
 ..  rst-class:: horizbuttons-striking-m
 
@@ -175,7 +175,7 @@ Like admonitions *error*, *important* (yellow)
 `horizbuttons-note-xxl`
 -----------------------
 
-Like admonitions *generic*, *note*, *see also* (neutral, grey)
+Like admonitions *generic*, *note*, *see also* (neutral, gray)
 
 ..  rst-class:: horizbuttons-note-xxl
 
@@ -203,7 +203,7 @@ Use the primary = key color (TYPO3 orange)
 `horizbuttons-striking-xxl`
 ---------------------------
 
-Shall be very striking and unusual, something to not be be overseen.
+Shall be very striking and unusual, something to not be overlooked.
 
 ..  rst-class:: horizbuttons-striking-xxl
 
@@ -273,7 +273,7 @@ Like admonitions *error*, *important* (yellow)
 `horizbuttons-note-xxxl`
 ------------------------
 
-Like admonitions *generic*, *note*, *see also* (neutral, grey)
+Like admonitions *generic*, *note*, *see also* (neutral, gray)
 
 ..  rst-class:: horizbuttons-note-xxxl
 
@@ -301,7 +301,7 @@ Use the primary = key color (TYPO3 orange)
 `horizbuttons-striking-xxxl`
 ----------------------------
 
-Shall be very striking and unusual, something to not be be overseen.
+Shall be very striking and unusual, something to not be overlooked.
 
 ..  rst-class:: horizbuttons-striking-xxxl
 

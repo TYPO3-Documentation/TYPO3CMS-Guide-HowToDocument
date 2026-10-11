@@ -145,7 +145,7 @@ directive and the version of deprecation.
 In the ideal workflow a deprecation option will be removed with a breaking
 change in the next major version. We can then remove the deprecated section.
 
-Using the correct directive will help the documentation team to find and remove
+Using the correct directive will help the Documentation Team to find and remove
 deprecation hints in later versions.
 
 ..  index::
@@ -214,5 +214,5 @@ This directive not only highlights new features but also assists users who
 are reading the manual in a version that does not align with their installation,
 ensuring clarity in cases where feature compatibility may differ.
 
-The documentation team removes these directives when the feature is present in
+The Documentation Team removes these directives when the feature is present in
 all supported TYPO3 versions.
