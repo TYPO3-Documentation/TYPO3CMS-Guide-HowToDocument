@@ -10,43 +10,50 @@ as if all of it were new, also when it is not in a git repository.
 
 **Do not rely on memory or any cached summary of these rules — they change,
 and a stale rule is worse than no check at all.** Every time this skill
-runs, read the current text of these pages from the `main` branch of
-`TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument`:
+runs, read the current text of these pages from the `main` version of
+`TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument`. The pages are named by
+their path without a file extension:
 
-*   **A local checkout exists.** In the TYPO3 documentation workspace it is
-    `guide-h2d`, beside the other manuals. Confirm it with
-    `git -C <dir> remote get-url origin`. Run `git -C <dir> fetch -q origin`
-    and read with `git -C <dir> show origin/main:<path>`. Do not download
-    the pages as well.
-*   **No checkout.** Fetch the raw file from
-    `https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/main/<path>`.
+*   **Published Markdown, first choice.** Fetch
+    `https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/<page>.md`.
+    Included files and code examples are resolved in it, and each heading
+    ends in its anchor, such as `{#content-styleguide-serial-comma}`.
+*   **reST source, fallback.** When the Markdown cannot be fetched, or a
+    rule changed on `main` and is not published yet, read
+    `Documentation/<page>.rst`. In the local checkout `guide-h2d` of the
+    TYPO3 documentation workspace, confirm it with
+    `git -C <dir> remote get-url origin`, run `git -C <dir> fetch -q origin`,
+    and read with `git -C <dir> show origin/main:Documentation/<page>.rst`.
+    Without a checkout, fetch it from
+    `https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/main/Documentation/<page>.rst`.
 
 A page that the `typo3-docs-writing` skill already read in this task, from
-the same `origin/main` or the same download, does not need reading again.
+the same source, does not need reading again.
 Read only the pages below that are still missing:
 
-*   `Documentation/Advanced/ContentStyleGuide.rst` — sentence case,
+*   `Advanced/ContentStyleGuide` — sentence case,
     capitalization, general prose rules. Always needed.
-*   `Documentation/Advanced/Glossary.rst` — how to spell names and terms.
+*   `Advanced/Glossary` — how to spell names and terms.
     Always needed. Report every word that the target files spell
     differently from this page, also in headlines.
-*   `Documentation/Advanced/CodingGuidelines.rst` — reST formatting:
+*   `Advanced/CodingGuidelines` — reST formatting:
     indentation, `..` marker spacing, line length. Always needed.
-*   `Documentation/Reference/ReStructuredText/Code/InlineCode.rst` — single
+*   `Reference/ReStructuredText/Code/InlineCode` — single
     vs. double backticks, `:php:`/`:php-short:` usage. Read it when the
     target files contain inline code in backticks or a code role such as
-    `:php:`. `:guilabel:` and `:kbd:` are covered in `CodingGuidelines.rst`.
-*   `Documentation/Reference/ReStructuredText/Links/Composer.rst` — the
+    `:php:`. `:guilabel:` and `:kbd:` are covered in
+    `Advanced/CodingGuidelines`.
+*   `Reference/ReStructuredText/Links/Composer` — the
     roles `:composer:` and `:t3ext:` that name and link an extension or a
     Composer package. Read it when the target files name one, such as
     TYPO3 Console or the news extension.
-*   `Documentation/Reference/ReStructuredText/Menus/HeadlinesAndSection.rst`
+*   `Reference/ReStructuredText/Menus/HeadlinesAndSection`
     — headline levels, and over- and underlines as long as the headline.
     Read it when the target files contain a headline.
-*   `Documentation/Reference/ReStructuredText/Links/Anchors.rst` — anchor
+*   `Reference/ReStructuredText/Links/Anchors` — anchor
     naming and the never-remove-an-anchor rule. Read it when the target files
     contain a headline.
-*   `Documentation/Advanced/Redirects.rst` — required when a page is
+*   `Advanced/Redirects` — required when a page is
     renamed or deleted. Read it when the diff includes a renamed/deleted
     `.rst` file.
 
