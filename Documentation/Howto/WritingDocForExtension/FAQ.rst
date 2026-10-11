@@ -226,9 +226,6 @@ Add this to your :ref:`guides.xml <settings-cfg>` and customize it:
     github_repository = TYPO3-Console/TYPO3-Console
     github_branch     = main
 
-If you used the `sample extension <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-and followed the :ref:`steps to create the Documentation folder <how-to-start-docs-extension>`, you should actually already have this.
-
 Look at the `typo3_console <https://docs.typo3.org/typo3cms/extensions/typo3_console/>`__
 extension for a working example.
 

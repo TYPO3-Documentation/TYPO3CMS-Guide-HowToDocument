@@ -12,8 +12,8 @@ How to document an extension
 
 This chapter explains how to write documentation for a new extension.
 
-This guide uses the `example extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-as a template for starting out.
+To start a new manual, create the :path:`Documentation` folder with the
+`init command <https://docs.typo3.org/permalink/h2document:how-to-start-docs-extension>`_.
 
 ..  _write-doc-extensions-intro-rendering:
 

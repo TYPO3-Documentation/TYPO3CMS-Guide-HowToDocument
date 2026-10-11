@@ -46,9 +46,9 @@ The links then look like this:
 
 ..  include:: _ApiImplicit.rst.txt
 
-As you can see, only links to the namespace `/TYPO3/CMS` can be linked to the
-API. We do display general information about some other namespaces that are
-commonly used in TYPO3 development. Example namespaces should always start with
+As you can see, only classes in the namespace :php-namespace:`\TYPO3\CMS`
+link to the API. We do display general information about some other
+namespaces that are commonly used in TYPO3 development. Example namespaces should always start with
 :php-namespace:`\MyVendor`. Use :php-namespace:`\MyVendor\MyExtension` for
 extensions and :php-namespace:`\MyVendor\MySitepackage` for sitepackages, see
 `Example names for extensions and site packages <https://docs.typo3.org/permalink/h2document:codeblocks-example-names>`_.
@@ -63,7 +63,7 @@ Links to the API with the short class name
 ==========================================
 
 Using the text role `php-short` you can display the short name of the class
-or interface within the text. Other then that it works just like the
+or interface within the text. Other than that it works just like the
 :ref:`:php: <links-api-fqn>` text role.
 
 ..  literalinclude:: _ApiShort.rst.txt
