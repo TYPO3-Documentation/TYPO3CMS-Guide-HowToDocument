@@ -58,8 +58,8 @@ The file to be included:
         Currently, we do not have an example for this event. If you can provide a
         useful one, please open an issue ...
 
-These rst definitions will be included in all places the include is used as if
-they had been written directly into the rst file. All markup is respected.
+These reST definitions will be included in all places the include is used as if
+they had been written directly into the reST file. All markup is respected.
 
 
 ..  _including-files-example-advanced:
@@ -69,7 +69,7 @@ Example: break up a large file into manageable pieces
 
 In places like the TSconfig reference or TCA reference it is helpful to display
 all properties of an element on one page. However this gives the contributors
-very large rst files to maintain. Such files can be broken into pieces that
+very large reST files to maintain. Such files can be broken into pieces that
 contain only the definition and maybe example of one parameter each.
 
 ..  code-block:: rst
@@ -111,7 +111,7 @@ the section contained within include:
 
 ..  figure:: /_Images/include-with-button.png
 
-    The edit on GitHub button of an included section
+    The Edit on GitHub button of an included section
 
 
 ..  _include-properties:

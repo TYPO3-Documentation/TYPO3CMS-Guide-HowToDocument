@@ -167,7 +167,7 @@ Interfaces
 
         Handles an error.
         If the error is registered as exceptionalError it will be converted into
-        an exception, to be handled by the configured exceptionhandler.
+        an exception, to be handled by the configured exception handler.
 
         Additionally the error message is written to the configured logs.
         If application is backend, the error message is also added to the
@@ -205,7 +205,7 @@ Interfaces
 
             Handles an error.
             If the error is registered as exceptionalError it will be converted into
-            an exception, to be handled by the configured exceptionhandler.
+            an exception, to be handled by the configured exception handler.
 
             Additionally the error message is written to the configured logs.
             If application is backend, the error message is also added to the
@@ -237,7 +237,7 @@ Exceptions
 ..  php:exception:: BrokenRootLineException
 
     Exception for root line traversal when a page within the root line traversal
-    is missing / can not be resolved.
+    is missing / cannot be resolved.
 
 ..  code-block:: rst
 
@@ -246,7 +246,7 @@ Exceptions
     ..  php:exception:: BrokenRootLineException
 
         Exception for root line traversal when a page within the root line traversal
-        is missing / can not be resolved.
+        is missing / cannot be resolved.
 
 ..  _rest-phpdomain-traits:
 

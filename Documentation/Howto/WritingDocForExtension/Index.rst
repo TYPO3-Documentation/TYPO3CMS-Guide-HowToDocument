@@ -40,7 +40,7 @@ The command creates a folder :path:`Documentation` in the directory it is called
 from. This should be the root directory of your extension containing the
 `composer.json <https://docs.typo3.org/permalink/t3coreapi:files-composer-json>`_.
 
-Follow the interactive dialog. We suggest to use the option ReStructuredText (rst)
+Follow the interactive dialog. We suggest to use the option reStructuredText (rst)
 as this format provides the full power of the TYPO3 documentation theme. Using
 Markdown (md) is an option for simple and quick one page documentation.
 
@@ -51,7 +51,7 @@ Markdown (md) is an option for simple and quick one page documentation.
 
 If your extension offers a main `Site set <https://docs.typo3.org/permalink/t3coreapi:site-sets>`_
 enter its name and path when prompted. This will regenerate ready to use
-documentation about configuration for you. If you have more then one set you
+documentation about configuration for you. If you have more than one set you
 can document the other sets manually. If you have no set, you need to write
 the chapter yourself.
 

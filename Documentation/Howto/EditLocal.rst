@@ -26,7 +26,7 @@ the ability to experiment and preview your changes locally before submitting the
     In the footer of the documentation you wish to make changes to,
     select the :guilabel:`Repository` link.
 
-    This will take you to the documentations repository in GitHub.
+    This will take you to the repository of the documentation in GitHub.
 
     From here, select the "Fork" button in the upper right corner of the page.
 
@@ -45,15 +45,15 @@ the ability to experiment and preview your changes locally before submitting the
         git clone https://github.com/<USERNAME>/<NAME OF REPOSITORY>.git
 
 
-4.  Setup Git Settings and SSH Key
+4.  Set up Git settings and SSH Key
 
     For this, we refer to the general help on Git and GitHub:
 
-    Setup `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
+    Set up `username <https://help.github.com/en/articles/setting-your-username-in-git>`__
     and `email <https://help.github.com/en/articles/setting-your-commit-email-address-in-git>`__
-    (if not already setup in your global :file:`~/.gitconfig`).
+    (if not already set up in your global :file:`~/.gitconfig`).
 
-    `Setup your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
+    `Set up your .ssh key for GitHub <https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account>`__
 
 5.  Create a branch for your changes
 
@@ -158,7 +158,7 @@ Next steps
 ..  index:: Official documentation; Fork up-to date
 ..  _contribute-edit-locally-more-changes:
 
-Keeping your local fork up-to date
+Keeping your local fork up to date
 ==================================
 
 ..  _contribute-edit-locally-more-changes-explanation:
@@ -176,7 +176,7 @@ local repository. This means you do not have to fork and clone for every new pat
 However, if you reuse your local clone, you should make sure it is up-to-date
 before you create another branch for a new patch.
 
-You local repository is based on the forked repository in your workspace.
+Your local repository is based on the forked repository in your workspace.
 
 For example,
 

@@ -23,7 +23,7 @@ A general reindexing can only be triggered by employees of the TYPO3 GmbH at the
 time of writing.
 
 Preferred TYPO3 versions can be updated by requiring a new version of
-`t3docs/typo3-version-handling` via composer.
+`t3docs/typo3-version-handling` via Composer.
 
 The assets for the search result page can be updated by setting the latest
 renderguides version in https://github.com/TYPO3-Documentation/t3docs-search-indexer/blob/main/config/services.yaml#L19
@@ -44,7 +44,7 @@ file is updated in GitHub:
 
 https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
 
-As this is a pure HTML file, we currently keep the content in this rst file:
+As this is a pure HTML file, we currently keep the content in this reST file:
 https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/Home/ApiTypo3Org.rst
 locally render it,
 then update :file:`WebRootResources-api.typo3.org/index.html` with the
@@ -62,7 +62,7 @@ The content per version https://api.typo3.org/main, https://api.typo3.org/12.4
 etc is generated with phpDocumentor. The theme is defined in this repository:
 https://github.com/TYPO3-Documentation/render-guides/tree/main/packages/typo3-api
 
-The rendering is triggered by this workflow which we in the documentation team
+The rendering is triggered by this workflow which we in the Documentation Team
 can change:
 https://github.com/TYPO3-Documentation/t3docs-ci-deploy/blob/main/.github/workflows/api-typo3-org.yml
 

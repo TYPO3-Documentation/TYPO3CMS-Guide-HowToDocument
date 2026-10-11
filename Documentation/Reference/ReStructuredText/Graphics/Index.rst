@@ -10,7 +10,7 @@ You can upload images in any folder below `Documentation` and use it like that:
 ..  literalinclude:: /_CodeSnippets/_Figure.rst.txt
     :caption: Documentation/MyDocs.rst
 
-For details see `Using images in ReST documentation <https://docs.typo3.org/permalink/h2document:images>`_.
+For details see `Using images in reST documentation <https://docs.typo3.org/permalink/h2document:images>`_.
 
 You can also use `Embedded PlantUML diagrams <https://docs.typo3.org/permalink/h2document:plantuml-diagrams>`_.
 

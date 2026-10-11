@@ -97,13 +97,13 @@ the manual, a summary of its purpose and a table of contents that refers to
 further pages.
 
 The start page should contain an anchor target :rst:`..  _start:` above its
-document title. This way you can link to a documents start page by:
+document title. This way you can link to a document's start page by:
 
 ..  code-block:: rst
 
     See :ref:`TYPO3 Explained <t3coreapi:start>`.
 
-If your manual has more pages then this start page it must contain a table of content
+If your manual has more pages than this start page, it must contain a table of contents
 directive called :rst:`..  toctree::`. The `toctree` on the start page
 defines which pages will be displayed in main navigation of the rendered
 manual.
@@ -148,7 +148,7 @@ limit the level of pages displayed in the main navigation.
 For more information on possible options on the `toctree` directive see
 chapter :ref:`Toctrees in the reST reference <toctree>`.
 
-It is possible to use more then one `toctree` directive on the start page.
+It is possible to use more than one `toctree` directive on the start page.
 Each `toctree` should have a :rst:`:caption:` in this case.
 
 The main navigation will then be divided into sections labeled by those
@@ -264,7 +264,7 @@ Lines 6-8 are different from reST documents.
 Single file documentation (README)
 ==================================
 
-For third-party TYPO3 extensions that do not require extended documentation
+For third party TYPO3 extensions that do not require extended documentation
 you can also publish a :file:`README.rst` or :file:`README.md` to
 https://docs.typo3.org/
 
@@ -279,7 +279,7 @@ to the next steps, for example
 
 ..  tabs::
 
-    ..  group-tab:: Rest
+    ..  group-tab:: reST
 
         ..  include:: /_CodeSnippets/FileStructure/ReadmeRstStandalone.rst.txt
 

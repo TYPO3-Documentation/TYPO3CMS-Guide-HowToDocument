@@ -116,7 +116,7 @@ PHP-based rendering tool:
 
     If you get error messages, often they refer to wrong indentation, missing
     :ref:`interlinks <settings-guides-interlink-mapping>`, orphaned files or
-    outdated ReST identifiers.
+    outdated reST identifiers.
 
     If you are unable to address a warning/error with changes in your documentation
     feel free to ask in Slack channel #typo3-documentation (see :ref:`how to get help <how-to-get-help>`).
@@ -205,9 +205,9 @@ would use to :ref:`render your documentation locally <rendering-docs>` and also 
 Add a :file:`Makefile` to your project
 --------------------------------------
 
-A :file:`Makefile` is a simple command line runner configuration file, which requires
+A :file:`Makefile` is a simple command-line runner configuration file, which requires
 the utility `GNU make <https://www.gnu.org/software/make/manual/make.html>`_
-to be available on your Unix-based operating system (Linux, macOS, WSL on Windows,
+to be available on your UNIX-based operating system (Linux, macOS, WSL on Windows,
 for example).
 
 This allows you to render your documentation by using
@@ -291,7 +291,7 @@ Nested PHP domain components (php:class, php:interface, php:enum etc) are not su
     \Vendor\MyExtension\Interfaces\AnotherImportantInterface {"rst-file":"Developer/Index.rst"} []
 
 The file :file:`Index.rst` in :file:`Documentation/Developer/` has a wrong indentation. A class must not belong to another class.
-Here is the wrong rst code.
+Here is the wrong reST code.
 
 ..  code-block:: rst
 
@@ -315,7 +315,7 @@ Reference sitehandling-addinglanguages could not be resolved in LocalizedContent
 
 The next step is to visit the site which was rendered with the Sphinx rendering, in our example
 `https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/LocalizedContent/Index.html`.
-There we can search for `sitehandling-addinglanguages` in the restructured text code by clicking the button "`</> View Source`".
+There we can search for `sitehandling-addinglanguages` in the reStructuredText code by clicking the button "`</> View Source`".
 We have found this:
 
 ..  code-block:: rst
@@ -328,7 +328,7 @@ We have found this:
 The link is leading to
 `https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/AddLanguages.html#sitehandling-addinglanguages`.
 We have to click the symbol next to the heading and copy the correct link
-which is the one for restructured text
+which is the one for reStructuredText
 
 ..  image:: /_Images/get_link.png
     :class: with-shadow

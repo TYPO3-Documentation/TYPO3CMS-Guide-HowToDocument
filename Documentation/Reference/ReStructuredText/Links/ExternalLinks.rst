@@ -14,7 +14,7 @@ External links
     the URL from the address bar of your browser. See
     :ref:`Permalinks <permalinks>`.
 
-An URL that is mentioned within a text is automatically linked:
+A URL that is mentioned within a text is automatically linked:
 
 ..  code-block:: rst
 
@@ -36,7 +36,7 @@ The result looks like this:
 Lorem Ipsum Dolor `Example Page <https://example.org>`__ dolor sit
 
 Sometimes links can get quite long and unruly to use within the text. You can
-use so called named links to separate the link definitions from the text:
+use so-called named links to separate the link definitions from the text:
 
 ..  code-block:: rst
 

@@ -92,14 +92,14 @@ And follow the interactive question.
             :default: `PHP_INT_MAX`
 
             Limits the main menu to a certain amount of levels. As level creation is
-            one of the main bottle-necks that can slow down rendering it can be helpful
+            one of the main bottlenecks that can slow down rendering it can be helpful
             to limit the levels in the menu in some use cases.
 
         ..  _settings-guides-max-menu-depth-example:
 
         ..  rubric:: Example: Limit the menu to 2 levels
 
-        The changelog (documentation of the extension "core") consists of several thousands of
+        The changelog (documentation of the extension "core") consists of several thousand
         pages. The reason is that very long lists of changelog entries in the menu are not helpful to
         the user and slow down the search.
 
@@ -234,7 +234,7 @@ And follow the interactive question.
                 for example "since 1999 by the TYPO3 contributors" (official TYPO3 manuals and TYPO3
                 system extensions)
             #.  `since <creation-year> by <vendor> & contributors`,
-                for example "since 1999 by John Doe & contributors" (third-party TYPO3 extensions)
+                for example "since 1999 by John Doe & contributors" (third party TYPO3 extensions)
 
     ..  _settings-guides-theme:
 
@@ -351,7 +351,7 @@ And follow the interactive question.
 
             The directory in which the documentation can be found. The GitHub render
             action currently does not support using other directories
-            then :folder:`Documentation/`.
+            than :folder:`Documentation/`.
 
             This setting is used exclusively for system extension manuals as the TYPO3
             Core is kept in a mono repository on GitHub.
@@ -387,7 +387,7 @@ And follow the interactive question.
             rendered with the TYPO3 theme. However they will only work if you follow
             these rules:
 
-            *   TYPO3 third-party extensions: Composer name, example: `georgringer/news`
+            *   TYPO3 third party extensions: Composer name, example: `georgringer/news`
             *   System extensions: Composer name, example: `typo3/cms-adminpanel`
             *   A shortcode supported by the theme:
                 :ref:`Available default inventories <t3renderguides:available-default-inventories>`
@@ -477,7 +477,7 @@ And follow the interactive question.
 
         ..  _settings-guides-project-links-example:
 
-        ..  rubric:: Example: Project links for a third-party extension
+        ..  rubric:: Example: Project links for a third party extension
 
         ..  code-block:: xml
             :caption: EXT:news/Documentation/guides.xml (excerpt)
@@ -550,7 +550,7 @@ And follow the interactive question.
                 Open issue on Forge (System extensions only)
 
             For security reasons arbitrary URLs are not allowed. If you use
-            a private Gitlab or another issue tool, Make an internal page and
+            a private GitLab or another issue tool, Make an internal page and
             link it like `/SomePath/MyIssueReport`.
 
         ..  _settings-guides-preferred-typo3-version:
@@ -579,7 +579,7 @@ And follow the interactive question.
         At the time of writing the extension :t3ext:`news` is compatible with TYPO3 v11.5
         and v12.4. When :ref:`referencing <rest-cheat-sheet-links>` Core manuals or
         extensions, we want the links to go automatically to version 11.5 of that
-        reference or core extension. Therefore we set the preferred TYPO3 Core version
+        reference or Core extension. Therefore we set the preferred TYPO3 Core version
         to that value:
 
         ..  code-block:: xml

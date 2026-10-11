@@ -49,7 +49,7 @@ Generation of the reStructuredText files and JSON files
 The `Fluid ViewHelper Documentation Generator
 <https://github.com/TYPO3-Documentation/fluid-documentation-generator>`__
 produces, for each documented Fluid namespace, a directory of
-:abbr:`rST (reStructuredText)` files and one JSON file.
+:abbr:`reST (reStructuredText)` files and one JSON file.
 
 The namespaces are configured in JSON files in the generator repository, below
 :file:`config/`. A configuration may combine several namespaces into one —
@@ -91,7 +91,7 @@ All of the above is combined into the workflow
 :file:`.github/workflows/fluid-viewhelper.yml` in the repository
 `t3docs-ci-deploy <https://github.com/TYPO3-Documentation/t3docs-ci-deploy>`__.
 It runs once a day and can also be started manually through the GitHub UI by
-the TYPO3 Documentation team.
+the TYPO3 Documentation Team.
 
 The workflow runs once per documented TYPO3 version. Each run installs a slim
 TYPO3 setup for that version, defined in

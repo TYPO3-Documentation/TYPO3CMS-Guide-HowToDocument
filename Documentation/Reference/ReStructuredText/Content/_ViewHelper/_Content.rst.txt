@@ -2,4 +2,4 @@
     :name: directive-viewhelper-content
     :type: string
 
-    Name of the ViewHelper as used as key in the the JSON include file.
+    Name of the ViewHelper as used as key in the JSON include file.

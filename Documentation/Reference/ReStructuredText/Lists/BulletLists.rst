@@ -27,10 +27,10 @@ Numbered lists:
 
 **See also:**
 
-*   `Docutils cheat-sheet for reStructuredText: Bullet list
+*   `Docutils cheat sheet for reStructuredText: Bullet list
     <http://docutils.sourceforge.net/docs/user/rst/quickref.html#bullet-lists>`__
 
-*   `Docutils cheat-sheet for reStructuredText: Enumerated lists
+*   `Docutils cheat sheet for reStructuredText: Enumerated lists
     <http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists>`__
 
 *   `Docutils reference: bullet-lists

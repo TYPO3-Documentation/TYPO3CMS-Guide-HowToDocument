@@ -235,7 +235,7 @@ TYPO3, etc. These should be used! See the :ref:`spelling reference <spelling-ref
 Exceptions for words taken from source code
 -------------------------------------------
 
-If you are using class names, function names, databases tables or fields, configuration
+If you are using class names, function names, database tables or fields, configuration
 options etc, use the spelling that is used in the source code.
 
 Examples:
@@ -291,7 +291,7 @@ Examples:
 Tools with executables
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Some tools have a program, which you can run. For example, **Git** has the command line
+Some tools have a program, which you can run. For example, **Git** has the command-line
 tool `git`. When the documentation explicitly refers to the command `git`, its appropriate
 spelling is used, which is lowercase. In all other cases, we use capital
 spelling for Git, because it applies to the rules for :ref:`proper names <spelling-proper-names>`.

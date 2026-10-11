@@ -96,7 +96,7 @@ around the directive instead.
 Put information into the directive body that is tied to the version
 transition and becomes obsolete once the directive is pruned:
 
-*   A link to the corresponding Core changelog entry.
+*   A link to the corresponding Core Changelog entry.
 *   How to migrate, or a link to a migration section.
 *   What the new feature replaces, or what replaces a deprecated one. For
     example, an event replaces a previous hook.
@@ -136,7 +136,7 @@ Linking the changelog entry with `:changelog:`
 The examples above write the permalink of the changelog entry by hand into
 the directive body. The three version directives also accept the
 :rst:`:changelog:` option. Use this option to link an entry of the TYPO3
-Core changelog. The value is the identifier of the entry, in the form
+Core Changelog. The value is the identifier of the entry, in the form
 `<type>-<issue>-<timestamp>`:
 
 ..  code-block:: rst

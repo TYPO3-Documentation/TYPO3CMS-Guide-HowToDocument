@@ -28,7 +28,7 @@ There are more :ref:`levels of headlines <headlines-and-sections>`
 Contents menu
 =============
 
-If you use more then one headlines consider to provide a contents menu. It
+If you use more than one headline, provide a contents menu. It
 also allows your users to collapse all sections and only open the one they are
 reading:
 
@@ -66,7 +66,7 @@ the standard reST Syntax can be used:
 
     See also https://www.typo3.org or `the TER <https://extensions.typo3.org>`_.
 
-There are special links for composer packages (link to the package) and PHP classes
+There are special links for Composer packages (link to the package) and PHP classes
 (link to the API documentation). PHP classes can be displayed in either FQN format
 ( `:php:`) or classname only (`:php-short:`):
 

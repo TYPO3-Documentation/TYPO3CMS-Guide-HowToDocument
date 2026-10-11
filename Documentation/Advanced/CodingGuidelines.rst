@@ -93,7 +93,7 @@ Line length
 
 Most of our documentation projects contain an .editorconfig file.
 
-Use this file to setup your editor / IDE correctly. With some, everything
+Use this file to set up your editor / IDE correctly. With some, everything
 works automatically. With others, you will need to download a plugin. This
 is explained on the `Editorconfig <http://EditorConfig.org>`__ page.
 
@@ -355,8 +355,8 @@ How it looks:
 
 ..  _format-rest-cgl-refering-keystrokes:
 
-Refering to keystrokes
-======================
+Referring to keystrokes
+=======================
 
 When pointing out keyboard shortcuts or keystroke sequences, use
 :ref:`text role <text-roles>` kbd.

@@ -21,8 +21,8 @@ markup on one page.
 We cannot cover every reST markup that is
 available. For more information, see other resources, such as:
 
-*   `reSTructuredText reference by Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`__
-*   `reSTructuredText introduction on docutils <https://docutils.sourceforge.io/rst.html>`__
+*   `reStructuredText reference by Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`__
+*   `reStructuredText introduction on docutils <https://docutils.sourceforge.io/rst.html>`__
 *   `reStructuredText Markup Specification <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html>`__
 
 ..  toctree::

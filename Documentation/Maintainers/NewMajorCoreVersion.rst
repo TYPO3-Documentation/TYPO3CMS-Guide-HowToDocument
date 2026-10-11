@@ -15,7 +15,7 @@ Create branches for the new LTS version in all versioned official repositories
 ==============================================================================
 
 This includes all manuals in the "All Documentation" menu with version hints,
-excluding the System extension manuals. The System extension manuals will
+excluding the system extension manuals. The system extension manuals will
 receive their new versions automatically via webhook in the release. This might
 take a few days.
 
@@ -35,7 +35,7 @@ take a few days.
         />
 
 **After all the new LTS branches have been created and rendered** for all repositories,
-revisit the guides.xml in all new LTS branches and raise to the preferred typo3 version:
+revisit the guides.xml in all new LTS branches and raise to the preferred TYPO3 version:
 
 ..  code-block:: xml
     :caption: Documentation/guides.xml

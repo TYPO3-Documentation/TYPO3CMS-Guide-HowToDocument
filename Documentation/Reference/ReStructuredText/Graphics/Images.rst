@@ -9,9 +9,9 @@
 Using images in reST documentation
 ==================================
 
-You can use the `The example screenshot project <https://docs.typo3.org/permalink/h2document:screenshot-project>`_.
+You can use `the example screenshot project <https://docs.typo3.org/permalink/h2document:screenshot-project>`_.
 It already follows most of the rules stated below. There has been no automatic
-screenshot tool since TYPO3 v11 as it proved to be to complicated to maintain.
+screenshot tool since TYPO3 v11 as it proved to be too complicated to maintain.
 
 ..  attention::
 

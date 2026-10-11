@@ -1,4 +1,4 @@
-:navigation-title: Markdown to ReST
+:navigation-title: Markdown to reST
 
 ..  include:: /Includes.rst.txt
 ..  index::
@@ -10,12 +10,12 @@
 Migration: Markdown to reStructuredText (reST)
 ==============================================
 
-Markdown is very popular and widely used for documentation. However, ReST is more powerful and flexible.
-The TYPO3 documentation toolchain contains a lot of features that are only available with ReST.
-Because of the extendability of ReST. This guide explains how to migrate Markdown files to ReST,
+Markdown is very popular and widely used for documentation. However, reST is more powerful and flexible.
+The TYPO3 documentation toolchain contains a lot of features that are only available with reST.
+Because of the extendability of reST. This guide explains how to migrate Markdown files to reST,
 using the TYPO3 documentation toolchain.
 
-Unless you have a specific reason to migrate to ReST, it is perfectly fine to keep using Markdown.
+Unless you have a specific reason to migrate to reST, it is perfectly fine to keep using Markdown.
 The TYPO3 documentation toolchain supports both formats.
 
 ..  note::
@@ -28,8 +28,8 @@ The TYPO3 documentation toolchain supports both formats.
 Converting Markdown to reST
 ===========================
 
-The first step is to convert the Markdown files to ReST. This can be done using
-our rendering toolchain. This will convert the Markdown files to ReST format.
+The first step is to convert the Markdown files to reST. This can be done using
+our rendering toolchain. This will convert the Markdown files to reST format.
 We will use :file:`Documentation-Migrated` as the output directory.
 
 ..  tabs::
@@ -41,7 +41,7 @@ We will use :file:`Documentation-Migrated` as the output directory.
             mkdir -p Documentation-Migrated
             docker run --rm --pull always -v $(pwd):/project -it ghcr.io/typo3-documentation/render-guides:latest --theme=rst --output-format=rst --output Documentation-Migrated
 
-    ..  group-tab:: MacOS
+    ..  group-tab:: macOS
 
         ..  code-block:: bash
 
@@ -62,8 +62,8 @@ We will use :file:`Documentation-Migrated` as the output directory.
     container, while the command still reports the files as placed. The
     relative :file:`Documentation-Migrated` above satisfies this.
 
-Now we can copy the :file:`guides.xml` from the original directory documentation directory to the new directory. And remove the
-option `input-format="md"`. This will tell the rendering toolchain to use the ReST files instead of the Markdown files.
+Now we can copy the :file:`guides.xml` from the original documentation directory to the new directory. And remove the
+option `input-format="md"`. This will tell the rendering toolchain to use the reST files instead of the Markdown files.
 
 Last step is to swap the directories. Rename the original directory to :file:`Documentation-Markdown` and the new directory :file:`Documentation-Migrated` to :file:`Documentation`.
 
@@ -71,4 +71,4 @@ The basic migration is now done. Some manual adjustments might be necessary, as 
 
 ..  tip::
 
-    If you notice any issues with the conversion, please report them to the :ref:`TYPO3 documentation team <contact-us>`.
+    If you notice any issues with the conversion, please report them to the :ref:`TYPO3 Documentation Team <contact-us>`.

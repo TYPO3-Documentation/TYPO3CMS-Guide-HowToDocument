@@ -47,7 +47,7 @@ structure. In such a case, you may be asked, if you would like to provide a pull
 request for the back versions.
 
 ..  note::
-    Only bugs will be backported more then one version. Improvements, etc may
+    Only bugs will be backported more than one version. Improvements, etc may
     only be backported to the latest LTS release.
 
 
@@ -70,7 +70,7 @@ pull request.
 How do automatic backports work
 ===============================
 
-The :abbr:`CI (Continous Integration)` runner will create a separate pull
+The :abbr:`CI (continuous integration)` runner will create a separate pull
 request for each version that has been labeled - if, and only if, it can do the
 cherry-picking into the branch without conflicts.
 

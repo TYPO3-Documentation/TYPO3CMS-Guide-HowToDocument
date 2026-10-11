@@ -8,10 +8,10 @@ TYPO3 screenshots Docker container
 ==================================
 
 We have prepared a Docker container that you can use to create screenshots
-for the official documentation, which already follows out
+for the official documentation, which already follows our
 `Guidelines for screenshots <https://docs.typo3.org/permalink/h2document:automatic-screenshots>`_.
 
-..  contents:: Table of content
+..  contents:: Table of contents
 
 ..  seealso::
 

@@ -98,7 +98,7 @@ There are several possibilities:
 
 ..  _faq-for-extension-authors-possible-highjack-extension:
 
-Is it possible to highjack extension documentation?
+Is it possible to hijack extension documentation?
 ===================================================
 
 How do you make sure only the author of the extension publishes the documentation?
