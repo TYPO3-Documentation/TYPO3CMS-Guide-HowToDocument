@@ -90,6 +90,6 @@ Abstract
 The *abstract* placeholder contains a short and precise description of the
 project with as many keywords as possible in as few sentences as possible. It
 helps the decision maker to quickly decide whether the project is worth
-considering and whether or not to read the full documentation. It should be
-aligned with the abstract of :file:`Index.rst` and - if available - the description
-fields of :file:`ext_emconf.php` and :file:`composer.json`.
+considering and whether or not to read the full documentation. Align it with
+the abstract of :file:`Index.rst` and the `description` field of the
+:file:`composer.json`.
