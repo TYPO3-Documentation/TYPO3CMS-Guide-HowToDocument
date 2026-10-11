@@ -56,7 +56,7 @@ the standard md Syntax can be used:
 
 ..  code-block:: md
 
-    See also https://www.typo3.org or (the TER)[https://extensions.typo3.org].
+    See also https://www.typo3.org or [the TER](https://extensions.typo3.org).
 
 ..  _md-cheat-sheet-code-blocks:
 

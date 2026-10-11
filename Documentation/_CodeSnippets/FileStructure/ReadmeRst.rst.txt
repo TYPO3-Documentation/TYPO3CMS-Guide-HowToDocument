@@ -1,5 +1,5 @@
 ..  code-block:: rst
-    :caption: Documentation/README.rst
+    :caption: EXT:my_extension/README.rst
 
     <badges>
 

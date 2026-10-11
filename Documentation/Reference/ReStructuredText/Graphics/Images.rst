@@ -37,7 +37,7 @@ Example:
 Optional parameters for images and figures:
 
 *   `:target:` link target
-*   `:width:` : width of image, use for example px (for example `:width: 100px`
+*   `:width:` : width of image, use for example px (for example `:width: 100px`)
 *   `:scale:` : scale images, for example `:scale: 65`
 *   `:zoom:` : enable zoom functionality (see :ref:`image zoom <image-zoom>`)
 *   `:class:` : CSS classes, for example `with-shadow`, `with-border`, `float-start`,
@@ -54,7 +54,8 @@ Example 1: scaled image with shadow and link target
 ===================================================
 
 ..  image:: /_Images/a4.jpg
-    :alt: Left floating image
+    :alt: A spiral staircase seen from above, with people walking up and
+        down the steps
     :target: https://typo3.org
     :class: with-shadow
     :scale: 50
@@ -62,8 +63,9 @@ Example 1: scaled image with shadow and link target
 ..  code-block:: rst
     :linenos:
 
-    ..  figure:: /_Images/a4.jpg
-        :alt: some image
+    ..  image:: /_Images/a4.jpg
+        :alt: A spiral staircase seen from above, with people walking up and
+            down the steps
         :target: https://typo3.org
         :class: with-shadow
         :scale: 50
@@ -74,7 +76,8 @@ Example 2: image with caption and fixed width
 =============================================
 
 ..  figure:: /_Images/a4.jpg
-    :alt: Left floating image
+    :alt: A spiral staircase seen from above, with people walking up and
+        down the steps
     :width: 100px
     :zoom: lightbox
 
@@ -83,9 +86,10 @@ Example 2: image with caption and fixed width
 ..  code-block:: rst
     :linenos:
 
-        ..  figure:: /_Images/a4.jpg
-            :alt: some image
-            :width: 100px
-            :zoom: lightbox
+    ..  figure:: /_Images/a4.jpg
+        :alt: A spiral staircase seen from above, with people walking up and
+            down the steps
+        :width: 100px
+        :zoom: lightbox
 
-            This is the image caption
+        This is the image caption

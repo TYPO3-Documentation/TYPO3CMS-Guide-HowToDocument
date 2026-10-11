@@ -3,7 +3,7 @@
 ..  _rest-admonitions:
 
 ===============================================
-Admonitions: tip, note, warning, see also,  etc
+Admonitions: tip, note, warning, see also, etc.
 ===============================================
 
 The following directives are called Admonitions. You

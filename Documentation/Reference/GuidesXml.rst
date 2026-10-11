@@ -263,10 +263,11 @@ And follow the interactive question.
         ..  confval:: edit-on-github-*
             :name: guides-extension-edit-on-github-workflow
 
-            The *github_repository* and *github_branch* attributes should be set to provide
-            the "Edit on GitHub" button, which allows the reader to jump from the currently
-            viewed documentation directly to the associated GitHub repository and edit the
-            page file.
+            The attributes :confval:`guides-extension-edit-on-github` and
+            :confval:`guides-extension-edit-on-github-branch` should be set to
+            provide the "Edit on GitHub" button, which allows the reader to jump
+            from the currently viewed documentation directly to the associated
+            GitHub repository and edit the page file.
 
             If the project is hosted on GitHub and public contributions are welcome, these
             attributes should be set accordingly:
@@ -590,6 +591,7 @@ And follow the interactive question.
             >
                  <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
                        typo3-core-preferred="11.5"
+                 />
             </guides>
 
         ..  rubric:: Example: Always link to the latest stable TYPO3 version
@@ -610,6 +612,7 @@ And follow the interactive question.
             >
                  <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
                        typo3-core-preferred="stable"
+                 />
             </guides>
 
         ..  _settings-guides-check-link-text:

@@ -8,7 +8,7 @@ PHP domain
 
 In order to describe PHP code in TYPO3's documentation,
 our toolchain has an integrated extension inspired by the
-`PHP domain<https://pypi.org/project/sphinxcontrib-phpdomain/>`__
+`PHP domain <https://pypi.org/project/sphinxcontrib-phpdomain/>`__
 of the Sphinx project.
 
 The source code of the PHP domain extension is located on GitHub:
@@ -307,9 +307,9 @@ Linking to PHP entities
     *   :php:class:`TYPO3\\CMS\\Seo\\Event\\ModifyUrlForCanonicalTagEvent`
     *   :php:interface:`TYPO3\\CMS\\Core\\Error\\ErrorHandlerInterface`
     *   :php:func:`Vendor\\Extension\\DateTime::setTime()`
-    *   :php:const:`Vendor\\Extension\\DateTime\\ATOM`
+    *   :php:const:`Vendor\\Extension\\DateTime::ATOM`
 
-With the :rst:`:any:` directive you can link to any PHP domain entity:
+With the :rst:`:any:` text role you can link to any PHP domain entity:
 
 *   :any:`Vendor\\Extension\\DateTime`
 *   :any:`Vendor\\Extension\\DateTime::setTime()`

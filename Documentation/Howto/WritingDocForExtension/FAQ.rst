@@ -44,7 +44,8 @@ This can be fixed by following these steps:
 #.  We will remove your existing documentation.
 #.  You need to register the new repository. Or inform us of the new URL and we can do this for you.
 #.  We will approve the new repository.
-#.  You can regenerate existing versions of the documentation by following: `Reregister versions <reregister-versions>`_
+#.  You can regenerate existing versions of the documentation, see
+    `Reregister versions <https://docs.typo3.org/permalink/h2document:reregister-versions>`_.
 
 ..  rst-class:: panel panel-default
 

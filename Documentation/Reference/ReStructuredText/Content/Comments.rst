@@ -19,7 +19,7 @@ line, taking the indentation level into account.
 ..  _writing-rest-comments-examples:
 
 Examples
---------
+========
 
 Example:
 
@@ -55,7 +55,7 @@ Example:
 ..  _writing-rest-comments-todo:
 
 Open tasks (todo)
------------------
+=================
 
 Use :rst:`..  todo::` for notes addressed to other authors. Its content never
 reaches the rendered page, which is intended: a todo note is internal. It is

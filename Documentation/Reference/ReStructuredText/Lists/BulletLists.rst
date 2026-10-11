@@ -22,7 +22,7 @@ Bullet lists:
 
 Numbered lists:
 
-*   Start each item with a `#.` and 1 space after it for automatic numbering
+*   Start each item with a `#.` and 2 spaces after it for automatic numbering
 
 
 **See also:**

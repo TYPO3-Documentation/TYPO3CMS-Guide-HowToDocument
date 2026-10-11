@@ -267,7 +267,7 @@ Switching the check for a single page
 A page can override the setting of its manual with a field above the title:
 
 ..  code-block:: rst
-    :caption: Documentation/Reference/Menus/NavigationTitle.rst
+    :caption: Documentation/Reference/ReStructuredText/Menus/NavigationTitle.rst
 
     :check-link-text: off
 
