@@ -48,6 +48,9 @@ Always read these, every time:
     page.
 *   `Documentation/Reference/ReStructuredText/Links/Documentation.rst`, the
     sections `permalinks`, `permalinks-rules`, and `link-text`.
+*   `Documentation/Advanced/Glossary.rst`, the whole page. Its sections
+    `preferred-terms-spelling` and `preferred-terms-terms` define how to
+    spell names and terms. Use the spelling from there, also in headlines.
 
 Then read the pages for what the text contains. The table in
 [references/rule-map.md](references/rule-map.md) maps each kind of content
@@ -92,6 +95,9 @@ names the anchor that holds the rule:
     (`content-styleguide-serial-comma`, `content-styleguide-sentences`,
     `content-styleguide-difficulty`).
 *   Headlines use sentence case (`spelling-ref-title`).
+*   Names and terms are spelled as the glossary spells them, for example
+    "backend", "site package", and "TypoScript", never "back-end",
+    "sitepackage", or "Typoscript" (`preferred-terms`).
 
 Verify every technical fact against the source before you write it: class
 names, method signatures, option names, defaults, and the version that
