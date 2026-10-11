@@ -2,7 +2,6 @@
 
 ..  include:: /Includes.rst.txt
 ..  _inline-code:
-..  _inline-code-headlines:
 
 =====================================
 Inline code with or without infoboxes
@@ -65,6 +64,33 @@ Two text roles that are not code roles open an infobox as well:
 always does, with information from Packagist, and
 `:file: <https://docs.typo3.org/permalink/h2document:text-roles-file>`_
 does for a file that TYPO3 Explained or the same manual defines.
+
+..  _inline-code-headlines:
+
+Code roles in headlines
+=======================
+
+You can use a code role in a headline. There it renders as plain inline
+code, without the infobox, so that the headline has no second button beside
+its link button. The same applies to :rst:`:file:` and :rst:`:composer:`.
+This is the case since render-guides 0.45.0.
+
+..  code-block:: rst
+
+    ..  _general-utility:
+
+    The :php-short:`\TYPO3\CMS\Core\Utility\GeneralUtility` class
+    =============================================================
+
+The role still names the class, so the
+`class index <https://docs.typo3.org/permalink/h2document:rendered-artifacts-classes>`_
+of the manual lists it.
+
+The text of a headline is reused as plain text: in the menu, in the title of
+the browser tab, and in a reference without a link text. There, the role
+shows the text that it renders. :rst:`:php-short:` shows `GeneralUtility`,
+and :rst:`:php:` shows the full namespace. Prefer :rst:`:php-short:` in a
+headline.
 
 ..  _inline-code-when-to-use-a-role:
 
