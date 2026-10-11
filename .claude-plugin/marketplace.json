@@ -1,0 +1,15 @@
+{
+  "name": "typo3-docs-guide",
+  "owner": {
+    "name": "TYPO3 Documentation Team",
+    "url": "https://github.com/TYPO3-Documentation"
+  },
+  "description": "Claude Code plugins maintained alongside the TYPO3 \"How to document\" guide.",
+  "plugins": [
+    {
+      "name": "typo3-docs",
+      "source": "./",
+      "description": "Skills that make a session follow the current rules of the TYPO3 \"How to document\" guide when it writes or checks TYPO3 documentation."
+    }
+  ]
+}
