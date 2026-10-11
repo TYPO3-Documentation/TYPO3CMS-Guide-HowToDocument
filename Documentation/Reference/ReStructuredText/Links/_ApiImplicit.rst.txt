@@ -12,4 +12,4 @@
 
 ..  prevent help text being displayed
 
-`This\Is\No\Class`
+`This\\Is\\No\\Class`

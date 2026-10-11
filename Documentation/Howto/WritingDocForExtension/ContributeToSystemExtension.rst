@@ -40,5 +40,6 @@ see :ref:`types of documentation <overview-of-types>`.
 See `System Extensions <https://docs.typo3.org/typo3cms/SystemExtensions/Index.html>`__
 for a list of system extension documentation.
 
-Use the `sample extension manual <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual>`__
-if you want to start new system extension documentation from scratch.
+If you want to start a new manual for a system extension, create the
+:path:`Documentation` folder with the
+`init command <https://docs.typo3.org/permalink/h2document:how-to-start-docs-extension>`_.
