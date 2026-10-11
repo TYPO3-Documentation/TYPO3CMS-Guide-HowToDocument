@@ -102,7 +102,6 @@ Example: a page tree with empty folders
 
     *   :path:`Tests`
     *   :file:`composer.json`
-    *   :file:`ext_emconf.php`
     *   :file:`ext_localconf.php`
     *   :file:`ext_tables.sql`
 
@@ -138,7 +137,6 @@ Example: a page tree with empty folders
 
         *   :path:`Tests`
         *   :file:`composer.json`
-        *   :file:`ext_emconf.php`
         *   :file:`ext_localconf.php`
         *   :file:`ext_tables.sql`
 
