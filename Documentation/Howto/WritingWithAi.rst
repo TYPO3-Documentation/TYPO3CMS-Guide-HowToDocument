@@ -83,7 +83,7 @@ for an example.
 Skills for TYPO3 documentation
 ==============================
 
-This guide provides two skills in the folder
+This guide provides the following skills in the folder
 `skills/ <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument/tree/main/skills>`_
 of its repository:
 
@@ -96,6 +96,12 @@ of its repository:
 `typo3-docs-style-check`
     Checks changed files against the rules of this guide and reports each
     violation with the rule and a fix. It does not change the files.
+
+`typo3-docs-screenshot-review`
+    Compares changed screenshots with their previous version and shows the
+    old image, the new one, and the changed pixels on a page. You decide
+    which images go into the commit, so images that differ only by chance
+    do not make the repository bigger.
 
 The skills do not copy the rules. They read them from the current version
 of this guide: from a local clone of the guide, or from GitHub if there is
@@ -137,8 +143,7 @@ your tool for this folder.
 
         git clone https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument.git
 
-#.  Link the folders :path:`skills/typo3-docs-writing` and
-    :path:`skills/typo3-docs-style-check` into the skills folder of your
+#.  Link each folder in :path:`skills/` into the skills folder of your
     tool.
 
 A link instead of a copy keeps the skills up to date when you pull the
