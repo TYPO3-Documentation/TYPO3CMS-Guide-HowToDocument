@@ -1,4 +1,5 @@
-<title>Screenshot review</title>
+<meta charset="utf-8">
+<title>{{TITLE}}</title>
 <style>
   /* Layout: one column of images, each with its measures, a view switch and a decision; the commands collect at the top */
   :root {
@@ -18,6 +19,7 @@
   body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); padding-inline: 16px; padding-block: 24px 48px; }
   main { max-width: 1320px; margin: 0 auto; display: grid; gap: 24px; }
   h1 { font-size: 1.5rem; margin: 0; text-wrap: balance; }
+  .session { font: 600 13px/1.4 var(--mono); color: var(--accent); letter-spacing: 0.02em; margin: 0 0 4px; overflow-wrap: anywhere; }
   .source { color: var(--muted); margin: 4px 0 0; }
   .commands { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 8px; }
   .commands pre { margin: 0; font: 13px/1.5 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
@@ -27,6 +29,10 @@
   .measures { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
   .measures strong { color: var(--fg); }
   .note { color: var(--accent); font-weight: 600; }
+  .replaces { color: var(--muted); font: 13px/1.4 var(--mono); margin: 0; overflow-wrap: anywhere; }
+  .group { display: grid; gap: 24px; }
+  .group > h2 { font-size: 1.15rem; margin: 0; }
+  .group > p { color: var(--muted); margin: -16px 0 0; }
   .controls { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
   .switch { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
   .switch button { border: 0; background: var(--surface); color: var(--fg); padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer; }
@@ -42,6 +48,7 @@
 </style>
 <main>
   <header>
+    <p class="session" {{SESSION_HIDDEN}}>Session {{SESSION}}</p>
     <h1>Screenshot review</h1>
     <p class="source">{{SOURCE}}. Sorted by how much changed. Choose for each image whether it goes into the commit.</p>
   </header>
@@ -49,10 +56,15 @@
     <pre id="summary"></pre>
     <div class="row"><button class="copy" id="copy" type="button">Copy decisions</button><span id="copied" class="source" hidden>Copied</span></div>
   </section>
-  <div id="images"></div>
+  <div id="images" class="group"></div>
+  <section id="flaky" class="group" hidden>
+    <h2>Images that change on every run</h2>
+    <p>Restore is chosen for these. Choose Commit only if the task was to change one of them.</p>
+  </section>
 </main>
 <script>
   const entries = {{ENTRIES}};
+  const session = {{SESSION_JSON}};
   const views = [['old', 'Old'], ['new', 'New'], ['diff', 'Changes']];
   const decisions = {};
   const container = document.getElementById('images');
@@ -65,6 +77,9 @@
   entries.forEach((entry, index) => {
     const section = element('section', { className: 'image' });
     section.append(element('h2', {}, entry.path));
+    if (entry.replaces) {
+      section.append(element('p', { className: 'replaces' }, `replaces ${entry.replaces}, shown as the old image`));
+    }
     const measures = element('div', { className: 'measures' });
     if (entry.note) {
       measures.append(element('span', { className: 'note' }, entry.note));
@@ -109,22 +124,34 @@
     const decision = element('div', { className: 'decision', role: 'radiogroup', ariaLabel: 'Decision' });
     [['commit', 'Commit'], ['restore', 'Restore']].forEach(([value, label]) => {
       const input = element('input', { type: 'radio', name: `decision-${index}`, id: `decision-${index}-${value}`, value });
+      if (entry.flaky && value === 'restore') {
+        input.checked = true;
+        decisions[entry.path] = value;
+      }
       input.addEventListener('change', () => { decisions[entry.path] = value; summarize(); });
       decision.append(element('label', { htmlFor: input.id }, input, label));
     });
     controls.append(decision);
     section.append(controls, frame);
-    container.append(section);
+    if (entry.flaky) {
+      document.getElementById('flaky').hidden = false;
+      document.getElementById('flaky').append(section);
+    } else {
+      container.append(section);
+    }
     show(entry.diff ? 'diff' : available[available.length - 1][0]);
   });
 
   const summary = document.getElementById('summary');
   function summarize() {
-    const pick = (value) => entries.map((entry) => entry.path).filter((path) => decisions[path] === value);
+    const pick = (value) => entries.filter((entry) => decisions[entry.path] === value);
+    // A replacement names the deleted image below the new one
+    const lines = (picked) => picked.flatMap((entry) => ['  ' + entry.path, ...(entry.replaces ? [`  ${entry.replaces} (replaced)`] : [])]);
     const open = entries.length - pick('commit').length - pick('restore').length;
     summary.textContent = [
-      `Commit (${pick('commit').length}):`, ...pick('commit').map((path) => '  ' + path),
-      `Restore (${pick('restore').length}):`, ...pick('restore').map((path) => '  ' + path),
+      ...(session ? [`Session ${session}:`] : []),
+      `Commit (${pick('commit').length}):`, ...lines(pick('commit')),
+      `Restore (${pick('restore').length}):`, ...lines(pick('restore')),
       open ? `Not decided yet: ${open}` : 'All decided.',
     ].join('\n');
   }

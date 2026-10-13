@@ -4,11 +4,18 @@ version and writes an HTML page that shows the old image, the new image and
 the changed pixels next to each other, sorted by how much changed.
 
 Usage:
-    compare_screenshots.py [--repo DIR] [--commit REV] [--out FILE] [PATH ...]
+    compare_screenshots.py [--repo DIR] [--commit REV] [--out FILE]
+        [--session NAME] [--flaky FILE] [--pair OLD NEW ...] [PATH ...]
 
 Without --commit, the images that changed in the working tree are compared
 with HEAD. With --commit, the images that the commit changed are compared
 with its parent. PATH limits the comparison to these files or folders.
+
+A new image that replaces a deleted one is compared with it. The script
+finds the pair where a figure or image directive of a changed .rst file
+switches from one to the other, or in --pair. --flaky names a file that
+lists images that change on every run, one path or glob per line; the page
+shows them apart, with Restore chosen.
 
 Needs only the Python standard library. Uses Pillow when it is installed,
 which decodes large images faster.
@@ -16,8 +23,11 @@ which decodes large images faster.
 
 import argparse
 import base64
+import fnmatch
 import html
 import json
+import posixpath
+import re
 import struct
 import subprocess
 import sys
@@ -53,15 +63,73 @@ def changed_images(repo, commit, paths):
             yield status[0], path
 
 
-def old_and_new(repo, commit, path):
+def old_and_new(repo, commit, path, old_path=None):
     base = f'{commit}^' if commit else 'HEAD'
-    old = git(repo, 'show', f'{base}:{path}', binary=True)
+    old = git(repo, 'show', f'{base}:{old_path or path}', binary=True)
     if commit:
         new = git(repo, 'show', f'{commit}:{path}', binary=True)
     else:
         file = Path(repo) / path
         new = file.read_bytes() if file.exists() else None
     return old, new
+
+
+IMAGE_DIRECTIVE = re.compile(r'^([+-])\s*\.\.\s+(figure|image|include)::\s*(\S+)\s*$', re.IGNORECASE)
+
+
+def resolve(file, target):
+    """The path in the repository of a target in a directive of the file.
+    An absolute target starts at the folder of the documentation."""
+    if target.startswith('/'):
+        root = file.split('/', 1)[0] if '/' in file else ''
+        return posixpath.normpath(posixpath.join(root, target.lstrip('/')))
+    return posixpath.normpath(posixpath.join(posixpath.dirname(file), target))
+
+
+def replacements(repo, commit, deleted, added):
+    """Returns {new path: old path} for the directives of the changed .rst
+    files that switch from a deleted image to an added one."""
+    range_ = [f'{commit}^', commit] if commit else ['HEAD']
+    output = git(repo, 'diff', '--unified=0', '--no-renames', *range_, '--', '*.rst') or ''
+    pairs, file, removed = {}, None, []
+    for line in output.splitlines():
+        if line.startswith('+++ '):
+            file = line[6:] if line.startswith('+++ b/') else None
+            continue
+        if line.startswith('--- '):
+            continue
+        if line.startswith('@@'):
+            removed = []
+            continue
+        match = IMAGE_DIRECTIVE.match(line)
+        if not match or file is None:
+            continue
+        sign, directive, target = match.groups()
+        path = resolve(file, target)
+        if directive.lower() == 'include':
+            # An included file can hold the figure, as in older manuals
+            included = git(repo, 'show', f'{range_[0]}:{path}') if sign == '-' else None
+            if included is None:
+                continue
+            found = [resolve(path, m.group(3)) for m in map(IMAGE_DIRECTIVE.match, ('-' + l for l in included.splitlines()))
+                     if m and m.group(2).lower() != 'include']
+            if not found:
+                continue
+            path = found[0]
+        elif not path.lower().endswith('.png'):
+            continue
+        if sign == '-':
+            removed.append(path)
+        elif removed and path in added and removed[0] in deleted:
+            pairs[path] = removed.pop(0)
+    return pairs
+
+
+def flaky_patterns(file):
+    if not file:
+        return []
+    lines = Path(file).read_text().splitlines()
+    return [line.strip() for line in lines if line.strip() and not line.strip().startswith('#')]
 
 
 def decode_png(data):
@@ -182,6 +250,10 @@ def main():
     parser.add_argument('--repo', default='.')
     parser.add_argument('--commit')
     parser.add_argument('--out', default='screenshot-review.html')
+    parser.add_argument('--session', default='', help='name of the session that ran the screenshots')
+    parser.add_argument('--flaky', help='file that lists the images that change on every run')
+    parser.add_argument('--pair', nargs=2, action='append', default=[], metavar=('OLD', 'NEW'),
+                        help='compare a deleted image with the added one that replaces it')
     parser.add_argument('paths', nargs='*')
     arguments = parser.parse_args()
     repo = git(arguments.repo, 'rev-parse', '--show-toplevel')
@@ -189,10 +261,24 @@ def main():
         sys.exit(f'{arguments.repo} is not a git repository')
     repo = repo.strip()
 
+    changed = list(changed_images(repo, arguments.commit, arguments.paths))
+    deleted = {path for status, path in changed if status == 'D'}
+    added = {path for status, path in changed if status in ('A', '?')}
+    pairs = replacements(repo, arguments.commit, deleted, added)
+    pairs.update({new: old for old, new in arguments.pair if old in deleted and new in added})
+    flaky = flaky_patterns(arguments.flaky)
+
     entries = []
-    for status, path in changed_images(repo, arguments.commit, arguments.paths):
-        old, new = old_and_new(repo, arguments.commit, path)
+    for status, path in changed:
+        if path in pairs.values():
+            continue
+        old_path = pairs.get(path)
+        old, new = old_and_new(repo, arguments.commit, path, old_path)
         entry = {'path': path, 'status': status, 'old': data_uri(old), 'new': data_uri(new), 'diff': ''}
+        if old_path:
+            entry['replaces'] = old_path
+        if any(fnmatch.fnmatch(path, pattern) for pattern in flaky):
+            entry['flaky'] = True
         decoded = [decode_png(image) if image else None for image in (old, new)]
         if old is None or new is None:
             entry['note'] = 'added' if old is None else 'deleted'
@@ -203,15 +289,26 @@ def main():
         else:
             measures, diff = compare(*decoded)
             entry.update(measures, diff=data_uri(diff))
-        print('{}: {}'.format(path, entry.get('note') or '{changedPixels} px changed, mean error {meanError:.6f}'.format(**entry)),
-              file=sys.stderr)
+        result = entry.get('note') or '{changedPixels} px changed, mean error {meanError:.6f}'.format(**entry)
+        print(f'{path}: ' + (f'replaces {old_path}, ' if old_path else '') + result, file=sys.stderr)
         entries.append(entry)
 
-    # Added, deleted and resized images first, then the biggest changes
-    entries.sort(key=lambda e: (0, 0) if 'note' in e else (1, -e['meanError']))
+    # Added, deleted, replaced and resized images first, then the biggest
+    # changes, then the images that change on every run
+    entries.sort(key=lambda e: (e.get('flaky', False), 0 if 'note' in e or 'replaces' in e else 1, -e.get('meanError', 0)))
     template = (Path(__file__).parent / 'review-page.html').read_text()
-    source = f'commit {arguments.commit}' if arguments.commit else 'working tree compared with HEAD'
+    if arguments.commit:
+        source = f'commit {arguments.commit}'
+    else:
+        branch = git(repo, 'branch', '--show-current') or ''
+        source = f'branch {branch.strip()}, ' if branch.strip() else ''
+        source += 'working tree compared with HEAD'
+    session = arguments.session
     page = (template
+            .replace('{{TITLE}}', html.escape(f'{session} screenshots' if session else 'Screenshot review'))
+            .replace('{{SESSION_HIDDEN}}', '' if session else 'hidden')
+            .replace('{{SESSION_JSON}}', json.dumps(session).replace('</', '<\\/'))
+            .replace('{{SESSION}}', html.escape(session))
             .replace('{{SOURCE}}', html.escape(f'{Path(repo).name}, {source}'))
             .replace('{{ENTRIES}}', json.dumps(entries).replace('</', '<\\/')))
     Path(arguments.out).parent.mkdir(parents=True, exist_ok=True)
