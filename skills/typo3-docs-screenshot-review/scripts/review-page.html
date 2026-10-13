@@ -1,0 +1,141 @@
+<title>Screenshot review</title>
+<style>
+  /* Layout: one column of images, each with its measures, a view switch and a decision; the commands collect at the top */
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --fg: #1d2330; --muted: #5c6577; --line: #d9dde5;
+    --accent: #c25400; --changed: #d0182a; --keep: #1d7a46;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #14171d; --surface: #1d2129; --fg: #e6e9ef; --muted: #9aa3b5; --line: #343a46;
+    --accent: #ff9a3d; --changed: #ff5c6a; --keep: #4fc787; color-scheme: dark;
+  } }
+  :root[data-theme="dark"] {
+    --bg: #14171d; --surface: #1d2129; --fg: #e6e9ef; --muted: #9aa3b5; --line: #343a46;
+    --accent: #ff9a3d; --changed: #ff5c6a; --keep: #4fc787; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); padding-inline: 16px; padding-block: 24px 48px; }
+  main { max-width: 1320px; margin: 0 auto; display: grid; gap: 24px; }
+  h1 { font-size: 1.5rem; margin: 0; text-wrap: balance; }
+  .source { color: var(--muted); margin: 4px 0 0; }
+  .commands { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 8px; }
+  .commands pre { margin: 0; font: 13px/1.5 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
+  .commands .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .image { border-top: 1px solid var(--line); padding-top: 20px; display: grid; gap: 10px; }
+  .image h2 { font: 600 14px/1.4 var(--mono); margin: 0; overflow-wrap: anywhere; }
+  .measures { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .measures strong { color: var(--fg); }
+  .note { color: var(--accent); font-weight: 600; }
+  .controls { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .switch { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .switch button { border: 0; background: var(--surface); color: var(--fg); padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .switch button + button { border-left: 1px solid var(--line); }
+  .switch button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+  .decision { display: inline-flex; gap: 12px; font-size: 14px; }
+  .decision label { display: inline-flex; gap: 4px; align-items: center; cursor: pointer; }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .frame { position: relative; display: inline-block; max-width: 100%; border: 1px solid var(--line); background: var(--surface); justify-self: start; }
+  .frame img { display: block; max-width: 100%; height: auto; }
+  .box { position: absolute; border: 2px solid var(--changed); pointer-events: none; }
+  .copy { border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 6px; padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+</style>
+<main>
+  <header>
+    <h1>Screenshot review</h1>
+    <p class="source">{{SOURCE}}. Sorted by how much changed. Choose for each image whether it goes into the commit.</p>
+  </header>
+  <section class="commands" aria-label="Decisions">
+    <pre id="summary"></pre>
+    <div class="row"><button class="copy" id="copy" type="button">Copy decisions</button><span id="copied" class="source" hidden>Copied</span></div>
+  </section>
+  <div id="images"></div>
+</main>
+<script>
+  const entries = {{ENTRIES}};
+  const views = [['old', 'Old'], ['new', 'New'], ['diff', 'Changes']];
+  const decisions = {};
+  const container = document.getElementById('images');
+  const element = (tag, attributes = {}, ...children) => {
+    const node = document.createElement(tag);
+    Object.assign(node, attributes);
+    node.append(...children);
+    return node;
+  };
+  entries.forEach((entry, index) => {
+    const section = element('section', { className: 'image' });
+    section.append(element('h2', {}, entry.path));
+    const measures = element('div', { className: 'measures' });
+    if (entry.note) {
+      measures.append(element('span', { className: 'note' }, entry.note));
+    } else {
+      measures.append(
+        element('span', {}, element('strong', {}, entry.changedPixels.toLocaleString('en')), ' pixels changed'),
+        element('span', {}, element('strong', {}, (entry.changedShare * 100).toFixed(3) + ' %'), ' of the image'),
+        element('span', {}, 'mean error ', element('strong', {}, entry.meanError.toFixed(6))),
+      );
+      if (entry.box) {
+        measures.append(element('span', {}, `changes in ${entry.box[2]}×${entry.box[3]} px at ${entry.box[0]}, ${entry.box[1]}`));
+      }
+    }
+    section.append(measures);
+
+    const image = element('img', { alt: entry.path });
+    const frame = element('div', { className: 'frame' }, image);
+    const controls = element('div', { className: 'controls' });
+    const available = views.filter(([key]) => entry[key]);
+    const switcher = element('div', { className: 'switch', role: 'group', ariaLabel: 'Version' });
+    const show = (key) => {
+      image.src = entry[key];
+      switcher.querySelectorAll('button').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === key)));
+      frame.querySelector('.box')?.remove();
+      // The changed area, framed, as a few red pixels are hard to find in a large image
+      if (key === 'diff' && entry.box) {
+        image.decode().then(() => {
+          const scale = image.clientWidth / image.naturalWidth;
+          const [x, y, w, h] = entry.box;
+          frame.append(element('div', { className: 'box', style: `left:${x * scale - 4}px;top:${y * scale - 4}px;width:${w * scale + 8}px;height:${h * scale + 8}px` }));
+        });
+      }
+    };
+    available.forEach(([key, label]) => {
+      const button = element('button', { type: 'button' }, label);
+      button.dataset.view = key;
+      button.addEventListener('click', () => show(key));
+      switcher.append(button);
+    });
+    controls.append(switcher);
+
+    const decision = element('div', { className: 'decision', role: 'radiogroup', ariaLabel: 'Decision' });
+    [['commit', 'Commit'], ['restore', 'Restore']].forEach(([value, label]) => {
+      const input = element('input', { type: 'radio', name: `decision-${index}`, id: `decision-${index}-${value}`, value });
+      input.addEventListener('change', () => { decisions[entry.path] = value; summarize(); });
+      decision.append(element('label', { htmlFor: input.id }, input, label));
+    });
+    controls.append(decision);
+    section.append(controls, frame);
+    container.append(section);
+    show(entry.diff ? 'diff' : available[available.length - 1][0]);
+  });
+
+  const summary = document.getElementById('summary');
+  function summarize() {
+    const pick = (value) => entries.map((entry) => entry.path).filter((path) => decisions[path] === value);
+    const open = entries.length - pick('commit').length - pick('restore').length;
+    summary.textContent = [
+      `Commit (${pick('commit').length}):`, ...pick('commit').map((path) => '  ' + path),
+      `Restore (${pick('restore').length}):`, ...pick('restore').map((path) => '  ' + path),
+      open ? `Not decided yet: ${open}` : 'All decided.',
+    ].join('\n');
+  }
+  summarize();
+  document.getElementById('copy').addEventListener('click', () => {
+    const done = () => { document.getElementById('copied').hidden = false; };
+    navigator.clipboard.writeText(summary.textContent).then(done, () => {
+      const range = document.createRange();
+      range.selectNodeContents(summary);
+      getSelection().removeAllRanges();
+      getSelection().addRange(range);
+    });
+  });
+</script>
