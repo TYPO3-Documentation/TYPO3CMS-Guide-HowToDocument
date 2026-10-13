@@ -19,7 +19,8 @@ library:
 
 ```bash
 python3 -I <skill dir>/scripts/compare_screenshots.py \
-    --repo <manual> --out <scratch dir>/screenshot-review.html [PATH ...]
+    --repo <manual> --session <session name> [--flaky <list>] \
+    --out <scratch dir>/screenshot-review.html [PATH ...]
 ```
 
 *   Without `--commit`, it compares the PNG files that changed in the
@@ -29,16 +30,31 @@ python3 -I <skill dir>/scripts/compare_screenshots.py \
     made, also one of a merged pull request.
 *   `PATH` limits the comparison to files or folders, such as
     `Documentation/Images`.
+*   `--session` names the session at the top of the page, in its title,
+    and in the copied decisions. Pass the name that the user knows the
+    session by: a user who runs several sessions at the same time sees
+    which one a page belongs to.
+*   `--flaky` names a file of the manual that lists the screenshots that
+    change on every run, one path or glob per line, with `#` for comments.
+    The page shows these images in a section of their own, with
+    **Restore** chosen. Pass the list whenever the manual has one.
+*   A new image that replaces a deleted one is compared with it, as one
+    entry. The script finds the pair in the changed `.rst` files, where a
+    `figure`, `image`, or `include` directive switches from the old image
+    to the new one. `--pair <old> <new>` adds a pair that the `.rst` files
+    do not show.
 
 Write the page into a scratch directory, never into the repository. The
 script prints one line per image to stderr: the number of changed pixels
 and the mean error, or why it could not compare the image (added, deleted,
-size changed, a PNG format it cannot read).
+size changed, a PNG format it cannot read), and the image that a new one
+replaces.
 
 ## 2. Show the page and let the user decide
 
-The page lists the images by how much changed: added, deleted, and resized
-ones first, then the largest change. For every image, it shows the old
+The page lists the images by how much changed: added, deleted, replaced,
+and resized ones first, then the largest change, then the images of the
+flaky list. For every image, it shows the old
 version, the new one, and the changes in red with a frame around them. The
 user marks each image as **Commit** or **Restore** and copies the
 decisions.
@@ -58,7 +74,9 @@ ones that it did not touch.
 ## 3. Apply the decisions
 
 *   **Working tree:** restore every image marked **Restore** with
-    `git restore -- <path>`, or delete it if it is new. Stage the images marked **Commit** by their path. Never stage the
+    `git restore -- <path>`, or delete it if it is new. The decision on a
+    replacement covers both images: the copied decisions list the deleted
+    image below the new one, marked `(replaced)`. Stage the images marked **Commit** by their path. Never stage the
     images of a screenshot run with `git add -A` or `git add .`.
 *   **Existing commit:** propose a new commit that takes the old version of
     each image marked **Restore** back with
