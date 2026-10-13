@@ -700,6 +700,13 @@ generic name, such as `Sets/SitePackage/`, `Sets/MyExtension/`, or
     ..  code-block:: typoscript
         :caption: EXT:my_sitepackage/Configuration/Sets/Main/setup.typoscript
 
+A TSconfig file that TYPO3 does not load on its own, such as a static file
+that an extension registers, goes below `Configuration/TsConfig/`, for
+example `EXT:my_sitepackage/Configuration/TsConfig/User/editor.tsconfig`.
+Write the directory name in CamelCase, like `Configuration/TypoScript/`. The
+spelling TSconfig is for text, not for directory names. The file name ends
+with `.tsconfig`.
+
 Some names look like these, but are real packages. Keep them as they are:
 the packages `t3docs/site-package` and `t3docs/site-package-data`, the
 repository `TYPO3-Documentation/site_package`, and `my_site_package`, the

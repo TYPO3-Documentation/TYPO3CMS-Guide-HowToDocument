@@ -169,7 +169,7 @@ T
 `textrole`,
 `third party extension`,
 `toctree`,
-`TSconfig`,
+`TSconfig` (directory names: `TsConfig`, file names end with `.tsconfig`),
 `TYPO3`,
 `TYPO3 Core`, `Core`,
 `TYPO3 Core Engine`,
