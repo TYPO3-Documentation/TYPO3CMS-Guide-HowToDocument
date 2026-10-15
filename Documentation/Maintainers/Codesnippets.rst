@@ -20,6 +20,12 @@ included into the page with:
 
     ..  include:: /CodeSnippets/Events/Core/SomeEvent.rst.txt
 
+..  tip::
+    For a type of the TYPO3 Core, the
+    `typo3:api-class directive <https://docs.typo3.org/permalink/h2document:rest-phpdomain-api-class>`_
+    reads the API from api.typo3.org when the manual is rendered. It needs no
+    generated snippet and no configuration entry.
+
 To make the generator pick up a new class, register it in the manual's
 :file:`Documentation/CodeSnippets/Config/` tree. For events this is one PHP
 file per category, for example

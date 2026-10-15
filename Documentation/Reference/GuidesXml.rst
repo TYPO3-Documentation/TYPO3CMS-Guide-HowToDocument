@@ -562,6 +562,8 @@ And follow the interactive question.
 
             You can set the preferred TYPO3 Core version. This version is used to determine
             the desired version for links to other manuals and system extensions.
+            The `typo3:api-class directive <https://docs.typo3.org/permalink/h2document:rest-phpdomain-api-class-version>`_
+            reads the TYPO3 API of this version.
 
             ..  code-block:: xml
                 :caption: Documentation/guides.xml
