@@ -101,7 +101,12 @@ names the anchor that holds the rule:
 *   Lines stay below 80 characters. Only a link that cannot be broken may be
     longer (`format-rest-cgl-basic-formatting-rules-line-length`).
 *   reST indents 4 spaces, with 2 spaces after `..`. Code examples indent
-    2 spaces, whatever their language (`cgl-indenting`).
+    2 spaces, whatever their language (`cgl-indenting`). To fix the
+    indentation, the list markers, and the headline underlines of existing
+    files, run `python3 <this skill>/scripts/fix_rest_indentation.py` with
+    the files or directories. Add `--check` to only list the files it would
+    change. It does not change code examples or the order of headline
+    levels. Render before and after and compare the HTML.
 *   Use single backticks. A backslash in a plain literal must be doubled. In
     `:php:`, `:php-short:`, `:php-namespace:`, and `:file:`, write it once,
     and never end the text with a backslash (`text-roles`).
