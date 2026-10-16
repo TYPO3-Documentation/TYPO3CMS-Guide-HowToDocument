@@ -128,10 +128,13 @@ If you write or change a permalink by hand, follow these three rules:
     `permalink/t3coreapi:dependency-injection` resolves,
     `permalink/dependency-injection` does not.
 
-#.  **The manual is written with hyphens, not slashes.** This is where a
-    permalink differs from a reST reference: :rst:`:ref:` uses
-    `friendsoftypo3/content-blocks:`, the permalink uses
-    `friendsoftypo3-content-blocks:`.
+#.  **Write the manual as its shortcode, with the slash.** A permalink
+    uses the same shortcode as a reST reference, for example
+    `friendsoftypo3/content-blocks:`. Older permalinks write the slash as a
+    hyphen, such as `friendsoftypo3-content-blocks:`. This form still works,
+    but not for a vendor whose name has a hyphen:
+    `permalink/web-vision/deepltranslate-core:start` resolves,
+    `permalink/web-vision-deepltranslate-core:start` does not.
 
 #.  **Underscores in an anchor become hyphens.** The anchor
     `..  _run_upgrade_wizard:` is published as `run-upgrade-wizard`, so only
@@ -139,8 +142,8 @@ If you write or change a permalink by hand, follow these three rules:
 
 The rendered page links to the right target even if you break one of these
 rules. The URL in the source file, however, returns 404 for everyone who opens
-it from there. Since render-guides 0.42.0, the rendering warns about all three
-mistakes, so :bash:`make test-docs` fails on them. See
+it from there. The rendering warns about a missing shortcode and about an
+anchor with underscores, so :bash:`make test-docs` fails on them. See
 `render-guides issue #1402 <https://github.com/TYPO3-Documentation/render-guides/issues/1402>`_.
 
 ..  _rest-ref-role:
