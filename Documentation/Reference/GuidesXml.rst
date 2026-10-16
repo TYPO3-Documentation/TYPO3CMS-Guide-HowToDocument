@@ -9,6 +9,12 @@ Configuration of the rendering - `guides.xml`
 This XML file contains meta information and configuration used during rendering
 of a manual.
 
+The rendering loads the :file:`guides.xml` of the directory it renders, by
+default :file:`Documentation/guides.xml`. You only need the option
+:bash:`--config` to load a :file:`guides.xml` from another directory. The
+rendering checks the file against its XML schema, and stops if the file is
+invalid.
+
 ..  literalinclude:: _guides-simple.xml
     :caption: Documentation/guides.xml
 
@@ -392,11 +398,20 @@ And follow the interactive question.
             *   A shortcode supported by the theme:
                 :ref:`Available default inventories <t3renderguides:available-default-inventories>`
 
-            If a manual declares no interlink shortcode, the rendering
-            warns, and a render with :bash:`--minimal-test` fails. Such a
+            An extension that declares no interlink shortcode gets its
+            Composer name as the shortcode. The rendering reads it from the
+            :file:`composer.json` in the rendered directory or in the
+            directory above it. This applies to a package of the type
+            `typo3-cms-extension` and to a system extension.
+
+            Any other manual that declares no interlink shortcode gets a
+            warning, and a rendering with :bash:`--minimal-test` fails. Such a
             manual has no permalinks, and other manuals cannot link to it.
-            If a :file:`composer.json` is next to the documentation, the
-            warning names the shortcode to add.
+
+            A third party extension that declares a shortcode other than its
+            Composer name also gets a warning. docs.typo3.org finds its
+            permalinks only by the Composer name: `news:start` returns 404,
+            `georgringer/news:start` works.
 
         ..  figure:: /_Images/ReferenceThisHeadlineDialog.png
             :alt: Reference a headline dialog showing the shortcode georgringer/news

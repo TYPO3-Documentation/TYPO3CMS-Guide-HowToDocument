@@ -40,6 +40,18 @@ The Markdown is produced from the same build as the HTML, after includes are
 resolved and generated directives are expanded, so it holds what the page
 holds — unlike the reST source below.
 
+Each heading ends in its anchor, written as `{#anchor}`. A heading with
+more than one anchor ends in the last one. The other anchors stand before
+the heading as empty `<a id="anchor"></a>` elements, in the order of the
+source:
+
+..  code-block:: markdown
+
+    <a id="preferred-terms"></a>
+    <a id="spelling-ref"></a>
+
+    # Spelling, terms and glossary {#spelling-ref-this-guide}
+
 ..  _rendered-artifacts-inventory:
 
 The inventory
