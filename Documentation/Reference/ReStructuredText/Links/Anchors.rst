@@ -119,8 +119,8 @@ example, `Setup_Docker` and `setup-docker` are the same anchor.
 
 *   **The normalized form stays the same**, as in `Setup_Docker` changed to
     `setup-docker`: rewrite the anchor and do not keep the old spelling. Two
-    labels that normalize to the same anchor are still one anchor, and the
-    rendering does not warn about the second one.
+    labels that normalize to the same anchor are still one anchor. If a page
+    declares both, the rendering warns about the second one.
 *   **The normalized form changes**, as in `ClassIndexJson` changed to
     `class-index-json`: this is a new anchor. `ClassIndexJson` normalizes to
     `classindexjson`, without hyphens. Keep the old label above the heading,

@@ -35,8 +35,9 @@ by its path without a file extension, such as `Advanced/ContentStyleGuide`.
     In the source, an anchor is the target line, such as
     `..  _content-styleguide-serial-comma:`.
 
-A heading with several anchors shows only one of them in the Markdown. If
-an anchor is not there, read the whole page or its reST source.
+A heading with several anchors ends in the last of them. The others stand as
+`<a id="anchor"></a>` lines before the heading. If an anchor is not there,
+read the whole page or its reST source.
 
 If a page cannot be read, say so. Do not write from memory instead.
 
