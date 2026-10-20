@@ -91,8 +91,19 @@ What the backport labels mean
     backport when the pull request is merged, or as soon as it is added to an
     already merged one.
 
+    Never put this label on a pull request against that branch itself. The
+    automatic backport then tries to cherry-pick the change into the same
+    branch again, and the backport fails.
+
 :guilabel:`backport-required`
     A backport is still to be prepared or decided on.
+
+    If it is clear beforehand that the backport must be made by hand, put
+    this label on the pull request against `main` instead of
+    :guilabel:`backport <version>`. A manual backport is needed, for example,
+    if the content or the screenshots differ between the versions. After the
+    merge, open the backport pull request, see
+    `How to backport manually? <https://docs.typo3.org/permalink/h2document:backport-changes-backport-manually>`_.
 
 :guilabel:`backport-failed`
     The automatic backport could not cherry-pick the change into that branch.
@@ -164,6 +175,11 @@ additional authors is automatically added to the commit.
 How to backport manually?
 =========================
 
+Make the backport after the original pull request has been merged, just like
+the automatic backport does. Do not open a backport pull request while the
+original pull request is still open. A review of one of them would not reach
+the other.
+
 Please make sure that you are in the branch you have just pushed into.
 Preferably `main`:
 
@@ -213,11 +229,37 @@ If everything looks fine continue the cherry-pick with:
 
     git cherry-pick --continue
 
-Push your changes.
+Push your changes and open the backport pull request, see
+`Mark the pull request as a backport <https://docs.typo3.org/permalink/h2document:backport-changes-backport-manually-pull-request>`_.
 Check in the intercept to see if a new rendering has started. Once this is
 done, check the documentation to see if the backport worked as expected.
 
-Swap :guilabel:`backport-failed` for :guilabel:`backport-done` on the original
-pull request as soon as your backport pull requests are open – the automatic
-backport labels its own the same way, when it creates them rather than when
-they are merged.
+Swap :guilabel:`backport-failed` or :guilabel:`backport-required` for
+:guilabel:`backport-done` on the original pull request as soon as your
+backport pull requests are open. The automatic backport labels its own the
+same way, when it creates them rather than when they are merged.
+
+..  _backport-changes-backport-manually-pull-request:
+
+Mark the pull request as a backport
+-----------------------------------
+
+Mark a manual backport pull request the same way as the automatic backport
+marks its own:
+
+*   The title is the subject of the original pull request, after
+    `[Backport <version>]`.
+*   The description starts with "Backport of #<number> to `<version>`.",
+    with the number of the original pull request.
+*   The commit message keeps the `Releases` line of the original, for
+    example `Releases: main, 14.3`. Do not shorten it to the version of the
+    branch.
+*   The pull request has no :guilabel:`backport <version>` label.
+
+For example, the backport of pull request #364 to 14.3:
+
+..  code-block:: text
+
+    [Backport 14.3] [FEATURE] Explain what to do when an error page shows
+
+    Backport of #364 to `14.3`.
