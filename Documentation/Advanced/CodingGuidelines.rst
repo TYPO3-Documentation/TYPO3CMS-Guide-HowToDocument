@@ -228,24 +228,30 @@ Example, how you can point out **deprecations**:
 
 ..  code-block:: rst
 
-    .. deprecated:: 10.2
-       The hook shown here is deprecated since TYPO3 10.2 - use a custom
-       :ref:`PSR-15 middleware<request-handling>` instead.
+    ..  deprecated:: 9.5
+        :changelog: deprecation-86279
+
+        The hook shown here is deprecated - use a custom PSR-15 middleware
+        instead.
 
 New **feature**:
 
 ..  code-block:: rst
 
-    .. versionadded:: 10.2
-       Starting with TYPO3 10.2 hooks and signals have been replaced by a PSR-14 based
-       event dispatching system.
+    ..  versionadded:: 10.0
+        :changelog: feature-88770
+
+        A PSR-14 based event dispatcher replaces hooks and signals.
 
 Changes:
 
 ..  code-block:: rst
 
-    .. versionchanged:: 2.3.1
-       This feature was changed ...
+    ..  versionchanged:: 12.0
+        :changelog: deprecation-96972
+
+        The widely used :php:`->execute()` method has been split into
+        :php:`->executeQuery()` and :php:`->executeStatement()`.
 
 For more information, see the open issue:
 
