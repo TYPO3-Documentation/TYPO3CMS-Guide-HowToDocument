@@ -12,132 +12,16 @@ We have 3 directives to mark versions in the manuals.
 The incentive is that information which is important for migration can be marked
 and semi-automatically be removed after one or two versions.
 
-..  _rest-versions-versionadded:
-
-Versionadded
-============
-
-..  code-block:: rst
-
-    ..  versionadded:: 10.0
-        A PSR-14 based event dispatcher replaces hooks and signals.
-        See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
-
-    TYPO3 dispatches events with a PSR-14 based event dispatcher.
-
-..  versionadded:: 10.0
-    A PSR-14 based event dispatcher replaces hooks and signals.
-    See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
-
-TYPO3 dispatches events with a PSR-14 based event dispatcher.
-
-For emphasis, the directive can also be placed into one of the
-:ref:`admonitions <rest-admonitions>`:
-
-
-..  code-block:: rst
-
-    ..  tip::
-        ..  versionadded:: 10.0
-            A PSR-14 based event dispatcher replaces hooks and signals.
-            See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
-
-..  tip::
-    ..  versionadded:: 10.0
-        A PSR-14 based event dispatcher replaces hooks and signals.
-        See `Feature: #88770 - PSR-14 based EventDispatcher <https://docs.typo3.org/permalink/changelog:feature-88770>`_.
-
-..  _rest-versions-deprecated:
-
-Deprecated
-==========
-
-..  code-block:: rst
-
-    ..  deprecated:: 9.5
-        The hook :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['tslib_fe-PostProc']`
-        is deprecated - use a custom PSR-15 middleware instead.
-        See `Deprecation: #86279 - Various Hooks and PSR-15 Middlewares <https://docs.typo3.org/permalink/changelog:deprecation-86279>`_.
-
-..  deprecated:: 9.5
-    The hook :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['tslib_fe-PostProc']`
-    is deprecated - use a custom PSR-15 middleware instead.
-    See `Deprecation: #86279 - Various Hooks and PSR-15 Middlewares <https://docs.typo3.org/permalink/changelog:deprecation-86279>`_.
-
-..  _rest-versions-versionchanged:
-
-Versionchanged
-==============
-
-..  code-block:: rst
-
-    ..  versionchanged:: 14.3
-        See `Important: #110233 - Search query added to AfterPageTreeItemsPreparedEvent <https://docs.typo3.org/permalink/changelog:important-110233-1787820210>`_.
-
-    The event also provides the current page tree search query via
-    :php:`getSearchQuery()`.
-
-..  versionchanged:: 14.3
-    See `Important: #110233 - Search query added to AfterPageTreeItemsPreparedEvent <https://docs.typo3.org/permalink/changelog:important-110233-1787820210>`_.
-
-The event also provides the current page tree search query via
-:php:`getSearchQuery()`.
-
-..  _rest-versions-what-belongs-in-directive:
-
-What belongs in a version directive
-===================================
-
-The directive body can be removed after one or two versions. Avoid putting
-information there that is meant to stay in the documentation permanently -
-how something works, how to use it - that belongs in the regular text
-around the directive instead.
-
-Put information into the directive body that is tied to the version
-transition and becomes obsolete once the directive is pruned:
-
-*   A link to the corresponding Core Changelog entry.
-*   How to migrate, or a link to a migration section.
-*   What the new feature replaces, or what replaces a deprecated one. For
-    example, an event replaces a previous hook.
-*   What was different before a change. For example, "Before, the option
-    returned a path relative to the site root."
-
-..  code-block:: rst
-
-    ..  versionadded:: 12.3
-        The event replaces the deprecated hook
-        :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_userauth.php']['logoff_pre_processing']`.
-        See `Feature: #100307 - PSR-14 events for user login & logout <https://docs.typo3.org/permalink/changelog:feature-100307-1679924551>`_.
-
-    The purpose of the PSR-14 event
-    :php:`\TYPO3\CMS\Core\Authentication\Event\BeforeUserLogoutEvent` is to
-    trigger any kind of action before a user will be logged out.
-
-..  versionadded:: 12.3
-    The event replaces the deprecated hook
-    :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_userauth.php']['logoff_pre_processing']`.
-    See `Feature: #100307 - PSR-14 events for user login & logout <https://docs.typo3.org/permalink/changelog:feature-100307-1679924551>`_.
-
-The purpose of the PSR-14 event
-:php:`\TYPO3\CMS\Core\Authentication\Event\BeforeUserLogoutEvent` is to
-trigger any kind of action before a user will be logged out.
-
-Find a changelog entry's permalink from its own
-`.. _<type>-<issue>-<timestamp>:` anchor, for example in the "Added files"
-section of the corresponding `Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc>`__
-issue.
-
 ..  _rest-versions-changelog-option:
 
 Linking the changelog entry with `:changelog:`
 ==============================================
 
-The examples above write the permalink of the changelog entry by hand into
-the directive body. The three version directives also accept the
-:rst:`:changelog:` option. Use this option to link an entry of the TYPO3
-Core Changelog. The value is the identifier of the entry, in the form
-`<type>-<issue>-<timestamp>`:
+Link the changelog entry of a TYPO3 Core change with the
+:rst:`:changelog:` option. All three version directives accept it. The
+value is the identifier of the entry, in the form
+`<type>-<issue>-<timestamp>`. Older entries have no timestamp, such as
+`deprecation-96972`.
 
 ..  code-block:: rst
 
@@ -155,9 +39,136 @@ Core Changelog. The value is the identifier of the entry, in the form
 
 The option puts the link into the version badge. The link text is the title
 of the changelog entry, so you do not copy the title and the URL by hand.
+Do not link the entry in the directive body as well.
+
+Find the identifier in the anchor of the entry,
+`.. _<type>-<issue>-<timestamp>:`, for example in the "Added files"
+section of the corresponding `Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc>`__
+issue.
 
 If the identifier does not match an entry, the rendering shows a warning.
 Check the identifier before you commit the change.
+
+..  _rest-versions-versionadded:
+
+Versionadded
+============
+
+..  code-block:: rst
+
+    ..  versionadded:: 10.0
+        :changelog: feature-88770
+
+        A PSR-14 based event dispatcher replaces hooks and signals.
+
+    TYPO3 dispatches events with a PSR-14 based event dispatcher.
+
+..  versionadded:: 10.0
+    :changelog: feature-88770
+
+    A PSR-14 based event dispatcher replaces hooks and signals.
+
+TYPO3 dispatches events with a PSR-14 based event dispatcher.
+
+For emphasis, the directive can also be placed into one of the
+:ref:`admonitions <rest-admonitions>`:
+
+
+..  code-block:: rst
+
+    ..  tip::
+        ..  versionadded:: 10.0
+            :changelog: feature-88770
+
+            A PSR-14 based event dispatcher replaces hooks and signals.
+
+..  tip::
+    ..  versionadded:: 10.0
+        :changelog: feature-88770
+
+        A PSR-14 based event dispatcher replaces hooks and signals.
+
+..  _rest-versions-deprecated:
+
+Deprecated
+==========
+
+..  code-block:: rst
+
+    ..  deprecated:: 9.5
+        :changelog: deprecation-86279
+
+        The hook :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['tslib_fe-PostProc']`
+        is deprecated - use a custom PSR-15 middleware instead.
+
+..  deprecated:: 9.5
+    :changelog: deprecation-86279
+
+    The hook :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['tslib_fe-PostProc']`
+    is deprecated - use a custom PSR-15 middleware instead.
+
+..  _rest-versions-versionchanged:
+
+Versionchanged
+==============
+
+..  code-block:: rst
+
+    ..  versionchanged:: 14.3
+        :changelog: important-110233-1787820210
+
+    The event also provides the current page tree search query via
+    :php:`getSearchQuery()`.
+
+..  versionchanged:: 14.3
+    :changelog: important-110233-1787820210
+
+The event also provides the current page tree search query via
+:php:`getSearchQuery()`.
+
+..  _rest-versions-what-belongs-in-directive:
+
+What belongs in a version directive
+===================================
+
+The directive body can be removed after one or two versions. Avoid putting
+information there that is meant to stay in the documentation permanently -
+how something works, how to use it - that belongs in the regular text
+around the directive instead.
+
+Put information into the directive body that is tied to the version
+transition and becomes obsolete once the directive is pruned:
+
+*   How to migrate, or a link to a migration section.
+*   What the new feature replaces, or what replaces a deprecated one. For
+    example, an event replaces a previous hook.
+*   What was different before a change. For example, "Before, the option
+    returned a path relative to the site root."
+
+The link to the changelog entry goes into the :rst:`:changelog:` option,
+not into the body.
+
+..  code-block:: rst
+
+    ..  versionadded:: 12.3
+        :changelog: feature-100307-1679924551
+
+        The event replaces the deprecated hook
+        :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_userauth.php']['logoff_pre_processing']`.
+
+    The purpose of the PSR-14 event
+    :php:`\TYPO3\CMS\Core\Authentication\Event\BeforeUserLogoutEvent` is to
+    trigger any kind of action before a user will be logged out.
+
+..  versionadded:: 12.3
+    :changelog: feature-100307-1679924551
+
+    The event replaces the deprecated hook
+    :php:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_userauth.php']['logoff_pre_processing']`.
+
+The purpose of the PSR-14 event
+:php:`\TYPO3\CMS\Core\Authentication\Event\BeforeUserLogoutEvent` is to
+trigger any kind of action before a user will be logged out.
 
 To say in which version a configuration value was added, changed,
 deprecated, or removed, do not put a version directive into the
