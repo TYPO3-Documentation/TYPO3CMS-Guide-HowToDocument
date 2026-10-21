@@ -21,7 +21,9 @@ visible at once and sends notifications. **Never label, comment on, or
 close an issue without the user's approval of that exact issue.** Show the
 draft for one issue, wait, apply it, then go on to the next one. An
 approval covers only the text that the user saw: if you change the draft,
-even by one link, show it again.
+even by one link, show it again. You can research several issues ahead,
+but show only the draft of the current issue, with no overview or count
+of the others.
 
 ## 1. Find the issues to triage
 
