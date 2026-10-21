@@ -117,7 +117,8 @@ this format can use them.
 Install the skills in Claude Code
 ---------------------------------
 
-Run the following commands in Claude Code:
+Install the `Claude Code CLI <https://code.claude.com/docs/en/setup>`__
+and run the following commands separately in Claude Code:
 
 ..  code-block:: text
     :caption: Install the skills as the plugin typo3-docs
