@@ -120,11 +120,17 @@ Install the skills in Claude Code
 Install the `Claude Code CLI <https://code.claude.com/docs/en/setup>`__
 and run the following commands separately in Claude Code:
 
-..  code-block:: text
-    :caption: Install the skills as the plugin typo3-docs
+#.  Add the guide as a plugin marketplace:
 
-    /plugin marketplace add TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument
-    /plugin install typo3-docs@typo3-docs-guide
+    ..  code-block:: text
+
+        /plugin marketplace add TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument
+
+#.  Install the plugin `typo3-docs` from it:
+
+    ..  code-block:: text
+
+        /plugin install typo3-docs@typo3-docs-guide
 
 Claude Code then uses the skill `typo3-docs-writing` when a task changes
 reST files of a TYPO3 manual or of an extension. You can also ask for a
