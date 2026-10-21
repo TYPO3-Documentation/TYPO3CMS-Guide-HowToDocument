@@ -37,14 +37,14 @@ New issues here should be treated with priority.
 Triage new issues
 =================
 
-A new issue in Changelog-To-Doc has only a version label, such as
+A new issue in Changelog-To-Doc only has a version label, such as
 :guilabel:`15.0` or :guilabel:`14.3.x`. Triage decides whether the change
 needs documentation and where. Each issue ends in one of three ways:
 
 *   **No docs needed:** label :guilabel:`No docs needed`, comment why, and
     close the issue.
 *   **Needs documenting:** label the manual and the type of change, and
-    comment which pages change and how. The issue stays open.
+    comment which pages need to change and how. The issue stays open.
 *   **Already documented:** comment where, and close the issue without the
     label :guilabel:`No docs needed`.
 
@@ -69,11 +69,11 @@ Search the manuals
 ------------------
 
 Search all manuals for the classes, methods, options, and labels that the
-change touches, not only the manual that seems to fit. Check the TSconfig
+change affects, not only the manual that seems to fit. Check the TSconfig
 Reference, the Exceptions Reference, the tutorials, and the manuals of the
 system extensions as well.
 
-The change needs no documentation if:
+The change doesn't need documenting if:
 
 *   It only fixes or adds to the changelog itself.
 *   No manual mentions what changed, and the changelog entry is enough to
@@ -113,7 +113,7 @@ Changes to them go through Gerrit, not through GitHub. Label them with
 The comment
 -----------
 
-Write the comment for the person who documents the change. That person
+Write a comment for the person who documents the change. That person
 may not know the change yet.
 
 *   Start with the outcome: "No docs needed:" with the reason, or "Needs

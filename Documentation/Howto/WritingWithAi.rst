@@ -104,7 +104,7 @@ of its repository:
     do not make the repository bigger.
 
 `typo3-docs-changelog-triage`
-    Goes through new issues of the
+    Goes through new issues in the
     `Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`__
     repository. For each Core change, it reads the diff, searches the
     manuals, and drafts the labels and a comment that names the pages to
