@@ -103,10 +103,23 @@ of its repository:
     which images go into the commit, so images that differ only by chance
     do not make the repository bigger.
 
-The skills do not copy the rules. They read them from the current version
-of this guide: from a local clone of the guide, or from GitHub if there is
-none. A change to a rule therefore reaches the skills without an update of
-the skills.
+`typo3-docs-changelog`
+    Reads an issue of the
+    `Changelog-To-Doc repository <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`__
+    and shows the changelog entry, its versions, the manual pages that
+    already mention the changed API, and earlier decisions about the same
+    API. After writing, it checks the change against the issue, for
+    example the :rst:`:changelog:` option, the commit message, and the
+    length compared with earlier accepted changes. See
+    `Apply Changelog entries to the docs <https://docs.typo3.org/permalink/h2document:howto-update-docs>`_.
+
+The skills do not copy the rules of the guide. They read them from the
+current version of this guide: from a local clone of the guide, or from
+GitHub if there is none. A change to a rule therefore reaches the skills
+without an update of the skills. The skill `typo3-docs-changelog` also
+holds rules from the triage of changelog issues and from reviews of
+changelog pull requests, and its scripts check some rules of this guide.
+These change only with the skill.
 
 The skills follow the open
 `Agent Skills <https://agentskills.io/>`_ format. Every tool that supports

@@ -1,0 +1,19 @@
+{
+  "number": 1903,
+  "title": "[BUGFIX] Prevent live editing of workspace aware tables in workspaces",
+  "html_url": "https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues/1903",
+  "state": "open",
+  "body": ":information_source: View this commit [on Github](https://github.com/TYPO3/typo3/commit/0563a243b9a38d297800190de4cd04dfe7ef2ef0)\n:busts_in_silhouette: Authored by Georg Ringer georg.ringer@gmail.com\n:heavy_check_mark: Merged by Benni Mack benni@typo3.org\n\n## Commit message\n\n[BUGFIX] Prevent live editing of workspace aware tables in workspaces\n\nThe TCA ctrl option \"versioningWS_alwaysAllowLiveEdit\" allowed live\nediting of records in any workspace, even for tables having\n\"versioningWS\" enabled. Records of such tables were created and\nmodified directly in live, although the editor worked in a workspace.\n\nBackendUserAuthentication->workspaceAllowsLiveEditingInTable() now\nonly considers the option for tables without workspace support, and\nTCA migration removes it from workspace aware tables.\n\nResolves: #106077\nReleases: main, 14.3\nSigned-off-by: Georg Ringer <georg.ringer@gmail.com>\nChange-Id: Iad0c35f1232fc2fee0cfee1929215e6a86502257\nReviewed-on: https://review.typo3.org/c/Packages/TYPO3.CMS/+/95864\nTested-by: core-ci <typo3@b13.com>\nReviewed-by: Simon Schaufelberger <simonschaufi+typo3@gmail.com>\nReviewed-by: Benni Mack <benni@typo3.org>\nTested-by: Benni Mack <benni@typo3.org>\nTested-by: Simon Schaufelberger <simonschaufi+typo3@gmail.com>\n\n## :heavy_plus_sign: Added files\n\n<details>\n<summary>14.3.x/Important-106077-NoLiveEditingOfWorkspaceAwareTablesInWorkspaces.rst</summary>\n\n\n```rst\n..  include:: /Includes.rst.txt\n\n..  _important-106077-1789503919:\n\n============================================================================\nImportant: #106077 - No live editing of workspace aware tables in workspaces\n============================================================================\n\nSee :issue:`106077`\n\nDescription\n===========\n\nThe TCA :php:`ctrl` option :php:`versioningWS_alwaysAllowLiveEdit` allows\nediting records of a table in any workspace without creating workspace\nversions. It is meant for tables without workspace support.\n\nWhen combined with :php:`versioningWS`, records of a workspace aware table\nwere created and modified directly in live, although an editor worked in a\nworkspace. This combination is no longer effective: records of workspace aware\ntables are always versioned in a workspace.\n\nThe option is automatically removed from tables with :php:`versioningWS`\nenabled during TCA migration, which triggers a deprecation log entry. This also\napplies to inline child tables that are made workspace aware automatically.\n\nExtensions combining both options should remove\n:php:`versioningWS_alwaysAllowLiveEdit` from their TCA.\n\n..  index:: TCA, ext:core, ext:workspaces\n\n```\n\n</details>\n",
+  "labels": [
+    {
+      "name": "TCA reference"
+    },
+    {
+      "name": "Important"
+    },
+    {
+      "name": "14.3.x"
+    }
+  ],
+  "comments": 0
+}
