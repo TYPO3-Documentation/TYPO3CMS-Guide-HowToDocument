@@ -31,6 +31,112 @@ New issues here should be treated with priority.
 
 ..  contents:: Table of contents
 
+..  index:: pair: Changelog; Triage
+..  _changelog-triage:
+
+Triage new issues
+=================
+
+A new issue in Changelog-To-Doc only has a version label, such as
+:guilabel:`15.0` or :guilabel:`14.3.x`. Triage decides whether the change
+needs documentation and where. Each issue ends in one of three ways:
+
+*   **No docs needed:** label :guilabel:`No docs needed`, comment why, and
+    close the issue.
+*   **Needs documenting:** label the manual and the type of change, and
+    comment which pages need to change and how. The issue stays open.
+*   **Already documented:** comment where, and close the issue without the
+    label :guilabel:`No docs needed`.
+
+..  _changelog-triage-read:
+
+Read the change
+---------------
+
+The issue holds the commit message and the changelog entry. Read the
+diff of the Core commit as well. A commit message can name an option
+differently from the code, and the comment must use the name from the
+code. Search the Core source of every affected version for each class,
+option, and default value that you name.
+
+If the commit also changed the manual of a system extension, under
+:file:`typo3/sysext/<extension>/Documentation/`, the change is already
+documented.
+
+..  _changelog-triage-search:
+
+Search the manuals
+------------------
+
+Search all manuals for the classes, methods, options, and labels that the
+change affects, not only the manual that seems to fit. Check the TSconfig
+Reference, the Exceptions Reference, the tutorials, and the manuals of the
+system extensions as well.
+
+The change doesn't need documenting if:
+
+*   It only fixes or adds to the changelog itself.
+*   No manual mentions what changed, and the changelog entry is enough to
+    migrate. An internal method or a change to the database layout of a
+    single extension is often such a case.
+*   The manuals already describe the new behavior correctly.
+*   It only changes the user interface of the backend and adds no option.
+    This applies even if the setting for that part of the backend has its
+    own configuration value. A :rst:`versionadded` on such an option says
+    nothing that helps the reader.
+
+If you are not sure, label the manual and say so in the comment. Ask in
+the `#typo3-documentation <https://typo3.slack.com/app_redirect?channel=C028JEPJL>`__
+channel on Slack.
+
+..  _changelog-triage-labels:
+
+Labels
+------
+
+Add one label per manual that has to change, for example
+:guilabel:`TYPO3 Explained`, :guilabel:`TCA reference`,
+:guilabel:`TSconfig Reference`, or :guilabel:`Editors Tutorial`. Add
+one label for the type of change: :guilabel:`Feature`,
+:guilabel:`Breaking`, :guilabel:`Deprecation`, or :guilabel:`Important`.
+Topic labels such as :guilabel:`PSR-14 Event` or :guilabel:`Extbase` help
+to find related issues.
+
+The manuals of the system extensions, such as the manuals of
+EXT:scheduler, EXT:redirects, or EXT:reactions, are part of the Core.
+Changes to them go through Gerrit, not through GitHub. Label them with
+:guilabel:`EXT:<extension>` where that label exists, and with
+:guilabel:`Gerrit`.
+
+..  _changelog-triage-comment:
+
+The comment
+-----------
+
+Write a comment for the person who documents the change. That person
+may not know the change yet.
+
+*   Start with the outcome: "No docs needed:" with the reason, or "Needs
+    documenting in <manual>".
+*   Name the page and the section, and what to add, change, or remove.
+    Name the directive to add, such as a :rst:`versionadded` for 15.0, or
+    a confval that moves to :file:`404.rst` with the field :rst:`:removed:`.
+*   Put a permalink to each page on its own line, as
+    :samp:`https://docs.typo3.org/permalink/{interlink}:{anchor}`, see
+    `Permalinks <https://docs.typo3.org/permalink/h2document:permalinks>`_.
+    Open every permalink before you post it. The anchor must be the one
+    that docs.typo3.org publishes, with hyphens instead of underscores.
+*   Link related issues with their full URL.
+*   Name outdated text in other manuals in a paragraph of its own, also if
+    the change does not need documentation otherwise.
+
+The comment follows the same writing rules as the documentation, see the
+`rules for sentences <https://docs.typo3.org/permalink/h2document:content-styleguide-sentences>`_.
+
+Post the comment before you close the issue. Closing it first and then
+commenting leaves a closed issue without a reason if the second step
+fails.
+
 ..  index:: pair: Updates; Commit messages
 
 ..  _howto-update-docs-commit-messages:
