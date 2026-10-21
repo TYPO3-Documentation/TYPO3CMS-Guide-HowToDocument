@@ -103,6 +103,13 @@ of its repository:
     which images go into the commit, so images that differ only by chance
     do not make the repository bigger.
 
+`typo3-docs-changelog-triage`
+    Goes through new issues of the
+    `Changelog-To-Doc <https://github.com/TYPO3-Documentation/Changelog-To-Doc/issues>`__
+    repository. For each Core change, it reads the diff, searches the
+    manuals, and drafts the labels and a comment that names the pages to
+    change. You approve each issue before anything is posted.
+
 The skills do not copy the rules. They read them from the current version
 of this guide: from a local clone of the guide, or from GitHub if there is
 none. A change to a rule therefore reaches the skills without an update of
