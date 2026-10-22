@@ -88,10 +88,10 @@ Versions:
         :changed: 14.3.8 important-106077-1789503919
     ```
 
-*   For a folder such as `14.2`, the version is `14.2`. For a folder such
-    as `14.3.x`, it is the first release of that branch that contains the
-    change. Step 1 prints it when Gerrit knows it, or the next release if
-    none contains the change yet.
+*   Which version the mark names depends on the folder of the changelog
+    entry. Read the section `changelog-affected-versions-directive` of
+    `Maintainers/Changelog`. For a folder such as `14.3.x`, step 1 prints
+    the first patch release when Gerrit knows it.
 *   The directive names the exact version. In running text, name a
     version only where the reader needs it, and only as precisely, such as
     "Fluid 5".
