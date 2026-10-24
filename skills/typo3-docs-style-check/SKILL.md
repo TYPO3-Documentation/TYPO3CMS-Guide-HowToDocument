@@ -17,7 +17,9 @@ their path without a file extension:
 *   **Published Markdown, first choice.** Fetch
     `https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/<page>.md`.
     Included files and code examples are resolved in it, and each heading
-    ends in its anchor, such as `{#content-styleguide-serial-comma}`.
+    ends in its anchor, such as `{#content-styleguide-serial-comma}`. A
+    heading with several anchors has the others as `<a id="anchor"></a>`
+    lines before it.
 *   **reST source, fallback.** When the Markdown cannot be fetched, or a
     rule changed on `main` and is not published yet, read
     `Documentation/<page>.rst`. In the local checkout `guide-h2d` of the

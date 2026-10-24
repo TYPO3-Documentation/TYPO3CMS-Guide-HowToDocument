@@ -2,10 +2,11 @@
 
 Each page is named by its path without a file extension. Read it as
 published Markdown, `<page>.md` on docs.typo3.org, or as the source
-`Documentation/<page>.rst`, see step 1 of the skill. The anchor ends a
-heading as `{#anchor}` in the Markdown, and is the `..  _anchor:` target in
-the source. An anchor of the guide never goes away, so a search for it
-always finds the current section, even after the page has moved.
+`Documentation/<page>.rst`, see step 1 of the skill. In the Markdown, an
+anchor ends a heading as `{#anchor}`, or stands before it as
+`<a id="anchor"></a>` if the heading has several. In the source, it is the
+`..  _anchor:` target. An anchor of the guide never goes away, so a search
+for it always finds the current section, even after the page has moved.
 
 Read the page for every kind of content that your text contains.
 
