@@ -75,7 +75,8 @@ request for each version that has been labeled - if, and only if, it can do the
 cherry-picking into the branch without conflicts.
 
 If the automatic backport is successful, a new pull request will be created for
-the backport. This pull request can be approved and merged manually.
+the backport. Merge it by hand, see
+`Merge a backport pull request <https://docs.typo3.org/permalink/h2document:backport-changes-merge-backport>`_.
 
 If the backport fails, a comment will be added to the original pull request. The
 label :guilabel:`backport-failed` will be added to the original pull request and
@@ -166,6 +167,31 @@ additional authors is automatically added to the commit.
 ..  seealso::
 
     *   `Configuring commit squashing for pull requests <https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuring-commit-squashing-for-pull-requests>`__
+
+..  _backport-changes-merge-backport:
+
+Merge a backport pull request
+-----------------------------
+
+Merge a backport pull request, from the automatic backport or made by
+hand, only if all of the following applies:
+
+*   The original pull request is merged.
+*   The render check of the backport pull request passes.
+*   The backport changes the same lines as the original pull request. If it
+    differs, for example in a screenshot or in a version directive, its
+    description names each difference and the reason.
+*   No review comment is open, and nobody has requested changes.
+
+Compare the changes of the two pull requests with the following command.
+An empty output means that the backport changes the same lines:
+
+..  code-block:: shell
+
+    diff <(gh pr diff <original> | grep '^[-+]') <(gh pr diff <backport> | grep '^[-+]')
+
+Merge a backport pull request with :guilabel:`Squash and merge`, like the
+original pull request.
 
 
 ..  index:: GitHub; Backport
