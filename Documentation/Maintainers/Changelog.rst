@@ -224,6 +224,31 @@ https://review.typo3.org/c/Packages/TYPO3.CMS/+/85987), open the
 :guilabel:`Included In` - it lists every version the change was ever
 included in.
 
+..  _changelog-affected-versions-directive:
+
+The version in the directive
+----------------------------
+
+A version directive, or the field :rst:`:added:`, :rst:`:changed:`,
+:rst:`:deprecated:`, or :rst:`:removed:` of a confval, names the version
+from the folder of the changelog entry:
+
+*   **Folder of a minor release**, such as :file:`14.2` or :file:`15.0`:
+    name that version, such as `14.2`.
+*   **Folder of patch releases**, such as :file:`14.3.x`: name the first
+    patch release that contains the change, such as `14.3.8`. Find it in
+    Gerrit under :guilabel:`Included In`. If no release contains the change
+    yet, name the next patch release.
+
+For example, the changelog entry
+:file:`14.3.x/Important-106077-NoLiveEditingOfWorkspaceAwareTablesInWorkspaces.rst`
+first shipped in 14.3.8:
+
+..  code-block:: rst
+
+    ..  confval:: versioningWS_alwaysAllowLiveEdit
+        :changed: 14.3.8 important-106077-1789503919
+
 ..  index::
     Documentation; Deprecations
     reST directives; deprecated
