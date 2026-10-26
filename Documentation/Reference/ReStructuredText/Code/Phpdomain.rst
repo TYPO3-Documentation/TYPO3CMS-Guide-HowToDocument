@@ -436,11 +436,11 @@ description of the class:
 Replace a generated code snippet
 --------------------------------
 
-Some manuals include the API of a type as a snippet that
-:composer:`t3docs/codesnippet` generated, see
-`Code snippet generation <https://docs.typo3.org/permalink/h2document:codesnippet-generation>`_.
+Some manuals include the API of a type as a snippet that the abandoned
+generator :composer:`t3docs/codesnippet` created, see
+`Generated code snippets <https://docs.typo3.org/permalink/h2document:codesnippet-generation>`_.
 The options of the directive are the settings of the `createPhpClassDocs`
-action of that tool.
+action of that generator.
 
 The directive creates the same anchors and the same entries in
 :file:`objects.inv.json` as such a snippet. A page can thus replace the
@@ -451,10 +451,6 @@ members keep working:
 
     -..  include:: /CodeSnippets/Events/Impexp/BeforeImportEvent.rst.txt
     +..  typo3:api-class:: \TYPO3\CMS\Impexp\Event\BeforeImportEvent
-
-Remove the entry of the type from the configuration of the snippets as
-well. Otherwise, the next run of the generator creates the snippet file
-again, although no page includes it.
 
 The output is close to that of the snippet, but not identical. For example,
 the directive marks a class as :php:`final` and :php:`readonly`. It also
