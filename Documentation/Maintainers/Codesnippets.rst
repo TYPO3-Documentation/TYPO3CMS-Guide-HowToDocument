@@ -2,116 +2,64 @@
 ..  _codesnippet-generation:
 
 =======================
-Code snippet generation
+Generated code snippets
 =======================
 
-..  _codesnippet-add-new:
+Some manuals contain code snippets that the generator
+:composer:`t3docs/codesnippet` created from the source code of TYPO3. Such a
+snippet shows, for example, the API of a PSR-14 event or an excerpt of the
+TCA. The generator is abandoned, and its repository is archived. The
+manuals for TYPO3 v13 and newer no longer run it.
 
-Add a code snippet for a new class
-==================================
-
-The API section of a manual page (for example a PSR-14 event page) is
-usually not written by hand: it is generated from the class's own PHP
-doc-comments and method signatures by `t3docs-codesnippets
-<https://github.com/TYPO3-Documentation/t3docs-codesnippets>`__, and then
-included into the page with:
+The snippet files stay in the manuals. A page includes such a file like any
+other file:
 
 ..  code-block:: rst
 
     ..  include:: /CodeSnippets/Events/Core/SomeEvent.rst.txt
 
-..  tip::
-    For a type of the TYPO3 Core, the
-    `typo3:api-class directive <https://docs.typo3.org/permalink/h2document:rest-phpdomain-api-class>`_
-    reads the API from api.typo3.org when the manual is rendered. It needs no
-    generated snippet and no configuration entry.
+..  _codesnippet-add-new:
 
-To make the generator pick up a new class, register it in the manual's
-:file:`Documentation/CodeSnippets/Config/` tree. For events this is one PHP
-file per category, for example
-:file:`Documentation/CodeSnippets/Config/Api/Events/EventsCore.php` for
-:composer:`typo3/cms-core`, returning an array of entries:
+Document the API of a new type
+==============================
 
-..  code-block:: php
-    :caption: Documentation/CodeSnippets/Config/Api/Events/EventsCore.php
+Do not add a generated snippet for a new type. To show the API of a type of
+the TYPO3 Core, write the
+`typo3:api-class directive <https://docs.typo3.org/permalink/h2document:rest-phpdomain-api-class>`_
+with the fully qualified name of the type:
 
-    [
-        'action' => 'createPhpClassDocs',
-        'class' => \TYPO3\CMS\Core\Routing\Event\AfterPageUriGeneratedEvent::class,
-        'targetFileName' => 'CodeSnippets/Events/Core/AfterPageUriGeneratedEvent.rst.txt',
-        'withCode' => false,
-    ],
+..  code-block:: rst
 
-..  attention::
-    :file:`targetFileName` is flat per top-level category
-    (:file:`CodeSnippets/Events/Core/...`), regardless of any subfolder the
-    corresponding manual page itself lives in (for example
-    :file:`ApiOverview/Events/Events/Core/Routing/...`). Match the existing
-    files in the same category rather than mirroring the page's own path.
+    ..  typo3:api-class:: \TYPO3\CMS\Core\Routing\Event\AfterPageUriGeneratedEvent
 
-If there is no config file for the class's category yet, create one
-following the pattern above and add it to that tree's :file:`All.php`
-aggregator so it is picked up.
+The directive reads the API from api.typo3.org when the manual is rendered.
+It needs no snippet file and no configuration. Its
+`options <https://docs.typo3.org/permalink/h2document:rest-phpdomain-api-class-options>`_
+select the members to show, for example:
 
-After adding the entry, run the class through the generator (see
-:ref:`Regenerate existing code snippets <codesnippet-regeneration>` below)
-to create the actual :file:`.rst.txt` file. If you cannot run the generator
-locally, you can write the file by hand in the same format so the page
-renders correctly in the meantime - the next real generator run will
-overwrite it with equivalent content, so this is not destructive.
+..  code-block:: rst
+
+    ..  typo3:api-class:: \TYPO3\CMS\Core\Site\Entity\Site
+        :members: getIdentifier, getBase, getLanguages
+        :no-class-comment:
 
 ..  _codesnippet-regeneration:
 
-Regenerate existing code snippets
-=================================
+Change a generated code snippet
+===============================
 
-To regenerate the existing code snippets in a manual or extension clone
-the repository of that manual.
+Nothing generates the snippet files again. If the snippet shows the API of
+a type, replace its include with the directive. The directive creates the
+same anchors as the snippet, so links to the type and its members keep
+working:
 
-..  code-block:: bash
+..  code-block:: diff
 
-    git clone git@github.com:TYPO3-Documentation/TYPO3CMS-Reference-CoreApi.git
+    -..  include:: /CodeSnippets/Events/Impexp/BeforeImportEvent.rst.txt
+    +..  typo3:api-class:: \TYPO3\CMS\Impexp\Event\BeforeImportEvent
 
+Then delete the snippet file, unless another page still includes it. See
+`Replace a generated code snippet <https://docs.typo3.org/permalink/h2document:rest-phpdomain-api-class-snippets>`_
+for the differences in the output.
 
-Use Composer to install all dependencies,
-including dev-dependencies. In official manuals we have a make command for
-your convenience.
-
-..  tabs::
-
-    ..  tab:: Make
-
-        ..  code-block:: bash
-
-            make install
-
-    ..  tab:: composer
-
-        ..  code-block:: bash
-
-            # in repositories with composer.lock in version control
-            composer install
-
-            # in repositories where the composer.lock is not in version control
-            # to prevent outdated packages due to a local composer.lock from earlier install-runs
-            composer update
-
-Then regenerate the code snippets. Official manuals should have a make command
-for that.
-
-..  tabs::
-
-    ..  tab:: Make
-
-        ..  code-block:: bash
-
-            make codesnippets
-
-    ..  tab:: TYPO3 console command
-
-        ..  code-block:: bash
-
-            # Paths depends on where the vendor binaries are installed
-            # And where the configuration file codesnippets.php is located
-
-            vendor/bin/typo3 codesnippet:create Documentation/
+Edit any other snippet file by hand.
