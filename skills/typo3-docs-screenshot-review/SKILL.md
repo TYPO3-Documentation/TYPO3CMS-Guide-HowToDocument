@@ -56,8 +56,14 @@ The page lists the images by how much changed: added, deleted, replaced,
 and resized ones first, then the largest change, then the images of the
 flaky list. For every image, it shows the old
 version, the new one, and the changes in red with a frame around them. The
-user marks each image as **Commit** or **Restore** and copies the
-decisions.
+user marks each image and copies the decisions:
+
+*   **Commit:** the image goes into the commit.
+*   **Restore:** the image changed by chance, such as from fonts or an
+    image that loaded late.
+*   **Worse:** the image changed for the worse, such as a menu that is
+    open now or a cut that misses a part. The change has a cause that
+    needs a fix.
 
 *   If the session can publish a private page, such as an artifact on
     claude.ai, publish the file there and give the user the link.
@@ -73,15 +79,19 @@ ones that it did not touch.
 
 ## 3. Apply the decisions
 
-*   **Working tree:** restore every image marked **Restore** with
-    `git restore -- <path>`, or delete it if it is new. The decision on a
+*   **Working tree:** restore every image marked **Restore** or **Worse**
+    with `git restore -- <path>`, or delete it if it is new. The decision on a
     replacement covers both images: the copied decisions list the deleted
     image below the new one, marked `(replaced)`. Stage the images marked **Commit** by their path. Never stage the
     images of a screenshot run with `git add -A` or `git add .`.
 *   **Existing commit:** propose a new commit that takes the old version of
-    each image marked **Restore** back with
+    each image marked **Restore** or **Worse** back with
     `git checkout <rev>^ -- <path>`. Make it only after the user agrees,
     with the commit rules of the repository.
+
+Find the cause of every image marked **Worse**, before the next run takes
+it again, and tell the user what it is. If the task caused it, fix it in
+the task. Otherwise name it, so that it gets a fix of its own.
 
 An image that changed because of the task, but in a chapter that the task
 did not touch, is a side effect. Point it out instead of restoring it, so
