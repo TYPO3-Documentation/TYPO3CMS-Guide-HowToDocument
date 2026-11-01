@@ -50,7 +50,7 @@
   <header>
     <p class="session" {{SESSION_HIDDEN}}>Session {{SESSION}}</p>
     <h1>Screenshot review</h1>
-    <p class="source">{{SOURCE}}. Sorted by how much changed. Choose for each image whether it goes into the commit.</p>
+    <p class="source">{{SOURCE}}. Sorted by how much changed. Choose for each image whether it goes into the commit. Restore takes back a change by chance, Worse takes back a change for the worse, whose cause needs a fix.</p>
   </header>
   <section class="commands" aria-label="Decisions">
     <pre id="summary"></pre>
@@ -122,7 +122,7 @@
     controls.append(switcher);
 
     const decision = element('div', { className: 'decision', role: 'radiogroup', ariaLabel: 'Decision' });
-    [['commit', 'Commit'], ['restore', 'Restore']].forEach(([value, label]) => {
+    [['commit', 'Commit'], ['restore', 'Restore'], ['worse', 'Worse']].forEach(([value, label]) => {
       const input = element('input', { type: 'radio', name: `decision-${index}`, id: `decision-${index}-${value}`, value });
       if (entry.flaky && value === 'restore') {
         input.checked = true;
@@ -147,11 +147,12 @@
     const pick = (value) => entries.filter((entry) => decisions[entry.path] === value);
     // A replacement names the deleted image below the new one
     const lines = (picked) => picked.flatMap((entry) => ['  ' + entry.path, ...(entry.replaces ? [`  ${entry.replaces} (replaced)`] : [])]);
-    const open = entries.length - pick('commit').length - pick('restore').length;
+    const open = entries.length - pick('commit').length - pick('restore').length - pick('worse').length;
     summary.textContent = [
       ...(session ? [`Session ${session}:`] : []),
       `Commit (${pick('commit').length}):`, ...lines(pick('commit')),
       `Restore (${pick('restore').length}):`, ...lines(pick('restore')),
+      `Worse (${pick('worse').length}):`, ...lines(pick('worse')),
       open ? `Not decided yet: ${open}` : 'All decided.',
     ].join('\n');
   }
