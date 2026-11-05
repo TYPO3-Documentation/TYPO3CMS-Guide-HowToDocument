@@ -39,19 +39,13 @@ ff.
 Landing page
 ------------
 
-The landing page of https://api.typo3.org/ is automatically updated when this
-file is updated in GitHub:
+A template generates the landing page of https://api.typo3.org/:
 
-https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/WebRootResources-api.typo3.org/index.html
+https://github.com/TYPO3-Documentation/render-guides/blob/main/packages/typo3-api/template/home.html.twig
 
-As this is a pure HTML file, we currently keep the content in this reST file:
-https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/Documentation/Home/ApiTypo3Org.rst
-locally render it,
-then update :file:`WebRootResources-api.typo3.org/index.html` with the
-rendered output.
-
-The workflow responsible for replacing the landing page is
-https://github.com/TYPO3-Documentation/DocsTypo3Org-Homepage/blob/main/.github/workflows/apihome.yml
+The file :file:`versions.json` beside this template lists the versions of the
+API. Each night, the workflow in the next section renders the page and copies
+it to the web root as :file:`index.html`.
 
 ..  _tools-of-the-documentation-team-api-landing-generation:
 
