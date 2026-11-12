@@ -15,6 +15,8 @@ and integrates with the following repository hosts:
 *   :ref:`GitHub <webhook-github>`
 *   :ref:`Bitbucket Cloud <webhook-bitbucket-cloud>` and Bitbucket self-hosted
 *   :ref:`GitLab Cloud <webhook-gitlab>` and :ref:`GitLab self-hosted <webhook-gitlab>`
+*   `Forgejo and Gitea <https://docs.typo3.org/permalink/h2document:webhook-forgejo>`_,
+    including self-hosted instances
 
 ..  contents:: Table of Contents
     :local:
@@ -47,10 +49,14 @@ for Slack at `my.typo3.org <https://my.typo3.org/index.php?id=35>`__.
 Foreign setups
 ==============
 
-If your repository is hosted outside the supported platforms
-(GitHub, GitLab, Bitbucket) or its structure differs from a typical TYPO3
-extension, you must create a mirror on a supported platform. Otherwise,
-automatic rendering will not be possible.
+If your repository host is not in the list above, create a mirror on a
+supported repository host. Also create a mirror if the structure of your
+repository is different from a typical TYPO3 extension. Without a mirror, the
+automatic rendering cannot start.
+
+A self-hosted instance of a supported repository host can use any domain. The
+Documentation Team approves the domain of your instance one time, together
+with the repository approval described above.
 
 ..  _webhook-how-webhook-works:
 
@@ -228,6 +234,53 @@ To set up a GitLab webhook:
 
     ..  figure:: /_Images/webhook/gitlab/intercept-feedback.png
         :width: 932
+
+..  index:: Webhooks; Forgejo
+..  _webhook-forgejo:
+
+Forgejo and Gitea
+=================
+
+Forgejo and Gitea instances can use any domain, so a self-hosted instance does
+not need a mirror. To set up the webhook:
+
+..  rst-class:: bignums-xxl
+
+#.  Open the repository **Settings**. Go to the **Webhooks** section.
+
+#.  Click **Add Webhook**. Select **Forgejo**, or **Gitea** on a Gitea
+    instance.
+
+#.  Configure the webhook:
+
+    *   **Target URL**: `https://docs-hook.typo3.org`
+    *   **HTTP Method**: `POST`
+    *   **POST Content Type**: `application/json`
+    *   **Trigger On**: `Custom Events`, with **Push** selected
+
+    Keep the default value of the branch filter. With this value, the
+    webhook sends an event for each push to a branch or a tag. The branches
+    include `documentation-draft` and version branches such as `13.4`.
+
+    Select only the push event. The endpoint rejects other events, for
+    example the creation or deletion of a branch. These rejected deliveries
+    then fill the delivery history of your webhook.
+
+    Click **Add Webhook**.
+
+#.  Test the webhook.
+
+    Push a commit to `main` or `documentation-draft` that changes
+    `README.rst`, `README.md`, or a file in :file:`Documentation/`. Then
+    open `intercept.typo3.com <https://intercept.typo3.com/admin/docs/deployments>`_.
+    Look at the **Recent actions** section.
+
+    ..  note::
+        The **Test Delivery** button of Forgejo and the **Test Push Event**
+        button of Gitea send a push event without changed files. Forgejo or
+        Gitea shows this delivery as successful, but the rendering does not
+        start. Only a push with changes to the documentation starts the
+        rendering.
 
 ..  _webhook-deliveries:
 
