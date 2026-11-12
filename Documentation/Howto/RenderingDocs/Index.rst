@@ -129,4 +129,5 @@ documentation automatically:
     :maxdepth: 1
     :hidden:
 
-     Watch
+    Watch
+    Troubleshooting
