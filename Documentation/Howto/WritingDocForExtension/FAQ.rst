@@ -148,7 +148,8 @@ TER (https://extensions.typo3.org) are two separate, independent entities.
 
 In theory you could have the documentation in GitHub (for example)
 and the extension (code) somewhere else (or not in Git at all). To trigger
-the documentation rendering, fire the webhook from GitHub/GitLab/Bitbucket.
+the documentation rendering, fire the webhook from one of the
+`supported repository hosts <https://docs.typo3.org/permalink/h2document:webhook>`_.
 
 
 ..  rst-class:: panel panel-default
