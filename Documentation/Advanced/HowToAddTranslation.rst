@@ -34,6 +34,13 @@ wind up on the corresponding translated page.
              ├── Index.rst
              └── guides.xml
 
+    The translation is rendered on its own, with the settings of its own
+    :file:`guides.xml` only. Settings in :file:`Documentation/guides.xml`
+    do not apply to it. A setting that you copy along, for example
+    `check-link-text <https://docs.typo3.org/permalink/h2document:settings-guides-check-link-text>`_,
+    applies to the translation as well, so its warnings must be fixed in
+    the translated text too.
+
 
 #.  Update the file `Documentation/guides.xml <https://docs.typo3.org/permalink/h2document:settings-guides-xml>`_.
 
